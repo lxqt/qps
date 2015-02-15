@@ -455,7 +455,7 @@ class Procinfo	// Process Infomation
 		bool clone;
 
 		bool 	first_run; 	// for optimization 
-		char 	hashstr[128*3];	// cache
+		char 	hashstr[128*8];	// cache
 		int		hashlen;
 		int 	hashcmp(char *str);
 
