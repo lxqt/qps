@@ -768,8 +768,10 @@ WatchdogDialog :: WatchdogDialog()
 	h->setVisible(false);
 
 	QHeaderView *v=tableView->horizontalHeader ();
+#if QT_VERSION >= 0x050000
 	v->setSectionResizeMode (0,QHeaderView::Stretch);
 	v->setSectionResizeMode (1,QHeaderView::ResizeToContents);
+#endif
 //	v->setClickable (false);
 	connect(newButton, SIGNAL(clicked()), this, SLOT(_new()));
 	connect(closeButton, SIGNAL(clicked()), this, SLOT(apply()));

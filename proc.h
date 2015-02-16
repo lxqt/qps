@@ -3,7 +3,7 @@
 //
 // This program is free software. See the file COPYING for details.
 // Author: Mattias Engdeg?rd, 1997-1999
-//   		fasthyun@magicn.com 
+//   	
 
 #ifndef PROC_H
 #define PROC_H

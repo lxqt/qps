@@ -2,8 +2,9 @@
 // This program is free software. See the file COPYING for details.
 // Author:  Mattias Engdeg?rd, 1997-1999
 //          fasthyun@magicn.com 2005-2012
+//          daehyun.yang@gmail.com 2015-
 
-#define QPS_VERSION "1.10.16b"
+#define QPS_VERSION "1.10.16"
 
 // TODO & MEMO
 /*
@@ -682,7 +683,7 @@ void Qps::closeEvent(QCloseEvent *e)
 
 // call by void Qps::make_command_menu()
 //			void signal_handler(int sig)
-void Qps::save_quit() // will be removed !!!(by fasthyun@show.co.kr) 
+void Qps::save_quit() // will be removed !
 {
 	//printf("DEBUG: save_quit()....\n");
 	close();	// if another window exists, then no exit. // occurs QCoseEvent!
@@ -2034,7 +2035,7 @@ void Qps::hideEvent ( QHideEvent * event )
 
 
 // MOD!!!: For systray update. 
-// this trick very suck, but I can't find a better solution. (by fasthyun@show.co.kr)
+// this trick very suck, but I can't find a better solution. 
 class QpsApp :public QApplication
 { 
 	public:
@@ -2271,7 +2272,7 @@ void Qps::about()
 	str="";
 	str.append(
 		"<center><b> Bug, Complains, Opinion, Patch to </b></center>"
-		"<center><a href=\"mail://fasthyun@show.co.kr\" > fasthyun@show.co.kr </a></center>"
+		"<center><a href=\"mail://daehyun.yang@gmail.com\" > daehyun.yang@gmail.com </a></center>"
 		"<br>"
 		"<center> Contributors </center>"
 		"<center><i>Olivier.Daudel@u-paris10.fr </i></center>"
