@@ -343,7 +343,7 @@ int Procinfo::readproc()
 
 	gettimeofday(&tv, 0); // current_time, sys/time , tv.tv_sec, tv.tv_usec
 
-	// god dam!!!! if that dont reel in¿ the ladies then nothing will!!!!
+	// god dam!!!! if that dont reel in the ladies then nothing will!!!!
 
 	// No
 	state = psi.pr_lwp.pr_sname; // no
