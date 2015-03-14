@@ -32,22 +32,22 @@
 	border-image: url(:/icon/vista.png);
  }
 QWidget {
-	
+
 /*	color: rgb(255, 255, 244);*/
   /*   border: 2px solid green;
      border-radius: 4px;
      padding: 2px;*/
 /*	background-color: rgb(66, 66, 66);*/
    /*  background-image: url(images/welcome.png);
-	
+
 	border-image: url(:/icon/vista.png);*/
- } 
+ }
 QFrame, QLabel, QToolTip {
    /*  border: 2px solid green;
      border-radius: 4px;
      padding: 2px;
      background-image: url(images/welcome.png);*/
- } 
+ }
  </string>
   </property>
   <layout class="QVBoxLayout" >

@@ -1,7 +1,7 @@
 // command.C
 //
 // This program is free software. See the file COPYING for details.
-// Author: Mattias Engdeg?rd, 1997-1999
+// Author: Mattias Engdegård, 1997-1999
 
 #include <stdlib.h>
 #include <string.h>
@@ -35,13 +35,13 @@ int find_command(QString s)
 
 // DEL has "&" end of the string ?
 bool hasAmpersand(QString cmdline)
-{	
+{
 	QString str;
 	int len;
 	str=cmdline.simplified();
 
 	if(str=="%update") return true; //internal command
-	
+
 	len = str.length();
 	if (str[len-1]=='&')
 		return true;
@@ -53,43 +53,43 @@ void check_command(int idx)
 
 }
 
-// 
+//
 void check_commandAll()
 {
 	int i,idx;
-	
+
 	return;
 	for(int i = 0; i < commands.size(); i++)
 	{
 		if(hasAmpersand(commands[i]->cmdline)==false)
 			commands[i]->cmdline.append("&");
 	}
-}	
+}
 
 //after read ~/.qpsrc
 void add_default_command()
 {
-	
+
 	int idx;
-	
+
 	/*
 	idx=find_command("Update");
 	if (idx>=0)
-		commands[idx]->cmdline="%update";		
-	else	
+		commands[idx]->cmdline="%update";
+	else
 		commands.add(new Command("Update","%update",true));
 	*/
 
 	/*
-	 *	PAUSED 
+	 *	PAUSED
 	idx=find_command("Quit");
 	if (idx>=0)
-		commands[idx]->cmdline="killall qps";		
+		commands[idx]->cmdline="killall qps";
 	else	commands.add(new Command("Quit","killall qps",false));
 	*/
 
 	// check_commandAll(); DEL?
-}	
+}
 
 Command::Command(QString n, QString cmd,bool flag)
 {
@@ -101,12 +101,12 @@ Command::Command(QString n, QString cmd,bool flag)
 
 	//toolbutton=new CommandButton(controlbar,name);
 	//toolbutton->hide();
-	
+
 	////toolbutton->setTextLabel (name) ;
 	////toolbutton->setUsesTextLabel ( true );
-	///toolbutton->setAutoRaise(true); 
+	///toolbutton->setAutoRaise(true);
 	//QObject::connect(toolbutton, SIGNAL(clicked()),toolbutton, SLOT(exec_command()));
-		
+
 }
 
 QString watchCond::getVal(QString &str, char *key)
@@ -123,7 +123,7 @@ QString watchCond::getVal(QString &str, char *key)
 	return str.mid(idx+1,n-1);
 }
 QString watchCond::getstring()
-{ 
+{
 	QString string;
 	string.clear();
 	switch(cond)
@@ -169,13 +169,13 @@ void watchCond::putstring(QString str)
 		message=getVal(str,"showmsg");
 	if(str.contains("enabled"))
 		enable=true;
-	else 
+	else
 		enable=false;
 }
 Command::~Command()
 {
 	//toolbutton->hide();
-	//delete toolbutton;	
+	//delete toolbutton;
 }
 
 QString Command::getString()
@@ -204,14 +204,14 @@ bool Command::IsNeedProc()
 
 	for(i = 0;i<len;) {
 		int v = cmdline.indexOf('%', i);
-		if(v < 0) 
+		if(v < 0)
 			break;
 		if(++v >= len)
 			break;
 
-		char c = cmdline[v].cell();//.toLatin1().data();		
+		char c = cmdline[v].cell();//.toLatin1().data();
 		switch(c) {
-			case 'p':				
+			case 'p':
 			case 'c':
 			case 'C':
 			case 'u':
@@ -223,7 +223,7 @@ bool Command::IsNeedProc()
 				//printf("true\n");
 				return true;
 			default:;
-				
+
 		}
 		i = v + 1;
 	}
@@ -245,7 +245,7 @@ QString substString(QString str,Procinfo *p)
 			if(++v >= len)
 				break;
 			QString subst;
-			//need change to LOCALE(by fasthyun@magicn.com) 
+			//need change to LOCALE(by fasthyun@magicn.com)
 			char c = str[v].cell();
 			switch(c) {
 				case 'p':
@@ -277,28 +277,28 @@ void Command::call(Procinfo *p)
 {
 	QString s;
 	QString msg;
-	
-	printf("called !\n");	
+
+	printf("called !\n");
 	int len = cmdline.length();
-	
-	if(p==NULL) 
+
+	if(p==NULL)
 	{
 		if (cmdline=="%update")
 		{
 			qps->refresh();
 			return;
 		}
-		
+
 		s=cmdline;
 	}
 	else
 		s=substString(cmdline,p);
 
-	int ret = system(s.toLatin1().data()); /// 
+	int ret = system(s.toLatin1().data()); ///
 /*
 	pr=new QProcess;	// leak?
 	if(!wc->command.isEmpty())  //conflict pid's command
-	{ 
+	{
 		pr->start(wc->command);		// thread run, if null then segfault occurs. ?
 	}
 
@@ -340,13 +340,13 @@ CommandDialog::CommandDialog()
 	QHBoxLayout *hbox = new QHBoxLayout(this); // TOP
 	CommandModel *cmdModel=new CommandModel(this);
 	// item list
-	listview = new QListView(this);  
+	listview = new QListView(this);
 	listview->setModel(cmdModel);
 	listview->setFixedWidth(fontMetrics().width("0")*16);
 	hbox->addWidget(listview);
-	
+
 	QVBoxLayout *vbox = new QVBoxLayout; // TOP-> RIGHT
-	hbox->addLayout(vbox);	
+	hbox->addLayout(vbox);
 
 	QHBoxLayout *h1 = new QHBoxLayout;
 	vbox->addLayout(h1);
@@ -356,7 +356,7 @@ CommandDialog::CommandDialog()
 	name->setMinimumWidth(170);
 	name->setText("");
 	h1->addWidget(name);
-	
+
 	QHBoxLayout *hbox2 = new QHBoxLayout;
 	vbox->addLayout(hbox2);
 	//qcheck1 = new QCheckBox (this);
@@ -392,7 +392,7 @@ CommandDialog::CommandDialog()
 	l3->setFrameShadow ( QFrame::Sunken);
 	l3->setAlignment(Qt::AlignVCenter | Qt::AlignLeft);// | Qt::ExpandTabs);
 	vbox->addWidget(l3);
-	
+
 	QHBoxLayout *hl = new QHBoxLayout;
 	vbox->addLayout(hl);
 	new0 = new QPushButton("New...", this);
@@ -435,7 +435,7 @@ void CommandDialog::event_toolbar_checked(bool on)
 void CommandDialog::event_name_midified(const QString &new_name)
 {
 	int idx;
-	FUNC_START;	
+	FUNC_START;
 	//printf("debug:changed_description() start \n");
 	idx=find_command(new_name);
 	if (idx==-1)
@@ -443,7 +443,7 @@ void CommandDialog::event_name_midified(const QString &new_name)
 		add->setEnabled(1);
 	}
 	else add->setEnabled(0);
-		
+
 	//printf("debug:changed_description() end \n");
 }
 
@@ -453,9 +453,9 @@ void CommandDialog::event_cmd_modified()
 	int idx;
 	//if(name->text()=="") return;
 	if(find_command(name->text()) < 0 ) return;
-	
+
 	idx=find_command(name->text());
-	
+
 	commands[idx]->name = name->text();
 	commands[idx]->cmdline = cmdline->text();
 	emit command_change();
@@ -476,7 +476,7 @@ void CommandDialog::set_buttons(int index)
 	if(sel)
 		//c = commands[find_command(lb->currentText())];
 		c = commands[find_command(lb->currentText())];
-	else 
+	else
 		c = commands[find_command(lb->text(index))];
 	name->setText(c->name);
 	cmdline->setText(c->cmdline);
@@ -488,15 +488,15 @@ void CommandDialog::set_buttons(int index)
 void CommandDialog::set_select(const QModelIndex &index)
 {
 	Command *c= static_cast<Command*>(index.internalPointer());  // never Null ?
-/*	
-	if (item==NULL) return; //*** important 
+/*
+	if (item==NULL) return; //*** important
 	Command *c = commands[find_command(item->text())];
 */
 	name->setText(c->name);
 	cmdline->setText(c->cmdline);
 //DEL	qcheck1->setChecked(c->toolbar);
 //	qcheck2->setChecked(c->popup);
-	
+
 //	bool sel = (listview->currentItem() >= 0);
 	if(c->name=="Update")
 		del->setEnabled(false);
@@ -527,16 +527,16 @@ void CommandDialog::new_cmd()
 void CommandDialog::add_new()
 {
 	if(name->text()=="") return;
-	
+
 	//commands.add(new Command(name->text(), cmdline->text(),qcheck1->isChecked () ));
 	commands.append(new Command(name->text(), cmdline->text(),false ));
 	check_commandAll(); //TEMP
-	
+
 	listview->reset();
 	add->setEnabled(0);
 	del->setEnabled(0);
 	button_ok->setEnabled(1);
-	
+
 	emit command_change();	// notice to refresh Qps::make_command_menu()
 //	control_bar->update_bar(); // ** important
 }
@@ -545,7 +545,7 @@ void CommandDialog::del_current()
 {
 	int idx=find_command(name->text());
 	if (idx>=0)
-	{	
+	{
 		//printf("del\n");
 		commands.removeAt(idx);
 		listview->reset();//listview->reset();
@@ -554,7 +554,7 @@ void CommandDialog::del_current()
 	}
 }
 
-// CommandModel 
+// CommandModel
 CommandModel::CommandModel(QObject *parent){}
 CommandModel::~CommandModel(){}
 
@@ -565,7 +565,7 @@ QModelIndex CommandModel::index(int row, int column, const QModelIndex &parent) 
 		Command *cmd=commands[row];
 		return createIndex(row,column,cmd);
 	}
-	else 
+	else
 		return QModelIndex();
 }
 QModelIndex CommandModel::parent(const QModelIndex &child) const
@@ -606,16 +606,16 @@ void watchdog_check_if_start(QString cmd,Procinfo *pi)
 	///printf("cmd=%s\n", cmd.toLatin1().data());
 	for (int i = 0; i < watchlist.size(); ++i) {
 		watchCond *wc=watchlist.at(i);
-		if(wc->enable==false) continue;	
+		if(wc->enable==false) continue;
 	if (wc->cond == WATCH_PROCESS_START)
 		if(wc->procname==cmd)
 		{
 			//printf("Watchdog: start\n");
-			if(! pi->isThread()) 
+			if(! pi->isThread())
 				//ExecWindow *mw=new ExecWindow(wc->message,wc->command,pi->pid,pi->command); // leak
 				ExecWindow *mw=new ExecWindow(wc,pi->pid,pi->command); // leak
-		
-			//note : 
+
+			//note :
 			//	1.system("./loop"); //block !!
 			//	2.pr.setEnvironment(QProcess::systemEnvironment ());
 		}
@@ -626,13 +626,13 @@ void watchdog_check_if_finish(QString cmd,Procinfo *pi)
 {
 	for (int i = 0; i < watchlist.size(); ++i) {
 		watchCond *w=watchlist.at(i);
-		if(w->enable==false) continue;	
+		if(w->enable==false) continue;
 		if(w->cond == WATCH_PROCESS_FINISH)
 		{
 			if(w->procname==cmd)
 			{
 				//printf("Watchdog: finish\n");
-				if(! pi->isThread()) 
+				if(! pi->isThread())
 				//if(pi->pid==pi->tgid) // not a thread !
 					ExecWindow *mw=new ExecWindow(w,pi->pid,pi->command); // leak
 				//	ExecWindow *mw=new ExecWindow(w->message,w->command,pi->pid,pi->command);
@@ -671,7 +671,7 @@ ExecWindow::ExecWindow(watchCond *wc,int pid,QString cmd)
 {
 	setupUi(this);
 	setWindowTitle("Qps Watchdog");
-	
+
 	wcond=wc;
 
 	QString str;
@@ -684,10 +684,10 @@ ExecWindow::ExecWindow(watchCond *wc,int pid,QString cmd)
 		textEdit->append(cmd + "("+QString::number(pid) +")" + " finished" );
 
 	flag_started=false;
-		
+
 	pr=new QProcess;	// leak?
 	if(!wc->command.isEmpty())  //conflict pid's command
-	{ 
+	{
 		pr->start(wc->command);		// thread run, if null then segfault occurs. ?
 	}
 
@@ -696,14 +696,14 @@ ExecWindow::ExecWindow(watchCond *wc,int pid,QString cmd)
 	connect(pr, SIGNAL(started()), this, SLOT(cmd_started()));
 	connect(pr, SIGNAL(finished ( int , QProcess::ExitStatus )),this,SLOT(cmd_finished ( int , QProcess::ExitStatus )));
 	connect(pr, SIGNAL(error ( QProcess::ProcessError )),this, SLOT(cmd_error(QProcess::ProcessError)));
-	
+
 	show();
 
 	execlist.append(this);
 }
 
 ExecWindow::ExecWindow(QString str,QString exec_cmd,int pid,QString cmd)
-{	
+{
 	setupUi(this);
 	//
 }
@@ -712,7 +712,7 @@ ExecWindow::ExecWindow(QString str,QString exec_cmd,int pid,QString cmd)
 void ExecWindow::cmd_ok()
 {
 	if(pr->state()==QProcess::Running)
-	{	
+	{
 		//	pr->kill();
 		pr->terminate();
 		return;
@@ -736,10 +736,10 @@ void ExecWindow::cmd_started()
 }
 
 void ExecWindow::cmd_error (QProcess::ProcessError e )
-{	
+{
 	// not found command
 	// Error ? :
-	if(e==QProcess::FailedToStart)	
+	if(e==QProcess::FailedToStart)
 	//	textEdit->append("Error :  command not found [" + command + "]" + "(code " + QString::number(e) + ")" );
 		textEdit->append("Error " + QString::number(e) +" : [" +wcond->command+ "] Maybe command not found" );
 	delete pr;
@@ -761,7 +761,7 @@ WatchdogDialog :: WatchdogDialog()
 	checkBoxDelegate delegate;
 	tableView->setEditTriggers (QAbstractItemView::SelectedClicked );
  ///	tableView->setItemDelegate(&delegate);
-	
+
 	tableView->setSelectionBehavior (QAbstractItemView::SelectRows );
 	tableView->setSelectionMode (QAbstractItemView::SingleSelection);
 	QHeaderView *h=tableView->verticalHeader ();
@@ -788,28 +788,28 @@ WatchdogDialog :: WatchdogDialog()
 
 	checkBox_alreadyrun->hide();
 	listView->hide();
-	spinBox->hide(); 
+	spinBox->hide();
 	label_cpu->hide();
-///	printf("close ...\n");	
+///	printf("close ...\n");
 //	tableView->update();
 //	listmodel->update(); // meaningless..
-	
+
 	TBloon *bloon=new TBloon(this);
-	return;	
+	return;
 }
 
 void WatchdogDialog::showEvent ( QShowEvent * event )
 {
 	//  Qt 4.4.0 bug?
 	//  printf("show!!!!!!!!!\n");
-	listmodel->update(); 
+	listmodel->update();
 }
 void WatchdogDialog::comboChanged(int idx)
 {
-	
+
 	// itemText(idx);
 	QString str=comboBox->currentText();
-	
+
 	if(str.contains("cpu"))
 	{
 		label_cpu->show();
@@ -826,7 +826,7 @@ void WatchdogDialog::comboChanged(int idx)
 		label_procname->show();
 		proc_name->show();
 	}
-	else 
+	else
 	{
 		label_procname->hide();
 		proc_name->hide();
@@ -845,19 +845,19 @@ void WatchdogDialog::eventcat_slected(const QModelIndex &idx)
 
 	watchCond *w=watchlist[idx.row()];
 	//	printf("row=%d\n",at=idx.row());
-	
+
 	if(idx.column()==1)
 	{
 		w->enable=!(w->enable);
 		listmodel->update(idx.row());
 		return;
 	}
-	
+
 	QString str=idx.data().toString();// Qt::DisplayRol
 
 	if(str.contains("process"))
 		proc_name->setText(w->procname);
-	else 
+	else
 		proc_name->setText("");
 	if(str.contains("cpu"))
 		spinBox->setSingleStep(w->cpu);
@@ -868,7 +868,7 @@ void WatchdogDialog::eventcat_slected(const QModelIndex &idx)
 	if(str.contains("showmsg"))
 		message->setText(w->message);
 	else	message->setText("");
-	
+
 	checkCombo();
 	comboBox->setCurrentIndex(w->cond);
 }
@@ -877,7 +877,7 @@ void WatchdogDialog::eventcat_slected(const QModelIndex &idx)
 void WatchdogDialog::Changed(const QString &str)
 {
 	QModelIndex idx=tableView->currentIndex();
-//	QModelIndexList list=tableView->selectedIndexes (); 	
+//	QModelIndexList list=tableView->selectedIndexes ();
 	bool flag=tableView->selectionModel()->hasSelection();
 	//if(list.count() and idx.isValid())
 	if(flag and idx.isValid())
@@ -899,7 +899,7 @@ void WatchdogDialog::Changed(const QString &str)
 void WatchdogDialog::checkCombo()
 {
 	if(comboBox->count()==1)
-	{	
+	{
 		comboBox->clear();
 		comboBox->addItem ("if process start");
 		comboBox->addItem ("if process finish");
@@ -909,7 +909,7 @@ void WatchdogDialog::checkCombo()
 
 // comboChanged() -> checkCombo()
 void WatchdogDialog::condChanged(const QString &str)
-{ 
+{
 	checkCombo();
 	// what is this?
 	// printf("chagend\n");
@@ -948,15 +948,15 @@ void WatchdogDialog :: add()
 
 void WatchdogDialog :: del()
 {
-	//QModelIndex idx=listView->currentIndex();	
-	QModelIndex idx=tableView->currentIndex();	
+	//QModelIndex idx=listView->currentIndex();
+	QModelIndex idx=tableView->currentIndex();
 	if(idx.isValid())
 	{
 		int at=idx.row();
 		watchlist.removeAt(at);
 	}
 	listmodel->update();
-	tableView->setCurrentIndex(idx);	
+	tableView->setCurrentIndex(idx);
 }
 
 
@@ -968,7 +968,7 @@ void WatchdogDialog :: apply()
 
 QModelIndex ListModel::index(int row, int column, const QModelIndex &parent) const
 {
-	//printf("index %d %d\n",row,column);	
+	//printf("index %d %d\n",row,column);
 	if(row>=0 and column>=0 and row<watchlist.size())
 	{
 		if( column <2)
@@ -1001,9 +1001,9 @@ int ListModel::rowCount(const QModelIndex &parent) const
 }
 QVariant ListModel::headerData ( int section, Qt::Orientation orientation, int role ) const
 {
-//	printf("headerData\n");	
+//	printf("headerData\n");
 	if (role == Qt::DisplayRole)
-	{	
+	{
 		if(section==0)
 			return QString("Event Category");
 		if(section==1)
@@ -1024,8 +1024,8 @@ QVariant ListModel::headerData ( int section, Qt::Orientation orientation, int r
 }
 
 QVariant ListModel::data(const QModelIndex &index, int role) const
-{	
-//	printf("data\n");	
+{
+//	printf("data\n");
 	watchCond *item= static_cast<watchCond*>(index.internalPointer());
 	if(index.column()==0)
 	{
@@ -1036,7 +1036,7 @@ QVariant ListModel::data(const QModelIndex &index, int role) const
 		if (role == Qt::DecorationRole) {
 		}
 		if (role == Qt::EditRole) {
-		}  
+		}
 	}
 
 	if(index.column()==1)
@@ -1045,12 +1045,12 @@ QVariant ListModel::data(const QModelIndex &index, int role) const
 		{
 			if(item->enable)
 				return Qt::Checked;
-			else 
+			else
 				return Qt::Unchecked;
 		}
 		if(role==Qt::TextAlignmentRole)
 			return Qt::AlignRight;
-		if (role == Qt::EditRole) 
+		if (role == Qt::EditRole)
 		{
 
 		}
@@ -1099,7 +1099,7 @@ void checkBoxDelegate::setEditorData(QWidget *editor,
 	if(index.column()==1)
 	{
 	int value = index.model()->data(index, Qt::EditRole).toInt();
-//	int value=0;	
+//	int value=0;
 	QSpinBox *spinBox = static_cast<QSpinBox*>(editor);
 	spinBox->setValue(value);
 	}
@@ -1127,7 +1127,7 @@ void checkBoxDelegate::updateEditorGeometry(QWidget *editor,
 	const QStyleOptionViewItem &option, const QModelIndex &index) const
 {
 	printf("updateEditorGeometry\n");
-//	if(index.column()==1)	
+//	if(index.column()==1)
 	editor->setGeometry(option.rect);
 }
 //! [4]
@@ -1146,7 +1146,7 @@ void checkBoxDelegate::paint(QPainter *painter,
 			 QItemDelegate::paint(painter, myOption, index);
 			 return;
 		 } */
-		
+
 	 }
 	 QItemDelegate::paint(painter, option, index);
  }

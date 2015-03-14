@@ -1,7 +1,8 @@
-// pstable.h				emacs, this is written in -*-c++-*-
+// pstable.h
+// this is written in -*-c++-*-
 //
 // This program is free software. See the file COPYING for details.
-// Author: Mattias Engdegård, 1997-1999
+// Author: Mattias EngdegÃ¥rd, 1997-1999
 
 #ifndef PSTABLE_H
 #define PSTABLE_H
@@ -22,13 +23,13 @@ public:
 
 	// called by super
 	bool hasSelection(){return  0;};
-	
-	virtual bool isSelected(int row); 
+
+	virtual bool isSelected(int row);
 	virtual void setSelected(int row, bool sel);
 	virtual int totalRow();
 	virtual void checkTableModel ();
 
-		
+
 public slots:
     // void selection_update(const Svec<int> *row);
 	void setSortColumn(int col);
@@ -52,7 +53,7 @@ protected:
 	virtual char* total_selectedRow(int col);
 	virtual int sizeHintForColumn(int col) const;
 	virtual bool columnMovable(int col);
-	
+
 	virtual void overpaintCell(QPainter *p, int row, int col, int xpos);
 //	virtual bool hasChildren(int row);
 
@@ -62,6 +63,6 @@ private:
     Procview *procview;
 };
 
- 
+
 #endif // PSTABLE_H
 

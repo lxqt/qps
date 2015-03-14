@@ -1,21 +1,21 @@
 // infobar.h				emacs, this is written in -*-c++-*-
 //
 // This program is free software. See the file COPYING for details.
-// Author: Mattias Engdeg?rd, 1997-1999
+// Author: Mattias Engdegård, 1997-1999
 
 #ifndef INFOBAR_H
 #define INFOBAR_H
 
 #include "proc.h"
 
-#ifndef USING_PCH 
+#ifndef USING_PCH
 #include <QString>
 #include <QPixmap>
 #include <QResizeEvent>
 #include <QFrame>
 #include <QEvent>
 #include <QMouseEvent>
-#endif 
+#endif
 
 
 class subcpuRack : public QWidget
@@ -48,7 +48,7 @@ class gwidget {
 		void resize(int x_,int y_,int w,int h)
 		{ x=x_;y=y_;width=w;height=h;};
 		bool  intersect(int cx,int cy)
-		{	
+		{
 			cx = cx - x;
 			cy = cy - y;
 			if ( cx > 0 and cx < width)
@@ -56,7 +56,7 @@ class gwidget {
 					return true;
 			return false;
 		}
-		
+
 		int  xpluswidth(){return x+width;};
 		Procview *procview; //temp
 
@@ -76,7 +76,7 @@ class Infobar : public QFrame
     Q_OBJECT
 public:
 	Infobar(){};
-	
+
   	Infobar(QWidget *parent,Procview *);
     ~Infobar();
 
@@ -108,23 +108,23 @@ protected:
     void make_graph(int w, int h, QPainter *p, bool test=false);
 	Procview *procview;
 private:
-    
+
     // history points are stored in fixed point, scaled by history_scale
     static const unsigned int history_scale = 256;
     static const int time_dist = 60; // time between vertical lines (seconds)
-	
+
 	QList<gwidget*>  wlist;
     int hist_size;		// history buffer size DEL
-    int npoints;		// nr of history points currently remembered 
+    int npoints;		// nr of history points currently remembered
     float *history;		// (circular) history buffer DEL
     int h_index;		// next history index to use
     float peak;			// largest value in history
-   
+
     bool dirty;			// history changed since pixmap was drawn
     QPixmap pixmap;
     QPixmap icon_pm;
-	
-	int px,py; //	pointer position 
+
+	int px,py; //	pointer position
 
     bool is_vertical;
 	int official_height;
@@ -148,25 +148,25 @@ protected:
 
     virtual void make_graph(int w, int h, QPainter *p);
 	virtual QString doHistoryTXT(SysHistory *sysh);
-	
+
 	Procview *procview;
 	int official_height;
-    int npoints;		// nr of history points currently remembered 
+    int npoints;		// nr of history points currently remembered
 private:
-    
+
     // history points are stored in fixed point, scaled by history_scale
     static const unsigned int history_scale = 256;
-	
+
     int hist_size;		// history buffer size DEL
     float *history;		// (circular) history buffer DEL
     int h_index;		// next history index to use
     float peak;			// largest value in history
-   
+
     bool dirty;			// history changed since pixmap was drawn
     QPixmap pixmap;
     QPixmap icon_pm;
-	
-	int px,py; //	pointer position 
+
+	int px,py; //	pointer position
 };
 
 class IO_Graph : public GraphBase
@@ -179,7 +179,7 @@ protected:
     void make_graph(int w, int h, QPainter *p);
 	QString doHistoryTXT(SysHistory *sysh);
 private:
-    
+
 
 };
 
@@ -190,11 +190,11 @@ class Infobar2 : public QFrame
     Q_OBJECT
 	public:
 	Infobar2(QWidget *parent,Procview *);
-	void updatePixmap(); //TEMP 
+	void updatePixmap(); //TEMP
     QPixmap *load_icon(int w, int h) { return basic->make_icon(w, h); }
     void refresh(); //update();
 	Infobar *basic;
-	IO_Graph *io_graph; 
+	IO_Graph *io_graph;
 
 private:
 	int official_height;

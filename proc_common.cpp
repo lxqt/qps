@@ -1,9 +1,10 @@
-// for Non-ASCII locale 
 //#include <global.h>
 
-//#include <qtextcodec.h> 
+//#include <qtextcodec.h>
 //extern QTextCodec * codec ;
 //#define UniString(str)   codec->toUnicode(str)
+
+// for Non-ASCII locale
 
 int 		flag_24_ok; // we presume a kernel 2.4.x
 
@@ -39,7 +40,7 @@ char *userName(int uid,int euid)
 
 	if(uid!=euid)
 		strcat(buff, euid == 0 ? "*" : "+");
-	
+
 	return strdup(buff);
 }
 
@@ -76,7 +77,7 @@ Cat_int::Cat_int(const char *heading, const char *explain,
 QString Cat_int::string(Procinfo *p)
 {
 	QString s;
-	s.setNum(p->*int_member);	
+	s.setNum(p->*int_member);
 	return s;
 }
 
@@ -130,9 +131,9 @@ QString Cat_memory::string(Procinfo *p)
 	else
 		sprintf(buff,"%dK",sizeK);
 
-	if ( sizeK == 0 ) 
+	if ( sizeK == 0 )
 		s = "0";
-	else 
+	else
 		s = buff;
 	return s;
 }
@@ -152,7 +153,7 @@ Cat_uintl::Cat_uintl(const char *heading, const char *explain, int w,
 QString Cat_uintl::string(Procinfo *p)
 {
 	QString s;
-	s.setNum(p->*uintl_member);	
+	s.setNum(p->*uintl_member);
 	return s;
 }
 
@@ -168,8 +169,8 @@ Cat_hex::Cat_hex(const char *heading, const char *explain, int w,
 		: Cat_uintl(heading, explain, w, member)
 {}
 
-// QString.sprintf 2x speed than glibc.sprintf (by fasthyun@magicn.com) 
-// but QString structuring & destructring eat more time 
+// QString.sprintf 2x speed than glibc.sprintf (by fasthyun@magicn.com)
+// but QString structuring & destructring eat more time
 QString Cat_hex::string(Procinfo *p)
 {
 	QString s;
@@ -177,7 +178,7 @@ QString Cat_hex::string(Procinfo *p)
 	return s;
 }
 
-//COMMON, 
+//COMMON,
 Cat_swap::Cat_swap(const char *heading, const char *explain)
 : Category(heading, explain)
 {}
@@ -190,15 +191,15 @@ QString Cat_swap::string(Procinfo *p)
 
 	long sizeK,sizeM;
 	sizeK=p->size > p->resident ? p->size - p->resident : 0;
-	
+
 	sizeM = sizeK /1024;
 
-	if ( sizeM > 0 ) 
+	if ( sizeM > 0 )
 		s= QString::number(sizeM) + "M" ;
 	else
 		s= QString::number(sizeK) + "K" ;
 
-	if (sizeK == 0) 
+	if (sizeK == 0)
 		s = "0";
 	return s;
 }
@@ -260,11 +261,11 @@ Cat_wchan::Cat_wchan(const char *heading, const char *explain)
 
 QString Cat_wchan::string(Procinfo *p)
 {
-#ifdef LINUX 
+#ifdef LINUX
 	return p->wchan_str;
 #else
-	return Wchan::name(p->wchan); 
-#endif 
+	return Wchan::name(p->wchan);
+#endif
 }
 
 
@@ -285,7 +286,7 @@ QString Cat_cmdline::string(Procinfo *p)
 			return p->cmdline;
 		else {
 			QString s(p->cmdline);
-			
+
 			int i = s.indexOf(' ');
 			if(i < 0)
 				i = s.length();
@@ -304,7 +305,7 @@ QString Cat_cmdline::string(Procinfo *p)
 Cat_start::Cat_start(const char *heading, const char *explain)
 : Category(heading, explain)
 {}
-// don't let your confidence be shaken, just learn what you can from this young master. 
+// don't let your confidence be shaken, just learn what you can from this young master.
 QString Cat_start::string(Procinfo *p)
 {
  #ifdef SOLARIS
@@ -317,15 +318,15 @@ QString Cat_start::string(Procinfo *p)
 	//time_t start = proc->boot_time + p->starttime / proc->clk_tick;
 	time_t  start= p->starttime ;
 	char *ct = ctime(&start); 	// ctime(sec)
-	time_t sec =p->starttime - proc->boot_time ;//secs 
+	time_t sec =p->starttime - proc->boot_time ;//secs
 	//if(p->tv.tv_sec - start < 86400) {
 	if( sec < 86400) {	// 24hours
 		ct[16] = '\0';
 		s = ct + 11;	// Hour:minu
-	} else 
+	} else
 	{
 		ct[10] = '\0';
-		s = ct + 4;		// Date 
+		s = ct + 4;		// Date
 	}
 	return s;
 }
@@ -353,31 +354,31 @@ Procview::Procview()
 
 	sortcat = 0;	// categories[F_PID];
 	sort_column=-1;
-	sortcat_linear = NULL; 
+	sortcat_linear = NULL;
 	enable=true;
 	maxSizeHistory=1200;
 	refresh(); // before reading Watchdog list
 }
 
 
-// COMMON: 
+// COMMON:
 // Description :
-// 		View mode : ALL , OWNER, NO-ROOOT , HIDDEN, NETWORK 
+// 		View mode : ALL , OWNER, NO-ROOOT , HIDDEN, NETWORK
 bool Procview::accept_proc(Procinfo *p)
 {
 	QString pid;
 	static int my_uid = getuid();
 	bool    result;
-	
+
 	result=true;
-	
+
 	//BAD
 	if(false and viewproc == NETWORK )
-	{	
+	{
 		/*
 		p->read_fds();
 		if(p->sock_inodes.size()==0)
-			result=false;		
+			result=false;
 		for(int i=0;i<p->sock_inodes.size();i++)
 		{
 			SockInode *sn=p->sock_inodes[i];
@@ -385,41 +386,41 @@ bool Procview::accept_proc(Procinfo *p)
 			if(si)
 			{
 				si->pid=p->pid;
-				linear_socks.append(si);			
+				linear_socks.append(si);
 			}
 		}
 		*/
 	}
 	else
-	if (viewproc==ALL) 
+	if (viewproc==ALL)
 		result=true;
 	else
-	if ( viewproc == OWNED ) 
+	if ( viewproc == OWNED )
 		result=(p->uid == my_uid);
-	else 
-	if ( viewproc == NROOT )  
+	else
+	if ( viewproc == NROOT )
 		result=(p->uid != 0);
-	else 
-	if ( viewproc == RUNNING)	
+	else
+	if ( viewproc == RUNNING)
 		result= strchr("ORDW", p->state) != 0  ;
-	
+
 	/*
  	if ( viewproc == HIDDEN)
 	{
-		result=false;  
+		result=false;
 		for(int j=0;j<hidden_process.size();j++)
 			if(hidden_process[j]==p->command)
 				result=true ;
 	}
-	else 
+	else
 	{
 		for(int j=0;j<hidden_process.size();j++)
 			if(hidden_process[j]==p->command)
 				result=false;
 	} */
 
-	if(result==false) return false;   // dont go further !! for better speed 
-	
+	if(result==false) return false;   // dont go further !! for better speed
+
 	///if(search_box==NULL)		return result;
 	if(filterstr=="") return result;
 
@@ -429,19 +430,19 @@ bool Procview::accept_proc(Procinfo *p)
 
 	// Notice:
 	//  1. some process name maybe different CMDLINE.  ex) Xorg
-	if(p->cmdline.contains(filterstr,Qt::CaseInsensitive)) //search_box->text() 
-		return true;	
+	if(p->cmdline.contains(filterstr,Qt::CaseInsensitive)) //search_box->text()
+		return true;
 	if(p->command.contains(filterstr,Qt::CaseInsensitive))
 		return true;
-	if(p->username.contains(filterstr,Qt::CaseInsensitive)) 
+	if(p->username.contains(filterstr,Qt::CaseInsensitive))
 		return true;
 
 	pid= pid.setNum(p->pid);  //=QString::number(p->pid);
-	if(pid.contains(filterstr,Qt::CaseInsensitive)) 	
+	if(pid.contains(filterstr,Qt::CaseInsensitive))
 		return true;
-		
+
 	///printf("search_Box =%s , %s \n",search_box->text().toAscii().data(),p->command.toAscii().data());
-		
+
 	return false;
 }
 
@@ -463,22 +464,22 @@ void Procview::linearize_tree(QVector<Procinfo *> *ps, int level, int prow, bool
 {
 	static_sortcat = sortcat;
 	//ps->sort(reversed ? compare_backwards : compare);
-    if(reversed) 
+    if(reversed)
 		qsort(ps->data(), ps->size(), sizeof(Procinfo *),(compare_func)  compare_backwards);
 	else qsort(ps->data(), ps->size(), sizeof(Procinfo *),(compare_func)  compare);
 
 	int size=ps->size();
 	//printf("level=%d prow=%d size=%d\n",level,prow,size);
-	for(int i = 0; i < size; i++) 
+	for(int i = 0; i < size; i++)
 	{
 		Procinfo *p = (*ps)[i];
-	//	if (p->pid<6 )	printf("pid=%d level=%d parent_row=%d\n",p->pid,p->pid,p->parent_row);	
+	//	if (p->pid<6 )	printf("pid=%d level=%d parent_row=%d\n",p->pid,p->pid,p->parent_row);
 		p->level = level;
 		p->lastchild = false;
 		p->table_child_seq=i;   // ************* where using ? -> sequence
 		p->parent_row=prow;
 		if(!hide) linear_procs.append(p); //need !!
-		if(p->table_children.size())// and !p->hidekids) 
+		if(p->table_children.size())// and !p->hidekids)
 			linearize_tree(&p->table_children, level + 1, linear_procs.size() - 1,hide | p->hidekids );
 	}
 
@@ -486,7 +487,7 @@ void Procview::linearize_tree(QVector<Procinfo *> *ps, int level, int prow, bool
 		(*ps)[size - 1]->lastchild = true;
 }
 
-/// basic,memory,job fields 
+/// basic,memory,job fields
 void Procview::set_fields_list(int fields[])
 {
 	cats.clear();
@@ -513,28 +514,28 @@ int Procview::findCol(int field_id)
 	return -1;
 }
 
-// basis 
-// called by 
+// basis
+// called by
 // 	void Procview::fieldArrange();
 // 	qps();
 //
 void Procview::addField(int Fid, int where)
 {
-//	where=-1; 
+//	where=-1;
 //	printf("Fid =%d where=%d\n",Fid,where);
 //	where=pstable->clickedColumn();
 	if( where ==0 )
-	{	
+	{
        	//if (pstable->treeMode())  where=1;
 	}
 
 	if (Fid==F_PROCESSNAME) where=0;
 	if (Fid==F_CMDLINE)
 		where=cats.size(); 	//always should be the last column
-			
+
 	if( where <0 ) {
 			// this is default
-			where=cats.size(); 
+			where=cats.size();
 	}
 
 	if(where> cats.size()) // CMD_LINE ! ??????
@@ -543,11 +544,11 @@ void Procview::addField(int Fid, int where)
 	Category *newcat = categories[Fid];
 //	printf("name =%s where=%d\n",newcat->name,where);
 	if (cats.indexOf(newcat)<0)  // if not in the list ****
-		cats.insert(where,newcat); 
+		cats.insert(where,newcat);
 }
 
 // add a category to last by name
-void Procview::addField(char *name)	// interface 
+void Procview::addField(char *name)	// interface
 {
 	//QString str=sl[i];
 	int id = field_id_by_name(name);
@@ -555,7 +556,7 @@ void Procview::addField(char *name)	// interface
 		addField(id); // add to last
 
 	return;
-	
+
 	Category *cat = cat_by_name(name);
 	if(cat)
 		cats.append(cat);
@@ -566,40 +567,40 @@ void Procview::removeField(int field_id)
 	for(int i = 0; i < cats.size();)
 	{
 		//	 	printf("Fid=%d cats[%d].id=%d \n",field_id,i,cats[i]->id);
-		if(true)  
+		if(true)
 		{
 			if(cats[i]->id==field_id)
 			{
-			//	if(cats[i]->id==F_CMD and !treeview) idxF_CMD=-1;		
+			//	if(cats[i]->id==F_CMD and !treeview) idxF_CMD=-1;
 				cats.remove(i);
 				break;
 			}
-			else 
+			else
 				i++;
 		}
 	}
 //	printf("Fid=%d cats.size=%d\n",field_id,cats.size());
 }
 
-//	called by 
+//	called by
 //		1. write_settings()
 //	DEL? -> not yet
 void Procview::update_customfield()
 {
 	int i;
 //	printf("update custom_fields\n");
-	
-	customfields.clear();	
+
+	customfields.clear();
 
 	for(i=0;i<cats.size();i++)
 		customfields.append(cats[i]->name);
-	
+
 	//DEL
 	if(false and treeview)
 	{
 		int idx=customfields.indexOf("COMMAND");// == removeField(F_CMD);
 		if(idx>=0) customfields.removeAt(idx);
-		
+
 		if(idxF_CMD>=0)
 		{
 		/* if(customfields.size()<=idxF_CMD)
@@ -608,13 +609,13 @@ void Procview::update_customfield()
 			customfields.insert(idxF_CMD,categories[F_CMD]->name);
 		}
 	}
-	
+
 	return;
 }
 
-// Description : FIELD movement by mouse drag 
+// Description : FIELD movement by mouse drag
 //				  From col To place
-void Procview::moveColumn(int col, int place) 
+void Procview::moveColumn(int col, int place)
 {
 	int i;
 
@@ -625,70 +626,70 @@ void Procview::moveColumn(int col, int place)
 		return;
 	}
 
-	if(treeview==true )  
+	if(treeview==true )
 	{
 		// *** important : F_PROCESSNAME field should be the first in TreeMode!
 		///if(place==0)	return;
-		if(cats[col]->index==F_PROCESSNAME) 
-			place=0; 
+		if(cats[col]->index==F_PROCESSNAME)
+			place=0;
 	}
-	
-	// COMMAND_LINE field should always be the last field 
-	//if(cats[place]->index==F_CMDLINE) return; 
+
+	// COMMAND_LINE field should always be the last field
+	//if(cats[place]->index==F_CMDLINE) return;
 	if(cats[col]->index==F_CMDLINE) place=cats.size() - 1;
 
 	Category *cat = cats[col]; // SEGFAULT POSSIBLE!
-	cats.insert(place,cat); // insert 
-	
+	cats.insert(place,cat); // insert
+
 	if(place<col) col++;
-	
+
 	cats.remove(col);	 	// remove idx
 	// refresh();
 	///update_customfield();
 }
 
 
-// always called when linear to tree 
+// always called when linear to tree
 // DEL
 void Procview::saveCOMMANDFIELD()
 {
 }
 
-// call by 
-//		void Pstable::moveCol(int col, int place) 
+// call by
+//		void Pstable::moveCol(int col, int place)
 // 		void Pstable::setTreeMode(bool treemode)
 //		void Procview::set_fields()
 //	TODO: checkField();
 void Procview::fieldArrange()
 {
 
-	if( treeview==true )  
+	if( treeview==true )
 	{
-		// 	Tree Mode 
+		// 	Tree Mode
 		// 	If ProcessName isn't the leftmost column, move it to leftmost
 		// *** important : F_PROCESSNAME field should be the first in TreeMode!
-		if(cats[0]->index!=F_PROCESSNAME) 
+		if(cats[0]->index!=F_PROCESSNAME)
 		{
 			// find F_PROCESSNAME
 			for(int i = 1; i < cats.size(); i++)
 			{
 				if(cats[i]->index==F_PROCESSNAME)
-					moveColumn(i,0);		
+					moveColumn(i,0);
 			}
 
 
 		}
-		// PID sort for convenience (default)  
+		// PID sort for convenience (default)
 		/*
-		if(false and cats[i]->index == F_PID ) 
+		if(false and cats[i]->index == F_PID )
 		{
 			reversed = false;
 			sortcat = cats[i];
-			//// pstable->setSortedCol(i);   
+			//// pstable->setSortedCol(i);
 		}	*/
 		//Linear_Mode:
 	}
-	
+
 
 	if(true)
 	{
@@ -698,24 +699,24 @@ void Procview::fieldArrange()
 
 			if(cats[i]->index==F_CMDLINE)
 			{
-				//COMMAND_LINE field should always be the last field 
+				//COMMAND_LINE field should always be the last field
 				if (i== (cats.size() - 1))
-					moveColumn(i,0);		
-				else 
+					moveColumn(i,0);
+				else
 				{
-					
+
 				}
 
 			}
 
 		}
 	}
-	
+
 }
 
 void Procview::setTreeMode(bool b)
 {
-	if(treeview==false) 
+	if(treeview==false)
 	{
 		if(sortcat_linear==NULL)
 			sortcat_linear=sortcat;
@@ -734,9 +735,9 @@ void Procview::setSortColumn(int col, bool r)
 	}
 
 		// if(!procview->treeview) just reverse the lines
-	if(col == sort_column) 
+	if(col == sort_column)
 		reversed=!reversed;
-	else 
+	else
 		reversed=false;
 	sortcat=cats[col];
 	sort_column = col;
@@ -780,58 +781,58 @@ Category *Proc::cat_by_name(const char *s)
 }
 
 //COMMON
-//call by 
+//call by
 int  Proc::field_id_by_name(const char *s)
 {
 	if(s) {
 		//STL style
 		QHash<int,Category *>::iterator i = categories.begin();
 		while (i != categories.end()) {
-			if(strcmp(i.value()->name, s) == 0)	
+			if(strcmp(i.value()->name, s) == 0)
 				return i.key();	//cout << i.key() << ": " << i.value() << endl;
 			++i;
-		}	 	
+		}
 
-	}	
+	}
 	return -1;
 }
 
-// postInit 
+// postInit
 void Proc::commonPostInit()
 {
 	// java style
 	/*
 	QHashIterator<int,Category *> i(categories);  // a little suck!
 	while (i.hasNext()) {
-			i.next(); 
+			i.next();
 			i.value()->index=i.key();
 			i.value()->id=i.key();
 	}*/
-	
-	//STL style , set id 
+
+	//STL style , set id
 	QHash<int,Category *>::iterator i = categories.begin();
 	while (i != categories.end()) {
 		i.value()->index=i.key();
 		i.value()->id=i.key();
 		//cout << i.key() << ": " << i.value() << endl;
 		++i;
-	}	 
+	}
 
 	num_opened_files=0;		    // test
 	num_process = 0;  			//	64bit
 	num_network_process = 0; 	// 64bit
 
-	dt_total = 0; // diff system tick  
+	dt_total = 0; // diff system tick
 	dt_used = 0; // for infobar
 
 	loadavg[0] = loadavg[1] = loadavg[2] = 0.0;  // CPU load avg 1min,5min,15minute
-	
+
 	Proc::num_cpus = 0;
 	Proc::old_num_cpus = 0;
 
 	Proc::mem_total = 0;
 	Proc::mem_free = 0;
-	
+
 	Proc::mem_buffers = 0;
 	Proc::mem_cached = 0;
 	// mem_shared = 0; // only linux kernel 2.4.x???
@@ -840,22 +841,22 @@ void Proc::commonPostInit()
 	Proc::swap_free = 0;
 
 	Proc::qps_pid = -1;
-	Proc::loadQps = 0.0;  
-	
+	Proc::loadQps = 0.0;
+
 
 	Proc::cpu_times_vec = 0;	// array.
 	Proc::old_cpu_times_vec = 0;
-	
+
 	Proc::boot_time = 0;
 	Proc::clk_tick = 100; //for most system
-	
-	
+
+
 	current_gen=0; // !
 	mprocs=NULL;
 	hprocs=NULL;
 
-	clk_tick=sysconf(_SC_CLK_TCK); //****** The  number  of  clock ticks per second.  
-	// 
+	clk_tick=sysconf(_SC_CLK_TCK); //****** The  number  of  clock ticks per second.
+	//
 	// printf("Qps: hz=%d\n",clk_tick);
 
 ///	Procinfo::init_static();
@@ -868,60 +869,60 @@ void Procview::build_tree(Proclist &procs)
 {
 	Procinfo *p;
 	int proc_n=0;
-	
+
 	// children clear
-	root_procs.clear(); 
-	
+	root_procs.clear();
+
 	QHash<int,Procinfo*>::iterator i;
 	for (i = procs.begin(); i != procs.end();)
 	{
-		Procinfo *p = i.value(); 
-		p->table_children.clear();  
+		Procinfo *p = i.value();
+		p->table_children.clear();
 		if(p->accepted=accept_proc(p)) proc_n++;
 		++i;
 	}
 
 	Proc::num_process=proc_n;      // count process
-	
+
 	// find parent of a process
   	for (i = procs.begin(); i != procs.end();++i)
 	{
 		p=i.value();  // always not NULL
-		
-		if(p->accepted) 
+
+		if(p->accepted)
 		{
 			Procinfo *parent = 0;
-			int virtual_parent_pid; 
+			int virtual_parent_pid;
 
 			if(p->isThread())
 				virtual_parent_pid=p->tgid; // thread's leader ID.
-			else 
+			else
 				virtual_parent_pid=p->ppid;
 
-			
+
 			if(p->pid < p->ppid)
-			{	
-				// this occurs !! a reporter mailed to me 
+			{
+				// this occurs !! a reporter mailed to me
 			}
-			
+
 			parent = procs.value(virtual_parent_pid,NULL); // if pid not found, then return NULL.
 
 			//	printf("thread_leader=0 (%d) %s\n",p->tgid,p->command.ascii());
-			if(treeview and parent and parent->accepted )  
+			if(treeview and parent and parent->accepted )
 			{
 				//p->table_child_seq=parent->table_children.size();
 				parent->table_children.append(p);
-			} 
-			else						
+			}
+			else
 			{
-				// 1.init(pid=1) process  
-				// 2.some process which parent not accepted 
+				// 1.init(pid=1) process
+				// 2.some process which parent not accepted
 				// 3.(null) thread has TGID=0,PPID=0
 				// 4.when not tree mode
 				root_procs.append(p);
 			}
-		} 
-	}	
+		}
+	}
 }
 
 
@@ -939,7 +940,7 @@ void Procview::rebuild()
 
 	//Procinfo *pi = getProcinfoByPID(Procinfo::qps_pid);
 	//if(pi) Procinfo::loadQps=pi->pcpu;
-//	printf("rebuild\n");	
+//	printf("rebuild\n");
 
 	/* if(mprocs)
 	{
@@ -952,33 +953,33 @@ void Procview::rebuild()
 }
 
 #include <math.h> // log()
-// COMMON: CORE 
+// COMMON: CORE
 // Description: update the process list      BottleNeck 1.5%
 // 		read /proc/*
 // 		called by Procview::refresh(), every UPDATE .
 void Proc::refresh()
 {
 	current_gen++;
-	
-	// TEST for Process History 
+
+	// TEST for Process History
 	SysHistory *s=new SysHistory;
-	
+
 	history.append(s);
 	hprocs=&(s->procs);
-	
+
 	//init
 	///num_opened_files=0;
-	Proc::num_process=0; 
-	Proc::num_network_process=0; 
-	
+	Proc::num_process=0;
+	Proc::num_network_process=0;
+
 	Proc::read_loadavg();
 	Proc::read_system(); // **** should be every refresh !!
-	//s->load_cpu=(float)Proc::dt_used/Proc::dt_total;  //after read_system(); 
+	//s->load_cpu=(float)Proc::dt_used/Proc::dt_total;  //after read_system();
 
 	s->load_cpu=load_cpu; //after read_system();
 	s->time=time(NULL); // save current time in seconds since epoch
 
-	//TODO: clean 
+	//TODO: clean
 	//Procinfo::read_sockets(); // for future, BottleNect 2%
 	read_byte=0;
 	write_byte=0;
@@ -989,7 +990,7 @@ void Proc::refresh()
 
 	//s->load_io=(float)(read_byte + write_byte ); // (50*1024*1024); //dt_total;
 	if(io_byte!=0)
-	{	
+	{
 		s->load_io=log10(io_byte)*2; // 9000 -> 3point
 	//	printf("DEBUG: rw=[%d,%d] %d, %f\n",read_byte, write_byte,io_byte,s->load_io);
 	}
@@ -999,23 +1000,23 @@ void Proc::refresh()
 	QHash<int,Procinfo*>::iterator i;
 	for ( i = procs.begin(); i != procs.end();)
 	{
-		Procinfo *p = i.value(); 
+		Procinfo *p = i.value();
 		if(p->generation != current_gen) {
 //			printf("delete %d\n",p->pid);
-			i=procs.erase(i);   
+			i=procs.erase(i);
 		 	delete p;
-		} 
+		}
 		else
-		{	
+		{
 		//	p->table_children.clear();  // for rebuild()
 		//	p->accepted=accept_proc(p);
 			++i;
 		}
 	}
-	
+
 //	TESTING
 	while(history.size()>=maxSizeHistory)
-	{	
+	{
 		//if(history.isEmpty()==false)
 		delete history.takeFirst();
 	}
@@ -1029,7 +1030,7 @@ void Procview::refresh()
 	/****************************************************************/
 	/* Procview.procs has the procinfo 								*/
 	/****************************************************************/
-	if(enable) 
+	if(enable)
 	{
 		//printf("Procview::refresh()\n");
 		Proc::refresh(); 	// read "/proc/*", then update the process list
@@ -1058,7 +1059,7 @@ Category *Proc::cat_by_name(const char *s)
                 return categories[i];
     }
     return 0;
-} 
+}
 
 
 int  Proc::field_id_by_name(const char *s)

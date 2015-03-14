@@ -30,7 +30,7 @@ void TitleBar::mousePressEvent(QMouseEvent *)
 
 void TitleBar::mouseMoveEvent(QMouseEvent *e)
 {
-	if(e->buttons()==Qt::LeftButton)  //  Button state )	
+	if(e->buttons()==Qt::LeftButton)  //  Button state )
 	{
 		//move(e->globalX()-e->x(), e->globalY()-e->y());// coe->x(),e->y());
 //		move(e->globalX() - press_pos.x(), e->globalY()- press_pos.y());// coe->x(),e->y());
@@ -70,7 +70,7 @@ void ShotArea::mousePressEvent(QMouseEvent *e)
 
 void ShotArea::mouseMoveEvent(QMouseEvent *e)
 {
-	if(e->buttons()==Qt::LeftButton)  //  Button state )	
+	if(e->buttons()==Qt::LeftButton)  //  Button state )
 	{
 		//move(e->globalX()-e->x(), e->globalY()-e->y());// coe->x(),e->y());
 //		move(e->globalX() - press_pos.x(), e->globalY()- press_pos.y());// coe->x(),e->y());
@@ -79,7 +79,7 @@ void ShotArea::mouseMoveEvent(QMouseEvent *e)
 }
 
 
-#include	<QX11Info> 
+#include	<QX11Info>
 Screenshot::Screenshot(QWidget *p):QWidget(p)
 {
 			// Qt::WindowTitleHint
@@ -100,12 +100,12 @@ Screenshot::Screenshot(QWidget *p):QWidget(p)
 			"QLabel { border-width: 1px; padding:3px; border-style: solid;  border-color: rgb(65,16,40); border-radius: 5px ;}"
 			"QComboBox:drop-down { border-width: 2px; padding:0px; border-style: solid;  border-color: rgb(50,200,130); border-radius: 3px ;}"
 					   );
-	
+
 	//sg=new QSizeGrip(NULL);
 	//	sg->show();
 	//	sg->move(100,100);
 	//QStyle::PE_Frame
-    //createOptionsGroupBox(); 
+    //createOptionsGroupBox();
     //createButtonsLayout();
 
 #if QT_VERSION > 0x040500
@@ -113,13 +113,13 @@ Screenshot::Screenshot(QWidget *p):QWidget(p)
 #endif
 
 	mainLayout = new QVBoxLayout;
-#if QT_VERSION < 0x040300 	
+#if QT_VERSION < 0x040300
 	mainLayout->setMargin (3); // qt-4.2
-#else 
+#else
 	mainLayout->setContentsMargins (3,3,3,3); // qt-4.3
 #endif
 	mainLayout->setSpacing(0);
-	
+
 //	mainLayout->addWidget(titlebar);
     mainLayout->addWidget(shotarea);
     //mainLayout->addLayout(buttonsLayout);
@@ -136,7 +136,7 @@ Screenshot::Screenshot(QWidget *p):QWidget(p)
     //delaySpinBox->setValue(5);
 
 	setMouseTracking (true);
-	
+
 	if(QApplication::desktop()->winId()==NULL)
 		printf("Qps: Null Desktop\n");
     resize(300, 240);
@@ -154,7 +154,7 @@ void Screenshot::mousePressEvent(QMouseEvent *e)
 
 void Screenshot::mouseMoveEvent(QMouseEvent *e)
 {
-	if(e->buttons()==Qt::LeftButton)  //  Button state )	
+	if(e->buttons()==Qt::LeftButton)  //  Button state )
 	{
 		move(init_pos+ e->globalPos() - press_pos);
 		//move(x() + e->globalX() - press_pos.x(), y()+e->globalY()- press_pos.y());// coe->x(),e->y());
@@ -165,7 +165,7 @@ void Screenshot::mouseMoveEvent(QMouseEvent *e)
 extern bool flag_xcompmgr;
 void Screenshot::paintEvent ( QPaintEvent * e )
 {
-	QPainter p(this);	
+	QPainter p(this);
 	//printf("Screenshot::paintEvent\n");
 //	setAttribute(Qt::WA_NoSystemBackground);
 	if(0)//if(flag_xcompmgr)//setWindowOpacity (0.9); //_NET_WM_WINDOW_OPACITY
@@ -173,8 +173,8 @@ void Screenshot::paintEvent ( QPaintEvent * e )
 		setAttribute(Qt::WA_OpaquePaintEvent);
 //	setAttribute(Qt::WA_);
 //	p.setOpacity(0.1);
-		p.setCompositionMode(QPainter::CompositionMode_Source); // need!	
- 		p.fillRect(rect(), Qt::transparent); 	// clear!	
+		p.setCompositionMode(QPainter::CompositionMode_Source); // need!
+ 		p.fillRect(rect(), Qt::transparent); 	// clear!
 // 	QRect rectR(shotarea->x(),shotarea->y(), shotarea->width(),shotarea->height());
 //	p.fillRect(rectR,QColor(0,255,0,10));
 //	p.fillRect(rect(),QColor(255,255,255,255));
@@ -236,7 +236,7 @@ void Screenshot::saveScreenshot()
     QString path = QDir::homePath() + "/Desktop"; // *** ooooooo
 	if(QFile::exists(path))
     	path = path + tr("/untitled.") + format;
-	else 
+	else
 		path= QDir::homePath();
 
     QString fileName = QFileDialog::getSaveFileName(this, tr("Save As"),
@@ -246,16 +246,16 @@ void Screenshot::saveScreenshot()
                                .arg(format));
     if (!fileName.isEmpty())
         originalPixmap.save(fileName, format.toAscii());
-	
+
 //	setWindowFlags(Qt::X11BypassWindowManagerHint);
 }
 
 void Screenshot::shootScreen()
 {
-		
+
 //    if (delaySpinBox->value() != 0)  qApp->beep();
     originalPixmap = QPixmap::grabWindow(QApplication::desktop()->winId()
-			,geometry().x() + shotarea->x() 
+			,geometry().x() + shotarea->x()
 			,geometry().y() + shotarea->y()
 			,shotarea->width()
 			,shotarea->height()
@@ -349,7 +349,7 @@ int screenshot_main(int argc, char **argv)
         templ.c_class = TrueColor;
         XVisualInfo *xvi = XGetVisualInfo(dpy, VisualScreenMask |
                                           VisualDepthMask | VisualClassMask, &templ, &nvi);
-   		
+
 		printf("nvi=%d\n",nvi);
         for (int i = 0; i < nvi; ++i) {
             XRenderPictFormat *format = XRenderFindVisualFormat(dpy, xvi[i].visual);
@@ -376,7 +376,7 @@ int screenshot_main(int argc, char **argv)
    	QApplication app(dpy, argc, argv);
 
 	Display *dsp =QX11Info::display (); // get the display(X server?)
-	
+
 	Screenshot *w=new Screenshot();
 	w->show();
     //Widget w;

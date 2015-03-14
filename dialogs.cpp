@@ -1,7 +1,7 @@
 // dialogs.C
 //
 // This program is free software. See the file COPYING for details.
-// Author: Mattias Engdegård, 1997-1999
+// Author: Mattias EngdegÃ¥rd, 1997-1999
 
 #include "qps.h"
 #include "dialogs.h"
@@ -104,11 +104,11 @@ void IntervalDialog::event_label_changed()
 	int i = 0;
 	ed_result = lined->text();
 	ed_result = ed_result.simplified();
-	
-	//if(toggle->isChecked()) 
+
+	//if(toggle->isChecked())
 
 	QString s = ed_result;
-	if (s.length()==0) 
+	if (s.length()==0)
 	{
 		label->setText("No UPDATE");
 		return;
@@ -117,7 +117,7 @@ void IntervalDialog::event_label_changed()
 	while(s[i] >= '0' && s[i] <= '9' || s[i] == '.') i++;
 
 	float period = (i > 0) ? s.left(i).toFloat() : -1;
-	
+
 	s = s.mid(i, 3).simplified();
 	if(s.length() == 0 || s == "s")
 		period *= 1000;
@@ -128,7 +128,7 @@ void IntervalDialog::event_label_changed()
 	if(period <= 0) {
 		label->setText( "Invalid value");
 		return;
-		
+
 	}
 
 	txt.sprintf("%d ms",(int)period);
@@ -141,13 +141,13 @@ void IntervalDialog::done_dialog()
 
 	ed_result = lined->text();
 	ed_result = ed_result.simplified();
-	
-	//if(toggle->isChecked()) 
+
+	//if(toggle->isChecked())
 	QString s = ed_result;
 	while(s[i] >= '0' && s[i] <= '9' || s[i] == '.') i++;
 
 	float period = (i > 0) ? s.left(i).toFloat() : -1;
-	
+
 	s = s.mid(i, 3).simplified();
 	if(s.length() == 0 || s == "s")
 		period *= 1000;
@@ -155,12 +155,12 @@ void IntervalDialog::done_dialog()
 		period *= 60000;
 	else if(s != "ms")
 		period = -1;
-	if(period < 0) 
+	if(period < 0)
 		return;
-	
+
 	qps->set_update_period((int)period);
 	qps->update_timer();
-	
+
 	accept();
 }
 
@@ -248,14 +248,14 @@ void SliderDialog::slider_change(int val)
     lined->selectAll();
 }
 
-// DRAFT CODE, 
+// DRAFT CODE,
 PermissionDialog::PermissionDialog(QString msg,QString passwd): QDialog()
 {
 	setWindowTitle("Permission");
     QVBoxLayout *vbox = new QVBoxLayout;
 	label=new QLabel(msg,this);
 	vbox->addWidget(label);
-	
+
 	setLayout(vbox);
 
 	QHBoxLayout *hbox = new QHBoxLayout;
@@ -272,7 +272,7 @@ PermissionDialog::PermissionDialog(QString msg,QString passwd): QDialog()
 
     QPushButton* ok = new QPushButton("OK", this);
 	hbox->addWidget(ok);
-	
+
 	connect(ok, SIGNAL(clicked()), SLOT(accept()) );
     connect(cancel, SIGNAL(clicked()), SLOT(reject()));
 }
@@ -283,13 +283,13 @@ SchedDialog::SchedDialog(int policy, int prio) : QDialog()
     setWindowTitle("Change scheduling");
     QVBoxLayout *vl = new QVBoxLayout;
 	setLayout(vl);
-   
+
     bgrp = new QGroupBox("Scheduling Policy", this);
-	vl->addWidget(bgrp);	//bgrp->setCheckable(1); 
+	vl->addWidget(bgrp);	//bgrp->setCheckable(1);
 	rb_other = new QRadioButton("SCHED_OTHER (time-sharing)",bgrp);
     rb_fifo = new QRadioButton("SCHED_FIFO (real-time)", bgrp);
     rb_rr = new QRadioButton("SCHED_RR (real-time)", bgrp);
-    
+
     QVBoxLayout *vbox = new QVBoxLayout;
 	vbox->addWidget(rb_other);
     vbox->addWidget(rb_fifo);
@@ -299,13 +299,13 @@ SchedDialog::SchedDialog(int policy, int prio) : QDialog()
 	connect(rb_other, SIGNAL(clicked(bool)), SLOT(button_clicked(bool)));
 	connect(rb_fifo, SIGNAL(clicked(bool)), SLOT(button_clicked(bool)));
 	connect(rb_rr, SIGNAL(clicked(bool)), SLOT(button_clicked(bool)));
- 
+
     QHBoxLayout *hbox1 = new QHBoxLayout;
 	QPushButton *ok, *cancel;
     ok = new QPushButton("OK", this);
     ok->setDefault(true);
     cancel = new QPushButton("Cancel", this);
-   	hbox1->addWidget(ok); 
+   	hbox1->addWidget(ok);
    	hbox1->addWidget(cancel);
    	vl->addLayout(hbox1);
 
@@ -316,7 +316,7 @@ SchedDialog::SchedDialog(int policy, int prio) : QDialog()
     QRadioButton *rb;
 	switch(policy) {
     	case SCHED_OTHER:
-			active = 0;	rb=rb_other; 
+			active = 0;	rb=rb_other;
 			break;
     	case SCHED_FIFO:
 			active = 1;	rb=rb_fifo;
@@ -334,7 +334,7 @@ SchedDialog::SchedDialog(int policy, int prio) : QDialog()
     lined = new QLineEdit(this);
 	hbox->addWidget(lbl);
 	hbox->addWidget(lined);
-	vbox->addLayout(hbox);	
+	vbox->addLayout(hbox);
     QFont f = font();
     f.setBold(false);
     lined->setFont(f);
@@ -373,7 +373,7 @@ void SchedDialog::button_clicked(bool val)
     if(rb_other->isChecked()) {
 		lbl->setEnabled(false);
 		lined->setEnabled(false);
-    } 
+    }
 	else {
 		QString s(lined->text());
 		bool ok;

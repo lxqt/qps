@@ -1,7 +1,7 @@
 // wchan.C
 //
 // This program is free software. See the file COPYING for details.
-// Author: Mattias Engdegård, 1997-1999
+// Author: Mattias EngdegÃ¥rd, 1997-1999
 
 #include <stdio.h>
 #include <string.h>
@@ -80,7 +80,7 @@ bool Wchan::open_sysmap()
 				sprintf(vstr, "Version_%d",	(major << 16) + (minor << 8) + lvl);
 				// map a zero page at the end to terminate string
 				int ps = getpagesize();
-				
+
 				mmap(sysmap + ((sysmap_size + ps - 1) & ~(ps - 1)), ps,
 						PROT_READ, MAP_FIXED | MAP_PRIVATE | MAP_ANONYMOUS, 0, 0);
 				if(!strstr(sysmap, vstr)) {
@@ -126,7 +126,7 @@ inline int Wchan::beginning_of_line(int ofs)
     // seek backwards to beginning of line
     while(ofs >= 0 && sysmap[ofs] != '\n')
 	ofs--;
-    return ofs + 1;	
+    return ofs + 1;
 }
 
 char *Wchan::find_sym(unsigned long addr)

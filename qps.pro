@@ -1,10 +1,9 @@
 # initial written by fasthyun@show.co.kr
-# 
+#
 
 TEMPLATE	= app
 LANGUAGE	= C++
 CONFIG		+= warn_off qt  precompile_header release #debug
-#CONFIG		+= qdbus 	# qt < 4.3
 QT 		+= dbus	 	# qt > 4.5
 QT              += widgets      # qt > 5.0
 RESOURCES	= qps.qrc
@@ -28,9 +27,7 @@ HEADERS	+= qps.h \
 	misc.h  \
 	trayicon.h \
 	htable.h \
-#	htable2.h\
-#	pstable2.h\
-	qttableview.h 
+	qttableview.h
 
 
 SOURCES	+= proc.cpp \
@@ -49,10 +46,8 @@ SOURCES	+= proc.cpp \
 	misc.cpp \
 	trayicon.cpp \
 	htable.cpp\
-#	htable2.cpp\
-#	pstable2.cpp\
-	qttableview.cpp 
-     
+	qttableview.cpp
+
 TARGET 	= qps
 
 UI_DIR = .ui

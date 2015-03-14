@@ -1,21 +1,22 @@
-// dialogs.h			emacs, this is a -*-c++-*- file
+// dialogs.h
+// this is a -*-c++-*- file
 //
 // This program is free software. See the file COPYING for details.
-// Author: Mattias Engdegård, 1997-1999
+// Author: Mattias EngdegÃ¥rd, 1997-1999
 
 // misc. handy dialogs for use everywhere
 
 #ifndef DIALOGS_H
 #define DIALOGS_H
 
-#ifndef USING_PCH 
+#ifndef USING_PCH
 #include <QDialog>
 #include <QSlider>
 #include <QGroupBox>
 #include <QLineEdit>
 #include <QPixmap>
 
-#include <QMessageBox> 
+#include <QMessageBox>
 #include <QApplication>
 #include <QHBoxLayout>
 #include <QVBoxLayout>

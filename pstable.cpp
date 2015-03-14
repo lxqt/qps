@@ -1,9 +1,9 @@
-// pstable.cpp 
+// pstable.cpp
 //
 // This program is free software. See the file COPYING for details.
-// Author: Mattias Engdeg?rd, 1997-1999
+// Author: Mattias Engdegård, 1997-1999
 
-// ** toooo complex,so need new Design ... should be more simple.. (by fasthyun@magicn.com) 
+// ** toooo complex,so need new Design ... should be more simple.. (by fasthyun@magicn.com)
 
 
 #include "proc.h"
@@ -39,8 +39,8 @@ void Pstable::setSortColumn(int col)
 
 // AWKWARD
 // sync Procview and HeadedTable set sorted column of table to procview->sortcol
-// called by 1. Pstable::moveCol(int col, int place) 
-void Pstable::set_sortcol() 
+// called by 1. Pstable::moveCol(int col, int place)
+void Pstable::set_sortcol()
 {
 	for(int i = 0; i < procview->cats.size(); i++)
 	{
@@ -61,7 +61,7 @@ int Pstable::sizeHintForColumn(int col) const
 	int cat_idx=procview->cats[col]->index;
 	//if(col==0) printf("col.idx=%d %s\n",cat_idx,procview->cats[col]->name);
 	switch(cat_idx)
-	{	
+	{
 // 	only COMMON Field
 //		case F_PID :
 		case F_RSS :
@@ -76,20 +76,20 @@ int Pstable::sizeHintForColumn(int col) const
 			return aw*5;
 		case F_WCPU :
 		case F_NICE :
-			return aw*5; 
+			return aw*5;
 		case F_CMD :
 			return -(aw*20);
 
-		case F_USER : 
+		case F_USER :
 //		case F_USER : return aw*10;
-		case F_CMDLINE:	
+		case F_CMDLINE:
 		default:
 			return -1;
 	}
 	return -1;
 }
 
-// inner 
+// inner
 QString Pstable::title(int col)
 {
 	if(col>=procview->cats.size())
@@ -100,48 +100,48 @@ QString Pstable::title(int col)
 	return procview->cats[col]->name;
 }
 
-// TESTING 
+// TESTING
 void Pstable::overpaintCell(QPainter *p, int row, int col, int xpos)
 {
 	if(col!=0) return;
 	if(procview->cats[col]->id != F_CMD) return;
-	
+
 	int w;
 
 	Procinfo *pi=procview->linear_procs[row];
 
 	int n=pi->nthreads;
 	if(n==1) return;
-#ifdef LINUX 
-	if(pi->pid!=pi->tgid) return; // LINUX 
+#ifdef LINUX
+	if(pi->pid!=pi->tgid) return; // LINUX
 
 #endif
 	w= p->fontMetrics ().width(text(row,col));
-	
-	
+
+
 	QFont font=p->font();
 	int size=font.pointSize(); // point size
-	
+
 	if(size<=0) return; // saver!
-	
+
 	int h=body->cellHeight();
 	h= p->fontMetrics().height(); // return pixel
-	
+
 	int msize=h*3.0/8.0;
 	//printf("DEBUG: height=%d, msize=%d\n",h,msize);
-	
+
 	if(h<=11) return; // saver!
-	
+
 	if(msize<6) msize=6;
 
 	//font.setPointSize(msize); // not pixel!
 	font.setPixelSize(msize); // not pixel!
 	p->setFont(font);
-	p->drawText(xpos+w+2, msize+msize/3,QString::number(n)); 
+	p->drawText(xpos+w+2, msize+msize/3,QString::number(n));
 	font.setPointSize(size);
 	p->setFont(font);
 }
-// 
+//
 QString Pstable::text(int row, int col)
 {
 		if(col>=procview->cats.size())
@@ -177,31 +177,31 @@ int Pstable::alignment(int col)
 
 
 
-// virtual of HeadedTable 
+// virtual of HeadedTable
 void Pstable::setSelected(int row, bool flag)
 {
 ///	qDebug("debug:Pstable::setSelected()\n");
 	Procinfo *pi= procview->linear_procs[row];
 	if(pi->selected!=flag)
 	{
-		pi->selected=flag; 
+		pi->selected=flag;
 	//	body->repaintRow(row);  // TEMP trick..
 	}
 }
 
-// virtual 
-bool Pstable::isSelected(int row) 
-{ 
+// virtual
+bool Pstable::isSelected(int row)
+{
 	Procinfo *pi= procview->linear_procs[row];
-	return pi->selected;	//VALGRIND 
+	return pi->selected;	//VALGRIND
 }
 
 int Pstable::rowDepth(int row)
 {
 	Procinfo *pi= procview->linear_procs[row];
 	if(pi)
-		return pi->level; //VALGRIND segfault 
-	
+		return pi->level; //VALGRIND segfault
+
 	qDebug("Qps bug: over row  %d!!!\n",row);
 	return 0;
 }
@@ -264,11 +264,11 @@ void Pstable::mouseOutOfCell()
 void Pstable::mouseOnCell(int row,int col)
 {
 	//printf("cursor on (%d,%d)\n",row,col);
-	
+
 	Category *cat = procview->cats[col];
 	QString s="";
-	
-	return; 
+
+	return;
 
 	// below TEST code!
 	if(cat->index == F_USER)
@@ -277,22 +277,22 @@ void Pstable::mouseOnCell(int row,int col)
 		s=pi->username;
 
 	}
-	else 
-	{		
-		infobox->hide();	
+	else
+	{
+		infobox->hide();
 		return;
 	}
 
 
 	if(infobox!=NULL)
-	{	
+	{
 		//p.setY(p.y() + geometry().y());
 		//p.setY(QCursor::pos().y() - geometry().y());
 		//p.setY(QCursor::pos().y() - frameGeometry().y());
 		//p.setX(QCursor::pos().x() - frameGeometry().x());
 		//QPoint p=QCursor::pos();
 	//	if(htable->numSelected()>=2)
-		
+
 		infobox->show();
 		infobox->setPos();
 		if(s>0)
@@ -306,7 +306,7 @@ void Pstable::mouseOnCell(int row,int col)
 	//char *str=htable->total_selectedRow(col);
 }
 
-void Pstable::leaveEvent ( QEvent * ) 
+void Pstable::leaveEvent ( QEvent * )
 {
 
 }
@@ -321,8 +321,8 @@ char* Pstable::total_selectedRow(int col)
 	char mem_str[48];
 	char *name;
 	int	index;
-	
-	if(procview->cats.size()<=col or col<0 ) return 0;  // col == -1 
+
+	if(procview->cats.size()<=col or col<0 ) return 0;  // col == -1
 	index=procview->cats[col]->index;
 
 	switch(index)
@@ -347,7 +347,7 @@ char* Pstable::total_selectedRow(int col)
 		default:
 			return 0;
 	}
-	
+
 	int total=0;
 	int rows = procview->linear_procs.size();
 	for(int i = 0; i < rows; i++)
@@ -366,7 +366,7 @@ char* Pstable::total_selectedRow(int col)
 					total+=procview->linear_procs[i]->drs;break;
 				case F_STACK:
 					total+=procview->linear_procs[i]->stack;break;
-#endif			
+#endif
 			}
 		}
 
@@ -400,13 +400,13 @@ void Pstable::setProcview(Procview *pv)
 
 HeadedTable::NodeState Pstable::folded(int row)
 {
-	Procinfo *p = procview->linear_procs[row]; 
+	Procinfo *p = procview->linear_procs[row];
 	return ( p->table_children.size() > 0) ? (p->hidekids ? Closed : Open) : Leaf;
 }
 
 
 // slot: called when selection changes
-//	called by 
+//	called by
 //		1.void HeadedTable::selectionNotify()
 /*
 void Pstable::selection_update(const Svec<int> *rows)
@@ -417,9 +417,9 @@ void Pstable::selection_update(const Svec<int> *rows)
 		int row = (*rows)[i];
 		procview->linear_procs[row]->selected = isSelected(row); // WRONG !!!
 	}
-	
+
 	qps->update_menu_selection_status();
-	
+
 	if(numSelected() > 0 && qps->pids_to_selection) {
 		// set the X11 selection to "PID1 PID2 PID3 ..."
 		QString s, num;
@@ -436,18 +436,18 @@ void Pstable::selection_update(const Svec<int> *rows)
 		// important: this mustn't be called non-interactively since Qt uses
 		// the selection time of the last mouse or keyboard event
 ////		QApplication::clipboard()->setText(s);
-	} 
+	}
 
 } */
 
-// call by 
+// call by
 // 	1.void Qps::set_table_mode(bool treemode)
 // 	slot: changes table mode
 void Pstable::setTreeMode(bool treemode)
 {
 	//qDebug("Pstable::setTreeMode() %d , procview.treeview =%d\n",treemode,procview->treeview);
-	// no more HeadedTable::setTreeMode(treemode);  
-	HeadedTable::setTreeMode(treemode);  
+	// no more HeadedTable::setTreeMode(treemode);
+	HeadedTable::setTreeMode(treemode);
 	procview->treeview = treemode;
 	procview->fieldArrange();
 	set_sortcol();
@@ -457,7 +457,7 @@ void Pstable::setTreeMode(bool treemode)
 //
 bool Pstable::columnMovable(int col)
 {
-	if(treemode) 
+	if(treemode)
 	{
 		if(col==0) return false;
 
@@ -471,7 +471,7 @@ bool Pstable::columnMovable(int col)
 // called by HeadedTable
 // Description : FIELD movement by mouse drag to place From col
 //	virtual HeadedTable::moveCol(col,place);
-void Pstable::moveCol(int col, int place) 
+void Pstable::moveCol(int col, int place)
 {
 	//qDebug("Pstable::moveCol\n");
 	procview->moveColumn(col,place);
@@ -489,15 +489,15 @@ void Pstable::moveCol(int col, int place)
 // row = row number of sheet
 void Pstable::subtree_folded(int row)
 {
-					
+
 	Procinfo *p = procview->linear_procs[row];
 	p->hidekids = !p->hidekids;
-	
-	if(p->hidekids)	
-		clear_subtree_selections(p);  // *** important 
-	
+
+	if(p->hidekids)
+		clear_subtree_selections(p);  // *** important
+
 	refresh(); // tree rebuild only
-	return ;	
+	return ;
 	// ???
 	Procinfo *nextp = (row < numRows() - 1) ? procview->linear_procs[row + 1] : 0;
 	if(!p->hidekids) {
@@ -512,7 +512,7 @@ void Pstable::subtree_folded(int row)
 	// This is a stopgap solution; it would be better to have htable
 	// take care of the hiding of subtrees and repaint only the rows under
 	// the line hidden
-	
+
 }
 
 // DRAFT CODE:
@@ -520,7 +520,7 @@ void Pstable::subtree_folded(int row)
 // 2.resetwidth
 // 3.repaint
 
-// called by 
+// called by
 // 	1.void Qps::refresh()
 void STATUSBAR_SETCOUNT(int n);
 
@@ -537,13 +537,13 @@ void Pstable::checkTableModel ()
 	{
 //		printf("Warnning: maybe this is the bug.. wrong! %d %d\n",kgen,procview->current_gen);
 //		setAutoUpdate(false);  // ********** important for GUI-thread
-//		HeadedTable::setTreeMode(procview->treeview);  
+//		HeadedTable::setTreeMode(procview->treeview);
 		procview->rebuild(); //for Table
 		setNumRows(procview->linear_procs.size()); 	//1.
 	//	qDebug("Pstable setTreeMode =%d , procview.treeview =%d\n",treemode,procview->treeview);
-		setNumCols(procview->cats.size());  		//2. resetWidths() 
+		setNumCols(procview->cats.size());  		//2. resetWidths()
 		kgen=procview->current_gen;
-//		setAutoUpdate(true); 
+//		setAutoUpdate(true);
 	}
 }
 
@@ -572,7 +572,7 @@ void Pstable::refresh()
 				count++;
 				trow=row;
 			}
-		if (count == 1) 
+		if (count == 1)
 			centerVertically(trow);
 	} */
 

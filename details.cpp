@@ -1,7 +1,7 @@
 // details.C
 //
 // This program is free software. See the file COPYING for details.
-// Author: Mattias Engdegård, 1997-1999
+// Author: Mattias EngdegÃ¥rd, 1997-1999
 
 #include <stdio.h>
 #include <netdb.h>
@@ -14,7 +14,7 @@ Details::Details(Procinfo *p, Proc *proc) : QWidget(0)
 {
 	QString cap;
 	pi=p;
-	pi->detail = this; 	
+	pi->detail = this;
 	pr=proc;
 //	printf("pi=%x\n",pi);
 	cap.sprintf("Process %d ( %s ) - details", pi->pid,qPrintable(pi->command));
@@ -22,7 +22,7 @@ Details::Details(Procinfo *p, Proc *proc) : QWidget(0)
 
 	tbar = new QTabWidget(this);
 	// tbar->setMargin(5);
-	
+
 	//if(pi->fd_files) //if(pi->fd_files->size())
 	if(pi->read_fds())
 	{
@@ -30,21 +30,21 @@ Details::Details(Procinfo *p, Proc *proc) : QWidget(0)
 
 	//	if(pi->read_fds()) // create sock_inodes
 #ifdef LINUX
-		//printf(" pi->socks.size=%d\n",  p->sock_inodes->size() ); 
-		// this means if a process dont have socket then 
+		//printf(" pi->socks.size=%d\n",  p->sock_inodes->size() );
+		// this means if a process dont have socket then
 		// no socket pane  show in Detail dialog.
-		//Procinfo::read_sockets(); 
-		if( pi->sock_inodes.size() != 0 )  
+		//Procinfo::read_sockets();
+		if( pi->sock_inodes.size() != 0 )
 			tbar->addTab(new Sockets(this), "&Sockets");
 #endif
 	}
 
-	if(pi->read_maps())	
+	if(pi->read_maps())
 		tbar->addTab(new Maps(this), "&Memory Maps");
-	if(pi->read_environ())	
+	if(pi->read_environ())
 		tbar->addTab(new Environ(this), "&Environment");
 	tbar->addTab(new AllFields(this), "&All Fields");
-	
+
 	tbar->adjustSize();
 	QSize s0 = tbar->sizeHint();
 	if (s0.width()>800)
@@ -72,7 +72,7 @@ void Details::refresh()
 	QWidget *w=NULL;// tbar->currentPage ();
 	// QWidget *w= tbar->currentPage ();
 	if(w!=NULL)
-	{	
+	{
 		///printf("refresh()\n");
 		((SimpleTable *)w)->refresh();
 	}
@@ -108,7 +108,7 @@ void Details::closeEvent(QCloseEvent *)
 
 
 
- 
+
 SimpleTable::SimpleTable(QWidget *parent, int nfields, TableField *f, int options)
 : HeadedTable(parent,options),	fields(f)
 {
@@ -415,7 +415,7 @@ Maps::Maps(QWidget *parent) : SimpleTable(parent, MAPSFIELDS, fields)
 		int zw = fm.width('0');
 		const char *test = "abcdef";
 		for(const char *p = test; *p; p++)
-			if(fm.width(*p) != zw) 
+			if(fm.width(*p) != zw)
 			{
 				mono = false;
 				break;
@@ -547,7 +547,7 @@ void Files::refresh_window()
 {
 	Procinfo *p = procinfo();
 	if(!p) return;
-	
+
 	//if(p->fd_files==NULL) printf("qps :dddds\n");
 
 	int rows = p->fd_files.size();
@@ -560,7 +560,7 @@ void Files::refresh_window()
 }
 
 QString Files::text(int row, int col)
-{	
+{
 	Procinfo *p = procinfo(); // alot!!
 	if(p==0) return "zero";
 //	printf("p=%x px=%x\n",p,px);
@@ -611,7 +611,7 @@ Environ::~Environ()
 
 QString Environ::text(int row, int col)
 {
-	Procinfo *p = procinfo(); //if dead process then 
+	Procinfo *p = procinfo(); //if dead process then
 	if (row>= p->environ.size())	printf("size dddd=row=%d\n",row);
 	NameValue nv = p->environ[row]; //Segfault !!
 	return (col == ENVNAME) ? nv.name : nv.value;
@@ -655,7 +655,7 @@ void Environ::sort_change(int col)
 // sort table according to current settings
 void Environ::sort()
 {
-/////if(sortedCol() >= 0) 
+/////if(sortedCol() >= 0)
 	{
 		static_env = this;
 	//	if(procinfo()->environ==NULL)
@@ -697,7 +697,7 @@ AllFields::AllFields(QWidget *parent) : SimpleTable(parent, FIELDSFIELDS, fields
 AllFields::~AllFields()
 {}
 
-// Proc not changed ? 
+// Proc not changed ?
 QString AllFields::text(int row, int col)
 {
 	QString s;
@@ -705,7 +705,7 @@ QString AllFields::text(int row, int col)
 	//if( ((Details *)parent())->proc()==NULL)
 	//printf("size=%d\n", ((Details *)parent())->proc()->allcats.size() );
 	//printf("size=%d\n", proc()->allcats.size() );
-	
+
 	Category *cat=proc()->categories.values()[row];
 //	Category *cat = proc()->allcats[row];
 	switch(col) {
@@ -727,12 +727,12 @@ QString AllFields::text(int row, int col)
 // parent will be  tbar(TabWidget) !!!
 void AllFields::refresh_window()
 {
-	//printf("refresh_window\n");	
+	//printf("refresh_window\n");
 	if(!procinfo()) return;
 	setNumRows(proc()->categories.size());
 	setNumCols(FIELDSFIELDS);
 	//DEL resetWidths();
-    //repaint_changed(); 
+    //repaint_changed();
 	repaintAll();
 }
 

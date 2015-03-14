@@ -36,7 +36,7 @@
 #include <QDialog>
 #include <QSlider>
 #include <QSpinBox>
-#include <QTabWidget> 
+#include <QTabWidget>
 
 #include <QStyleOption>
 #include <QAbstractScrollArea>
@@ -47,7 +47,7 @@
 #include <QAbstractButton>
 #include <QPushButton>
 #include <QCheckBox>
-#include <QRadioButton> 
+#include <QRadioButton>
 #include <QStatusBar>
 #include <QToolButton>
 #include <QGroupBox>
@@ -55,7 +55,7 @@
 
 #include <QToolTip>
 #include <QLineEdit>
-#include <QComboBox> 
+#include <QComboBox>
 #include <QTextEdit>
 
 #include <QTimeLine>
@@ -68,12 +68,12 @@
 #include <QHeaderView>
 #include <QTreeView>
 
-#include <QTextBrowser> 
+#include <QTextBrowser>
 #include <QUrl>
 
 #include <QClipboard>
 #include <QApplication>
-#include <QSessionManager> 
+#include <QSessionManager>
 
 #include <QPaintEvent>
 #include <QMouseEvent>

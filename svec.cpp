@@ -1,7 +1,7 @@
 // svec.C
 //
 // This program is free software. See the file COPYING for details.
-// Author: Mattias Engdegård, 1997-1999
+// Author: Mattias EngdegÃ¥rd, 1997-1999
 
 // implement a stretchy vector class:
 // An Svec<T> grows automatically (doubles when full), so that adding
@@ -12,8 +12,8 @@
 #define SVEC_C
 
 #include "svec.h"
-////#define fatal(str) { printf("fatal error: %s\n",str); exit(0);} 
-#define fatal  printf 
+////#define fatal(str) { printf("fatal error: %s\n",str); exit(0);}
+#define fatal  printf
 
 template<class T>
 Svec<T>::Svec(const Svec<T> &s)
@@ -87,8 +87,8 @@ void Svec<T>::insert(int index,T value)
     for(i = index; j < =used ; i++)
 	vect[i+1]=v;
     	vect[i+1]=vect[i]; //vect[index+1]=vect[index];
-	*/	
-	
+	*/
+
     // old
     for(int j = used-1; j>=index ; j--)
 	vect[j+1] = vect[j];
@@ -100,7 +100,7 @@ void Svec<T>::insert(int index,T value)
 
 
 // for int,float type , no delete
-template<class T>  
+template<class T>
 void Svec<T>::remove(int index)
 {
 #ifdef CHECK_INDICES
@@ -112,8 +112,8 @@ void Svec<T>::remove(int index)
 	used--;
 }
 
-// for class type 
-template<class T>  
+// for class type
+template<class T>
 void Svec<T>::Delete(int index)
 {
 #ifdef CHECK_INDICES

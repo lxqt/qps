@@ -167,45 +167,45 @@ static QString kdeHome()
 
 void QtIconLoaderImplementation::lookupIconTheme() const
 {
-    
+
 #ifdef Q_WS_X11
     QString dataDirs = QFile::decodeName(getenv("XDG_DATA_DIRS"));
     if (dataDirs.isEmpty())
         dataDirs = QLatin1String("/usr/local/share/:/usr/share/");
-    
+
     dataDirs.prepend(QDir::homePath() + QLatin1String("/:"));
     iconDirs = dataDirs.split(QLatin1Char(':'));
-    
+
     // If we are running GNOME we resolve and use GConf. In all other
     // cases we currently use the KDE icon theme
-    
+
     if (qgetenv("DESKTOP_SESSION") == "gnome" ||
         !qgetenv("GNOME_DESKTOP_SESSION_ID").isEmpty()) {
-        
+
         if (themeName.isEmpty()) {
             // Resolve glib and gconf
-            
+
             p_g_type_init =              (Ptr_g_type_init)QLibrary::resolve(QLatin1String("gobject-2.0"), 0, "g_type_init");
             p_gconf_client_get_default = (Ptr_gconf_client_get_default)QLibrary::resolve(QLatin1String("gconf-2"), 4, "gconf_client_get_default");
             p_gconf_client_get_string =  (Ptr_gconf_client_get_string)QLibrary::resolve(QLatin1String("gconf-2"), 4, "gconf_client_get_string");
             p_g_object_unref =           (Ptr_g_object_unref)QLibrary::resolve(QLatin1String("gobject-2.0"), 0, "g_object_unref");
             p_g_error_free =             (Ptr_g_error_free)QLibrary::resolve(QLatin1String("glib-2.0"), 0, "g_error_free");
             p_g_free =                   (Ptr_g_free)QLibrary::resolve(QLatin1String("glib-2.0"), 0, "g_free");
-            
+
             if (p_g_type_init && p_gconf_client_get_default &&
                 p_gconf_client_get_string && p_g_object_unref &&
                 p_g_error_free && p_g_free) {
-                
+
                 p_g_type_init();
                 GConfClient* client = p_gconf_client_get_default();
                 GError *err = 0;
-                
+
                 char *str = p_gconf_client_get_string(client, "/desktop/gnome/interface/icon_theme", &err);
                 if (!err) {
                     themeName = QString::fromUtf8(str);
                     p_g_free(str);
                 }
-                
+
                 p_g_object_unref(client);
                 if (err)
                     p_g_error_free (err);
@@ -213,22 +213,22 @@ void QtIconLoaderImplementation::lookupIconTheme() const
             if (themeName.isEmpty())
                 themeName = QLatin1String("gnome");
         }
-        
+
         if (!themeName.isEmpty())
             return;
     }
-    
+
     // KDE (and others)
     if (dataDirs.isEmpty())
         dataDirs = QLatin1String("/usr/local/share/:/usr/share/");
-    
+
     dataDirs += QLatin1Char(':') + kdeHome() + QLatin1String("/share");
     dataDirs.prepend(QDir::homePath() + QLatin1String("/:"));
     QStringList kdeDirs = QFile::decodeName(getenv("KDEDIRS")).split(QLatin1Char(':'));
     Q_FOREACH (const QString dirName, kdeDirs)
         dataDirs.append(QLatin1Char(':') + dirName + QLatin1String("/share"));
     iconDirs = dataDirs.split(QLatin1Char(':'));
-    
+
     QFileInfo fileInfo(QLatin1String("/usr/share/icons/default.kde"));
     QDir dir(fileInfo.canonicalFilePath());
     QString kdeDefault = kdeVersion() >= 4 ? QString::fromLatin1("oxygen") : QString::fromLatin1("crystalsvg");
@@ -274,7 +274,7 @@ QIconTheme QtIconLoaderImplementation::parseIndexFile(const QString &themeName) 
     } else if (parents.isEmpty() && themeName != QLatin1String("hicolor")) {
         parents.append(QLatin1String("hicolor"));
     }
-    
+
     theme = QIconTheme(dirList, parents);
     return theme;
 }
@@ -283,21 +283,21 @@ QPixmap QtIconLoaderImplementation::findIconHelper(int size, const QString &them
                                                    const QString &iconName, QStringList &visited) const
 {
     QPixmap pixmap;
-    
+
     if (!themeName.isEmpty()) {
         visited << themeName;
         QIconTheme theme = themeList.value(themeName);
-        
+
         if (!theme.isValid()) {
             theme = parseIndexFile(themeName);
             themeList.insert(themeName, theme);
         }
-        
+
         if (!theme.isValid())
             return QPixmap();
-        
+
         QList <QString> subDirs = theme.dirList().values(size);
-        
+
         for ( int i = 0 ; i < iconDirs.size() ; ++i) {
             for ( int j = 0 ; j < subDirs.size() ; ++j) {
                 QString contentDir = (iconDirs[i].startsWith(QDir::homePath())) ?
@@ -310,7 +310,7 @@ QPixmap QtIconLoaderImplementation::findIconHelper(int size, const QString &them
                     break;
             }
         }
-        
+
         if (pixmap.isNull()) {
             QStringList parents = theme.parents();
             //search recursively through inherited themes
@@ -330,7 +330,7 @@ QPixmap QtIconLoaderImplementation::findIcon(int size, const QString &name) cons
     QString pixmapName = QLatin1String("$qt") + name + QString::number(size);
     if (QPixmapCache::find(pixmapName, pixmap))
         return pixmap;
-    
+
     if (!themeName.isEmpty()) {
         QStringList visited;
         pixmap = findIconHelper(size, themeName, name, visited);

@@ -2,20 +2,20 @@
 #define MISC_H
 
 #ifndef USING_PCH
-#include <QAbstractButton> 
+#include <QAbstractButton>
 #include <QCheckBox>
-#include <QRadioButton> 
+#include <QRadioButton>
 #include <QStatusBar>
 #include <QPainter>
 
 #include <QLineEdit>
-#include <QComboBox> 
+#include <QComboBox>
 #include <QTextEdit>
 #include <QToolButton>
 
 #include <QTimerEvent>
 #include <QKeyEvent>
-#include <QBoxLayout> 
+#include <QBoxLayout>
 #include <QHBoxLayout>
 #include <QAbstractButton>
 #include <QTimerEvent>
@@ -27,7 +27,7 @@
 #include <QMenu>
 #include <QMouseEvent>
 #include <QTimeLine>
-#endif 
+#endif
 
 #include "qticonloader.h"
 
@@ -87,8 +87,8 @@ class TFrame : public QLabel
  		void setValue(int	val);
 
 	protected :
-		virtual void paintEvent(  QPaintEvent * event ); 
-		virtual void moveEvent (QMoveEvent * event ); 
+		virtual void paintEvent(  QPaintEvent * event );
+		virtual void moveEvent (QMoveEvent * event );
 		virtual void showEvent ( QShowEvent * event );
 	private:
 		QString text;
@@ -104,8 +104,8 @@ class TBloon : public QLabel
 	//	void setText(QString str);
 	//	void draw( QPainter &p );
 	//	void showText(QPoint pos,QString str);
-	
-		virtual	bool eventFilter ( QObject * watched, QEvent * event ) ; 
+
+		virtual	bool eventFilter ( QObject * watched, QEvent * event ) ;
 	protected slots:
 		void update(int val);
 //    		void refresh();
@@ -113,8 +113,8 @@ class TBloon : public QLabel
 //		QToolButton *button,*button2,*button3;
 //		void event_cursor_moved(QMouseEvent *e);
 	protected :
-	//	virtual void paintEvent(  QPaintEvent * event ); 
-	//	virtual void moveEvent (QMoveEvent * event ); 
+	//	virtual void paintEvent(  QPaintEvent * event );
+	//	virtual void moveEvent (QMoveEvent * event );
 	private:
 		QWidget *paren;
 		QString text;
@@ -159,7 +159,7 @@ class UFrame : public QFrame
 //		QToolButton *button,*button2,*button3;
 //		void event_cursor_moved(QMouseEvent *e);
 	protected :
-		virtual void paintEvent(  QPaintEvent * event ); 
+		virtual void paintEvent(  QPaintEvent * event );
 	private:
 		QString title;
 		QString stylesheet;
@@ -178,7 +178,7 @@ class XButton : public QAbstractButton
 //		void event_cursor_moved(QMouseEvent *e);
 	protected :
 		//virtual void drawButton 3( QPainter * ) ;
-		virtual void paintEvent(  QPaintEvent * event ); 
+		virtual void paintEvent(  QPaintEvent * event );
 		void resizeEvent(QResizeEvent *p);
 };
 
@@ -249,10 +249,10 @@ class ControlBar : public QFrame
 		void event_search_box_changed();
 		void event_command_pressed();
 		void setPaused(bool);
-		
+
 	protected:
 		void resizeEvent(QResizeEvent *);
-		
+
 
 	private:
 		QRadioButton *b_tree, *b_linear, *b_treeT;

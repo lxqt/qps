@@ -1,7 +1,8 @@
-// fieldsel.h				emacs, this is written in -*-c++-*-
+// fieldsel.h
+// this is written in -*-c++-*-
 //
 // This program is free software. See the file COPYING for details.
-// Author: Mattias Engdegård, 1997-1999
+// Author: Mattias EngdegÃ¥rd, 1997-1999
 
 #ifndef FIELDSEL_H
 #define FIELDSEL_H

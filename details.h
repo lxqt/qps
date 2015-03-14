@@ -1,20 +1,21 @@
-// details.h				emacs, this is written in -*-c++-*-
+// details.h
+// this is written in -*-c++-*-
 //
 // This program is free software. See the file COPYING for details.
-// Author: Mattias Engdegård, 1997-1999
+// Author: Mattias EngdegÃ¥rd, 1997-1999
 
 #ifndef DETAILS_H
 #define DETAILS_H
 
 
-#ifndef USING_PCH 
+#ifndef USING_PCH
 #include <QTabWidget>
-#include <QFrame> 
+#include <QFrame>
 #include <QHash>
 #include <QCloseEvent>
 #include <QResizeEvent>
 #include <QLayout>
-#endif 
+#endif
 
 #include "proc.h"
 #include "lookup.h"
@@ -75,7 +76,7 @@ protected:
  //   Procinfo *procinfo() { return ((Details *)parentWidget())->procinfo(); }
     Procinfo *procinfo() { return detail->get_procinfo(); }
     Proc *proc() { return detail->proc(); }
-private:    
+private:
     const TableField *fields;
     Details *detail;
 };

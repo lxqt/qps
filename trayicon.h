@@ -38,7 +38,7 @@ class TrayIcon : public QSystemTrayIcon
 public:
 	TrayIcon( const QPixmap &, const QString &, QMenu *popup = 0, QWidget *parent = 0, const char *name = 0 );
 	~TrayIcon();
-	
+
 	// use WindowMaker dock mode.  ignored on non-X11 platforms
 	void setWMDock(bool use)  { isWMDock = use; }
 	bool checkWMDock() { return isWMDock; }
@@ -54,7 +54,7 @@ public:
 
 	void sysInstall();
 	void sysRemove();
-	
+
 	void init_TrayIconFreeDesktop();
 	void init_WindowMakerDock();
 
@@ -67,7 +67,7 @@ signals:
 	void doubleClicked( const QPoint& );
 	void closed();
 
-protected:	
+protected:
 //	bool event( QEvent *e );
 	virtual void mouseMoveEvent( QMouseEvent *e );
 	virtual void mousePressEvent( QMouseEvent *e );

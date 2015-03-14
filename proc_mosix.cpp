@@ -29,7 +29,7 @@
 #include <limits.h>
 #endif
 
-#include "proc_common.cpp" 
+#include "proc_common.cpp"
 
 
 // socket states, from <linux/net.h> and touched to avoid name collisions
@@ -128,7 +128,7 @@ int Proc::readTaskByPID(int pid)
     	char *p;
 	int TID;
 	int thread_n=0;
-	
+
 	printf("pid=%d :",pid);
 	sprintf(path, "/proc/%d/task", pid);
 
@@ -148,7 +148,7 @@ int Proc::readTaskByPID(int pid)
 */
 //	p = path + strlen(path) + 1;??
 //	p[-1] = '/';
-	
+
 	while((e = readdir(d)) != 0) {
 		if(e->d_name[0] == '.') 	continue;	// skip . and ..
 
@@ -159,7 +159,7 @@ int Proc::readTaskByPID(int pid)
 		{
 			sprintf(procdir,"/proc/%d/task",pid,TID);
 			Procinfo *pi = new Procinfo(TID);
-		
+
 			if(pi->pid == -1){
 				printf("--");
 				delete pi;		// already gone
@@ -171,16 +171,16 @@ int Proc::readTaskByPID(int pid)
 			}
 
 		}
-		
+
 		thread_n++;
 //		read_fd(fdnum, path);
 	}
 	printf("\n");
-	closedir(d);				
+	closedir(d);
 
 	return thread_n;
 }
-	
+
 int Procinfo::readproc(int proc_pid)
 {
     char path[256];
@@ -212,18 +212,18 @@ int Procinfo::readproc(int proc_pid)
 	tmp_str = cmdbuf;
 	cmdline = UniString(tmp_str); // for Non-ascii locale language
     }
-    
+
     // read /proc/XX/stat
     strcpy(buf, path);
     strcat(buf, "/stat");
     int statlen;
-    if((statlen = read_file(buf, sbuf, sizeof(sbuf) - 1)) <= 0) 
+    if((statlen = read_file(buf, sbuf, sizeof(sbuf) - 1)) <= 0)
 	    return -1;
     sbuf[statlen] = '\0';
     char *p = strrchr(sbuf, ')');
     *p = '\0';			// split in two parts
     command = strchr(sbuf, '(') + 1;
-    
+
     //
     // Not all values from /proc/#/stat are interesting; the ones left out
     // have been retained in comments to see where they should go, in case
@@ -255,20 +255,20 @@ int Procinfo::readproc(int proc_pid)
 	   /* rlim, startcode, endcode, startstack kstkesp kstkeip,
 	      signal, blocked, sigignore, sigcatch */
 	   &wchan);
-    
+
     tty = (dev_t)i_tty;
-    utime += stime;		// we make no user/system time distinction 
+    utime += stime;		// we make no user/system time distinction
     cutime += cstime;
-    
+
     // read /proc/XX/statm
     strcpy(buf, path);
     strcat(buf, "/statm");
-    if((statlen = read_file(buf, sbuf, sizeof(sbuf) - 1)) <= 0) 
+    if((statlen = read_file(buf, sbuf, sizeof(sbuf) - 1)) <= 0)
     {
 	    printf("33");
 	    return -1;
     }
-    
+
     sbuf[statlen] = '\0';
     sscanf(sbuf, "%lu %lu %lu %lu %lu %lu %lu",
 	   &size, &resident, &share, &trs, &lrs, &drs, &dt);
@@ -278,17 +278,17 @@ int Procinfo::readproc(int proc_pid)
     trs <<= page_k_shift;
     lrs <<= page_k_shift;
     drs <<= page_k_shift;
-    
+
     pmem = 100.0 * resident / mem_total;
-    
+
 #ifdef MOSIX
     if(mosix_running) {
 	    // Read /proc/XX/where
 	    strcpy(buf, path);
 	    strcat(buf, "/where");
-	    if((statlen = read_file(buf, sbuf, sizeof(sbuf) - 1)) <= 0) 
+	    if((statlen = read_file(buf, sbuf, sizeof(sbuf) - 1)) <= 0)
 		    where = -1;
-	    else { 
+	    else {
 		    sbuf[statlen] = '\0';
 		    sscanf(sbuf, "%d", &where);
 	    }
@@ -306,8 +306,8 @@ int Procinfo::readproc(int proc_pid)
 	    // Read /proc/XX/nmigs
 	    strcpy(buf, path);
 	    strcat(buf, "/nmigs");
-	    if((statlen = read_file(buf, sbuf, sizeof(sbuf) - 1)) <= 0) 
-		    nmigs = -1; 
+	    if((statlen = read_file(buf, sbuf, sizeof(sbuf) - 1)) <= 0)
+		    nmigs = -1;
 	    else {
 		    sbuf[statlen] = '\0';
 		    sscanf(sbuf, "%d", &nmigs);
@@ -361,7 +361,7 @@ int Procinfo::readproc(int proc_pid)
 	}
 	if(from > 0)
 		sprintf(buf, "%d>", from);
-	else if(where > 0) 
+	else if(where > 0)
 		sprintf(buf, ">%d", where);
 	else
 		strcpy(buf, "-");
@@ -383,7 +383,7 @@ int Procinfo::readproc(int proc_pid)
     which_cpu = 0;
     per_cpu_times = 0;
 
-    // only works kernel 2.4.x 
+    // only works kernel 2.4.x
     if(num_cpus > 1 ) {
 	per_cpu_times = new unsigned long[num_cpus];
 	if(per_cpu_times == NULL)
@@ -413,7 +413,7 @@ int Procinfo::readproc(int proc_pid)
     gettimeofday(&tv, 0);
     policy = -1;		// will get it when needed
     rtprio = -1;		// ditto
-  
+
     return pid;
 }
 
@@ -653,9 +653,9 @@ void Procinfo::read_common()
 			sprintf(cpu_buf, "cpu%d", cpu);
 			if((p = strstr(buf, cpu_buf)) != 0) {
 				sscanf(p, "%*s %u %u %u %u",
-						&cpu_times(cpu, CPUTIME_USER), 
+						&cpu_times(cpu, CPUTIME_USER),
 						&cpu_times(cpu, CPUTIME_NICE),
-						&cpu_times(cpu, CPUTIME_SYSTEM), 
+						&cpu_times(cpu, CPUTIME_SYSTEM),
 						&cpu_times(cpu, CPUTIME_IDLE));
 			} else {
 				fprintf(stderr, "Error reading info for cpu %d\n", cpu);
@@ -1077,7 +1077,7 @@ bool Procinfo::read_maps()
 	maps = new Svec<Mapsinfo *>;
     else
 	maps->clear();
-    
+
     while(fgets(line, sizeof(line), f)) {
 	Mapsinfo *mi = new Mapsinfo;
 	int n;
@@ -1329,7 +1329,7 @@ Cat_int::Cat_int(const char *heading, const char *explain,
 QString Cat_int::string(Procinfo *p)
 {
     QString s;
-    s.setNum(p->*int_member);	
+    s.setNum(p->*int_member);
     return s;
 }
 
@@ -1348,7 +1348,7 @@ Cat_uintl::Cat_uintl(const char *heading, const char *explain, int w,
 QString Cat_uintl::string(Procinfo *p)
 {
     QString s;
-    s.setNum(p->*uintl_member);	
+    s.setNum(p->*uintl_member);
     return s;
 }
 
@@ -1515,7 +1515,7 @@ QString Cat_dir::string(Procinfo *p)
 	    // getcwd() is fairly expensive, but this is cached anyway
 	    if(!getcwd(buf, sizeof(buf))) {
 		p->*cache = "(deleted)";
-	    } else 
+	    } else
 		p->*cache = buf;
 	}
     }
@@ -1812,9 +1812,9 @@ Proc::Proc()
 				     "Total CPU time used since start"));
     allcats.set(F_CPUNUM, new Cat_int("CPU", "CPU the process is executing on",
 				      3, &Procinfo::which_cpu));
-#ifdef OLD_LABEL        
+#ifdef OLD_LABEL
     command="COMM"; // label in linux source code --> /proc/XXX/stat
-#else        
+#else
     command="COMMAND";
 #endif
     allcats.set(F_COMM, new Cat_string(command,
@@ -1824,9 +1824,9 @@ Proc::Proc()
 				   "cwd", &Procinfo::cwd));
     allcats.set(F_ROOT, new Cat_dir("ROOT", "Root directory of process",
 				    "root", &Procinfo::root));
-#ifdef OLD_LABEL        
+#ifdef OLD_LABEL
     command_line="CMDLINE"; //reference to /proc/XXX/cmdline
-#else        
+#else
     command_line="COMMAND_LINE";
 #endif
     allcats.set(F_CMDLINE, new Cat_cmdline(command_line,
@@ -2016,27 +2016,27 @@ int Procview::user_fields[] = {F_PID, F_TTY, F_USER, F_NICE,
 
 #ifdef MOSIX
 int Procview::user_fields_mosix[] = {F_PID, F_TTY, F_USER, F_NICE,
-				     F_MIGR, F_NMIGS, 
+				     F_MIGR, F_NMIGS,
 				     F_SIZE, F_RSS,
 				     F_STAT, F_CPU, F_START, F_TIME,
 				     F_CMDLINE, F_END};
 #endif
 
-int Procview::jobs_fields[] = {F_PID, F_PPID, F_PGID, F_SID, 
+int Procview::jobs_fields[] = {F_PID, F_PPID, F_PGID, F_SID,
 			       F_TTY,
 #ifdef LINUX
 			       F_TPGID,
 #endif
 			       F_STAT, F_UID, F_TIME, F_CMDLINE, F_END};
 #ifdef MOSIX
-int Procview::jobs_fields_mosix[] = {F_PID, F_PPID, F_PGID, F_SID, 
+int Procview::jobs_fields_mosix[] = {F_PID, F_PPID, F_PGID, F_SID,
 				     F_MIGR, F_NMIGS, F_LOCKED, F_NOMOVE,
 				     F_TTY,
 				     F_TPGID,
 				     F_STAT, F_UID, F_TIME, F_CMDLINE, F_END};
 #endif
 
-int Procview::mem_fields[] = {F_PID, 
+int Procview::mem_fields[] = {F_PID,
 			      F_TTY, F_MAJFLT, F_MINFLT,
 #ifdef LINUX
 			      F_TRS, F_DRS,
@@ -2045,16 +2045,16 @@ int Procview::mem_fields[] = {F_PID,
 #ifdef LINUX
 			      F_SHARE, F_DT,
 #endif
-			      F_CMDLINE, 
+			      F_CMDLINE,
 			      F_END};
 #ifdef MOSIX
-int Procview::mem_fields_mosix[] = {F_PID, 
+int Procview::mem_fields_mosix[] = {F_PID,
 				    F_MIGR,
 				    F_TTY, F_MAJFLT, F_MINFLT,
 				    F_TRS, F_DRS,
 				    F_SIZE, F_SWAP, F_RSS,
 				    F_SHARE, F_DT,
-				    F_CMDLINE, 
+				    F_CMDLINE,
 				    F_END};
 #endif
 
@@ -2067,7 +2067,7 @@ Procview::Procview(Proc *p)
     reversed = FALSE;
     viewproc = ALL;
     viewfields = USER;
-    treeview = TRUE;	// init_mode by fasthyun 
+    treeview = TRUE;	// init_mode by fasthyun
     set_fields();
 }
 
@@ -2089,7 +2089,7 @@ bool Procview::accept_proc(Procinfo *p)
 	|| viewproc == OWNED && p->uid == my_uid
 	|| viewproc == NROOT && p->uid != 0
 	|| viewproc == RUNNING && strchr("ORDW", p->state) != 0
-#ifdef MOSIX      
+#ifdef MOSIX
 	|| viewproc == RUNNING && p->where > 0
 #endif
 	;
@@ -2115,9 +2115,9 @@ void Procview::build_tree()
 				if(!parent->children)
 					parent->children = new Svec<Procinfo *>(4);
 				parent->children->add(p);
-			} 
+			}
 			else
-			{		     
+			{
 				root_procs.add(p);
 			}
 
@@ -2194,7 +2194,7 @@ void Procview::set_fields()
 			if(Procinfo::mosix_running) {
 				set_fields_list(jobs_fields_mosix);
 				break;
-			} 
+			}
 #endif
 			set_fields_list(jobs_fields);
 			break;
@@ -2203,7 +2203,7 @@ void Procview::set_fields()
 			if(Procinfo::mosix_running) {
 				set_fields_list(mem_fields_mosix);
 				break;
-			} 
+			}
 #endif
 			set_fields_list(mem_fields);
 			break;
