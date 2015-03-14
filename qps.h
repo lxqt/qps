@@ -1,7 +1,8 @@
-// qps.h				emacs, this is written in -*-c++-*-
+// qps.h
+// this is written in -*-c++-*-
 //
 // This program is free software. See the file COPYING for details.
-// Author: Mattias Engdegrd, 1997-1999
+// Author: Mattias Engdegård, 1997-1999
 
 #ifndef QPS_H
 #define QPS_H
@@ -16,7 +17,7 @@
 #include <QPixmap>
 #include <QUrl>
 #include <QSystemTrayIcon>
-#endif 
+#endif
 
 #if QT_VERSION >= 0x040200
 #else
@@ -63,10 +64,10 @@ class Qps : public QWidget
 
 		// settings
 		static bool show_file_path;	       	// shows command/file map path
-		static bool show_cmd_path;	       	// DEL CMDLINE shows command path 
+		static bool show_cmd_path;	       	// DEL CMDLINE shows command path
 		static bool show_infobar;		// information bar is shown
 		static bool show_ctrlbar;		// control bar is shown
-		static bool show_statusbar;		// 
+		static bool show_statusbar;		//
 		static bool show_mem_bar;		// memory is shown as a bar
 		static bool show_swap_bar;		// swap is shown as a bar
 		static bool show_cpu_bar;		// cpu states are shown as a bar
@@ -89,12 +90,12 @@ class Qps : public QWidget
 		static bool tree_gadgets;	// use open/close gadgets (triangles)
 		static bool tree_lines;		// draw tree branch lines
 
-		
+
 //		static bool comm_is_magic;	//DEL, auto-remove COMM when switching
 		static bool flag_systray;		// trayicon , sytemtray
 		static bool flag_exit;
-		static bool flag_show;		// last qps-main_window state 
-		static bool flag_useTabView;		
+		static bool flag_show;		// last qps-main_window state
+		static bool flag_useTabView;
 		static bool flag_qps_hide;
 
 		// colors which may be set by the user
@@ -168,7 +169,7 @@ class Qps : public QWidget
 		void add_fields_menu(int id);
 		void add_fields_menu(QAction *act);
 		void tabChanged(int i);
-		
+
 		void show_popup_menu(QPoint p);
 		void context_heading_menu(QPoint p, int col);
 
@@ -181,7 +182,7 @@ class Qps : public QWidget
 		void open_details(int row);
 
 		void config_change();
-		
+
 		void update_timer();
 		void refresh();
 		void refresh_details();
@@ -192,8 +193,8 @@ class Qps : public QWidget
 		// reimplementation of QWidget methods
 		virtual void timerEvent(QTimerEvent *);
 		virtual void closeEvent(QCloseEvent *);
-		virtual void moveEvent ( QMoveEvent * event ); 
-		virtual void mouseMoveEvent ( QMouseEvent * event ); 
+		virtual void moveEvent ( QMoveEvent * event );
+		virtual void mouseMoveEvent ( QMouseEvent * event );
 		virtual void hideEvent ( QHideEvent * event );
 		virtual void resizeEvent ( QResizeEvent * event );
 		virtual void paintEvent ( QPaintEvent * event );
@@ -219,9 +220,9 @@ class Qps : public QWidget
 		void sendsig(Procinfo *p, int sig);
 		void earlier_refresh();
 		bool read_settings();
-	
+
 		bool load_settings();
-		
+
 		void bar_visibility();
 		void set_default_icon();
 		void set_load_icon();
@@ -270,7 +271,7 @@ class Qps : public QWidget
 		// size of our icon
 		int icon_width ;
 		int icon_height ;
-		int timer_id;	
+		int timer_id;
 
 		QPixmap *default_icon;
 		bool default_icon_set;	// true if default icon is current icon

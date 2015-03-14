@@ -7,7 +7,8 @@
 extern QList<Command*> commands;
 extern ControlBar	*controlbar;
 extern int	default_font_height;
-extern bool 	flag_show_thread;	extern int 	flag_thread_ok;
+extern bool 	flag_show_thread;
+extern int 	flag_thread_ok;
 extern bool 	previous_flag_show_thread;
 extern int 	num_opened_files;
 

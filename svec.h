@@ -1,7 +1,8 @@
-// svec.h					emacs, this is a -*-c++-*- file
+// svec.h
+// this is a -*-c++-*- file
 //
 // This program is free software. See the file COPYING for details.
-// Author: Mattias Engdegård, 1997-1999
+// Author: Mattias EngdegÃ¥rd, 1997-1999
 
 #ifndef SVEC_H
 #define SVEC_H
@@ -14,11 +15,11 @@ class SHash : public std::map <Key,T>
 {
 	public:
 		T value(Key k,T r)
-		{	
+		{
 			using namespace std;
 			typename map<Key,T>::const_iterator it;
 			it=map<Key,T>::find(k);
-			if(it==map<Key,T>::end()) 
+			if(it==map<Key,T>::end())
 				return r;
 			return (*it).second;
 		}
@@ -32,7 +33,7 @@ class SHash : public std::map <Key,T>
 			if(value(k,NULL)==NULL) return false;
 			else return true;
 		}
-		
+
 };
 
 
@@ -58,7 +59,7 @@ public:
     void set(int i, T val);
     void sort(int (*compare)(const T *a, const T *b));
     void add(T x);
-    void insert(int index,T val);     
+    void insert(int index,T val);
     void remove(int index);
     void Delete(int index);
     void clear();
@@ -137,9 +138,9 @@ inline void Svec<T>::add(T x)
 */
 
 template<class T>
-inline void Svec<T>::clear() 
-{ 
-    used = 0; 
+inline void Svec<T>::clear()
+{
+    used = 0;
 }
 
 template<class T>

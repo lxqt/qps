@@ -14,20 +14,20 @@ class CellAttribute2
 	QString text;
 	bool selected;
 	bool sorted;
-	
+
 	QColor	backColor; //table share
 	QColor  foreColor; //rows share
 	int xpos; 	// cols share
 	int ypos; 	// rows share
 	int	w;		// cols share
 	int depth;	// rows share
-	int	folded; // 
+	int	folded; //
 };
 
 
 
 class HtableModel : public QAbstractItemModel
-//class HtableModel : public QAbstractTableModel 
+//class HtableModel : public QAbstractTableModel
 {
     Q_OBJECT
 public:
@@ -35,11 +35,11 @@ public:
     ~HtableModel(){};
     virtual QModelIndex index(int row, int column, const QModelIndex &parent=QModelIndex())const; //pure
     virtual QModelIndex parent(const QModelIndex &child) const; //pure virtual
-    virtual int rowCount(const QModelIndex &parent) const; 
+    virtual int rowCount(const QModelIndex &parent) const;
     virtual QVariant data(const QModelIndex &index, int role) const;
     int columnCount(const QModelIndex &parent) const;
 	QVariant headerData ( int section, Qt::Orientation o, int role ) const;
-	virtual Qt::ItemFlags flags ( const QModelIndex & index ) const;	
+	virtual Qt::ItemFlags flags ( const QModelIndex & index ) const;
 //  Qt::ItemFlags flags(const QModelIndex &index) const;
 //	QMap<int, QVariant> itemData ( const QModelIndex & index ) const ;
 //	void update(){ reset();}
@@ -52,7 +52,7 @@ public:
 
 
 
-class HtableHeader : public QHeaderView 
+class HtableHeader : public QHeaderView
 // QHeaderView ( Qt::Orientation orientation, QWidget * parent = 0 )
 {
     Q_OBJECT
@@ -64,7 +64,7 @@ public:
 	signals:
 		void rightClicked(QPoint where, int col);
 		void toolTip(QPoint where, int col);
-	private:	
+	private:
 	HeadedTable2 *htable;
 };
 
@@ -86,7 +86,7 @@ class HeadedTable2 : public QTreeView
 		void repaint_changed();
 		int  clickedColumn(){return 0;}; // need imp
 		int sortedCol() { return sorted_col; } //ok
-        
+
 /*
 		void deleteCol(int col, bool update = TRUE);
 		void topAndRepaint();
@@ -98,7 +98,7 @@ class HeadedTable2 : public QTreeView
 		bool treeMode() { return treemode; };
 		int	tableWidth() const { return body->totalWidth()+ body->verticalScrollBar()->width(); }
         bool isCellContentsChanged(int row,int col,bool head);
-		
+
 
 		void selectOnly(int row);
 		void clearAllSelections();
@@ -111,16 +111,16 @@ class HeadedTable2 : public QTreeView
 		void setSortedCol(int col);
 		void setNumRows(int rows);
 		void setNumCols(int cols);
-		virtual bool isSelected(int row) { return false; } 
+		virtual bool isSelected(int row) { return false; }
 		virtual void setSelected(int row, bool sel){};
-		void modelIterate(const QModelIndex &idx);	
+		void modelIterate(const QModelIndex &idx);
 	signals:
 		void titleClicked(int col);
 		void doubleClicked(int row);
 		void rightClicked(QPoint where);
 		void foldSubTree(int row);
 		void colMoved(int col, int place);
-		
+
 	public slots:
 		void selectAll();
 		void repaintAll();
@@ -169,9 +169,9 @@ class HeadedTable2 : public QTreeView
 		int sorted_col;		    // column to emphasize
 		int reversed_sort;		// true if sorting backwards
 		int options;
-		
+
 		int nrows;
-		int ncols;	
+		int ncols;
 
 		// text cache is in logical columns (reorder causes no flush)
 		QHash<int,CellAttribute2 *>	cached_attr; // indexed by (row << 16) + log_col

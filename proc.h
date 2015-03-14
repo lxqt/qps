@@ -1,9 +1,9 @@
-// proc.h   
+// proc.h
 // emacs, this is written in -*-c++-*- (who?)
 //
 // This program is free software. See the file COPYING for details.
-// Author: Mattias Engdeg?rd, 1997-1999
-//   	
+// Author: Mattias Engdegård, 1997-1999
+//
 
 #ifndef PROC_H
 #define PROC_H
@@ -12,7 +12,7 @@
 #include "config.h"
 
 #ifdef SOLARIS
-#include <kstat.h>	// kstat_ctl_t 
+#include <kstat.h>	// kstat_ctl_t
 #endif
 
 #ifndef USING_PCH
@@ -21,7 +21,7 @@
 #include <QString>
 #include <QStringList>
 #include <QDir>
-#endif 
+#endif
 
 class Procinfo;
 int 	read_file(char *name, char *buf, int max);
@@ -31,7 +31,7 @@ int		get_kernel_version();
 
 //#define F_PID 0x00000000
 enum fields {
-	F_PID=0, 
+	F_PID=0,
 #ifdef LINUX
 	F_TGID,
 #endif
@@ -71,7 +71,7 @@ enum fields {
 	F_TRS, F_DRS, F_STACK,
 #endif
 	F_SIZE,		// VSIZE
-	F_SWAP,  // Linux not correct 
+	F_SWAP,  // Linux not correct
 	F_MEM,
 	F_RSS,
 #ifdef LINUX
@@ -82,12 +82,12 @@ enum fields {
 	F_FLAGS,
 	F_WCHAN,
 	F_WCPU, F_CPU, /* %CPU */
-	F_PMEM,    // F_PMEM: %MEM 
+	F_PMEM,    // F_PMEM: %MEM
 	F_START, F_TIME,
 	F_CPUNUM,
 	F_CMD,
 	F_PROCESSNAME, // NEW
-	F_CWD, 
+	F_CWD,
 	F_ROOT, //?
 	F_CMDLINE,
 	F_END = -1 };
@@ -140,7 +140,7 @@ class UnixSocket
 
 // COMMON
 class Mapsinfo
-{	
+{
 	public:
 		unsigned long from, to;
 		unsigned long offset;
@@ -182,7 +182,7 @@ class Category
 		virtual ~Category();
 
 		virtual int alignment() = 0;
-		virtual QString string(Procinfo *p) = 0;  
+		virtual QString string(Procinfo *p) = 0;
 		virtual int width() = 0;
 		virtual int compare(Procinfo *a, Procinfo *b);
 
@@ -194,7 +194,7 @@ class Category
 		bool flag_int_value;	// testing: for total sum , cat_memory , cat_int
 };
 
-// COMMON 
+// COMMON
 class Cat_int : public Category
 {
 	public:
@@ -210,7 +210,7 @@ class Cat_int : public Category
 		int field_width;
 };
 
-// COMMON  for memory usage  
+// COMMON  for memory usage
 class Cat_memory : public Category
 {
 	public:
@@ -411,11 +411,11 @@ class Cat_tty : public Cat_string
 #define CPU_TIMES(cpu, kind) cpu_times_vec[cpu * CPUTIMES + kind]
 class Proc;
 
-class Procinfo	// Process Infomation 
+class Procinfo	// Process Infomation
 {
 	public:
 		Procinfo(Proc *system_proc,int pid,int thread_id=-1);
-#ifdef SOLARIS 
+#ifdef SOLARIS
 	//	Procinfo(int pid);  //solaris !
 	//	Procinfo(int pid, int thread);  //solaris !
 		int readproc(int pid, int lwp);
@@ -424,7 +424,7 @@ class Procinfo	// Process Infomation
 		Procinfo *ref() { refcnt++; return this; };
 		void deref() { if(!--refcnt)  delete this; };
 		Proc	*proc;
-		
+
 		inline void calculate_cpu();
 
 		int readproc();
@@ -448,13 +448,13 @@ class Procinfo	// Process Infomation
 #ifdef LINUX
 		double get_tms();
 		unsigned long get_affcpu();
-		
+
 		QVector<SockInode*> sock_inodes; // socket inodes or NULL if not read
 #endif
 		int pid;
 		bool clone;
 
-		bool 	first_run; 	// for optimization 
+		bool 	first_run; 	// for optimization
 		char 	hashstr[128*8];	// cache
 		int		hashlen;
 		int 	hashcmp(char *str);
@@ -466,17 +466,17 @@ class Procinfo	// Process Infomation
 		QString cwd;		// null if not read
 		QString root;		// null if not read
 
-        bool accepted;      
+        bool accepted;
 		int test_stop;  	// for test
 		int session;        //	???
-		
+
 		int uid, euid;
 		int gid, egid;
 
 		char state;
 		int ppid;			// Parent's PID
 		int pgrp;
-		dev_t tty;			// tty major:minor device 
+		dev_t tty;			// tty major:minor device
 		int type; 		    // TESTING X,NETWORK,FILE_OPEN,TERMINAL(tty),THREAD,
 
 		int nthreads;		// number of threads : LWP(Solaris), task(Linux)
@@ -488,36 +488,36 @@ class Procinfo	// Process Infomation
    		unsigned long affcpu;
 
 		int suid, fsuid;
-		int sgid, fsgid;		
+		int sgid, fsgid;
 		int tpgid;
-		
+
 		unsigned long cminflt;
 		unsigned long cmajflt;
 #endif
-		
+
 		unsigned long	io_read;		// byte, testing
 		unsigned long	io_write;		// testing
-		unsigned long	io_read_KBps;		// K byte/sec 
+		unsigned long	io_read_KBps;		// K byte/sec
 		unsigned long	io_write_KBps;		// K byte/sec
-		unsigned long	io_read_prev,io_write_prev; 
-		
+		unsigned long	io_read_prev,io_write_prev;
+
 		unsigned long flags;	//?
 		unsigned long minflt;
 		unsigned long majflt;
-		
+
 		long utime;
 		long old_utime;		// initial value = -1 ;
 		long cutime;
 		int priority;
 		int nice;
-		unsigned long starttime;// start time since run in epoch? Linux : jiffies since boot , solaris 
+		unsigned long starttime;// start time since run in epoch? Linux : jiffies since boot , solaris
 		unsigned long wchan;
 		QString wchan_str;
 
-		// Memory 
-		unsigned long mem;		// user Memory define  
+		// Memory
+		unsigned long mem;		// user Memory define
 		unsigned long size;		// SIZE: total memory (K)
-		unsigned long resident;	// RSS: pages in resident set (non-swapped) (K) 
+		unsigned long resident;	// RSS: pages in resident set (non-swapped) (K)
 #ifdef LINUX
 		unsigned long share;	// shared memory pages (mmaped) (K)
 		unsigned long trs;      // text resident set size (K)
@@ -529,11 +529,11 @@ class Procinfo	// Process Infomation
 
 #ifdef SOLARIS
 		int addr_bits;		// address bits (32 or 64)
-		
+
 		char policy_name[2];	// two first letters of scheduling class
 #endif
 		struct timeval tv;		// time when the snapshot was taken
-		struct timeval old_tv;	// 
+		struct timeval old_tv;	//
 
 		// Posix.1b scheduling
 		int policy;		// -1 = uninitialized
@@ -545,14 +545,14 @@ class Procinfo	// Process Infomation
 		int which_cpu;
 
 		// computed %cpu and %mem since last update
-		float wcpu, old_wcpu;		// %WCPUwheight cpu 
+		float wcpu, old_wcpu;		// %WCPUwheight cpu
 		float pcpu;					// %CPU: percent cpu after last update
 		float pmem;					// %MEM
-	
+
 
 		QVector<Fileinfo*> fd_files;	// file names list
 		QVector<Mapsinfo*> maps;		// maps list
-		QVector<NameValue> environ;		// environment 
+		QVector<NameValue> environ;		// environment
 		char 	*envblock;				// malloc()ed environment data block
 
 
@@ -561,9 +561,9 @@ class Procinfo	// Process Infomation
 #endif
 
 		Details *detail;		// details window or NULL (backlink)
-		
+
 		unsigned int generation;	// timestamp
-		
+
 		bool selected:1;	// true if selected in current view
 		bool hidekids:1;	// true if children are hidden in tree view
 		bool lastchild:1;	// true if last (visible) child in tree view
@@ -573,10 +573,10 @@ class Procinfo	// Process Infomation
 		static const int MAX_CMD_LEN = 512;
 
 		char refcnt;
-	
+
 		//virtual child for Table_Tree
 		QVector<Procinfo *> table_children;
-		int	table_child_seq;				
+		int	table_child_seq;
 		int	clear_gen;
 		int child_seq_prev;
 		int parent_row;		// virtual parent for tree table
@@ -586,7 +586,7 @@ class Procinfo	// Process Infomation
 		int from;
 		int where;
 		int remotepid;
-		QString migr; 	// String explaining migration "node>" or ">node" 
+		QString migr; 	// String explaining migration "node>" or ">node"
 		int nmigs;
 		int locked;
 		QString cantmove;
@@ -601,7 +601,7 @@ class SysHistory {
 	public:
 	int idx;
 	time_t time; 	// saved time, epoch...
-	int	current_gen; 
+	int	current_gen;
 	float load_cpu;		// %CPU total ; green
 	float load_mem;		// %mem 	; yellow?
 	float load_io;		// %SYS_IO 	; BLUE
@@ -611,7 +611,7 @@ class SysHistory {
 };
 
 
-// for A System      
+// for A System
 // cf. Procinfo is for a Process
 //
 class Proc
@@ -623,11 +623,11 @@ class Proc
 		void read_proc_all(); // test
 		void refresh();
 
-		static void init_static(); 	
+		static void init_static();
 		int read_system();
 		int countCpu();
-		void read_loadavg();	
-		
+		void read_loadavg();
+
 		int  read_pid_tasks(int pid);
 
 		Category *cat_by_name(const char *s);
@@ -652,55 +652,55 @@ class Proc
 		static kstat_ctl_t *kc;		// NULL if kstat not opened
 #endif
 		QHash<int,Category *> categories;
-		
+
 		Proclist 		procs;	// processes indexed by pid
-		
+
 		// TESTING
 		QString 		supasswd; 		// test
-		int	 					syshistoryMAX;	
-		Proclist				*hprocs; // temp_hprocs list 
-		Proclist				*mprocs; //  
+		int	 					syshistoryMAX;
+		Proclist				*hprocs; // temp_hprocs list
+		Proclist				*mprocs; //
 		QList<SysHistory *> 	history;
 
 		void 	setHistory(int tick);
 		Proclist getHistory(int pos);
-		
-		
+
+
 		int 	 qps_pid;		//test
 		float loadQps;	 		//TEST
 		static int update_msec;
 
 
-		// class 
+		// class
 		int 	num_cpus;			// current number of CPUs
 		int		old_num_cpus; 		// previous number of CPUs
-	
+
 		long 	num_network_process; 	//  number of network(socket) process
-		long 	num_opened_files; 		//  number of opened normal(not socket) files  
+		long 	num_opened_files; 		//  number of opened normal(not socket) files
 		int 	num_process;			//  number of process
-		
-		long 	dt_total;				//  
-		long 	dt_used;				//  cpu used time in clktick 
-		
+
+		long 	dt_total;				//
+		long 	dt_used;				//  cpu used time in clktick
+
 		long 	read_byte;				//  test
-		long	write_byte;				// test 
+		long	write_byte;				// test
 		long	io_byte; 	//test file_io
 
-		float 	load_cpu;				// %CPU total 
-		float 	loadavg[3];				// 1,5,15 minutes load avgs  
+		float 	load_cpu;				// %CPU total
+		float 	loadavg[3];				// 1,5,15 minutes load avgs
 
-		unsigned int clk_tick;		// the  number  of  clock ticks per second.  
-		unsigned int boot_time;		// boot time in seconds since the Epoch 
+		unsigned int clk_tick;		// the  number  of  clock ticks per second.
+		unsigned int boot_time;		// boot time in seconds since the Epoch
 
 		int mem_total, mem_free;		// (Kb)
 		int swap_total, swap_free;		// in kB
-	
+
 		int mem_shared, mem_buffers, mem_cached; // Linux
 
 		// the following are pointers to matrices indexed by kind (above) and cpu
 		unsigned *cpu_times_vec;
 		unsigned *old_cpu_times_vec;
-		
+
 		// accessors for (old_)cpu_times_vec
 		unsigned &cpu_times(int cpu, int kind)
 		{ return cpu_times_vec[cpu * CPUTIMES + kind]; }
@@ -713,7 +713,7 @@ class Proc
 		unsigned long *per_cpu_times; // vector of num_cpus times
 		unsigned long *old_per_cpu_times; // vector of num_cpus times
 #endif
-		
+
 		// Solaris <sys/sysinfo.h> #defines CPU_xxx so we must avoid them
 		enum { CPUTIME_USER,
 #ifdef LINUX
@@ -727,7 +727,7 @@ class Proc
 			CPUTIMES };
 
 		//#define CPU_TIMES(cpu, kind) cpu_times_vec[cpu * CPUTIMES + kind]
-		
+
 
 		unsigned int 	current_gen;
 		int		maxSizeHistory;
@@ -754,41 +754,41 @@ class Procview : public Proc
 
 		void set_fields();
 		void set_fields_list(int fields[]);
-		void addField(char *name);	// interface 
-		void addField(int FIELD_ID,int where=-1);	// base interface 
+		void addField(char *name);	// interface
+		void addField(int FIELD_ID,int where=-1);	// base interface
 		void removeField(int FIELD_ID);
 		int	 findCol(int FIELD_ID);
-		void moveColumn(int col, int place); 
+		void moveColumn(int col, int place);
 		void deduce_fields();
-   		void fieldArrange();  
+   		void fieldArrange();
 		void update_customfield();
 		//
-		void setSortColumn(int col,bool r=false); 
+		void setSortColumn(int col,bool r=false);
 		void setTreeMode(bool b);
 		void saveCOMMANDFIELD();
-		
+
 		#ifndef GTK
 		Procinfo* getProcinfoByPID(int pid){ return procs.value(pid,NULL);};
 		#endif
 
 		QVector<Procinfo *> linear_procs;  // this is linear_proc_list for viewer
-		
+
 		#ifdef LINUX
 		QVector<Sockinfo *> linear_socks;  // Linux Testing
 		#endif
 
 		//QList<> tags_kernel;
-		
+
 		// root_procs contains processes without parent; normally only init, but
 		// we cannot rely on this (Solaris has several parentless processes).
 		// Also, if the view is restricted, all processes whose parent isn't in
 		// the table.
 		QVector<Procinfo *> root_procs; // table_root_procs; for viewer
 		QVector<Category *> cats;		// for table
-		
+
 		Category *sortcat;
 		Category *sortcat_linear;		// testing
-		int  sort_column;	// index of 
+		int  sort_column;	// index of
 		bool reversed;		// true if sorted backwards
 		static bool treeview;		// true if viewed in tree form
 		bool enable;		// tmp
@@ -797,13 +797,13 @@ class Procview : public Proc
 		enum fieldstates {USER = HIDDEN + 1, JOBS, MEM, SCHED,CUSTOM};
 		int viewproc;
 		int viewfields;
-		
-	
+
+
 		int idxF_CMD; ////Test
 		QStringList customfields;
 		static int custom_fields[64];
 		// lists of fields to be used for different views, terminated by -1:
-		static int mini_fields[]; 	//for mobile 
+		static int mini_fields[]; 	//for mobile
 		static int basic_fields[];
 		static int jobs_fields[];
 		static int mem_fields[];
@@ -819,7 +819,7 @@ class Procview : public Proc
 #endif
 		static float avg_factor;		// exponential factor for averaging
 		static const int cpu_avg_time = 30 * 1000;	// averaging time for WCPU (ms)
-	
+
 	private:
 		static Category *static_sortcat;	// kludge: to be used by compare
 };

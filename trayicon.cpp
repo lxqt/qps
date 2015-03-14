@@ -1,4 +1,4 @@
-/* 
+/*
  	really sucking codes.. sorry..
 	from psi ,  modified and cleand by fasthyun@magicn.com
 	trayicon_x11.cpp - X11 trayicon (for use with KDE and GNOME)
@@ -9,7 +9,7 @@
 
 #include	<QApplication>	// *****should be First!!!
 #include 	"global.h"		// Qps *qps;
-#include 	"trayicon.h" 
+#include 	"trayicon.h"
 
 #include	<QMouseEvent>
 #include	<QDesktopWidget>
@@ -34,7 +34,7 @@ extern bool flag_xcompmgr;
 #define SYSTEM_TRAY_CANCEL_MESSAGE  2
 
 
-TrayIcon::TrayIcon( const QPixmap &icon, const QString &tooltip, 
+TrayIcon::TrayIcon( const QPixmap &icon, const QString &tooltip,
 		QMenu *popup, QWidget *parent, const char *name )
 : QSystemTrayIcon(0 /* shoud be NULL!! */ ), pop(popup), pm(icon), tip(tooltip)
 {
@@ -42,7 +42,7 @@ TrayIcon::TrayIcon( const QPixmap &icon, const QString &tooltip,
 	flag_systray_ready=false;
 	inTray=false;
 	isWMDock = false;
-	
+
 	QSystemTrayIcon::setIcon(icon);
 	QSystemTrayIcon::setContextMenu(popup);
 
@@ -87,7 +87,7 @@ QPixmap TrayIcon::icon() const
 //----------------------------------------------------------------------------
 // TrayIcon
 //----------------------------------------------------------------------------
-// DRAFT Code (by fasthyun@magicn.com) 
+// DRAFT Code (by fasthyun@magicn.com)
 void TrayIcon::init_TrayIconFreeDesktop()
 {
 }
@@ -113,8 +113,8 @@ void TrayIcon::sysInstall()
 }
 
 
-bool TrayIcon::hasSysTray() 
-{ 
+bool TrayIcon::hasSysTray()
+{
 	return QSystemTrayIcon::isSystemTrayAvailable ();
 }
 
@@ -127,7 +127,7 @@ void TrayIcon::sysRemove()
 }
 
 /*!
-  update systray icon  
+  update systray icon
   called by qps::refresh()
 */
 void TrayIcon::setIcon( const QPixmap &pix )
@@ -145,7 +145,7 @@ void TrayIcon::setIcon( const QPixmap &pix )
 */
 void TrayIcon::setToolTip( const QString &tooltip )
 {
-	if(pop->isVisible()) 
+	if(pop->isVisible())
 		flag_show_tip=false;
 	if(flag_show_tip)
 		QToolTip::showText(tip_pos,tooltip);
@@ -194,7 +194,7 @@ void TrayIcon::mousePressEvent( QMouseEvent *e )
 
 void TrayIcon::mouseReleaseEvent( QMouseEvent *e )
 {
-//	printf("mouseReleaseEvent\n"); 
+//	printf("mouseReleaseEvent\n");
 	switch ( e->button() ) {
 		case Qt::RightButton:
 			if ( pop ) {
@@ -225,15 +225,15 @@ void TrayIcon::mouseDoubleClickEvent( QMouseEvent *e )
 // this will be called  before shown !!
 void TrayIcon::paintEvent(QPaintEvent *)
 {
-	/* 
+	/*
 	//printf("paintEvent()\n");
 	QPainter p(this);
 	int w,h;
 	if(isVisible()==false) // ** important to prevent X11 Error !!
 	{
 	//	printf("paintEvent(): hidden\n");
-		return; 
-	}	
+		return;
+	}
 	w=width()/2 ;
 	h=height()/2;
 	p.drawPixmap(w - pm.width()/2, h - pm.height()/2, pm); */
@@ -242,19 +242,19 @@ void TrayIcon::paintEvent(QPaintEvent *)
 //for session logout ?? never called
 void TrayIcon::closeEvent ( QCloseEvent * e )
 {
-	printf("TrayIcon::closeEvent()\n"); 
-	e->accept(); 
+	printf("TrayIcon::closeEvent()\n");
+	e->accept();
 }
 
 // called after size changed
-void TrayIcon::resizeEvent ( QResizeEvent *e ) 
+void TrayIcon::resizeEvent ( QResizeEvent *e )
 {
 	int w,h;
 	//printf("TrayIcon::resizeEvent(): w=%d,h=%d\n",width(),height());
 	//if(isVisible()==false) return;  // X11 error !!
 	///w=width();h=height();
-	if (isWMDock) 
-	{	
+	if (isWMDock)
+	{
 		///w=w-14;h=h-14;
 	}
 	//qps->setIconSize(w,h);

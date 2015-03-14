@@ -1,12 +1,13 @@
-// command.h				emacs, this is written in -*-c++-*-
+// command.h
+// this is written in -*-c++-*-
 //
 // This program is free software. See the file COPYING for details.
-// Author: Mattias Engdegård, 1997-1999
+// Author: Mattias EngdegÃ¥rd, 1997-1999
 
 #ifndef COMMAND_H
 #define COMMAND_H
 
-#ifndef USING_PCH 
+#ifndef USING_PCH
 #include <QDialog>
 #include <QLineEdit>
 #include <QCheckBox>
@@ -17,20 +18,20 @@
 
 #include "proc.h"
 #include "misc.h"
-		   
+
 int find_command(QString s);
 void add_default_command();
 
 class Command {
 	public:
-		Command(){};			
+		Command(){};
 		Command(QString n, QString cmd,bool toolbar=false);
-		~Command();			
+		~Command();
 		void call(Procinfo *p);
-		bool IsNeedProc(); 
+		bool IsNeedProc();
 		QString getString();
 		void putString(QString str);
-		
+
 		//CommandButton *toolbutton;
 
 		QString name;			// appears in the menu
@@ -77,7 +78,7 @@ protected slots:
     void event_cmd_modified();
     void event_toolbar_checked(bool);
 private:
-    QListView *listview; 
+    QListView *listview;
     QPushButton *new0,*add, *del, *edit,*button_ok;
     QLineEdit *name, *cmdline;
     QCheckBox *qcheck1;
@@ -98,7 +99,7 @@ public:
     void setModelData(QWidget *editor, QAbstractItemModel *model,
                       const QModelIndex &index) const;
     void updateEditorGeometry(QWidget *editor, const QStyleOptionViewItem &option, const QModelIndex &index) const;
-	
+
  	void paint(QPainter *painter,
                              const QStyleOptionViewItem &option,
                              const QModelIndex &index) const;
@@ -106,7 +107,7 @@ public:
 
 #include <QStandardItemModel>
 //class ListModel : public QAbstractItemModel
-class ListModel : public QAbstractTableModel 
+class ListModel : public QAbstractTableModel
 //class ListModel : public QStandardItemModel
 {
     Q_OBJECT
@@ -115,7 +116,7 @@ public:
     ~ListModel(){};
     QModelIndex index(int row, int column, const QModelIndex &parent=QModelIndex())const; //pure
     QModelIndex parent(const QModelIndex &child) const; //pure virtual
-    int rowCount(const QModelIndex &parent) const; 
+    int rowCount(const QModelIndex &parent) const;
     int columnCount(const QModelIndex &parent) const{return 2;};
     QVariant data(const QModelIndex &index, int role) const;
 	QVariant headerData ( int section, Qt::Orientation o, int role ) const;
@@ -183,9 +184,9 @@ class watchCond
 	QString procname;
 	QString command;
 	QString message;
-	
+
 	watchCond()
-	{ 
+	{
 		enable=0;
 	//	procname[0]=0;		command[0]=0;		message[0]=0;
 	}

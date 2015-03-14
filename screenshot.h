@@ -27,7 +27,7 @@ protected:
 private slots:
 private:
 	QPoint press_pos;
-}; 
+};
 
 class ShotArea : public QFrame
 {
@@ -36,7 +36,7 @@ public:
     ShotArea();
 protected:
 //    void resizeEvent(QResizeEvent *event);
-	
+
 	virtual void resizeEvent(QResizeEvent *e);
 	virtual void paintEvent ( QPaintEvent * event );
 	void mouseMoveEvent (QMouseEvent * event );
@@ -44,7 +44,7 @@ protected:
 private slots:
 private:
 	QPoint press_pos;
-}; 
+};
 
 /*
 class SizeGrip : public QWidget
@@ -59,7 +59,7 @@ protected:
 private slots:
 private:
 	QPoint press_pos;
-}; 
+};
 */
 
 
@@ -69,7 +69,7 @@ class Screenshot : public QWidget
 
 public:
     Screenshot(QWidget *p=0);
-	
+
 
 protected:
     void resizeEvent(QResizeEvent *event);

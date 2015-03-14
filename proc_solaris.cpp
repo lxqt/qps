@@ -1,8 +1,8 @@
 // proc.cpp for Solaris (SunOS)
 //
 // This program is free software. See the file COPYING for details.
-// Author: Mattias Engdegård, 1997-1999
-//		   José Luis Sánchez, 2005
+// Author: Mattias EngdegÃ¥rd, 1997-1999
+//         JosÃ© Luis SÃ¡nchez, 2005
 
 #include <stdio.h>
 #include <sys/types.h>
@@ -46,7 +46,7 @@ If for some reason, you want to know that Sun forte CC (c++) compiler is being u
 Whereas for forte cc (regular C), you can use
 
 #if defined(__SUNPRO_C)
- 
+
  */
 #include "proc_common.cpp"
 
@@ -55,8 +55,8 @@ char procdir[128] = "/proc";
 int page_k_shift; //
 
 extern int		flag_thread_ok;
-extern bool		flag_show_thread;	
-extern bool		flag_devel;	
+extern bool		flag_show_thread;
+extern bool		flag_devel;
 
 kstat_ctl_t *Proc::kc = 0;
 
@@ -64,12 +64,12 @@ int proc_PID_fd(const int pid)
 {
 	char path[128];
 	int numfd;
-	
+
 	sprintf(path, "/proc/%d/fd", pid);
 
 	QDir qdir(path);
 	numfd = qdir.count();
-	
+
 	///num_opened_files += numfd;
 	//	  printf("PID %d: %d opened files\n", pid, numfd);
 	return TRUE;
@@ -79,10 +79,10 @@ int proc_PID_fd(const int pid)
 
 Procinfo::Procinfo(Proc *system_proc,int process_id,int thread_id) : refcnt(1)
 {
-	proc=system_proc; // 
+	proc=system_proc; //
 	first_run=true;
 	clone=false;
-	
+
 	if(thread_id<0)
 	{
 		pid=process_id;
@@ -93,15 +93,15 @@ Procinfo::Procinfo(Proc *system_proc,int process_id,int thread_id) : refcnt(1)
 		pid=thread_id;
 		tgid=process_id;
 	}
-	
 
-	detail = NULL;	  
+
+	detail = NULL;
  ///   children = 0;
 
 	envblock = 0;
 //	  if( readproc(proc_pid) < 0 ) pid = -1;		// invalidate object, will be deleted
 
-	
+
 	ppid=0;   // no parent important!!
 	selected = false;
 	hidekids = false;
@@ -109,7 +109,7 @@ Procinfo::Procinfo(Proc *system_proc,int process_id,int thread_id) : refcnt(1)
 
 	table_child_seq=-1;
 	child_seq_prev=-1;
-	
+
 	lastchild=0;
 	generation=-1;
 	detail = 0;
@@ -122,7 +122,7 @@ Procinfo::Procinfo(Proc *system_proc,int process_id,int thread_id) : refcnt(1)
 	//stack=0;
 	//share=0;
 	mem=0;
-	
+
 	io_read_prev=0;
 	io_write_prev=0;
 
@@ -149,10 +149,10 @@ Procinfo::~Procinfo()
 		detail->process_gone();
 		detail = 0;
 	}
-	
+
 	/*
 	if( envblock )
-		free(envblock); 
+		free(envblock);
 	if( maps )
 	{
 	 //   maps->purge();
@@ -178,7 +178,7 @@ void Proc::init_static()
 			exit(1);
 		}
 	}
-	
+
 	int pagesize=sysconf(_SC_PAGESIZE); // same getpagesize()  in <unistd.h>
 	printf("pagesize=%d, %d\n ",getpagesize(), sysconf(_SC_PAGESIZE)); //4027
 
@@ -198,9 +198,9 @@ int read_file(char *name, void *buf, int max)
 	return r;
 }
 
-// SOLARIS 
-//	Description : read /proc/1234/task/*  tasks(thread,LWP)  
-//			  add to Proc::procs[]	
+// SOLARIS
+//	Description : read /proc/1234/task/*  tasks(thread,LWP)
+//			  add to Proc::procs[]
 int Proc::read_pid_tasks(int pid)
 {
 	char	path[256];
@@ -223,7 +223,7 @@ int Proc::read_pid_tasks(int pid)
 		thread_pid = atoi(e->d_name); // only number !!
 
 		if (pid==thread_pid) continue; // skip
-		
+
 		/*
 			Procinfo *pi = new Procinfo(this,pid, thread_id);
 
@@ -254,7 +254,7 @@ int Proc::read_pid_tasks(int pid)
 		thread_n++;
 	}
 	///printf("\n");
-	closedir(d);				
+	closedir(d);
 	return thread_n;
 }
 
@@ -286,7 +286,7 @@ static void make_printable(char *s)
 	{
 		// New process
 		p->wcpu = p->pcpu;	// just a start
-	} 
+	}
 } */
 
 
@@ -298,7 +298,7 @@ int Procinfo::readproc()
 //	Procinfo:pid;
 	proc_PID_fd(pid);	// check!!
 	sprintf(path, "%s/%d/psinfo", procdir, pid);
-	
+
 	psinfo_t psi;
 	if( read_file(path, (void *)&psi, sizeof(psi)) < (int)sizeof(psi) )
 		return -1;
@@ -307,10 +307,10 @@ int Procinfo::readproc()
 	prusage_t pru;
 	if( read_file(path, (void *)&pru, sizeof(pru)) < (int)sizeof(pru) )
 		return -1;
-	
+
 	if(first_run)
 	{
-		
+
 		first_run=false;
 	}
 	minflt = pru.pr_minf;
@@ -323,38 +323,38 @@ int Procinfo::readproc()
 
 //	  make_printable(psi.pr_psargs);
 	cmdline =	psi.pr_psargs;	  //ok
-	command =	psi.pr_fname;	
-   
+	command =	psi.pr_fname;
+
 	ppid =		psi.pr_ppid; // ok
 	pgrp =		psi.pr_pgid; // ok
 	session =	psi.pr_sid;   // ok
 	tty =		psi.pr_ttydev;	// ok type?
-   
+
 	nthreads =	psi.pr_nlwp; // num of threads
 
 
-	//------- no checked 
+	//------- no checked
 	const int ns_ticks = 1000000000 /HZ; // HZ=100, clk_tick
-	//printf("ns_ticks=%d\n",ns_ticks);// 10000000 
+	//printf("ns_ticks=%d\n",ns_ticks);// 10000000
 //	  starttime = (psi.pr_start.tv_sec) * HZ   + psi.pr_start.tv_nsec / ns_ticks;
 	starttime = psi.pr_start.tv_sec; // discard tv_nsec
 	env_ofs =	psi.pr_envp;
 	addr_bits = psi.pr_dmodel == PR_MODEL_ILP32 ? 32 : 64;
 
 	gettimeofday(&tv, 0); // current_time, sys/time , tv.tv_sec, tv.tv_usec
- 
-	// god dam!!!! if that dont reel in¿ the ladies then nothing will!!!! 
- 
+
+	// god dam!!!! if that dont reel in¿ the ladies then nothing will!!!!
+
 	// No
-	state = psi.pr_lwp.pr_sname; // no 
+	state = psi.pr_lwp.pr_sname; // no
 	command = (state == 'Z') ? "<zombie>" : psi.pr_fname;
 	flags =		psi.pr_flag;	// no
-   
-	// No 
+
+	// No
 	utime = psi.pr_time.tv_sec * HZ + psi.pr_time.tv_nsec / ns_ticks; //??
 	cutime = psi.pr_ctime.tv_sec * HZ + psi.pr_ctime.tv_nsec / ns_ticks;
-   
-	
+
+
 //	printf("[%d] utime=%d\n",pid,utime);
 
 	int dcpu;
@@ -368,7 +368,7 @@ int Procinfo::readproc()
 		dcpu = utime - old_utime;
 
 		// calculate pcpu (and wcpu for Linux) from previous procinfo
-		int dt = (tv.tv_usec - old_tv.tv_usec) / (1000000 / HZ) 
+		int dt = (tv.tv_usec - old_tv.tv_usec) / (1000000 / HZ)
 			+ (tv.tv_sec - old_tv.tv_sec) * HZ;
 
 		if(dt==0) pcpu=0;
@@ -384,12 +384,12 @@ int Procinfo::readproc()
 	nice = psi.pr_lwp.pr_nice;
 	if( Qps::normalize_nice ) //???
 		nice -= NZERO;
-	
+
 	wchan = psi.pr_lwp.pr_wchan;
 
 	//MEM
 	size = psi.pr_size;
-	resident = psi.pr_rssize; 
+	resident = psi.pr_rssize;
 	which_cpu = psi.pr_lwp.pr_onpro;
 
 	// pr_pctcpu and pr_pctmem are scaled so that 1.0 is stored as 0x8000.
@@ -406,7 +406,7 @@ int Procinfo::readproc()
 	return 2; // this process consumed jiffi of cpu
 }
 
-// thread	Solaris 10 
+// thread	Solaris 10
 int Procinfo::readproc(int proc_pid, int thread)
 {
 	char ppath[256];
@@ -415,8 +415,8 @@ int Procinfo::readproc(int proc_pid, int thread)
 	pid = proc_pid;
 
 	proc_PID_fd(pid);
-	
-	if (!flag_thread_ok || !flag_show_thread) 
+
+	if (!flag_thread_ok || !flag_show_thread)
 	{
 		return readproc();
 	}
@@ -424,7 +424,7 @@ int Procinfo::readproc(int proc_pid, int thread)
 	//readproc();
 
 	pid = thread; //*****
-	
+
 	sprintf(ppath, "%s/%d/lwp/%d/lwpsinfo", procdir, proc_pid, thread);
 	sprintf(upath, "%s/%d/lwp/%d/lwpusage", procdir, proc_pid, thread);
 
@@ -462,7 +462,7 @@ int Procinfo::readproc(int proc_pid, int thread)
 	} else {
 		wcpu = 0.0;
 	}
-	gettimeofday(&tv, 0); // 
+	gettimeofday(&tv, 0); //
 	rtprio = -1;		// ditto
 	policy_name[0] = psi.pr_clname[0];
 	policy_name[1] = psi.pr_clname[1];
@@ -510,21 +510,21 @@ int Proc::read_system()
 	if(first_run)
 	{
 		flag_thread_ok = true;
-	
+
 		// memory info: this is easy - just use sysconf
 		mem_total = sysconf(_SC_PHYS_PAGES) << page_k_shift;
 		mem_free = sysconf(_SC_AVPHYS_PAGES) << page_k_shift;
-	 
+
 		// Max SMP 1024 cpus . COMMON
 		int max_cpus=1024;
 		// cpu_times_vec = (unsigned *)malloc(sizeof(unsigned) *  num_cpus * CPUTIMES);
 		cpu_times_vec = new unsigned[CPUTIMES * max_cpus];
 		old_cpu_times_vec = new unsigned[CPUTIMES * max_cpus];
-		
+
 		//init
 		for(int cpu = 0; cpu < max_cpus ; cpu++)
 			for(int i = 0; i < CPUTIMES; i++)
-			{	
+			{
 				cpu_times(cpu, i)=0;
 				old_cpu_times(cpu, i) =0;
 			}
@@ -537,7 +537,7 @@ int Proc::read_system()
 		cpu_times_vec = (unsigned *)malloc(sizeof(unsigned) *  num_cpus * CPUTIMES);
 	}
 		old_num_cpus = num_cpus;
- */	
+ */
 		first_run=0;
 	}
 
@@ -565,7 +565,7 @@ int Proc::read_system()
 	swap_free <<= page_k_shift;
 	free(st);
 
-	 
+
 	// cpu states: are stored as kstats named "cpu_statN", where N is the
 	// cpu number. Unfortunately, the cpu numbers are not guessable so we
 	// sweep the kstat chain for all of them, assuming (foolishly?)
@@ -590,41 +590,41 @@ int Proc::read_system()
 			cpu_times(cpu, CPUTIME_SYSTEM) = cs->cpu_sysinfo.cpu[CPU_KERNEL];
 			cpu_times(cpu, CPUTIME_WAIT) = cs->cpu_sysinfo.cpu[CPU_WAIT];
 			cpu_times(cpu, CPUTIME_IDLE) = cs->cpu_sysinfo.cpu[CPU_IDLE];
-			
+
 			cpu++;
 		}
 	}
 	Proc::num_cpus=cpu;
-	
+
 	// exit(1);
 	dt_total=0;
 	dt_used=0;
-	
+
 	// dt_used= user + system;
 	// dt_total= user + system + nice + idle
 	// dt_used+=cpu_times(cpu, CPUTIME_USER) + cpu_times(cpu, CPUTIME_SYSTEM);
 	// dt_total=dt_used
-			
+
 	cpu_times(num_cpus, CPUTIME_USER)=0;
 	cpu_times(num_cpus, CPUTIME_SYSTEM)=0;
 	cpu_times(num_cpus, CPUTIME_WAIT)=0;
 	cpu_times(num_cpus, CPUTIME_IDLE)=0;
 	for(int cpu = 0; cpu < num_cpus ; cpu++) {
-			cpu_times(num_cpus, CPUTIME_USER)+= cpu_times(cpu, CPUTIME_USER); 
-			cpu_times(num_cpus, CPUTIME_SYSTEM)+= cpu_times(cpu, CPUTIME_SYSTEM); 
-			cpu_times(num_cpus, CPUTIME_WAIT)+= cpu_times(cpu, CPUTIME_WAIT); 
-			cpu_times(num_cpus, CPUTIME_IDLE)+= cpu_times(cpu, CPUTIME_IDLE); 
+			cpu_times(num_cpus, CPUTIME_USER)+= cpu_times(cpu, CPUTIME_USER);
+			cpu_times(num_cpus, CPUTIME_SYSTEM)+= cpu_times(cpu, CPUTIME_SYSTEM);
+			cpu_times(num_cpus, CPUTIME_WAIT)+= cpu_times(cpu, CPUTIME_WAIT);
+			cpu_times(num_cpus, CPUTIME_IDLE)+= cpu_times(cpu, CPUTIME_IDLE);
 	}
-	
+
 	cpu=num_cpus;
 	dt_used+=cpu_times(cpu, CPUTIME_USER) + cpu_times(cpu, CPUTIME_SYSTEM); // Kernel
 	dt_total+= cpu_times(cpu, CPUTIME_USER) + cpu_times(cpu, CPUTIME_SYSTEM) +
 				cpu_times(cpu, CPUTIME_WAIT) +
 				cpu_times(cpu, CPUTIME_IDLE);
-	
-	load_cpu=(float)Proc::dt_used/Proc::dt_total;  
-		
-	// Hotplugging Detection : save total_cpu 
+
+	load_cpu=(float)Proc::dt_used/Proc::dt_total;
+
+	// Hotplugging Detection : save total_cpu
 	if(Proc::num_cpus != Proc::old_num_cpus) {
 		//	for(int i = 0; i < CPUTIMES; i++)
 		//		cpu_times(num_cpus, i) = cpu_times(Proc::old_num_cpus, i);
@@ -770,8 +770,8 @@ bool Procinfo::read_environ()
 {
 	int fd;
 	char file[128];
-	
-	return 0; 
+
+	return 0;
 
 	sprintf(file, "/proc/%d/as", pid);
 	if( (fd = open(file, O_RDONLY)) < 0 )
@@ -887,7 +887,7 @@ bool Procinfo::read_maps()
 	if( !f )
 		return FALSE;
 
-  
+
 	prmap_t pm;
 	while( fread(&pm, sizeof(pm), 1, f) == 1 )
 	{
@@ -965,7 +965,7 @@ QString Cat_dir::string(Procinfo *p)
 			{
 				p->*cache = "(deleted)";
 			}
-			else 
+			else
 				p->*cache = buf;
 		}
 	}
@@ -1084,7 +1084,7 @@ QString Cat_tty::string(Procinfo *p)
 
 Proc::Proc()
 {
-	
+
 	categories.insert(F_PID,  new Cat_int("PID", "Process ID", 6, &Procinfo::pid));
 	categories.insert(F_PPID, new Cat_int("PPID", "Parent process ID", 6, &Procinfo::ppid));
 	categories.insert(F_PGID, new Cat_int("PGID", "Process group ID", 6, &Procinfo::pgrp));
@@ -1104,10 +1104,10 @@ Proc::Proc()
 	categories.insert(F_ARCH, new Cat_int("ARCH", "Architecture (address bits)", 2, &Procinfo::addr_bits));
 	categories.insert(F_MAJFLT, new Cat_uintl("MAJFLT", "Number of major faults (disk access)", 8, &Procinfo::majflt));
 	categories.insert(F_MINFLT, new Cat_uintl("MINFLT", "Number of minor faults (no disk access)", 8, &Procinfo::minflt));
-	
+
 	//Memory
 	categories.insert(F_SIZE, new Cat_memory("SIZE",   "Virtual image size of process in Kbytes", 8, &Procinfo::size));
-	categories.insert(F_SWAP, new Cat_swap("SWAP",	  "Kbytes on swap device"));  
+	categories.insert(F_SWAP, new Cat_swap("SWAP",	  "Kbytes on swap device"));
 	categories.insert(F_RSS,  new Cat_memory("RSS",		"Resident set size; Kbytes of program in memory", 8, &Procinfo::resident));
 
 
@@ -1125,10 +1125,10 @@ Proc::Proc()
 	categories.insert(F_CWD,  new Cat_dir("CWD", "Current working directory", "cwd", &Procinfo::cwd));
 	categories.insert(F_ROOT, new Cat_dir("ROOT", "Root directory of process", "root", &Procinfo::root));
 	categories.insert(F_CMDLINE, new Cat_cmdline("COMMAND_LINE","Command line that started the process"));
-	
+
 	commonPostInit();
 
-	Proc::init_static(); 
+	Proc::init_static();
 }
 
 
@@ -1143,46 +1143,46 @@ void Proc::read_proc_all()
 	{
 		if( e->d_name[0] >= '0' && e->d_name[0] <= '9') // good idea!
 		{
-			
+
 		/* if(flag_thread_ok && flag_show_thread)
 				read_pid_tasks(pid);
 
 			*/
-		
+
 			Procinfo *pi;
 			int pid;
-			
-			pid=atoi(e->d_name);	
-			
-			pi=procs.value(pid,NULL);	// if not found pid then, return Null 
-			
+
+			pid=atoi(e->d_name);
+
+			pi=procs.value(pid,NULL);	// if not found pid then, return Null
+
 			if (pi==NULL)	// new process
 			{
-				pi = new Procinfo(this,pid);	 
+				pi = new Procinfo(this,pid);
 				procs.insert(pid,pi);
 			}
 			int ret=pi->readproc();
 			if(ret>0)
 			{
 				pi->generation = current_gen; // this process is alive
-				
-				//if(flag_show_thread and flag_thread_ok ) 
-				//	read_pid_tasks(pid);   //for threads 
-			
+
+				//if(flag_show_thread and flag_thread_ok )
+				//	read_pid_tasks(pid);   //for threads
+
 				// add to History /// COMMONZ
 				if(ret==2)
 				{
-					Procinfo *p=new Procinfo(*pi); // copy 
+					Procinfo *p=new Procinfo(*pi); // copy
 					p->clone=true;
 					hprocs->insert(pid,p);
 				}
 			}
 			else
 			{
-				// already gone.  /proc/PID dead! 
-				// later remove this process ! not yet 
+				// already gone.  /proc/PID dead!
+				// later remove this process ! not yet
 			}
-		}		 
+		}
 	}
 	closedir(d);
 
@@ -1199,14 +1199,14 @@ int Procview::basic_fields[] = {F_PID, F_TTY, F_USER, F_NICE,
 	F_SIZE, F_RSS,
 	F_STAT, F_CPU, F_START, F_TIME,
 	F_CMDLINE, F_END};
-int Procview::jobs_fields[] = {F_PID, F_PPID, F_PGID, F_SID, 
+int Procview::jobs_fields[] = {F_PID, F_PPID, F_PGID, F_SID,
 	F_TTY,
 	F_STAT, F_UID, F_TIME, F_CMDLINE, F_END};
 
-int Procview::mem_fields[] = {F_PID, 
+int Procview::mem_fields[] = {F_PID,
 	F_TTY, F_MAJFLT, F_MINFLT,
 	F_SIZE, F_SWAP, F_RSS,
-	F_CMDLINE, 
+	F_CMDLINE,
 	F_END};
 
 

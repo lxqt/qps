@@ -9,9 +9,9 @@ class PstableModel:public HtableModel
 public:
     PstableModel(QObject *parent,Procview *procview);
     ~PstableModel(){};
-    virtual QModelIndex index(int row, int column, const QModelIndex &parent=QModelIndex())const; 
+    virtual QModelIndex index(int row, int column, const QModelIndex &parent=QModelIndex())const;
 	virtual QModelIndex parent(const QModelIndex &child) const; //pure virtual
-    virtual int rowCount(const QModelIndex &parent) const; 
+    virtual int rowCount(const QModelIndex &parent) const;
 	virtual int columnCount(const QModelIndex &parent) const;
   	virtual QVariant data(const QModelIndex &index, int role) const;
 	virtual bool hasChildren ( const QModelIndex & parent = QModelIndex()) const;
@@ -35,13 +35,13 @@ public:
 
 	// called by super
 	bool hasSelection(){ return selectionModel()->hasSelection(); };
-	
+
 	virtual bool isSelected(int row);  // hmm
 	virtual void setSelected(int row, bool sel);
 	virtual int totalRow(); //DEL?
-		
+
  public slots:
-    void selection_update(const QModelIndex &); // hmm 
+    void selection_update(const QModelIndex &); // hmm
 	void setSortColumn(int col);
 
 signals:

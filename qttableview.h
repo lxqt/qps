@@ -16,7 +16,7 @@
 #define QTTABLEVIEW_H
 
 
-#ifndef USING_PCH 
+#ifndef USING_PCH
 #include <QScrollBar>
 #include <QAbstractScrollArea>
 #include <QPainter>
@@ -25,7 +25,7 @@
 #endif
 
 class QScrollBar;
-class QtTableView : public QAbstractScrollArea 
+class QtTableView : public QAbstractScrollArea
 {
     Q_OBJECT
 public:
@@ -37,7 +37,7 @@ public:
     void	coverCornerSquare( bool );
 	void 	clearCache(){ }
 	void	repaintChanged();
-	virtual bool isCellChanged(int r,int c){ return true; }; 
+	virtual bool isCellChanged(int r,int c){ return true; };
     virtual void eraseRight(QPainter *,QRect &r){return ;}
 	virtual void checkProfile(){};
 	QSize		tmp_size; // testing.

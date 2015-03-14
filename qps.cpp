@@ -1,7 +1,7 @@
 // qps -- Qt-based visual process status monitor
 // This program is free software. See the file COPYING for details.
-// Author:  Mattias Engdeg?rd, 1997-1999
-//          fasthyun@magicn.com 2005-2012
+// Author:  Mattias Engdegård,     1997-1999
+//          fasthyun@magicn.com    2005-2012
 //          daehyun.yang@gmail.com 2015-
 
 #define QPS_VERSION "1.10.16"
@@ -13,15 +13,15 @@
  *   1. F_CMDLINE should be rightmost field
  *   2. F_PROCESSNAME shoud be leftmost field  and  NEVER removed!
  *
- * 
+ *
  *
  */
 // . Memory Hole or Qt's string allocate bug?
 // . clipboard copy [CMDLINE,PID,USERNAME...]
 // . [klog] table cache.
 // . save sort of tree, linear
-// . watchdog showmsg substitude 
-// . history system  
+// . watchdog showmsg substitude
+// . history system
 // . cmd [w] analsys: [IDLE] [WHAT]
 // . ExecWindow - [running] finish.
 // . UNIX Domain SOCKET
@@ -29,7 +29,7 @@
 // . P_MEM  -> P_%MEM or P_PMEM
 
 
-#include "./icon/icon.xpm" 
+#include "./icon/icon.xpm"
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -37,7 +37,7 @@
 #include <sys/types.h>
 #include <sys/time.h>
 #include <sys/resource.h>
-#include <sys/utsname.h>    // uname 
+#include <sys/utsname.h>    // uname
 #include <signal.h>
 #include <errno.h>
 #include <sched.h>
@@ -56,18 +56,18 @@
 #include <QShortcut>
 #include <QMenuBar>
 #include <QFont>
-#include <QFontComboBox> 
+#include <QFontComboBox>
 #include <QToolTip>
-#include <QTabWidget> 
+#include <QTabWidget>
 #include <QApplication>
 #include <QCheckBox>
 #include <QToolButton>
 #include <QMessageBox>
-#include <QSessionManager> 
+#include <QSessionManager>
 #include <QTextEdit>
 #include <QSystemTrayIcon>
 #include <QSplitter>
-#endif 
+#endif
 
 #include <QDockWidget>
 #include <QSplitter>
@@ -80,9 +80,9 @@ int 	flag_thread_ok=true;		    // we presume a kernel 2.6.x using NPTL
 bool 	flag_session_start=false;
 bool 	flag_start_mini=false;		// Need for Xorg.Session
 bool	flag_refresh=true;			// DEL
-bool	flag_xcompmgr=false;		// DEL test.compiz.. 
+bool	flag_xcompmgr=false;		// DEL test.compiz..
 bool 	flag_devel= false ;
-bool	flag_schedstat=false;		
+bool	flag_schedstat=false;
 bool 	flag_smallscreen=false;
 bool 	flag_firstRun=true;			// test
 
@@ -93,7 +93,7 @@ TFrame 			*infobox=NULL;		    // testing
 //DEL Screenshot 		*screenshot=NULL;
 QFontComboBox 	*font_cb=NULL;
 WatchdogDialog 	*watchdogDialog=NULL;
-		
+
 ///PDisplay *pdisplay;
 
 QList<Procview *> proclist;
@@ -101,24 +101,24 @@ QList<Procview *> proclist;
 #include "trayicon.h"
 TrayIcon *trayicon=NULL;
 
-// for Non-ASCII Languages (CJK:chinese,japanese,korean, arabic ...) 
-#include <QTextCodec> 
+// for Non-ASCII Languages (CJK:chinese,japanese,korean, arabic ...)
+#include <QTextCodec>
 QTextCodec * codec = NULL;
 #define UniString(str)  str //codec->toUnicode(str)
 /* ------------------------ END global variables -------------------------- */
 
 // default values of settings, overridden by $HOME/.qpsrc if present
-bool 	Qps::flag_show= true ;	 //window state of last run : mini(iconic) or normal window 
-bool 	Qps::flag_exit= true ;		
-bool	Qps::flag_qps_hide=true;			// TEST	
+bool 	Qps::flag_show= true ;	 //window state of last run : mini(iconic) or normal window
+bool 	Qps::flag_exit= true ;
+bool	Qps::flag_qps_hide=true;			// TEST
 bool 	Qps::flag_useTabView=false;
 bool 	Qps::show_file_path = false;
 bool 	Qps::show_cmd_path = true;
 bool 	Qps::show_infobar = true;
 bool 	Qps::show_ctrlbar = true;
-bool 	Qps::show_cpu_bar = true; 
-bool 	Qps::show_load_graph = true; //DEL 
-bool 	Qps::show_statusbar = true; 
+bool 	Qps::show_cpu_bar = true;
+bool 	Qps::show_load_graph = true; //DEL
+bool 	Qps::show_statusbar = true;
 bool 	Qps::load_in_icon = true;
 bool 	Qps::auto_save_options = true;
 #ifdef LINUX
@@ -150,10 +150,10 @@ Qps::Qps()
 	default_icon_set = false;
 
 	setIconSize(24,24); // Important!!
-//	setMouseTracking(true); // no need?	
-	
+//	setMouseTracking(true); // no need?
+
 	if(flag_devel)
-	{	
+	{
 		thread_main=thread(); //Test
 		printf("qps thread =%X , qApp thread =%X\n",thread(),QApplication::instance()->thread());
 	}
@@ -174,15 +174,15 @@ Qps::Qps()
 	//m_headpopup->addAction("Select Field", this, SLOT(menu_custom()) );
 
 	m_command = new QMenu("Command",this);	// filled in later
-	
+
 	QAction *act;
 
-	m_view = new QMenu("View",this); 
+	m_view = new QMenu("View",this);
 	act=m_view->addAction("Process"); //act->setData(Procview::CUSTOM);
 	act=m_view->addAction("Log"); //act->setData(Procview::CUSTOM);
 	//m_view->hide();
 
-	m_field = new QMenu("Field",this); 
+	m_field = new QMenu("Field",this);
 	act=m_field->addAction("Custom Fields"); act->setData(Procview::CUSTOM);
 	act=m_field->addAction("Basic Fields ");	act->setData(Procview::USER);
 	act=m_field->addAction("Jobs Fields ");	act->setData(Procview::JOBS);
@@ -195,10 +195,10 @@ Qps::Qps()
 //	act=m_field->addAction(QtIconLoader::icon("edit-find-replace"),"Save Current as Custom Fields",this, SLOT(menu_custom()));
 	act=m_field->addAction(QtIconLoader::icon("edit-find-replace"),"Select Custom Fields...",this, SLOT(menu_custom()));
 	act->setData(MENU_CUSTOM);
-	
+
 	connect(m_field, SIGNAL(triggered(QAction *)),this, SLOT(view_menu(QAction *)));
 	connect(m_field, SIGNAL(aboutToShow ()), SLOT(update_menu_status()));
-	
+
 	///connect(m_view, SIGNAL(triggered(QAction *)),this, SLOT(view_menu(QAction *)));
 	///connect(m_view, SIGNAL(aboutToShow ()), SLOT(update_menu_status()));
 
@@ -216,7 +216,7 @@ Qps::Qps()
 	act=m_options->addAction("", this, SLOT(menu_toggle_cumul()));
  	act->setData(QVariant(MENU_CUMUL));
 
-	m_options->addSeparator(); 
+	m_options->addSeparator();
 	//m_options->addAction(QtIconLoader::icon("gtk-preferences" /* gnome-settings */),"Preferences...", this, SLOT(menu_prefs())); //MENU_PREFS
 	m_options->addAction(QIcon(":icon/preferences-system.png" ),"Preferences...", this, SLOT(menu_prefs())); //MENU_PREFS
 
@@ -227,7 +227,7 @@ Qps::Qps()
 	//m_help->addAction("FAQ", this, SLOT(license()));
 	//m_help->addAction("About", this, SLOT(about())); //gtk-help,help
 	m_help->addAction(QtIconLoader::icon("help-about"),"Feedback", this, SLOT(about()));
-	
+
 	//menu = new QMenuBar(this);
 	menubar = new QMenuBar;
 	menubar->addMenu(m_command);
@@ -236,7 +236,7 @@ Qps::Qps()
 	menubar->addMenu(m_options);
 	menubar->addSeparator();
 	menubar->addMenu(m_help);
-		
+
 	ctrlbar = new ControlBar(this);
 	//controlbar=ctrlbar;
 
@@ -244,9 +244,9 @@ Qps::Qps()
 	connect(ctrlbar, SIGNAL(viewChange(QAction*) ), SLOT(view_menu(QAction*)));	//?????
 
 	context_col = -1;
-	
+
 	procview = new Procview(); // refresh() only not rebuild()
-	///procview = new Procview("localhost"); // refresh() only not rebuild() 
+	///procview = new Procview("localhost"); // refresh() only not rebuild()
 	///procview->refresh(); // TODO
 	///proclist.append(procview);
 	///procview->start(); // thread start
@@ -260,9 +260,9 @@ Qps::Qps()
 	infobar=display->addSystem(procview);
 //.	infobar = new Infobar(this,procview); // graph_bar
 //	infobar = new Infobar(procview); // graph_bar
-	statusBar= new StatusBar(this); 	
-	
-	if(!read_settings()) 
+	statusBar= new StatusBar(this);
+
+	if(!read_settings())
 	{
 		//printf("default value\n");
 		set_update_period(1300);	// default
@@ -276,35 +276,35 @@ Qps::Qps()
 	QShortcut *c1=new QShortcut ( Qt::CTRL + Qt::Key_Q, this, SLOT(save_quit()) );
 	QShortcut *c3=new QShortcut ( Qt::CTRL + Qt::Key_Space, ctrlbar->pauseButton, SLOT(click()) );
 	QShortcut *c2=new QShortcut ( Qt::CTRL + Qt::Key_L, pstable, SLOT(repaintAll()) );
-	
+
 	// MOVETO : pstable better? hmmm...
 	// where is leftClick?
 	connect(pstable, SIGNAL(doubleClicked(int)), SLOT(open_details(int)));
 	connect(pstable, SIGNAL(rightClicked(QPoint)), this, SLOT(show_popup_menu(QPoint)));
-	connect(pstable->header(), SIGNAL(rightClicked(QPoint, int)),this, SLOT(context_heading_menu(QPoint, int)));	
+	connect(pstable->header(), SIGNAL(rightClicked(QPoint, int)),this, SLOT(context_heading_menu(QPoint, int)));
 //	connect(netable, SIGNAL(rightClicked(QPoint)), this, SLOT(context_row_menu(QPoint)));
 
-	
+
 	selection_items_enabled = true; // ????
 	update_load_time = 0;
 	//// update_menu_status();
-	
-	
+
+
 	QVBoxLayout *vlayout = new QVBoxLayout;
 	vlayout->setMargin(0);
 	if(flag_useTabView)
 		vlayout->setSpacing(0);
 	else vlayout->setSpacing(1);
-	
-	
+
+
 	//vlayout->addWidget(menu);
 	vlayout->setMenuBar(menubar);
 	vlayout->addWidget( display);
 	//vlayout->addWidget( infobar);
 	vlayout->addWidget( ctrlbar);
-	
+
 	/// vlayout->addSpacing(5);
-	
+
 	//if(flag_devel){
 	if(0){
 		if(0){
@@ -323,15 +323,15 @@ Qps::Qps()
 		}
 	}
 
-	logbox=new QTextEdit(this);	
+	logbox=new QTextEdit(this);
 	logbox->setReadOnly(true);
-	
+
 	if(0) //if(flag_smallscreen==false)
 	{
 		//
 	}
-	else 
-	{	
+	else
+	{
 		vlayout->addWidget(pstable);
 		vlayout->addWidget(logbox);
 		logbox->hide();
@@ -339,14 +339,14 @@ Qps::Qps()
 
 	vlayout->addWidget(statusBar);
 	setLayout(vlayout);
-	
+
 	infobox	=new TFrame(this);
 //	setAttribute(Qt::WA_ShowWithoutActivating);
 	if(update_period != eternity)
 		Qps::update_timer();	//startTimer(update_period);
-///	setFocusPolicy (Qt::WheelFocus); 
-	
-	bar_visibility(); // need 
+///	setFocusPolicy (Qt::WheelFocus);
+
+	bar_visibility(); // need
 
 	// testing
 	popupx = new QMenu("test",this);
@@ -376,7 +376,7 @@ void Qps::tabChanged(int idx)
 		pstable->refresh();
 	//	pstable->update();
 	}
-	else 
+	else
     if(idx==1)
 	{
 		//procview->viewproc=Procview::NETWORK;
@@ -405,19 +405,19 @@ void Qps::adjust_popup_menu(QMenu *m, bool cont)
 	//	m->setItemVisible (MENU_CHILD,false);
 	//	m->setItemVisible (MENU_DYNASTY,false);
 	}
-	else	
+	else
 	{
 	//	m->setItemVisible (MENU_PARENT,true);
 	//	m->setItemVisible (MENU_CHILD,true);
 	//	m->setItemVisible (MENU_DYNASTY,true);
 	}
 
-	if(procview->viewproc == Procview::HIDDEN) 
+	if(procview->viewproc == Procview::HIDDEN)
 	{
 	//	m->setItemVisible (MENU_ADD_HIDDEN,false);
 	//	m->setItemVisible (MENU_REMOVE_HIDDEN,true);
-	}	
-	else 
+	}
+	else
 	{
 	//	m->setItemVisible (MENU_ADD_HIDDEN,true);
 	//	m->setItemVisible (MENU_REMOVE_HIDDEN,false);
@@ -439,7 +439,7 @@ void Qps::adjust_popup_menu()
 			if(id==MENU_SIGCONT)	act->setVisible(true);
 			if(id==MENU_SIGSTOP)	act->setVisible(false);
 		}
-	else 
+	else
 		for(int i =0 ;i< list.size() - 1 ;i++)
 		{
 			QAction *act=list[i];
@@ -452,7 +452,7 @@ void Qps::adjust_popup_menu()
 // build signal menu (used in two places)
 QMenu *Qps::make_signal_popup_menu()
 {
-	
+
 	//move to pstable?
 	QAction *act; // show_popup_menu() callback
 	m_popup = new QMenu("context popup",this);
@@ -464,7 +464,7 @@ QMenu *Qps::make_signal_popup_menu()
 	m_popup->addAction("Kill", this, SLOT(sig_kill()),Qt::ALT + Qt::Key_K);
 	act=m_popup->addAction("Stop", this, SLOT(sig_stop())); act->setData(MENU_SIGSTOP);
 	act=m_popup->addAction("Continue", this, SLOT(sig_cont())); act->setData(MENU_SIGCONT);
-	
+
 //	connect(m_popup, SIGNAL(aboutToShow ()),this, SLOT(adjust_popup_menu()));
 ///	m_popup->addAction("Find Parent", 	this, SLOT(menu_parent()),0,MENU_PARENT);
 ///	m_popup->addAction("Find Children", 	this, SLOT(menu_children()),0,MENU_CHILD);
@@ -504,7 +504,7 @@ QMenu *Qps::make_signal_popup_menu()
 void Qps::signal_menu(QAction *act )
 {
 	int signal=act->data().toInt();
-	send_to_selected(signal);	
+	send_to_selected(signal);
 }
 
 
@@ -535,23 +535,23 @@ QMenu *Qps::make_migrate_menu()
 // update the visibility of the {info, control, status} bar
 void Qps::bar_visibility()
 {
-	
+
 	if(show_infobar)
 		infobar->show();
- 	else 
+ 	else
 		infobar->hide();
 
-	if(show_ctrlbar) 
+	if(show_ctrlbar)
 		ctrlbar->show();
-	else 
+	else
 		ctrlbar->hide();
 
-	if(show_statusbar) 
+	if(show_statusbar)
 		statusBar->show();
-	else 
+	else
 		statusBar->hide();
 
-	if(flag_useTabView) 
+	if(flag_useTabView)
 	{
 		//DEL tbar->showTab(true);
 		///am_view->setVisible(false);
@@ -572,15 +572,15 @@ void Qps::timerEvent(QTimerEvent *e)
 void Qps::update_timer()
 {
 	if(timer_id)
-		killTimer(timer_id); 
+		killTimer(timer_id);
 	timer_id=startTimer(update_period); // *** important !!!
 }
 
 // change the update period, recomputing the averaging factor
 void Qps::set_update_period(int milliseconds)
 {
-	if(milliseconds==0) 
-	{	
+	if(milliseconds==0)
+	{
 		qDebug("DEBUG: set_update_period(): update= %dms \n",milliseconds);
 		milliseconds=1000;
 	}
@@ -594,7 +594,7 @@ void Qps::refresh()
 {
 	if(flag_refresh==false) return;
 
-	procview->refresh(); // important 
+	procview->refresh(); // important
 	//infobar->update_load(); // add_point and drawGraphOnPixmap();
 	infobar->updatePixmap(); // add_point and drawGraphOnPixmap();
 
@@ -602,15 +602,15 @@ void Qps::refresh()
 		//printf("paint\n");
 		//if(search_box and !search_box->hasFocus())	search_box->setFocus(Qt::OtherFocusReason);
 		pstable->refresh();
-		// if(netable and netable->isVisible())netable->refresh(); 	
-		if(show_infobar) 	//if(Qps::show_load_graph) 
-			infobar->update(); // TODO: thread update or 
+		// if(netable and netable->isVisible())netable->refresh();
+		if(show_infobar) 	//if(Qps::show_load_graph)
+			infobar->update(); // TODO: thread update or
 			//infobar->repaint();
 			//==> pdisplay->update();
 		//DEL update_menu_selection_status(); // update pop menu
 	}
 
-	if(trayicon) update_icon(); //make icon for systray 
+	if(trayicon) update_icon(); //make icon for systray
 	refresh_details();
 }
 
@@ -627,7 +627,7 @@ void Qps::resizeEvent ( QResizeEvent * e )
 {
 	//DEBUG("Qps::resize() w=%d\n",e->size().width());
 	//QWidget::resizeEvent(event);
-	
+
 	int w;
 	return;
 
@@ -635,17 +635,17 @@ void Qps::resizeEvent ( QResizeEvent * e )
 	w=ctrlbar->sizeHint().width();
 	if(!search_box->isVisible())
 		w+=search_box->sizeHint().width();
-	
-	
+
+
 	if(e->size().width()<w)
 	{
 		//ctrlbar->
 		search_box->hide();
-		
+
 	}
 //	else 	search_box->show();
 
-	
+
 	return ;
 	if(e->size().width()<639)
 	{
@@ -654,7 +654,7 @@ void Qps::resizeEvent ( QResizeEvent * e )
 		statusBar->hide();
 	//	void QTabWidget::setTabEnabled ( int index, bool enable )
 	}
-	else 
+	else
 	{
 		flag_smallscreen=false;
 		statusBar->show();
@@ -664,10 +664,10 @@ void Qps::resizeEvent ( QResizeEvent * e )
 /*
  Description :
  	1. called when visible() or hide() state.  QT4
- 	2. called when clicked  WINDOW_EXIT_X_BUTTON   
- 	3. NOT called when user logout (session manager)  
+ 	2. called when clicked  WINDOW_EXIT_X_BUTTON
+ 	3. NOT called when user logout (session manager)
 */
-void Qps::closeEvent(QCloseEvent *e) 
+void Qps::closeEvent(QCloseEvent *e)
 {
 	//DEBUG("DEBUG: closeEvent()....\n");
 	//sleep(2);
@@ -677,7 +677,7 @@ void Qps::closeEvent(QCloseEvent *e)
 		hide();
 		return;
 	}
-	e->accept(); // ok. I will be exit Now !! 
+	e->accept(); // ok. I will be exit Now !!
 	save_quit();
 }
 
@@ -693,29 +693,29 @@ void Qps::save_quit() // will be removed !
 
 // NEW Version !
 // : write geometry, visible fields and other settings to $HOME/.qpsrc
-void Qps::save_settings() 
+void Qps::save_settings()
 {
 	if(Qps::auto_save_options) 	write_settings();
 }
 
-void Qps::leaveEvent ( QEvent * event )  
+void Qps::leaveEvent ( QEvent * event )
 {
 	// printf("out!xx\n");	//works well
 }
 
-void Qps::enterEvent ( QEvent * event )   
+void Qps::enterEvent ( QEvent * event )
 {
 	// printf("in!\n");	 // works well
 }
 
 void Qps::showEvent ( QShowEvent * event )
 {
-//	printf("showEvent()\n");	
+//	printf("showEvent()\n");
 //	event->accept();
-} 
-void Qps::mouseMoveEvent ( QMouseEvent * event ) 
+}
+void Qps::mouseMoveEvent ( QMouseEvent * event )
 {
-//	printf("Qps::mouseMoveEvent\n"); //work in child surface  without setMouseTracking(true);	
+//	printf("Qps::mouseMoveEvent\n"); //work in child surface  without setMouseTracking(true);
 }
 
 // setFocusPolicy() should on
@@ -742,7 +742,7 @@ void Qps::keyPressEvent ( QKeyEvent * event )
 		search_box->keyPressEvent(event);
 	}
 	//search_box->setFocusProxy(pstable);
-	
+
 }
 void Qps::moveEvent ( QMoveEvent * event )
 {
@@ -787,12 +787,12 @@ void Qps::set_load_icon()
 	if(trayicon->hasSysTray())
 	{
 			trayicon->setIcon(*pm);
-			//str.sprintf("Qps %2.2f%",Procinfo::loadQps);  
+			//str.sprintf("Qps %2.2f%",Procinfo::loadQps);
 			//trayicon->setToolTip(str);
 			//trayicon->showMessage("str",str);
 	}
-	//else 
-	setWindowIcon(*pm); 
+	//else
+	setWindowIcon(*pm);
 	//QApplication::setWindowIcon(*pm);
 	default_icon_set = false;
 }
@@ -803,9 +803,9 @@ QPixmap *Qps::get_load_icon()
 	return infobar->load_icon(icon_width, icon_height);
 }
 
-// 
+//
 void Qps::refresh_details()
-{	
+{
 ////	details.first();
 	////Details d;
 #ifdef LINUX
@@ -827,16 +827,16 @@ void Qps::refresh_details()
 }
 
 
-// called by 
+// called by
 //	1.void Qps::field_removed(int index)
-//  ====> QMenu::aboutToShow () 
+//  ====> QMenu::aboutToShow ()
 void Qps::update_menu_status()
 {
 //	printf("update_menu_status\n");
 	update_menu_selection_status();
 	//ctrlbar->view->setCurrentItem (procview->viewproc); //???
 
-	// Field Menu 
+	// Field Menu
 	QList<QAction*> list=m_field->actions();
 	for(int i =0 ;i< list.size() - 1 ;i++)
 	{
@@ -845,7 +845,7 @@ void Qps::update_menu_status()
 		int id=act->data().toInt();
 		if(id==procview->viewfields)
 				act->setChecked(true);
-		else 
+		else
 				act->setChecked(false);
 	}
 
@@ -857,24 +857,24 @@ void Qps::update_menu_status()
 	{
 		QAction *act=list[i];
 		act->setCheckable(true);
-	
+
 		if(act->text()==str)
-		{	
+		{
 			act->setChecked(true);
 		}
 		else
 			act->setChecked(false);
 	} */
 
-	// Option Menu 	
+	// Option Menu
 	list=m_options->actions();
 	for(int i =0 ;i< list.size() - 1 ;i++)
 	{
 		QAction *act=list[i];
 		int id=act->data().toInt();
-		
+
 		if(id==MENU_PATH)
-		{	
+		{
 			act->setCheckable(true);
 			act->setChecked(Procview::flag_show_file_path);
 			act->setText("Show File Path");
@@ -910,17 +910,17 @@ void Qps::update_menu_status()
 
 }
 
-// need to change name , redesign 
+// need to change name , redesign
 void Qps::view_menu(QAction *act)
 {
 	int id = act->data().toInt();
-	if(act->text()=="Process") 
+	if(act->text()=="Process")
 	{
 		//tbar->setCurrentIndex(0);
 		return;
 	}
-	if(act->text()=="Log") 
-	{	
+	if(act->text()=="Log")
+	{
 		// tbar->setCurrentIndex(1);
 		return;
 	}
@@ -931,14 +931,14 @@ void Qps::view_menu(QAction *act)
 			procview->viewproc = state;
 		}
 	}
-	
+
 	if(id >= Procview::USER && id <= Procview::CUSTOM) {
 		if(procview->viewfields != state) {
 			procview->viewfields = state;
 			procview->set_fields();
 		}
 	}
-	pstable->refresh(); // layout 
+	pstable->refresh(); // layout
 ///	update_menu_status();
 }
 
@@ -950,21 +950,21 @@ void Qps::view_menu(QAction *act)
 //  -> show_popup_menu()
 void Qps::update_menu_selection_status()
 {
-	
+
 //	bool enabled = (pstable->numSelected() > 0);
-//	if(enabled) 
+//	if(enabled)
 	if(0)
 	{
 		bool cont = all_selected_stopped();
 		adjust_popup_menu(m_popup, cont);
 	}
-	
+
 	for(int i = 0; i < commands.size(); i++)
 	{
 	/*	if (commands[i]->IsNeedProc()==false)
 			m_command->setItemEnabled(MENU_FIRST_COMMAND + i, true);
 		else	m_command->setItemEnabled(MENU_FIRST_COMMAND + i, enabled);
-	*/} 
+	*/}
 }
 
 // call by SearchBox::keyPressEvent
@@ -984,7 +984,7 @@ void Qps::sig_hup()
 void Qps::sig_stop()
 {
 	send_to_selected(SIGSTOP);
-	
+
 	//test
 	for(int i = 0; i < procview->linear_procs.size(); i++) {
 		Procinfo *p = procview->linear_procs[i];
@@ -1030,44 +1030,44 @@ void Qps::menu_custom()
 
 
 // MOVE TO PSTABlE ? hmmm wait...
-// Interface for  reading_setting()  
-// SLOT:  
+// Interface for  reading_setting()
+// SLOT:
 //
-// called by 
-// 	1.click Tree_checkbox  
+// called by
+// 	1.click Tree_checkbox
 //	2.void Qps::view_menu(int id)
 void Qps::set_table_mode(bool treemode)
 {
 //	qDebug("set_table_mode()\n");
 	ctrlbar->setMode(treemode); 	// toggle checkbox
-	pstable->setTreeMode(treemode); //first  pstable->refresh(); 	    
+	pstable->setTreeMode(treemode); //first  pstable->refresh();
 }
 
 
 // Slot:
 // SEGFAULT CODE:  MOVETO Pstable
-// called by 
+// called by
 //      1. void Qps::add_fields_menu(int id)
 //      2. field_win
-void Qps::field_added(int field_id)  
+void Qps::field_added(int field_id)
 {
-	int where=-1; 
+	int where=-1;
 	where=pstable->clickedColumn();
 	procview->addField(field_id,where);
-	pstable->refresh(); //pstable->update(); // repaint 
+	pstable->refresh(); //pstable->update(); // repaint
     //update_menu_status();
 }
 
 // MOVETO Proview
 // what this hell? SEGFAULT!
-// call by 
-//	1. FieldSelect 
+// call by
+//	1. FieldSelect
 //	2. void Qps::menu_remove_field()
 void Qps::field_removed(int index)
 {
 	///printf("field_removed() index=%d\n",index);
 	procview->removeField(index);
-	if(procview->treeview and index == F_CMD) set_table_mode(false); 
+	if(procview->treeview and index == F_CMD) set_table_mode(false);
 	//should be changed to linear mode !!
 
 ///	update_menu_status(); // ???
@@ -1096,7 +1096,7 @@ void Qps::menu_edit_cmd()
 // callback by CommandDialog::add_new()
 void Qps::make_command_menu()
 {
-	//should clear SIGNAL!!! 
+	//should clear SIGNAL!!!
 	QAction *act;
 	m_command->clear();
 	m_command->disconnect();
@@ -1113,14 +1113,14 @@ void Qps::make_command_menu()
 	add_default_command();
 
 	for(int i = 0; i < commands.size(); i++)
-	{	
+	{
 		//commands[i]->menu = m_command->insertItem(commands[i]->name, MENU_FIRST_COMMAND + i);
 		//commands[i]->menu =
 		act=m_command->addAction(commands[i]->name);
 		//connect(act, SIGNAL(triggered(bool )), SLOT(signal_menu(bool)));
     }
 	connect(m_command, SIGNAL(triggered(QAction *)), SLOT(run_command(QAction *)));
-	
+
 	update_menu_selection_status(); //DEL
 //#ifdef SOLARIS
 	/* Solaris CDE don't have a tray, so we need a method to terminate */
@@ -1138,12 +1138,12 @@ void Qps::run_command(QAction *act)
 	int command_id;
 	int i,j,idx=-1;
 	//FUNC_START
-	
+
 	//printf("%s\n",qPrintable(act->text()));
 	AddLog(act->text());
 
 	//find_command
-	for(i = 0; i < commands.size(); i++) 
+	for(i = 0; i < commands.size(); i++)
 	{
 	//	if(commands[i]->menu==command_id)
 		if(commands[i]->name==act->text())
@@ -1197,13 +1197,13 @@ void Qps::open_details(int row)
 void Qps::details_closed(Details *d)
 {
 	//printf("details_closed()\n");
-	//disconnect 
-	
+	//disconnect
+
 	// This is potentially dangerous, since this is called in response to a
 	// signal sent by the widget that is about to be deleted here. Better hope
-	// that nobody references the object down the call chain! 
+	// that nobody references the object down the call chain!
 	// what ??????
-	
+
 	//////details.removeAt(*d);	// deletes window
 	//details.removeAt(*d);	// deletes window
 }
@@ -1222,7 +1222,7 @@ void Qps::menu_children()
 // Find processes whose attribute b is equal to the attribute a of
 // selected processes. Center around topmost found.
 // This is quadratic in worst case (shouldn't be a problem)
-// called by 
+// called by
 // 		1.menu_children()
 // 		2.menu_parent()
 void Qps::locate_relatives(int Procinfo::*a, int Procinfo::*b)
@@ -1295,7 +1295,7 @@ void Qps::show_popup_menu(QPoint p)
 	}
 	m_popup->setItemEnabled(POPUP_MIGRATE, may_migrate);
 #endif
-	adjust_popup_menu();	
+	adjust_popup_menu();
 	m_popup->popup(p);
 }
 
@@ -1309,10 +1309,10 @@ void Qps::context_heading_menu(QPoint p, int col)
 	static int init=0;
 	// rebuild the submenu: only include non-displayed fields
 	int ncats=procview->categories.size();
-	
+
 	if(init==0)
 	{
-	/*	#ifdef SHash	
+	/*	#ifdef SHash
 		SHash<int,Category *>::const_iterator it=procview->categories.begin();
 		QList<int> keys;
 		for ( ; it != procview->categories.end(); it++ )
@@ -1323,8 +1323,8 @@ void Qps::context_heading_menu(QPoint p, int col)
 		for(int i = 0; i < ncats; i++)
 		{
 			Category *cat=procview->categories[keys.takeFirst()];
-			QAction *act=m_fields->addAction(cat->name); 
-			act->setData(cat->id); // index==key 
+			QAction *act=m_fields->addAction(cat->name);
+			act->setData(cat->id); // index==key
 		}
 		connect(m_fields, SIGNAL(triggered(QAction *)),this, SLOT(add_fields_menu(QAction *)));
 		init=1;
@@ -1335,7 +1335,7 @@ void Qps::context_heading_menu(QPoint p, int col)
 	//printf("categories.size=%d cats.size=%d\n",ncats, procview->cats.size());
 
 	for(int i = 0; i < procview->cats.size(); i++)
-	{ 
+	{
 	//	printf("cat id=%d \n",procview->cats[i]->id);
 		displayed.setBit(procview->cats[i]->id);
 	}
@@ -1347,7 +1347,7 @@ void Qps::context_heading_menu(QPoint p, int col)
 		int id=act->data().toInt();
 		if(!displayed.testBit(id))
 			act->setVisible(true);
-		else 
+		else
 			act->setVisible(false);
 	}
 
@@ -1372,7 +1372,7 @@ void Qps::add_fields_menu(int cat_id)
 }
 
 
-// 
+//
 void Qps::menu_remove_field()
 {
 	if(context_col<0) 	return;
@@ -1398,13 +1398,13 @@ void Qps::menu_update()
 }
 
 void Qps::menu_toggle_path()
-{	
+{
 	Procview::flag_show_file_path = !Procview::flag_show_file_path;
 	/// table refresh() !
 }
 
 void Qps::menu_toggle_infobar()
-{	
+{
 	show_infobar = !show_infobar;
 	bar_visibility();
 }
@@ -1453,7 +1453,7 @@ void Qps::config_change()
 	bar_visibility();
 	//DEL infobar->configure();
 	///resizeEvent(0);		// in case it caused geometry change
-	
+
 	for(int i=0;i< details.size(); ++i)
 	{
 	/////	details[i].config_change();
@@ -1495,10 +1495,10 @@ void Qps::menu_renice()
 		QMessageBox::warning(this, "Permission denied", s);
 		return;
 	}
-	
+
 	int new_nice;
 	for(;;) {
-		SliderDialog sd(defnice, -20, 19); // Linux kernel : -20 ~ 19  
+		SliderDialog sd(defnice, -20, 19); // Linux kernel : -20 ~ 19
 		if(!sd.exec())
 			return;
 		bool ok;
@@ -1637,7 +1637,7 @@ void Qps::migrate_selected(int migto)
 		QMessageBox::warning(this, "Remote migration attempt",
 				"You can only migrate an immigrated process "
 				"using qps on the home node.");
-	earlier_refresh();		
+	earlier_refresh();
 }
 #else
 
@@ -1705,11 +1705,11 @@ static Sflagvar  flagvars[] = {
 	{ "loadgraph", &Qps::show_load_graph },
 	{ "loadicon", &Qps::load_in_icon },
 	{ "selectpids", &Qps::pids_to_selection },
-	{ "tree", &Procview::treeview },  
+	{ "tree", &Procview::treeview },
 	{ "cumulative", &Procview::flag_cumulative },
 #ifdef LINUX
 	{ "hostname", &Qps::hostname_lookup },
-	{ "service", &Qps::service_lookup }    
+	{ "service", &Qps::service_lookup }
 #endif
 #ifdef SOLARIS
 	{ "normalize", &Qps::normalize_nice },
@@ -1744,13 +1744,13 @@ bool Qps::read_settings()
 	int v=set.value("version",0).toInt();
 	if(v==0)
 		return false;
-	
+
 	int x, y, w, h;
 	x=set.value("geometry/x").toInt();
 	y=set.value("geometry/y").toInt();
 	w=set.value("geometry/width").toInt();
 	h=set.value("geometry/height").toInt();
-	//set.value("geometry/visiable",isVisible()); 
+	//set.value("geometry/visiable",isVisible());
 	Qps::flag_show=true;
 	setGeometry(x, y, w, h);
 
@@ -1764,8 +1764,8 @@ bool Qps::read_settings()
 		QApplication::setFont(font);
 	}
 
-	
-	// Field 
+
+	// Field
 	procview->cats.clear();
 	QStringList sl=set.value("field").toStringList();
 	for(int i=0;i<sl.size();i++)
@@ -1777,12 +1777,12 @@ bool Qps::read_settings()
 
 	//procview->idxF_CMD=set.value("F_CMD").toInt();
 
-	if(sl.size()==0) // *** for safe , if there is no field. this happen when no qpsrc 
+	if(sl.size()==0) // *** for safe , if there is no field. this happen when no qpsrc
 	{
-		procview->viewfields = Procview::USER;	
+		procview->viewfields = Procview::USER;
 		procview->set_fields();///
 	}
-	else 
+	else
 	{
 		procview->viewfields = Procview::CUSTOM;
 	}
@@ -1790,29 +1790,29 @@ bool Qps::read_settings()
 	QString str=set.value("sort/field").toString(); //procview->sortcat->name
 	int fid=procview->field_id_by_name(str.toUtf8().data());
 	int col=procview->findCol(fid);
-	if(col>=0) 
-		//pstable->setSortColumn(col);  // Pstable::refresh() 
-		procview->setSortColumn(col);  // Pstable::refresh() 
+	if(col>=0)
+		//pstable->setSortColumn(col);  // Pstable::refresh()
+		procview->setSortColumn(col);  // Pstable::refresh()
 	// pstable -> procview
-	procview->reversed=set.value("sort/reversed").toBool(); //tmp 
-	
+	procview->reversed=set.value("sort/reversed").toBool(); //tmp
+
 
 	sl=set.value("flags").toStringList();
 	//for(int i=0;i<sl.size();i++)
-	for(Sflagvar *fs = flagvars; fs->name; fs++) 
+	for(Sflagvar *fs = flagvars; fs->name; fs++)
 	{
 		if(sl.contains(fs->name))
 			*(fs->var)=true;
-		else 
+		else
 			*(fs->var)=false;
 	}
 	//procview->treeview=set.value("treeview").toBool();
 
 	int i=set.value("interval").toInt();
 	set_update_period(i);
-	i=set.value("viewproc").toInt(); 
-	procview->viewproc=i; 
-	ctrlbar->view->setCurrentIndex (i); //procview->viewproc=set.value("viewproc").toInt(); 
+	i=set.value("viewproc").toInt();
+	procview->viewproc=i;
+	ctrlbar->view->setCurrentIndex (i); //procview->viewproc=set.value("viewproc").toInt();
 
 	int size=set.beginReadArray ("watchdog");
  	for(int i = 0; i < size; i++) {
@@ -1821,7 +1821,7 @@ bool Qps::read_settings()
 		w->putstring(set.value("cat").toString());
 		watchlist.append(w);
 	}
-	set.endArray();	
+	set.endArray();
 	size=set.beginReadArray ("commands");
  	for(int i = 0; i < size; i++) {
 		set.setArrayIndex(i);
@@ -1829,7 +1829,7 @@ bool Qps::read_settings()
 		c->putString(set.value("cmd").toString());
 		commands.append(c);
 	}
-	set.endArray();	
+	set.endArray();
 
 
 	return true;
@@ -1846,7 +1846,7 @@ bool Qps::read_settings()
 }
 
 
-// USING : 
+// USING :
 // write geometry, visible fields and other settings to $HOME/.qps-settings
 void Qps::write_settings() //save setting
 {
@@ -1857,7 +1857,7 @@ void Qps::write_settings() //save setting
 	}
 
 	QSettings set(path,QSettings::NativeFormat);
-	
+
 	set.setValue("version",QPS_FILE_VERSION);
 	//set.beginGroup("");
 	//set.endGroup();
@@ -1867,7 +1867,7 @@ void Qps::write_settings() //save setting
 	set.setValue("geometry/height",geometry().height());
 	set.setValue("geometry/visiable",isVisible()); //isVisible() ? "show":"hide");
 	set.setValue("viewproc",procview->viewproc); //	All, your , running process...
-	///set.setValue("treeview",procview->treeview); 
+	///set.setValue("treeview",procview->treeview);
 
 	QStringList sl;
 	//printf("procview cats.size=%d\n",procview->cats.size());
@@ -1882,7 +1882,7 @@ void Qps::write_settings() //save setting
 	}
 	//	return;
 	sl.clear();
-	for(Sflagvar *fs = flagvars; fs->name; fs++) 
+	for(Sflagvar *fs = flagvars; fs->name; fs++)
 	{
 		if(*(fs->var))
 			sl.append(fs->name);//fprintf(f, " %s", fs->name);
@@ -1892,10 +1892,10 @@ void Qps::write_settings() //save setting
 //	fprintf(f,	"swaplim: %d\n"	"interval: %d\n",
 //				swaplim_percent ? -swaplimit : swaplimit,
 //				update_period);
-	
+
 	sl.clear();
 	set.setValue("font/name",QApplication::font().family());
-	set.setValue("font/size",QApplication::font().pointSize()); 
+	set.setValue("font/size",QApplication::font().pointSize());
 
 	set.setValue("interval",update_period);
 
@@ -1913,7 +1913,7 @@ void Qps::write_settings() //save setting
 	}
 	set.endArray();
 
-/*	
+/*
 	fprintf(f, "hidden_process:");
 	for(int i = 0; i < hidden_process.size(); i++) {
 		if(i!=0) fprintf(f,",");
@@ -1959,7 +1959,7 @@ QString short_hostname()
 
 bool opt_eq(const char *arg, const char *opt)
 {
-	if(arg[0] == '-') 
+	if(arg[0] == '-')
 		arg++;
 	if(arg[0] == '-')
 		arg++;
@@ -1977,12 +1977,12 @@ void print_help(char *cmdname)
 }
 
 
-/// #include	<QX11Info> 
+/// #include	<QX11Info>
 QByteArray geo;
 void Qps::clicked_trayicon()
 {
 	//QT 4.5 bug : hide(), then show() window's pos will be changed a little.
-	if( isMinimized() or (isVisible()==false))  // if hidden 
+	if( isMinimized() or (isVisible()==false))  // if hidden
 	{
 		//printf("showNormal\n");
 		//show(); // works..
@@ -1990,12 +1990,12 @@ void Qps::clicked_trayicon()
 		return;
 	}
 
-	// METACITY- focus stealing prevention : XRaiseWindow() not work. 
+	// METACITY- focus stealing prevention : XRaiseWindow() not work.
 	// Compiz works well !!
 	if(isActiveWindow()==false) // if lower than other windows
 	{
-		raise(); 
-		activateWindow(); 	//for  WindowMaker	
+		raise();
+		activateWindow(); 	//for  WindowMaker
 		return;
 	}
 	hide();
@@ -2012,7 +2012,7 @@ void Qps::clicked_trayicon(QSystemTrayIcon::ActivationReason r)
 			hide();
 		}
 		else{
-			showNormal(); 
+			showNormal();
 		}
 	}
 	if(r==QSystemTrayIcon::Context)
@@ -2021,7 +2021,7 @@ void Qps::clicked_trayicon(QSystemTrayIcon::ActivationReason r)
 }
 
 
-// 
+//
 void Qps::hideEvent ( QHideEvent * event )
 {
 //	printf("hideEvent()\n");
@@ -2034,19 +2034,19 @@ void Qps::hideEvent ( QHideEvent * event )
 
 
 
-// MOD!!!: For systray update. 
-// this trick very suck, but I can't find a better solution. 
+// MOD!!!: For systray update.
+// this trick very suck, but I can't find a better solution.
 class QpsApp :public QApplication
-{ 
+{
 	public:
 		QpsApp( int &argc, char ** argv ):QApplication(argc,argv){};
 		void commitData ( QSessionManager & sm );
 		void saveState( QSessionManager & manager );
-                
+
             /*
-		virtual bool x11EventFilter ( XEvent *xev ){ 
-			// catch X11 event for systray_update !! which event? 
-			///if(trayicon!=NULL) return trayicon->checkNewTrayEvent(xev); 
+		virtual bool x11EventFilter ( XEvent *xev ){
+			// catch X11 event for systray_update !! which event?
+			///if(trayicon!=NULL) return trayicon->checkNewTrayEvent(xev);
 			return false; // events to qt.
 		}; */
 };
@@ -2060,10 +2060,10 @@ void QpsApp::saveState( QSessionManager & manager )
 	//manager.release();
 }
 
-// this is called  when X Logout 
+// this is called  when X Logout
 // closeEvent() never called !!!
 void QpsApp::commitData ( QSessionManager & manager )
-{ 
+{
 	/*
 	printf("commitData()\n");
 	manager.setRestartHint(QSessionManager::RestartIfRunning);
@@ -2071,7 +2071,7 @@ void QpsApp::commitData ( QSessionManager & manager )
 	qps->save_settings() ;
 	manager.release();
 	sleep(2);
-	return; 
+	return;
 	 if (manager.allowsInteraction()) {
          int ret = QMessageBox::warning(
                      qps,
@@ -2093,7 +2093,7 @@ void QpsApp::commitData ( QSessionManager & manager )
      } else {
 
 			manager.release();
-					
+
          // we did not get permission to interact, then
          // do something reasonable instead
      }
@@ -2102,10 +2102,10 @@ void QpsApp::commitData ( QSessionManager & manager )
 //DEL sm.release();
 	qDebug("Qps: Session saved\n");
 //	sm.cancel();
-	//sm.setRestartHint (QSessionManager::RestartIfRunning); 
+	//sm.setRestartHint (QSessionManager::RestartIfRunning);
 	QApplication::commitData(sm);
 */
-} 
+}
 
 #include <signal.h>
 void signal_handler(int sig)
@@ -2123,7 +2123,7 @@ int main(int argc, char **argv, char **envp)
 	signal(SIGTERM, signal_handler);
 	signal(SIGINT, signal_handler);
 	signal(SIGKILL, signal_handler);
-	
+
 	Lookup::initproctitle(argv, envp);	// will be REMOVEd
 
 	for(int i = 1; i < argc; i++) {
@@ -2133,23 +2133,23 @@ int main(int argc, char **argv, char **envp)
 		} else if(opt_eq(argv[i], "help") || opt_eq(argv[i], "h")) {
 			print_help(argv[0]);
 			exit(1);
-		} 
-		else if (opt_eq(argv[i], "session") or opt_eq(argv[i], "sm")) 
+		}
+		else if (opt_eq(argv[i], "session") or opt_eq(argv[i], "sm"))
 		{
 			flag_session_start=true;
 			sleep(2); // **** important !! maybe systray runs later
 		} else if (opt_eq(argv[i], "min"))  //mini
 		{
 			flag_start_mini=true;
-		} 
-		else if (strstr(argv[i], "screen"))  
+		}
+		else if (strstr(argv[i], "screen"))
 		{
 			//int screenshot_main(int argc, char **argv);
 			//screenshot_main(argc,argv);
 			//return 1;
 		}
 	}
-//	codec = QTextCodec::codecForLocale(); // for Local locale 
+//	codec = QTextCodec::codecForLocale(); // for Local locale
 	check_system_requirement(); // check kernel version.. etc in proc.cpp
 	check_qps_running();	// check already qps running.  in misc.cpp
 
@@ -2159,47 +2159,47 @@ int main(int argc, char **argv, char **envp)
 	qps=new Qps();
 //	sleep(20);
 
-	QString caption = "";  
+	QString caption = "";
 	caption.append(getenv("USER"));
 	caption.append("@");
 	caption.append(short_hostname());   //geteuid()
-	
+
 	qps->setWindowTitle(UniString(caption));
 	qps->setWindowIcon(QPixmap( (const char**)icon_xpm));
-    
-	//MOVETO  Systray 
+
+	//MOVETO  Systray
 	QMenu *menu=new QMenu(qps);
 	///menu->addAction( UniString("About"), qps, SLOT(about()) );
 	menu->addAction( "Show", qps, SLOT(showNormal()) );
 	menu->addAction( "Hide", qps, SLOT(hide()) );
 	menu->addSeparator();
 	if(flag_devel) menu->addAction( "ScreenShot", qps, SLOT(start_screenshot()) );
-	menu->addAction( "&Quit", qps, SLOT(save_quit()), Qt::ALT + Qt::Key_Q); 
-    
+	menu->addAction( "&Quit", qps, SLOT(save_quit()), Qt::ALT + Qt::Key_Q);
+
 
 
 	trayicon=new TrayIcon(QPixmap( (const char**)icon_xpm /* init icon */ ), "qps", menu);
 	QObject::connect(trayicon,SIGNAL(clicked(const QPoint&)),qps,SLOT(clicked_trayicon()));
-	QObject::connect(trayicon,SIGNAL(doubleClicked(const QPoint&)),qps,SLOT(clicked_trayicon())); 
+	QObject::connect(trayicon,SIGNAL(doubleClicked(const QPoint&)),qps,SLOT(clicked_trayicon()));
 	QObject::connect(trayicon, SIGNAL(activated(QSystemTrayIcon::ActivationReason)),
              qps, SLOT(clicked_trayicon(QSystemTrayIcon::ActivationReason)));
 
 	trayicon->sysInstall(); //ok
-        
-	if(flag_session_start or flag_start_mini ) 
+
+	if(flag_session_start or flag_start_mini )
 	{
 		if(trayicon->hasSysTray())
 		{
 			qps->hide(); //qps->setHidden(true);
 		}
-		else 
+		else
 		{
-			qps->showMinimized(); 
+			qps->showMinimized();
 		}
 	}
 	else {
 		qps->show();
-	} 
+	}
 
 	//Testing
 //	app.setStyleSheet(" QToolTip { opacity: 100;" "border-width: 1px; border-style: solid;  border-color: rgb(50,110,80); border-radius: 4px ;" "background-color : rgba(0,0,0); padding: 3px; color: rgb(0,255,150); }");
@@ -2214,14 +2214,14 @@ int main(int argc, char **argv, char **envp)
 
 
 #include <QDialog>
-#include <QTextBrowser> 
-#include <QDesktopServices> 
-#include <QDialogButtonBox> 
-#include <QClipboard> 
+#include <QTextBrowser>
+#include <QDesktopServices>
+#include <QDialogButtonBox>
+#include <QClipboard>
 
 void Qps::test_popup(const QUrl &link)
 {
-	
+
 	QClipboard * clipboard=QApplication::clipboard () ;
 	clipboard->setText(link.toString(),QClipboard::Clipboard);
 	popupx->popup(QCursor::pos());
@@ -2229,7 +2229,7 @@ void Qps::test_popup(const QUrl &link)
 
 void Qps::about()
 {
-	QDialog *diag=new QDialog(this); 
+	QDialog *diag=new QDialog(this);
 	diag->setWindowTitle("About" );
 	QVBoxLayout *lay=new QVBoxLayout(diag);
 
@@ -2240,12 +2240,12 @@ void Qps::about()
 	QTextBrowser *browser = new QTextBrowser( diag );
 	browser->setOpenExternalLinks ( false );
 	browser->setOpenLinks ( false);
-	
+
 	connect(browser, SIGNAL( anchorClicked ( const QUrl & )), this, SLOT(test_popup(const QUrl &)));
 
 	lay->addWidget(label);
 	lay->addWidget(browser);
-	
+
 //	QDesktopServices::openUrl(QUrl("file:///", QUrl::TolerantMode));
 //
 
@@ -2268,7 +2268,7 @@ void Qps::about()
 		"<A HREF=\"http://kldp.net/projects/qps\">http://kldp.net/projects/qps</A>"
 		);
 	label->setText(str);
-	
+
 	str="";
 	str.append(
 		"<center><b> Bug, Complains, Opinion, Patch to </b></center>"
@@ -2282,24 +2282,24 @@ void Qps::about()
 		</i></center>"
 		"<br>"
 		"<center>Original Qps by</center>"
-		"<center><i>" 
-		"	Mattias Engdeg?rd\n" //"(f91-men@nada.kth.se)\n"
+		"<center><i>"
+		"	Mattias Engdegård\n" //"(f91-men@nada.kth.se)\n"
 		"</i></center>"
 		);
 
 //     QPushButton *contribut = new QPushButton(tr("&More"));
-     
+
 	// moreButton->setCheckable(true);
     // moreButton->setAutoDefault(false);
-		
+
 	browser->setText(str);
 
 
 	QDialogButtonBox *bbox=new QDialogButtonBox (QDialogButtonBox::Ok,Qt::Horizontal, diag);
-	
+
 
 	lay->addWidget(bbox);
-    
+
 	connect(bbox, SIGNAL(accepted()), diag, SLOT(accept()));
 
 	diag->exec();
@@ -2311,8 +2311,8 @@ void Qps::about()
 void Qps::license() // -> help()
 {
 
-		
-	QDialog *diag=new QDialog(this); 
+
+	QDialog *diag=new QDialog(this);
 	diag->setWindowTitle("Quick Help" );
 	//diag->setSizeGripEnabled(true) ;
 	QHBoxLayout *lay=new QHBoxLayout(diag);
@@ -2322,7 +2322,7 @@ void Qps::license() // -> help()
 	browser->setMinimumSize( 400,200 );
 
 	lay->addWidget(browser);
-	
+
 //	QDesktopServices::openUrl(QUrl("file:///", QUrl::TolerantMode));
 // 	QLabel::setOpenExternalLinks ( bool open );
 	browser->setOpenExternalLinks ( true );
@@ -2331,7 +2331,7 @@ void Qps::license() // -> help()
 			"<H1>QPS Help</H1>"
 			"Updated: May 24 2005<BR>"
 			"<A HREF=\"http://kldp.net/projects/qps\">http://kldp.net/projects/qps</A><HR>"
-			
+
 			"<table style=\"text-align: center; width: 100%;\" border=\"1\""
 			" cellpadding=\"1\" cellspacing=\"0\">"
 			"  <tbody>"
@@ -2375,16 +2375,16 @@ void SearchBox::keyPressEvent ( QKeyEvent * e )
 
 	if(e->key()==Qt::Key_Escape )
 	{
-		
+
 		clear();  // clear searchbox
 
 		qps->pstable->clearAllSelections(); // TEMP
-		
+
 		//xb->setDown(true);
-		//event_xbutton_clicked();		
+		//event_xbutton_clicked();
 		//xb->setDown(false);
 	}
-	else 
+	else
 		QLineEdit::keyPressEvent ( e );
 
 	qps->procview->filterstr=text();
@@ -2398,7 +2398,7 @@ void STATUSBAR_COUNT_UPDATE()
 }
 
 void STATUSBAR_SETCOUNT(int n)
-{	
+{
 	if(qps)	qps->statusBar->update(n);
 }
 
@@ -2415,7 +2415,7 @@ void QPS_SHOW()
 //TESTING
 int QPS_PROCVIEW_CPU_NUM()
 {
-	if(qps) 
+	if(qps)
 		return qps->procview->num_cpus;
 	else
 		return 0;

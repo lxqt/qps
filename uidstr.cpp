@@ -1,7 +1,7 @@
 // uidstr.C
 //
 // This program is free software. See the file COPYING for details.
-// Author: Mattias Engdegård, 1997-1999
+// Author: Mattias EngdegÃ¥rd, 1997-1999
 
 #include <pwd.h>
 #include <grp.h>
@@ -46,7 +46,7 @@ QString Uidstr::groupName(int gid)
 	} else
 	    p = strdup(gr->gr_name);
 	gdict.insert(gid, p);
-	//if(gdict.count() > gdict.size() * 3) gdict.resize(gdict.count()); 
+	//if(gdict.count() > gdict.size() * 3) gdict.resize(gdict.count());
 	}
     QString s(p);
     return s;

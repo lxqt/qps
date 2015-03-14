@@ -22,7 +22,7 @@ enum ScrollBarDirtyFlags {
 
 
 QtTableView::QtTableView( QWidget *parent, const char *name)
-    : QAbstractScrollArea(parent) 
+    : QAbstractScrollArea(parent)
 {
     nRows			= nCols      = 0;	// zero rows/cols
 
@@ -45,15 +45,15 @@ QtTableView::QtTableView( QWidget *parent, const char *name)
 
 	//setSizePolicy(QSizePolicy (QSizePolicy::Expanding,QSizePolicy::Expanding));
 	//setFocusPolicy(Qt::NoFocus);
-	
+
 
 	verticalScrollBar(); // created
 	horizontalScrollBar(); // created
 //	setFocusPolicy(Qt::NoFocus);
-//	setFrameShape (QFrame::NoFrame);	
-//	setStyle(new QCleanlooksStyle); // compiz bug 
-//	setStyle(new QWindowsStyle); // repaint bug 
-	
+//	setFrameShape (QFrame::NoFrame);
+//	setStyle(new QCleanlooksStyle); // compiz bug
+//	setStyle(new QWindowsStyle); // repaint bug
+
 }
 /*
   Destroys the table view.
@@ -247,7 +247,7 @@ void QtTableView::setXOffset( int x )
   :setYOffset(), xOffset(), topCell()
 */
 
-// SCROLL Code called by wheel 
+// SCROLL Code called by wheel
 void QtTableView::setYOffset( int y )
 {
     setOffset( xOffset(), y ,true );
@@ -266,7 +266,7 @@ void QtTableView::setYOffset( int y )
 
 void QtTableView::setOffset( int x, int y, bool updateScrBars )
 {
-	if ( (!testTableFlags(Tbl_snapToHGrid) || xCellDelta == 0) && 
+	if ( (!testTableFlags(Tbl_snapToHGrid) || xCellDelta == 0) &&
 			(!testTableFlags(Tbl_snapToVGrid) || yCellDelta == 0) &&	(x == xOffs && y == yOffs) )
 		return;
 
@@ -315,16 +315,16 @@ void QtTableView::setOffset( int x, int y, bool updateScrBars )
 	{
 		// *** scroll() call update( desposal region ) !!
 		//printf("scroll: xpixel=%d , ypixel=%d \n",xPixels,yPixels);
-		scrollTrigger(dx,dy);	
+		scrollTrigger(dx,dy);
 		view->scroll(dx,dy);
 	}
 	if ( updateScrBars )
 		updateScrollBars( verValue | horValue );
 }
 
-void QtTableView::scrollContentsBy ( int dx, int dy ) 
+void QtTableView::scrollContentsBy ( int dx, int dy )
 {
-	//view->update() //default 
+	//view->update() //default
 	//printf("scroll: dx=%d , dy=%d \n",dx,dy);
 }
 /*
@@ -390,7 +390,7 @@ void QtTableView::setCellWidth( int cellWidth )
   variable heights.
 
   \sa setCellHeight(), cellWidth()
-  
+
   Returns the height of row \a row in pixels.
 
   This function is virtual and must be reimplemented by subclasses that
@@ -417,7 +417,7 @@ int QtTableView::cellHeight( int )
 // call by htable:: fontChanged
 void QtTableView::setCellHeight( int cellHeight )
 {
-    
+
     if ( cellH == cellHeight )	return;
 #if defined(QT_CHECK_RANGE)
     if ( cellHeight < 0 || cellHeight > SHRT_MAX ) {
@@ -488,7 +488,7 @@ int QtTableView::totalHeight()
   Tbl_hScrollBar <dd> - The table has a horizontal scroll bar.
   Tbl_autoVScrollBar <dd> - The table has a vertical scroll bar if
   - and only if - the table is taller than the view.
-  Tbl_autoHScrollBar <dd> The table has a horizontal scroll bar if 
+  Tbl_autoHScrollBar <dd> The table has a horizontal scroll bar if
 	- and only if - the table is wider than the view.
   Tbl_autoScrollBars <dd> - The union of the previous two flags.
   Tbl_clipCellPainting <dd> - The table uses QPainter::setClipRect() to
@@ -879,7 +879,7 @@ void QtTableView::verSbSlidingDone( )
   Calls paintCell() for the cells that needs to be repainted.
 */
 // work?
-void QtTableView::repaintCell( int row, int col, bool usecache ) // false  
+void QtTableView::repaintCell( int row, int col, bool usecache ) // false
 {
 	//
 	static int c=0;
@@ -910,15 +910,15 @@ extern QThread *thread_main;
 void QtTableView::paintEvent( QPaintEvent *e )
 {
 	static int count=0;
-	
+
 	////if(thread_main!=thread())
-	///	printf("Error : main_thread(%X) != paint_thread(%X) report this message!!!\n",thread_main,thread()); 
-    
+	///	printf("Error : main_thread(%X) != paint_thread(%X) report this message!!!\n",thread_main,thread());
+
 	///if ( !isVisible() or !enablePaint )	return;
-	checkProfile(); 	// check cache, current_get 
-	
+	checkProfile(); 	// check cache, current_get
+
 	if ( !isVisible() )	return;
-	
+
     QRect viewR = viewRect();
 	bool flag_fullpainting=false;
 	QRect updateR = e->rect();	// update rectangle
@@ -926,7 +926,7 @@ void QtTableView::paintEvent( QPaintEvent *e )
 	QPainter paint( viewport() );
 //	printf("Qps: %s::paintEvent() count=%d\n",objectName().toAscii().data(),count++);
 //	printf("%s [%d,%d,%d,%d];\n",objectName().toAscii().data(),updateR.x(),updateR.y(),updateR.width(),updateR.height());
-	
+
 /*  possible?
  	int maxVX = maxXOffset(), maxVY = maxYOffset();
 	if ( updateR.right() > maxVX )	updateR.setRight( maxVX );
@@ -935,57 +935,57 @@ void QtTableView::paintEvent( QPaintEvent *e )
 
 	if(updateR.width()<viewR.width() or updateR.height()<viewR.height())
 	{
-	//when: Scroll_up,down and Selection 
+	//when: Scroll_up,down and Selection
 	//printf("partial: %d!=%d, %d!=%d\n",updateR.width(),viewR.width(),updateR.height(),viewR.height());
 	//printf("viewR (%d,%d,%d,%d) \n",viewR.x(),viewR.y(),viewR.width(),viewR.height());
 	}
-	else 
+	else
 	{
 		flag_fullpainting=true;
 	///	printf("%s::paintEvent() fullpainting %d\n",objectName().toAscii().data(),count++);
 	}
-	
+
 
     int firstRow = findRow( updateR.y() );
     int firstCol = findCol( updateR.x() );
 
     int	 xStart, yStart;
-   
-	if ( !colXPos( firstCol, &xStart ) ) { 
-		// right empty area of table 
-		//paint.eraseRect( updateR ); // erase area outside cells but in view 
+
+	if ( !colXPos( firstCol, &xStart ) ) {
+		// right empty area of table
+		//paint.eraseRect( updateR ); // erase area outside cells but in view
 		//printf("colXPos null\n");
 		eraseRight(&paint, updateR);
 		return;
-	} 
+	}
 
-	//if ( !rowYPos( firstRow, &yStart ) || !colXPos( firstCol, &xStart )  ) 	
-	if ( !rowYPos( firstRow, &yStart ) ) {	 //get firstRow   
+	//if ( !rowYPos( firstRow, &yStart ) || !colXPos( firstCol, &xStart )  )
+	if ( !rowYPos( firstRow, &yStart ) ) {	 //get firstRow
 		//printf("eraseRect()\n");
 		paint.eraseRect( updateR );
 		return;
-	} 
+	}
 
 	int	  maxX	= updateR.right();	// x2
     int	  maxY	= updateR.bottom();	// y2
-    int	  row	= firstRow; 
+    int	  row	= firstRow;
     int	  col;
     int	  yPos	= yStart;
     int	  xPos = maxX+1; // in case the while() is empty
     int	  nextX;
     int	  nextY;
-	
+
 
 	//printf("frow=%d,fcol=%d\n",firstRow,firstCol);
     //void 	(QtTableView::*painT)( QPainter *, int row, int col ,bool update);
 	//painT=&QtTableView::paintCell;
 	//paint.setClipRect( 0,0,viewR.width()-30,viewR.height() ); //enable, font not clip
-	
-	paint.setClipRect(viewR); //enable, font not clip (less Qt-4.3.x) 
-	//paint.setClipRect(updateR); //enable, font not clip 
+
+	paint.setClipRect(viewR); //enable, font not clip (less Qt-4.3.x)
+	//paint.setClipRect(updateR); //enable, font not clip
 
 
-	while ( yPos <= maxY and row < nRows ) { // row=...5,6,7.... 
+	while ( yPos <= maxY and row < nRows ) { // row=...5,6,7....
 		nextY = yPos + cellHeight();
 		col  = firstCol;
 		xPos = xStart;
@@ -995,9 +995,9 @@ void QtTableView::paintEvent( QPaintEvent *e )
 			nextX = xPos + width;
 			cell.setRect( xPos, yPos, width,cellH);
 			tmp_size=viewR.intersected(cell).size();
-			tmp_x=xPos;	
+			tmp_x=xPos;
 			{
-				paint.translate( xPos, yPos ); // (0,0) 	// for subclass 
+				paint.translate( xPos, yPos ); // (0,0) 	// for subclass
 				//(*this.*painT)( &paint, row, col ,	flag_use_cache);
 				paintCell( &paint, row, col ,false);
 				paint.translate( -xPos, -yPos );	//paint.translate(0,0);
@@ -1010,7 +1010,7 @@ void QtTableView::paintEvent( QPaintEvent *e )
 	}
 
 //	printf("%s: xoff=%d ,yoff=%d \n",objectName().toAscii().data(),xOffs, yOffs);
-	
+
     // while painting we have to erase any areas in the view that
     // are not covered by cells but are covered by the paint event
     // rectangle these must be erased. We know that xPos is the last
@@ -1018,8 +1018,8 @@ void QtTableView::paintEvent( QPaintEvent *e )
 	if ( xPos <= maxX ) {
 		QRect r = viewR;
 		r.setLeft( xPos );
-		r.setBottom( yPos<maxY ? yPos : maxY );		
-		
+		r.setBottom( yPos<maxY ? yPos : maxY );
+
 		//QRect ir=r.intersect( updateR );
 		eraseRight(&paint, r);//????????
 	}
@@ -1045,45 +1045,45 @@ void QtTableView::repaintChanged() // only fullpainting
 	viewport()->setAttribute(Qt::WA_OpaquePaintEvent,false);
 	test=false;
 	}
-  	
+
 	if ( !isVisible())	return;
 	bool flag_fullpainting=false;
-	
+
 	QRect updateR =viewRect();
     QRect viewR = viewRect();
 
 	flag_fullpainting=true;
-	
+
     int firstRow = findRow( updateR.y() );
     int firstCol = findCol( updateR.x() );
 
     int	 xStart, yStart;
-   
-	if ( !colXPos( firstCol, &xStart ) ) { 
-		// right empty area of table 
+
+	if ( !colXPos( firstCol, &xStart ) ) {
+		// right empty area of table
 		printf("b\n");
 		view->update(updateR);
 		return;
-	} 
+	}
 
-	//if ( !rowYPos( firstRow, &yStart ) || !colXPos( firstCol, &xStart )  ) 	
-	if ( !rowYPos( firstRow, &yStart ) ) {	 //get firstRow   
+	//if ( !rowYPos( firstRow, &yStart ) || !colXPos( firstCol, &xStart )  )
+	if ( !rowYPos( firstRow, &yStart ) ) {	 //get firstRow
 		///printf("a\n");
 		view->update( updateR );
 		return;
-	} 
+	}
 
 	int	  maxX	= updateR.right();	// x2
     int	  maxY	= updateR.bottom();	// y2
-    int	  row	= firstRow; 
+    int	  row	= firstRow;
     int	  col;
     int	  yPos	= yStart;
     int	  xPos = maxX+1; // in case the while() is empty
     int	  nextX;
     int	  nextY;
-	
-	
-	while ( yPos <= maxY and row < nRows ) { // row=...5,6,7.... 
+
+
+	while ( yPos <= maxY and row < nRows ) { // row=...5,6,7....
 		nextY = yPos + cellHeight();
 		col  = firstCol;
 		xPos = xStart;
@@ -1097,7 +1097,7 @@ void QtTableView::repaintChanged() // only fullpainting
 
 			if(isCellChanged(row,col))
 			{
-				if(col==firstCol) 
+				if(col==firstCol)
 				{
 					repaintRow(row); //  speed up!  update()...
 				//	view->update(minViewX(),y,viewWidth(),cellHeight());
@@ -1114,32 +1114,32 @@ void QtTableView::repaintChanged() // only fullpainting
 		row++;
 		yPos = nextY;
 	}
-	
+
 	if ( xPos <= maxX ) {
 		QRect r = viewR;
 		r.setLeft( xPos );
-		r.setBottom( yPos<maxY ? yPos : maxY );		
+		r.setBottom( yPos<maxY ? yPos : maxY );
 		view->repaint(r.intersected( updateR ));
 	}
-	if ( yPos <= maxY ) {  
+	if ( yPos <= maxY ) {
 		QRect r = viewR;
 		r.setTop( yPos );
-		view->repaint(r.intersected( updateR ) );	// why? CPU +2~3% -> rect.unite() 
+		view->repaint(r.intersected( updateR ) );	// why? CPU +2~3% -> rect.unite()
 	}
 
 	return;
-	
+
 	int rows = numRows();
 	int cols = numCols();
 	int left = leftCell(), right = lastColVisible();
 	int top	 = topCell(), bottom = lastRowVisible();
-	
+
 	if(right	>= cols) right = cols - 1; //???
 	if(bottom	>= rows) bottom = rows - 1;
 	// if width[col] be changed ,then the right of [col] should be repainted !
 	// repaintColumns(c,-1);
 	//printf("left=%d \n",left);
-	
+
 	for(int r = top; r <= bottom; r++) {
 		for(int c = left; c <= right; c++) {
 			//if(isCellChanged(r,c)) 	repaintCell(r, c,false);
@@ -1150,7 +1150,7 @@ void QtTableView::repaintChanged() // only fullpainting
 
 void QtTableView::resizeEvent( QResizeEvent *e )
 {
-//    printf("QtTableView::resize [%d,%d] \n",width(),height()); 
+//    printf("QtTableView::resize [%d,%d] \n",width(),height());
 	//QAbstractScrollArea::resizeEvent(e);
 	updateScrollBars( horValue | verValue | horSteps| horRange | verSteps  | verRange );
  	return;
@@ -1297,7 +1297,7 @@ int QtTableView::findColNoMinus( int xPos ) const
 	if(col<0) {
 		if(xPos<0)
 			col=0;
-		else 
+		else
 			col=nCols-1;
 	}
 	return col;
@@ -1404,7 +1404,7 @@ int QtTableView::minViewY() const
   coordinates.	This excludes the frame and any scroll bar, but
   includes blank pixels to the right of the visible table data.
 
-  \sa maxViewY(), viewWidth(),  
+  \sa maxViewY(), viewWidth(),
 */
 
 int QtTableView::maxViewX() const
@@ -1418,7 +1418,7 @@ int QtTableView::maxViewX() const
   coordinates.	This excludes the frame and any scroll bar, but
   includes blank pixels below the visible table data.
 
-  \sa maxViewX(), viewHeight(),  
+  \sa maxViewX(), viewHeight(),
 */
 
 int QtTableView::maxViewY() const
@@ -1479,17 +1479,17 @@ void QtTableView::updateScrollBars( uint f )
 			else
 				hScrollBar->setSingleStep( 16);
 		   	hScrollBar->setPageStep(viewWidth() );
-		} 
+		}
 
 		if ( sbDirty & horRange )
-		{	
+		{
 			hScrollBar->setRange( 0, maxXOffset() );
 		}
 		if ( sbDirty & horValue )
 			hScrollBar->setValue( xOffs );
 
 	}
-	
+
 	if ( testTableFlags(Tbl_vScrollBar) && (sbDirty & verMask) != 0 ) {
 		if ( sbDirty & verSteps ) {
 			if ( cellH )
@@ -1513,7 +1513,7 @@ void QtTableView::updateScrollBars( uint f )
 
 /*
   Updates the scroll bars and internal state.
-  
+
   Call this function when the table view's total size is changed;
   typically because the result of cellHeight() or cellWidth() have changed.
   This function does not repaint the widget.

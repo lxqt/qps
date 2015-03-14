@@ -7,7 +7,7 @@ HtableModel::HtableModel(QObject *parent): QAbstractItemModel(parent)
 
 QModelIndex HtableModel::index(int row, int column, const QModelIndex &parent) const
 {
-	//printf("index %d %d\n",row,column);	
+	//printf("index %d %d\n",row,column);
 	if(row>=0 and column>=0 and row<htable->nrows)
 	{
 		//if( column <2)
@@ -30,7 +30,7 @@ QModelIndex HtableModel::parent(const QModelIndex &child) const
 	return QModelIndex(); // no parent!
 }
 
-//return chilren count  
+//return chilren count
 int HtableModel::rowCount(const QModelIndex &parent) const
 {
 	return htable->nrows;
@@ -43,12 +43,12 @@ int HtableModel::columnCount(const QModelIndex &parent) const
 
 QVariant HtableModel::headerData ( int section, Qt::Orientation orientation, int role ) const
 {
-	
-//	printf("headerData\n");	
+
+//	printf("headerData\n");
 	if (role == Qt::DisplayRole)
-	{	
+	{
 		return htable->title(section);
-		
+
 	}else
 
 	if(role==Qt::TextAlignmentRole)
@@ -73,8 +73,8 @@ QVariant HtableModel::headerData ( int section, Qt::Orientation orientation, int
 }
 
 QVariant HtableModel::data(const QModelIndex &index, int role) const
-{	
-//	printf("data\n");	
+{
+//	printf("data\n");
 //	watchCond *item= static_cast<watchCond*>(index.internalPointer());
 		if (role == Qt::DisplayRole)
 		{
@@ -83,17 +83,17 @@ QVariant HtableModel::data(const QModelIndex &index, int role) const
 		if (role == Qt::DecorationRole) {
 		}
 		if (role == Qt::EditRole) {
-		}  
+		}
 		if(role==Qt::CheckStateRole)
 		{
 		//	if(item->enable)
 		//		return Qt::Checked;
-		//	else 
+		//	else
 		//		return Qt::Unchecked;
 		}
 		if(role==Qt::TextAlignmentRole)
 			return Qt::AlignRight;
-		if (role == Qt::EditRole) 
+		if (role == Qt::EditRole)
 		{
 
 		}
@@ -107,9 +107,9 @@ QVariant HtableModel::data(const QModelIndex &index, int role) const
 Qt::ItemFlags HtableModel::flags ( const QModelIndex & index ) const
 {
 	return  Qt::ItemIsEnabled|Qt::ItemIsSelectable;
-}	
+}
 
-// HtableHeader ////////////////////////// 
+// HtableHeader //////////////////////////
 
 HtableHeader::HtableHeader(QWidget *parent):QHeaderView(Qt::Horizontal,parent)
 {
@@ -138,7 +138,7 @@ HeadedTable2::HeadedTable2(QWidget *parent, int opts)
 	nrows = ncols = 0;
 	model=new HtableModel(this);
 	HtableHeader *header=new HtableHeader(this);
-	setHeader(header);	
+	setHeader(header);
 	setModel(model);
 //	setEditTriggers (QAbstractItemView::SelectedClicked );
 //	tableView->setItemDelegateForColumn(1,&delegate);
@@ -149,7 +149,7 @@ HeadedTable2::HeadedTable2(QWidget *parent, int opts)
 	//setSelectionMode (QAbstractItemView::MultiSelection);
 
 	setUniformRowHeights (true);
-	setAllColumnsShowFocus (true);	
+	setAllColumnsShowFocus (true);
 	setFrameShape ( QFrame::NoFrame );
 	setAlternatingRowColors (true);
 
@@ -192,7 +192,7 @@ void HeadedTable2::mousePressEvent(QMouseEvent *e)
 {
 	printf("mousePressEvent() \n");
 	QTreeView::mousePressEvent(e);
-	//falg_x=1;	
+	//falg_x=1;
 	flag_x=!flag_x;
 	if(e->button() == Qt::RightButton)
 	{
@@ -210,13 +210,13 @@ void HeadedTable2::modelIterate(const QModelIndex &parent)
 	setExpanded(parent,true); //				expand(ci);
 	for(int i=0;i<rows;i++)
 	{
-		QModelIndex ci=model->index(i,0,parent);	
+		QModelIndex ci=model->index(i,0,parent);
    		//Procinfo *pi= static_cast<Procinfo*>(ci.internalPointer());
 		//if(!pi->hidekids)//	setExpanded(ci,true); //				expand(ci);
 		//if(!pi->hidekids and !isExpanded(ci)) 	expand(ci);
 		//if(!folded(ci) and !isExpanded(ci)) 	expand(ci);
-		//if(!folded(ci) and !isExpanded(ci)) 	
-		
+		//if(!folded(ci) and !isExpanded(ci))
+
 		if(model->rowCount(ci)>0)
 				modelIterate(ci);
 	}

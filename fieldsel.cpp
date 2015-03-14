@@ -1,8 +1,7 @@
-// indent by VIM 
 // fieldsel.cpp
 //
 // This program is free software. See the file COPYING for details.
-// Author: Mattias Engdegård, 1997-1999
+// Author: Mattias EngdegÃ¥rd, 1997-1999
 
 #include "fieldsel.h"
 
@@ -20,14 +19,14 @@ FieldSelect::FieldSelect(Procview *pv)
 	setLayout(v_layout);
 
     QGridLayout *grid=new QGridLayout;
-	grid->setSpacing (0); 
-	grid->setColumnMinimumWidth (2,17); 
+	grid->setSpacing (0);
+	grid->setColumnMinimumWidth (2,17);
 	v_layout->addLayout(grid);
 
 	buts = new QCheckBox*[nbuttons];
-	
+
 	QList<int> keys=pv->categories.keys();
-	
+
 	for(int i = 0; i < nbuttons; i++) {
 		Category *cat = pv->categories[keys.takeFirst()];	// fieldlist
 

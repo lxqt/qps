@@ -1,7 +1,7 @@
 // htable.h				emacs, this is written in -*-c++-*-
 //
 // This program is free software. See the file COPYING for details.
-// Author: Mattias Engdeg?rd, 1997-1999
+// Author: Mattias Engdegård, 1997-1999
 
 // This file defines the HeadedTable class.
 // A HeadedTable is a QTableView with one line of headers over each column.
@@ -11,11 +11,11 @@
 
 #include "qttableview.h"
 
-#ifndef USING_PCH 
+#ifndef USING_PCH
 #include <QHash>
 #include <QToolTip>
 #include <QVBoxLayout>
-#endif 
+#endif
 
 // table options (bits to be ORed together)
 #define HTBL_ROW_SELECTION		1	// rows are selectable
@@ -29,21 +29,21 @@
 
 class HeadedTable;
 
-class CellAttribute 
+class CellAttribute
 {
 	public:
 	QString text;
 	bool selected;
 	bool sorted;
-	QSize	size;	
+	QSize	size;
 	QColor	backColor; //table share
 	QColor  foreColor; //rows share
 	int xpos; 	// cols share
 	int ypos; 	// rows share
 	int	w;		// cols share
 	int depth;	// rows share
-	int	folded; // 
-	int	lastchild; // 
+	int	folded; //
+	int	lastchild; //
 	CellAttribute(){ text=""; sorted=selected=false; xpos=-1,ypos=-1,w=0,depth=-1,folded=-1; lastchild=0; }
 };
 
@@ -56,9 +56,9 @@ struct TableRow {
 class TableCache {
 	int nrow,ncol;
 	QList<TableRow*> rows;
-	
+
 	public :
-	TableCache(){	
+	TableCache(){
 		//for(int i=0;i<1;i++) // tmp
 			rows.append(new TableRow);
 			nrow=0;
@@ -73,13 +73,13 @@ class TableCache {
 	CellAttribute * value(int row,int col){
 		if(row<0)
 			qFatal("Qps: Error ! TableCache() under size !! row=%d \n",row);
-		
+
 		if(row>=rows.size())
 		{
 			row=rows.size();
 			rows.append(new TableRow);
 		}
-		//if(row<0 or row>rows.size()) 
+		//if(row<0 or row>rows.size())
 		return &(rows[row]->cells[col]);
 	}
 
@@ -114,7 +114,7 @@ class VPointer : public QWidget
 //		void event_cursor_moved(QMouseEvent *e);
 	protected :
 		//virtual void drawButton 3( QPainter * ) ;
-		virtual void paintEvent(  QPaintEvent * event ); 
+		virtual void paintEvent(  QPaintEvent * event );
 	//	void resizeEvent(QResizeEvent *p);
 };
 
@@ -128,7 +128,7 @@ class FloatingHead : public QWidget
 		QString title;
 	protected slots:
 	protected :
-		virtual void paintEvent(  QPaintEvent * event ); 
+		virtual void paintEvent(  QPaintEvent * event );
 };
 
 class TableHead : public QtTableView
@@ -165,7 +165,7 @@ class TableHead : public QtTableView
 	signals:
 		void rightClicked(QPoint where, int col);
 		void toolTip(QPoint where, int col);
-		
+
 		friend class HeadedTable;
 };
 
@@ -232,7 +232,7 @@ class HeadedTable : public QWidget
 
 		void repaint_changed();
         int  updateColWidth(int col);
-		
+
 
 		void resetWidths();
 		void resetWidth(int col) { max_widths[col] = -1; } // dont use ?
@@ -258,7 +258,7 @@ class HeadedTable : public QWidget
 		void setTreeMode(bool tm);
 		bool treeMode() { return treemode; };
 		int	tableWidth() const { return body->totalWidth()+ body->verticalScrollBar()->width(); }
-		
+
 
 		void selectOnlyOne(int row);
 		int numSelected() { return 0; }
@@ -278,7 +278,7 @@ class HeadedTable : public QWidget
 		void flyOnHCell(int col);
 		void outOfCell();
 		void outOfHCell();
-		
+
 
 	public slots:
 		void selectAll();
@@ -331,13 +331,13 @@ class HeadedTable : public QWidget
 		int reversed_sort;		// true if sorting backwards
 		int options;
 		int nrows;
-		int ncols;	
+		int ncols;
 
 		// text cache is in logical columns (reorder causes no flush)
 		bool folding;		// true if folding gadgets are used
 		bool lines;			// true if tree lines are drawn
 		int gadget_space;		// horizontal space for show/hide tree gadget
-	
+
 	friend class TableHead;
 	friend class TableBody;
 };

@@ -1,7 +1,7 @@
 // wchan.h
 //
 // This program is free software. See the file COPYING for details.
-// Author: Mattias Engdegård, 1997-1999
+// Author: Mattias EngdegÃ¥rd, 1997-1999
 
 #ifndef WCHAN_H
 #define WCHAN_H

@@ -9,7 +9,7 @@ PstableModel::PstableModel(QObject *parent,Procview *pv): HtableModel(parent)
 
 QModelIndex PstableModel::index(int row, int col, const QModelIndex &parent) const
 {
-	if(flag_x)	
+	if(flag_x)
 	printf("index(): row=%d col=%d  parent(%d %d)\n",row,col,parent.row(),parent.column());
 	//		if(row<0 or column<0)  // root?
 	//			return QModelIndex();
@@ -18,13 +18,13 @@ QModelIndex PstableModel::index(int row, int col, const QModelIndex &parent) con
 	if(col <0 or col>=procview->cats.size()) return QModelIndex();
 		//qFatal("Qps::Pstable2::sizeHintForColumn() Bug!: over col !! %d\n",col);
 	if(parent==QModelIndex())
-	{ 
+	{
 		if(row>=0 and row<procview->root_procs.size())
 		{
 			Procinfo *pi=procview->root_procs[row];  // NULL possible!!
 			return createIndex(row,col,pi);
 		}
-		else 
+		else
 			printf("out of row %d",row);  // ???????????????????
 	}
 
@@ -45,15 +45,15 @@ QModelIndex PstableModel::index(int row, int col, const QModelIndex &parent) con
 
 //Pure Virtual
 QModelIndex PstableModel::parent(const QModelIndex &child) const
-{ 
+{
 	//wrong	parent makes segfault
 	//return QModelIndex();
 //	printf("parent() ! %d %d\n",child.row(),child.column());
 	if(child.isValid())
 	{
 	 	Procinfo *pi= static_cast<Procinfo*>(child.internalPointer());
-		//if (pi==NULL or pi->level==0 )//or pi->parent_row<0)	
-		if( pi->level<1 )//or pi->parent_row<0)	
+		//if (pi==NULL or pi->level==0 )//or pi->parent_row<0)
+		if( pi->level<1 )//or pi->parent_row<0)
 		{
 		//	printf("root , pid=%d ppid=%d \n",pi->pid,pi->ppid);
 			return QModelIndex();
@@ -71,7 +71,7 @@ QModelIndex PstableModel::parent(const QModelIndex &child) const
 	}
 	printf("parent() Invalud\n");
 	return QModelIndex(); // no parent!
-   		
+
 //	if(row>=0 and col>=0 and row<htable->nrows)
 //		return createIndex(htable->parentRow(row),col,NULL);
 }
@@ -80,10 +80,10 @@ int PstableModel::columnCount(const QModelIndex &parent) const
 {
 	if (parent.column() > 0)	return 0;
 //	printf("columnCount() size=%d\n" ,procview->cats.size());
-	return procview->cats.size(); 
+	return procview->cats.size();
 }
 
-//pure virtual: return chilren count  
+//pure virtual: return chilren count
 int PstableModel::rowCount(const QModelIndex &parent) const
 {
 	if (parent.column() > 0) return 0;
@@ -113,11 +113,11 @@ bool PstableModel::hasChildren ( const QModelIndex & parent ) const
 }
 
 QVariant PstableModel::data(const QModelIndex &index, int role) const
-{	
-//	printf("data\n");	
+{
+//	printf("data\n");
 	Procinfo *pi= static_cast<Procinfo*>(index.internalPointer());
 	int col=index.column();
-		
+
 		if (role == Qt::DisplayRole)
 		{
 		//	if(pi->child_seq_prev>=0 and pi->child_seq!=index.row())
@@ -133,7 +133,7 @@ QVariant PstableModel::data(const QModelIndex &index, int role) const
 		{
 		//	if(item->enable)
 		//		return Qt::Checked;
-		//	else 
+		//	else
 		//		return Qt::Unchecked;
 		}else
 		if(role==Qt::TextAlignmentRole)
@@ -141,7 +141,7 @@ QVariant PstableModel::data(const QModelIndex &index, int role) const
 			Category *cat = procview->cats[index.column()];
 			return cat->alignment();
 		}
-		if (role == Qt::EditRole) 
+		if (role == Qt::EditRole)
 		{
 
 		}else
@@ -158,9 +158,9 @@ QVariant PstableModel::data(const QModelIndex &index, int role) const
 // MOVE TO Procview
 // slot: called when a title is clicked
 
-//void Pstable::set_sortcol() 
+//void Pstable::set_sortcol()
 //	setSortedCol(i);
-// connect(header(), SIGNAL(sectionPressed( int )),SLOT(setSortColumn(int ))); 
+// connect(header(), SIGNAL(sectionPressed( int )),SLOT(setSortColumn(int )));
 void Pstable2::setSortColumn(int col)
 {
 	// col=-1 no section
@@ -171,12 +171,12 @@ void Pstable2::setSortColumn(int col)
 	setSortedCol(col);	//void HeadedTable::setSortedCol(int col)
 	refresh(); // no redraw
 	model->update();
-	
+
 }
 
 // sync Procview and HeadedTable
 // set sorted column of table to procview->sortcol
-void Pstable2::set_sortcol() 
+void Pstable2::set_sortcol()
 {
 	for(int i = 0; i < procview->cats.size(); i++)
 	{
@@ -200,7 +200,7 @@ int Pstable2::sizeHintForColumn(int col) const
  	//static int z6=fontMetrics ().width("000000");
 	int cat_id=procview->cats[col]->index;
 	switch(cat_id)
-	{	
+	{
 // 	only COMMON Field
 //		case F_PID :
 		case F_RSS :
@@ -215,7 +215,7 @@ int Pstable2::sizeHintForColumn(int col) const
 			return fontMetrics().width("%MEM")+10;
 		case F_WCPU :
 			return fontMetrics().width("%WCPU") +10;
-			//return aw*4; 
+			//return aw*4;
 		case F_USER :
 		case F_CMD :
 //		case F_CMDLINE:	return 300;
@@ -229,7 +229,7 @@ int Pstable2::sizeHintForColumn(int col) const
 	return -1;
 }
 
-// inner 
+// inner
 QString Pstable2::title(int col)
 {
 	if(col <0 or col>=procview->cats.size())
@@ -270,23 +270,23 @@ int Pstable2::alignment(int col)
 
 
 
-// virtual of HeadedTable 
+// virtual of HeadedTable
 void Pstable2::setSelected(int row, bool sel)
 {
 ///	printf("debug:setSelected()\n");
 	Procinfo *pi= procview->linear_procs[row];
 	if(pi->selected!=sel)
 	{
-		pi->selected=sel; 
+		pi->selected=sel;
 //		body->repaintRow(row);  // TEMP trick..
 	}
 }
 
-// virtual 
-bool Pstable2::isSelected(int row) 
-{ 
+// virtual
+bool Pstable2::isSelected(int row)
+{
 	Procinfo *pi= procview->linear_procs[row];
-	return pi->selected; 
+	return pi->selected;
 }
 
 int Pstable2::rowDepth(int row)
@@ -295,7 +295,7 @@ int Pstable2::rowDepth(int row)
 	Procinfo *pi= procview->linear_procs[row];
 	if(pi)
 		return pi->level;
-	
+
 	printf("Qps bug: over row  %d!!!\n",row);
 	return 0;
 }
@@ -313,7 +313,7 @@ bool Pstable2::lastChild(int row)
 int Pstable2::childCount(int row)
 {
 	return procview->linear_procs[row]->table_children.size();
-	//and !p->hidekids) 
+	//and !p->hidekids)
 } */
 
 // Segfault !!!!
@@ -332,7 +332,7 @@ QString Pstable2::tipText(int col)
 {
 	Category *cat = procview->cats[col];
 	QString s(cat->help);
-	
+
 	// trick
 	if(cat->index == F_STAT)
 		s.append("\n(R =Running, S =Sleeping, T =sTopped, Z=Zombie)");
@@ -363,12 +363,12 @@ Pstable2::Pstable2(QWidget *parent,Procview *pv)
 	// activate() double click
 	// pressed() one click
 	// entered() drag
-	//connect(this, SIGNAL(activated ( const QModelIndex & )),SLOT(selection_update(const QModelIndex&))); 
-	connect(this, SIGNAL(pressed ( const QModelIndex & )),SLOT(selection_update(const QModelIndex&))); 
-//	connect(header(), SIGNAL(sectionClicked( int )),SLOT(setSortColumn(int ))); 
-	connect(header(), SIGNAL(sectionPressed( int )),SLOT(setSortColumn(int ))); 
+	//connect(this, SIGNAL(activated ( const QModelIndex & )),SLOT(selection_update(const QModelIndex&)));
+	connect(this, SIGNAL(pressed ( const QModelIndex & )),SLOT(selection_update(const QModelIndex&)));
+//	connect(header(), SIGNAL(sectionClicked( int )),SLOT(setSortColumn(int )));
+	connect(header(), SIGNAL(sectionPressed( int )),SLOT(setSortColumn(int )));
 //	connect(this, SIGNAL(titleClicked(int)), SLOT(setSortColumn(int)));
-	
+
 	printf("read 3-3\n");
 	//modelIterate(rootIndex());
 	//modelIterate(QModelIndex());
@@ -393,16 +393,16 @@ HeadedTable2::NodeState Pstable2::folded(int row)
 
 
 // slot: called when selection changes
-//	called by 
+//	called by
 void Pstable2::selection_update(const QModelIndex &idx)
 {
-	QModelIndexList list=selectionModel()->selectedRows(); 
+	QModelIndexList list=selectionModel()->selectedRows();
 	printf("debug:selection_update()\n");
 	//qps->update_menu_selection_status();
 }
 
 // slot: changes table mode
-// call by 
+// call by
 // 	1.void Qps::set_table_mode(bool treemode)
 void Pstable2::setTreeMode(bool treemode)
 {
@@ -410,12 +410,12 @@ void Pstable2::setTreeMode(bool treemode)
 	procview->treeview = treemode;
 	procview->fieldArrange();
 	set_sortcol();
-	HeadedTable2::setTreeMode(treemode);  
+	HeadedTable2::setTreeMode(treemode);
 	Pstable2::refresh();
 	if(treemode)
 		setRootIsDecorated(true);
 	else setRootIsDecorated(false);
-	
+
 	reset();
 	expandAll();
 	//model->update(); //SEGFAULT
@@ -425,7 +425,7 @@ void Pstable2::setTreeMode(bool treemode)
 
 bool Pstable2::columnMovable(int col)
 {
-	if(treemode) 
+	if(treemode)
 	{
 		if(col==0) return false;
 
@@ -437,10 +437,10 @@ bool Pstable2::columnMovable(int col)
 }
 
 // called by HeadedTable
-// Description : FIELD movement by mouse drag 
+// Description : FIELD movement by mouse drag
 //	 				To place From col
 //	virtual HeadedTable::moveCol(col,place);
-void Pstable2::moveCol(int col, int place) 
+void Pstable2::moveCol(int col, int place)
 {
 	//printf("Pstable::moveCol\n");
 	procview->moveColumn(col,place);
@@ -455,22 +455,22 @@ void Pstable2::moveCol(int col, int place)
 // 2.resetwidth
 // 3.repaint
 
-// called by 
+// called by
 // 	1.void Qps::refresh()
 void Pstable2::refresh()
 {
     printf("Pstable2:refresh()\n");
 	procview->rebuild(); //for Table
-	setNumCols(procview->cats.size());  		//2. resetWidths() 
+	setNumCols(procview->cats.size());  		//2. resetWidths()
 	setNumRows(procview->linear_procs.size()); 	//1.
 //	printf("catsize=%d row=%d\n",procview->cats.size(),procview->linear_procs.size());
 //	update();
 //	update(QModelIndex());
 //	repaint();
 //	repaint_changed();
-	//model->revert();	//temp					
-//	model->submit();	//temp	
-//	model->update();				
+	//model->revert();	//temp
+//	model->submit();	//temp
+//	model->update();
 }
 
 
