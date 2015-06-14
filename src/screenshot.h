@@ -4,16 +4,15 @@
 #include <QPixmap>
 #include <QFrame>
 
-class QCheckBox;
-class QGridLayout;
-class QGroupBox;
-class QHBoxLayout;
-class QLabel;
-class QPushButton;
-class QSpinBox;
-class QVBoxLayout;
-
-
+#include <QCheckBox>
+#include <QGridLayout>
+#include <QGroupBox>
+#include <QHBoxLayout>
+#include <QLabel>
+#include <QPushButton>
+#include <QSpinBox>
+#include <QVBoxLayout>
+#include <QFileDialog>
 
 class TitleBar : public QWidget
 {

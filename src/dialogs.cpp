@@ -114,7 +114,7 @@ void IntervalDialog::event_label_changed()
 		return;
 	}
 
-	while(s[i] >= '0' && s[i] <= '9' || s[i] == '.') i++;
+	while((s[i] >= '0' && s[i] <= '9') || s[i] == '.') i++;
 
 	float period = (i > 0) ? s.left(i).toFloat() : -1;
 	
@@ -144,7 +144,7 @@ void IntervalDialog::done_dialog()
 	
 	//if(toggle->isChecked()) 
 	QString s = ed_result;
-	while(s[i] >= '0' && s[i] <= '9' || s[i] == '.') i++;
+	while((s[i] >= '0' && s[i] <= '9') || s[i] == '.') i++;
 
 	float period = (i > 0) ? s.left(i).toFloat() : -1;
 	

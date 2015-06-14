@@ -418,7 +418,7 @@ int  Procinfo::hashcmp(char *sbuf)
 	if(statlen>sizeof(hashstr))
 	{
 		// some user reported 265byte.
-		printf("Qps BUG:  hashstr shortage statlen(%d) > hashstr(%d), report this message to fasthyun@magicn.com \n",statlen,sizeof(hashstr));
+		printf("Qps BUG:  hashstr shortage statlen(%d) > hashstr(%lu), report this message to fasthyun@magicn.com \n",statlen,sizeof(hashstr));
 		abort();
 	}
 	else
@@ -684,7 +684,7 @@ int Procinfo::readproc()
 			// why.. this occurs ?
 			// Qps exception:[3230,firefox] dcpu=-22 utime=39268 old_utime=39290 why occur?
 			if(flag_devel) 
-				printf("Qps :[%d,%s] dcpu=%d utime=%d old_utime=%d why occurs?\n"
+				printf("Qps :[%d,%s] dcpu=%d utime=%ld old_utime=%ld why occurs?\n"
 						,pid,qPrintable(command),dcpu,utime,old_utime);
 			return 1;		
 		} 
@@ -700,7 +700,7 @@ int Procinfo::readproc()
 
 		if(flag_devel and pcpu>100) //DEBUG CODE
 		{
-			printf("Qps pcpu error: %0.0f%% [%d,%s] dt_total=%d dcpu=%d utime=%d old_utime=%d \n"
+			printf("Qps pcpu error: %0.0f%% [%d,%s] dt_total=%ld dcpu=%d utime=%ld old_utime=%ld \n"
 					,pcpu,pid,qPrintable(command), proc->dt_total,dcpu,utime,old_utime);
 			pcpu=99.99;
 		}
@@ -1031,7 +1031,7 @@ int Proc::read_system() //
 	if(Proc::dt_total==0)
 	{	
 		//?????
-		printf("Error: dt_total=0 , dt_used=%d(%d)  report to fasthyun@magicn.com\n",Proc::dt_used,old_cpu_times(Proc::num_cpus,CPUTIME_IDLE));
+		printf("Error: dt_total=0 , dt_used=%ld(%u)  report to fasthyun@magicn.com\n",Proc::dt_used,old_cpu_times(Proc::num_cpus,CPUTIME_IDLE));
 		dt_total=500; //more tolerable?
 		//abort(); // stdlib.h
 	}
@@ -1092,7 +1092,7 @@ int Proc::read_system() //
 
 	// Skip the old /meminfo cruft, making this work in post-2.1.42 kernels
 	// as well.  (values are now in kB)
-	if( p = strstr(buf, "MemTotal:"))
+	if( (p = strstr(buf, "MemTotal:")))
 		sscanf(p, "MemTotal: %d kB\n", &mem_total);
 	if( (p = strstr(buf, "MemFree:")) != NULL )
 		sscanf(p, "MemFree: %d kB\n", &mem_free);
@@ -1178,7 +1178,7 @@ void Procinfo::read_fd(int fdnum, char *path)
 			si=proc->socks.value(ino,NULL); // sock
 			char buf[80];
 			if(si) {
-				printf("sock ino=%d\n",ino);
+				printf("sock ino=%lu\n",ino);
 				si->pid=pid;
 				// a TCP or UDP socket
 				sock_inodes.append(new SockInode(fdnum, ino));
@@ -1340,7 +1340,7 @@ bool Proc::read_usocket_list()
 		pus=usocks.value(us.inode,NULL);
 		if(pus==NULL)
 		{	
-			printf("inode =%d \n",us.inode);
+			printf("inode =%lu \n",us.inode);
 			
 			pus=new UnixSocket;
 			*pus=us;
@@ -1955,7 +1955,7 @@ int get_kernel_version()
 	    //printf("sysname =%s \n",uname_info.sysname);
 	    if(strcasecmp(uname_info.sysname,"linux")==0)
 	    {
-			uname_info.release[0];
+			Q_UNUSED(uname_info.release[0]);
 	    }
 		p=uname_info.release;
 		char str[32];

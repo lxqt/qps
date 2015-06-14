@@ -55,7 +55,7 @@ QString Wchan::name(unsigned long addr)
 bool Wchan::open_sysmap()
 {
     // common places to look for a valid System.map
-    static char *paths[] = {
+    static const char *paths[] = {
 	"/boot/System.map-%s",
 	"/boot/System.map",
 	"/lib/modules/%s/System.map",
@@ -66,7 +66,7 @@ bool Wchan::open_sysmap()
 	0
 	};
 	sysmap_inited = true;	// don't try again
-	for(char **p = paths; *p; p++) {
+	for(const char **p = paths; *p; p++) {
 		char buf[80];
 		struct utsname ub;
 		uname(&ub);

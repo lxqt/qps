@@ -125,10 +125,10 @@ QString Cat_memory::string(Procinfo *p)
 	else */
 	if ( sizeM > 0 )
 	{
-		sprintf(buff,"%dM",sizeM);
+		sprintf(buff,"%ldM",sizeM);
 	}
 	else
-		sprintf(buff,"%dK",sizeK);
+		sprintf(buff,"%ldK",sizeK);
 
 	if ( sizeK == 0 ) 
 		s = "0";
@@ -877,7 +877,7 @@ void Procview::build_tree(Proclist &procs)
 	{
 		Procinfo *p = i.value(); 
 		p->table_children.clear();  
-		if(p->accepted=accept_proc(p)) proc_n++;
+		if((p->accepted = accept_proc(p))) proc_n++;
 		++i;
 	}
 

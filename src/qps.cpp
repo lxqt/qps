@@ -4,8 +4,6 @@
 //          fasthyun@magicn.com 2005-2012
 //          daehyun.yang@gmail.com 2015-
 
-#define QPS_VERSION "1.10.16"
-
 // TODO & MEMO
 /*
  *
@@ -29,7 +27,7 @@
 // . P_MEM  -> P_%MEM or P_PMEM
 
 
-#include "./icon/icon.xpm" 
+#include "../icon/icon.xpm" 
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -155,7 +153,7 @@ Qps::Qps()
 	if(flag_devel)
 	{	
 		thread_main=thread(); //Test
-		printf("qps thread =%X , qApp thread =%X\n",thread(),QApplication::instance()->thread());
+		printf("qps thread =%p , qApp thread =%p\n",thread(),QApplication::instance()->thread());
 	}
 
 	//watchdogDialog = new WatchdogDialog; //Memory Leak
@@ -2421,9 +2419,10 @@ int QPS_PROCVIEW_CPU_NUM()
 		return 0;
 }
 
-int AddLog(QString str)
+void AddLog(QString str)
 {
-	if(qps and qps->logbox)
+    qDebug() << qps;
+	if (qps && qps->logbox)
 	{
 		qps->logbox->append(str);
 	}

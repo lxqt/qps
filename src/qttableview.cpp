@@ -564,8 +564,8 @@ void QtTableView::setTableFlags( uint f )
 		updateScrollBars( verRange );
     }
     if ( f & Tbl_snapToGrid ) {			// Note: checks for 2 flags
-	if ( (f & Tbl_snapToHGrid) != 0 && xCellDelta != 0 || //have to scroll?
-	     (f & Tbl_snapToVGrid) != 0 && yCellDelta != 0 ) {
+	if ( ((f & Tbl_snapToHGrid) != 0 && xCellDelta != 0 ) || //have to scroll?
+	     ((f & Tbl_snapToVGrid) != 0 && yCellDelta != 0 )) {
 	    repaintMask |= Tbl_snapToGrid;	// repaint table
 	}
 	}
@@ -620,8 +620,8 @@ void QtTableView::clearTableFlags( uint f )
 		updateScrollBars( verRange );
 	}
 	if ( f & Tbl_smoothScrolling ) {	      // Note: checks for 2 flags
-		if ((f & Tbl_smoothHScrolling) != 0 && xCellDelta != 0 ||//must scroll?
-				(f & Tbl_smoothVScrolling) != 0 && yCellDelta != 0 ) {
+		if (((f & Tbl_smoothHScrolling) != 0 && xCellDelta != 0 ) ||//must scroll?
+				((f & Tbl_smoothVScrolling) != 0 && yCellDelta != 0 )) {
 			repaintMask |= Tbl_smoothScrolling;		     // repaint table
 		}
 	}
@@ -1164,7 +1164,7 @@ int QtTableView::findRawRow( int yPos, int *cellMaxY, int *cellMinY, bool goOuts
 	int r = -1;
 	if ( nRows == 0 )
 		return r;
-	if ( goOutsideView || yPos >= minViewY() && yPos <= maxViewY() ) {
+	if ( goOutsideView || (yPos >= minViewY() && yPos <= maxViewY())) {
 		if ( yPos < minViewY() ) {
 #if defined(QT_CHECK_RANGE)
 			qWarning( "QtTableView::findRawRow: (%s) internal error: "
@@ -1210,7 +1210,7 @@ int QtTableView::findRawCol( int xPos, int *cellMaxX, int *cellMinX , bool goOut
 	int c = -1;
 	if ( nCols == 0 )
 		return c;
-	if ( goOutsideView || xPos >= minViewX() && xPos <= maxViewX() ) {
+	if ( goOutsideView || (xPos >= minViewX() && xPos <= maxViewX())) {
 		if ( xPos < minViewX() ) {
 #if defined(QT_CHECK_RANGE)
 			qWarning( "QtTableView::findRawCol: (%s) internal error: "

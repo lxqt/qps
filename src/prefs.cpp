@@ -5,12 +5,14 @@
 
 #include "prefs.h"
 #include "proc.h"
+#include "qps.h"
 #include <QLabel>
 #include <QVBoxLayout>
 #include <QGroupBox>
 #include <qstring.h>
 #include <QtGui>
 #include <QApplication>
+#include <QFontComboBox>
 
 //#include <qstylefactory.h>
 #include "qps.h"
@@ -98,7 +100,7 @@ QValidator::State Swapvalid::validate(QString &s, int &) const
 	int len = s.length();
 	int i = 0;
 	while(i < len && s[i] >= '0' && s[i] <= '9') i++;
-	if(i < len && QString("kKmM%").contains(s[i]) == 0 || i < len - 1)
+	if((i < len && QString("kKmM%").contains(s[i]) == 0) || i < len - 1)
 		return Invalid;
 	if(s[i] == 'k')
 		s[i] = 'K';
@@ -180,7 +182,6 @@ Preferences::Preferences(): QDialog()
 	v_layout->addWidget(wgrp);
 	*/
 
-	int QPS_PROCVIEW_CPU_NUM();
 	rb_totalcpu=NULL; // tmp	
 	
 	if(QPS_PROCVIEW_CPU_NUM()>1)

@@ -43,7 +43,7 @@ class gwidget {
 		gwidget(QWidget *p){parent=p;};
 		virtual void draw(QPainter *p){printf("gwidget\n");};
 		virtual void setPosition(int parent_width,int parent_height){};
-		virtual char *info(){ return NULL; };
+		virtual const char *info(){ return NULL; };
 		void setParent(QWidget *p,Procview *procv){parent=p; procview=procv;};
 		void resize(int x_,int y_,int w,int h)
 		{ x=x_;y=y_;width=w;height=h;};

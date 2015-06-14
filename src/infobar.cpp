@@ -64,6 +64,7 @@ bool Infobar::swaplim_exceeded()
 	} else {
 		return procview->swap_free < Qps::swaplimit;
 	} */
+    return false;
 }
 
 char rotate_str[]="|/-\\|/-\\";
@@ -146,7 +147,7 @@ QColor part2_color;
 QColor part3_color;
 // DRAFT CODE : DRAFT CODE !!
 // return width
-int drawSPECTRUM(QPainter *p,int x,int y,char *name,
+int drawSPECTRUM(QPainter *p,int x,int y,const char *name,
 		int total, int part1,int part2=0,int part3=0,int h=0) 
 {
 	int total_width;
@@ -558,7 +559,7 @@ class w_utime: public gwidget
 		x=x_swap->xpluswidth()+10;
 		width=drawUTIME(p,x,2,procview->boot_time);
 	}
-	virtual char *info()
+	virtual const char *info()
 	{
 		return "passed time after system booting";
 	};
@@ -593,7 +594,7 @@ class w_load_avg : public gwidget
 		pf_write(p,x,y,str);
 
 	}
-	virtual char *info()
+	virtual const char *info()
 	{
 		return "Average CPU%% each 1, 5 ,15 minutes";
 	};

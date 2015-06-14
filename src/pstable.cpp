@@ -236,7 +236,7 @@ QString Pstable::tipText(int col)
 		s.append("\n(R =Running, S =Sleeping, T =sTopped, Z=Zombie)");
 	if(cat->index == F_PLCY)
 		s.append("\n(TS =Time Sharing)");
-	if(cat->index == F_RSS);
+	//if(cat->index == F_RSS);
 		//s.append("\nRSS = CODE + DATA + SHARE\n"
 		//	   "RSS = TRS  + DRS  + SHARE\n");
 		///s.append("\n(RSS = TRS + DRS)");
@@ -319,7 +319,7 @@ char* Pstable::total_selectedRow(int col)
 {
 	static char buff[48];
 	char mem_str[48];
-	char *name;
+	std::string name;
 	int	index;
 	
 	if(procview->cats.size()<=col or col<0 ) return 0;  // col == -1 
@@ -371,7 +371,7 @@ char* Pstable::total_selectedRow(int col)
 		}
 
 	mem_string(total,mem_str); // misc.h
-	strcpy(buff,name);
+	strcpy(buff,name.c_str());
 	strcat(buff,mem_str);
 	//sqDebug(buff,"total:%s",total);
 	return buff;

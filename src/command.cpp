@@ -109,7 +109,7 @@ Command::Command(QString n, QString cmd,bool flag)
 		
 }
 
-QString watchCond::getVal(QString &str, char *key)
+QString watchCond::getVal(QString &str, const char *key)
 {
 	int n;//key.length();
 	int idx=str.indexOf(key);
@@ -489,7 +489,7 @@ void CommandDialog::set_select(const QModelIndex &index)
 {
 	Command *c= static_cast<Command*>(index.internalPointer());  // never Null ?
 /*	
-	if (item==NULL) return; //*** important 
+	if (item==NULL) return; // important
 	Command *c = commands[find_command(item->text())];
 */
 	name->setText(c->name);

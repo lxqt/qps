@@ -48,8 +48,8 @@ int  	pf_str_width(char *str);
 int  	pf_char_height();
 void 	check_qps_running();
 
-
-int 	AddLog(QString str);
+int QPS_PROCVIEW_CPU_NUM();
+void 	AddLog(QString str);
 
 class CrossBox : public QCheckBox
 {

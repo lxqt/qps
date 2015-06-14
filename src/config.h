@@ -6,7 +6,7 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
-#if defined(linux)
+#if defined(__linux__)
 #define LINUX
 
 #elif defined(sun) && defined(__SVR4)

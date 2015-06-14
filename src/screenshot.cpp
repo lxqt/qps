@@ -3,6 +3,12 @@
 #include "screenshot.h"
 #include <QStatusBar>
 #include <QMouseEvent>
+#include <QVBoxLayout>
+#include <QPushButton>
+#include <QStyle>
+#include <QStyleOptionFrame>
+#include <QApplication>
+#include <QDesktopWidget>
 
 /*
 SizeGrip::SizeGrip()
@@ -127,7 +133,7 @@ Screenshot::Screenshot(QWidget *p):QWidget(p)
 
  //  saveScreenshotButton = createButton(tr("Save"),this, SLOT(saveScreenshot()));
    	saveScreenshotButton = new QPushButton("Save");
-    saveScreenshotButton->connect(saveScreenshotButton, SIGNAL(clicked()), this, SLOT(saveScreenshot()));
+    connect(saveScreenshotButton, SIGNAL(clicked()), this, SLOT(saveScreenshot()));
 
 	statusbar->addWidget(saveScreenshotButton);
 //	statusbar->addWidget( quitScreenshotButton);
@@ -137,8 +143,8 @@ Screenshot::Screenshot(QWidget *p):QWidget(p)
 
 	setMouseTracking (true);
 	
-	if(QApplication::desktop()->winId()==NULL)
-		printf("Qps: Null Desktop\n");
+// 	if (QApplication::desktop()->winId() < 0)
+// 		printf("Qps: Null Desktop\n");
     resize(300, 240);
 }
 
@@ -245,7 +251,7 @@ void Screenshot::saveScreenshot()
                                .arg(format.toUpper())
                                .arg(format));
     if (!fileName.isEmpty())
-        originalPixmap.save(fileName, format.toAscii());
+        originalPixmap.save(fileName, format.toLatin1());
 	
 //	setWindowFlags(Qt::X11BypassWindowManagerHint);
 }
@@ -330,7 +336,7 @@ int screenshot_main(int argc, char **argv)
 {
    // qWarning("Please make sure you're running a composition manager!");
     bool  argbVisual=false;
-    Display *dpy = XOpenDisplay(0); // open default display
+    Display *dpy = QX11Info::display(); // open default display
     if (!dpy) {
         qWarning("Cannot connect to the X server");
         exit(1);
@@ -373,7 +379,7 @@ int screenshot_main(int argc, char **argv)
 
 
 //    QApplication app(dpy, argc, argv, Qt::HANDLE(visual), Qt::HANDLE(colormap));
-   	QApplication app(dpy, argc, argv);
+   	QApplication app(argc, argv);
 
 	Display *dsp =QX11Info::display (); // get the display(X server?)
 	

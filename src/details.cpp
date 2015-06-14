@@ -541,6 +541,7 @@ void Files::refresh()
 
 bool Files::refresh_fds()
 {
+    return false;
 }
 
 void Files::refresh_window()

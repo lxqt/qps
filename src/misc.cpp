@@ -9,8 +9,8 @@ extern bool 	flag_show_thread;
 extern int 		flag_thread_ok;
 extern bool 	flag_devel;
 
-#include "./icon/x1.xpm" 
-#include "./icon/x2.xpm" 
+#include "../icon/x1.xpm"
+#include "../icon/x2.xpm"
 
 
 #include <stdio.h>
@@ -21,8 +21,8 @@ extern bool 	flag_devel;
 // 300% faster than glibc (by fasthyun@magicn.com) 
 int x_atoi(const char *sstr)
 {
-	register const char *str=sstr;
-	register int val=0;
+	const char *str=sstr;
+	int val=0;
 	while(*str)
 	{
 		val*=10;
@@ -1126,7 +1126,7 @@ void check_qps_running()
 //	printf("D1-1-6\n");
 }
 
-char * read_proc_file(char *fname,int pid=-1,int tgid=-1); // Temp
+char * read_proc_file(const char *fname,int pid=-1,int tgid=-1); // Temp
 void init_misc(QWidget *main)
 {
 

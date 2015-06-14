@@ -191,7 +191,7 @@ class watchCond
 	}
 	// key [txt]	[a]
 	//QString getVal(QString &str, QString &key)
-	QString getVal(QString &str, char *key);
+	QString getVal(QString &str, const char *key);
 	QString getstring();
 	void putstring(QString str);
 };
