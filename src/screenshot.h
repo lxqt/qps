@@ -17,33 +17,35 @@
 class TitleBar : public QWidget
 {
     Q_OBJECT
-public:
+  public:
     TitleBar(QWidget *w);
-protected:
-//    void resizeEvent(QResizeEvent *event);
-	void mouseMoveEvent (QMouseEvent * event);
-	void mousePressEvent(QMouseEvent *e);
-private slots:
-private:
-	QPoint press_pos;
-}; 
+
+  protected:
+    //    void resizeEvent(QResizeEvent *event);
+    void mouseMoveEvent(QMouseEvent *event);
+    void mousePressEvent(QMouseEvent *e);
+  private slots:
+  private:
+    QPoint press_pos;
+};
 
 class ShotArea : public QFrame
 {
     Q_OBJECT
-public:
+  public:
     ShotArea();
-protected:
-//    void resizeEvent(QResizeEvent *event);
-	
-	virtual void resizeEvent(QResizeEvent *e);
-	virtual void paintEvent ( QPaintEvent * event );
-	void mouseMoveEvent (QMouseEvent * event );
-	void mousePressEvent(QMouseEvent *e);
-private slots:
-private:
-	QPoint press_pos;
-}; 
+
+  protected:
+    //    void resizeEvent(QResizeEvent *event);
+
+    virtual void resizeEvent(QResizeEvent *e);
+    virtual void paintEvent(QPaintEvent *event);
+    void mouseMoveEvent(QMouseEvent *event);
+    void mousePressEvent(QMouseEvent *e);
+  private slots:
+  private:
+    QPoint press_pos;
+};
 
 /*
 class SizeGrip : public QWidget
@@ -53,43 +55,41 @@ public:
     SizeGrip();
 protected:
 //    void resizeEvent(QResizeEvent *event);
-	void mouseMoveEvent ( QMouseEvent * event );
-	void mousePressEvent(QMouseEvent *e);
+        void mouseMoveEvent ( QMouseEvent * event );
+        void mousePressEvent(QMouseEvent *e);
 private slots:
 private:
-	QPoint press_pos;
-}; 
+        QPoint press_pos;
+};
 */
-
 
 class Screenshot : public QWidget
 {
     Q_OBJECT
 
-public:
-    Screenshot(QWidget *p=0);
-	
+  public:
+    Screenshot(QWidget *p = 0);
 
-protected:
+  protected:
     void resizeEvent(QResizeEvent *event);
-	void mouseMoveEvent ( QMouseEvent * event );
-	void mousePressEvent(QMouseEvent *e);
-	virtual void paintEvent ( QPaintEvent * event );
+    void mouseMoveEvent(QMouseEvent *event);
+    void mousePressEvent(QMouseEvent *e);
+    virtual void paintEvent(QPaintEvent *event);
 
-private slots:
+  private slots:
     void newScreenshot();
     void saveScreenshot();
     void shootScreen();
     void updateCheckBox();
 
-private:
+  private:
     void createOptionsGroupBox();
     void createButtonsLayout();
     QPushButton *createButton(const QString &text, QWidget *receiver,
                               const char *member);
     void updateScreenshotLabel();
 
-	QPoint press_pos;
+    QPoint press_pos;
     QPixmap originalPixmap;
 
     QLabel *screenshotLabel;
@@ -104,7 +104,7 @@ private:
     QVBoxLayout *mainLayout;
     QGridLayout *optionsGroupBoxLayout;
     QHBoxLayout *buttonsLayout;
-	ShotArea *shotarea;
+    ShotArea *shotarea;
 };
 
 #endif

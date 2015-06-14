@@ -1,190 +1,210 @@
 
 
-
 #include "misc.h"
 #include "proc.h"
 
-extern SearchBox 	*search_box;
-extern bool 	flag_show_thread;	
-extern int 		flag_thread_ok;
-extern bool 	flag_devel;
+extern SearchBox *search_box;
+extern bool flag_show_thread;
+extern int flag_thread_ok;
+extern bool flag_devel;
 
 #include "../icon/x1.xpm"
 #include "../icon/x2.xpm"
-
 
 #include <stdio.h>
 #include <time.h>
 #include <errno.h>
 
-
-// 300% faster than glibc (by fasthyun@magicn.com) 
+// 300% faster than glibc (by fasthyun@magicn.com)
 int x_atoi(const char *sstr)
 {
-	const char *str=sstr;
-	int val=0;
-	while(*str)
-	{
-		val*=10;
-		val+=*str-48;
-		str++;
-	}
-	return val;
+    const char *str = sstr;
+    int val = 0;
+    while (*str)
+    {
+        val *= 10;
+        val += *str - 48;
+        str++;
+    }
+    return val;
 }
 
 #include <QApplication>
-QWidget * getQpsWidget()
+QWidget *getQpsWidget()
 {
-	QWidgetList list=QApplication::topLevelWidgets();
-	for (int i = 0; i < list.size(); ++i) {
-		QWidget *w=list.at(i);
-     	if (w->objectName() == "qps")
-	 		return w;
+    QWidgetList list = QApplication::topLevelWidgets();
+    for (int i = 0; i < list.size(); ++i)
+    {
+        QWidget *w = list.at(i);
+        if (w->objectName() == "qps")
+            return w;
     }
-	return 0;
+    return 0;
 }
-
 
 #include <stdarg.h>
 #include <string.h>
-/* 
+/*
   ver 0.2
   A simplified vsscanf implementation from Internet
-  
-  %S can read  char_string_has_spaces. 
-  	ex. "(%S)" ==  (foo bar) or (foo bar )
- 
-  
-  %s %d %ld %u %x? %lu %*s %f  
-  %S: (%S)    
- 
-  Only recognizes %s %f,%d, %u, %ld, %lu, %lg and  whitespace. ...terminates scanning.
+
+  %S can read  char_string_has_spaces.
+        ex. "(%S)" ==  (foo bar) or (foo bar )
+
+
+  %s %d %ld %u %x? %lu %*s %f
+  %S: (%S)
+
+  Only recognizes %s %f,%d, %u, %ld, %lu, %lg and  whitespace. ...terminates
+  scanning.
   space* same tab*
- 
+
  */
 
 // Description:
-//   	mini_sscanf() == strstr() + sscanf() + %S 
-// 
-//  there is test_sample_code in init_misc()
-// 	fixed : invalid conversion from ‘const char*’ to ‘char*’ 
+//   	mini_sscanf() == strstr() + sscanf() + %S
 //
-// TOO COMPLEX !!!!!!  -> simple code 
-char *strchar(const char *s,int k);
-int mini_sscanf(const char *s1,const char *fmt, ...)
+//  there is test_sample_code in init_misc()
+// 	fixed : invalid conversion from ‘const char*’ to ‘char*’
+//
+// TOO COMPLEX !!!!!!  -> simple code
+char *strchar(const char *s, int k);
+int mini_sscanf(const char *s1, const char *fmt, ...)
 {
 
-	va_list va; 
-	va_start(va,fmt);
-	char *s=(char*)s1; // *** for gcc 4.4 
-	char *p;
-	int k=0; // count 
-	while (*fmt and *s) 	//	if (*fmt==0 or *s==0) break;
-	{
-		if (*fmt=='%')
-		{
-			int n;
-			if (fmt[1]=='S')
-			{
-				//if(fmt[2]!=0)
-				p=strchr(s,fmt[2]); //get the token
-				int len=p-s;
-				p=va_arg(va,char*);
-				strncpy(p,s,len);
-				p[len]=0;
-				s+=len+1; fmt+=3; k++;
-			}
-			else if (fmt[1]=='s')  // extract string
-			{
-				//printf("%s : %%s =%s \n",__FUNCTION__,s);
-				k+=sscanf(s,"%s%n",va_arg(va,char *),&n);
-				s+=n; fmt+=2;
-			}
-			else if (fmt[1]=='*' && fmt[2]=='s') // skip
-			{
-				p=strchr(s,' '); //0x20,0x00,0x0A, 123 435 54054
-				if(p==0) 
-				{
-				//	printf("%s : %c [%s] \n",__FUNCTION__,fmt[1],s);
-					break; 
-				}
-				s=p; fmt+=3; 
-			}
-			else if (fmt[1]=='c')
-			{
-				p=va_arg(va,char*);
-			//	printf("%s : %c [%c] \n",__FUNCTION__,fmt[1],*s);
-				*p=*s;
-				s++; k++; fmt+=2;
-			}
-			else if (fmt[1]=='f')
-			{
-				k+=sscanf(s,"%f%n",va_arg(va,float*),&n);
-				s+=n; fmt+=2;
-			}
-			else if (fmt[1]=='d')
-			{
-				k+=sscanf(s,"%d%n",va_arg(va,int*),&n);
-				s+=n; fmt+=2;
-			}
-			else if (fmt[1]=='u')
-			{
-				k+=sscanf(s,"%u%n",va_arg(va,int*),&n);
-				s+=n; fmt+=2;
-			}
-			else if (fmt[1]=='l' && fmt[2]=='d')
-			{
-				k+=sscanf(s,"%ld%n",va_arg(va,long*),&n);
-				s+=n; fmt+=3;
-			}
-			else if (fmt[1]=='l' && fmt[2]=='u')
-			{
-				k+=sscanf(s,"%lu%n",va_arg(va,long*),&n);
-				s+=n; fmt+=3;
-			}
-			else if (fmt[1]=='l' && fmt[2]=='g')
-			{
-				k+=sscanf(s,"%lg%n",va_arg(va,double*),&n);
-				s+=n; fmt+=3;
-			}
-			else
-			{
-				printf("%s: unsupported"" format '%c'",__FUNCTION__,fmt[1]);
-				break;
-			}
-		}
-		else
-		{
-			if (isspace(*fmt)) // isblank
-			{
-				while (isspace(*s)) s++;
-				fmt++;
-			}
-			else 
-			{ 
-				char sstr[32];
-				int n=strcspn(fmt," %\n"); // find delimiters noSEGFAULT
-				strncpy(sstr,fmt,n); sstr[n]=0;
-				p=strstr(s,sstr);
-				if(p==0) 
-				{
-					if(0 and flag_devel) printf("%s : can't found [%s] in %s\n",__FUNCTION__,sstr,s);
-					break;
-				}
-				s=p+n;
-				fmt+=n;
-				// ddd at %s, at%s
-				// printf("opp_vsscanf: unexpected ""char in format '%s'",fmt);
-				//break;
-				//return k;
-			}
-		}
-		
-		if (*fmt=='\0' || *fmt=='#' or *s==0)
-			break;
-	}
-	va_end(va);
-	return k;
+    va_list va;
+    va_start(va, fmt);
+    char *s = (char *)s1; // *** for gcc 4.4
+    char *p;
+    int k = 0;          // count
+    while (*fmt and *s) //	if (*fmt==0 or *s==0) break;
+    {
+        if (*fmt == '%')
+        {
+            int n;
+            if (fmt[1] == 'S')
+            {
+                // if(fmt[2]!=0)
+                p = strchr(s, fmt[2]); // get the token
+                int len = p - s;
+                p = va_arg(va, char *);
+                strncpy(p, s, len);
+                p[len] = 0;
+                s += len + 1;
+                fmt += 3;
+                k++;
+            }
+            else if (fmt[1] == 's') // extract string
+            {
+                // printf("%s : %%s =%s \n",__FUNCTION__,s);
+                k += sscanf(s, "%s%n", va_arg(va, char *), &n);
+                s += n;
+                fmt += 2;
+            }
+            else if (fmt[1] == '*' && fmt[2] == 's') // skip
+            {
+                p = strchr(s, ' '); // 0x20,0x00,0x0A, 123 435 54054
+                if (p == 0)
+                {
+                    //	printf("%s : %c [%s]
+                    //\n",__FUNCTION__,fmt[1],s);
+                    break;
+                }
+                s = p;
+                fmt += 3;
+            }
+            else if (fmt[1] == 'c')
+            {
+                p = va_arg(va, char *);
+                //	printf("%s : %c [%c]
+                //\n",__FUNCTION__,fmt[1],*s);
+                *p = *s;
+                s++;
+                k++;
+                fmt += 2;
+            }
+            else if (fmt[1] == 'f')
+            {
+                k += sscanf(s, "%f%n", va_arg(va, float *), &n);
+                s += n;
+                fmt += 2;
+            }
+            else if (fmt[1] == 'd')
+            {
+                k += sscanf(s, "%d%n", va_arg(va, int *), &n);
+                s += n;
+                fmt += 2;
+            }
+            else if (fmt[1] == 'u')
+            {
+                k += sscanf(s, "%u%n", va_arg(va, int *), &n);
+                s += n;
+                fmt += 2;
+            }
+            else if (fmt[1] == 'l' && fmt[2] == 'd')
+            {
+                k += sscanf(s, "%ld%n", va_arg(va, long *), &n);
+                s += n;
+                fmt += 3;
+            }
+            else if (fmt[1] == 'l' && fmt[2] == 'u')
+            {
+                k += sscanf(s, "%lu%n", va_arg(va, long *), &n);
+                s += n;
+                fmt += 3;
+            }
+            else if (fmt[1] == 'l' && fmt[2] == 'g')
+            {
+                k += sscanf(s, "%lg%n", va_arg(va, double *), &n);
+                s += n;
+                fmt += 3;
+            }
+            else
+            {
+                printf("%s: unsupported"
+                       " format '%c'",
+                       __FUNCTION__, fmt[1]);
+                break;
+            }
+        }
+        else
+        {
+            if (isspace(*fmt)) // isblank
+            {
+                while (isspace(*s))
+                    s++;
+                fmt++;
+            }
+            else
+            {
+                char sstr[32];
+                int n = strcspn(fmt, " %\n"); // find delimiters noSEGFAULT
+                strncpy(sstr, fmt, n);
+                sstr[n] = 0;
+                p = strstr(s, sstr);
+                if (p == 0)
+                {
+                    if (0 and flag_devel)
+                        printf("%s : can't found [%s] "
+                               "in %s\n",
+                               __FUNCTION__, sstr, s);
+                    break;
+                }
+                s = p + n;
+                fmt += n;
+                // ddd at %s, at%s
+                // printf("opp_vsscanf: unexpected ""char in
+                // format '%s'",fmt);
+                // break;
+                // return k;
+            }
+        }
+
+        if (*fmt == '\0' || *fmt == '#' or *s == 0)
+            break;
+    }
+    va_end(va);
+    return k;
 }
 
 #include <sys/stat.h>
@@ -192,122 +212,128 @@ int mini_sscanf(const char *s1,const char *fmt, ...)
 #include <sys/types.h>
 #include <unistd.h>
 
-// return /proc/* file size 
+// return /proc/* file size
 int fsize(char *fname)
 {
-	int size=0;
-	if(0)
-	{
-		// !!! important !! not works with [/proc] , because [/proc/*] always zero
-		int fd = open(fname, O_RDONLY);
-		if(fd < 0) return -1;
-		size=lseek(fd,0, SEEK_END);
-		printf("size=%d\n",size);
-		close(fd);
-		return size;
-	}
-	
-	int buf[1024];
-	int r;
-	int fd = open(fname, O_RDONLY);
-	if(fd < 0) return -1;
-	do{
-		r = read(fd, buf, 1024);
-		size+=r;
-	//	printf("r_size=%d\n",size);
-	} while(r);
-	// printf("size=%d\n",size);
-	close(fd);
-	return size;
+    int size = 0;
+    if (0)
+    {
+        // !!! important !! not works with [/proc] , because [/proc/*]
+        // always zero
+        int fd = open(fname, O_RDONLY);
+        if (fd < 0)
+            return -1;
+        size = lseek(fd, 0, SEEK_END);
+        printf("size=%d\n", size);
+        close(fd);
+        return size;
+    }
+
+    int buf[1024];
+    int r;
+    int fd = open(fname, O_RDONLY);
+    if (fd < 0)
+        return -1;
+    do
+    {
+        r = read(fd, buf, 1024);
+        size += r;
+        //	printf("r_size=%d\n",size);
+    } while (r);
+    // printf("size=%d\n",size);
+    close(fd);
+    return size;
 }
 
 // sleep for mili seconds
 void msleep(long msec)
 {
 #ifdef LINUX
-	timespec req,remain;
-	timeval tv;
-	req.tv_sec=0;
-	req.tv_nsec=msec*1000000;
-	//int  	nanosleep(const struct timespec *req, struct timespec *remain)
-	/*while (nanosleep(&req, &req))
-	{
-		if (errno != EINTR)
-			break;
-	} */
+    timespec req, remain;
+    timeval tv;
+    req.tv_sec = 0;
+    req.tv_nsec = msec * 1000000;
+    // int  	nanosleep(const struct timespec *req, struct timespec
+    // *remain)
+    /*while (nanosleep(&req, &req))
+    {
+            if (errno != EINTR)
+                    break;
+    } */
 
-	tv.tv_sec=0;
-	tv.tv_usec=msec*1000;                
-	select(0,NULL,NULL,NULL,&tv);
-	return;
+    tv.tv_sec = 0;
+    tv.tv_usec = msec * 1000;
+    select(0, NULL, NULL, NULL, &tv);
+    return;
 #endif
-
 }
 
 void mem_string_k(int kbytes, char *buf)
 {
-	if(kbytes >= 1024) {
-		int mb = kbytes >> 10;
-		if(mb >= 1024*100)
-			sprintf(buf, "%uGB", mb >> 10);
-		else
-			sprintf(buf, "%uMB", mb);
-	} else
-		sprintf(buf, "%uKB", kbytes);
+    if (kbytes >= 1024)
+    {
+        int mb = kbytes >> 10;
+        if (mb >= 1024 * 100)
+            sprintf(buf, "%uGB", mb >> 10);
+        else
+            sprintf(buf, "%uMB", mb);
+    }
+    else
+        sprintf(buf, "%uKB", kbytes);
 }
 void mem_string(int kbytes, char *buf)
 {
-	if(kbytes >= 1024) {
-		int meg = kbytes >> 10;
-		if(meg >= 1024*100)
-			sprintf(buf, "%uGb", meg >> 10);
-		else
-			sprintf(buf, "%uMb", meg);
-	} else
-		sprintf(buf, "%uKb", kbytes);
+    if (kbytes >= 1024)
+    {
+        int meg = kbytes >> 10;
+        if (meg >= 1024 * 100)
+            sprintf(buf, "%uGb", meg >> 10);
+        else
+            sprintf(buf, "%uMb", meg);
+    }
+    else
+        sprintf(buf, "%uKb", kbytes);
 }
 
-
-//DEL
-CheckMenu::CheckMenu(QWidget *parent)
-          : QMenu(parent)
-{}
-
+// DEL
+CheckMenu::CheckMenu(QWidget *parent) : QMenu(parent) {}
 
 // ???
-CrossBox::CrossBox(const char *text, QWidget *parent)
-         : QCheckBox(text, parent)
+CrossBox::CrossBox(const char *text, QWidget *parent) : QCheckBox(text, parent)
 {
 }
 
 void CrossBox::drawButton(QPainter *p)
-{ 
-	/////	QCheckBox::drawButton(p);
+{
+    /////	QCheckBox::drawButton(p);
 }
 
-TBloon::TBloon(QWidget *parent):QLabel(parent)
-{ 
-	
-	return;
-	paren=parent;
-	setStyleSheet(  "QLabel { "    
-				//"border-width: 1px; border-style: solid;  border-color: rgb(150,45,100); border-radius: 5px ;"
-				"border-width: 1px; border-style: solid;  border-color: rgb(150,180,180); border-radius: 5px ;"
-				"background-color : rgba(0,0,0,48%); padding: 3px; color: rgb(255,120,60); }");
-// COLOR orange FF5d00
-	
-	setText(" This is unstable Alpha feature\n You maybe see a SEGFAULT...");
-	resize(sizeHint());
-//	parent->installEventFilter(this);
-//	parent->setMouseTracking(true);
-	hide();
-	
- // Construct a 1-second timeline with a frame range of 0 - 100
- 	timeLine = new QTimeLine(100000, this);
- 	timeLine->setFrameRange(0, 20000);
-	timeLine->setCurveShape ( QTimeLine::EaseOutCurve	);
- //	timeLine->set(0, 20000);
-	connect(timeLine, SIGNAL(frameChanged(int)), this, SLOT(update(int)));
+TBloon::TBloon(QWidget *parent) : QLabel(parent)
+{
+
+    return;
+    paren = parent;
+    setStyleSheet("QLabel { "
+                  //"border-width: 1px; border-style: solid;  border-color:
+                  // rgb(150,45,100); border-radius: 5px ;"
+                  "border-width: 1px; border-style: solid;  border-color: "
+                  "rgb(150,180,180); border-radius: 5px ;"
+                  "background-color : rgba(0,0,0,48%); padding: 3px; color: "
+                  "rgb(255,120,60); }");
+    // COLOR orange FF5d00
+
+    setText(" This is unstable Alpha feature\n You maybe see a SEGFAULT...");
+    resize(sizeHint());
+    //	parent->installEventFilter(this);
+    //	parent->setMouseTracking(true);
+    hide();
+
+    // Construct a 1-second timeline with a frame range of 0 - 100
+    timeLine = new QTimeLine(100000, this);
+    timeLine->setFrameRange(0, 20000);
+    timeLine->setCurveShape(QTimeLine::EaseOutCurve);
+    //	timeLine->set(0, 20000);
+    connect(timeLine, SIGNAL(frameChanged(int)), this, SLOT(update(int)));
 }
 
 /*
@@ -318,79 +344,91 @@ void TBloon::start_ani()
 
 void TBloon::update(int val)
 {
-	//`QPoint p=QCursor::pos();
-	//qDebug("pos %d %d", p.x(),p.y());
-	QPoint p2=paren->mapFromGlobal(QCursor::pos());
+    //`QPoint p=QCursor::pos();
+    // qDebug("pos %d %d", p.x(),p.y());
+    QPoint p2 = paren->mapFromGlobal(QCursor::pos());
 
-	//qDebug("wpos %d %d", p2.x(),p2.y());
-	int tx=p2.x();
-	int ty=p2.y();
-	int sx=pos().x();
-	int sy=pos().y();
-	float dx=tx-sx;
-	float dy=ty-sy;
-	dx=dx/1.35;
-	dy=dy/1.35;
-	move(tx+dx+8,ty+dy+14);
+    // qDebug("wpos %d %d", p2.x(),p2.y());
+    int tx = p2.x();
+    int ty = p2.y();
+    int sx = pos().x();
+    int sy = pos().y();
+    float dx = tx - sx;
+    float dy = ty - sy;
+    dx = dx / 1.35;
+    dy = dy / 1.35;
+    move(tx + dx + 8, ty + dy + 14);
 }
 
 bool TBloon::eventFilter(QObject *obj, QEvent *event)
 {
-	if (event->type() ==QEvent::Enter) {
-		QPoint p=paren->mapFromGlobal(QCursor::pos());
-		move(p);
-	//	qDebug("Enter parent");
-		timeLine->start();
-		show();
-		return true;
-
-	}else if (event->type() ==QEvent::Leave) {
-	//	qDebug("Leave parent");
-		timeLine->stop();
-		hide();
-		return true;
-	}
-	else if (event->type() == QEvent::MouseMove) {
-		QMouseEvent *me = static_cast<QMouseEvent *>(event);	
-	//	qDebug("Ate key press %d %d", me->x(),me->y());
-	//	move(me->x()+5,me->y()+4);
-		return false;
-	} else {
-		// standard event processing
-		return QObject::eventFilter(obj, event);
-	}
+    if (event->type() == QEvent::Enter)
+    {
+        QPoint p = paren->mapFromGlobal(QCursor::pos());
+        move(p);
+        //	qDebug("Enter parent");
+        timeLine->start();
+        show();
+        return true;
+    }
+    else if (event->type() == QEvent::Leave)
+    {
+        //	qDebug("Leave parent");
+        timeLine->stop();
+        hide();
+        return true;
+    }
+    else if (event->type() == QEvent::MouseMove)
+    {
+        QMouseEvent *me = static_cast<QMouseEvent *>(event);
+        //	qDebug("Ate key press %d %d", me->x(),me->y());
+        //	move(me->x()+5,me->y()+4);
+        return false;
+    }
+    else
+    {
+        // standard event processing
+        return QObject::eventFilter(obj, event);
+    }
 }
 
 /*
-void TBloon::paintEvent(  QPaintEvent * event ) 
+void TBloon::paintEvent(  QPaintEvent * event )
 {
-	QLabel::paintEvent(event);
+        QLabel::paintEvent(event);
 } */
 
-TFrame::TFrame(QWidget *parent):QLabel(parent)
-//TFrame::TFrame(QWidget *parent):QFrame(parent)
+TFrame::TFrame(QWidget *parent) : QLabel(parent)
+// TFrame::TFrame(QWidget *parent):QFrame(parent)
 {
-	text="this is Tframe widget";
-	//setAutoFillBackground(false);
-	//setGeometry(50,50,100,100);
-	//setAttribute(Qt::WA_OpaquePaintEvent);
-	//setFrameShape(QFrame::StyledPanel);
-	//setFrameShadow(QFrame::Sunken);
-	//setSizePolicy(QSizePolicy::Preferred,QSizePolicy::Preferred);
-	//setSizePolicy(QSizePolicy::Minimum,QSizePolicy::Minimum);
-	//setSizePolicy(QSizePolicy::Maximum,QSizePolicy::Maximum);
-	//setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
+    text = "this is Tframe widget";
+    // setAutoFillBackground(false);
+    // setGeometry(50,50,100,100);
+    // setAttribute(Qt::WA_OpaquePaintEvent);
+    // setFrameShape(QFrame::StyledPanel);
+    // setFrameShadow(QFrame::Sunken);
+    // setSizePolicy(QSizePolicy::Preferred,QSizePolicy::Preferred);
+    // setSizePolicy(QSizePolicy::Minimum,QSizePolicy::Minimum);
+    // setSizePolicy(QSizePolicy::Maximum,QSizePolicy::Maximum);
+    // setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
 
-	//"border-width: 1px; border-style: solid;  border-color: rgb(150,45,100); border-radius: 5px ;"
- 	setStyleSheet(  "QLabel { " "border-width: 1px; border-style: solid;  border-color: rgb(210,50,130); border-radius: 5px ;" "background-color : rgba(0,0,0,69%); padding: 3px; color: rgb(0,255,150); }");
-// 	setStyleSheet(  "QLabel { " "border-width: 1px; border-style: solid;  border-radius: 5px ; padding: 3px; }");
-	hide();
+    //"border-width: 1px; border-style: solid;  border-color:
+    // rgb(150,45,100);
+    // border-radius: 5px ;"
+    setStyleSheet("QLabel { "
+                  "border-width: 1px; border-style: solid;  border-color: "
+                  "rgb(210,50,130); border-radius: 5px ;"
+                  "background-color : rgba(0,0,0,69%); padding: 3px; color: "
+                  "rgb(0,255,150); }");
+    // 	setStyleSheet(  "QLabel { " "border-width: 1px; border-style:
+    // solid;
+    // border-radius: 5px ; padding: 3px; }");
+    hide();
 
-	timeLine = new QTimeLine(2000, this);
- 	timeLine->setFrameRange(0, 100);
- 	connect(timeLine, SIGNAL(frameChanged(int)), this, SLOT(setValue(int)));
+    timeLine = new QTimeLine(2000, this);
+    timeLine->setFrameRange(0, 100);
+    connect(timeLine, SIGNAL(frameChanged(int)), this, SLOT(setValue(int)));
 }
-
 
 /*
 void TFrame::showText(QPoint glob_pos,QString str)
@@ -407,226 +445,222 @@ void TFrame::move(int x,int y)
 } */
 
 // QToolTip::showText(e->globalPos(), s);
-void TFrame::showText(QPoint glob_pos,QString str)
-{
-
-}
+void TFrame::showText(QPoint glob_pos, QString str) {}
 
 void TFrame::setText(QString str)
 {
-	text=str;
+    text = str;
 
-	QLabel::setText(str);
+    QLabel::setText(str);
 
-	//resize(minimumSizeHint());
-	resize(sizeHint()); // **** before show !!  *****
+    // resize(minimumSizeHint());
+    resize(sizeHint()); // **** before show !!  *****
 
-	if(str.size()==0) 
-	{
-		hide();
-		return;
-	}
-	show();
+    if (str.size() == 0)
+    {
+        hide();
+        return;
+    }
+    show();
 }
 
 // to avoid ~
-void TFrame::draw( QPainter &p )
+void TFrame::draw(QPainter &p)
 {
-//	if(!isVisible()) 	return;
-	return;	
-	int h=fontMetrics ().height() + 3;
-	int w=fontMetrics ().width(text) + 9;
-	setFixedSize(w,h);
-//	QFont font("Adobe Helvetica"); // helvetica & No-Antialias
-// 	font.setPixelSize(10);
-//	setFont(font);
-//	p.drawRoundRect(rect(),10,10);
-//	p.fillRect ( cr,QColor(0,0,0));
-	QColor bg=QColor(0,0,0,120);
-#if QT_VERSION < 0x040400 	
-	p.fillRect(rect(),QColor(0,0,0,120));
+    //	if(!isVisible()) 	return;
+    return;
+    int h = fontMetrics().height() + 3;
+    int w = fontMetrics().width(text) + 9;
+    setFixedSize(w, h);
+    //	QFont font("Adobe Helvetica"); // helvetica & No-Antialias
+    // 	font.setPixelSize(10);
+    //	setFont(font);
+    //	p.drawRoundRect(rect(),10,10);
+    //	p.fillRect ( cr,QColor(0,0,0));
+    QColor bg = QColor(0, 0, 0, 120);
+#if QT_VERSION < 0x040400
+    p.fillRect(rect(), QColor(0, 0, 0, 120));
 #else
-	//p.fillRect(rect(),QColor(0,0,0,90));
-  	
-//	p.setPen(QColor(0,255,155)); // less visually obtrusive than black
-//	p.setBrush(QBrush(bg));
-//	p.drawRoundedRect(0,0,w,h, 4, 4);
-	p.fillRect(rect(),bg);
+    // p.fillRect(rect(),QColor(0,0,0,90));
+
+    //	p.setPen(QColor(0,255,155)); // less visually obtrusive than
+    // black
+    //	p.setBrush(QBrush(bg));
+    //	p.drawRoundedRect(0,0,w,h, 4, 4);
+    p.fillRect(rect(), bg);
 
 #endif
-    
-	p.setPen(QColor(0,255,155)); // less visually obtrusive than black
-	p.drawText(0, 0,w, h, Qt::AlignVCenter | Qt::AlignHCenter,text);
+
+    p.setPen(QColor(0, 255, 155)); // less visually obtrusive than black
+    p.drawText(0, 0, w, h, Qt::AlignVCenter | Qt::AlignHCenter, text);
 }
 
 void TFrame::setPos()
 {
-	QWidget *parent= QWidget::parentWidget ();
-	
-	QPoint p=parent->mapFromGlobal(QCursor::pos());
+    QWidget *parent = QWidget::parentWidget();
 
-	setPos(p.x(),p.y());
+    QPoint p = parent->mapFromGlobal(QCursor::pos());
+
+    setPos(p.x(), p.y());
 }
 
-void TFrame::setPos(int x,int y)
+void TFrame::setPos(int x, int y)
 {
-	QWidget *parent= QWidget::parentWidget ();
-	int pwidth=parent->width();
-	
-	if(width()+x > pwidth)
-	{
-		x=pwidth - width();
-	}	
-	move(x+16,y+4);
+    QWidget *parent = QWidget::parentWidget();
+    int pwidth = parent->width();
+
+    if (width() + x > pwidth)
+    {
+        x = pwidth - width();
+    }
+    move(x + 16, y + 4);
 }
 
-void TFrame::moveEvent (QMoveEvent * e ) 
+void TFrame::moveEvent(QMoveEvent *e)
 {
-	//int x=e->pos().x();
-	//printf("pos (%d %d) \n",e->pos().x(),e->pos().y()); 
-	//event->oldPos();
+    // int x=e->pos().x();
+    // printf("pos (%d %d) \n",e->pos().x(),e->pos().y());
+    // event->oldPos();
 }
 
-void TFrame::setValue(int	val)
+void TFrame::setValue(int val)
 {
-	opacity+=((float)val/100);
-	update();
+    opacity += ((float)val / 100);
+    update();
 }
 
-void TFrame::showEvent ( QShowEvent * event )
+void TFrame::showEvent(QShowEvent *event)
 {
-	opacity=0.2;
-//	timeLine->start(); 
+    opacity = 0.2;
+    //	timeLine->start();
 }
 
 // Maybe SEGFAULT
 void setPaletteBlend(QPalette &p)
 {
-	for(int i=0; i<	(QPalette::NoRole)	;i++)
-	{
-		QColor c=p.color(QPalette::ColorRole(i));
-		c.alpha();
-	}
+    for (int i = 0; i < (QPalette::NoRole); i++)
+    {
+        QColor c = p.color(QPalette::ColorRole(i));
+        c.alpha();
+    }
 }
 
-void TFrame::paintEvent(  QPaintEvent * event ) 
+void TFrame::paintEvent(QPaintEvent *event)
 {
-	QLabel::paintEvent(event);
-	return;
+    QLabel::paintEvent(event);
+    return;
 
-	QCursor::pos();
-//	if(x()+width() >  ) ;
-	QPalette np=palette();
-	setPaletteBlend(np);
-		
-	QPainter p(this);  // why?
+    QCursor::pos();
+    //	if(x()+width() >  ) ;
+    QPalette np = palette();
+    setPaletteBlend(np);
 
-//	if(opacity>1) timeLine->stop(); //
-//	p.setOpacity(opacity);
-//	p.setOpacity(0.01);
-//	setWindowOpacity (0.1 );
-//	QFrame::paintEvent(event);
-//    p.scale(0.5,0.5);
-	
-	//draw(p);
-	//p.setBackgroundMode (Qt::TransparentMode);
-    //p.setRenderHint(QPainter::Antialiasing);
-    //painter.translate(width() / 2, height() / 2);
+    QPainter p(this); // why?
+
+    //	if(opacity>1) timeLine->stop(); //
+    //	p.setOpacity(opacity);
+    //	p.setOpacity(0.01);
+    //	setWindowOpacity (0.1 );
+    //	QFrame::paintEvent(event);
+    //    p.scale(0.5,0.5);
+
+    // draw(p);
+    // p.setBackgroundMode (Qt::TransparentMode);
+    // p.setRenderHint(QPainter::Antialiasing);
+    // painter.translate(width() / 2, height() / 2);
 }
 
-UFrame::UFrame(QWidget *parent):QFrame(parent)
-//TFrame::TFrame(QWidget *parent):QFrame(parent)
+UFrame::UFrame(QWidget *parent) : QFrame(parent)
+// TFrame::TFrame(QWidget *parent):QFrame(parent)
 {
-//	setAttribute(Qt::WA_OpaquePaintEvent);
-//	setFrameShape(QFrame::StyledPanel);
-//	setFrameShadow(QFrame::Sunken);
-//	setSizePolicy(QSizePolicy::Preferred,QSizePolicy::Preferred);
+    //	setAttribute(Qt::WA_OpaquePaintEvent);
+    //	setFrameShape(QFrame::StyledPanel);
+    //	setFrameShadow(QFrame::Sunken);
+    //	setSizePolicy(QSizePolicy::Preferred,QSizePolicy::Preferred);
 
-						//"border-width: 1px; border-style: solid;  border-color: rgb(150,45,100); border-radius: 5px ;"
+    //"border-width: 1px; border-style: solid;  border-color:
+    // rgb(150,45,100);
+    // border-radius: 5px ;"
 
-//setStyleSheet(  "QLabel { "   "border-width: 1px; border-style: solid;  border-color: rgb(210,50,130); border-radius: 5px ;" "background-color : rgba(0,0,0,70%); padding: 3px; color: rgb(0,255,150); }");
-	hide();
-		
-	QVBoxLayout *vlayout = new QVBoxLayout;
-	QLabel *label=new QLabel("title");	
-	vlayout->addWidget(label);
-	
-	setLayout(vlayout);
-	QWidget *qps=getQpsWidget();
-	if(qps)
-	{
-		int w=qps->width();
-		int h= qps->height();
-		printf("qps w=%d h=%d\n",qps->width(),qps->height());
-		move(w/2,h/2);
-	}
+    // setStyleSheet(  "QLabel { "   "border-width: 1px; border-style:
+    // solid;
+    // border-color: rgb(210,50,130); border-radius: 5px ;"
+    // "background-color :
+    // rgba(0,0,0,70%); padding: 3px; color: rgb(0,255,150); }");
+    hide();
 
+    QVBoxLayout *vlayout = new QVBoxLayout;
+    QLabel *label = new QLabel("title");
+    vlayout->addWidget(label);
+
+    setLayout(vlayout);
+    QWidget *qps = getQpsWidget();
+    if (qps)
+    {
+        int w = qps->width();
+        int h = qps->height();
+        printf("qps w=%d h=%d\n", qps->width(), qps->height());
+        move(w / 2, h / 2);
+    }
 }
 
 FaderWidget::FaderWidget(QWidget *parent) : QWidget(parent)
 {
-	if (parent)
-		startBrush = parent->palette().window();
-	else
-		startBrush = Qt::white;
+    if (parent)
+        startBrush = parent->palette().window();
+    else
+        startBrush = Qt::white;
 
-	timeLine = new QTimeLine(333, this);
-	timeLine->setFrameRange(1000, 0);
-	connect(timeLine, SIGNAL(frameChanged(int)), this, SLOT(update()));
+    timeLine = new QTimeLine(333, this);
+    timeLine->setFrameRange(1000, 0);
+    connect(timeLine, SIGNAL(frameChanged(int)), this, SLOT(update()));
 
-	setAttribute(Qt::WA_DeleteOnClose);
-	resize(parent->size());
+    setAttribute(Qt::WA_DeleteOnClose);
+    resize(parent->size());
 }
-
 
 void FaderWidget::start()
 {
-	timeLine->start();
-	show();
+    timeLine->start();
+    show();
 }
-
 
 void FaderWidget::paintEvent(QPaintEvent * /* event */)
 {
-	QPainter painter(this);
-	qreal frame = timeLine->currentFrame();
-	painter.setOpacity(frame / 1000.);
-	painter.fillRect(rect(), startBrush);
+    QPainter painter(this);
+    qreal frame = timeLine->currentFrame();
+    painter.setOpacity(frame / 1000.);
+    painter.fillRect(rect(), startBrush);
 
-	if (frame <= 0.)
-		close();
+    if (frame <= 0.)
+        close();
 }
-
 
 void UFrame::setTitle(QString str)
 {
-	//	QLabel::setText(str);
-	title=str;
+    //	QLabel::setText(str);
+    title = str;
 }
 
-
-void UFrame::paintEvent(  QPaintEvent * event ) 
-{
-
-}
+void UFrame::paintEvent(QPaintEvent *event) {}
 /*
 //void SearchBox::event_cursor_moved(QMouseEvent *e)
 {
-	move(e->x(),e->y());
-	//printf("xxxxxxxxxxxxxk\n");
+        move(e->x(),e->y());
+        //printf("xxxxxxxxxxxxxk\n");
 }
 
 */
 
 QPixmap *letters;
-int pf_height=9;
-int pf_width=6;
+int pf_height = 9;
+int pf_width = 6;
 
 void init_xpm()
 {
-	letters=new QPixmap(":/icon/letters.png");
-	pf_height=9;
-	pf_width=6;
+    letters = new QPixmap(":/icon/letters.png");
+    pf_height = 9;
+    pf_width = 6;
 }
 
 #ifdef LINUX
@@ -634,370 +668,365 @@ void init_xpm()
 #include <QThread>
 char strong_buff[128];
 class MyThread : public QThread
- {
- public:
-     void run()
- 	{
-		prctl(PR_SET_NAME, "thread_test123456789"); 
-		
-		while(true)
-		{
-			int m=0;
-			for(int i=0;i<20000;i++)
-			{
-				int p=rand()%120;
-				strong_buff[p]=p;
-			}
-			msleep(40);
-		}
-     	exec();
- 	}
+{
+  public:
+    void run()
+    {
+        prctl(PR_SET_NAME, "thread_test123456789");
+
+        while (true)
+        {
+            int m = 0;
+            for (int i = 0; i < 20000; i++)
+            {
+                int p = rand() % 120;
+                strong_buff[p] = p;
+            }
+            msleep(40);
+        }
+        exec();
+    }
 };
 class MyThread2 : public QThread
- {
- public:
-     void run()
- 	{
-		prctl(PR_SET_NAME, "thread_test987654321"); 
-		
-		while(true)
-		{
-			int m=0;
-			int i;
-			for(i=0;i<100000;i++)
-			{
-				int p=rand()%120;
-				//strong_buff[p]=p;
-				m=i*p;
-			}
-			m+=i;
-			msleep(60);
-		}
-     	exec();
- 	}
+{
+  public:
+    void run()
+    {
+        prctl(PR_SET_NAME, "thread_test987654321");
+
+        while (true)
+        {
+            int m = 0;
+            int i;
+            for (i = 0; i < 100000; i++)
+            {
+                int p = rand() % 120;
+                // strong_buff[p]=p;
+                m = i * p;
+            }
+            m += i;
+            msleep(60);
+        }
+        exec();
+    }
 };
-#endif 
+#endif
 
-int  pf_str_width(char *str)
+int pf_str_width(char *str)
 {
-	int len;
-	len=strlen(str)*pf_width;
-	return len;
+    int len;
+    len = strlen(str) * pf_width;
+    return len;
 }
-int  pf_char_height()
-{
-	return pf_height;
-}
+int pf_char_height() { return pf_height; }
 
-int pf_write(QPainter *p,int x,int y,const char *str)
+int pf_write(QPainter *p, int x, int y, const char *str)
 {
-	int i,len,n;
-	int ch;
-	int sx,sy;
-	int x0=x;
-	len=strlen(str);
-	for(i=0;i<len;i++)
-	{
-		ch=str[i];
-		
-		if(ch=='\n')
-		{
-			//y+=pf_height;
-			continue;
-		}
-		//if(ch>96) ch-=(97-65);
-		n=ch-32;		
-		p->drawPixmap ( x ,  y, *letters, n*pf_width , 0 , pf_width+1, pf_height);
-		x+=pf_width;
-	}
-	return x-x0;
+    int i, len, n;
+    int ch;
+    int sx, sy;
+    int x0 = x;
+    len = strlen(str);
+    for (i = 0; i < len; i++)
+    {
+        ch = str[i];
+
+        if (ch == '\n')
+        {
+            // y+=pf_height;
+            continue;
+        }
+        // if(ch>96) ch-=(97-65);
+        n = ch - 32;
+        p->drawPixmap(x, y, *letters, n * pf_width, 0, pf_width + 1, pf_height);
+        x += pf_width;
+    }
+    return x - x0;
 }
 
-
-QPixmap *x1,*x2;
-XButton::XButton(QWidget *parent):QAbstractButton(parent)
+QPixmap *x1, *x2;
+XButton::XButton(QWidget *parent) : QAbstractButton(parent)
 {
-	setFocusPolicy(Qt::NoFocus);
-	x1=new QPixmap( (const char**)x1_xpm);
-	x2=new QPixmap( (const char**)x2_xpm);
-	int w=x1->width();
-	setGeometry(0,0,w,w);
+    setFocusPolicy(Qt::NoFocus);
+    x1 = new QPixmap((const char **)x1_xpm);
+    x2 = new QPixmap((const char **)x2_xpm);
+    int w = x1->width();
+    setGeometry(0, 0, w, w);
 }
-
 
 void XButton::resizeEvent(QResizeEvent *p)
 {
-	int i,h;
-	i=height()%2;
+    int i, h;
+    i = height() % 2;
 
-	if(i!=0)
-		h=height()+1;
-	else h=height();	
-	setFixedSize(h,h);
+    if (i != 0)
+        h = height() + 1;
+    else
+        h = height();
+    setFixedSize(h, h);
 }
 
-void XButton::paintEvent(  QPaintEvent * event ) 
-{ 
-	QPainter p(this);
-	int w,h,m;
-
-	if(isDown())
-		p.drawPixmap(0,0,*x2);	
-	else	p.drawPixmap(0,0,*x1);
-
-	return;
-}
-
-SearchBox::SearchBox(QWidget *parent):QLineEdit(parent)
+void XButton::paintEvent(QPaintEvent *event)
 {
-	setToolTip("PID,COMMAND,USER..." );
-	left_time=0;
-	setMaximumWidth (300) ;
-	setMinimumWidth (20) ;
+    QPainter p(this);
+    int w, h, m;
 
-//	setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Preferred);
-//	setContentsMargins(0,3,1,0);
-//	setLineWidth( 1 );
-//	setMargin(2);
-	
-        ///xb=new XButton(this);
-	///connect(xb, SIGNAL(clicked()), SLOT(event_xbutton_clicked()));
-	setFocus (Qt::ActiveWindowFocusReason  ); //good
+    if (isDown())
+        p.drawPixmap(0, 0, *x2);
+    else
+        p.drawPixmap(0, 0, *x1);
+
+    return;
 }
 
-void SearchBox::event_cursor_moved(QMouseEvent *e)
+SearchBox::SearchBox(QWidget *parent) : QLineEdit(parent)
 {
-	move(e->x(),e->y());
+    setToolTip("PID,COMMAND,USER...");
+    left_time = 0;
+    setMaximumWidth(300);
+    setMinimumWidth(20);
+
+    //	setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Preferred);
+    //	setContentsMargins(0,3,1,0);
+    //	setLineWidth( 1 );
+    //	setMargin(2);
+
+    /// xb=new XButton(this);
+    /// connect(xb, SIGNAL(clicked()), SLOT(event_xbutton_clicked()));
+    setFocus(Qt::ActiveWindowFocusReason); // good
 }
+
+void SearchBox::event_cursor_moved(QMouseEvent *e) { move(e->x(), e->y()); }
 
 void SearchBox::resizeEvent(QResizeEvent *p)
 {
-	int w,h,margin;
-	//setMinimumHeight(height()-4);
-	//setMaximumHeight(p->size().height()-1);
-	//setFixedHeight(p->size().height()-5);
-	//setMaximumHeight(height()-2);
-	w=width();
-	h=height();
-	/// margin=(h - xb->width())/2;
-	/// xb->move(w-h+margin-1,margin);
-	return;	
+    int w, h, margin;
+    // setMinimumHeight(height()-4);
+    // setMaximumHeight(p->size().height()-1);
+    // setFixedHeight(p->size().height()-5);
+    // setMaximumHeight(height()-2);
+    w = width();
+    h = height();
+    /// margin=(h - xb->width())/2;
+    /// xb->move(w-h+margin-1,margin);
+    return;
 }
 
 void SearchBox::event_xbutton_clicked()
 {
-	QKeyEvent ke(QEvent::KeyPress,Qt::Key_Escape,0 ); // temp..
-	keyPressEvent (&ke );
+    QKeyEvent ke(QEvent::KeyPress, Qt::Key_Escape, 0); // temp..
+    keyPressEvent(&ke);
 }
 
-//public
+// public
 /*void SearchBox::keyPress( QKeyEvent * e )
 {
 
 } */
 
-void SearchBox::timerEvent( QTimerEvent *e )
+void SearchBox::timerEvent(QTimerEvent *e)
 {
- //       qDebug( "timer event, id %d", e->timerId() );
+    //       qDebug( "timer event, id %d", e->timerId() );
 }
 
-LogBox::LogBox( QWidget *p):QLabel(p)
+LogBox::LogBox(QWidget *p) : QLabel(p)
 {
-	text=new QTextEdit(p);
-	text->setFocusPolicy(Qt::NoFocus);
+    text = new QTextEdit(p);
+    text->setFocusPolicy(Qt::NoFocus);
 }
 
 // Location: bottom
-StatusBar::StatusBar(QWidget *parent)  : QStatusBar(parent)
+StatusBar::StatusBar(QWidget *parent) : QStatusBar(parent)
 {
-	setSizeGripEnabled (true);
-//	QWidget *le = new QLabel(this);//QButton *button = new QButton(this);
-//	QLineEdit *le=new QLineEdit(this);
+    setSizeGripEnabled(true);
+    //	QWidget *le = new QLabel(this);//QButton *button = new
+    // QButton(this);
+    //	QLineEdit *le=new QLineEdit(this);
 
-
-//	showMessage ( const QString & message, int timeout = 0 )	
-//	showMessage("aaaaaa");
-	label = new QLabel(this);//QButton *button = new QButton(this);
-	//label->setText ("") ;
-	label->setFrameShape(QFrame::NoFrame);
-	//label->setFrameShape (QFrame::StyledPanel);
-	//label->setFrameShape (QFrame::Panel);
-	//label->setFrameShape (QFrame::WinPanel);
-	//label->setFrameShadow(QFrame::Sunken);
-//	button2 = new QToolButton(this);//QButton *button = new QButton(this);
-//	button2->setTextLabel ("") ;
-//	button2->setUsesTextLabel ( true );
-//	button2->setAutoRaise(true); 
-//	button3 = new QLabel(this);//QButton *button = new QButton(this);
-//	button3->setText ("") ;
-//	addPermanentWidget(label);
-	addWidget(label);
-//	addPermanentWidget(le,1);
+    //	showMessage ( const QString & message, int timeout = 0 )
+    //	showMessage("aaaaaa");
+    label = new QLabel(this); // QButton *button = new QButton(this);
+    // label->setText ("") ;
+    label->setFrameShape(QFrame::NoFrame);
+    // label->setFrameShape (QFrame::StyledPanel);
+    // label->setFrameShape (QFrame::Panel);
+    // label->setFrameShape (QFrame::WinPanel);
+    // label->setFrameShadow(QFrame::Sunken);
+    //	button2 = new QToolButton(this);//QButton *button = new
+    // QButton(this);
+    //	button2->setTextLabel ("") ;
+    //	button2->setUsesTextLabel ( true );
+    //	button2->setAutoRaise(true);
+    //	button3 = new QLabel(this);//QButton *button = new
+    // QButton(this);
+    //	button3->setText ("") ;
+    //	addPermanentWidget(label);
+    addWidget(label);
+    //	addPermanentWidget(le,1);
 }
 
-void StatusBar::refresh()
-{
+void StatusBar::refresh() {}
 
-}
-
-extern	int num_opened_files;
+extern int num_opened_files;
 void StatusBar::update(int total_n)
 {
-	QString str;
-	int 	x=0;
-	label->setText("Process count: " + str.setNum(total_n) ) ;
-//	button2->setTextLabel ("Network Process(testing): "+ str.setNum(Procinfo::num_network_process));
-//	button3->setText ("Opened files : "+ str.setNum(num_opened_files));
+    QString str;
+    int x = 0;
+    label->setText("Process count: " + str.setNum(total_n));
+    //	button2->setTextLabel ("Network Process(testing): "+
+    // str.setNum(Procinfo::num_network_process));
+    //	button3->setText ("Opened files : "+
+    // str.setNum(num_opened_files));
 }
 
-#include <QHBoxLayout> 
+#include <QHBoxLayout>
 
-// Pstable or Procview 
-// Location : 
+// Pstable or Procview
+// Location :
 QSpacerItem *stretch;
-ControlBar::ControlBar(QWidget *parent)  : QFrame(parent)
+ControlBar::ControlBar(QWidget *parent) : QFrame(parent)
 {
-	int h;
-	//setSizePolicy(QSizePolicy::Minimum,QSizePolicy::Expanding);
-	setFrameStyle(QFrame::NoFrame);
-	//setFrameStyle(Panel | Raised);//bad
-	//setFrameStyle(Panel ); //bad 
-	layout = new QHBoxLayout(this);
-	layout->addSpacing(4); //left gap 
-	layout->setMargin(0);
-	
-//	setStyleSheet(" QFrame,QCheckBox,QRadioButton { color: rgb(244, 244, 244);\
-	border-image: url(:/icon/vista.png); } "); 
-  /*  Frame { background-color: yellow } 
-   *  border: 2px solid #8f8f91;
-   min-width: 80px; */
-	/* image: url(:/icon/vista.png);*/
+    int h;
+    // setSizePolicy(QSizePolicy::Minimum,QSizePolicy::Expanding);
+    setFrameStyle(QFrame::NoFrame);
+    // setFrameStyle(Panel | Raised);//bad
+    // setFrameStyle(Panel ); //bad
+    layout = new QHBoxLayout(this);
+    layout->addSpacing(4); // left gap
+    layout->setMargin(0);
 
-	b_linear = new QRadioButton("Linear", this);
-	b_linear->setFocusPolicy(Qt::NoFocus);
+    //	setStyleSheet(" QFrame,QCheckBox,QRadioButton { color: rgb(244, 244, 244);\
+	border-image: url(:/icon/vista.png); } ");
+    /*  Frame { background-color: yellow }
+     *  border: 2px solid #8f8f91;
+     min-width: 80px; */
+    /* image: url(:/icon/vista.png);*/
 
-	b_tree = new QRadioButton("Tree", this);
-	b_tree->setFocusPolicy(Qt::NoFocus);
+    b_linear = new QRadioButton("Linear", this);
+    b_linear->setFocusPolicy(Qt::NoFocus);
 
-	search_box=new SearchBox(this);
-	connect(b_linear, SIGNAL(clicked()), SLOT(linear_clicked()));
-	connect(b_tree, SIGNAL(clicked()), SLOT(tree_clicked()));
-	connect(search_box, SIGNAL(textChanged ( const QString & ) ), SLOT(event_search_box_changed()));
-	//search_box->setFocusPolicy(Qt::NoFocus);
-	//search_box->setFocus (Qt::ActiveWindowFocusReason);
-	//search_box->setFocusProxy ( parent );
+    b_tree = new QRadioButton("Tree", this);
+    b_tree->setFocusPolicy(Qt::NoFocus);
 
-	if(flag_thread_ok){
-		check_thread=new QCheckBox ("Thread",this);
-		check_thread->setFocusPolicy(Qt::NoFocus);
-		connect(check_thread, SIGNAL(clicked()), SLOT(show_thread_clicked()));
-		check_thread->setChecked (flag_show_thread) ;
-	}
-	
-	view=new QComboBox(this);
-	view->insertItem(0,"All Processes", Procview::ALL);
-	view->insertItem(1,"Your Processes", Procview::OWNED);
-	view->insertItem(2,"Non-Root Processes", Procview::NROOT );
-	view->insertItem(3,"Running Processes", Procview::RUNNING);
-	connect(view, SIGNAL(activated( int ) ), SLOT(view_changed(int)));
-	view->setFocusPolicy(Qt::NoFocus);
-	//PAUSED view->insertItem("Hidden Processes", Procview::HIDDEN);
+    search_box = new SearchBox(this);
+    connect(b_linear, SIGNAL(clicked()), SLOT(linear_clicked()));
+    connect(b_tree, SIGNAL(clicked()), SLOT(tree_clicked()));
+    connect(search_box, SIGNAL(textChanged(const QString &)),
+            SLOT(event_search_box_changed()));
+    // search_box->setFocusPolicy(Qt::NoFocus);
+    // search_box->setFocus (Qt::ActiveWindowFocusReason);
+    // search_box->setFocusProxy ( parent );
 
-	layout->addWidget( b_linear);
-	layout->addWidget( b_tree);
-	if(flag_thread_ok)
-		layout->addWidget(check_thread);
-	layout->addWidget( search_box);
-	layout->addWidget( view);
+    if (flag_thread_ok)
+    {
+        check_thread = new QCheckBox("Thread", this);
+        check_thread->setFocusPolicy(Qt::NoFocus);
+        connect(check_thread, SIGNAL(clicked()), SLOT(show_thread_clicked()));
+        check_thread->setChecked(flag_show_thread);
+    }
 
-	//stretch=new QSpacerItem(0,0,QSizePolicy::Expanding);
-	//layout->addItem(stretch);
-	layout->addStretch();
-	
-	/*
-	QPushButton *mb=new QPushButton;
-	mb->setContentsMargins(0,0,0,0);
-	//mb->setDown(true);
-	mb->setCheckable(true);
-	mb->setText("pause");
-	mb->setFixedWidth(32);
-	mb->setSizePolicy(QSizePolicy::Minimum,QSizePolicy::Minimum);
-	layout->addWidget(mb);
-	*/
+    view = new QComboBox(this);
+    view->insertItem(0, "All Processes", Procview::ALL);
+    view->insertItem(1, "Your Processes", Procview::OWNED);
+    view->insertItem(2, "Non-Root Processes", Procview::NROOT);
+    view->insertItem(3, "Running Processes", Procview::RUNNING);
+    connect(view, SIGNAL(activated(int)), SLOT(view_changed(int)));
+    view->setFocusPolicy(Qt::NoFocus);
+    // PAUSED view->insertItem("Hidden Processes", Procview::HIDDEN);
 
-     pauseButton = new QToolButton;
-     //QPushButton *pauseButton = new QPushButton;
-     pauseButton->setCheckable(true);
-     pauseButton->setIcon(QIcon(":/icon/pause.png"));
-     pauseButton->setIconSize(QSize(19,19));
-     pauseButton->setToolTip(tr("Pause (Ctrl+Space)"));
-	 pauseButton->setFocusPolicy(Qt::NoFocus);
-	 //pauseButton->setFlat(true);
-	 pauseButton->setAutoRaise(true);
-	 connect(pauseButton, SIGNAL(clicked(bool)), SLOT(setPaused(bool)));
-	 
-	 layout->addWidget(pauseButton);
-	
-	 setLayout(layout);
+    layout->addWidget(b_linear);
+    layout->addWidget(b_tree);
+    if (flag_thread_ok)
+        layout->addWidget(check_thread);
+    layout->addWidget(search_box);
+    layout->addWidget(view);
+
+    // stretch=new QSpacerItem(0,0,QSizePolicy::Expanding);
+    // layout->addItem(stretch);
+    layout->addStretch();
+
+    /*
+    QPushButton *mb=new QPushButton;
+    mb->setContentsMargins(0,0,0,0);
+    //mb->setDown(true);
+    mb->setCheckable(true);
+    mb->setText("pause");
+    mb->setFixedWidth(32);
+    mb->setSizePolicy(QSizePolicy::Minimum,QSizePolicy::Minimum);
+    layout->addWidget(mb);
+    */
+
+    pauseButton = new QToolButton;
+    // QPushButton *pauseButton = new QPushButton;
+    pauseButton->setCheckable(true);
+    pauseButton->setIcon(QIcon(":/icon/pause.png"));
+    pauseButton->setIconSize(QSize(19, 19));
+    pauseButton->setToolTip(tr("Pause (Ctrl+Space)"));
+    pauseButton->setFocusPolicy(Qt::NoFocus);
+    // pauseButton->setFlat(true);
+    pauseButton->setAutoRaise(true);
+    connect(pauseButton, SIGNAL(clicked(bool)), SLOT(setPaused(bool)));
+
+    layout->addWidget(pauseButton);
+
+    setLayout(layout);
 }
-
 
 void PSTABLE_SETTREEMODE(bool mode);
 void ControlBar::setMode(bool treemode) // just.. interface function
 {
-	b_linear->setChecked(!treemode);
-	b_tree->setChecked(treemode);
-	
-	PSTABLE_SETTREEMODE(treemode);	//	pstable->setTreeMode(treemode);
+    b_linear->setChecked(!treemode);
+    b_tree->setChecked(treemode);
+
+    PSTABLE_SETTREEMODE(treemode); //	pstable->setTreeMode(treemode);
 }
 
 #include <QAction>
 void ControlBar::view_changed(int idx)
 {
-	QAction act(this);
-	act.setData(QVariant(idx));
-	emit viewChange(&act);
+    QAction act(this);
+    act.setData(QVariant(idx));
+    emit viewChange(&act);
 }
 
 extern bool flag_refresh;
 void ControlBar::setPaused(bool b)
 {
-	flag_refresh=!b;
-//	if(!pauseButton->isDown()) pauseButton->setDown(true);
+    flag_refresh = !b;
+    //	if(!pauseButton->isDown()) pauseButton->setDown(true);
 }
 
 void ControlBar::linear_clicked()
 {
-	setMode(false); 
-//	emit modeChange(FALSE);
+    setMode(false);
+    //	emit modeChange(FALSE);
 }
 
 void ControlBar::tree_clicked()
 {
-	setMode(true);
-//	emit modeChange(TRUE);
+    setMode(true);
+    //	emit modeChange(TRUE);
 }
 
 void ControlBar::show_thread_clicked()
 {
-	flag_show_thread=check_thread->isChecked ();
-	emit need_refresh();
+    flag_show_thread = check_thread->isChecked();
+    emit need_refresh();
 }
 
 void ControlBar::event_search_box_changed()
 {
-	//printf("search_box changed!\n");
+    // printf("search_box changed!\n");
 }
 
 void ControlBar::event_command_pressed()
 {
-	//printf("command!\n");
+    // printf("command!\n");
 }
 
 // not used
-void ControlBar::update_bar() // trick for Command 
+void ControlBar::update_bar() // trick for Command
 {
-
 }
 
 // called after resize()
@@ -1007,185 +1036,180 @@ extern bool flag_smallscreen;
 
 void ControlBar::resizeEvent(QResizeEvent *e)
 {
-	return;	
-	//QLayoutItem *item=layout->takeAt (layout->count()-1);
-	//return;
-	if(flag_smallscreen)
-	{
-		search_box->hide();
-     	pauseButton->hide();
-	}
-	else
-	{
-		search_box->show();
-     	pauseButton->show();
-	}
+    return;
+    // QLayoutItem *item=layout->takeAt (layout->count()-1);
+    // return;
+    if (flag_smallscreen)
+    {
+        search_box->hide();
+        pauseButton->hide();
+    }
+    else
+    {
+        search_box->show();
+        pauseButton->show();
+    }
 
+    //	printf("size=%d\n",stretch->geometry().width());
+    // printf("hsize=%d\n",stretch->sizeHint().height());
+    // QSize s=e->size();
+    return;
+    /*
+    if(stretch->geometry().width()==0)
+            search_box->hide();
+    else
+            search_box->show();
+    */
 
+    /* setMaximumHeight (b_tree->sizeHint().height()+2);
+    search_box->setMaximumHeight(height()-4);
+    //search_box->setMinimumHeight(height()-5);
 
-//	printf("size=%d\n",stretch->geometry().width());
-	//printf("hsize=%d\n",stretch->sizeHint().height());
-	//QSize s=e->size();
-	return;
-	/*
-	if(stretch->geometry().width()==0)
-		search_box->hide();
-	else 
-		search_box->show();
-	*/		
-
-	/* setMaximumHeight (b_tree->sizeHint().height()+2);
-	search_box->setMaximumHeight(height()-4);
-	//search_box->setMinimumHeight(height()-5);
-	
-	for(i=0;i< commands.size();i++)
-	{
-		QToolButton *b;
-		b=commands[i]->toolbutton;
-		if(commands[i]->toolbar==true)
-		{
-			if (layout->findWidget(b)<0)
-				layout->addWidget(b);
-			b->show();
-		}
-		else 
-			if(b!=NULL)
-				b->hide();
-	} */
-} 
-
-void ServerAdaptor::accelerate()
-{
-
+    for(i=0;i< commands.size();i++)
+    {
+            QToolButton *b;
+            b=commands[i]->toolbutton;
+            if(commands[i]->toolbar==true)
+            {
+                    if (layout->findWidget(b)<0)
+                            layout->addWidget(b);
+                    b->show();
+            }
+            else
+                    if(b!=NULL)
+                            b->hide();
+    } */
 }
+
+void ServerAdaptor::accelerate() {}
 
 //#include <QtDBus>
 //#include <QDBusServer>
 //#include <QtDBus/QDBusConnection>
 #include <QDBusConnection>
-//ServerAdaptor::ServerAdaptor(){ }
-//ServerAdaptor::~ServerAdaptor(){}
+// ServerAdaptor::ServerAdaptor(){ }
+// ServerAdaptor::~ServerAdaptor(){}
 
 #define SERVICE_NAME "com.trolltech.qps"
 void dbus_register_server()
 {
-	ServerAdaptor *sv= new ServerAdaptor();
-    QDBusConnection connection = QDBusConnection::sessionBus(); //user only??
-	//QDBusConnection connection = QDBusConnection::systemBus(); //user only??
-   	connection.registerObject("/QPS_OBJ", sv);
-    connection.registerService(SERVICE_NAME); // 
+    ServerAdaptor *sv = new ServerAdaptor();
+    QDBusConnection connection = QDBusConnection::sessionBus(); // user only??
+    // QDBusConnection connection = QDBusConnection::systemBus(); //user
+    // only??
+    connection.registerObject("/QPS_OBJ", sv);
+    connection.registerService(SERVICE_NAME); //
 }
 
 #include <QtDebug>
 void qdbus_client()
 {
-//	connection.connect ( SERVICE_NAME,"path", "interface","name", QObject * receiver, const char * slot );
+    //	connection.connect ( SERVICE_NAME,"path", "interface","name",
+    // QObject *
+    // receiver, const char * slot );
 
-	//QDBusConnection conn = QDBusConnection::connectToBus(SERVICE_NAME,"hyun");
-	
-	QDBusConnection conn = QDBusConnection::sessionBus();  //owner-user only, hang.. blocked !!!
+    // QDBusConnection conn =
+    // QDBusConnection::connectToBus(SERVICE_NAME,"hyun");
 
-	QDBusReply<QStringList> reply = conn.interface()->registeredServiceNames();
-	
+    QDBusConnection conn = QDBusConnection::sessionBus(); // owner-user
+                                                          // only, hang..
+                                                          // blocked !!!
 
-	if (!reply.isValid()) {
+    QDBusReply<QStringList> reply = conn.interface()->registeredServiceNames();
+
+    if (!reply.isValid())
+    {
         qDebug() << "qdbus_client Error:" << reply.error().message();
-    //    exit(1);
+        //    exit(1);
     }
 
-	/*
-	foreach (QString name, reply.value())
-	{
-        qDebug() << name;
-		//printf("name %s, value %s \n",qPrintable(name),
-	} */
-    
-	if(conn.interface()->isServiceRegistered (SERVICE_NAME))
-	{
-		printf("Qps: Already another QPS is running...\n");
-		exit(1);
-	}
+    /*
+    foreach (QString name, reply.value())
+    {
+    qDebug() << name;
+            //printf("name %s, value %s \n",qPrintable(name),
+    } */
+
+    if (conn.interface()->isServiceRegistered(SERVICE_NAME))
+    {
+        printf("Qps: Already another QPS is running...\n");
+        exit(1);
+    }
 }
-
-
 
 void check_qps_running()
 {
-	//QDBusServer *server=QDBusServer("xaddr"); //peer2peer mode
-	//service,path,interface,name
-	//connect(server, SIGNAL(clicked()), SLOT(event_xbutton_clicked()));
-	//SIGNAL(newConnection ( const QDBusConnection & connection ))
-	//QDBusConnection::connectToBus ("xaddr", "name" );
+    // QDBusServer *server=QDBusServer("xaddr"); //peer2peer mode
+    // service,path,interface,name
+    // connect(server, SIGNAL(clicked()), SLOT(event_xbutton_clicked()));
+    // SIGNAL(newConnection ( const QDBusConnection & connection ))
+    // QDBusConnection::connectToBus ("xaddr", "name" );
 
-	//	glib_dbus_getlist();
-	//	glib_dbus_server();
+    //	glib_dbus_getlist();
+    //	glib_dbus_server();
 
-	qdbus_client(); // hang... on root-user
-//	printf("D1-1-3\n");
-	dbus_register_server();
-//	printf("D1-1-6\n");
+    qdbus_client(); // hang... on root-user
+                    //	printf("D1-1-3\n");
+    dbus_register_server();
+    //	printf("D1-1-6\n");
 }
 
-char * read_proc_file(const char *fname,int pid=-1,int tgid=-1); // Temp
+char *read_proc_file(const char *fname, int pid = -1, int tgid = -1); // Temp
 void init_misc(QWidget *main)
 {
 
-	init_xpm(); // xpm image file load
+    init_xpm(); // xpm image file load
 
-	if(true) //TESTING
-	{
-	
-	}
+    if (true) // TESTING
+    {
+    }
 
 #ifdef LINUX
-	if(false or flag_devel) // thread's Name Change test
-	{
-		QThread *task=new MyThread();
-		task->start();
-		task=new MyThread2();
-		task->start();
-	}
+    if (false or flag_devel) // thread's Name Change test
+    {
+        QThread *task = new MyThread();
+        task->start();
+        task = new MyThread2();
+        task->start();
+    }
 #endif
 
-	if(false) //test mini_sscanf()
-	{
-		char *buf;
-		int val;
-		char sstr[32]="pu%s";
-		char buffer[128];
+    if (false) // test mini_sscanf()
+    {
+        char *buf;
+        int val;
+        char sstr[32] = "pu%s";
+        char buffer[128];
 
-		if((buf= read_proc_file("stat",1)) ==0 )
-		{
-			printf("cant open [%s]\n","sss");
-		}
-		if(mini_sscanf(buf, sstr,&val)!=0)	printf("found [%s] val=%d \n",sstr,val);
-		if(mini_sscanf(buf, "(%s)",&buffer)!=0)	printf("found  str=%s \n",buffer);
-	
-		abort();
-	}
+        if ((buf = read_proc_file("stat", 1)) == 0)
+        {
+            printf("cant open [%s]\n", "sss");
+        }
+        if (mini_sscanf(buf, sstr, &val) != 0)
+            printf("found [%s] val=%d \n", sstr, val);
+        if (mini_sscanf(buf, "(%s)", &buffer) != 0)
+            printf("found  str=%s \n", buffer);
+
+        abort();
+    }
 }
 
-
-QTabWidgetX::QTabWidgetX(QWidget *parent)
-{
-
-}
+QTabWidgetX::QTabWidgetX(QWidget *parent) {}
 
 void QTabWidgetX::showTab(bool flag)
 {
 
-	QTabBar *tb=tabBar();
-//	tb->setDrawBase(false); //??
-	
-	if(flag) 
-		tb->show();
-	else
-		tb->hide();
- //if flag_useTabView == false
-#if QT_VERSION > 0x040500 	
+    QTabBar *tb = tabBar();
+    //	tb->setDrawBase(false); //??
+
+    if (flag)
+        tb->show();
+    else
+        tb->hide();
+// if flag_useTabView == false
+#if QT_VERSION > 0x040500
 //	setDocumentMode (true); // QT 4.5
 #endif
-
 }
 
 #include "qticonloader.cpp"

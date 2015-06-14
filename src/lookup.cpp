@@ -17,58 +17,52 @@
 #include "lookup.h"
 #include "svec.cpp"
 
-
 // declarations of static members
 char *Lookup::argv0;
 int Lookup::maxtitlelen;
 
-UintQueue::UintQueue()
-{
-    first = last = 0;
-};
+UintQueue::UintQueue() { first = last = 0; };
 
 void UintQueue::enqueue(unsigned x)
 {
-    if(last < 0) {
-	// make room for inserting more elements
-	int step = qMax(first + 1, 8);
-	queue.setSize(first + step + 1);
-	for(int i = first; i > last; i--)
-	    queue[i + step] = queue[i];
-	first += step;
-	last += step;
+    if (last < 0)
+    {
+        // make room for inserting more elements
+        int step = qMax(first + 1, 8);
+        queue.setSize(first + step + 1);
+        for (int i = first; i > last; i--)
+            queue[i + step] = queue[i];
+        first += step;
+        last += step;
     }
     queue.set(last--, x);
 }
 
 unsigned UintQueue::dequeue()
 {
-    if(isEmpty())
-	fatal("UintQueue: queue empty");
+    if (isEmpty())
+        fatal("UintQueue: queue empty");
     return queue[first--];
 }
 
 // constructor for node head
-Hostnode::Hostnode()
-        : next(this), prev(this)
-{}
+Hostnode::Hostnode() : next(this), prev(this) {}
 
 // create a new cache node, initialized with null string
-Hostnode::Hostnode(unsigned addr)
-        : ipaddr(addr), next(0), prev(0)
-{}
+Hostnode::Hostnode(unsigned addr) : ipaddr(addr), next(0), prev(0) {}
 
 // must be called on the head of the list
 void Hostnode::moveToFront(Hostnode *node)
 {
-    if(next != node) {
-	Hostnode *p = node->prev, *n = node->next;
-	p->next = n;
-	n->prev = p;
-	node->next = next;
-	node->prev = this;
-	next->prev = node;
-	next = node;
+    if (next != node)
+    {
+        Hostnode *p = node->prev, *n = node->next;
+        p->next = n;
+        n->prev = p;
+        node->next = next;
+        node->prev = this;
+        next->prev = node;
+        next = node;
     }
 }
 
@@ -90,39 +84,43 @@ void Hostnode::insertFirst(Hostnode *node)
     next = node;
 }
 
-Lookup::Lookup()// : hostdict(17)
+Lookup::Lookup() // : hostdict(17)
 {
-    sockfd = -1;		// no lookup helper is running
+    sockfd = -1; // no lookup helper is running
     readsn = writesn = 0;
     outstanding = 0;
 }
 
 // empty destructor, workaround for gcc bug
-Lookup::~Lookup()
-{}
+Lookup::~Lookup() {}
 
 // look up host name (addr is in host byte order)
 // a null name means it is been looked up (signal will be sent when done)
 QString Lookup::hostname(unsigned addr)
 {
     // first look in our cache
-    Hostnode *hn = hostdict.value(addr,NULL);
-    if(hn) {
-	hostlru.moveToFront(hn);
-    } else {
-	hn = new Hostnode(addr);
-	if(hostdict.count() >= hostname_cache_size) {
-	    // remove least recently used item
-	    hostdict.remove(hostlru.last()->ipaddr);
-	    hostlru.deleteLast();
-	}
-	hostlru.insertFirst(hn);
-	hostdict.insert(addr, hn);
-	// if(hostdict.count() > hostdict.size() * 3)    hostdict.resize(hostdict.count());
-	if(addr == 0)
-	    hn->name = "*";
-	else
-	    request(addr);
+    Hostnode *hn = hostdict.value(addr, NULL);
+    if (hn)
+    {
+        hostlru.moveToFront(hn);
+    }
+    else
+    {
+        hn = new Hostnode(addr);
+        if (hostdict.count() >= hostname_cache_size)
+        {
+            // remove least recently used item
+            hostdict.remove(hostlru.last()->ipaddr);
+            hostlru.deleteLast();
+        }
+        hostlru.insertFirst(hn);
+        hostdict.insert(addr, hn);
+        // if(hostdict.count() > hostdict.size() * 3)
+        // hostdict.resize(hostdict.count());
+        if (addr == 0)
+            hn->name = "*";
+        else
+            request(addr);
     }
     return hn->name;
 }
@@ -130,29 +128,29 @@ QString Lookup::hostname(unsigned addr)
 void Lookup::request(unsigned addr)
 {
     addrqueue.enqueue(addr);
-    if(sockfd < 0) {
-	int socks[2];
-	socketpair(AF_UNIX, SOCK_STREAM, 0, socks);
-	// launch a new helper
-	signal(SIGCHLD, SIG_IGN); // Linux does automatic child reaping, nice
-	switch(fork()) {
-	case -1:	// error
-	    return;		// don't bother, we'll try again next time
-	case 0:		// child
-	    close(socks[0]);
-	    do_child(socks[1]);
-	    break;
-	default:	// parent
-	    close(socks[1]);
-	    sockfd = socks[0];
-	    readsn = new QSocketNotifier(sockfd, QSocketNotifier::Read,
-					 this);
-	    connect(readsn, SIGNAL(activated(int)), SLOT(receive_result(int)));
-	    writesn = new QSocketNotifier(sockfd, QSocketNotifier::Write,
-					  this);
-	    connect(writesn, SIGNAL(activated(int)), SLOT(send_request(int)));
-	    break;
-	}
+    if (sockfd < 0)
+    {
+        int socks[2];
+        socketpair(AF_UNIX, SOCK_STREAM, 0, socks);
+        // launch a new helper
+        signal(SIGCHLD, SIG_IGN); // Linux does automatic child reaping, nice
+        switch (fork())
+        {
+        case -1:    // error
+            return; // don't bother, we'll try again next time
+        case 0:     // child
+            close(socks[0]);
+            do_child(socks[1]);
+            break;
+        default: // parent
+            close(socks[1]);
+            sockfd = socks[0];
+            readsn = new QSocketNotifier(sockfd, QSocketNotifier::Read, this);
+            connect(readsn, SIGNAL(activated(int)), SLOT(receive_result(int)));
+            writesn = new QSocketNotifier(sockfd, QSocketNotifier::Write, this);
+            connect(writesn, SIGNAL(activated(int)), SLOT(send_request(int)));
+            break;
+        }
     }
     writesn->setEnabled(true);
 }
@@ -162,31 +160,34 @@ void Lookup::do_child(int fd)
 {
     setproctitle("qps-dns-helper");
     // close unused fds
-    for(int i = 0; i < fd; i++)
-	close(i);
-    for(;;) {
-	unsigned addr;
-	int ret = read(fd, &addr, sizeof(addr));
-	if(ret <= 0) {
-	    _exit(0);		// connection closed
-	}
-	struct hostent *h = gethostbyaddr((char*)&addr, sizeof(addr), AF_INET);
-	char buf[256];
-	if(!h) {
-	    unsigned a = htonl(addr);
-	    sprintf(buf, "%d.%d.%d.%d",
-		    (a >> 24) & 0xff,
-		    (a >> 16) & 0xff,
-		    (a >> 8) & 0xff,
-		    a & 0xff);
-	} else {
-	    strncpy(buf, h->h_name, sizeof(buf));
-	}
-	// if parent died, we'll get SIGPIPE here and terminate automatically
-	write(fd, &addr, sizeof(addr));
-	int len = strlen(buf);
-	write(fd, &len, sizeof(len));
-	write(fd, buf, len);
+    for (int i = 0; i < fd; i++)
+        close(i);
+    for (;;)
+    {
+        unsigned addr;
+        int ret = read(fd, &addr, sizeof(addr));
+        if (ret <= 0)
+        {
+            _exit(0); // connection closed
+        }
+        struct hostent *h = gethostbyaddr((char *)&addr, sizeof(addr), AF_INET);
+        char buf[256];
+        if (!h)
+        {
+            unsigned a = htonl(addr);
+            sprintf(buf, "%d.%d.%d.%d", (a >> 24) & 0xff, (a >> 16) & 0xff,
+                    (a >> 8) & 0xff, a & 0xff);
+        }
+        else
+        {
+            strncpy(buf, h->h_name, sizeof(buf));
+        }
+        // if parent died, we'll get SIGPIPE here and terminate
+        // automatically
+        write(fd, &addr, sizeof(addr));
+        int len = strlen(buf);
+        write(fd, &len, sizeof(len));
+        write(fd, buf, len);
     }
 }
 
@@ -197,49 +198,53 @@ void Lookup::receive_result(int)
     int len;
     char buf[256];
 
-    if(read(sockfd, &addr, sizeof(addr)) <= 0
-       || read(sockfd, &len, sizeof(len)) <= 0
-       || read(sockfd, buf, len) <= 0) {
-	// helper has died
-	delete readsn;
-	delete writesn;
-	close(sockfd);
-	sockfd = -1;
-	return;
+    if (read(sockfd, &addr, sizeof(addr)) <= 0 ||
+        read(sockfd, &len, sizeof(len)) <= 0 || read(sockfd, buf, len) <= 0)
+    {
+        // helper has died
+        delete readsn;
+        delete writesn;
+        close(sockfd);
+        sockfd = -1;
+        return;
     }
     buf[len] = '\0';
-    Hostnode *hn = hostdict.value(addr,NULL);
-    if(!hn) return;		// gone from cache
+    Hostnode *hn = hostdict.value(addr, NULL);
+    if (!hn)
+        return; // gone from cache
     hn->name = buf;
     emit resolved(addr);
 
     outstanding--;
     // if there is nothing more in the queue, kill the helper
-    if(addrqueue.isEmpty() && outstanding == 0) {
-	close(sockfd);
-	sockfd = -1;
-	delete readsn;
-	delete writesn;
+    if (addrqueue.isEmpty() && outstanding == 0)
+    {
+        close(sockfd);
+        sockfd = -1;
+        delete readsn;
+        delete writesn;
     }
 }
 
 // slot: send request to the helper
 void Lookup::send_request(int)
 {
-    if(addrqueue.isEmpty()) {
-	writesn->setEnabled(false);
-	return;
+    if (addrqueue.isEmpty())
+    {
+        writesn->setEnabled(false);
+        return;
     }
 
     unsigned addr = addrqueue.dequeue();
-    if(write(sockfd, &addr, sizeof(addr)) < 0) {
-	// This shouldn't happen, try to repair it anyway
-	addrqueue.enqueue(addr);
-	delete readsn;
-	delete writesn;
-	close(sockfd);
-	sockfd = -1;
-	return;
+    if (write(sockfd, &addr, sizeof(addr)) < 0)
+    {
+        // This shouldn't happen, try to repair it anyway
+        addrqueue.enqueue(addr);
+        delete readsn;
+        delete writesn;
+        close(sockfd);
+        sockfd = -1;
+        return;
     }
     outstanding++;
 }
@@ -248,7 +253,8 @@ void Lookup::send_request(int)
 void Lookup::initproctitle(char **argv, char **envp)
 {
     argv0 = argv[0];
-    while(*envp) envp++;
+    while (*envp)
+        envp++;
     maxtitlelen = envp[-1] + strlen(envp[-1]) - argv0 - 2;
 }
 

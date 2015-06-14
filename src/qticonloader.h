@@ -37,19 +37,18 @@
 **
 ****************************************************************************/
 
-
 #ifndef QTICONLOADER_H
 #define QTICONLOADER_H
 
 #include <QtGui/QIcon>
 
-// This is the QtIconLoader 
+// This is the QtIconLoader
 // Version 0.1
 //
 
 class QtIconLoader
 {
-public:
+  public:
     static QIcon icon(const QString &name, const QIcon &fallback = QIcon());
 };
 

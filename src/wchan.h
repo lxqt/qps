@@ -9,22 +9,23 @@
 #include <QHash>
 #include <QString>
 
-class Wchan {
-public:
+class Wchan
+{
+  public:
     static QString name(unsigned long addr);
 
 #ifdef LINUX
-private:
+  private:
     static bool open_sysmap();
     static bool try_sysmap(const char *path);
     static char *find_sym(unsigned long addr);
     static inline int beginning_of_line(int ofs);
 
-    static QHash<int,char*> dict;
-    static char *sysmap;	// pointer to mmap()ed System.map
-    static bool sysmap_inited;	// if an attempt to read sysmap has been made
+    static QHash<int, char *> dict;
+    static char *sysmap;       // pointer to mmap()ed System.map
+    static bool sysmap_inited; // if an attempt to read sysmap has been made
     static int sysmap_size;
 #endif
 };
 
-#endif	// WCHAN_H
+#endif // WCHAN_H

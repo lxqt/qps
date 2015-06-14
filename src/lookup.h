@@ -14,25 +14,26 @@
 // queue (fifo) of unsigned ints (inet addresses)
 class UintQueue
 {
-public:
+  public:
     UintQueue();
 
     bool isEmpty() { return first == last; };
     void enqueue(unsigned x);
     unsigned dequeue();
 
-private:
+  private:
     Svec<unsigned> queue;
-    int first;			// index of first item in queue
-    int last;			// index where next item will be put (< first)
+    int first; // index of first item in queue
+    int last;  // index where next item will be put (< first)
 };
 
 // list node for LRU cache of hostnames:
 // This list is doubly-linked circular (to reduce the amount of special cases),
 // with a head node that carries no data. In addition, each node is
 // entered into a hash table for rapid lookup
-class Hostnode {
-public:
+class Hostnode
+{
+  public:
     Hostnode();
     Hostnode(unsigned addr);
 
@@ -43,13 +44,14 @@ public:
     Hostnode *last() { return prev; };
 
     QString name;
-    unsigned ipaddr;		// hash key
+    unsigned ipaddr; // hash key
     Hostnode *next, *prev;
 };
 
-class Lookup : public QObject {
+class Lookup : public QObject
+{
     Q_OBJECT
-public:
+  public:
     Lookup();
     ~Lookup();
     QString hostname(unsigned addr);
@@ -59,11 +61,11 @@ public:
 signals:
     void resolved(unsigned addr);
 
-protected slots:
+  protected slots:
     void receive_result(int);
     void send_request(int);
 
-protected:
+  protected:
     void request(unsigned addr);
     void do_child(int fd);
 
@@ -72,15 +74,15 @@ protected:
     static char *argv0;
     static int maxtitlelen;
 
-    QHash<int,Hostnode*> hostdict;
-    Hostnode hostlru;		// head of circular list
-    UintQueue addrqueue;	// queue of addresses to lookup
-    int outstanding;		// number of outstanding requests
-    int sockfd;			// -1 if no helper process is running
+    QHash<int, Hostnode *> hostdict;
+    Hostnode hostlru;    // head of circular list
+    UintQueue addrqueue; // queue of addresses to lookup
+    int outstanding;     // number of outstanding requests
+    int sockfd;          // -1 if no helper process is running
 
     QSocketNotifier *readsn, *writesn;
 
     static const unsigned hostname_cache_size = 400; // max names to cache
 };
 
-#endif	// LOOKUP_H
+#endif // LOOKUP_H

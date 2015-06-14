@@ -9,14 +9,15 @@
 #include <QHash>
 #include <QString>
 
-class Uidstr {
-public:
+class Uidstr
+{
+  public:
     static QString userName(int uid);
     static QString groupName(int gid);
 
-private:
-    static QHash<int,char*> udict;
-    static QHash<int,char*> gdict;
+  private:
+    static QHash<int, char *> udict;
+    static QHash<int, char *> gdict;
 };
 
-#endif	// UIDSTR_H
+#endif // UIDSTR_H

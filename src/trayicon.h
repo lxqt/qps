@@ -21,7 +21,6 @@
 #ifndef CS_TRAYICON_H
 #define CS_TRAYICON_H
 
-
 #include <QWidget>
 #include <QMenu>
 
@@ -31,70 +30,69 @@
 // TrayIconPrivate
 //----------------------------------------------------------------------------
 
-
 class TrayIcon : public QSystemTrayIcon
 {
-	Q_OBJECT
-public:
-	TrayIcon( const QPixmap &, const QString &, QMenu *popup = 0, QWidget *parent = 0, const char *name = 0 );
-	~TrayIcon();
-	
-	// use WindowMaker dock mode.  ignored on non-X11 platforms
-	void setWMDock(bool use)  { isWMDock = use; }
-	bool checkWMDock() { return isWMDock; }
-	bool hasSysTray() ;
-	void setSysTray(bool val) { //boolSysTray=val;
-        }
+    Q_OBJECT
+  public:
+    TrayIcon(const QPixmap &, const QString &, QMenu *popup = 0,
+             QWidget *parent = 0, const char *name = 0);
+    ~TrayIcon();
 
-	// Set a popup menu to handle RMB
-	void setPopup( QMenu * );
-	QMenu* popup() const;
+    // use WindowMaker dock mode.  ignored on non-X11 platforms
+    void setWMDock(bool use) { isWMDock = use; }
+    bool checkWMDock() { return isWMDock; }
+    bool hasSysTray();
+    void setSysTray(bool val)
+    { // boolSysTray=val;
+    }
 
-	QPixmap icon() const;
+    // Set a popup menu to handle RMB
+    void setPopup(QMenu *);
+    QMenu *popup() const;
 
-	void sysInstall();
-	void sysRemove();
-	
-	void init_TrayIconFreeDesktop();
-	void init_WindowMakerDock();
+    QPixmap icon() const;
 
-public slots:
-	void setIcon( const QPixmap &icon );
-	void setToolTip( const QString &tip );
+    void sysInstall();
+    void sysRemove();
+
+    void init_TrayIconFreeDesktop();
+    void init_WindowMakerDock();
+
+  public slots:
+    void setIcon(const QPixmap &icon);
+    void setToolTip(const QString &tip);
 signals:
-	void clicked( const QPoint& );
-	void clicked( const QPoint&, int);
-	void doubleClicked( const QPoint& );
-	void closed();
+    void clicked(const QPoint &);
+    void clicked(const QPoint &, int);
+    void doubleClicked(const QPoint &);
+    void closed();
 
-protected:	
-//	bool event( QEvent *e );
-	virtual void mouseMoveEvent( QMouseEvent *e );
-	virtual void mousePressEvent( QMouseEvent *e );
-	virtual void mouseReleaseEvent( QMouseEvent *e );
-	virtual void mouseDoubleClickEvent( QMouseEvent *e );
-	virtual void leaveEvent ( QEvent * );
+  protected:
+    //	bool event( QEvent *e );
+    virtual void mouseMoveEvent(QMouseEvent *e);
+    virtual void mousePressEvent(QMouseEvent *e);
+    virtual void mouseReleaseEvent(QMouseEvent *e);
+    virtual void mouseDoubleClickEvent(QMouseEvent *e);
+    virtual void leaveEvent(QEvent *);
 
-	void paintEvent(QPaintEvent *);
-	void resizeEvent ( QResizeEvent *e );
-//	void hideEvent ( QHideEvent *e ); // called after hide()
-	void closeEvent ( QCloseEvent * e );
+    void paintEvent(QPaintEvent *);
+    void resizeEvent(QResizeEvent *e);
+    //	void hideEvent ( QHideEvent *e ); // called after hide()
+    void closeEvent(QCloseEvent *e);
 
-private:
-	QMenu *pop;
-	QPixmap pm;
-	QString tip;
-	QPoint	tip_pos;
+  private:
+    QMenu *pop;
+    QPixmap pm;
+    QString tip;
+    QPoint tip_pos;
 
-	bool isWMDock;
-//	bool boolSysTray; //DEL?
-	bool inTray;
-	bool flag_systray_ready;
-	bool flag_show_tip;
+    bool isWMDock;
+    //	bool boolSysTray; //DEL?
+    bool inTray;
+    bool flag_systray_ready;
+    bool flag_show_tip;
 
-	//DEL void sysUpdateToolTip();
+    // DEL void sysUpdateToolTip();
 };
-
-
 
 #endif // CS_TRAYICON_H

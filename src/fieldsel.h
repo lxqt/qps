@@ -6,7 +6,6 @@
 #ifndef FIELDSEL_H
 #define FIELDSEL_H
 
-
 #include <QBitArray>
 #include <QDialog>
 #include <QCheckBox>
@@ -19,15 +18,15 @@
 
 #include "proc.h"
 
-
-class FieldSelect : public QDialog {
+class FieldSelect : public QDialog
+{
     Q_OBJECT
-public:
+  public:
     FieldSelect(Procview *pv);
 
     void update_boxes();
 
-public slots:
+  public slots:
     void field_toggled(bool);
     void closed();
 
@@ -35,7 +34,7 @@ signals:
     void added_field(int);
     void removed_field(int);
 
-protected:
+  protected:
     QCheckBox **buts;
     int nbuttons;
     QBitArray disp_fields;
@@ -44,7 +43,7 @@ protected:
 
     void set_disp_fields();
     void closeEvent(QCloseEvent *);
-	virtual void showEvent( QShowEvent * );
+    virtual void showEvent(QShowEvent *);
 };
 
-#endif	// FIELDSEL_H
+#endif // FIELDSEL_H

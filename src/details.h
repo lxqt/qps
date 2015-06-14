@@ -6,24 +6,22 @@
 #ifndef DETAILS_H
 #define DETAILS_H
 
-
-#ifndef USING_PCH 
+#ifndef USING_PCH
 #include <QTabWidget>
-#include <QFrame> 
+#include <QFrame>
 #include <QHash>
 #include <QCloseEvent>
 #include <QResizeEvent>
 #include <QLayout>
-#endif 
+#endif
 
 #include "proc.h"
 #include "lookup.h"
 
-
 class Details : public QWidget
 {
     Q_OBJECT
-public:
+  public:
     Details(Procinfo *p, Proc *proc);
     ~Details();
 
@@ -32,16 +30,16 @@ public:
     void process_gone();
     Procinfo *get_procinfo() { return pi; }
     Proc *proc() { return pr; }
-    void set_procinfo(Procinfo *p) ;
+    void set_procinfo(Procinfo *p);
 
 signals:
     void closed(Details *);
 
-protected:
-    	virtual void resizeEvent(QResizeEvent *);
- 		virtual void closeEvent(QCloseEvent *);
+  protected:
+    virtual void resizeEvent(QResizeEvent *);
+    virtual void closeEvent(QCloseEvent *);
 
-private:
+  private:
     QTabWidget *tbar;
     Procinfo *pi;
     Proc *pr;
@@ -61,21 +59,24 @@ struct TableField
 class SimpleTable : public HeadedTable
 {
     Q_OBJECT
-public:
-	SimpleTable(QWidget *parent, int nfields, TableField *f, int options = 0);
+  public:
+    SimpleTable(QWidget *parent, int nfields, TableField *f, int options = 0);
     QSize sizeHint() const;
     virtual void refresh(){};
-protected:
+
+  protected:
     virtual QString title(int col);
     virtual QString text(int row, int col) = 0;
     virtual int colWidth(int col);
     virtual int alignment(int col);
     virtual int leftGap(int col);
     virtual QString tipText(int col);
- //   Procinfo *procinfo() { return ((Details *)parentWidget())->procinfo(); }
+    //   Procinfo *procinfo() { return ((Details
+    //   *)parentWidget())->procinfo(); }
     Procinfo *procinfo() { return detail->get_procinfo(); }
     Proc *proc() { return detail->proc(); }
-private:    
+
+  private:
     const TableField *fields;
     Details *detail;
 };
@@ -83,7 +84,7 @@ private:
 class Sockets : public SimpleTable
 {
     Q_OBJECT
-public:
+  public:
     Sockets(QWidget *parent);
     ~Sockets();
 
@@ -95,31 +96,38 @@ public:
     QString hostname(unsigned addr);
     void config_change();
 
-public slots:
+  public slots:
     void update_hostname(unsigned addr);
 
-protected:
+  protected:
     virtual QString text(int row, int col);
 
-private:
-
-    enum {
-	FD, PROTO, RECVQ, SENDQ, LOCALADDR, LOCALPORT, REMOTEADDR, REMOTEPORT,
-	STATE,
-	SOCKFIELDS
+  private:
+    enum
+    {
+        FD,
+        PROTO,
+        RECVQ,
+        SENDQ,
+        LOCALADDR,
+        LOCALPORT,
+        REMOTEADDR,
+        REMOTEPORT,
+        STATE,
+        SOCKFIELDS
     };
     static TableField fields[SOCKFIELDS];
 
-    bool doing_lookup;		// if table painted with host lookup
+    bool doing_lookup; // if table painted with host lookup
 
     static Lookup *lookup;
-    static bool have_services;	// true if we have tried reading services
-    static QHash<int,char*> servdict;
+    static bool have_services; // true if we have tried reading services
+    static QHash<int, char *> servdict;
 };
 
 class Maps : public SimpleTable
 {
-public:
+  public:
     Maps(QWidget *parent);
     ~Maps();
 
@@ -127,21 +135,27 @@ public:
     void refresh_window();
     bool refresh_maps();
 
-protected:
+  protected:
     virtual QString text(int row, int col);
 
-private:
-
-    enum {
-	ADDRESS, SIZE, PERM, OFFSET, DEVICE, INODE, FILENAME,
-	MAPSFIELDS
+  private:
+    enum
+    {
+        ADDRESS,
+        SIZE,
+        PERM,
+        OFFSET,
+        DEVICE,
+        INODE,
+        FILENAME,
+        MAPSFIELDS
     };
     static TableField fields[MAPSFIELDS];
 };
 
 class Files : public SimpleTable
 {
-public:
+  public:
     Files(QWidget *parent);
     ~Files();
 
@@ -149,69 +163,74 @@ public:
     void refresh_window();
     bool refresh_fds();
 
-protected:
+  protected:
     virtual QString text(int row, int col);
 
-private:
-
-    enum {
-	FILEDESC,
+  private:
+    enum
+    {
+        FILEDESC,
 #ifdef LINUX
-	FILEMODE,
+        FILEMODE,
 #endif
-	FILENAME,
-	FILEFIELDS
+        FILENAME,
+        FILEFIELDS
     };
     static TableField fields[FILEFIELDS];
 };
 
 class Environ : public SimpleTable
 {
-	Q_OBJECT
-	public:
-		Environ(QWidget *parent);
-		~Environ();
+    Q_OBJECT
+  public:
+    Environ(QWidget *parent);
+    ~Environ();
 
-		void refresh();
-		void refresh_window();
+    void refresh();
+    void refresh_window();
 
-		public slots:
-			void sort_change(int);
+  public slots:
+    void sort_change(int);
 
-	protected:
-		virtual QString text(int row, int col);
+  protected:
+    virtual QString text(int row, int col);
 
-		void sort();
-		static int compare(const NameValue *a, const NameValue *b);
+    void sort();
+    static int compare(const NameValue *a, const NameValue *b);
 
-	private:
-		enum {
-			ENVNAME, ENVVALUE,
-			ENVFIELDS
-		};
-		bool rev;			// sorting reversed
-		static Environ *static_env;	// for sorting, must have static pointer
-		static TableField fields[ENVFIELDS];
+  private:
+    enum
+    {
+        ENVNAME,
+        ENVVALUE,
+        ENVFIELDS
+    };
+    bool rev;                   // sorting reversed
+    static Environ *static_env; // for sorting, must have static pointer
+    static TableField fields[ENVFIELDS];
 };
 
 class AllFields : public SimpleTable
 {
-	public:
-		AllFields(QWidget *parent);
-		~AllFields();
+  public:
+    AllFields(QWidget *parent);
+    ~AllFields();
 
-		void refresh();
-		void refresh_window();
+    void refresh();
+    void refresh_window();
 
-	protected:
-		virtual QString text(int row, int col);
+  protected:
+    virtual QString text(int row, int col);
 
-	private:
-		enum {
-			FIELDNAME, FIELDDESC, FIELDVALUE,
-			FIELDSFIELDS
-		};
-		static TableField fields[FIELDSFIELDS];
+  private:
+    enum
+    {
+        FIELDNAME,
+        FIELDDESC,
+        FIELDVALUE,
+        FIELDSFIELDS
+    };
+    static TableField fields[FIELDSFIELDS];
 };
 
-#endif	// DETAILS_H
+#endif // DETAILS_H

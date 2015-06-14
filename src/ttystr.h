@@ -17,18 +17,19 @@
 #include <QHash>
 #endif
 
-class Ttystr {
-public:
+class Ttystr
+{
+  public:
     static QString name(dev_t devnr);
 
 #ifdef SOLARIS
-private:
+  private:
     static void read_devs();
     static void scandevdir(const char *prefix);
 
-    static QHash<int,char*> dict;
+    static QHash<int, char *> dict;
     static bool scanned;
 #endif
 };
 
-#endif	// TTYSTR_H
+#endif // TTYSTR_H

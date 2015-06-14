@@ -13,25 +13,25 @@
 #include <QtGui>
 #include "misc.h"
 
-class Preferences : public QDialog {
+class Preferences : public QDialog
+{
     Q_OBJECT
-public:
-    	Preferences();
-	QComboBox *psizecombo;
-//    QFontComboBox *font_cb;
-	QRadioButton *rb_totalcpu;
-	void init_font_size();
+  public:
+    Preferences();
+    QComboBox *psizecombo;
+    //    QFontComboBox *font_cb;
+    QRadioButton *rb_totalcpu;
+    void init_font_size();
 
-
-public slots:
+  public slots:
     void update_boxes();
     void update_reality();
-	void update_config();
+    void update_config();
     void closed();
-	void font_changed(int);
-	void fontset_changed(int);
+    void font_changed(int);
+    void fontset_changed(int);
 signals:
-    	void prefs_change();
+    void prefs_change();
 };
 
-#endif	// PREFS_H
+#endif // PREFS_H

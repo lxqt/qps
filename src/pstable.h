@@ -12,33 +12,32 @@
 class Pstable : public HeadedTable
 {
     Q_OBJECT
-public:
-    Pstable(QWidget *parent,Procview *pv);
+  public:
+    Pstable(QWidget *parent, Procview *pv);
 
     void set_sortcol();
     void setProcview(Procview *pv);
     virtual void moveCol(int col, int place);
     void refresh();
 
-	// called by super
-	bool hasSelection(){return  0;};
-	
-	virtual bool isSelected(int row); 
-	virtual void setSelected(int row, bool sel);
-	virtual int totalRow();
-	virtual void checkTableModel ();
+    // called by super
+    bool hasSelection() { return 0; };
 
-		
-public slots:
+    virtual bool isSelected(int row);
+    virtual void setSelected(int row, bool sel);
+    virtual int totalRow();
+    virtual void checkTableModel();
+
+  public slots:
     // void selection_update(const Svec<int> *row);
-	void setSortColumn(int col);
+    void setSortColumn(int col);
     void subtree_folded(int row);
-	void showTip(QPoint p,int index);
+    void showTip(QPoint p, int index);
     void setTreeMode(bool treemode);
-	void mouseOnCell(int row,int col);
-	void mouseOutOfCell();
+    void mouseOnCell(int row, int col);
+    void mouseOutOfCell();
 
-protected:
+  protected:
     // implementation of the interface to HeadedTable
     virtual QString title(int col);
     virtual QString text(int row, int col);
@@ -49,19 +48,17 @@ protected:
     virtual NodeState folded(int row);
     virtual int parentRow(int row);
     virtual bool lastChild(int row);
-	virtual char* total_selectedRow(int col);
-	virtual int sizeHintForColumn(int col) const;
-	virtual bool columnMovable(int col);
-	
-	virtual void overpaintCell(QPainter *p, int row, int col, int xpos);
-//	virtual bool hasChildren(int row);
+    virtual char *total_selectedRow(int col);
+    virtual int sizeHintForColumn(int col) const;
+    virtual bool columnMovable(int col);
 
-	virtual void leaveEvent ( QEvent * ) ;
+    virtual void overpaintCell(QPainter *p, int row, int col, int xpos);
+    //	virtual bool hasChildren(int row);
 
-private:
+    virtual void leaveEvent(QEvent *);
+
+  private:
     Procview *procview;
 };
 
- 
 #endif // PSTABLE_H
-
