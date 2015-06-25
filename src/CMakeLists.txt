@@ -41,7 +41,7 @@ SET(HEADERS
 	qttableview.h 
 )
 
-qt5_wrap_ui(UIS
+set(UIS
     watchdog.ui
     message.ui
 )
