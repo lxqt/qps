@@ -58,3 +58,4 @@ target_link_libraries(${PROJECT}
     Qt5::DBus
 )
 
+install(TARGETS ${PROJECT} RUNTIME DESTINATION ${CMAKE_INSTALL_FULL_BINDIR})

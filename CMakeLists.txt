@@ -34,6 +34,9 @@ set(CMAKE_AUTOMOC ON)
 
 add_subdirectory(src)
 
+# install the man page
+install(FILES qps.1 DESTINATION "${CMAKE_INSTALL_FULL_DATADIR}/man/man1")
+
 # building tarball with CPack
 include(InstallRequiredSystemLibraries)
 set(CPACK_PACKAGE_VERSION_MAJOR ${LXQT_MAJOR_VERSION})
