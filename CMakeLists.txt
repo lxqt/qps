@@ -33,6 +33,7 @@ find_package(Qt5 REQUIRED COMPONENTS Widgets X11Extras DBus LinguistTools)
 
 include(GNUInstallDirs)
 include(LXQtTranslateTs) # Altough the name it doesn't depend on LXQt in any way
+include(LXQtTranslateDesktop)
 include(Qt5TranslationLoader)
 
 # Must be defined after including GNUInstallDirs. Move with care.

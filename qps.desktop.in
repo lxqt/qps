@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=qps
+GenericName=Qt process manager
+Comment=Qt application to display and manage running processes
+Icon=qps
+Categories=System;
+TryExec=qps
+Exec=qps
+Terminal=false
+StartupNotify=false
+
+#TRANSLATIONS_DIR=src/translations
