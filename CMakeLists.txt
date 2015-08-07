@@ -52,6 +52,12 @@ add_subdirectory(src)
 # install the man page
 install(FILES qps.1 DESTINATION "${CMAKE_INSTALL_FULL_DATADIR}/man/man1")
 
+# install the app icon
+install(FILES
+    icon/qps.png
+    DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/icons/hicolor/48x48/apps"
+)
+
 # building tarball with CPack
 include(InstallRequiredSystemLibraries)
 set(CPACK_PACKAGE_VERSION_MAJOR ${LXQT_MAJOR_VERSION})
