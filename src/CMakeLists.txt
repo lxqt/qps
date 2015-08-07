@@ -46,10 +46,31 @@ set(UIS
     message.ui
 )
 
+#-----------------------------------------------------------------------------
+# Translations
+#-----------------------------------------------------------------------------
+lxqt_translate_ts(QM_FILES
+    UPDATE_TRANSLATIONS ${UPDATE_TRANSLATIONS}
+    SOURCES ${SOURCES} ${HEADERS} ${UIS}
+    INSTALL_DIR "${QPS_TRANSLATIONS_DIR}/${PROJECT_NAME}"
+)
+
+qt5_translation_loader(
+    QM_LOADER
+    "${QPS_TRANSLATIONS_DIR}"
+    ${PROJECT_NAME}
+)
+#-----------------------------------------------------------------------------
+# End of translations
+#-----------------------------------------------------------------------------
+
+
 add_executable(${PROJECT}
     ${SOURCES}
     ${HEADERS}
     ${UIS}
+    ${QM_FILES}
+    ${QM_LOADER}
 )
 
 target_link_libraries(${PROJECT}

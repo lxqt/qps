@@ -2,6 +2,11 @@ cmake_minimum_required(VERSION 3.0.2 FATAL_ERROR)
 set(PROJECT qps)
 project(${PROJECT})
 
+option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
+
+# additional cmake files
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
+
 if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Release)
 endif()
@@ -24,9 +29,16 @@ else()
     message(FATAL "The compiler ${CMAKE_CXX_COMPILER} has no C++11 support. C++11 support is required")
 endif()
 
-find_package(Qt5 REQUIRED COMPONENTS Widgets X11Extras DBus)
+find_package(Qt5 REQUIRED COMPONENTS Widgets X11Extras DBus LinguistTools)
 
 include(GNUInstallDirs)
+include(LXQtTranslateTs) # Altough the name it doesn't depend on LXQt in any way
+include(Qt5TranslationLoader)
+
+# Must be defined after including GNUInstallDirs. Move with care.
+set(QPS_TRANSLATIONS_DIR
+    "${CMAKE_INSTALL_FULL_DATAROOTDIR}/${PROJECT_NAME}/translations"
+)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
