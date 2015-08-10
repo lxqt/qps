@@ -46,10 +46,36 @@ set(UIS
     message.ui
 )
 
+#-----------------------------------------------------------------------------
+# Translations
+#-----------------------------------------------------------------------------
+lxqt_translate_ts(QM_FILES
+    UPDATE_TRANSLATIONS ${UPDATE_TRANSLATIONS}
+    SOURCES ${SOURCES} ${HEADERS} ${UIS}
+    INSTALL_DIR "${QPS_TRANSLATIONS_DIR}/${PROJECT_NAME}"
+)
+
+qt5_translation_loader(
+    QM_LOADER
+    "${QPS_TRANSLATIONS_DIR}"
+    ${PROJECT_NAME}
+)
+
+lxqt_translate_desktop(DESKTOP_FILES
+    SOURCES "${CMAKE_SOURCE_DIR}/qps.desktop.in"
+)
+#-----------------------------------------------------------------------------
+# End of translations
+#-----------------------------------------------------------------------------
+
+
 add_executable(${PROJECT}
     ${SOURCES}
     ${HEADERS}
     ${UIS}
+    ${QM_FILES}
+    ${QM_LOADER}
+    ${DESKTOP_FILES}
 )
 
 target_link_libraries(${PROJECT}
@@ -59,3 +85,7 @@ target_link_libraries(${PROJECT}
 )
 
 install(TARGETS ${PROJECT} RUNTIME DESTINATION ${CMAKE_INSTALL_FULL_BINDIR})
+install(FILES
+    ${DESKTOP_FILES}
+    DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/applications"
+)
