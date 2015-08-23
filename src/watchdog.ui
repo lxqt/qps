@@ -233,16 +233,16 @@ QFrame, QLabel, QToolTip {
         <item>
          <widget class="QSpinBox" name="spinBox">
           <property name="toolTip">
-           <string>acdcd</string>
+           <string/>
           </property>
           <property name="statusTip">
-           <string>ddddd</string>
+           <string/>
           </property>
           <property name="whatsThis">
-           <string>ccccc</string>
+           <string/>
           </property>
           <property name="accessibleName">
-           <string>aaaa</string>
+           <string/>
           </property>
           <property name="suffix">
            <string>%</string>
