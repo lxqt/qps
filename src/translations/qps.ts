@@ -12,137 +12,88 @@
 <context>
     <name>EventDialog</name>
     <message>
-        <location filename="../watchdog.ui" line="24"/>
+        <location filename="../watchdog.ui" line="23"/>
         <source>Watchdog 0.1 alpha</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../watchdog.ui" line="27"/>
-        <source>QPushButtonX {
-  /*   border: 2px solid #8f8f91;
-   min-width: 80px; */
-	/* image: url(:/icon/vista.png);*/
-	color: rgb(244, 244, 244);
-	border-image: url(:/icon/vista.png);
- }
-QWidget {
-	
-/*	color: rgb(255, 255, 244);*/
-  /*   border: 2px solid green;
-     border-radius: 4px;
-     padding: 2px;*/
-/*	background-color: rgb(66, 66, 66);*/
-   /*  background-image: url(images/welcome.png);
-	
-	border-image: url(:/icon/vista.png);*/
- } 
-QFrame, QLabel, QToolTip {
-   /*  border: 2px solid green;
-     border-radius: 4px;
-     padding: 2px;
-     background-image: url(images/welcome.png);*/
- } 
- </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="131"/>
+        <location filename="../watchdog.ui" line="117"/>
         <source>Eventcat</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../watchdog.ui" line="160"/>
+        <location filename="../watchdog.ui" line="162"/>
         <source>Select condition</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../watchdog.ui" line="168"/>
+        <location filename="../watchdog.ui" line="170"/>
         <source>labelDescrition</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../watchdog.ui" line="191"/>
+        <location filename="../watchdog.ui" line="193"/>
         <source>Enable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../watchdog.ui" line="208"/>
+        <location filename="../watchdog.ui" line="219"/>
         <source>process name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../watchdog.ui" line="218"/>
+        <location filename="../watchdog.ui" line="229"/>
         <source>cpu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../watchdog.ui" line="225"/>
-        <source>acdcd</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="228"/>
-        <source>ddddd</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="231"/>
-        <source>ccccc</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="234"/>
-        <source>aaaa</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="237"/>
+        <location filename="../watchdog.ui" line="248"/>
         <source>%</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../watchdog.ui" line="269"/>
+        <location filename="../watchdog.ui" line="280"/>
         <source>include already running process</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../watchdog.ui" line="289"/>
+        <location filename="../watchdog.ui" line="309"/>
         <source>run command</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../watchdog.ui" line="313"/>
+        <location filename="../watchdog.ui" line="342"/>
         <source>show Message</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../watchdog.ui" line="340"/>
+        <location filename="../watchdog.ui" line="367"/>
         <source>Help (Not yet. just concept)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../watchdog.ui" line="360"/>
+        <location filename="../watchdog.ui" line="394"/>
         <source>%p : pid
 %c : command</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../watchdog.ui" line="382"/>
+        <location filename="../watchdog.ui" line="425"/>
         <source>New</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../watchdog.ui" line="389"/>
+        <location filename="../watchdog.ui" line="432"/>
         <source>Add</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../watchdog.ui" line="396"/>
+        <location filename="../watchdog.ui" line="439"/>
         <source>Delete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../watchdog.ui" line="403"/>
+        <location filename="../watchdog.ui" line="446"/>
         <source>Close</source>
         <translation type="unfinished"></translation>
     </message>
