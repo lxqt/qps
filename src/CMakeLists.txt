@@ -14,6 +14,7 @@ set(SOURCES
 	lookup.cpp 
 	details.cpp 
 	command.cpp 
+    commandutils.cpp
 	misc.cpp 
 	trayicon.cpp 
 	htable.cpp
@@ -33,6 +34,7 @@ SET(HEADERS
 	lookup.h 
 	details.h 
 	command.h 
+    commandutils.h
 	misc.h  
 	trayicon.h 
 	htable.h 
