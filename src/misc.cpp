@@ -1211,5 +1211,3 @@ void QTabWidgetX::showTab(bool flag)
 //	setDocumentMode (true); // QT 4.5
 #endif
 }
-
-#include "qticonloader.cpp"

@@ -29,8 +29,6 @@
 #include <QTimeLine>
 #endif
 
-#include "qticonloader.h"
-
 char *userName(int uid, int euid);
 char *groupName(int gid, int egid);
 
