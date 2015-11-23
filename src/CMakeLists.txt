@@ -15,6 +15,13 @@ set(SOURCES
 	details.cpp 
 	command.cpp 
     commandutils.cpp
+    commandmodel.cpp
+    commanddialog.cpp
+    checkboxdelegate.cpp
+    execwindow.cpp
+    watchcond.cpp
+    listmodel.cpp
+    watchdogdialog.cpp
 	misc.cpp 
 	trayicon.cpp 
 	htable.cpp
@@ -35,6 +42,13 @@ SET(HEADERS
 	details.h 
 	command.h 
     commandutils.h
+    commandmodel.h
+    commanddialog.h
+    checkboxdelegate.h
+    execwindow.h
+    watchcond.h
+    listmodel.h
+    watchdogdialog.h
 	misc.h  
 	trayicon.h 
 	htable.h 

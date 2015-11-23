@@ -42,6 +42,9 @@
 
 #include "qps.h"
 #include "dialogs.h"
+#include "commanddialog.h"
+#include "watchcond.h"
+#include "watchdogdialog.h"
 #include "lookup.h"
 #include "misc.h"
 
