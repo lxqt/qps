@@ -17,6 +17,7 @@
 
 #include "proc.h"
 #include "lookup.h"
+#include "tablefield.h"
 
 class Details : public QWidget
 {
@@ -43,15 +44,6 @@ signals:
     QTabWidget *tbar;
     Procinfo *pi;
     Proc *pr;
-};
-
-struct TableField
-{
-    const char *name;
-    int width;
-    int gap;
-    int align;
-    const char *tooltip;
 };
 
 // SimpleTable: a HeadedTable with fixed number of columns
