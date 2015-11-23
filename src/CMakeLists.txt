@@ -65,6 +65,7 @@ set(UIS
     message.ui
 )
 
+set(RESOURCES "../qps.qrc")
 #-----------------------------------------------------------------------------
 # Translations
 #-----------------------------------------------------------------------------
@@ -95,6 +96,7 @@ add_executable(${PROJECT}
     ${QM_FILES}
     ${QM_LOADER}
     ${DESKTOP_FILES}
+    ${RESOURCES}
 )
 
 target_link_libraries(${PROJECT}
