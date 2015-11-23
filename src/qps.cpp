@@ -201,8 +201,6 @@ Qps::Qps()
 #endif
 
     m_field->addSeparator();
-    //	act=m_field->addAction(QtIconLoader::icon("edit-find-replace"),"Save
-    // Current as Custom Fields",this, SLOT(menu_custom()));
     act = m_field->addAction(QIcon::fromTheme(QStringLiteral("edit-find-replace")),
                              "Select Custom Fields...", this,
                              SLOT(menu_custom()));
@@ -234,9 +232,6 @@ Qps::Qps()
     act->setData(QVariant(MENU_CUMUL));
 
     m_options->addSeparator();
-    // m_options->addAction(QtIconLoader::icon("gtk-preferences" /*
-    // gnome-settings
-    // */),"Preferences...", this, SLOT(menu_prefs())); //MENU_PREFS
     m_options->addAction(QIcon::fromTheme(QStringLiteral("preferences-system")),
                          "Preferences...", this,
                          SLOT(menu_prefs())); // MENU_PREFS
@@ -245,7 +240,6 @@ Qps::Qps()
 
     QMenu *m_help = new QMenu("Help", this);
     // m_help->addAction("FAQ", this, SLOT(license()));
-    // m_help->addAction("About", this, SLOT(about())); //gtk-help,help
     m_help->addAction(QIcon::fromTheme("help-about"), "Feedback", this,
                       SLOT(about()));
 
@@ -1192,9 +1186,6 @@ void Qps::make_command_menu()
     //#ifdef SOLARIS
     /* Solaris CDE don't have a tray, so we need a method to terminate */
     m_command->addSeparator();
-    // m_command->addAction(QtIconLoader::icon("application-exit"), "&Quit",
-    // this,
-    // SLOT(save_quit()), Qt::ALT + Qt::Key_Q);
     m_command->addAction(QIcon::fromTheme(QStringLiteral("application-exit")), "&Quit", this,
                          SLOT(save_quit()), Qt::ALT + Qt::Key_Q);
     //#endif
