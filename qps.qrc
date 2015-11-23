@@ -6,6 +6,5 @@
     <file>icon/vcross.png</file>
     <file>icon/pause.png</file>
     <file>icon/superman.png</file>
-    <file>icon/preferences-system.png</file>
   </qresource>
 </RCC>
