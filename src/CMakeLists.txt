@@ -42,6 +42,7 @@ SET(HEADERS
 	infobar.h 
 	lookup.h 
 	details.h 
+    tablefield.h
 	command.h 
     commandutils.h
     commandmodel.h
