@@ -1,6 +1,7 @@
 
 set(SOURCES	
  	proc.cpp 
+    qpsapp.cpp
 	qps.cpp
     screenshot.cpp
 	pstable.cpp 
@@ -31,6 +32,7 @@ set(SOURCES
 )
 
 SET(HEADERS	
+    qpsapp.h
 	qps.h 
 	screenshot.h
 	pstable.h 

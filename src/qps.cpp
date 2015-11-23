@@ -41,8 +41,10 @@
 #include <unistd.h> //for sleep
 
 #include "qps.h"
+#include "qpsapp.h"
 #include "dialogs.h"
 #include "commanddialog.h"
+#include "commandutils.h"
 #include "watchcond.h"
 #include "watchdogdialog.h"
 #include "lookup.h"
@@ -2146,80 +2148,6 @@ void Qps::hideEvent(QHideEvent *event)
         //	event->accept();
     }
     //	geo=saveGeometry();
-}
-
-// MOD!!!: For systray update.
-// this trick very suck, but I can't find a better solution.
-class QpsApp : public QApplication
-{
-  public:
-    QpsApp(int &argc, char **argv) : QApplication(argc, argv){};
-    void commitData(QSessionManager &sm);
-    void saveState(QSessionManager &manager);
-
-    /*
-        virtual bool x11EventFilter ( XEvent *xev ){
-                // catch X11 event for systray_update !! which event?
-                ///if(trayicon!=NULL) return
-       trayicon->checkNewTrayEvent(xev);
-                return false; // events to qt.
-        }; */
-};
-
-#include <QSessionManager>
-void QpsApp::saveState(QSessionManager &manager)
-{
-    //	printf("saveState()\n");
-    // manager.setRestartHint(QSessionManager::RestartIfRunning);
-    // manager.release();
-}
-
-// this is called  when X Logout
-// closeEvent() never called !!!
-void QpsApp::commitData(QSessionManager &manager)
-{
-    /*
-    printf("commitData()\n");
-    manager.setRestartHint(QSessionManager::RestartIfRunning);
-    qps->flag_exit=true;  // ready to Logout
-    qps->save_settings() ;
-    manager.release();
-    sleep(2);
-    return;
-     if (manager.allowsInteraction()) {
-     int ret = QMessageBox::warning(
-                 qps,
-                 tr("My Application"),
-                 tr("Save changes to document?"),
-                 QMessageBox::Save | QMessageBox::Discard |
-  QMessageBox::Cancel);
-
-     switch (ret) {
-     case QMessageBox::Save:
-         manager.release();
-  //          if (!saveDocument())    manager.cancel();
-         break;
-     case QMessageBox::Discard:
-         break;
-     case QMessageBox::Cancel:
-     default:
-         manager.cancel();
-     }
-  } else {
-
-                    manager.release();
-
-     // we did not get permission to interact, then
-     // do something reasonable instead
-  }
-  */
-    /*
-  //DEL sm.release();
-    qDebug("Qps: Session saved\n");
-  //	sm.cancel();
-    //sm.setRestartHint (QSessionManager::RestartIfRunning);
-    QApplication::commitData(sm);
-  */
 }
 
 #include <signal.h>
