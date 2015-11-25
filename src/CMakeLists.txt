@@ -89,7 +89,7 @@ lxqt_translate_desktop(DESKTOP_FILES
 #-----------------------------------------------------------------------------
 
 
-add_executable(${PROJECT}
+add_executable(${PROJECT_NAME}
     ${SOURCES}
     ${HEADERS}
     ${UIS}
@@ -99,13 +99,13 @@ add_executable(${PROJECT}
     ${RESOURCES}
 )
 
-target_link_libraries(${PROJECT}
+target_link_libraries(${PROJECT_NAME}
     Qt5::Widgets
     Qt5::X11Extras
     Qt5::DBus
 )
 
-install(TARGETS ${PROJECT} RUNTIME DESTINATION ${CMAKE_INSTALL_FULL_BINDIR})
+install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ${CMAKE_INSTALL_FULL_BINDIR})
 install(FILES
     ${DESKTOP_FILES}
     DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/applications"
