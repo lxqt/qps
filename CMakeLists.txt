@@ -31,7 +31,7 @@ endif()
 find_package(Qt5 REQUIRED COMPONENTS Widgets X11Extras DBus LinguistTools)
 
 include(GNUInstallDirs)
-include(LXQtTranslateTs) # Altough the name it doesn't depend on LXQt in any way
+include(LXQtTranslateTs) # Although the name it doesn't depend on LXQt in any way
 include(LXQtTranslateDesktop)
 include(Qt5TranslationLoader)
 
@@ -57,7 +57,7 @@ install(FILES
     DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/icons/hicolor/48x48/apps"
 )
 
-# building tarball with CPack
+# building tar-ball with CPack
 include(InstallRequiredSystemLibraries)
 set(CPACK_PACKAGE_VERSION_MAJOR ${MAJOR_VERSION})
 set(CPACK_PACKAGE_VERSION_MINOR ${MINOR_VERSION})

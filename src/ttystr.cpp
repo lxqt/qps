@@ -1,7 +1,7 @@
-// ttystr.C
+// ttystr.cpp
 //
 // This program is free software. See the file COPYING for details.
-// Author: Mattias Engdegård, 1997-1999
+// Author: Mattias EngdegÃ¥rd, 1997-1999
 
 #include <stdio.h>
 #include <stdlib.h>
