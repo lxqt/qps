@@ -1,7 +1,7 @@
 // commandutils.h
 //
 // This program is free software. See the file COPYING for details.
-// Author: Mattias Engdeg?rd, 1997-1999
+// Author: Mattias Engdegård, 1997-1999
 
 #ifndef COMMANDUTILS_H
 #define COMMANDUTILS_H

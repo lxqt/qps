@@ -1,7 +1,7 @@
-// lookup.C
+// lookup.cpp
 //
 // This program is free software. See the file COPYING for details.
-// Author: Mattias Engdegård, 1997-1999
+// Author: Mattias EngdegÃ¥rd, 1997-1999
 
 // This module implements asynchronous address->hostname lookup.
 

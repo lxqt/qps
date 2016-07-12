@@ -1,7 +1,7 @@
 // pstable.cpp
 //
 // This program is free software. See the file COPYING for details.
-// Author: Mattias Engdeg?rd, 1997-1999
+// Author: Mattias Engdegård, 1997-1999
 
 // ** toooo complex,so need new Design ... should be more simple.. (by
 // fasthyun@magicn.com)

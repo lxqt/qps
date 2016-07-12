@@ -1,4 +1,4 @@
-// dialogs.h			emacs, this is a -*-c++-*- file
+// dialogs.h
 //
 // This program is free software. See the file COPYING for details.
 // Author: Mattias Engdegård, 1997-1999

@@ -1,7 +1,7 @@
-// pstable.h				emacs, this is written in -*-c++-*-
+// pstable.h
 //
 // This program is free software. See the file COPYING for details.
-// Author: Mattias Engdegård, 1997-1999
+// Author: Mattias EngdegÃ¥rd, 1997-1999
 
 #ifndef PSTABLE_H
 #define PSTABLE_H

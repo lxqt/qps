@@ -1,4 +1,4 @@
-// svec.C
+// svec.cpp
 //
 // This program is free software. See the file COPYING for details.
 // Author: Mattias Engdegård, 1997-1999

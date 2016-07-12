@@ -1,4 +1,4 @@
-// details.h				emacs, this is written in -*-c++-*-
+// details.h
 //
 // This program is free software. See the file COPYING for details.
 // Author: Mattias Engdegård, 1997-1999

@@ -1,7 +1,7 @@
-// qps.h				emacs, this is written in -*-c++-*-
+// qps.h
 //
 // This program is free software. See the file COPYING for details.
-// Author: Mattias Engdegrd, 1997-1999
+// Author: Mattias Engdegård, 1997-1999
 
 #ifndef QPS_H
 #define QPS_H

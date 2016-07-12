@@ -1,6 +1,6 @@
 // qps -- Qt-based visual process status monitor
 // This program is free software. See the file COPYING for details.
-// Author:  Mattias Engdeg?rd, 1997-1999
+// Author:  Mattias Engdegård, 1997-1999
 //          fasthyun@magicn.com 2005-2012
 //          daehyun.yang@gmail.com 2015-
 

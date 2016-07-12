@@ -1,7 +1,7 @@
-// htable.h				emacs, this is written in -*-c++-*-
+// htable.h
 //
 // This program is free software. See the file COPYING for details.
-// Author: Mattias Engdeg?rd, 1997-1999
+// Author: Mattias Engdegård, 1997-1999
 
 // This file defines the HeadedTable class.
 // A HeadedTable is a QTableView with one line of headers over each column.
