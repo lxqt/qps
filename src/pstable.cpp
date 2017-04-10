@@ -113,12 +113,12 @@ void Pstable::overpaintCell(QPainter *p, int row, int col, int xpos)
     Procinfo *pi = procview->linear_procs[row];
 
     int n = pi->nthreads;
+#ifdef LINUX
+    if (n == 1 && pi->pid == pi->tgid)
+        return; // LINUX
+#else
     if (n == 1)
         return;
-#ifdef LINUX
-    if (pi->pid != pi->tgid)
-        return; // LINUX
-
 #endif
     w = p->fontMetrics().width(text(row, col));
 
@@ -137,13 +137,23 @@ void Pstable::overpaintCell(QPainter *p, int row, int col, int xpos)
     if (h <= 11)
         return; // saver!
 
+#ifdef LINUX
+		QString msg;
+    if (pi->pid == pi->tgid)
+        msg = QString::number(n);
+		else
+				msg = "thread";
+#else
+		QString msg = QString::number(n);
+#endif
+		
     if (msize < 6)
         msize = 6;
 
     // font.setPointSize(msize); // not pixel!
     font.setPixelSize(msize); // not pixel!
     p->setFont(font);
-    p->drawText(xpos + w + 2, msize + msize / 3, QString::number(n));
+    p->drawText(xpos + w + 2, msize + msize / 3, msg);
     font.setPointSize(size);
     p->setFont(font);
 }
