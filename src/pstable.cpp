@@ -114,7 +114,7 @@ void Pstable::overpaintCell(QPainter *p, int row, int col, int xpos)
 
     int n = pi->nthreads;
 #ifdef LINUX
-    if (n == 1 && pi->pid == pi->tgid)
+    if (n == 1 && !pi->isThread())
         return; // LINUX
 #else
     if (n == 1)
@@ -128,18 +128,17 @@ void Pstable::overpaintCell(QPainter *p, int row, int col, int xpos)
     if (size <= 0)
         return; // saver!
 
-    int h = body->cellHeight();
-    h = p->fontMetrics().height(); // return pixel
+    int h = p->fontMetrics().height(); // return pixel
 
-    int msize = h * 3.0 / 8.0;
+    int msize = h * 0.5;
     // printf("DEBUG: height=%d, msize=%d\n",h,msize);
 
-    if (h <= 11)
+    if (h <= 9)
         return; // saver!
 
 #ifdef LINUX
 		QString msg;
-    if (pi->pid == pi->tgid)
+    if (!pi->isThread())
         msg = QString::number(n);
 		else
 				msg = "thread";
@@ -147,15 +146,17 @@ void Pstable::overpaintCell(QPainter *p, int row, int col, int xpos)
 		QString msg = QString::number(n);
 #endif
 		
-    if (msize < 6)
-        msize = 6;
+    if (msize < 9)
+        msize = 9;
 
-    // font.setPointSize(msize); // not pixel!
-    font.setPixelSize(msize); // not pixel!
+		font.setPointSize(msize); // not pixel!
+    p->save();
     p->setFont(font);
-    p->drawText(xpos + w + 2, msize + msize / 3, msg);
-    font.setPointSize(size);
-    p->setFont(font);
+		p->setPen(QColor(Qt::blue));
+    
+		p->drawText(xpos + w + 2, msize, msg);
+		
+		p->restore();
 }
 //
 QString Pstable::text(int row, int col)
