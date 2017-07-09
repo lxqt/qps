@@ -38,12 +38,12 @@
     </message>
     <message>
         <location filename="../watchdog.ui" line="219"/>
-        <source>process name</source>
+        <source>Process name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="229"/>
-        <source>cpu</source>
+        <source>CPU</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -53,22 +53,22 @@
     </message>
     <message>
         <location filename="../watchdog.ui" line="280"/>
-        <source>include already running process</source>
+        <source>Include already running process</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="309"/>
-        <source>run command</source>
+        <source>Run command</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="342"/>
-        <source>show Message</source>
+        <source>Show message</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="367"/>
-        <source>Help (Not yet. just concept)</source>
+        <source>Help (Not yet, just concept)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -107,7 +107,7 @@
     </message>
     <message>
         <location filename="../message.ui" line="27"/>
-        <source>Ok</source>
+        <source>OK</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -148,12 +148,12 @@
     </message>
     <message>
         <location filename="../screenshot.cpp" line="312"/>
-        <source>Screenshot Delay:</source>
+        <source>Screenshot delay:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="314"/>
-        <source>Hide This Window</source>
+        <source>Hide this window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
