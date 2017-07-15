@@ -1,8 +1,24 @@
-// proc.cpp for Solaris (SunOS)
-//
-// This program is free software. See the file COPYING for details.
-// Author: Mattias Engdegård, 1997-1999
-//		   José Luis Sánchez, 2005
+/*
+ * proc.cpp for Solaris (SunOS)
+ *
+ * Copyright 1997-1999 Mattias EngdegÃ¥rd
+ * Copyright 2005 JosÃ© Luis SÃ¡nchez
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+ * MA 02110-1301, USA.
+ */
 
 #include <stdio.h>
 #include <sys/types.h>
@@ -34,20 +50,20 @@
                         /*
                          *
                         If you want an "#ifdef solaris", the portable way is
-                        
+
                          #if defined (__SVR4) && defined (__sun)
-                        
+
                         This should work on gcc, sun cc, and lots o other compilers, on both sparc and
                         intel.
                         If for some reason, you want to know that Sun forte CC (c++) compiler is being
                         used, something that seems to work is
-                        
+
                         #if defined(__SUNPRO_CC)
-                        
+
                         Whereas for forte cc (regular C), you can use
-                        
+
                         #if defined(__SUNPRO_C)
-                        
+
                          */
 #include "proc_common.cpp"
 
@@ -345,7 +361,7 @@ int Procinfo::readproc()
 
     gettimeofday(&tv, 0); // current_time, sys/time , tv.tv_sec, tv.tv_usec
 
-    // god dam!!!! if that dont reel in¿ the ladies then nothing will!!!!
+    // god dam!!!! if that dont reel in the ladies then nothing will!!!!
 
     // No
     state = psi.pr_lwp.pr_sname; // no
