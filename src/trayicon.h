@@ -1,4 +1,4 @@
-/*  *FIXME* FSF-ADDRESS */ `
+/*  *FIXME* FSF-ADDRESS */
 
 /*
  * trayicon.h - system-independent trayicon class (adapted from Qt example)
