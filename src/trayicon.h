@@ -1,6 +1,10 @@
+/*  *FIXME* FSF-ADDRESS */ `
+
 /*
  * trayicon.h - system-independent trayicon class (adapted from Qt example)
- * Copyright (C) 2003  Justin Karneges
+ * This file is part of qps -- Qt-based visual process status monitor
+ *
+ * Copyright 2003  Justin Karneges
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
