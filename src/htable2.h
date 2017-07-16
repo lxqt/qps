@@ -3,7 +3,6 @@
 #include <QMouseEvent>
 #include <QStandardItemModel>
 #include <QHeaderView>
-
 #include <QTreeWidget>
 
 class HeadedTable2;

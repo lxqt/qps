@@ -1,11 +1,36 @@
-/*
-        really sucking codes.. sorry..
-        from psi ,  modified and cleand by fasthyun@magicn.com
-        trayicon_x11.cpp - X11 trayicon (for use with KDE and GNOME)
-        Copyright (C) 2003  Justin Karneges
-        GNOME2 Notification Area support: Tomasz Sterna
+/* FIXME FSF-ADDRESS */
 
+
+/*
+ * trayicon.h - system-independent trayicon class (adapted from Qt example)
+ * This file is part of qps -- Qt-based visual process status monitor
+ *
+ * Copyright 2003  Justin Karneges
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ *
  */
+
+ /*
+         really sucking codes.. sorry..
+         from psi ,  modified and cleand by fasthyun@magicn.com
+         trayicon_x11.cpp - X11 trayicon (for use with KDE and GNOME)
+         Copyright (C) 2003  Justin Karneges
+         GNOME2 Notification Area support: Tomasz Sterna
+
+  */
 
 #include <QApplication> // *****should be First!!!
 #include "global.h"     // Qps *qps;
