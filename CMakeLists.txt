@@ -56,13 +56,3 @@ install(FILES
     icon/qps.png
     DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/icons/hicolor/48x48/apps"
 )
-
-# building tar-ball with CPack
-include(InstallRequiredSystemLibraries)
-set(CPACK_PACKAGE_VERSION_MAJOR ${MAJOR_VERSION})
-set(CPACK_PACKAGE_VERSION_MINOR ${MINOR_VERSION})
-set(CPACK_PACKAGE_VERSION_PATCH ${PATCH_VERSION})
-set(CPACK_GENERATOR TBZ2)
-set(CPACK_SOURCE_GENERATOR TBZ2)
-set(CPACK_SOURCE_IGNORE_FILES /build/;.gitignore;.*~;.git;.kdev4;temp)
-include(CPack)
