@@ -2,7 +2,7 @@
  * proc.cpp for Linux
  *
  * Copyright 1997-1999 Mattias Engdegård
- * Copyright           Oliver
+ * Copyright           Olivier Daudel
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

@@ -1,6 +1,3 @@
-/* FIXME FSF-ADDRESS */
-
-
 /*
  * trayicon.h - system-independent trayicon class (adapted from Qt example)
  * This file is part of qps -- Qt-based visual process status monitor

@@ -1,9 +1,9 @@
 /*
- * proc.cpp for Linux *FIXME*
+ * proc.cpp for Linux
  * This file is part of qps -- Qt-based visual process status monitor
  *
  * Copyright 1997-1999 Mattias Engdegård
- * Copyright           Oliver
+ * Copyright           Olivier Daudel
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
