@@ -1,20 +1,19 @@
-
-set(SOURCES	
- 	proc.cpp 
+set(SOURCES
+    proc.cpp
     qpsapp.cpp
-	qps.cpp
+    qps.cpp
     screenshot.cpp
-	pstable.cpp 
-	uidstr.cpp 
-	ttystr.cpp 
-	dialogs.cpp 
-	infobar.cpp 
-	fieldsel.cpp 
-	wchan.cpp 
-	prefs.cpp 
-	lookup.cpp 
-	details.cpp 
-	command.cpp 
+    pstable.cpp
+    uidstr.cpp
+    ttystr.cpp
+    dialogs.cpp
+    infobar.cpp
+    fieldsel.cpp
+    wchan.cpp
+    prefs.cpp
+    lookup.cpp
+    details.cpp
+    command.cpp
     commandutils.cpp
     commandmodel.cpp
     commanddialog.cpp
@@ -23,27 +22,27 @@ set(SOURCES
     watchcond.cpp
     listmodel.cpp
     watchdogdialog.cpp
-	misc.cpp 
-	trayicon.cpp 
-	htable.cpp
-#	htable2.cpp
-#	pstable2.cpp
-	qttableview.cpp 
+    misc.cpp
+    trayicon.cpp
+    htable.cpp
+  # htable2.cpp
+  # pstable2.cpp
+    qttableview.cpp
 )
 
-SET(HEADERS	
+SET(HEADERS
     qpsapp.h
-	qps.h 
-	screenshot.h
-	pstable.h 
-	dialogs.h 
-	fieldsel.h 
-	prefs.h 
-	infobar.h 
-	lookup.h 
-	details.h 
+    qps.h
+    screenshot.h
+    pstable.h
+    dialogs.h
+    fieldsel.h
+    prefs.h
+    infobar.h
+    lookup.h
+    details.h
     tablefield.h
-	command.h 
+    command.h
     commandutils.h
     commandmodel.h
     commanddialog.h
@@ -52,12 +51,12 @@ SET(HEADERS
     watchcond.h
     listmodel.h
     watchdogdialog.h
-	misc.h  
-	trayicon.h 
-	htable.h 
-#	htable2.h
-#	pstable2.h
-	qttableview.h 
+    misc.h
+    trayicon.h
+    htable.h
+  # htable2.h
+  # pstable2.h
+    qttableview.h
 )
 
 set(UIS

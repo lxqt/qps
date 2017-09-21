@@ -132,7 +132,7 @@ CommandDialog::CommandDialog()
     TBloon *bloon = new TBloon(this);
     /// for(int i = 0; i < commands.size(); i++)
     /// listview->insertItem(commands[i]->name);
-    //	listview->addItem(commands[i]->name);
+    /// listview->addItem(commands[i]->name);
     /// vbox->freeze();
 }
 
