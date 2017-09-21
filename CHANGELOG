@@ -1,0 +1,59 @@
+
+qps-1.10.17 / 2017-09-22
+========================
+
+  * some whitespaces fixed
+  * l10n: Polish translation
+  * Remove obsolete cpack
+  * Removed not needed ressource file
+  * some small fixes
+  * Fixed About page
+  * Fixed outdated FSF address in license headers
+  * Removed: It may be used, distributed and modified without limitation. - not exactly true.
+  * Added license headers
+  * Fix typo
+  * Fix license headers for files with clearly known authorship
+  * remove some empty files
+  * fixed encoding and added a proper GPL2 file header
+  * Renamed LICENSE -> COPYING
+  * Another set of licenseheader fixes
+  * Fixed some typos in comments (CMakeLists.txt) Fixed licenseheader: src/wchan.cpp UTF-8 and filename Fixed licenseheader: src/watchdogdialog.*  filetype and UTF-8 Fixed licenseheader: src/watchcond.*  UTF-8 Fixed licenseheader: src/ttystr.cpp filentype and UTF-8
+  * Work around grep 2.23 new behaviour
+  * Removes not needed file
+  * Fixes CPack package version
+  * Fixes misnaming of binary qps
+  * Use CMAKE PROJECT_NAME instead of PROJECT
+  * Removes Icon related commented code
+  * Removes the custom QtIconLoader
+  * Use QIcon::fromTheme() instead of the internal QtIconLoader
+  * Adds the resources as an target dependency
+  * Puts TableField sctruct on it's own file
+  * Puts the QpsApp in it's own file
+  * Splits the command file into several files
+  * Puts Command utilities into it's own file
+  * Updates translations sources
+  * Removes toolTip, statusTip, whatsThis and accesibleName from watchdog.ui
+  * Removes stylesheets commented stuff
+  * Include a copy of the license
+  * Install application icon
+  * Updates translation sources
+  * Adds desktop entry file
+  * Adds application internationalization / localization
+  * Set the minimum required CMake version to 3.0.2
+  * Add install instruction in CMakeLists.txt
+  * Add clang-format file and format all files
+
+v1.10.16 / 2015-06-14
+=====================
+
+  * Ported to Qt5 and fixed all warnings
+  * Added .gitignore
+  * remove
+  * fix
+  * fix
+  * fix
+  * hashstr length  up to 128*8
+  * added
+  * fixed
+  * added source files
+  * commit
