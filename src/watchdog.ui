@@ -28,9 +28,9 @@
 	border-image: url(:/icon/vista.png);
 }
 QWidget {
-} 
+}
 QFrame, QLabel, QToolTip {
- } 
+ }
  </string>
   </property>
   <layout class="QVBoxLayout">
