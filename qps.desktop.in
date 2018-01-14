@@ -2,7 +2,9 @@
 Type=Application
 Name=qps
 GenericName=Qt process manager
+GenericName[pl]=Menedżer procesów Qt
 Comment=Qt application to display and manage running processes
+Comment[pl]=Aplikacja Qt do wyświetlania i zarządzania uruchomionymi procesami
 Icon=qps
 Categories=System;
 TryExec=qps
