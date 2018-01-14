@@ -4,7 +4,7 @@
 <context>
     <name>ControlBar</name>
     <message>
-        <location filename="../misc.cpp" line="964"/>
+        <location filename="../misc.cpp" line="986"/>
         <source>Pause (Ctrl+Space)</source>
         <translation>Pauzuj (Ctrl+Spacja)</translation>
     </message>
@@ -14,7 +14,7 @@
     <message>
         <location filename="../watchdog.ui" line="23"/>
         <source>Watchdog 0.1 alpha</source>
-        <translation type="unfinished">Watchdog 0.1 alpha</translation>
+        <translation>Watchdog 0.1 alpha</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="117"/>
@@ -115,7 +115,7 @@
 <context>
     <name>Qps</name>
     <message>
-        <location filename="../qps.cpp" line="335"/>
+        <location filename="../qps.cpp" line="351"/>
         <source>Detail</source>
         <translation>Szczegół</translation>
     </message>
@@ -123,47 +123,47 @@
 <context>
     <name>Screenshot</name>
     <message>
-        <location filename="../screenshot.cpp" line="271"/>
+        <location filename="../screenshot.cpp" line="294"/>
         <source>/untitled.</source>
         <translation>/bez tytułu.</translation>
     </message>
     <message>
-        <location filename="../screenshot.cpp" line="276"/>
+        <location filename="../screenshot.cpp" line="299"/>
         <source>Save As</source>
         <translation>Zapisz jako</translation>
     </message>
     <message>
-        <location filename="../screenshot.cpp" line="277"/>
+        <location filename="../screenshot.cpp" line="300"/>
         <source>%1 Files (*.%2);;All Files (*)</source>
         <translation>%1 plików (*.%2);;Wszystkie pliki (*)</translation>
     </message>
     <message>
-        <location filename="../screenshot.cpp" line="304"/>
+        <location filename="../screenshot.cpp" line="327"/>
         <source>Options</source>
         <translation>Opcje</translation>
     </message>
     <message>
-        <location filename="../screenshot.cpp" line="307"/>
+        <location filename="../screenshot.cpp" line="330"/>
         <source> s</source>
         <translation> sek</translation>
     </message>
     <message>
-        <location filename="../screenshot.cpp" line="312"/>
+        <location filename="../screenshot.cpp" line="335"/>
         <source>Screenshot Delay:</source>
-        <translation>Opóźnienie zrzutu ekranu</translation>
+        <translation>Opóźnienie wykonania zrzutu ekranu:</translation>
     </message>
     <message>
-        <location filename="../screenshot.cpp" line="314"/>
+        <location filename="../screenshot.cpp" line="337"/>
         <source>Hide This Window</source>
         <translation>Ukryj to okno</translation>
     </message>
     <message>
-        <location filename="../screenshot.cpp" line="326"/>
+        <location filename="../screenshot.cpp" line="349"/>
         <source>New Screenshot</source>
         <translation>Nowy zrzut ekranu</translation>
     </message>
     <message>
-        <location filename="../screenshot.cpp" line="327"/>
+        <location filename="../screenshot.cpp" line="350"/>
         <source>Quit</source>
         <translation>Wyjdź</translation>
     </message>

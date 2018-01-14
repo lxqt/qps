@@ -4,7 +4,7 @@
 <context>
     <name>ControlBar</name>
     <message>
-        <location filename="../misc.cpp" line="964"/>
+        <location filename="../misc.cpp" line="986"/>
         <source>Pause (Ctrl+Space)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -114,7 +114,7 @@
 <context>
     <name>Qps</name>
     <message>
-        <location filename="../qps.cpp" line="335"/>
+        <location filename="../qps.cpp" line="351"/>
         <source>Detail</source>
         <translation type="unfinished"></translation>
     </message>
@@ -122,47 +122,47 @@
 <context>
     <name>Screenshot</name>
     <message>
-        <location filename="../screenshot.cpp" line="271"/>
+        <location filename="../screenshot.cpp" line="294"/>
         <source>/untitled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../screenshot.cpp" line="276"/>
+        <location filename="../screenshot.cpp" line="299"/>
         <source>Save As</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../screenshot.cpp" line="277"/>
+        <location filename="../screenshot.cpp" line="300"/>
         <source>%1 Files (*.%2);;All Files (*)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../screenshot.cpp" line="304"/>
+        <location filename="../screenshot.cpp" line="327"/>
         <source>Options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../screenshot.cpp" line="307"/>
+        <location filename="../screenshot.cpp" line="330"/>
         <source> s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../screenshot.cpp" line="312"/>
+        <location filename="../screenshot.cpp" line="335"/>
         <source>Screenshot Delay:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../screenshot.cpp" line="314"/>
+        <location filename="../screenshot.cpp" line="337"/>
         <source>Hide This Window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../screenshot.cpp" line="326"/>
+        <location filename="../screenshot.cpp" line="349"/>
         <source>New Screenshot</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../screenshot.cpp" line="327"/>
+        <location filename="../screenshot.cpp" line="350"/>
         <source>Quit</source>
         <translation type="unfinished"></translation>
     </message>
