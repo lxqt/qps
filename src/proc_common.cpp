@@ -1089,8 +1089,7 @@ void Procview::refresh()
 
 SysHistory::~SysHistory()
 {
-    Procinfo *p;
-    foreach (p, procs)
+    for (const auto *p : qAsConst(procs))
     {
         delete p;
     }

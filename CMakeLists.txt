@@ -14,7 +14,10 @@ set(MAJOR_VERSION 1)
 set(MINOR_VERSION 10)
 set(PATCH_VERSION 17)
 set(QPS_VERSION_STRING ${MAJOR_VERSION}.${MINOR_VERSION}.${PATCH_VERSION})
-add_definitions(-DQPS_VERSION="${MAJOR_VERSION}.${MINOR_VERSION}.${PATCH_VERSION}")
+add_definitions(
+    -DQPS_VERSION="${MAJOR_VERSION}.${MINOR_VERSION}.${PATCH_VERSION}"
+    -DQT_NO_FOREACH
+)
 
 # C++11 support
 include(CheckCXXCompilerFlag)
@@ -28,7 +31,7 @@ else()
     message(FATAL "The compiler ${CMAKE_CXX_COMPILER} has no C++11 support. C++11 support is required")
 endif()
 
-find_package(Qt5 REQUIRED COMPONENTS Widgets X11Extras DBus LinguistTools)
+find_package(Qt5 5.7.1 REQUIRED COMPONENTS Widgets X11Extras DBus LinguistTools)
 
 include(GNUInstallDirs)
 include(LXQtTranslateTs) # Although the name it doesn't depend on LXQt in any way
