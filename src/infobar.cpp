@@ -806,7 +806,6 @@ void IO_Graph::paintEvent ( QPaintEvent *e )
 QString doHistory(SysHistory *sysh)
 {
     QString str;
-    Procinfo *p;
     int max = 0;
 
     char buf[128];
@@ -820,7 +819,7 @@ QString doHistory(SysHistory *sysh)
     // qsort(ps->data(), ps->size(), sizeof(Procinfo *),(compare_func)
     // compare_backwards);
 
-    foreach (p, sysh->procs)
+    for (const auto *p : qAsConst(sysh->procs))
     {
         if (p->pcpu == 0)
             continue;
@@ -835,14 +834,13 @@ QString doHistory(SysHistory *sysh)
 QString GraphBase::doHistoryTXT(SysHistory *sysh)
 {
     QString str;
-    Procinfo *p;
     int max = 0;
 
     char buf[128];
     // sprintf(buf,"miniHistory /* %.02f%%",sysh->load_cpu*100);
     sprintf(buf, "%%CPU miniHistory test");
     str += QString::fromLatin1(buf);
-    foreach (p, sysh->procs)
+    for (const auto *p : qAsConst(sysh->procs))
     {
         if (p->pcpu == 0)
             continue;
@@ -906,7 +904,6 @@ void GraphBase::mouseMoveEvent(QMouseEvent *e)
 QString IO_Graph::doHistoryTXT(SysHistory *sysh)
 {
     QString str;
-    Procinfo *p;
     int max = 0;
 
     char buf[64], mem_str[64];
@@ -914,7 +911,7 @@ QString IO_Graph::doHistoryTXT(SysHistory *sysh)
     sprintf(buf, "miniHistory IO");
     str += QString::fromLatin1(buf);
 
-    foreach (p, sysh->procs)
+    for (const auto *p : qAsConst(sysh->procs))
     {
         if (p->io_read_KBps == 0 and p->io_write_KBps == 0)
             continue;
