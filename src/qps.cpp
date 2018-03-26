@@ -2328,9 +2328,9 @@ void Qps::about()
 
     str.append(qVersion());
     str.append("<br><br>"
-               "<b>Source: </b><a href=\"https://github.com/QtDesktop/qps\">http://github.com/QtDesktop/qps/</a>"
+               "<b>Source: </b><a href=\"https://github.com/lxqt/qps\">https://github.com/lxqt/qps/</a>"
                "<br>"
-               "<b>Bugtracker: </b><a href=\"https://github.com/QtDesktop/qps/issues\">https://github.com/QtDesktop/qps/issues</a>"
+               "<b>Bugtracker: </b><a href=\"https://github.com/lxqt/qps/issues\">https://github.com/lxqt/qps/issues</a>"
                );
 
     label->setText(str);
