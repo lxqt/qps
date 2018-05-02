@@ -6,7 +6,7 @@
     <message>
         <location filename="../misc.cpp" line="986"/>
         <source>Pause (Ctrl+Space)</source>
-        <translation></translation>
+        <translation>Pause (Strg+Space)</translation>
     </message>
 </context>
 <context>
