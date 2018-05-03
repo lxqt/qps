@@ -59,7 +59,7 @@
     <message>
         <location filename="../watchdog.ui" line="309"/>
         <source>run command</source>
-        <translation></translation>
+        <translation>starte Befehl</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="342"/>
