@@ -34,7 +34,7 @@
     <message>
         <location filename="../watchdog.ui" line="193"/>
         <source>Enable</source>
-        <translation></translation>
+        <translation>Aktivieren</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="219"/>
