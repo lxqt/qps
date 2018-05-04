@@ -44,7 +44,7 @@
     <message>
         <location filename="../watchdog.ui" line="229"/>
         <source>cpu</source>
-        <translation type="unfinished">Cpu</translation>
+        <translation>CPU</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="248"/>
@@ -64,7 +64,7 @@
     <message>
         <location filename="../watchdog.ui" line="342"/>
         <source>show Message</source>
-        <translation type="unfinished">zeige Nachricht</translation>
+        <translation>zeige Nachricht</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="367"/>
@@ -129,7 +129,7 @@
     <message>
         <location filename="../screenshot.cpp" line="299"/>
         <source>Save As</source>
-        <translation type="unfinished">Sichere als</translation>
+        <translation>Speichern unter</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="300"/>
@@ -149,12 +149,12 @@
     <message>
         <location filename="../screenshot.cpp" line="335"/>
         <source>Screenshot Delay:</source>
-        <translation type="unfinished">Bildschirmfoto Verzögerung:</translation>
+        <translation>Bildschirmfoto Verzögerung:</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="337"/>
         <source>Hide This Window</source>
-        <translation type="unfinished">Verstecke Dieses Fenster</translation>
+        <translation>Verstecke Dieses Fenster</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="349"/>
