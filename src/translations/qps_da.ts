@@ -4,7 +4,7 @@
 <context>
     <name>ControlBar</name>
     <message>
-        <location filename="../misc.cpp" line="964"/>
+        <location filename="../misc.cpp" line="986"/>
         <source>Pause (Ctrl+Space)</source>
         <translation>Pause (Ctrl+Mellemrum)</translation>
     </message>
@@ -115,7 +115,7 @@
 <context>
     <name>Qps</name>
     <message>
-        <location filename="../qps.cpp" line="335"/>
+        <location filename="../qps.cpp" line="351"/>
         <source>Detail</source>
         <translation>Detalje</translation>
     </message>
@@ -123,47 +123,47 @@
 <context>
     <name>Screenshot</name>
     <message>
-        <location filename="../screenshot.cpp" line="271"/>
+        <location filename="../screenshot.cpp" line="294"/>
         <source>/untitled.</source>
         <translation>/unavngivet.</translation>
     </message>
     <message>
-        <location filename="../screenshot.cpp" line="276"/>
+        <location filename="../screenshot.cpp" line="299"/>
         <source>Save As</source>
         <translation>Gem som</translation>
     </message>
     <message>
-        <location filename="../screenshot.cpp" line="277"/>
+        <location filename="../screenshot.cpp" line="300"/>
         <source>%1 Files (*.%2);;All Files (*)</source>
         <translation>%1 filer (*.%2);;Alle filer (*)</translation>
     </message>
     <message>
-        <location filename="../screenshot.cpp" line="304"/>
+        <location filename="../screenshot.cpp" line="327"/>
         <source>Options</source>
         <translation>Valgmuligheder</translation>
     </message>
     <message>
-        <location filename="../screenshot.cpp" line="307"/>
+        <location filename="../screenshot.cpp" line="330"/>
         <source> s</source>
         <translation> s</translation>
     </message>
     <message>
-        <location filename="../screenshot.cpp" line="312"/>
+        <location filename="../screenshot.cpp" line="335"/>
         <source>Screenshot Delay:</source>
         <translation>Forsinkelse for skærmbillede:</translation>
     </message>
     <message>
-        <location filename="../screenshot.cpp" line="314"/>
+        <location filename="../screenshot.cpp" line="337"/>
         <source>Hide This Window</source>
         <translation>Skjul vinduet</translation>
     </message>
     <message>
-        <location filename="../screenshot.cpp" line="326"/>
+        <location filename="../screenshot.cpp" line="349"/>
         <source>New Screenshot</source>
         <translation>Nyt skærmbillede</translation>
     </message>
     <message>
-        <location filename="../screenshot.cpp" line="327"/>
+        <location filename="../screenshot.cpp" line="350"/>
         <source>Quit</source>
         <translation>Afslut</translation>
     </message>
