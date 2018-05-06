@@ -6,7 +6,7 @@
     <message>
         <location filename="../misc.cpp" line="986"/>
         <source>Pause (Ctrl+Space)</source>
-        <translation></translation>
+        <translation>Pause (Strg+Leertaste)</translation>
     </message>
 </context>
 <context>
@@ -24,7 +24,7 @@
     <message>
         <location filename="../watchdog.ui" line="162"/>
         <source>Select condition</source>
-        <translation></translation>
+        <translation>Bedingung auswählen</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="170"/>
@@ -34,17 +34,17 @@
     <message>
         <location filename="../watchdog.ui" line="193"/>
         <source>Enable</source>
-        <translation></translation>
+        <translation>Aktivieren</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="219"/>
         <source>process name</source>
-        <translation></translation>
+        <translation>Prozessname</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="229"/>
         <source>cpu</source>
-        <translation></translation>
+        <translation>CPU</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="248"/>
@@ -54,22 +54,22 @@
     <message>
         <location filename="../watchdog.ui" line="280"/>
         <source>include already running process</source>
-        <translation></translation>
+        <translation>bereits laufenden Prozess einbeziehen</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="309"/>
         <source>run command</source>
-        <translation></translation>
+        <translation>starte Befehl</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="342"/>
         <source>show Message</source>
-        <translation></translation>
+        <translation>zeige Nachricht</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="367"/>
         <source>Help (Not yet. just concept)</source>
-        <translation></translation>
+        <translation>Hilfe (Noch nicht. Nur Konzept)</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="394"/>
@@ -80,22 +80,22 @@
     <message>
         <location filename="../watchdog.ui" line="425"/>
         <source>New</source>
-        <translation></translation>
+        <translation>Neu</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="432"/>
         <source>Add</source>
-        <translation></translation>
+        <translation>Hinzufügen</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="439"/>
         <source>Delete</source>
-        <translation></translation>
+        <translation>Löschen</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="446"/>
         <source>Close</source>
-        <translation></translation>
+        <translation>Schließen</translation>
     </message>
 </context>
 <context>
@@ -129,17 +129,17 @@
     <message>
         <location filename="../screenshot.cpp" line="299"/>
         <source>Save As</source>
-        <translation></translation>
+        <translation>Speichern unter</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="300"/>
         <source>%1 Files (*.%2);;All Files (*)</source>
-        <translation></translation>
+        <translation>%1 Dateien (*.%2);;Alle Dateien (*)</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="327"/>
         <source>Options</source>
-        <translation></translation>
+        <translation>Optionen</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="330"/>
@@ -149,22 +149,22 @@
     <message>
         <location filename="../screenshot.cpp" line="335"/>
         <source>Screenshot Delay:</source>
-        <translation></translation>
+        <translation>Bildschirmfoto Verzögerung:</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="337"/>
         <source>Hide This Window</source>
-        <translation></translation>
+        <translation>Verstecke Dieses Fenster</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="349"/>
         <source>New Screenshot</source>
-        <translation></translation>
+        <translation>Neues Bildschirmfoto</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="350"/>
         <source>Quit</source>
-        <translation></translation>
+        <translation>Beenden</translation>
     </message>
 </context>
 </TS>
