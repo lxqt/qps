@@ -1,7 +1,23 @@
 
-qps-1.10.17 / 2017-09-22
+qps-1.10.18 / 2018-05-21
 ========================
 
+  * Bumped patch version to 18 (#45)
+  * Update from Weblate. (#41)
+  * Added transltion state to README.md
+  * Add da translation
+  * translation update
+  * Added translation using Weblate (German)
+  * Create qps_da.ts
+  * Update qps.desktop.in
+  * i18n: Update Polish translation
+  * Drop Qt foreach
+  * Fix links QtDesktop --> lxqt
+
+1.10.17 / 2017-09-22
+====================
+
+  * Release 1.10.17: Update changelog
   * some whitespaces fixed
   * l10n: Polish translation
   * Remove obsolete cpack
