@@ -6,7 +6,7 @@
     <message>
         <location filename="../misc.cpp" line="986"/>
         <source>Pause (Ctrl+Space)</source>
-        <translation></translation>
+        <translation>Pristabdyti (Ctrl(Vald)+Tarpas)</translation>
     </message>
 </context>
 <context>
@@ -24,27 +24,27 @@
     <message>
         <location filename="../watchdog.ui" line="162"/>
         <source>Select condition</source>
-        <translation></translation>
+        <translation>Pasirinkti sąlygą</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="170"/>
         <source>labelDescrition</source>
-        <translation></translation>
+        <translation>Aprašas</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="193"/>
         <source>Enable</source>
-        <translation></translation>
+        <translation>Įjungti</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="219"/>
         <source>process name</source>
-        <translation></translation>
+        <translation>proceso pavadinimas</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="229"/>
         <source>cpu</source>
-        <translation></translation>
+        <translation>procesorius</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="248"/>
@@ -54,48 +54,49 @@
     <message>
         <location filename="../watchdog.ui" line="280"/>
         <source>include already running process</source>
-        <translation></translation>
+        <translation>įtraukti jau vykdomą procesą</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="309"/>
         <source>run command</source>
-        <translation></translation>
+        <translation>vykdyti komandą</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="342"/>
         <source>show Message</source>
-        <translation></translation>
+        <translation>rodyti pranešimą</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="367"/>
         <source>Help (Not yet. just concept)</source>
-        <translation></translation>
+        <translation>Žinynas (Kol kas nėra. Tik koncepcija)</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="394"/>
         <source>%p : pid
 %c : command</source>
-        <translation></translation>
+        <translation>%p : pid
+%c : komanda</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="425"/>
         <source>New</source>
-        <translation></translation>
+        <translation>Naujas</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="432"/>
         <source>Add</source>
-        <translation></translation>
+        <translation>Pridėti</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="439"/>
         <source>Delete</source>
-        <translation></translation>
+        <translation>Ištrinti</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="446"/>
         <source>Close</source>
-        <translation></translation>
+        <translation>Užverti</translation>
     </message>
 </context>
 <context>
@@ -108,7 +109,7 @@
     <message>
         <location filename="../message.ui" line="27"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>Gerai</translation>
     </message>
 </context>
 <context>
@@ -116,7 +117,7 @@
     <message>
         <location filename="../qps.cpp" line="351"/>
         <source>Detail</source>
-        <translation></translation>
+        <translation>Išsamiau</translation>
     </message>
 </context>
 <context>
@@ -124,47 +125,47 @@
     <message>
         <location filename="../screenshot.cpp" line="294"/>
         <source>/untitled.</source>
-        <translation></translation>
+        <translation>/be_pavadinimo.</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="299"/>
         <source>Save As</source>
-        <translation></translation>
+        <translation>Įrašyti kaip</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="300"/>
         <source>%1 Files (*.%2);;All Files (*)</source>
-        <translation></translation>
+        <translation>%1 failai (*.%2);;Visi failai (*)</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="327"/>
         <source>Options</source>
-        <translation></translation>
+        <translation>Parinktys</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="330"/>
         <source> s</source>
-        <translation></translation>
+        <translation> sek.</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="335"/>
         <source>Screenshot Delay:</source>
-        <translation></translation>
+        <translation>Ekrano kopijos delsa:</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="337"/>
         <source>Hide This Window</source>
-        <translation></translation>
+        <translation>Slėpti šį langą</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="349"/>
         <source>New Screenshot</source>
-        <translation></translation>
+        <translation>Nauja ekrano kopija</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="350"/>
         <source>Quit</source>
-        <translation></translation>
+        <translation>Išeiti</translation>
     </message>
 </context>
 </TS>
