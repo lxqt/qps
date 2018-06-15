@@ -19,7 +19,7 @@
     <message>
         <location filename="../watchdog.ui" line="117"/>
         <source>Eventcat</source>
-        <translation></translation>
+        <translation>יומן אירועים</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="162"/>
@@ -29,7 +29,7 @@
     <message>
         <location filename="../watchdog.ui" line="170"/>
         <source>labelDescrition</source>
-        <translation></translation>
+        <translation>תווית תיאור</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="193"/>
@@ -75,7 +75,8 @@
         <location filename="../watchdog.ui" line="394"/>
         <source>%p : pid
 %c : command</source>
-        <translation></translation>
+        <translation>‎%p : מזהה תהליך
+‎%c : פקודה</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="425"/>
