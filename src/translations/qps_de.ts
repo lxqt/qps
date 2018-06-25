@@ -29,7 +29,7 @@
     <message>
         <location filename="../watchdog.ui" line="170"/>
         <source>labelDescrition</source>
-        <translation></translation>
+        <translation>Etikettbeschreibung</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="193"/>
@@ -108,7 +108,7 @@
     <message>
         <location filename="../message.ui" line="27"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -124,7 +124,7 @@
     <message>
         <location filename="../screenshot.cpp" line="294"/>
         <source>/untitled.</source>
-        <translation></translation>
+        <translation>/unbenannt.</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="299"/>
@@ -154,7 +154,7 @@
     <message>
         <location filename="../screenshot.cpp" line="337"/>
         <source>Hide This Window</source>
-        <translation>Verstecke Dieses Fenster</translation>
+        <translation>Verberge dieses Fenster</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="349"/>
