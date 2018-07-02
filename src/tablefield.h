@@ -23,13 +23,15 @@
 #ifndef TABLEFIELD_H
 #define TABLEFIELD_H
 
+#include <QString>
+
 struct TableField
 {
-    const char *name;
+    QString name;
     int width;
     int gap;
     int align;
-    const char *tooltip;
+    QString tooltip;
 };
 
 #endif // TABLEFIELD_H

@@ -125,7 +125,7 @@ class Sockets : public SimpleTable
         STATE,
         SOCKFIELDS
     };
-    static TableField fields[SOCKFIELDS];
+    static TableField *fields();
 
     bool doing_lookup; // if table painted with host lookup
 
@@ -159,7 +159,7 @@ class Maps : public SimpleTable
         FILENAME,
         MAPSFIELDS
     };
-    static TableField fields[MAPSFIELDS];
+    static TableField *fields();
 };
 
 class Files : public SimpleTable
@@ -185,7 +185,7 @@ class Files : public SimpleTable
         FILENAME,
         FILEFIELDS
     };
-    static TableField fields[FILEFIELDS];
+    static TableField *fields();
 };
 
 class Environ : public SimpleTable
@@ -216,7 +216,7 @@ class Environ : public SimpleTable
     };
     bool rev;                   // sorting reversed
     static Environ *static_env; // for sorting, must have static pointer
-    static TableField fields[ENVFIELDS];
+    static TableField *fields();
 };
 
 class AllFields : public SimpleTable
@@ -239,7 +239,7 @@ class AllFields : public SimpleTable
         FIELDVALUE,
         FIELDSFIELDS
     };
-    static TableField fields[FIELDSFIELDS];
+    static TableField *fields();
 };
 
 #endif // DETAILS_H

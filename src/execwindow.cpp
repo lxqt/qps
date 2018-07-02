@@ -39,7 +39,7 @@ ExecWindow::~ExecWindow() {}
 ExecWindow::ExecWindow(watchCond *wc, int pid, QString cmd)
 {
     setupUi(this);
-    setWindowTitle("Qps Watchdog");
+    setWindowTitle( tr( "Qps Watchdog" ) );
 
     wcond = wc;
 
@@ -94,16 +94,16 @@ void ExecWindow::cmd_ok()
 // slot : catch terminate signal.
 void ExecWindow::cmd_finished(int exitCode, QProcess::ExitStatus exitStatus)
 {
-    textEdit->append(wcond->command + " exit with code " +
-                     QString::number(exitStatus));
-    okButton->setText("Close");
+    textEdit->append( tr( "%1 exit with code %2" ).arg( wcond->command )
+                                                  .arg( exitStatus ) );
+    okButton->setText( tr( "Close" ) );
     delete pr;
 }
 
 void ExecWindow::cmd_started()
 {
-    textEdit->append(wcond->command + " [running]");
-    okButton->setText("terminate command");
+    textEdit->append( tr( "%1 [running]" ).arg( wcond->command ) );
+    okButton->setText( tr( "terminate command" ) );
     flag_started = true;
 }
 
@@ -112,11 +112,8 @@ void ExecWindow::cmd_error(QProcess::ProcessError e)
     // not found command
     // Error ? :
     if (e == QProcess::FailedToStart)
-        //	textEdit->append("Error :  command not found [" +
-        // command + "]" + "(code
-        //" + QString::number(e) + ")" );
-        textEdit->append("Error " + QString::number(e) + " : [" +
-                         wcond->command + "] Maybe command not found");
+        textEdit->append( tr( "Error %1 : [%2] Maybe command not found" ).arg( e )
+                                                                         .arg( wcond->command ) );
     delete pr;
 }
 

@@ -344,7 +344,7 @@ TBloon::TBloon(QWidget *parent) : QLabel(parent)
                   "rgb(255,120,60); }");
     // COLOR orange FF5d00
 
-    setText(" This is unstable Alpha feature\n You maybe see a SEGFAULT...");
+    setText( tr( " This is unstable Alpha feature\n You maybe see a SEGFAULT..." ) );
     resize(sizeHint());
     //	parent->installEventFilter(this);
     //	parent->setMouseTracking(true);
@@ -423,7 +423,7 @@ void TBloon::paintEvent(  QPaintEvent * event )
 TFrame::TFrame(QWidget *parent) : QLabel(parent)
 // TFrame::TFrame(QWidget *parent):QFrame(parent)
 {
-    text = "this is Tframe widget";
+    text = tr( "this is Tframe widget" );
     // setAutoFillBackground(false);
     // setGeometry(50,50,100,100);
     // setAttribute(Qt::WA_OpaquePaintEvent);
@@ -612,7 +612,7 @@ UFrame::UFrame(QWidget *parent) : QFrame(parent)
     hide();
 
     QVBoxLayout *vlayout = new QVBoxLayout;
-    QLabel *label = new QLabel("title");
+    QLabel *label = new QLabel( tr( "title" ) );
     vlayout->addWidget(label);
 
     setLayout(vlayout);
@@ -803,7 +803,7 @@ void XButton::paintEvent(QPaintEvent *event)
 
 SearchBox::SearchBox(QWidget *parent) : QLineEdit(parent)
 {
-    setToolTip("PID,COMMAND,USER...");
+    setToolTip( tr( "PID,COMMAND,USER..." ) );
     left_time = 0;
     setMaximumWidth(300);
     setMinimumWidth(20);
@@ -892,9 +892,7 @@ void StatusBar::refresh() {}
 extern int num_opened_files;
 void StatusBar::update(int total_n)
 {
-    QString str;
-    int x = 0;
-    label->setText("Process count: " + str.setNum(total_n));
+    label->setText(tr( "Process count: %1" ).arg( total_n ) );
     //	button2->setTextLabel ("Network Process(testing): "+
     // str.setNum(Procinfo::num_network_process));
     //	button3->setText ("Opened files : "+
@@ -924,10 +922,10 @@ ControlBar::ControlBar(QWidget *parent) : QFrame(parent)
      min-width: 80px; */
     /* image: url(:/icon/vista.png);*/
 
-    b_linear = new QRadioButton("Linear", this);
+    b_linear = new QRadioButton(tr( "Linear" ), this);
     b_linear->setFocusPolicy(Qt::NoFocus);
 
-    b_tree = new QRadioButton("Tree", this);
+    b_tree = new QRadioButton( tr( "Tree" ), this);
     b_tree->setFocusPolicy(Qt::NoFocus);
 
     search_box = new SearchBox(this);
@@ -941,17 +939,17 @@ ControlBar::ControlBar(QWidget *parent) : QFrame(parent)
 
     if (flag_thread_ok)
     {
-        check_thread = new QCheckBox("Thread", this);
+        check_thread = new QCheckBox( ( "Thread" ), this);
         check_thread->setFocusPolicy(Qt::NoFocus);
         connect(check_thread, SIGNAL(clicked()), SLOT(show_thread_clicked()));
         check_thread->setChecked(flag_show_thread);
     }
 
     view = new QComboBox(this);
-    view->insertItem(0, "All Processes", Procview::ALL);
-    view->insertItem(1, "Your Processes", Procview::OWNED);
-    view->insertItem(2, "Non-Root Processes", Procview::NROOT);
-    view->insertItem(3, "Running Processes", Procview::RUNNING);
+    view->insertItem(0, tr( "All Processes" ), Procview::ALL);
+    view->insertItem(1, tr( "Your Processes" ), Procview::OWNED);
+    view->insertItem(2, tr( "Non-Root Processes" ), Procview::NROOT);
+    view->insertItem(3, tr( "Running Processes" ), Procview::RUNNING);
     connect(view, SIGNAL(activated(int)), SLOT(view_changed(int)));
     view->setFocusPolicy(Qt::NoFocus);
     // PAUSED view->insertItem("Hidden Processes", Procview::HIDDEN);

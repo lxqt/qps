@@ -90,7 +90,7 @@ int Category::compare(Procinfo *a, Procinfo *b)
     return string(a).compare(string(b));
 }
 
-Cat_int::Cat_int(const char *heading, const char *explain, int w,
+Cat_int::Cat_int(const QString &heading, const QString &explain, int w,
                  int Procinfo::*member)
     : Category(heading, explain), int_member(member), field_width(w)
 {
@@ -111,7 +111,7 @@ int Cat_int::compare(Procinfo *a, Procinfo *b)
 }
 
 // COMMON
-Cat_percent::Cat_percent(const char *heading, const char *explain, int w,
+Cat_percent::Cat_percent(const QString &heading, const QString &explain, int w,
                          float Procinfo::*member)
     : Category(heading, explain), float_member(member), field_width(w)
 {
@@ -130,7 +130,7 @@ int Cat_percent::compare(Procinfo *a, Procinfo *b)
     return at < bt ? 1 : (at > bt ? -1 : 0);
 }
 // added 2006/05/07
-Cat_memory::Cat_memory(const char *heading, const char *explain, int w,
+Cat_memory::Cat_memory(const QString &heading, const QString &explain, int w,
                        unsigned long Procinfo::*member)
     : Category(heading, explain), uintl_member(member), field_width(w)
 {
@@ -170,7 +170,7 @@ int Cat_memory::compare(Procinfo *a, Procinfo *b)
     return bu >= au ? (bu == au ? 0 : 1) : -1;
 }
 
-Cat_uintl::Cat_uintl(const char *heading, const char *explain, int w,
+Cat_uintl::Cat_uintl(const QString &heading, const QString &explain, int w,
                      unsigned long Procinfo::*member)
     : Category(heading, explain), uintl_member(member), field_width(w)
 {
@@ -189,7 +189,7 @@ int Cat_uintl::compare(Procinfo *a, Procinfo *b)
     return bu >= au ? (bu == au ? 0 : 1) : -1;
 }
 
-Cat_hex::Cat_hex(const char *heading, const char *explain, int w,
+Cat_hex::Cat_hex(const QString &heading, const QString &explain, int w,
                  unsigned long Procinfo::*member)
     : Cat_uintl(heading, explain, w, member)
 {
@@ -205,7 +205,7 @@ QString Cat_hex::string(Procinfo *p)
 }
 
 // COMMON,
-Cat_swap::Cat_swap(const char *heading, const char *explain)
+Cat_swap::Cat_swap(const QString &heading, const QString &explain)
     : Category(heading, explain)
 {
 }
@@ -236,7 +236,7 @@ int Cat_swap::compare(Procinfo *a, Procinfo *b)
     return (b->size - b->resident) - (a->size - a->resident);
 }
 
-Cat_string::Cat_string(const char *heading, const char *explain,
+Cat_string::Cat_string(const QString &heading, const QString &explain,
                        QString Procinfo::*member)
     : Category(heading, explain), str_member(member)
 {
@@ -244,7 +244,7 @@ Cat_string::Cat_string(const char *heading, const char *explain,
 
 QString Cat_string::string(Procinfo *p) { return p->*str_member; }
 
-Cat_user::Cat_user(const char *heading, const char *explain)
+Cat_user::Cat_user(const QString &heading, const QString &explain)
     : Cat_string(heading, explain)
 {
 }
@@ -261,7 +261,7 @@ QString Cat_user::string(Procinfo *p)
     }
 }
 
-Cat_group::Cat_group(const char *heading, const char *explain)
+Cat_group::Cat_group(const QString &heading, const QString &explain)
     : Cat_string(heading, explain)
 {
 }
@@ -278,7 +278,7 @@ QString Cat_group::string(Procinfo *p)
     }
 }
 
-Cat_wchan::Cat_wchan(const char *heading, const char *explain)
+Cat_wchan::Cat_wchan(const QString &heading, const QString &explain)
     : Cat_string(heading, explain)
 {
 }
@@ -292,7 +292,7 @@ QString Cat_wchan::string(Procinfo *p)
 #endif
 }
 
-Cat_cmdline::Cat_cmdline(const char *heading, const char *explain)
+Cat_cmdline::Cat_cmdline(const QString &heading, const QString &explain)
     : Cat_string(heading, explain)
 {
 }
@@ -329,7 +329,7 @@ QString Cat_cmdline::string(Procinfo *p)
 }
 
 // hmm COMMON? almost same...but Solaris's zombie process...
-Cat_start::Cat_start(const char *heading, const char *explain)
+Cat_start::Cat_start(const QString &heading, const QString &explain)
     : Category(heading, explain)
 {
 }
@@ -799,21 +799,19 @@ int Procview::compare_backwards(Procinfo *const *a, Procinfo *const *b)
 }
 
 // COMMON
-Category *Proc::cat_by_name(const char *s)
+Category *Proc::cat_by_name( const QString &s )
 {
 
-    if (s)
+    if ( ! s.isNull() )
     {
         // java style
         QHashIterator<int, Category *> i(categories);
         while (i.hasNext())
         {
-            const char *p;
             i.next();
-            p = i.value()->name;
-            if (*p == ' ')
-                p++;
-            if (strcmp(p, s) == 0)
+            const QString &p = i.value()->name;
+            int index = p.indexOf( QRegExp( "\\S" ) );
+            if ( p.indexOf( s, index ) == index )
                 return i.value();
             //     cout << i.key() << ": " << i.value() << endl;
         }
@@ -823,15 +821,15 @@ Category *Proc::cat_by_name(const char *s)
 
 // COMMON
 // call by
-int Proc::field_id_by_name(const char *s)
+int Proc::field_id_by_name(const QString &s)
 {
-    if (s)
+    if ( ! s.isNull() )
     {
         // STL style
         QHash<int, Category *>::iterator i = categories.begin();
         while (i != categories.end())
         {
-            if (strcmp(i.value()->name, s) == 0)
+            if ( i.value()->name == s )
                 return i.key(); // cout << i.key() << ": " <<
                                 // i.value() << endl;
             ++i;

@@ -186,41 +186,42 @@ Qps::Qps()
     make_signal_popup_menu();
 
     // MOVETO Pstable !!
-    m_headpopup = new QMenu("header_popup", this);
-    m_headpopup->addAction("Remove Field", this, SLOT(menu_remove_field()));
-    m_fields = new QMenu("Add Field", this);
+    m_headpopup = new QMenu( tr( "header_popup" ), this);
+    m_headpopup->addAction( tr( "Remove Field" ), this, SLOT(menu_remove_field()));
+    m_fields = new QMenu( tr( "Add Field" ), this);
     m_headpopup->addMenu(m_fields);
     // connect(m_fields, SIGNAL(activated(int)),
     // SLOT(add_fields_menu(int)));
     // m_headpopup->addAction("Select Field", this, SLOT(menu_custom()) );
 
-    m_command = new QMenu("Command", this); // filled in later
+    m_command = new QMenu( tr( "Command" ), this); // filled in later
 
     QAction *act;
 
-    m_view = new QMenu("View", this);
-    act = m_view->addAction("Process"); // act->setData(Procview::CUSTOM);
-    act = m_view->addAction("Log");     // act->setData(Procview::CUSTOM);
+    m_view = new QMenu( tr( "View" ), this);
+    act = m_view->addAction( tr( "Process" ) ); // act->setData(Procview::CUSTOM);
+    act = m_view->addAction( tr( "Log" ) );     // act->setData(Procview::CUSTOM);
     // m_view->hide();
 
     m_field = new QMenu("Field", this);
-    act = m_field->addAction("Custom Fields");
+    act = m_field->addAction( tr( "Custom Fields" ) );
     act->setData(Procview::CUSTOM);
-    act = m_field->addAction("Basic Fields ");
+    act = m_field->addAction( tr( "Basic Fields " ) );
     act->setData(Procview::USER);
-    act = m_field->addAction("Jobs Fields ");
+    act = m_field->addAction( tr( "Jobs Fields " ) );
     act->setData(Procview::JOBS);
-    act = m_field->addAction("Memory Fields ");
+    act = m_field->addAction( tr( "Memory Fields " ) );
     act->setData(Procview::MEM);
 #ifdef LINUX
-    act = m_field->addAction("Scheduling Fields ");
+    act = m_field->addAction( tr( "Scheduling Fields " ) );
     act->setData(Procview::SCHED);
 #endif
 
     m_field->addSeparator();
-    act = m_field->addAction(QIcon::fromTheme(QStringLiteral("edit-find-replace")),
-                             "Select Custom Fields...", this,
-                             SLOT(menu_custom()));
+    act = m_field->addAction( QIcon::fromTheme(QStringLiteral("edit-find-replace"))
+                            , tr( "Select Custom Fields..." )
+                            , this
+                            , SLOT(menu_custom()));
     act->setData(MENU_CUSTOM);
 
     connect(m_field, SIGNAL(triggered(QAction *)), this,
@@ -232,8 +233,8 @@ Qps::Qps()
     /// *)));
     /// connect(m_view, SIGNAL(aboutToShow ()), SLOT(update_menu_status()));
 
-    m_options = new QMenu("Option", this);
-    m_options->addAction("Update Period...", this, SLOT(menu_update()));
+    m_options = new QMenu( tr( "Option" ), this);
+    m_options->addAction( tr( "Update Period..." ), this, SLOT(menu_update()));
     m_options->addSeparator();
     act = m_options->addAction("", /* MENU_PATH */ this,
                                SLOT(menu_toggle_path()));
@@ -242,22 +243,24 @@ Qps::Qps()
     act->setData(QVariant(MENU_INFOBAR));
     act = m_options->addAction("", this, SLOT(menu_toggle_ctrlbar()));
     act->setData(QVariant(MENU_CTRLBAR));
-    act = m_options->addAction("Show Status bar", this,
-                               SLOT(menu_toggle_statusbar()));
+    act = m_options->addAction( tr( "Show Status bar" )
+                              , this
+                              ,SLOT(menu_toggle_statusbar()));
     act->setData(QVariant(MENU_STATUS));
     act = m_options->addAction("", this, SLOT(menu_toggle_cumul()));
     act->setData(QVariant(MENU_CUMUL));
 
     m_options->addSeparator();
-    m_options->addAction(QIcon::fromTheme(QStringLiteral("preferences-system")),
-                         "Preferences...", this,
-                         SLOT(menu_prefs())); // MENU_PREFS
+    m_options->addAction( QIcon::fromTheme(QStringLiteral("preferences-system"))
+                        , tr( "Preferences..." )
+                        , this
+                        , SLOT(menu_prefs())); // MENU_PREFS
 
     connect(m_options, SIGNAL(aboutToShow()), SLOT(update_menu_status()));
 
-    QMenu *m_help = new QMenu("&Help", this);
+    QMenu *m_help = new QMenu( tr( "Help" ), this);
     // m_help->addAction("FAQ", this, SLOT(license()));
-    m_help->addAction(QIcon::fromTheme("help-about"), "&About", this,
+    m_help->addAction(QIcon::fromTheme("help-about"),  tr( "About" ), this,
                       SLOT(about()));
 
     // menu = new QMenuBar(this);
@@ -389,8 +392,8 @@ Qps::Qps()
     bar_visibility(); // need
 
     // testing
-    popupx = new QMenu("test", this);
-    popupx->addAction("Copied to Clipboard");
+    popupx = new QMenu( tr( "test" ), this);
+    popupx->addAction( tr( "Copied to Clipboard" ) );
 }
 
 // explicit destructor needed for gcc
@@ -499,17 +502,17 @@ QMenu *Qps::make_signal_popup_menu()
 
     // move to pstable?
     QAction *act; // show_popup_menu() callback
-    m_popup = new QMenu("context popup", this);
-    m_popup->addAction("Renice...", this, SLOT(menu_renice()));
-    m_popup->addAction("Scheduling...", this, SLOT(menu_sched()));
+    m_popup = new QMenu( tr( "context popup" ), this);
+    m_popup->addAction( tr( "Renice..." ), this, SLOT(menu_renice()));
+    m_popup->addAction( tr( "Scheduling..." ), this, SLOT(menu_sched()));
     m_popup->addSeparator();
-    m_popup->addAction("Terminate", this, SLOT(sig_term()),
+    m_popup->addAction( tr( "Terminate" ), this, SLOT(sig_term()),
                        Qt::Key_Delete); // better
-    m_popup->addAction("Hangup", this, SLOT(sig_hup()), Qt::ALT + Qt::Key_H);
-    m_popup->addAction("Kill", this, SLOT(sig_kill()), Qt::ALT + Qt::Key_K);
-    act = m_popup->addAction("Stop", this, SLOT(sig_stop()));
+    m_popup->addAction( tr( "Hangup" ), this, SLOT(sig_hup()), Qt::ALT + Qt::Key_H);
+    m_popup->addAction( tr( "Kill" ), this, SLOT(sig_kill()), Qt::ALT + Qt::Key_K);
+    act = m_popup->addAction( tr( "Stop" ), this, SLOT(sig_stop()));
     act->setData(MENU_SIGSTOP);
-    act = m_popup->addAction("Continue", this, SLOT(sig_cont()));
+    act = m_popup->addAction( tr( "Continue" ), this, SLOT(sig_cont()));
     act->setData(MENU_SIGCONT);
 
     //	connect(m_popup, SIGNAL(aboutToShow ()),this,
@@ -522,44 +525,44 @@ QMenu *Qps::make_signal_popup_menu()
     /// SLOT(menu_dynasty()),0,MENU_DYNASTY);
 
     QMenu *m = new QMenu("Other Signals");
-    act = m->addAction("SIGINT (interrupt)");
+    act = m->addAction( tr( "SIGINT (interrupt)" ) );
     act->setData(SIGINT);
-    act = m->addAction("SIGCONT (continue)");
+    act = m->addAction( tr( "SIGCONT (continue)" ) );
     act->setData(SIGCONT);
-    act = m->addAction("SIGSTOP (stop)");
+    act = m->addAction( tr( "SIGSTOP (stop)" ) );
     act->setData(SIGSTOP);
-    act = m->addAction("SIGQUIT (quit)");
+    act = m->addAction( tr( "SIGQUIT (quit)" ) );
     act->setData(SIGQUIT);
-    act = m->addAction("SIGILL (illegal instruction)");
+    act = m->addAction( tr( "SIGILL (illegal instruction)" ));
     act->setData(SIGILL);
-    act = m->addAction("SIGABRT (abort)");
+    act = m->addAction( tr( "SIGABRT (abort)" ) );
     act->setData(SIGABRT);
-    act = m->addAction("SIGFPE (floating point exception)");
+    act = m->addAction( tr( "SIGFPE (floating point exception)" ) );
     act->setData(SIGFPE);
-    act = m->addAction("SIGSEGV (segmentation violation)");
+    act = m->addAction( tr( "SIGSEGV (segmentation violation)" ) );
     act->setData(SIGSEGV);
-    act = m->addAction("SIGPIPE (broken pipe)");
+    act = m->addAction( tr( "SIGPIPE (broken pipe)" ) );
     act->setData(SIGPIPE);
-    act = m->addAction("SIGALRM (timer signal)");
+    act = m->addAction( tr( "SIGALRM (timer signal)" ) );
     act->setData(SIGALRM);
-    act = m->addAction("SIGUSR1 (user-defined 1)");
+    act = m->addAction( tr( "SIGUSR1 (user-defined 1)" ) );
     act->setData(SIGUSR1);
-    act = m->addAction("SIGUSR2 (user-defined 2)");
+    act = m->addAction( tr( "SIGUSR2 (user-defined 2)" ) );
     act->setData(SIGUSR2);
-    act = m->addAction("SIGCHLD (child death)");
+    act = m->addAction( tr( "SIGCHLD (child death)" ) );
     act->setData(SIGCHLD);
-    act = m->addAction("SIGTSTP (stop from tty)");
+    act = m->addAction( tr( "SIGTSTP (stop from tty)" ) );
     act->setData(SIGTSTP);
-    act = m->addAction("SIGTTIN (tty input)");
+    act = m->addAction( tr( "SIGTTIN (tty input)" ) );
     act->setData(SIGTTIN);
-    act = m->addAction("SIGTTOU (tty output)");
+    act = m->addAction( tr( "SIGTTOU (tty output)" ) );
     act->setData(SIGTTOU);
 
     connect(m, SIGNAL(triggered(QAction *)), SLOT(signal_menu(QAction *)));
 
     m_popup->addMenu(m);
     m_popup->addSeparator();
-    m_popup->addAction("View Details", this, SLOT(Action_Detail()));
+    m_popup->addAction( tr( "View Details" ), this, SLOT(Action_Detail()));
 
     return m;
 }
@@ -1175,11 +1178,11 @@ void Qps::make_command_menu()
 
     if (flag_devel)
     {
-        m_command->addAction("WatchDog", watchdogDialog,
+        m_command->addAction( tr( "WatchDog" ), watchdogDialog,
                              SLOT(show())); //, m_event);
         //	m_command->addAction("ScreenShot", screenshot,
         // SLOT(show()) );
-        act = m_command->addAction("Edit Commands...", this,
+        act = m_command->addAction( tr( "Edit Commands..." ), this,
                                    SLOT(menu_edit_cmd()));
         //	act->setEnabled(false);
     }
@@ -1203,8 +1206,11 @@ void Qps::make_command_menu()
     //#ifdef SOLARIS
     /* Solaris CDE don't have a tray, so we need a method to terminate */
     m_command->addSeparator();
-    m_command->addAction(QIcon::fromTheme(QStringLiteral("application-exit")), "&Quit", this,
-                         SLOT(save_quit()), Qt::ALT + Qt::Key_Q);
+    m_command->addAction(QIcon::fromTheme(QStringLiteral("application-exit"))
+                        , tr( "Quit" )
+                        , this
+                        , SLOT(save_quit())
+                        , Qt::ALT + Qt::Key_Q);
     //#endif
 }
 
@@ -1580,13 +1586,9 @@ void Qps::menu_renice()
 
     if (!possible)
     {
-        QString s;
-        s.sprintf("You do not have permission to renice the\n"
-                  "selected process%s.\n"
-                  "Only the process owner and the super-user\n"
-                  "are allowed to do that.",
-                  (pstable->hasSelection() == 1) ? "" : "es");
-        QMessageBox::warning(this, "Permission denied", s);
+        QMessageBox::warning( this
+                            , tr( "Permission denied" )
+                            , tr( "You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that." ) );
         return;
     }
 
@@ -1621,21 +1623,16 @@ void Qps::menu_renice()
                 case EPERM:
                     // this shouldn't happen, but (e)uid
                     // could be changed...
-                    s.sprintf("You do not have permission "
-                              "to renice"
-                              " process %d (",
-                              p->pid);
-                    s.append(p->command);
-                    s.append(").\n"
-                             "Only the process owner and "
-                             "the super-user are"
-                             " allowed to do that.");
-                    QMessageBox::warning(this, "Permission denied", s);
+                    QMessageBox::warning( this
+                                        , tr( "Permission denied" )
+                                        , tr( "You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that." )
+                                          .arg( p->pid )
+                                          .arg( p->command ) );
                     break;
                 case EACCES:
-                    QMessageBox::warning(this, "Permission denied",
-                                         "Only the super-user may lower"
-                                         " the nice value of a process.");
+                    QMessageBox::warning( this
+                                        , tr( "Permission denied" )
+                                        , tr( "Only the super-user may lower the nice value of a process." ) );
                     return;
                 }
             }
@@ -1655,9 +1652,9 @@ void Qps::menu_sched()
     // if(pstable->hasSelection()==false)	return;
     if (geteuid() != 0)
     {
-        QMessageBox::warning(this, "Permission denied",
-                             "Only the super-user may change the\n"
-                             "scheduling policy and static priority.");
+        QMessageBox::warning( this
+                            , tr( "Permission denied" )
+                            , tr( "Only the super-user may change the scheduling policy and static priority." ) );
         return;
     }
 
@@ -1691,18 +1688,13 @@ void Qps::menu_sched()
             sp.sched_priority = sd.out_prio;
             if (sched_setscheduler(p->pid, sd.out_policy, &sp) < 0)
             {
-                QString s;
                 if (errno == EPERM)
                 {
-                    s.sprintf("You do not have permission to "
-                              "change the\n"
-                              "scheduling and/or priority of"
-                              " process %d (",
-                              p->pid);
-                    s.append(p->command);
-                    s.append(").\n"
-                             "Only the super-user may do that.");
-                    QMessageBox::warning(this, "Permission denied", s);
+                    QMessageBox::warning( this
+                                        , tr( "Permission denied" )
+                                        , tr( "You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that." )
+                                          .arg( p->pid )
+                                          .arg( p->command ) );
                     break;
                 }
             }
@@ -1777,15 +1769,11 @@ void Qps::sendsig(Procinfo *p, int sig)
         // user
         if (errno == EPERM)
         {
-            QString s;
-            s.sprintf("You do not have permission to send a signal to"
-                      " process %d (",
-                      p->pid);
-            s.append(p->command);
-            s.append(").\n"
-                     "Only the super-user and the owner of the process"
-                     " may send signals to it.");
-            QMessageBox::warning(this, "Permission denied", s);
+            QMessageBox::warning( this
+                                , tr( "Permission denied" )
+                                , tr( "You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it." )
+                                  .arg( p->pid )
+                                  .arg( p->command ) );
             // PermissionDialog *pd = new
             // PermissionDialog(s,supasswd);
             // pd->exec();
@@ -1908,8 +1896,7 @@ bool Qps::read_settings()
         procview->viewfields = Procview::CUSTOM;
     }
 
-    QString str = set.value("sort/field").toString(); // procview->sortcat->name
-    int fid = procview->field_id_by_name(str.toUtf8().data());
+    int fid = procview->field_id_by_name( set.value("sort/field").toString() ); // procview->sortcat->name
     int col = procview->findCol(fid);
     if (col >= 0)
         // pstable->setSortColumn(col);  // Pstable::refresh()
@@ -2216,10 +2203,8 @@ int main(int argc, char **argv, char **envp)
     qps = new Qps();
     //	sleep(20);
 
-    QString caption = "";
-    caption.append(getenv("USER"));
-    caption.append("@");
-    caption.append(short_hostname()); // geteuid()
+    QString caption( QString( "%1@%2").arg( getenv( "USER" ) )
+                                      .arg( short_hostname() ) ); // geteuid()
 
     qps->setWindowTitle(UniString(caption));
     qps->setWindowIcon(QPixmap((const char **)icon_xpm));
@@ -2227,12 +2212,24 @@ int main(int argc, char **argv, char **envp)
     // MOVETO  Systray
     QMenu *menu = new QMenu(qps);
     /// menu->addAction( UniString("About"), qps, SLOT(about()) );
-    menu->addAction("Show", qps, SLOT(showNormal()));
-    menu->addAction("Hide", qps, SLOT(hide()));
+    menu->addAction( QObject::tr( "Show" )
+                   , qps
+                   , SLOT( showNormal() ) );
+    menu->addAction( QObject::tr( "Hide" )
+                   , qps
+                   , SLOT( hide() ) );
     menu->addSeparator();
     if (flag_devel)
-        menu->addAction("ScreenShot", qps, SLOT(start_screenshot()));
-    menu->addAction("&Quit", qps, SLOT(save_quit()), Qt::ALT + Qt::Key_Q);
+    {
+        menu->addAction( QObject::tr( "ScreenShot" )
+                       , qps
+                       , SLOT(start_screenshot()));
+    }
+
+    menu->addAction( QObject::tr( "Quit" )
+                   , qps
+                   , SLOT(save_quit())
+                   , Qt::ALT + Qt::Key_Q);
 
     trayicon = new TrayIcon(QPixmap((const char **)icon_xpm /* init icon */),
                             "qps", menu);
@@ -2269,11 +2266,7 @@ int main(int argc, char **argv, char **envp)
     // 4px ;"
     //"background-color : rgba(0,0,0); padding: 3px; color: rgb(0,255,150);
     //}");
-    QString str;
-    str.append("Qps ");
-    str.append(QPS_VERSION);
-    str.append(" launched.");
-    AddLog(str);
+    AddLog( QString( "Qps %1 launched." ).arg( QPS_VERSION ) );
 
     return app.exec();
 }
@@ -2295,7 +2288,7 @@ void Qps::test_popup(const QUrl &link)
 void Qps::about()
 {
     QDialog *diag = new QDialog(this);
-    diag->setWindowTitle("About");
+    diag->setWindowTitle( tr( "About" ) );
     QVBoxLayout *lay = new QVBoxLayout(diag);
 
     QLabel *label = new QLabel(diag);
@@ -2315,43 +2308,41 @@ void Qps::about()
     //	QDesktopServices::openUrl(QUrl("file:///", QUrl::TolerantMode));
     //
 
-    QString str("<h2> qps " QPS_VERSION "  -   A Visual Process Manager </h2> "
+    QString str( tr( "<h2> Qps %1 - A Visual Process Manager </h2> %2 using Qt library %3"
+                     "<br><br>"
+                     "<b>Source: </b><a href=\"https://github.com/lxqt/qps\">https://github.com/lxqt/qps/</a>"
+                     "<br>"
+                     "<b>Bugtracker: </b><a href=\"https://github.com/lxqt/qps/issues\">https://github.com/lxqt/qps/issues</a>")
+                 .arg( QPS_VERSION )
+                 .arg(
 #ifdef SOLARIS
 #ifdef _LP64
-                "64-bit "
+                      "64-bit "
 #else
-                "32-bit "
+                      "32-bit "
 #endif
-                "Solaris version "
+                      "Solaris version "
+#else
+                      ""
 #endif // SOLARIS
-                "using Qt library ");
-
-    str.append(qVersion());
-    str.append("<br><br>"
-               "<b>Source: </b><a href=\"https://github.com/lxqt/qps\">https://github.com/lxqt/qps/</a>"
-               "<br>"
-               "<b>Bugtracker: </b><a href=\"https://github.com/lxqt/qps/issues\">https://github.com/lxqt/qps/issues</a>"
-               );
-
-    label->setText(str);
-
-    str = "";
-    str.append("<b>Original Qps by</b><br>"
-               "Mattias Engdegård (f91-men@nada.kth.se)<br><br>"
-               "<b>Contributors</b><br>"
-               "Olivier.Daudel@u-paris10.fr<br>"
-               "jsanchez@todounix.homeip.net <br>"
-               "daehyun.yang@gmail.com <br>"
-               "Luís Pereira (luis.artur.pereira@gmail.com)<br>"
-               "Alf Gaida (agaida@siduction.org)<br>"
-               "Paulo Lieuthier (paulolieuthier@gmail.com)<br>"
-               "Jerome Leclanche (jerome@leclan.ch)<br>"
-               );
-
+                     )
+                 .arg( qVersion() ) );
+    label->setText( str );
+    str.append( tr( "<b>Original Qps by</b><br>"
+                    "Mattias Engdegård (f91-men@nada.kth.se)<br><br>"
+                    "<b>Contributors</b><br>"
+                    "Olivier.Daudel@u-paris10.fr<br>"
+                    "jsanchez@todounix.homeip.net <br>"
+                    "daehyun.yang@gmail.com <br>"
+                    "Luís Pereira (luis.artur.pereira@gmail.com)<br>"
+                    "Alf Gaida (agaida@siduction.org)<br>"
+                    "Paulo Lieuthier (paulolieuthier@gmail.com)<br>"
+                    "Jerome Leclanche (jerome@leclan.ch)<br>" ) );
     browser->setText(str);
 
-    QDialogButtonBox *bbox =
-        new QDialogButtonBox(QDialogButtonBox::Ok, Qt::Horizontal, diag);
+    QDialogButtonBox *bbox = new QDialogButtonBox( QDialogButtonBox::Ok
+                                                 , Qt::Horizontal
+                                                 , diag );
 
     lay->addWidget(bbox);
 
@@ -2379,38 +2370,37 @@ void Qps::license() // -> help()
     // 	QLabel::setOpenExternalLinks ( bool open );
     browser->setOpenExternalLinks(true);
     browser->setOpenLinks(true);
-    browser->setText(
-        "<H1>QPS Help</H1>"
-        "Updated: May 24 2005<BR>"
-        "<A "
-        "HREF=\"http://kldp.net/projects/qps\">http://kldp.net/projects/"
-        "qps</"
-        "A><HR>"
+    browser->setText( tr( "<H1>QPS Help</H1>"
+                          "Updated: May 24 2005<BR>"
+                          "<A "
+                          "HREF=\"http://kldp.net/projects/qps\">http://kldp.net/projects/"
+                          "qps</"
+                          "A><HR>"
 
-        "<table style=\"text-align: center; width: 100%;\" border=\"1\""
-        " cellpadding=\"1\" cellspacing=\"0\">"
-        "  <tbody>"
-        "    <tr>"
-        "      <td"
-        " style=\"vertical-align: top; background-color: rgb(204, 204, "
-        "204);\">Quit"
-        "      </td>"
-        "      <td >&nbsp; CTRL + q , CTRL + x"
-        "      </td>"
-        "    </tr>"
-        "    <tr>"
-        "      <td"
-        " style=\"vertical-align: top; background-color: rgb(204, 204, "
-        "204);\">Update"
-        "      </td>"
-        "      <td>&nbsp;Space , Enter "
-        "      </td>"
-        "    </tr>"
-        "    <tr><td> process Terminate </td>  <td> ALT + T , DELETE </td> "
-        "</tr>"
-        "    <tr><td> process Kill </td>  <td> ALT + K  </td> </tr>"
-        "  </tbody>"
-        "</table>");
+                          "<table style=\"text-align: center; width: 100%;\" border=\"1\""
+                          " cellpadding=\"1\" cellspacing=\"0\">"
+                          "  <tbody>"
+                          "    <tr>"
+                          "      <td"
+                          " style=\"vertical-align: top; background-color: rgb(204, 204, "
+                          "204);\">Quit"
+                          "      </td>"
+                          "      <td >&nbsp; CTRL + q , CTRL + x"
+                          "      </td>"
+                          "    </tr>"
+                          "    <tr>"
+                          "      <td"
+                          " style=\"vertical-align: top; background-color: rgb(204, 204, "
+                          "204);\">Update"
+                          "      </td>"
+                          "      <td>&nbsp;Space , Enter "
+                          "      </td>"
+                          "    </tr>"
+                          "    <tr><td> process Terminate </td>  <td> ALT + T , DELETE </td> "
+                          "</tr>"
+                          "    <tr><td> process Kill </td>  <td> ALT + K  </td> </tr>"
+                          "  </tbody>"
+                          "</table>" ) );
     diag->exec();
 }
 

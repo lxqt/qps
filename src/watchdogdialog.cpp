@@ -190,8 +190,8 @@ void WatchdogDialog::checkCombo()
     if (comboBox->count() == 1)
     {
         comboBox->clear();
-        comboBox->addItem("if process start");
-        comboBox->addItem("if process finish");
+        comboBox->addItem(tr( "if process start" ) );
+        comboBox->addItem(tr( "if process finish" ) );
         return;
     }
 }
@@ -214,7 +214,7 @@ void WatchdogDialog::_new()
     command->clear();
     message->clear();
     comboBox->clear();
-    comboBox->addItem("select condition");
+    comboBox->addItem( tr( "select condition" ) );
 }
 
 void WatchdogDialog::add()

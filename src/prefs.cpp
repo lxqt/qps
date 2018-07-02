@@ -46,60 +46,86 @@ class Swapvalid : public QValidator
 
 struct Boxvar
 {
-    const char *text;
+Q_DECLARE_TR_FUNCTIONS(Boxvar)
+public:
+    const QString text;
     bool *variable;
     // CrossBox *cb;
     QCheckBox *cb;
-};
 
-static Boxvar general_boxes[] = {
-    // {"Graphic Load Display", &Qps::show_load_graph, 0},
-    // {"Graphic CPU Display", &Qps::show_cpu_bar, 0},
-    //{"Minimized on Close Button", &Qps::flag_systray, 0},
-    {"Exit On Close Button", &Qps::flag_exit, 0},
+    Boxvar() : text( QString() ), variable( static_cast<  bool * >( 0 ) ), cb( static_cast< QCheckBox *>( 0 ) ) {}
+    Boxvar( const QString t, bool *v, QCheckBox *c ) : text( t ), variable( v ), cb( c ) {}
 
-    // TEMPO
-    //  {"Use Tab-View", &Qps::flag_useTabView, 0},
-    //   {"Hide qps in Linear mode", &Qps::flag_qps_hide, 0},
-    //  {"Load Graph in Icon", &Qps::load_in_icon, 0},
-    //  {"Selection: Copy PIDs to Clipboard", &Qps::pids_to_selection, 0},
-    //   {"show underdevelopment ", &Qps::flag_devel, 0},
-    //   {"Vertical CPU Bar (under development)", &Qps::vertical_cpu_bar, 0},
-    {0, 0, 0}};
+    static QVector< Boxvar > *general_boxes()
+    {
+        static QVector< Boxvar > boxes( { { tr( "Exit On Close Button" ), &Qps::flag_exit, 0}
+//                                        , { tr( "Graphic Load Display" ), &Qps::show_load_graph, 0 }
+//                                        , { tr( "Graphic CPU Display" ), &Qps::show_cpu_bar, 0}
+//                                        , { tr( "Minimized on Close Button" ), &Qps::flag_systray, 0}
+// TEMPO
+//                                        , { tr( "Use Tab-View" ), &Qps::flag_useTabView, 0}
+//                                        , { tr( "Hide qps in Linear mode" ), &Qps::flag_qps_hide, 0}
+//                                        , { tr( "Load Graph in Icon" ), &Qps::load_in_icon, 0}
+//                                        , { tr( "Selection: Copy PIDs to Clipboard" ), &Qps::pids_to_selection, 0}
+//                                        , { tr( "show underdevelopment" ), &Qps::flag_devel, 0}
+//                                        , { tr( "Vertical CPU Bar (under development)" ), &Qps::vertical_cpu_bar, 0}
+                                        } );
+        return &boxes;
+    }
 
-#ifdef LINUX
-static Boxvar sockinfo_boxes[] = {
-    {"Host Name Lookup", &Qps::hostname_lookup, 0},
-    {"Service Name Lookup", &Qps::service_lookup, 0},
-    {0, 0, 0}};
-#endif
+//#ifdef LINUX
+    static QVector< Boxvar > *sockinfo_boxes()
+    {
+        static QVector< Boxvar > boxes( { { tr( "Host Name Lookup" ), &Qps::hostname_lookup, 0}
+                                        , { tr( "Service Name Lookup" ), &Qps::service_lookup, 0} } );
+        return &boxes;
+    }
+//#endif
+    static QVector< Boxvar > *tree_boxes()
+    {
+        static QVector< Boxvar > boxes( { { tr( "Disclosure Triangles" ), &Qps::tree_gadgets, 0}
+                                        , { tr( "Branch Lines" ), &Qps::tree_lines, 0} } );
+        return &boxes;
+    }
 
-static Boxvar tree_boxes[] = {{"Disclosure Triangles", &Qps::tree_gadgets, 0},
-                              {"Branch Lines", &Qps::tree_lines, 0},
-                              {0, 0, 0}};
-
-static Boxvar misc_boxes[] = {
-    {"Auto Save Settings on Exit", &Qps::auto_save_options, 0},
-    {"Selection: Copy PIDs to Clipboard", &Qps::pids_to_selection, 0},
+    static QVector< Boxvar > *misc_boxes()
+    {
+        static QVector< Boxvar > boxes( { { tr( "Auto Save Settings on Exit" ), &Qps::auto_save_options, 0}
+                                        , { tr( "Selection: Copy PIDs to Clipboard" ), &Qps::pids_to_selection, 0}
 #ifdef SOLARIS
-    {"Normalize NICE", &Qps::normalize_nice, 0},
-    {"Use pmap for Map Names", &Qps::use_pmap, 0},
+                                        , { tr( "Normalize NICE" ), &Qps::normalize_nice, 0}
+                                        , { tr( "Use pmap for Map Names" ), &Qps::use_pmap, 0}
 #endif
-    {0, 0, 0}};
+                                        } );
+        return &boxes;
+    }
+
+};
 
 struct Cbgroup
 {
-    const char *caption;
-    Boxvar *boxvar;
+Q_DECLARE_TR_FUNCTIONS(Cbgroup)
+public:
+    const QString caption;
+    QVector< Boxvar > *boxvar;
+
+    Cbgroup() : caption( QString() ), boxvar( static_cast< QVector< Boxvar > * >( 0 ) ) {}
+    Cbgroup( const QString c, QVector< Boxvar > *b ) : caption( c ), boxvar( b ) {}
+
+    static QVector< Cbgroup > &groups()
+    {
+        static QVector< Cbgroup > groups( { { tr( "General" ), Boxvar::general_boxes() }
+#ifdef LINUX
+//                                          , { tr( "Socket Info Window" ), Boxvar::sockinfo_boxes() }
+#endif
+//                                          , { tr( "Tree View" ), Boxvar::tree_boxes() }
+//                                          , { tr( "Miscellaneous" ), Boxvar::misc_boxes() }
+                                          } );
+        return groups;
+    }
+
 };
 
-static Cbgroup groups[] = {{"General", general_boxes},
-#ifdef LINUX
-//    {"Socket Info Window", sockinfo_boxes},
-#endif
-                           //   {"Tree View", tree_boxes},
-                           //    {"Miscellaneous", misc_boxes},
-                           {0, 0}};
 
 void find_fontsets();
 // dual use function: both validate and apply changes
@@ -137,14 +163,14 @@ QValidator::State Swapvalid::validate(QString &s, int &) const
 Preferences::Preferences() : QDialog()
 {
     int flag_test = 0;
-    setWindowTitle("Preferences");
+    setWindowTitle( tr( "Preferences" ) );
     QVBoxLayout *v_layout = new QVBoxLayout;
 
     if (flag_test)
     {
         QTabWidget *tbar = new QTabWidget(this);
         QWidget *w = new QWidget(this);
-        tbar->addTab(w, "&Setting");
+        tbar->addTab(w, tr( "Setting" ) );
         w->setLayout(v_layout);
     }
     else
@@ -155,20 +181,26 @@ Preferences::Preferences() : QDialog()
     const int border_x = 10;
     int min_x = 0;
 
-    for (Cbgroup *g = groups; g->caption; g++)
+    QVector< Cbgroup >::iterator endItG = Cbgroup::groups().end();
+    for( QVector< Cbgroup >::iterator itG = Cbgroup::groups().begin(); itG != endItG; ++ itG )
     {
-        QGroupBox *grp = new QGroupBox(g->caption, this);
+        QGroupBox *grp = new QGroupBox( itG->caption, this );
         QVBoxLayout *vbox = new QVBoxLayout;
-        for (Boxvar *b = g->boxvar; b->text; b++)
+        if ( itG->boxvar )
         {
-            b->cb = new QCheckBox(b->text, grp);
-            vbox->addWidget(b->cb);
-            connect(b->cb, SIGNAL(clicked()), SLOT(update_reality()));
-            // -> EMIT prefs_change()
+            QVector< Boxvar >::iterator endItB = itG->boxvar->end();
+            for( QVector< Boxvar >::iterator itB = itG->boxvar->begin(); itB != endItB; ++ itB )
+            {
+                itB->cb = new QCheckBox( itB->text, grp );
+                vbox->addWidget( itB->cb );
+                connect( itB->cb, SIGNAL(clicked()), SLOT(update_reality()));
+                // -> EMIT prefs_change()
+            }
         }
         grp->setLayout(vbox);
         v_layout->addWidget(grp);
     }
+
     update_boxes();
 
     /*
@@ -200,23 +232,22 @@ Preferences::Preferences() : QDialog()
 
     if (QPS_PROCVIEW_CPU_NUM() > 1)
     {
-        QGroupBox *grp_cpu = new QGroupBox("%CPU divided by", this);
+        QGroupBox *grp_cpu = new QGroupBox( tr( "%CPU divided by" ), this);
         QVBoxLayout *vboxlayout = new QVBoxLayout;
         QHBoxLayout *hbox = new QHBoxLayout;
         vboxlayout->addLayout(hbox);
 
         // num_cpus
-        QString str;
-        str.sprintf("Total cpu: %d", QPS_PROCVIEW_CPU_NUM());
-        rb_totalcpu = new QRadioButton(str, grp_cpu);
-        QRadioButton *rb2 = new QRadioButton("Single cpu: 1", grp_cpu);
+
+        rb_totalcpu = new QRadioButton( tr( "Total cpu: %1" ).arg( QPS_PROCVIEW_CPU_NUM() ), grp_cpu);
+        QRadioButton *rb2 = new QRadioButton( tr( "Single cpu: 1" ), grp_cpu);
         if (!Procview::flag_pcpu_single)
             rb_totalcpu->setChecked(true);
         else
             rb2->setChecked(true);
 
-        rb_totalcpu->setToolTip("default");
-        rb2->setToolTip("for developer");
+        rb_totalcpu->setToolTip( tr( "default" ) );
+        rb2->setToolTip( tr( "for developer" ) );
         hbox->addWidget(rb_totalcpu);
         hbox->addWidget(rb2);
         grp_cpu->setLayout(vboxlayout);
@@ -252,7 +283,7 @@ Preferences::Preferences() : QDialog()
     {
         font_cb->show();
 
-        QGroupBox *gbox = new QGroupBox("Appearance", this);
+        QGroupBox *gbox = new QGroupBox( tr( "Appearance" ), this);
         QVBoxLayout *vbox = new QVBoxLayout;
         QHBoxLayout *hbox = new QHBoxLayout();
 
@@ -324,17 +355,37 @@ void Preferences::init_font_size()
 // slot: update check boxes to reflect current status
 void Preferences::update_boxes()
 {
-    for (Cbgroup *g = groups; g->caption; g++)
-        for (Boxvar *b = g->boxvar; b->text; b++)
-            b->cb->setChecked(*b->variable);
+    QVector< Cbgroup >::iterator endItG = Cbgroup::groups().end();
+    for( QVector< Cbgroup >::iterator itG = Cbgroup::groups().begin(); itG != endItG; ++ itG )
+    {
+        if ( ! itG->boxvar )
+        {
+            continue;
+        }
+        QVector< Boxvar >::iterator endItB = itG->boxvar->end();
+        for( QVector< Boxvar >::iterator itB = itG->boxvar->begin(); itB != endItB; ++ itB )
+        {
+            itB->cb->setChecked( *( itB->variable ) );
+        }
+    }
 }
 
 // slot: update flags and repaint to reflect state of check boxes
 void Preferences::update_reality()
 {
-    for (Cbgroup *g = groups; g->caption; g++)
-        for (Boxvar *b = g->boxvar; b->text; b++)
-            *b->variable = b->cb->isChecked();
+    QVector< Cbgroup >::iterator endItG = Cbgroup::groups().end();
+    for( QVector< Cbgroup >::iterator itG = Cbgroup::groups().begin(); itG != endItG; ++ itG )
+    {
+        if ( ! itG->boxvar )
+        {
+            continue;
+        }
+        QVector< Boxvar >::iterator endItB = itG->boxvar->end();
+        for( QVector< Boxvar >::iterator itB = itG->boxvar->begin(); itB != endItB; ++ itB )
+        {
+            *( itB->variable ) = itB->cb->isChecked();
+        }
+    }
     emit prefs_change();
 }
 

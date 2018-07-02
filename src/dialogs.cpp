@@ -48,13 +48,13 @@ static void fix_size(QWidget *w) { w->setFixedSize(w->sizeHint()); }
 // Modal dialog
 IntervalDialog::IntervalDialog(const char *ed_txt, bool enabled) : QDialog()
 {
-    setWindowTitle("Change Update Period");
+    setWindowTitle( tr( "Change Update Period" ) );
     QVBoxLayout *tl = new QVBoxLayout;
     QHBoxLayout *h1 = new QHBoxLayout;
     setLayout(tl);
     tl->addLayout(h1);
 
-    QLabel *label1 = new QLabel("New Update Period", this);
+    QLabel *label1 = new QLabel( tr( "New Update Period" ), this);
     h1->addWidget(label1);
     h1->addStretch(1);
 
@@ -91,9 +91,9 @@ IntervalDialog::IntervalDialog(const char *ed_txt, bool enabled) : QDialog()
     */
     QHBoxLayout *h2 = new QHBoxLayout;
     // h2->addStretch(1);
-    cancel = new QPushButton("Cancel", this);
+    cancel = new QPushButton( tr( "Cancel" ), this);
     h2->addWidget(cancel);
-    ok = new QPushButton("OK", this);
+    ok = new QPushButton( tr( "OK" ), this);
     // ok->setFocus();
     h2->addWidget(ok);
     tl->addLayout(h2);
@@ -127,7 +127,7 @@ void IntervalDialog::event_label_changed()
     QString s = ed_result;
     if (s.length() == 0)
     {
-        label->setText("No UPDATE");
+        label->setText( tr( "No UPDATE" ) );
         return;
     }
 
@@ -145,7 +145,7 @@ void IntervalDialog::event_label_changed()
         period = -1;
     if (period <= 0)
     {
-        label->setText("Invalid value");
+        label->setText( tr( "Invalid value" ) );
         return;
     }
 
@@ -185,13 +185,13 @@ void IntervalDialog::done_dialog()
 
 SliderDialog::SliderDialog(int defaultval, int minval, int maxval) : QDialog()
 {
-    setWindowTitle("Renice Process");
+    setWindowTitle( tr( "Renice Process" ) );
     QVBoxLayout *tl = new QVBoxLayout;
     QHBoxLayout *h1 = new QHBoxLayout;
     setLayout(tl);
     tl->addLayout(h1);
 
-    label = new QLabel("New nice value:", this);
+    label = new QLabel( tr( "New nice value:" ), this);
     h1->addWidget(label);
 
     h1->addStretch(1);
@@ -231,11 +231,11 @@ SliderDialog::SliderDialog(int defaultval, int minval, int maxval) : QDialog()
     tl->addLayout(h3);
 
     h3->addStretch(1);
-    cancel = new QPushButton("Cancel", this);
+    cancel = new QPushButton( tr( "Cancel" ), this);
     // fix_size(cancel);
     h3->addWidget(cancel);
 
-    ok = new QPushButton("OK", this);
+    ok = new QPushButton( tr( "OK" ), this);
     ok->setFixedSize(cancel->sizeHint());
     h3->addWidget(ok);
 
@@ -270,7 +270,7 @@ void SliderDialog::slider_change(int val)
 // DRAFT CODE,
 PermissionDialog::PermissionDialog(QString msg, QString passwd) : QDialog()
 {
-    setWindowTitle("Permission");
+    setWindowTitle( tr( "Permission" ) );
     QVBoxLayout *vbox = new QVBoxLayout;
     label = new QLabel(msg, this);
     vbox->addWidget(label);
@@ -279,17 +279,17 @@ PermissionDialog::PermissionDialog(QString msg, QString passwd) : QDialog()
 
     QHBoxLayout *hbox = new QHBoxLayout;
     vbox->addLayout(hbox);
-    label = new QLabel("root password", this);
+    label = new QLabel( tr( "Root password" ), this);
     hbox->addWidget(label);
     lined = new QLineEdit(this);
     hbox->addWidget(lined);
 
     hbox = new QHBoxLayout;
     vbox->addLayout(hbox);
-    QPushButton *cancel = new QPushButton("Cancel", this);
+    QPushButton *cancel = new QPushButton( tr( "Cancel" ), this);
     hbox->addWidget(cancel);
 
-    QPushButton *ok = new QPushButton("OK", this);
+    QPushButton *ok = new QPushButton( tr( "OK" ), this);
     hbox->addWidget(ok);
 
     connect(ok, SIGNAL(clicked()), SLOT(accept()));
@@ -298,15 +298,15 @@ PermissionDialog::PermissionDialog(QString msg, QString passwd) : QDialog()
 
 SchedDialog::SchedDialog(int policy, int prio) : QDialog()
 {
-    setWindowTitle("Change scheduling");
+    setWindowTitle( tr( "Change scheduling" ) );
     QVBoxLayout *vl = new QVBoxLayout;
     setLayout(vl);
 
-    bgrp = new QGroupBox("Scheduling Policy", this);
+    bgrp = new QGroupBox( tr( "Scheduling Policy" ), this);
     vl->addWidget(bgrp); // bgrp->setCheckable(1);
-    rb_other = new QRadioButton("SCHED_OTHER (time-sharing)", bgrp);
-    rb_fifo = new QRadioButton("SCHED_FIFO (real-time)", bgrp);
-    rb_rr = new QRadioButton("SCHED_RR (real-time)", bgrp);
+    rb_other = new QRadioButton( tr( "SCHED_OTHER (time-sharing)" ), bgrp);
+    rb_fifo = new QRadioButton( tr( "SCHED_FIFO (real-time)" ), bgrp);
+    rb_rr = new QRadioButton( tr( "SCHED_RR (real-time)" ), bgrp);
 
     QVBoxLayout *vbox = new QVBoxLayout;
     vbox->addWidget(rb_other);
@@ -320,9 +320,9 @@ SchedDialog::SchedDialog(int policy, int prio) : QDialog()
 
     QHBoxLayout *hbox1 = new QHBoxLayout;
     QPushButton *ok, *cancel;
-    ok = new QPushButton("OK", this);
+    ok = new QPushButton( tr( "OK" ), this);
     ok->setDefault(true);
-    cancel = new QPushButton("Cancel", this);
+    cancel = new QPushButton( tr( "Cancel" ), this);
     hbox1->addWidget(ok);
     hbox1->addWidget(cancel);
     vl->addLayout(hbox1);
@@ -352,7 +352,7 @@ SchedDialog::SchedDialog(int policy, int prio) : QDialog()
     out_prio = prio;
 
     QHBoxLayout *hbox = new QHBoxLayout;
-    lbl = new QLabel("Priority (1-99):", this);
+    lbl = new QLabel( tr( "Priority (1-99):" ), this);
     lined = new QLineEdit(this);
     hbox->addWidget(lbl);
     hbox->addWidget(lined);
@@ -384,8 +384,9 @@ void SchedDialog::done_dialog()
     out_prio = s.toInt(&ok);
     if (out_policy != SCHED_OTHER && (!ok || out_prio < 1 || out_prio > 99))
     {
-        QMessageBox::warning(this, "Invalid Input",
-                             "The priority must be in the range 1..99");
+        QMessageBox::warning( this
+                            , tr( "Invalid Input" )
+                            , tr( "The priority must be in the range 1..99" ) );
     }
     else
         accept();

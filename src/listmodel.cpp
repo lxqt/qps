@@ -63,9 +63,9 @@ QVariant ListModel::headerData(int section, Qt::Orientation orientation,
     if (role == Qt::DisplayRole)
     {
         if (section == 0)
-            return QString("Event Category");
+            return QString(tr( "Event Category" ) );
         if (section == 1)
-            return QString("Enable");
+            return QString( tr( "Enable" ) );
     }
     /*
     if (role == Qt::FontRole)

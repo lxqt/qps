@@ -29,14 +29,12 @@
 #include "qps.h" // static flag
 Details::Details(Procinfo *p, Proc *proc) : QWidget(0)
 {
-    QString cap;
     pi = p;
     pi->detail = this;
     pr = proc;
     //	printf("pi=%x\n",pi);
-    cap.sprintf("Process %d ( %s ) - details", pi->pid,
-                qPrintable(pi->command));
-    setWindowTitle(cap);
+    setWindowTitle( tr( "Process %1 ( %2 ) - details" ).arg( pi->pid )
+                                                       .arg( pi->command ) );
 
     tbar = new QTabWidget(this);
     // tbar->setMargin(5);
@@ -44,7 +42,7 @@ Details::Details(Procinfo *p, Proc *proc) : QWidget(0)
     // if(pi->fd_files) //if(pi->fd_files->size())
     if (pi->read_fds())
     {
-        tbar->addTab(new Files(this), "&Files");
+        tbar->addTab(new Files(this),  tr( "Files" ) );
 
 //	if(pi->read_fds()) // create sock_inodes
 #ifdef LINUX
@@ -53,15 +51,15 @@ Details::Details(Procinfo *p, Proc *proc) : QWidget(0)
         // no socket pane  show in Detail dialog.
         // Procinfo::read_sockets();
         if (pi->sock_inodes.size() != 0)
-            tbar->addTab(new Sockets(this), "&Sockets");
+            tbar->addTab(new Sockets(this),  tr( "Sockets" ) );
 #endif
     }
 
     if (pi->read_maps())
-        tbar->addTab(new Maps(this), "&Memory Maps");
+        tbar->addTab(new Maps(this),  tr( "Memory Maps" ) );
     if (pi->read_environ())
-        tbar->addTab(new Environ(this), "&Environment");
-    tbar->addTab(new AllFields(this), "&All Fields");
+        tbar->addTab(new Environ(this),  tr( "Environment" ) );
+    tbar->addTab(new AllFields(this),  tr( "All Fields" ) );
 
     tbar->adjustSize();
     QSize s0 = tbar->sizeHint();
@@ -148,18 +146,21 @@ bool Sockets::have_services = false;
 QHash<int, char *> Sockets::servdict;
 Lookup *Sockets::lookup = 0;
 
-TableField Sockets::fields[] = {
-    {"Fd", 5, 8, Qt::AlignRight, "File descriptor"},
-    {"Proto", 4, 8, Qt::AlignLeft, "Protocol (TCP or UDP)"},
-    {"Recv-Q", 9, 8, Qt::AlignRight, "Bytes in receive queue"},
-    {"Send-Q", 9, 8, Qt::AlignRight, "Bytes in send queue"},
-    {"Local Addr", -1, 8, Qt::AlignLeft, "Local IP address"},
-    {"Port", 6, 8, Qt::AlignLeft, "Local port"},
-    {"Remote Addr", -1, 8, Qt::AlignLeft, "Remote IP address"},
-    {"Port", 6, 8, Qt::AlignLeft, "Remote port"},
-    {"State", 18, 8, Qt::AlignLeft, "Connection state"}};
+TableField *Sockets::fields()
+{
+    static QVector< TableField > fields( { { tr( "Fd" ), 5, 8, Qt::AlignRight, tr( "File descriptor" ) }
+                                         , { tr( "Proto" ), 4, 8, Qt::AlignLeft, tr( "Protocol (TCP or UDP)" ) }
+                                         , { tr( "Recv-Q" ), 9, 8, Qt::AlignRight, tr( "Bytes in receive queue" ) }
+                                         , { tr( "Send-Q" ), 9, 8, Qt::AlignRight, tr( "Bytes in send queue" ) }
+                                         , { tr( "Local Addr" ), -1, 8, Qt::AlignLeft, tr( "Local IP address" ) }
+                                         , { tr( "Port" ), 6, 8, Qt::AlignLeft, tr( "Local port" ) }
+                                         , { tr( "Remote Addr" ), -1, 8, Qt::AlignLeft, tr( "Remote IP address" ) }
+                                         , { tr( "Port" ), 6, 8, Qt::AlignLeft, tr( "Remote port" ) }
+                                         , { tr( "State" ), 18, 8, Qt::AlignLeft, tr( "Connection state" ) } } );
+    return fields.data();
+}
 
-Sockets::Sockets(QWidget *parent) : SimpleTable(parent, SOCKFIELDS, fields)
+Sockets::Sockets(QWidget *parent) : SimpleTable(parent, SOCKFIELDS, fields() )
 {
     if (!lookup)
         lookup = new Lookup();
@@ -390,18 +391,20 @@ Sockets::~Sockets() {}
 void Sockets::update_hostname(unsigned int) {}
 
 #endif
-
-TableField Maps::fields[] = {
-    {"Address Range", -1, 8, Qt::AlignLeft, "Mapped addresses (hex)"},
-    {"Size", 8, 8, Qt::AlignRight, "Kbytes mapped (dec)"},
-    {"Perm", 5, 8, Qt::AlignLeft, "Permission flags"},
-    {"Offset", -1, 8, Qt::AlignRight, "File offset at start of mapping (hex)"},
-    {"Device", 8, 8, Qt::AlignLeft, "Major,Minor device numbers (dec)"},
-    {"Inode", 10, 8, Qt::AlignRight, "Inode number (dec)"},
-    {"File", -9, 8, Qt::AlignLeft, "File name (if available)"}};
+TableField *Maps::fields()
+{
+    static QVector< TableField > fields( { { tr( "Address Range" ), -1, 8, Qt::AlignLeft, tr( "Mapped addresses (hex) )" ) }
+                                         , { tr( "Size" ), 8, 8, Qt::AlignRight, tr( "Kbytes mapped (dec)" ) }
+                                         , { tr( "Perm" ), 5, 8, Qt::AlignLeft, tr( "Permission flags" ) }
+                                         , { tr( "Offset" ), -1, 8, Qt::AlignRight, tr( "File offset at start of mapping (hex)" ) }
+                                         , { tr( "Device" ), 8, 8, Qt::AlignLeft, tr( "Major,Minor device numbers (dec)" ) }
+                                         , { tr( "Inode" ), 10, 8, Qt::AlignRight, tr( "Inode number (dec)" ) }
+                                         , { tr( "File" ), -9, 8, Qt::AlignLeft, tr( "File name (if available)" ) } } );
+    return fields.data();
+}
 
 // memory leak
-Maps::Maps(QWidget *parent) : SimpleTable(parent, MAPSFIELDS, fields)
+Maps::Maps(QWidget *parent) : SimpleTable(parent, MAPSFIELDS, fields() )
 {
     // monospaced font looks best in the table body since it contains
     // hex numerals and flag fields. Pick Courier (why not)
@@ -517,14 +520,17 @@ void Maps::refresh()
 
 bool Maps::refresh_maps() { return procinfo()->read_maps(); }
 
-TableField Files::fields[] = {
-    {"Fd", 5, 8, Qt::AlignRight, "File descriptor"},
+TableField *Files::fields()
+{
+    static QVector< TableField > fields( { { tr( "Fd" ), 5, 8, Qt::AlignRight, tr( "File descriptor" ) }
 #ifdef LINUX
-    {"Mode", 3, 8, Qt::AlignLeft, "Open mode"},
+                                         , { tr( "Mode" ), 3, 8, Qt::AlignLeft, tr( "Open mode" ) }
 #endif
-    {"Name", -1, 8, Qt::AlignLeft, "File name (if available)"}};
+                                         , { tr( "Name" ), -1, 8, Qt::AlignLeft, tr( "File name (if available)" )} } );
+    return fields.data();
+}
 
-Files::Files(QWidget *parent) : SimpleTable(parent, FILEFIELDS, fields)
+Files::Files(QWidget *parent) : SimpleTable(parent, FILEFIELDS, fields() )
 {
     // compute total width = window width
     refresh_window();
@@ -598,13 +604,16 @@ QString Files::text(int row, int col)
     return s;
 }
 
-TableField Environ::fields[] = {
-    {"Variable", -1, 8, Qt::AlignLeft, "Variable name"},
-    {"Value", -1, 8, Qt::AlignLeft, "Variable value"}};
+TableField *Environ::fields()
+{
+    static QVector< TableField > fields( { { tr( "Variable" ), -1, 8, Qt::AlignLeft, tr( "Variable name" ) }
+                                       , { tr( "Value" ), -1, 8, Qt::AlignLeft, tr( "Variable value" ) } } );
+    return fields.data();
+}
 
 Environ *Environ::static_env = 0;
 Environ::Environ(QWidget *parent)
-    : SimpleTable(parent, ENVFIELDS, fields), rev(false)
+    : SimpleTable(parent, ENVFIELDS, fields() ), rev(false)
 {
     connect(this, SIGNAL(titleClicked(int)), SLOT(sort_change(int)));
     refresh();
@@ -684,13 +693,17 @@ int Environ::compare(const NameValue *a, const NameValue *b)
     return e->rev ? -r : r;
 }
 
-TableField AllFields::fields[] = {
-    {"Field", -1, 8, Qt::AlignLeft, "Field name"},
-    {"Description", -1, 8, Qt::AlignLeft, "Field description"},
-    {"Value", -1, 8, Qt::AlignLeft, "Field value"}};
+TableField *AllFields::fields()
+{
+    static QVector< TableField > fields( { { tr( "Field" ), -1, 8, Qt::AlignLeft, tr( "Field name" ) }
+                                         , { tr( "Description" ), -1, 8, Qt::AlignLeft, tr( "Field description" ) }
+                                         , { tr( "Value" ), -1, 8, Qt::AlignLeft, tr( "Field value" ) } } );
+    return fields.data();
+}
+
 
 AllFields::AllFields(QWidget *parent)
-    : SimpleTable(parent, FIELDSFIELDS, fields)
+    : SimpleTable(parent, FIELDSFIELDS, fields() )
 {
     refresh();
     // compute total width = window width

@@ -39,6 +39,7 @@ class ListModel;
 
 class Command
 {
+  Q_DECLARE_TR_FUNCTIONS(Command)
   public:
     Command(){};
     Command(QString n, QString cmd, bool toolbar = false);
