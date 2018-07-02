@@ -31,7 +31,7 @@ FieldSelect::FieldSelect(Procview *pv)
     int half = (nbuttons + 1) / 2;
     updating = false;
 
-    setWindowTitle("Select Custom Fields ");
+    setWindowTitle(tr( "Select Custom Fields " ) );
     QBoxLayout *v_layout = new QVBoxLayout;
     setLayout(v_layout);
 
@@ -65,7 +65,7 @@ FieldSelect::FieldSelect(Procview *pv)
     }
     update_boxes();
 
-    QPushButton *closebut = new QPushButton("Close", this);
+    QPushButton *closebut = new QPushButton( tr( "Close" ), this);
     connect(closebut, SIGNAL(clicked()), SLOT(closed()));
     closebut->setFocus();
 
@@ -82,7 +82,7 @@ void FieldSelect::field_toggled(bool)
 
     for (int i = 0; i < nbuttons; i++)
     {
-        Category *cat = procview->cat_by_name(buts[i]->text().toLatin1());
+        Category *cat = procview->cat_by_name(buts[i]->text());
 
         if (buts[i]->isChecked() != disp_fields.testBit(cat->id))
         {
@@ -116,7 +116,7 @@ void FieldSelect::update_boxes()
     updating = true;
     for (int i = 0; i < nbuttons; i++)
     {
-        Category *cat = procview->cat_by_name(buts[i]->text().toLatin1());
+        Category *cat = procview->cat_by_name(buts[i]->text());
         buts[i]->setChecked(disp_fields.testBit(cat->id));
     }
     updating = false;

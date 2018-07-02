@@ -44,7 +44,7 @@ extern QList<Command *> commands;
 
 CommandDialog::CommandDialog()
 {
-    setWindowTitle("Edit Commands 0.1 alpha");
+    setWindowTitle( tr( "Edit Commands 0.1 alpha" ) );
     // setWindowFlags(Qt::WindowStaysOnTopHint);
 
     QHBoxLayout *hbox = new QHBoxLayout(this); // TOP
@@ -60,7 +60,7 @@ CommandDialog::CommandDialog()
 
     QHBoxLayout *h1 = new QHBoxLayout;
     vbox->addLayout(h1);
-    QLabel *l1 = new QLabel("Name:", this);
+    QLabel *l1 = new QLabel( tr( "Name:" ), this);
     h1->addWidget(l1);
     name = new QLineEdit(this);
     name->setMinimumWidth(170);
@@ -76,12 +76,12 @@ CommandDialog::CommandDialog()
     if (0)
     {
         qcheck2 = new QCheckBox(this);
-        qcheck2->setText("Popup");
+        qcheck2->setText( tr( "Popup" ) );
         qcheck2->setEnabled(false);
         hbox2->addWidget(qcheck2);
     }
 
-    QLabel *l2 = new QLabel("Command Line:", this);
+    QLabel *l2 = new QLabel( tr( "Command Line:" ), this);
     l2->setFixedHeight(l2->sizeHint().height());
     l2->setAlignment(Qt::AlignVCenter | Qt::AlignLeft);
     vbox->addWidget(l2);
@@ -92,11 +92,11 @@ CommandDialog::CommandDialog()
     cmdline->setText("");
     vbox->addWidget(cmdline);
 
-    QLabel *l3 = new QLabel("Substitutions:\n"
-                            "%p\tPID\n"
-                            "%c\tCOMMAND\n%C\tCMDLINE\n%u\tUSER\n"
-                            "%%\t%\n"
-                            "\n",
+    QLabel *l3 = new QLabel( tr( "Substitutions:\n"
+                                 "%p\tPID\n"
+                                 "%c\tCOMMAND\n%C\tCMDLINE\n%u\tUSER\n"
+                                 "%%\t%\n"
+                                 "\n" ),
                             this);
 
     l3->setFrameStyle(QFrame::Panel);
@@ -106,13 +106,13 @@ CommandDialog::CommandDialog()
 
     QHBoxLayout *hl = new QHBoxLayout;
     vbox->addLayout(hl);
-    new0 = new QPushButton("New...", this);
+    new0 = new QPushButton( tr( "New..." ), this);
     hl->addWidget(new0);
-    add = new QPushButton("Add...", this);
+    add = new QPushButton( tr( "Add..." ), this);
     hl->addWidget(add);
-    del = new QPushButton("Delete", this);
+    del = new QPushButton( tr( "Delete" ), this);
     hl->addWidget(del);
-    button_ok = new QPushButton("Close", this);
+    button_ok = new QPushButton( tr( "Close" ), this);
     hl->addWidget(button_ok);
 
     connect(listview, SIGNAL(clicked(const QModelIndex &)),
@@ -226,7 +226,7 @@ void CommandDialog::reset()
     listview->reset();
     name->setText("");
     cmdline->setText("");
-    add->setText("Add...");
+    add->setText( tr( "Add..." ) );
     add->setEnabled(0);
     button_ok->setEnabled(1);
     listview->clearSelection();

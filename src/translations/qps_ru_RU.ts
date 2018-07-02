@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="ru_RU">
 <context>
     <name>AllFields</name>
     <message>
@@ -1228,7 +1228,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="207"/>
         <source>Custom Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Заданные поля</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="209"/>
@@ -1253,7 +1253,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="222"/>
         <source>Select Custom Fields...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Выбор заданных полей...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="236"/>

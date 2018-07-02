@@ -206,14 +206,17 @@ void Command::call(Procinfo *p)
 
     if (ret)
     {
-        msg = "The command:\n\n";
+        msg = tr( "The command:\n\n" );
         msg.append(s);
         if (ret == -1)
         {
-            msg.append("\n\nfailed with the error:\n\n");
-            const char *e =
-                (errno == EAGAIN) ? "Too many processes" : strerror(errno);
-            msg.append(e ? e : "Unknown error");
+            msg.append( tr( "\n\nfailed with the error:\n\n" ) );
+            const char *e = static_cast< const char * >( 0 );
+            msg.append( ( errno == EAGAIN )
+                        ? tr( "Too many processes" )
+                        : ( ( e = strerror( errno ) ) )
+                          ? QString::fromLocal8Bit( e )
+                          : tr( "Unknown error" ) );
         }
         else if (ret & 0xff)
         {
@@ -223,16 +226,16 @@ void Command::call(Procinfo *p)
         }
         else if (ret == 0x7f00)
         {
-            msg.append("\n\ncould not be executed because it was not "
-                       "found,\nor you did not have execute permission.");
+            msg.append( tr( "\n\ncould not be executed because it was not "
+                            "found,\nor you did not have execute permission." ) );
         }
         else
         {
-            msg.append("\n\nexited with status ");
+            msg.append( tr( "\n\nexited with status " ) );
             msg.append(QString().setNum(ret >> 8));
             msg.append(".");
         }
-        QMessageBox::warning(0, "Command Failed", msg);
+        QMessageBox::warning(0, tr( "Command Failed" ), msg);
     }
 }
 
