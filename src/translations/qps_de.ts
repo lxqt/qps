@@ -111,7 +111,7 @@ failed with the error:
     <message>
         <location filename="../command.cpp" line="216"/>
         <source>Too many processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Zu viele Prozesse</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="219"/>
