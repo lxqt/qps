@@ -6,22 +6,22 @@
     <message>
         <location filename="../misc.cpp" line="925"/>
         <source>Linear</source>
-        <translation type="unfinished"></translation>
+        <translation>Linijinis</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="928"/>
         <source>Tree</source>
-        <translation type="unfinished"></translation>
+        <translation>Medis</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="949"/>
         <source>All Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Visi procesai</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="950"/>
         <source>Your Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Jūsų procesai</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="951"/>
@@ -154,7 +154,7 @@
     <message>
         <location filename="../execwindow.cpp" line="99"/>
         <source>Close</source>
-        <translation type="unfinished">Užverti</translation>
+        <translation>Užverti</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="105"/>
