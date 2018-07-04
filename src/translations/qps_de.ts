@@ -6,32 +6,32 @@
     <message>
         <location filename="../details.cpp" line="698"/>
         <source>Field</source>
-        <translation type="unfinished"></translation>
+        <translation>Feld</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="698"/>
         <source>Field name</source>
-        <translation type="unfinished"></translation>
+        <translation>Feldname</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="699"/>
         <source>Description</source>
-        <translation type="unfinished"></translation>
+        <translation>Beschreibung</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="699"/>
         <source>Field description</source>
-        <translation type="unfinished"></translation>
+        <translation>Feldbeschreibung</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="700"/>
         <source>Value</source>
-        <translation type="unfinished"></translation>
+        <translation>Wert</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="700"/>
         <source>Field value</source>
-        <translation type="unfinished"></translation>
+        <translation>Feldwert</translation>
     </message>
 </context>
 <context>
@@ -87,7 +87,7 @@
     <message>
         <location filename="../prefs.cpp" line="117"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Allgemeines</translation>
     </message>
 </context>
 <context>
