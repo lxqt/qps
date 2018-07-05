@@ -497,7 +497,7 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="148"/>
         <source>Invalid value</source>
-        <translation>Üngültiger Wert</translation>
+        <translation>Ungültiger Wert</translation>
     </message>
 </context>
 <context>
