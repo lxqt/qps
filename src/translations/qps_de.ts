@@ -309,7 +309,7 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="170"/>
         <source>labelDescrition</source>
-        <translation></translation>
+        <translation>Etikettbezeichnung</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="193"/>
@@ -339,7 +339,7 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="309"/>
         <source>run command</source>
-        <translation>starte Befehl</translation>
+        <translation>Befehl ausführen</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="342"/>
@@ -1439,7 +1439,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1210"/>
         <source>Quit</source>
-        <translation type="unfinished">Beenden</translation>
+        <translation>Beenden</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1590"/>
