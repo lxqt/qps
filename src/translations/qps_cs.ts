@@ -6,32 +6,32 @@
     <message>
         <location filename="../details.cpp" line="698"/>
         <source>Field</source>
-        <translation></translation>
+        <translation>Kolonka</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="698"/>
         <source>Field name</source>
-        <translation></translation>
+        <translation>Název kolonky</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="699"/>
         <source>Description</source>
-        <translation></translation>
+        <translation>Popis</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="699"/>
         <source>Field description</source>
-        <translation></translation>
+        <translation>Popis kolonky</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="700"/>
         <source>Value</source>
-        <translation></translation>
+        <translation>Hodnota</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="700"/>
         <source>Field value</source>
-        <translation></translation>
+        <translation>Hodnota v kolonce</translation>
     </message>
 </context>
 <context>
@@ -39,7 +39,7 @@
     <message>
         <location filename="../prefs.cpp" line="61"/>
         <source>Exit On Close Button</source>
-        <translation></translation>
+        <translation>Při kliknutí na tlačítko zavření ukončit</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="79"/>
@@ -64,7 +64,7 @@
     <message>
         <location filename="../prefs.cpp" line="93"/>
         <source>Auto Save Settings on Exit</source>
-        <translation></translation>
+        <translation>Při ukončování automaticky uložit nastavení</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="94"/>
@@ -87,7 +87,7 @@
     <message>
         <location filename="../prefs.cpp" line="117"/>
         <source>General</source>
-        <translation></translation>
+        <translation>Obecné</translation>
     </message>
 </context>
 <context>
@@ -97,7 +97,9 @@
         <source>The command:
 
 </source>
-        <translation></translation>
+        <translation>Příkaz:
+
+</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="213"/>
@@ -106,17 +108,21 @@
 failed with the error:
 
 </source>
-        <translation></translation>
+        <translation>
+
+nezdařilo se s chybou:
+
+</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="216"/>
         <source>Too many processes</source>
-        <translation></translation>
+        <translation>Příliš mnoho procesů</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="219"/>
         <source>Unknown error</source>
-        <translation></translation>
+        <translation>Neznámá chyba</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="229"/>
@@ -131,12 +137,14 @@ or you did not have execute permission.</source>
         <source>
 
 exited with status </source>
-        <translation></translation>
+        <translation>
+
+skončilo se stavem </translation>
     </message>
     <message>
         <location filename="../command.cpp" line="238"/>
         <source>Command Failed</source>
-        <translation></translation>
+        <translation>Příkaz se nezdařil</translation>
     </message>
 </context>
 <context>
@@ -149,7 +157,7 @@ exited with status </source>
     <message>
         <location filename="../commanddialog.cpp" line="63"/>
         <source>Name:</source>
-        <translation></translation>
+        <translation>Název:</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="79"/>
@@ -159,7 +167,7 @@ exited with status </source>
     <message>
         <location filename="../commanddialog.cpp" line="84"/>
         <source>Command Line:</source>
-        <translation></translation>
+        <translation>Příkazový řádek:</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="95"/>
@@ -171,28 +179,35 @@ exited with status </source>
 %%	%
 
 </source>
-        <translation></translation>
+        <translation>Dosazování:
+%p	PID
+%c	COMMAND
+%C	CMDLINE
+%u	USER
+%%	%
+
+</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="109"/>
         <source>New...</source>
-        <translation></translation>
+        <translation>Nové…</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="111"/>
         <location filename="../commanddialog.cpp" line="229"/>
         <source>Add...</source>
-        <translation></translation>
+        <translation>Přidat…</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="113"/>
         <source>Delete</source>
-        <translation></translation>
+        <translation>Smazat</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="115"/>
         <source>Close</source>
-        <translation></translation>
+        <translation>Zavřít</translation>
     </message>
 </context>
 <context>
@@ -210,12 +225,12 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="949"/>
         <source>All Processes</source>
-        <translation></translation>
+        <translation>Všechny procesy</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="950"/>
         <source>Your Processes</source>
-        <translation></translation>
+        <translation>Vaše procesy</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="951"/>
@@ -225,12 +240,12 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="952"/>
         <source>Running Processes</source>
-        <translation></translation>
+        <translation>Spuštěné procesy</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="984"/>
         <source>Pause (Ctrl+Space)</source>
-        <translation></translation>
+        <translation>Pozastavit (Ctrl+mezerník)</translation>
     </message>
 </context>
 <context>
@@ -238,12 +253,12 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="36"/>
         <source>Process %1 ( %2 ) - details</source>
-        <translation></translation>
+        <translation>Proces %1 ( %2 ) – podrobnosti</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="45"/>
         <source>Files</source>
-        <translation></translation>
+        <translation>Soubory</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="54"/>
@@ -258,12 +273,12 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="61"/>
         <source>Environment</source>
-        <translation></translation>
+        <translation>Prostředí</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="62"/>
         <source>All Fields</source>
-        <translation></translation>
+        <translation>Všechny kolonky</translation>
     </message>
 </context>
 <context>
@@ -271,22 +286,22 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="609"/>
         <source>Variable</source>
-        <translation></translation>
+        <translation>Proměnná</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="609"/>
         <source>Variable name</source>
-        <translation></translation>
+        <translation>Název proměnné</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="610"/>
         <source>Value</source>
-        <translation></translation>
+        <translation>Hodnota</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="610"/>
         <source>Variable value</source>
-        <translation></translation>
+        <translation>Hodnota proměnné</translation>
     </message>
 </context>
 <context>
@@ -304,7 +319,7 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="162"/>
         <source>Select condition</source>
-        <translation></translation>
+        <translation>Vybrat podmínku</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="170"/>
@@ -314,12 +329,12 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="193"/>
         <source>Enable</source>
-        <translation></translation>
+        <translation>Zapnout</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="219"/>
         <source>process name</source>
-        <translation></translation>
+        <translation>název procesu</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="229"/>
@@ -334,12 +349,12 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="280"/>
         <source>include already running process</source>
-        <translation></translation>
+        <translation>zahrnout už spuštěný proces</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="309"/>
         <source>run command</source>
-        <translation></translation>
+        <translation>spustit příkaz</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="342"/>
@@ -360,22 +375,22 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="425"/>
         <source>New</source>
-        <translation></translation>
+        <translation>Nový</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="432"/>
         <source>Add</source>
-        <translation></translation>
+        <translation>Přidat</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="439"/>
         <source>Delete</source>
-        <translation></translation>
+        <translation>Smazat</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="446"/>
         <source>Close</source>
-        <translation></translation>
+        <translation>Zavřít</translation>
     </message>
 </context>
 <context>
@@ -403,17 +418,17 @@ exited with status </source>
     <message>
         <location filename="../execwindow.cpp" line="99"/>
         <source>Close</source>
-        <translation></translation>
+        <translation>Zavřít</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="105"/>
         <source>%1 [running]</source>
-        <translation></translation>
+        <translation>%1 [spuštěné]</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="106"/>
         <source>terminate command</source>
-        <translation></translation>
+        <translation>ukončit příkaz</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="115"/>
@@ -431,7 +446,7 @@ exited with status </source>
     <message>
         <location filename="../fieldsel.cpp" line="68"/>
         <source>Close</source>
-        <translation></translation>
+        <translation>Zavřít</translation>
     </message>
 </context>
 <context>
@@ -449,7 +464,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="527"/>
         <source>Mode</source>
-        <translation></translation>
+        <translation>Režim</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="527"/>
@@ -459,12 +474,12 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="529"/>
         <source>Name</source>
-        <translation></translation>
+        <translation>Název</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="529"/>
         <source>File name (if available)</source>
-        <translation></translation>
+        <translation>Název souboru (pokud je k dispozici)</translation>
     </message>
 </context>
 <context>
@@ -482,7 +497,7 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="94"/>
         <source>Cancel</source>
-        <translation></translation>
+        <translation>Storno</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="96"/>
@@ -497,7 +512,7 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="148"/>
         <source>Invalid value</source>
-        <translation></translation>
+        <translation>Neplatná hodnota</translation>
     </message>
 </context>
 <context>
@@ -505,12 +520,12 @@ exited with status </source>
     <message>
         <location filename="../listmodel.cpp" line="66"/>
         <source>Event Category</source>
-        <translation></translation>
+        <translation>Kategorie události</translation>
     </message>
     <message>
         <location filename="../listmodel.cpp" line="68"/>
         <source>Enable</source>
-        <translation></translation>
+        <translation>Zapnout</translation>
     </message>
 </context>
 <context>
@@ -518,7 +533,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Address Range</source>
-        <translation></translation>
+        <translation>Adresní rozsah</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
@@ -528,7 +543,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Size</source>
-        <translation></translation>
+        <translation>Velikost</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
@@ -558,7 +573,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="400"/>
         <source>Device</source>
-        <translation></translation>
+        <translation>Zařízení</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="400"/>
@@ -578,7 +593,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="402"/>
         <source>File</source>
-        <translation></translation>
+        <translation>Soubor</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="402"/>
@@ -601,7 +616,7 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="289"/>
         <source>Cancel</source>
-        <translation></translation>
+        <translation>Storno</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="292"/>
@@ -614,12 +629,12 @@ exited with status </source>
     <message>
         <location filename="../prefs.cpp" line="166"/>
         <source>Preferences</source>
-        <translation></translation>
+        <translation>Předvolby</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="173"/>
         <source>Setting</source>
-        <translation></translation>
+        <translation>Nastavení</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="235"/>
@@ -639,17 +654,17 @@ exited with status </source>
     <message>
         <location filename="../prefs.cpp" line="249"/>
         <source>default</source>
-        <translation></translation>
+        <translation>výchozí</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="250"/>
         <source>for developer</source>
-        <translation></translation>
+        <translation>pro vývojáře</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="286"/>
         <source>Appearance</source>
-        <translation></translation>
+        <translation>Vzhled</translation>
     </message>
 </context>
 <context>
@@ -662,7 +677,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1894"/>
         <source>Process ID</source>
-        <translation></translation>
+        <translation>Identif. procesu</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1896"/>
@@ -702,7 +717,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1902"/>
         <source>Session ID</source>
-        <translation></translation>
+        <translation>Identif. sezení</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1904"/>
@@ -712,7 +727,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1904"/>
         <source>Terminal</source>
-        <translation></translation>
+        <translation>Terminál</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1906"/>
@@ -732,7 +747,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1908"/>
         <source>Owner (*=suid root, +=suid a user)</source>
-        <translation></translation>
+        <translation>Vlastník (*=suid root, +=suid a user)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1910"/>
@@ -832,7 +847,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1928"/>
         <source>Dynamic priority</source>
-        <translation></translation>
+        <translation>Dynamická priorita</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1930"/>
@@ -1042,7 +1057,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1971"/>
         <source>State of the process </source>
-        <translation></translation>
+        <translation>Stav procesu </translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1973"/>
@@ -1117,7 +1132,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1987"/>
         <source>CPU</source>
-        <translation></translation>
+        <translation>Procesor</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1987"/>
@@ -1127,12 +1142,12 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1989"/>
         <source>Process Name )</source>
-        <translation></translation>
+        <translation>Název procesu )</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1989"/>
         <source>the process name</source>
-        <translation></translation>
+        <translation>název procesu</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1993"/>
@@ -1142,7 +1157,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1993"/>
         <source>Current working directory</source>
-        <translation></translation>
+        <translation>Stávající pracovní složka</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1994"/>
@@ -1175,17 +1190,17 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="2218"/>
         <source>Hide</source>
-        <translation></translation>
+        <translation>Skrýt</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2224"/>
         <source>ScreenShot</source>
-        <translation></translation>
+        <translation>Snímek obrazovky</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2229"/>
         <source>Quit</source>
-        <translation></translation>
+        <translation>Ukončit</translation>
     </message>
 </context>
 <context>
@@ -1198,17 +1213,17 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="190"/>
         <source>Remove Field</source>
-        <translation></translation>
+        <translation>Odebrat kolonku</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="191"/>
         <source>Add Field</source>
-        <translation></translation>
+        <translation>Přidat kolonku</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="197"/>
         <source>Command</source>
-        <translation></translation>
+        <translation>Příkaz</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="201"/>
@@ -1273,12 +1288,12 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="255"/>
         <source>Preferences...</source>
-        <translation></translation>
+        <translation>Předvolby…</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="261"/>
         <source>Help</source>
-        <translation></translation>
+        <translation>Nápověda</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="263"/>
@@ -1289,7 +1304,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="354"/>
         <source>Detail</source>
-        <translation></translation>
+        <translation>Podrobnosti</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="395"/>
@@ -1299,7 +1314,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="396"/>
         <source>Copied to Clipboard</source>
-        <translation></translation>
+        <translation>Zkopírováno do schránky</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="505"/>
@@ -1319,7 +1334,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="509"/>
         <source>Terminate</source>
-        <translation></translation>
+        <translation>Ukončit</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="511"/>
@@ -1329,17 +1344,17 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="512"/>
         <source>Kill</source>
-        <translation></translation>
+        <translation>Vynutit ukončení (kill)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="513"/>
         <source>Stop</source>
-        <translation></translation>
+        <translation>Zastavit</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="515"/>
         <source>Continue</source>
-        <translation></translation>
+        <translation>Pokračovat</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="528"/>
@@ -1424,7 +1439,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="565"/>
         <source>View Details</source>
-        <translation></translation>
+        <translation>Zobrazit podrobnosti</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1181"/>
@@ -1434,12 +1449,12 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1185"/>
         <source>Edit Commands...</source>
-        <translation></translation>
+        <translation>Upravit příkazy…</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1210"/>
         <source>Quit</source>
-        <translation></translation>
+        <translation>Ukončit</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1590"/>
@@ -1449,7 +1464,7 @@ exited with status </source>
         <location filename="../qps.cpp" line="1694"/>
         <location filename="../qps.cpp" line="1773"/>
         <source>Permission denied</source>
-        <translation></translation>
+        <translation>Přístup odepřen</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1591"/>
@@ -1532,7 +1547,7 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="325"/>
         <source>Cancel</source>
-        <translation></translation>
+        <translation>Storno</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="355"/>
@@ -1560,7 +1575,7 @@ exited with status </source>
     <message>
         <location filename="../screenshot.cpp" line="299"/>
         <source>Save As</source>
-        <translation></translation>
+        <translation>Uložit jako</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="300"/>
@@ -1585,17 +1600,17 @@ exited with status </source>
     <message>
         <location filename="../screenshot.cpp" line="337"/>
         <source>Hide This Window</source>
-        <translation></translation>
+        <translation>Skrýt toto okno</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="349"/>
         <source>New Screenshot</source>
-        <translation></translation>
+        <translation>Nový snímek obrazovky</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="350"/>
         <source>Quit</source>
-        <translation></translation>
+        <translation>Ukončit</translation>
     </message>
 </context>
 <context>
@@ -1611,7 +1626,7 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="188"/>
         <source>Renice Process</source>
-        <translation></translation>
+        <translation>Změnit prioritu (nice) procesu</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="194"/>
@@ -1621,7 +1636,7 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="234"/>
         <source>Cancel</source>
-        <translation></translation>
+        <translation>Storno</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="238"/>
@@ -1700,7 +1715,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="157"/>
         <source>Remote IP address</source>
-        <translation></translation>
+        <translation>IP adresa protějšku</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="158"/>
@@ -1710,12 +1725,12 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="159"/>
         <source>State</source>
-        <translation></translation>
+        <translation>Stav</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="159"/>
         <source>Connection state</source>
-        <translation></translation>
+        <translation>Stav spojení</translation>
     </message>
 </context>
 <context>
