@@ -458,22 +458,22 @@
     <message>
         <location filename="../qps.cpp" line="1695"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
-        <translation type="unfinished"></translation>
+        <translation>אין לך הרשאות לשנות את התזמון ו/או העדיפות של התהליך %1 (%2). רק משתמש העל יכול לעשות זאת.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1774"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
-        <translation type="unfinished"></translation>
+        <translation>אין לך הרשאות לשלוח אות לתהליך %1 (%2). רק משתמש העל והבעלים של התהליך יכולים לשלוח אליו אותות.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2311"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;h2&gt; Qps %1 - מנהל תהליכים חזותי &lt;/h2&gt; %2 משתמש בספריית Qt %3&lt;br&gt;&lt;br&gt;&lt;b&gt;מקור: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;עוקב תקלות: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2331"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;ה־Qps המקורי נוצר על ידי&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;תורמים&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2373"/>
@@ -506,7 +506,7 @@
     <message>
         <location filename="../screenshot.cpp" line="330"/>
         <source> s</source>
-        <translation></translation>
+        <translation> שנ׳</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="335"/>
@@ -536,7 +536,9 @@
         <source>The command:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>הפקודה:
+
+</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="213"/>
@@ -545,17 +547,21 @@
 failed with the error:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>
+
+נכשל עם השגיאה:
+
+</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="216"/>
         <source>Too many processes</source>
-        <translation type="unfinished"></translation>
+        <translation>יותר מדי תהליכים</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="219"/>
         <source>Unknown error</source>
-        <translation type="unfinished"></translation>
+        <translation>שגיאה לא ידועה</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="229"/>
@@ -583,22 +589,22 @@ exited with status </source>
     <message>
         <location filename="../commanddialog.cpp" line="47"/>
         <source>Edit Commands 0.1 alpha</source>
-        <translation type="unfinished"></translation>
+        <translation>עריכת פקודות 0.1 אלפא</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="63"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>שם:</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="79"/>
         <source>Popup</source>
-        <translation type="unfinished"></translation>
+        <translation>חלון מוקפץ</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="84"/>
         <source>Command Line:</source>
-        <translation type="unfinished"></translation>
+        <translation>שורת פקודה:</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="95"/>
@@ -610,18 +616,25 @@ exited with status </source>
 %%	%
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>החלפות:
+%p	מזהה תהליך
+%c	פקודה
+%C	שורת פקודה
+%u	משתמש
+%%	%
+
+</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="109"/>
         <source>New...</source>
-        <translation type="unfinished"></translation>
+        <translation>חדש…</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="111"/>
         <location filename="../commanddialog.cpp" line="229"/>
         <source>Add...</source>
-        <translation type="unfinished"></translation>
+        <translation>הוספה…</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="113"/>
@@ -639,32 +652,32 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="36"/>
         <source>Process %1 ( %2 ) - details</source>
-        <translation type="unfinished"></translation>
+        <translation>תהליך %1 ( %2 ) - פרטים</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="45"/>
         <source>Files</source>
-        <translation type="unfinished"></translation>
+        <translation>קבצים</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="54"/>
         <source>Sockets</source>
-        <translation type="unfinished"></translation>
+        <translation>שקעים</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="59"/>
         <source>Memory Maps</source>
-        <translation type="unfinished"></translation>
+        <translation>מפות זיכרון</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="61"/>
         <source>Environment</source>
-        <translation type="unfinished"></translation>
+        <translation>סביבה</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="62"/>
         <source>All Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>כל השדות</translation>
     </message>
 </context>
 <context>
@@ -682,78 +695,78 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="152"/>
         <source>Proto</source>
-        <translation type="unfinished"></translation>
+        <translation>פרוטו</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
         <source>Protocol (TCP or UDP)</source>
-        <translation type="unfinished"></translation>
+        <translation>פרוטוקול (TCP או UDP)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Recv-Q</source>
-        <translation type="unfinished"></translation>
+        <translation>תור נכנס</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Bytes in receive queue</source>
-        <translation type="unfinished"></translation>
+        <translation>בתים בתור הקבלה</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="154"/>
         <source>Send-Q</source>
-        <translation type="unfinished"></translation>
+        <translation>תור יוצא</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="154"/>
         <source>Bytes in send queue</source>
-        <translation type="unfinished"></translation>
+        <translation>בתים בתור השליחה</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>Local Addr</source>
-        <translation type="unfinished"></translation>
+        <translation>כת׳ מקומית</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>Local IP address</source>
-        <translation type="unfinished"></translation>
+        <translation>כתובת IP מקומית</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="156"/>
         <location filename="../details.cpp" line="158"/>
         <source>Port</source>
-        <translation type="unfinished"></translation>
+        <translation>פתחה</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="156"/>
         <source>Local port</source>
-        <translation type="unfinished"></translation>
+        <translation>פתחה מקומית</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="157"/>
         <source>Remote Addr</source>
-        <translation type="unfinished"></translation>
+        <translation>כת׳ מרוחקת</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="157"/>
         <source>Remote IP address</source>
-        <translation type="unfinished"></translation>
+        <translation>כתובת IP מרוחקת</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="158"/>
         <source>Remote port</source>
-        <translation type="unfinished"></translation>
+        <translation>פתחה מרוחקת</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="159"/>
         <source>State</source>
-        <translation type="unfinished"></translation>
+        <translation>מצב</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="159"/>
         <source>Connection state</source>
-        <translation type="unfinished"></translation>
+        <translation>מצב החיבור</translation>
     </message>
 </context>
 <context>
@@ -761,57 +774,57 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Address Range</source>
-        <translation type="unfinished"></translation>
+        <translation>טווח כתובות</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Mapped addresses (hex) )</source>
-        <translation type="unfinished"></translation>
+        <translation>כתובות ממופות (הקס)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Size</source>
-        <translation type="unfinished"></translation>
+        <translation>גודל</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Kbytes mapped (dec)</source>
-        <translation type="unfinished"></translation>
+        <translation>קילובתים ממופים (עשרוני)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>Perm</source>
-        <translation type="unfinished"></translation>
+        <translation>הרש׳</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>Permission flags</source>
-        <translation type="unfinished"></translation>
+        <translation>דגלוני הרשאה</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="399"/>
         <source>Offset</source>
-        <translation type="unfinished"></translation>
+        <translation>היסט</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="399"/>
         <source>File offset at start of mapping (hex)</source>
-        <translation type="unfinished"></translation>
+        <translation>היסט מהקובץ לתחילת המיפוי (הקס)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="400"/>
         <source>Device</source>
-        <translation type="unfinished"></translation>
+        <translation>התקן</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="400"/>
         <source>Major,Minor device numbers (dec)</source>
-        <translation type="unfinished"></translation>
+        <translation>מספרי התקנים עיקריים, משניים (עשרוני)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="401"/>
         <source>Inode</source>
-        <translation type="unfinished"></translation>
+        <translation>תא מפרק</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="401"/>
