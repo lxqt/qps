@@ -187,12 +187,12 @@ exited with status </source>
     <message>
         <location filename="../commanddialog.cpp" line="113"/>
         <source>Delete</source>
-        <translation type="unfinished">Slet</translation>
+        <translation>Slet</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="115"/>
         <source>Close</source>
-        <translation type="unfinished">Luk</translation>
+        <translation>Luk</translation>
     </message>
 </context>
 <context>
@@ -404,7 +404,7 @@ exited with status </source>
     <message>
         <location filename="../execwindow.cpp" line="99"/>
         <source>Close</source>
-        <translation type="unfinished">Luk</translation>
+        <translation>Luk</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="105"/>
@@ -432,7 +432,7 @@ exited with status </source>
     <message>
         <location filename="../fieldsel.cpp" line="68"/>
         <source>Close</source>
-        <translation type="unfinished">Luk</translation>
+        <translation>Luk</translation>
     </message>
 </context>
 <context>
@@ -511,7 +511,7 @@ exited with status </source>
     <message>
         <location filename="../listmodel.cpp" line="68"/>
         <source>Enable</source>
-        <translation type="unfinished">Aktivér</translation>
+        <translation>Aktivér</translation>
     </message>
 </context>
 <context>
@@ -1186,7 +1186,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="2229"/>
         <source>Quit</source>
-        <translation type="unfinished">Afslut</translation>
+        <translation>Afslut</translation>
     </message>
 </context>
 <context>
@@ -1440,7 +1440,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1210"/>
         <source>Quit</source>
-        <translation type="unfinished">Afslut</translation>
+        <translation>Afslut</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1590"/>
