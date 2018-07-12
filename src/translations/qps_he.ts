@@ -581,7 +581,7 @@ exited with status </source>
     <message>
         <location filename="../command.cpp" line="238"/>
         <source>Command Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>הפקודה נכשלה</translation>
     </message>
 </context>
 <context>
@@ -834,12 +834,12 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="402"/>
         <source>File</source>
-        <translation type="unfinished"></translation>
+        <translation>קובץ</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="402"/>
         <source>File name (if available)</source>
-        <translation type="unfinished"></translation>
+        <translation>שם קובץ (אם יש)</translation>
     </message>
 </context>
 <context>
@@ -857,7 +857,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="527"/>
         <source>Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>מצב</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="527"/>
@@ -867,12 +867,12 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="529"/>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>שם</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="529"/>
         <source>File name (if available)</source>
-        <translation type="unfinished"></translation>
+        <translation>שם קובץ (אם יש)</translation>
     </message>
 </context>
 <context>
@@ -880,22 +880,22 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="609"/>
         <source>Variable</source>
-        <translation type="unfinished"></translation>
+        <translation>משתנה</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="609"/>
         <source>Variable name</source>
-        <translation type="unfinished"></translation>
+        <translation>שם המשתנה</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="610"/>
         <source>Value</source>
-        <translation type="unfinished"></translation>
+        <translation>ערך</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="610"/>
         <source>Variable value</source>
-        <translation type="unfinished"></translation>
+        <translation>ערך המשתנה</translation>
     </message>
 </context>
 <context>
@@ -903,32 +903,32 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="698"/>
         <source>Field</source>
-        <translation type="unfinished"></translation>
+        <translation>שדה</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="698"/>
         <source>Field name</source>
-        <translation type="unfinished"></translation>
+        <translation>שם השדה</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="699"/>
         <source>Description</source>
-        <translation type="unfinished"></translation>
+        <translation>תיאור</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="699"/>
         <source>Field description</source>
-        <translation type="unfinished"></translation>
+        <translation>תיאור שדה</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="700"/>
         <source>Value</source>
-        <translation type="unfinished"></translation>
+        <translation>ערך</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="700"/>
         <source>Field value</source>
-        <translation type="unfinished"></translation>
+        <translation>ערך שדה</translation>
     </message>
 </context>
 <context>
@@ -936,32 +936,32 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="51"/>
         <source>Change Update Period</source>
-        <translation type="unfinished"></translation>
+        <translation>שינוי טווח עדכון</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="57"/>
         <source>New Update Period</source>
-        <translation type="unfinished"></translation>
+        <translation>טווח עדכון חדש</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="94"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>ביטול</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="96"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>אישור</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="130"/>
         <source>No UPDATE</source>
-        <translation type="unfinished"></translation>
+        <translation>אין עדכון</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="148"/>
         <source>Invalid value</source>
-        <translation type="unfinished"></translation>
+        <translation>ערך שגוי</translation>
     </message>
 </context>
 <context>
@@ -979,12 +979,12 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="234"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>ביטול</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="238"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>אישור</translation>
     </message>
 </context>
 <context>
@@ -992,22 +992,22 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="273"/>
         <source>Permission</source>
-        <translation type="unfinished"></translation>
+        <translation>הרשאה</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="282"/>
         <source>Root password</source>
-        <translation type="unfinished"></translation>
+        <translation>ססמת משתמש על</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="289"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>ביטול</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="292"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>אישור</translation>
     </message>
 </context>
 <context>
@@ -1015,12 +1015,12 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="301"/>
         <source>Change scheduling</source>
-        <translation type="unfinished"></translation>
+        <translation>החלפת תזמון</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="305"/>
         <source>Scheduling Policy</source>
-        <translation type="unfinished"></translation>
+        <translation>מדיניות תזמון</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="307"/>
