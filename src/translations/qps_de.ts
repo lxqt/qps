@@ -39,7 +39,7 @@
     <message>
         <location filename="../prefs.cpp" line="61"/>
         <source>Exit On Close Button</source>
-        <translation type="unfinished"></translation>
+        <translation>Beim Schließen des Hauptfensters Anwendung beenden</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="79"/>
