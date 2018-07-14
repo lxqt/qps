@@ -1160,12 +1160,12 @@ exited with status </source>
     <message>
         <location filename="../prefs.cpp" line="93"/>
         <source>Auto Save Settings on Exit</source>
-        <translation type="unfinished"></translation>
+        <translation>שמירת ההגדרות אוטומטית עם היציאה</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="94"/>
         <source>Selection: Copy PIDs to Clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>בחירה: העתקת מזהי תהליכים ללוח הגזירים</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="96"/>
@@ -1183,7 +1183,7 @@ exited with status </source>
     <message>
         <location filename="../prefs.cpp" line="117"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>כללי</translation>
     </message>
 </context>
 <context>
@@ -1191,12 +1191,12 @@ exited with status </source>
     <message>
         <location filename="../prefs.cpp" line="166"/>
         <source>Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>העדפות</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="173"/>
         <source>Setting</source>
-        <translation type="unfinished"></translation>
+        <translation>הגדרות</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="235"/>
@@ -1757,7 +1757,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="2224"/>
         <source>ScreenShot</source>
-        <translation type="unfinished"></translation>
+        <translation>צילום מסך</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2229"/>
@@ -1770,17 +1770,17 @@ exited with status </source>
     <message>
         <location filename="../watchdogdialog.cpp" line="193"/>
         <source>if process start</source>
-        <translation type="unfinished"></translation>
+        <translation>אם תהליך מתחיל</translation>
     </message>
     <message>
         <location filename="../watchdogdialog.cpp" line="194"/>
         <source>if process finish</source>
-        <translation type="unfinished"></translation>
+        <translation>אם תהליך מסתיים</translation>
     </message>
     <message>
         <location filename="../watchdogdialog.cpp" line="217"/>
         <source>select condition</source>
-        <translation type="unfinished"></translation>
+        <translation>בחירת תנאי</translation>
     </message>
 </context>
 </TS>
