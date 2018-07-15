@@ -6,12 +6,12 @@
     <message>
         <location filename="../details.cpp" line="698"/>
         <source>Field</source>
-        <translation></translation>
+        <translation>Champ</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="698"/>
         <source>Field name</source>
-        <translation></translation>
+        <translation>Nom du champ</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="699"/>
@@ -21,17 +21,17 @@
     <message>
         <location filename="../details.cpp" line="699"/>
         <source>Field description</source>
-        <translation></translation>
+        <translation>Champ de la description</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="700"/>
         <source>Value</source>
-        <translation></translation>
+        <translation>Valeur</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="700"/>
         <source>Field value</source>
-        <translation></translation>
+        <translation>Champ de la valeur</translation>
     </message>
 </context>
 <context>
@@ -39,7 +39,7 @@
     <message>
         <location filename="../prefs.cpp" line="61"/>
         <source>Exit On Close Button</source>
-        <translation></translation>
+        <translation>Quitter avec le bouton Fermer</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="79"/>
