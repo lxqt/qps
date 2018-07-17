@@ -21,17 +21,17 @@
     <message>
         <location filename="../details.cpp" line="699"/>
         <source>Field description</source>
-        <translation type="unfinished"></translation>
+        <translation>Feltbeskrivelse</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="700"/>
         <source>Value</source>
-        <translation type="unfinished"></translation>
+        <translation>Værdi</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="700"/>
         <source>Field value</source>
-        <translation type="unfinished"></translation>
+        <translation>Feltværdi</translation>
     </message>
 </context>
 <context>
@@ -59,7 +59,7 @@
     <message>
         <location filename="../prefs.cpp" line="87"/>
         <source>Branch Lines</source>
-        <translation type="unfinished"></translation>
+        <translation>Grenlinjer</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="93"/>
@@ -87,7 +87,7 @@
     <message>
         <location filename="../prefs.cpp" line="117"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Generelt</translation>
     </message>
 </context>
 <context>
@@ -97,7 +97,9 @@
         <source>The command:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Kommandoen:
+
+</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="213"/>
@@ -106,7 +108,11 @@
 failed with the error:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>
+
+mislykkede med fejlen:
+
+</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="216"/>
@@ -116,7 +122,7 @@ failed with the error:
     <message>
         <location filename="../command.cpp" line="219"/>
         <source>Unknown error</source>
-        <translation type="unfinished"></translation>
+        <translation>Ukendt fejl</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="229"/>
@@ -149,17 +155,17 @@ exited with status </source>
     <message>
         <location filename="../commanddialog.cpp" line="63"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Navn:</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="79"/>
         <source>Popup</source>
-        <translation type="unfinished"></translation>
+        <translation>Pop op</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="84"/>
         <source>Command Line:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kommandolinje:</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="95"/>
@@ -176,13 +182,13 @@ exited with status </source>
     <message>
         <location filename="../commanddialog.cpp" line="109"/>
         <source>New...</source>
-        <translation type="unfinished"></translation>
+        <translation>Ny...</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="111"/>
         <location filename="../commanddialog.cpp" line="229"/>
         <source>Add...</source>
-        <translation type="unfinished"></translation>
+        <translation>Tilføj...</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="113"/>
@@ -205,7 +211,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="928"/>
         <source>Tree</source>
-        <translation type="unfinished"></translation>
+        <translation>Træ</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="949"/>
@@ -243,12 +249,12 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="45"/>
         <source>Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Filer</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="54"/>
         <source>Sockets</source>
-        <translation type="unfinished"></translation>
+        <translation>Sokler</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="59"/>
@@ -258,12 +264,12 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="61"/>
         <source>Environment</source>
-        <translation type="unfinished"></translation>
+        <translation>Miljø</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="62"/>
         <source>All Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Alle felter</translation>
     </message>
 </context>
 <context>
@@ -271,22 +277,22 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="609"/>
         <source>Variable</source>
-        <translation type="unfinished"></translation>
+        <translation>Variabel</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="609"/>
         <source>Variable name</source>
-        <translation type="unfinished"></translation>
+        <translation>Variabelnavn</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="610"/>
         <source>Value</source>
-        <translation type="unfinished"></translation>
+        <translation>Værdi</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="610"/>
         <source>Variable value</source>
-        <translation type="unfinished"></translation>
+        <translation>Variabelværdi</translation>
     </message>
 </context>
 <context>
@@ -329,7 +335,7 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="248"/>
         <source>%</source>
-        <translation> %</translation>
+        <translation>%</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="280"/>
@@ -399,7 +405,7 @@ exited with status </source>
     <message>
         <location filename="../execwindow.cpp" line="97"/>
         <source>%1 exit with code %2</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 afsluttede med koden %2</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="99"/>
@@ -409,7 +415,7 @@ exited with status </source>
     <message>
         <location filename="../execwindow.cpp" line="105"/>
         <source>%1 [running]</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 [kørende]</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="106"/>
@@ -450,7 +456,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="527"/>
         <source>Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Tilstand</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="527"/>
@@ -460,12 +466,12 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="529"/>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Navn</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="529"/>
         <source>File name (if available)</source>
-        <translation type="unfinished"></translation>
+        <translation>Filnavn (hvis tilgængeligt)</translation>
     </message>
 </context>
 <context>
@@ -483,12 +489,12 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="94"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Annuller</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="96"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="130"/>
@@ -498,7 +504,7 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="148"/>
         <source>Invalid value</source>
-        <translation type="unfinished"></translation>
+        <translation>Ugyldig værdi</translation>
     </message>
 </context>
 <context>
@@ -519,7 +525,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Address Range</source>
-        <translation type="unfinished"></translation>
+        <translation>Adresseområde</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
@@ -529,7 +535,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Størrelse</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
@@ -549,7 +555,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="399"/>
         <source>Offset</source>
-        <translation type="unfinished"></translation>
+        <translation>Forskydning</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="399"/>
@@ -559,7 +565,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="400"/>
         <source>Device</source>
-        <translation type="unfinished"></translation>
+        <translation>Enhed</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="400"/>
@@ -579,12 +585,12 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="402"/>
         <source>File</source>
-        <translation type="unfinished"></translation>
+        <translation>Fil</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="402"/>
         <source>File name (if available)</source>
-        <translation type="unfinished"></translation>
+        <translation>Filnavn (hvis tilgængeligt)</translation>
     </message>
 </context>
 <context>
@@ -592,7 +598,7 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="273"/>
         <source>Permission</source>
-        <translation type="unfinished"></translation>
+        <translation>Tilladelse</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="282"/>
@@ -602,12 +608,12 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="289"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Annuller</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="292"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -615,12 +621,12 @@ exited with status </source>
     <message>
         <location filename="../prefs.cpp" line="166"/>
         <source>Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Præferencer</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="173"/>
         <source>Setting</source>
-        <translation type="unfinished"></translation>
+        <translation>Indstilling</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="235"/>
@@ -640,7 +646,7 @@ exited with status </source>
     <message>
         <location filename="../prefs.cpp" line="249"/>
         <source>default</source>
-        <translation type="unfinished"></translation>
+        <translation>standard</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="250"/>
@@ -650,7 +656,7 @@ exited with status </source>
     <message>
         <location filename="../prefs.cpp" line="286"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Udseende</translation>
     </message>
 </context>
 <context>
@@ -658,7 +664,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1894"/>
         <source>PID</source>
-        <translation type="unfinished"></translation>
+        <translation>PID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1894"/>
@@ -698,7 +704,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1902"/>
         <source>SID</source>
-        <translation type="unfinished"></translation>
+        <translation>SID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1902"/>
@@ -708,12 +714,12 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1904"/>
         <source>TTY</source>
-        <translation type="unfinished"></translation>
+        <translation>TTY</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1904"/>
         <source>Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminal</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1906"/>
@@ -728,7 +734,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1908"/>
         <source>USER</source>
-        <translation type="unfinished"></translation>
+        <translation>BRUGER</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1908"/>
@@ -738,7 +744,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1910"/>
         <source>GROUP</source>
-        <translation type="unfinished"></translation>
+        <translation>GRUPPE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1910"/>
@@ -1171,17 +1177,17 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="2215"/>
         <source>Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2218"/>
         <source>Hide</source>
-        <translation type="unfinished"></translation>
+        <translation>Skjul</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2224"/>
         <source>ScreenShot</source>
-        <translation type="unfinished"></translation>
+        <translation>Skærmbillede</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2229"/>
@@ -1204,27 +1210,27 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="191"/>
         <source>Add Field</source>
-        <translation type="unfinished"></translation>
+        <translation>Tilføj felt</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="197"/>
         <source>Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Kommando</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="201"/>
         <source>View</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="202"/>
         <source>Process</source>
-        <translation type="unfinished"></translation>
+        <translation>Proces</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="203"/>
         <source>Log</source>
-        <translation type="unfinished"></translation>
+        <translation>Log</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="207"/>
@@ -1330,17 +1336,17 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="512"/>
         <source>Kill</source>
-        <translation type="unfinished"></translation>
+        <translation>Dræb</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="513"/>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Stop</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="515"/>
         <source>Continue</source>
-        <translation type="unfinished"></translation>
+        <translation>Fortsæt</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="528"/>
@@ -1528,22 +1534,22 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="323"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="325"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Annuller</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="355"/>
         <source>Priority (1-99):</source>
-        <translation type="unfinished"></translation>
+        <translation>Prioritet (1-99):</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="388"/>
         <source>Invalid Input</source>
-        <translation type="unfinished"></translation>
+        <translation>Ugyldig input</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="389"/>
@@ -1604,7 +1610,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="806"/>
         <source>PID,COMMAND,USER...</source>
-        <translation type="unfinished"></translation>
+        <translation>PID,KOMMANDO,BRUGER...</translation>
     </message>
 </context>
 <context>
@@ -1622,12 +1628,12 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="234"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Annuller</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="238"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -1686,12 +1692,12 @@ exited with status </source>
         <location filename="../details.cpp" line="156"/>
         <location filename="../details.cpp" line="158"/>
         <source>Port</source>
-        <translation type="unfinished"></translation>
+        <translation>Port</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="156"/>
         <source>Local port</source>
-        <translation type="unfinished"></translation>
+        <translation>Lokal port</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="157"/>
@@ -1749,7 +1755,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="615"/>
         <source>title</source>
-        <translation type="unfinished"></translation>
+        <translation>titel</translation>
     </message>
 </context>
 <context>
