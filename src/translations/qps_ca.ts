@@ -6,32 +6,32 @@
     <message>
         <location filename="../details.cpp" line="698"/>
         <source>Field</source>
-        <translation></translation>
+        <translation>Camp</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="698"/>
         <source>Field name</source>
-        <translation></translation>
+        <translation>Nom del camp</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="699"/>
         <source>Description</source>
-        <translation></translation>
+        <translation>Descripció</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="699"/>
         <source>Field description</source>
-        <translation></translation>
+        <translation>Descripció del camp</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="700"/>
         <source>Value</source>
-        <translation></translation>
+        <translation>Valor</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="700"/>
         <source>Field value</source>
-        <translation></translation>
+        <translation>Valor del camp</translation>
     </message>
 </context>
 <context>
@@ -39,7 +39,7 @@
     <message>
         <location filename="../prefs.cpp" line="61"/>
         <source>Exit On Close Button</source>
-        <translation></translation>
+        <translation>Botó tanca en sortir</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="79"/>
@@ -64,17 +64,17 @@
     <message>
         <location filename="../prefs.cpp" line="93"/>
         <source>Auto Save Settings on Exit</source>
-        <translation></translation>
+        <translation>Desa automàticament els ajusts en sortir</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="94"/>
         <source>Selection: Copy PIDs to Clipboard</source>
-        <translation></translation>
+        <translation>Selecció: copia els PID al porta-retalls</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="96"/>
         <source>Normalize NICE</source>
-        <translation></translation>
+        <translation>Normalitza NICE</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="97"/>
@@ -97,7 +97,9 @@
         <source>The command:
 
 </source>
-        <translation></translation>
+        <translation>L&apos;ordre:
+
+</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="213"/>
@@ -106,17 +108,21 @@
 failed with the error:
 
 </source>
-        <translation></translation>
+        <translation>
+
+ha fallat amb l&apos;error:
+
+</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="216"/>
         <source>Too many processes</source>
-        <translation></translation>
+        <translation>Hi ha massa processos</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="219"/>
         <source>Unknown error</source>
-        <translation></translation>
+        <translation>Error desconegut</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="229"/>
@@ -131,12 +137,14 @@ or you did not have execute permission.</source>
         <source>
 
 exited with status </source>
-        <translation></translation>
+        <translation>
+
+ha sortit amb l&apos;estat </translation>
     </message>
     <message>
         <location filename="../command.cpp" line="238"/>
         <source>Command Failed</source>
-        <translation></translation>
+        <translation>Ordre fallida</translation>
     </message>
 </context>
 <context>
@@ -149,7 +157,7 @@ exited with status </source>
     <message>
         <location filename="../commanddialog.cpp" line="63"/>
         <source>Name:</source>
-        <translation></translation>
+        <translation>Nom:</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="79"/>
@@ -159,7 +167,7 @@ exited with status </source>
     <message>
         <location filename="../commanddialog.cpp" line="84"/>
         <source>Command Line:</source>
-        <translation></translation>
+        <translation>Línia d&apos;ordres:</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="95"/>
@@ -176,13 +184,13 @@ exited with status </source>
     <message>
         <location filename="../commanddialog.cpp" line="109"/>
         <source>New...</source>
-        <translation></translation>
+        <translation>Nou...</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="111"/>
         <location filename="../commanddialog.cpp" line="229"/>
         <source>Add...</source>
-        <translation></translation>
+        <translation>Afegeix...</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="113"/>
@@ -192,7 +200,7 @@ exited with status </source>
     <message>
         <location filename="../commanddialog.cpp" line="115"/>
         <source>Close</source>
-        <translation></translation>
+        <translation>Tanca</translation>
     </message>
 </context>
 <context>
@@ -200,37 +208,37 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="925"/>
         <source>Linear</source>
-        <translation></translation>
+        <translation>Lineal</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="928"/>
         <source>Tree</source>
-        <translation></translation>
+        <translation>Arbre</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="949"/>
         <source>All Processes</source>
-        <translation></translation>
+        <translation>Tots els processos</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="950"/>
         <source>Your Processes</source>
-        <translation></translation>
+        <translation>Els vostres processos</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="951"/>
         <source>Non-Root Processes</source>
-        <translation></translation>
+        <translation>Els processos que no siguin de root</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="952"/>
         <source>Running Processes</source>
-        <translation></translation>
+        <translation>Els processos en execució</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="984"/>
         <source>Pause (Ctrl+Space)</source>
-        <translation></translation>
+        <translation>Pausa (Ctrl+Espai)</translation>
     </message>
 </context>
 <context>
@@ -238,17 +246,17 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="36"/>
         <source>Process %1 ( %2 ) - details</source>
-        <translation></translation>
+        <translation>Procés %1 ( %2 ) - detalls</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="45"/>
         <source>Files</source>
-        <translation></translation>
+        <translation>Fitxers</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="54"/>
         <source>Sockets</source>
-        <translation></translation>
+        <translation>Sòcols</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="59"/>
@@ -258,12 +266,12 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="61"/>
         <source>Environment</source>
-        <translation></translation>
+        <translation>Entorn</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="62"/>
         <source>All Fields</source>
-        <translation></translation>
+        <translation>Tots els camps</translation>
     </message>
 </context>
 <context>
@@ -276,17 +284,17 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="609"/>
         <source>Variable name</source>
-        <translation></translation>
+        <translation>Nom de la variable</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="610"/>
         <source>Value</source>
-        <translation></translation>
+        <translation>Valor</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="610"/>
         <source>Variable value</source>
-        <translation></translation>
+        <translation>Valor de la variable</translation>
     </message>
 </context>
 <context>
@@ -309,12 +317,12 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="170"/>
         <source>labelDescrition</source>
-        <translation></translation>
+        <translation>Descripció</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="193"/>
         <source>Enable</source>
-        <translation></translation>
+        <translation>Habilita</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="219"/>
@@ -355,17 +363,18 @@ exited with status </source>
         <location filename="../watchdog.ui" line="394"/>
         <source>%p : pid
 %c : command</source>
-        <translation></translation>
+        <translation>%p : pid
+%c : ordre</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="425"/>
         <source>New</source>
-        <translation></translation>
+        <translation>Nou</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="432"/>
         <source>Add</source>
-        <translation></translation>
+        <translation>Afegeix</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="439"/>
@@ -375,7 +384,7 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="446"/>
         <source>Close</source>
-        <translation></translation>
+        <translation>Tanca</translation>
     </message>
 </context>
 <context>
@@ -388,7 +397,7 @@ exited with status </source>
     <message>
         <location filename="../message.ui" line="27"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>D&apos;acord</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="42"/>
@@ -398,12 +407,12 @@ exited with status </source>
     <message>
         <location filename="../execwindow.cpp" line="97"/>
         <source>%1 exit with code %2</source>
-        <translation></translation>
+        <translation>%1 surt amb el codi %2</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="99"/>
         <source>Close</source>
-        <translation></translation>
+        <translation>Tanca</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="105"/>
@@ -418,7 +427,7 @@ exited with status </source>
     <message>
         <location filename="../execwindow.cpp" line="115"/>
         <source>Error %1 : [%2] Maybe command not found</source>
-        <translation></translation>
+        <translation>Error %1 : [%2] Potser no s&apos;ha trobat l&apos;ordre</translation>
     </message>
 </context>
 <context>
@@ -431,7 +440,7 @@ exited with status </source>
     <message>
         <location filename="../fieldsel.cpp" line="68"/>
         <source>Close</source>
-        <translation></translation>
+        <translation>Tanca</translation>
     </message>
 </context>
 <context>
@@ -444,7 +453,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="525"/>
         <source>File descriptor</source>
-        <translation></translation>
+        <translation>Descriptor de fitxer</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="527"/>
@@ -459,7 +468,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="529"/>
         <source>Name</source>
-        <translation></translation>
+        <translation>Nom</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="529"/>
@@ -477,17 +486,17 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="57"/>
         <source>New Update Period</source>
-        <translation></translation>
+        <translation>Període d&apos;actualització nou</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="94"/>
         <source>Cancel</source>
-        <translation></translation>
+        <translation>Cancel·la</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="96"/>
         <source>OK</source>
-        <translation></translation>
+        <translation>D&apos;acord</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="130"/>
@@ -497,7 +506,7 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="148"/>
         <source>Invalid value</source>
-        <translation></translation>
+        <translation>Valor no vàlid</translation>
     </message>
 </context>
 <context>
@@ -505,12 +514,12 @@ exited with status </source>
     <message>
         <location filename="../listmodel.cpp" line="66"/>
         <source>Event Category</source>
-        <translation></translation>
+        <translation>Categoria d&apos;esdeveniment</translation>
     </message>
     <message>
         <location filename="../listmodel.cpp" line="68"/>
         <source>Enable</source>
-        <translation></translation>
+        <translation>Habilita</translation>
     </message>
 </context>
 <context>
@@ -528,7 +537,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Size</source>
-        <translation></translation>
+        <translation>Mida</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
@@ -1097,22 +1106,22 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1983"/>
         <source>START</source>
-        <translation></translation>
+        <translation>INICI</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1983"/>
         <source>Time process started</source>
-        <translation></translation>
+        <translation>L&apos;hora en què es va iniciar el procés</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1985"/>
         <source>TIME</source>
-        <translation></translation>
+        <translation>TEMPS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1985"/>
         <source>Total CPU time used since start</source>
-        <translation></translation>
+        <translation>Temps de CPU total que s&apos;ha utilitzat des de que es va iniciar</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1987"/>
@@ -1122,17 +1131,17 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1987"/>
         <source>CPU the process is executing on (SMP system)</source>
-        <translation></translation>
+        <translation>CPU que s&apos;està executant el procés (sistema SMP)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1989"/>
         <source>Process Name )</source>
-        <translation></translation>
+        <translation>Nom del procés )</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1989"/>
         <source>the process name</source>
-        <translation></translation>
+        <translation>el nom del procés</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1993"/>
@@ -1142,27 +1151,27 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1993"/>
         <source>Current working directory</source>
-        <translation></translation>
+        <translation>Directori actual de treball</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1994"/>
         <source>ROOT</source>
-        <translation></translation>
+        <translation>ARREL</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1994"/>
         <source>Root directory of process</source>
-        <translation></translation>
+        <translation>Directori arrel del procés</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1997"/>
         <source>COMMAND_LINE</source>
-        <translation></translation>
+        <translation>LÍNEA_ORDRE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1997"/>
         <source>Command line that started the process</source>
-        <translation></translation>
+        <translation>Línia de l&apos;ordre que va iniciar el procés</translation>
     </message>
 </context>
 <context>
@@ -1170,22 +1179,22 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="2215"/>
         <source>Show</source>
-        <translation></translation>
+        <translation>Mostra</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2218"/>
         <source>Hide</source>
-        <translation></translation>
+        <translation>Oculta</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2224"/>
         <source>ScreenShot</source>
-        <translation></translation>
+        <translation>Captura de pantalla</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2229"/>
         <source>Quit</source>
-        <translation></translation>
+        <translation>Surt</translation>
     </message>
 </context>
 <context>
@@ -1198,108 +1207,108 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="190"/>
         <source>Remove Field</source>
-        <translation></translation>
+        <translation>Suprimeix el camp</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="191"/>
         <source>Add Field</source>
-        <translation></translation>
+        <translation>Afegeix un camp</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="197"/>
         <source>Command</source>
-        <translation></translation>
+        <translation>Ordre</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="201"/>
         <source>View</source>
-        <translation></translation>
+        <translation>Visualitza</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="202"/>
         <source>Process</source>
-        <translation></translation>
+        <translation>Procés</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="203"/>
         <source>Log</source>
-        <translation></translation>
+        <translation>Registre</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="207"/>
         <source>Custom Fields</source>
-        <translation></translation>
+        <translation>Camps personalitzats</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="209"/>
         <source>Basic Fields </source>
-        <translation></translation>
+        <translation>Camps bàsics </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="211"/>
         <source>Jobs Fields </source>
-        <translation></translation>
+        <translation>Camps dels treballs </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="213"/>
         <source>Memory Fields </source>
-        <translation></translation>
+        <translation>Camps de la memòria </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="216"/>
         <source>Scheduling Fields </source>
-        <translation></translation>
+        <translation>Camps de la planificació </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="222"/>
         <source>Select Custom Fields...</source>
-        <translation></translation>
+        <translation>Selecciona els camps personalitzats...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="236"/>
         <source>Option</source>
-        <translation></translation>
+        <translation>Opció</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="237"/>
         <source>Update Period...</source>
-        <translation></translation>
+        <translation>Període d&apos;actualització...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="246"/>
         <source>Show Status bar</source>
-        <translation></translation>
+        <translation>Mostra la barra d&apos;estat</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="255"/>
         <source>Preferences...</source>
-        <translation></translation>
+        <translation>Preferències...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="261"/>
         <source>Help</source>
-        <translation></translation>
+        <translation>Ajuda</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="263"/>
         <location filename="../qps.cpp" line="2291"/>
         <source>About</source>
-        <translation></translation>
+        <translation>Quant a</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="354"/>
         <source>Detail</source>
-        <translation></translation>
+        <translation>Detallat</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="395"/>
         <source>test</source>
-        <translation></translation>
+        <translation>prova</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="396"/>
         <source>Copied to Clipboard</source>
-        <translation></translation>
+        <translation>S&apos;ha copiat al porta-retalls</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="505"/>
@@ -1314,7 +1323,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="507"/>
         <source>Scheduling...</source>
-        <translation></translation>
+        <translation>Planificació...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="509"/>
@@ -1329,102 +1338,102 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="512"/>
         <source>Kill</source>
-        <translation></translation>
+        <translation>Mata</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="513"/>
         <source>Stop</source>
-        <translation></translation>
+        <translation>Atura</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="515"/>
         <source>Continue</source>
-        <translation></translation>
+        <translation>Continua</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="528"/>
         <source>SIGINT (interrupt)</source>
-        <translation></translation>
+        <translation>SIGINT (interromp)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="530"/>
         <source>SIGCONT (continue)</source>
-        <translation></translation>
+        <translation>SIGCONT (continua)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="532"/>
         <source>SIGSTOP (stop)</source>
-        <translation></translation>
+        <translation>SIGSTOP (atura)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="534"/>
         <source>SIGQUIT (quit)</source>
-        <translation></translation>
+        <translation>SIGQUIT (surt)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="536"/>
         <source>SIGILL (illegal instruction)</source>
-        <translation></translation>
+        <translation>SIGILL (instrucció il·legal)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="538"/>
         <source>SIGABRT (abort)</source>
-        <translation></translation>
+        <translation>SIGABRT (avorta)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="540"/>
         <source>SIGFPE (floating point exception)</source>
-        <translation></translation>
+        <translation>SIGFPE (excepció de punt flotant)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="542"/>
         <source>SIGSEGV (segmentation violation)</source>
-        <translation></translation>
+        <translation>SIGSEGV (violació de la segmentació)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="544"/>
         <source>SIGPIPE (broken pipe)</source>
-        <translation></translation>
+        <translation>SIGPIPE (canonada trencada)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="546"/>
         <source>SIGALRM (timer signal)</source>
-        <translation></translation>
+        <translation>SIGALRM (senyal del temporitzador)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="548"/>
         <source>SIGUSR1 (user-defined 1)</source>
-        <translation></translation>
+        <translation>SIGUSR1 (definida de l&apos;usuari 1)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="550"/>
         <source>SIGUSR2 (user-defined 2)</source>
-        <translation></translation>
+        <translation>SIGUSR2 (definida de l&apos;usuari 2)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="552"/>
         <source>SIGCHLD (child death)</source>
-        <translation></translation>
+        <translation>SIGCHLD (mort del fill)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="554"/>
         <source>SIGTSTP (stop from tty)</source>
-        <translation></translation>
+        <translation>SIGTSTP (aturada des del tty)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="556"/>
         <source>SIGTTIN (tty input)</source>
-        <translation></translation>
+        <translation>SIGTTIN (entrada tty)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="558"/>
         <source>SIGTTOU (tty output)</source>
-        <translation></translation>
+        <translation>SIGTTOU (sortida tty)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="565"/>
         <source>View Details</source>
-        <translation></translation>
+        <translation>Mostra els detalls</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1181"/>
@@ -1434,12 +1443,12 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1185"/>
         <source>Edit Commands...</source>
-        <translation></translation>
+        <translation>Edita les ordres...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1210"/>
         <source>Quit</source>
-        <translation></translation>
+        <translation>Surt</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1590"/>
@@ -1449,7 +1458,7 @@ exited with status </source>
         <location filename="../qps.cpp" line="1694"/>
         <location filename="../qps.cpp" line="1773"/>
         <source>Permission denied</source>
-        <translation></translation>
+        <translation>Permís denegat</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1591"/>
@@ -1502,52 +1511,52 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="301"/>
         <source>Change scheduling</source>
-        <translation></translation>
+        <translation>Canvia la planificació</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="305"/>
         <source>Scheduling Policy</source>
-        <translation></translation>
+        <translation>Política de planificació</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="307"/>
         <source>SCHED_OTHER (time-sharing)</source>
-        <translation></translation>
+        <translation>SCHED_OTHER (compartició del temps)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="308"/>
         <source>SCHED_FIFO (real-time)</source>
-        <translation></translation>
+        <translation>SCHED_FIFO (temps real)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="309"/>
         <source>SCHED_RR (real-time)</source>
-        <translation></translation>
+        <translation>SCHED_RR (temps real)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="323"/>
         <source>OK</source>
-        <translation></translation>
+        <translation>D&apos;acord</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="325"/>
         <source>Cancel</source>
-        <translation></translation>
+        <translation>Cancel·la</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="355"/>
         <source>Priority (1-99):</source>
-        <translation></translation>
+        <translation>Prioritat (1-99):</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="388"/>
         <source>Invalid Input</source>
-        <translation></translation>
+        <translation>Entrada no vàlida</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="389"/>
         <source>The priority must be in the range 1..99</source>
-        <translation></translation>
+        <translation>La prioritat ha d&apos;estar dins de l&apos;interval 1..99</translation>
     </message>
 </context>
 <context>
@@ -1560,17 +1569,17 @@ exited with status </source>
     <message>
         <location filename="../screenshot.cpp" line="299"/>
         <source>Save As</source>
-        <translation></translation>
+        <translation>Anomena i desa</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="300"/>
         <source>%1 Files (*.%2);;All Files (*)</source>
-        <translation></translation>
+        <translation>Fitxers %1 (*.%2);;Tots els fitxers (*)</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="327"/>
         <source>Options</source>
-        <translation></translation>
+        <translation>Opcions</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="330"/>
@@ -1580,22 +1589,22 @@ exited with status </source>
     <message>
         <location filename="../screenshot.cpp" line="335"/>
         <source>Screenshot Delay:</source>
-        <translation></translation>
+        <translation>Retard de la captura de pantalla:</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="337"/>
         <source>Hide This Window</source>
-        <translation></translation>
+        <translation>Oculta aquesta finestra</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="349"/>
         <source>New Screenshot</source>
-        <translation></translation>
+        <translation>Captura de pantalla nova</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="350"/>
         <source>Quit</source>
-        <translation></translation>
+        <translation>Surt</translation>
     </message>
 </context>
 <context>
@@ -1603,7 +1612,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="806"/>
         <source>PID,COMMAND,USER...</source>
-        <translation></translation>
+        <translation>PID,ORDRE,USUARI...</translation>
     </message>
 </context>
 <context>
@@ -1621,12 +1630,12 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="234"/>
         <source>Cancel</source>
-        <translation></translation>
+        <translation>Cancel·la</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="238"/>
         <source>OK</source>
-        <translation></translation>
+        <translation>D&apos;acord</translation>
     </message>
 </context>
 <context>
@@ -1639,7 +1648,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>File descriptor</source>
-        <translation></translation>
+        <translation>Descriptor de fitxer</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
@@ -1649,7 +1658,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="152"/>
         <source>Protocol (TCP or UDP)</source>
-        <translation></translation>
+        <translation>Protocol (TCP o UDP)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
@@ -1659,7 +1668,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Bytes in receive queue</source>
-        <translation></translation>
+        <translation>Bytes a la cua de recepció</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="154"/>
@@ -1669,17 +1678,17 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="154"/>
         <source>Bytes in send queue</source>
-        <translation></translation>
+        <translation>Bytes a la cua d&apos;enviament</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>Local Addr</source>
-        <translation></translation>
+        <translation>Adreça local</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>Local IP address</source>
-        <translation></translation>
+        <translation>Adreça IP local</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="156"/>
@@ -1690,32 +1699,32 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="156"/>
         <source>Local port</source>
-        <translation></translation>
+        <translation>Port local</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="157"/>
         <source>Remote Addr</source>
-        <translation></translation>
+        <translation>Adreça remota</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="157"/>
         <source>Remote IP address</source>
-        <translation></translation>
+        <translation>Adreça IP remota</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="158"/>
         <source>Remote port</source>
-        <translation></translation>
+        <translation>Port remot</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="159"/>
         <source>State</source>
-        <translation></translation>
+        <translation>Estat</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="159"/>
         <source>Connection state</source>
-        <translation></translation>
+        <translation>Estat de la connexió</translation>
     </message>
 </context>
 <context>
@@ -1723,7 +1732,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="895"/>
         <source>Process count: %1</source>
-        <translation></translation>
+        <translation>Nombre de processos: %1</translation>
     </message>
 </context>
 <context>
@@ -1748,7 +1757,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="615"/>
         <source>title</source>
-        <translation></translation>
+        <translation>títol</translation>
     </message>
 </context>
 <context>
@@ -1756,12 +1765,12 @@ exited with status </source>
     <message>
         <location filename="../watchdogdialog.cpp" line="193"/>
         <source>if process start</source>
-        <translation></translation>
+        <translation>si s&apos;inicia el procés</translation>
     </message>
     <message>
         <location filename="../watchdogdialog.cpp" line="194"/>
         <source>if process finish</source>
-        <translation></translation>
+        <translation>si se finalitza el procés</translation>
     </message>
     <message>
         <location filename="../watchdogdialog.cpp" line="217"/>
