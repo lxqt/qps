@@ -567,7 +567,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../details.cpp" line="400"/>
         <source>Device</source>
-        <translation></translation>
+        <translation>Dispositiu</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="400"/>
@@ -587,7 +587,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../details.cpp" line="402"/>
         <source>File</source>
-        <translation></translation>
+        <translation>Fitxer</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="402"/>
@@ -605,17 +605,17 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../dialogs.cpp" line="282"/>
         <source>Root password</source>
-        <translation></translation>
+        <translation>Contrasenya de root</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="289"/>
         <source>Cancel</source>
-        <translation></translation>
+        <translation>Cancel·la</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="292"/>
         <source>OK</source>
-        <translation></translation>
+        <translation>D&apos;acord</translation>
     </message>
 </context>
 <context>
@@ -623,7 +623,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../prefs.cpp" line="166"/>
         <source>Preferences</source>
-        <translation></translation>
+        <translation>Preferències</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="173"/>
