@@ -39,7 +39,7 @@
     <message>
         <location filename="../prefs.cpp" line="61"/>
         <source>Exit On Close Button</source>
-        <translation type="unfinished"></translation>
+        <translation>Afslut ved luk-knap</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="79"/>
@@ -64,7 +64,7 @@
     <message>
         <location filename="../prefs.cpp" line="93"/>
         <source>Auto Save Settings on Exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Gem indstillinger automatisk ved afslut</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="94"/>
@@ -74,7 +74,7 @@
     <message>
         <location filename="../prefs.cpp" line="96"/>
         <source>Normalize NICE</source>
-        <translation type="unfinished"></translation>
+        <translation>Normaliser NICE</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="97"/>
@@ -142,7 +142,7 @@ exited with status </source>
     <message>
         <location filename="../command.cpp" line="238"/>
         <source>Command Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Kommando mislykkedes</translation>
     </message>
 </context>
 <context>
