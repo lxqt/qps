@@ -44,22 +44,22 @@
     <message>
         <location filename="../prefs.cpp" line="79"/>
         <source>Host Name Lookup</source>
-        <translation></translation>
+        <translation>Recerca del nom d&apos;amfitrió</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="80"/>
         <source>Service Name Lookup</source>
-        <translation></translation>
+        <translation>Recerca del nom de servei</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="86"/>
         <source>Disclosure Triangles</source>
-        <translation></translation>
+        <translation>Triangles de divulgació</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="87"/>
         <source>Branch Lines</source>
-        <translation></translation>
+        <translation>Línies de bifurcació</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="93"/>
@@ -79,7 +79,7 @@
     <message>
         <location filename="../prefs.cpp" line="97"/>
         <source>Use pmap for Map Names</source>
-        <translation></translation>
+        <translation>Utilitza pmap per al mapatge dels noms</translation>
     </message>
 </context>
 <context>
@@ -130,7 +130,10 @@ ha fallat amb l&apos;error:
 
 could not be executed because it was not found,
 or you did not have execute permission.</source>
-        <translation></translation>
+        <translation>
+
+no s&apos;ha pogut executar perquè no s&apos;ha trobat,
+o no teniu permisos d&apos;execució.</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="234"/>
@@ -152,7 +155,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../commanddialog.cpp" line="47"/>
         <source>Edit Commands 0.1 alpha</source>
-        <translation></translation>
+        <translation>Editor d&apos;ordres 0.1 alfa</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="63"/>
@@ -162,7 +165,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../commanddialog.cpp" line="79"/>
         <source>Popup</source>
-        <translation></translation>
+        <translation>Emergent</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="84"/>
@@ -179,7 +182,14 @@ ha sortit amb l&apos;estat </translation>
 %%	%
 
 </source>
-        <translation></translation>
+        <translation>Substitucions:
+%p	PID
+%c	ORDRE
+%C	LÍNIA_ORDRES
+%u	USUARI
+%%	%
+
+</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="109"/>
@@ -261,7 +271,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../details.cpp" line="59"/>
         <source>Memory Maps</source>
-        <translation></translation>
+        <translation>Mapatges de memòria</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="61"/>
@@ -302,7 +312,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../watchdog.ui" line="23"/>
         <source>Watchdog 0.1 alpha</source>
-        <translation></translation>
+        <translation>Vigilant 0.1 alfa</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="117"/>
@@ -312,7 +322,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../watchdog.ui" line="162"/>
         <source>Select condition</source>
-        <translation></translation>
+        <translation>Condició de selecció</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="170"/>
@@ -327,7 +337,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../watchdog.ui" line="219"/>
         <source>process name</source>
-        <translation></translation>
+        <translation>nom del procés</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="229"/>
@@ -342,22 +352,22 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../watchdog.ui" line="280"/>
         <source>include already running process</source>
-        <translation></translation>
+        <translation>inclou el procés que ja s&apos;està executant</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="309"/>
         <source>run command</source>
-        <translation></translation>
+        <translation>executa l&apos;ordre</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="342"/>
         <source>show Message</source>
-        <translation></translation>
+        <translation>mostra el missatge</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="367"/>
         <source>Help (Not yet. just concept)</source>
-        <translation></translation>
+        <translation>Ajuda (encara no. tan sols el concepte)</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="394"/>
@@ -379,7 +389,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../watchdog.ui" line="439"/>
         <source>Delete</source>
-        <translation></translation>
+        <translation>Elimina</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="446"/>
@@ -402,7 +412,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../execwindow.cpp" line="42"/>
         <source>Qps Watchdog</source>
-        <translation></translation>
+        <translation>Vigilant de Qps</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="97"/>
@@ -417,12 +427,12 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../execwindow.cpp" line="105"/>
         <source>%1 [running]</source>
-        <translation></translation>
+        <translation>%1 [en execució]</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="106"/>
         <source>terminate command</source>
-        <translation></translation>
+        <translation>finalitza l&apos;ordre</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="115"/>
@@ -435,7 +445,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../fieldsel.cpp" line="34"/>
         <source>Select Custom Fields </source>
-        <translation></translation>
+        <translation>Selecció dels camps personalitzats </translation>
     </message>
     <message>
         <location filename="../fieldsel.cpp" line="68"/>
@@ -473,7 +483,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../details.cpp" line="529"/>
         <source>File name (if available)</source>
-        <translation></translation>
+        <translation>Nom de fitxer (si està disponible)</translation>
     </message>
 </context>
 <context>
@@ -481,7 +491,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../dialogs.cpp" line="51"/>
         <source>Change Update Period</source>
-        <translation></translation>
+        <translation>Canvi del període d&apos;actualització</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="57"/>
@@ -527,12 +537,12 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Address Range</source>
-        <translation></translation>
+        <translation>Interval d&apos;adreces</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Mapped addresses (hex) )</source>
-        <translation></translation>
+        <translation>Adreces assignades (hex) )</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
@@ -542,7 +552,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Kbytes mapped (dec)</source>
-        <translation></translation>
+        <translation>Kbytes assignats (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
@@ -552,17 +562,17 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>Permission flags</source>
-        <translation></translation>
+        <translation>Indicadors dels permisos</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="399"/>
         <source>Offset</source>
-        <translation></translation>
+        <translation>Desplaçament</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="399"/>
         <source>File offset at start of mapping (hex)</source>
-        <translation></translation>
+        <translation>Desplaçament de fitxer al començament del mapatge (hex)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="400"/>
@@ -572,7 +582,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../details.cpp" line="400"/>
         <source>Major,Minor device numbers (dec)</source>
-        <translation></translation>
+        <translation>Nombres de dispositius major,menor (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="401"/>
@@ -582,7 +592,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../details.cpp" line="401"/>
         <source>Inode number (dec)</source>
-        <translation></translation>
+        <translation>Nombre d&apos;inode (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="402"/>
@@ -592,7 +602,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../details.cpp" line="402"/>
         <source>File name (if available)</source>
-        <translation></translation>
+        <translation>Nom de fitxer (si està disponible)</translation>
     </message>
 </context>
 <context>
@@ -600,7 +610,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../dialogs.cpp" line="273"/>
         <source>Permission</source>
-        <translation></translation>
+        <translation>Permisos</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="282"/>
@@ -628,37 +638,37 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../prefs.cpp" line="173"/>
         <source>Setting</source>
-        <translation></translation>
+        <translation>Establiment</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="235"/>
         <source>%CPU divided by</source>
-        <translation></translation>
+        <translation>%CPU dividida per</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="242"/>
         <source>Total cpu: %1</source>
-        <translation></translation>
+        <translation>cpu total: %1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="243"/>
         <source>Single cpu: 1</source>
-        <translation></translation>
+        <translation>cpu individual: 1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="249"/>
         <source>default</source>
-        <translation></translation>
+        <translation>per defecte</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="250"/>
         <source>for developer</source>
-        <translation></translation>
+        <translation>per al desenvolupador</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="286"/>
         <source>Appearance</source>
-        <translation></translation>
+        <translation>Aparença</translation>
     </message>
 </context>
 <context>
@@ -671,7 +681,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1894"/>
         <source>Process ID</source>
-        <translation></translation>
+        <translation>ID procés</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1896"/>
@@ -681,7 +691,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1896"/>
         <source>Task group ID ( parent of threads )</source>
-        <translation></translation>
+        <translation>ID de grup de tasques ( pare dels fils )</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1898"/>
@@ -691,7 +701,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1898"/>
         <source>Parent process ID</source>
-        <translation></translation>
+        <translation>ID de procés pare</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1900"/>
@@ -701,7 +711,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1900"/>
         <source>Process group ID</source>
-        <translation></translation>
+        <translation>ID de grup de processos</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1902"/>
@@ -711,7 +721,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1902"/>
         <source>Session ID</source>
-        <translation></translation>
+        <translation>ID de sessió</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1904"/>
@@ -731,27 +741,27 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1906"/>
         <source>Process group ID of tty owner</source>
-        <translation></translation>
+        <translation>ID de grup de processos del propietari del tty</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1908"/>
         <source>USER</source>
-        <translation></translation>
+        <translation>USUARI</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1908"/>
         <source>Owner (*=suid root, +=suid a user)</source>
-        <translation></translation>
+        <translation>Propietari (*=suid root, +=suid un usuari)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1910"/>
         <source>GROUP</source>
-        <translation></translation>
+        <translation>GRUP</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1910"/>
         <source>Group name (*=sgid other)</source>
-        <translation></translation>
+        <translation>Nom de grup (*=sgid altres)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1912"/>
@@ -761,7 +771,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1912"/>
         <source>Real user ID</source>
-        <translation></translation>
+        <translation>ID d&apos;usuari real</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1914"/>
@@ -771,7 +781,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1914"/>
         <source>Effective user ID</source>
-        <translation></translation>
+        <translation>ID d&apos;usuari efectiu</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1916"/>
@@ -781,7 +791,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1916"/>
         <source>Saved user ID (Posix)</source>
-        <translation></translation>
+        <translation>ID d&apos;usuari desat (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1918"/>
@@ -791,7 +801,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1918"/>
         <source>File system user ID</source>
-        <translation></translation>
+        <translation>ID d&apos;usuari de sistema de fitxers</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1920"/>
@@ -801,7 +811,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1920"/>
         <source>Real group ID</source>
-        <translation></translation>
+        <translation>ID de grup real</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1922"/>
@@ -811,7 +821,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1922"/>
         <source>Effective group ID</source>
-        <translation></translation>
+        <translation>ID de grup efectiu</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1924"/>
@@ -821,7 +831,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1924"/>
         <source>Saved group ID (Posix)</source>
-        <translation></translation>
+        <translation>ID de grup desat (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1926"/>
@@ -831,7 +841,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1926"/>
         <source>File system group ID</source>
-        <translation></translation>
+        <translation>ID de grup de sistemes de fitxers</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1928"/>
@@ -841,7 +851,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1928"/>
         <source>Dynamic priority</source>
-        <translation></translation>
+        <translation>Prioritat dinàmica</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1930"/>
@@ -851,7 +861,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1930"/>
         <source>Scheduling favour (higher -&gt; less cpu time)</source>
-        <translation></translation>
+        <translation>A favor de la planificació (més alt -&gt; menys temps de CPU)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1932"/>
@@ -861,7 +871,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1932"/>
         <source>Number of tasks(threads) in task group</source>
-        <translation></translation>
+        <translation>Nombre de tasques(fils) al grup de tasques</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1934"/>
@@ -871,7 +881,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1934"/>
         <source>Scheduling policy</source>
-        <translation></translation>
+        <translation>Política de planificació</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1936"/>
@@ -881,7 +891,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1936"/>
         <source>Realtime priority (0-99, more is better)</source>
-        <translation></translation>
+        <translation>Prioritat de temps real (0-99, més és millor)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1938"/>
@@ -891,7 +901,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1938"/>
         <source>Time slice in milliseconds</source>
-        <translation></translation>
+        <translation>Porció de temps en mil·lisegons</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1940"/>
@@ -901,7 +911,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1940"/>
         <source>Percentage average sleep time (-1 -&gt; N/A)</source>
-        <translation></translation>
+        <translation>Percentatge mitjà de temps d&apos;adormiment (-1 -&gt; N/D)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1942"/>
@@ -911,7 +921,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1942"/>
         <source>Affinity CPU mask (0 -&gt; API not supported)</source>
-        <translation></translation>
+        <translation>Màscara de CPU d&apos;afinitat (0 -&gt; API no admesa)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1944"/>
@@ -921,7 +931,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1944"/>
         <source>Number of major faults (disk access)</source>
-        <translation></translation>
+        <translation>Nombre de falles major (accés de disc)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1946"/>
@@ -931,7 +941,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1946"/>
         <source>Number of minor faults (no disk access)</source>
-        <translation></translation>
+        <translation>Nombre de falles menor (sense accés de disc)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1949"/>
@@ -941,7 +951,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1949"/>
         <source>Virtual image size of process</source>
-        <translation></translation>
+        <translation>Mida d&apos;imatge virtual del procés</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1951"/>
@@ -951,7 +961,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1951"/>
         <source>Resident set size</source>
-        <translation></translation>
+        <translation>Mida d&apos;establiment resident</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1953"/>
@@ -961,7 +971,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1953"/>
         <source>memory usage (RSS-SHARE)</source>
-        <translation></translation>
+        <translation>ús de memòria (RSS-SHARE)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1955"/>
@@ -971,7 +981,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1955"/>
         <source>Text(code) resident set size</source>
-        <translation></translation>
+        <translation>Mida d&apos;establiment resident de Text(code)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1957"/>
@@ -986,12 +996,12 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1959"/>
         <source>STACK</source>
-        <translation></translation>
+        <translation>PILA</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1959"/>
         <source>Stack size</source>
-        <translation></translation>
+        <translation>Mida de pila</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1961"/>
@@ -1001,37 +1011,37 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1961"/>
         <source>Shared memory with other libs</source>
-        <translation></translation>
+        <translation>Memòria compartida amb altres biblioteques</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1963"/>
         <source>SWAP</source>
-        <translation></translation>
+        <translation>INTERCANI</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1963"/>
         <source>Kbytes on swap device</source>
-        <translation></translation>
+        <translation>Kbytes al dispositiu d&apos;intercanvi</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1965"/>
         <source>IO_R</source>
-        <translation></translation>
+        <translation>ES_L</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1965"/>
         <source>io read (file)</source>
-        <translation></translation>
+        <translation>lectura e/s (fitxer)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1967"/>
         <source>IO_W</source>
-        <translation></translation>
+        <translation>ES_E</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1967"/>
         <source>io write (file)</source>
-        <translation></translation>
+        <translation>escriptura e/s (fitxer)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1969"/>
@@ -1041,27 +1051,27 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1969"/>
         <source>Number of dirty (non-written) pages</source>
-        <translation></translation>
+        <translation>Nombre de pàgines brutes (no escrites)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1971"/>
         <source>STAT</source>
-        <translation></translation>
+        <translation>ESTAT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1971"/>
         <source>State of the process </source>
-        <translation></translation>
+        <translation>Estat del procés </translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1973"/>
         <source>FLAGS</source>
-        <translation></translation>
+        <translation>INDICADORS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1973"/>
         <source>Process flags (hex)</source>
-        <translation></translation>
+        <translation>Indicadors de procés (hex)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1975"/>
@@ -1071,7 +1081,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1975"/>
         <source>Kernel function where process is sleeping</source>
-        <translation></translation>
+        <translation>Funció del Kernel on el procés està dormint</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1977"/>
@@ -1081,7 +1091,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1977"/>
         <source>Weighted percentage of CPU (30 s average)</source>
-        <translation></translation>
+        <translation>Percentatge ponderat de CPU (mitjana de 30 s)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1979"/>
@@ -1091,7 +1101,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1979"/>
         <source>Percentage of CPU used since last update</source>
-        <translation></translation>
+        <translation>Percentatge de CPU utilitzat des de l&apos;última actualització</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1981"/>
@@ -1101,7 +1111,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../proc.cpp" line="1981"/>
         <source>Percentage of memory used (RSS/total mem)</source>
-        <translation></translation>
+        <translation>Percentatge utilitzat de memòria (RSS/total mem)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1983"/>
@@ -1438,7 +1448,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../qps.cpp" line="1181"/>
         <source>WatchDog</source>
-        <translation></translation>
+        <translation>Vigilant</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1185"/>
@@ -1770,12 +1780,12 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../watchdogdialog.cpp" line="194"/>
         <source>if process finish</source>
-        <translation>si se finalitza el procés</translation>
+        <translation>si s&apos;acaba el procés</translation>
     </message>
     <message>
         <location filename="../watchdogdialog.cpp" line="217"/>
         <source>select condition</source>
-        <translation></translation>
+        <translation>seleccioneu la condició</translation>
     </message>
 </context>
 </TS>
