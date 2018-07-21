@@ -1201,32 +1201,32 @@ exited with status </source>
     <message>
         <location filename="../prefs.cpp" line="235"/>
         <source>%CPU divided by</source>
-        <translation type="unfinished"></translation>
+        <translation>%מעבד לפי חלוקה של</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="242"/>
         <source>Total cpu: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>סך ניצולת מעבד: %1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="243"/>
         <source>Single cpu: 1</source>
-        <translation type="unfinished"></translation>
+        <translation>מעבד יחיד: 1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="249"/>
         <source>default</source>
-        <translation type="unfinished"></translation>
+        <translation>בררת מחדל</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="250"/>
         <source>for developer</source>
-        <translation type="unfinished"></translation>
+        <translation>למפתח</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="286"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>מראה</translation>
     </message>
 </context>
 <context>
@@ -1234,12 +1234,12 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1894"/>
         <source>PID</source>
-        <translation type="unfinished"></translation>
+        <translation>מזהה תהליך</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1894"/>
         <source>Process ID</source>
-        <translation type="unfinished"></translation>
+        <translation>מזהה תהליך</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1896"/>
