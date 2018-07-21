@@ -44,37 +44,37 @@
     <message>
         <location filename="../prefs.cpp" line="79"/>
         <source>Host Name Lookup</source>
-        <translation type="unfinished"></translation>
+        <translation>Nachschlagen des Hostnamens</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="80"/>
         <source>Service Name Lookup</source>
-        <translation type="unfinished"></translation>
+        <translation>Nachschlagen des Dienstnamens</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="86"/>
         <source>Disclosure Triangles</source>
-        <translation type="unfinished"></translation>
+        <translation>Aufdeckungsdreiecke</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="87"/>
         <source>Branch Lines</source>
-        <translation type="unfinished"></translation>
+        <translation>Verzweigungslinien</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="93"/>
         <source>Auto Save Settings on Exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Einstellungen beim Verlassen automatisch speichern</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="94"/>
         <source>Selection: Copy PIDs to Clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Auswahl: PIDs in die Zwischenablage kopieren</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="96"/>
         <source>Normalize NICE</source>
-        <translation type="unfinished"></translation>
+        <translation>NICE normalisieren</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="97"/>
@@ -97,7 +97,9 @@
         <source>The command:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Der Befehl:
+
+</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="213"/>
@@ -106,7 +108,11 @@
 failed with the error:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>
+
+scheiterte mit dem Fehler:
+
+</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="216"/>
@@ -131,7 +137,9 @@ or you did not have execute permission.</source>
         <source>
 
 exited with status </source>
-        <translation type="unfinished"></translation>
+        <translation>
+
+endete mit Status </translation>
     </message>
     <message>
         <location filename="../command.cpp" line="238"/>
@@ -154,7 +162,7 @@ exited with status </source>
     <message>
         <location filename="../commanddialog.cpp" line="79"/>
         <source>Popup</source>
-        <translation type="unfinished"></translation>
+        <translation>Pop-up</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="84"/>
@@ -171,7 +179,14 @@ exited with status </source>
 %%	%
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Substitutionen:
+%p	PID
+%c	COMMAND
+%C	CMDLINE
+%u	USER
+%%	%
+
+</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="109"/>
@@ -200,12 +215,12 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="925"/>
         <source>Linear</source>
-        <translation type="unfinished"></translation>
+        <translation>Listenansicht</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="928"/>
         <source>Tree</source>
-        <translation>Baum</translation>
+        <translation>Baumansicht</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="949"/>
@@ -220,7 +235,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="951"/>
         <source>Non-Root Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Keine Root-Prozesse</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="952"/>
@@ -271,7 +286,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="609"/>
         <source>Variable</source>
-        <translation type="unfinished"></translation>
+        <translation>Variable</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="609"/>
@@ -334,7 +349,7 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="280"/>
         <source>include already running process</source>
-        <translation>bereits laufenden Prozess einbeziehen</translation>
+        <translation>derzeitig laufenden Prozess einbeziehen</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="309"/>
@@ -349,13 +364,14 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="367"/>
         <source>Help (Not yet. just concept)</source>
-        <translation>Hilfe (Noch nicht. Nur Konzept)</translation>
+        <translation>Hilfe (Existiert noch nicht.)</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="394"/>
         <source>%p : pid
 %c : command</source>
-        <translation></translation>
+        <translation>%p : pid
+%c : Befehl</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="425"/>
@@ -393,7 +409,7 @@ exited with status </source>
     <message>
         <location filename="../execwindow.cpp" line="42"/>
         <source>Qps Watchdog</source>
-        <translation type="unfinished"></translation>
+        <translation>Qps Watchdog</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="97"/>
