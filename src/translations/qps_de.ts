@@ -643,7 +643,7 @@ endete mit Status </translation>
     <message>
         <location filename="../prefs.cpp" line="235"/>
         <source>%CPU divided by</source>
-        <translation>%CPU dividiert durch</translation>
+        <translation>%CPU geteilt durch</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="242"/>
