@@ -429,7 +429,7 @@ endete mit Status </translation>
     <message>
         <location filename="../execwindow.cpp" line="106"/>
         <source>terminate command</source>
-        <translation>Befehl beenden</translation>
+        <translation>Befehl abbrechen</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="115"/>
@@ -460,7 +460,7 @@ endete mit Status </translation>
     <message>
         <location filename="../details.cpp" line="525"/>
         <source>File descriptor</source>
-        <translation type="unfinished"></translation>
+        <translation>Datei-Deskriptor</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="527"/>
@@ -655,7 +655,7 @@ endete mit Status </translation>
     <message>
         <location filename="../prefs.cpp" line="249"/>
         <source>default</source>
-        <translation type="unfinished"></translation>
+        <translation>Vorgabe</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="250"/>
