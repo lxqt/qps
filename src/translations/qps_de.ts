@@ -463,17 +463,17 @@ endete mit Status </translation>
     <message>
         <location filename="../details.cpp" line="525"/>
         <source>File descriptor</source>
-        <translation>Datei-Deskriptor</translation>
+        <translation>Dateideskriptor</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="527"/>
         <source>Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Modus</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="527"/>
         <source>Open mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Offener Modus</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="529"/>
@@ -491,12 +491,12 @@ endete mit Status </translation>
     <message>
         <location filename="../dialogs.cpp" line="51"/>
         <source>Change Update Period</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktualisierungsintervall ändern</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="57"/>
         <source>New Update Period</source>
-        <translation>Neuer Aktualisierungszeitraum</translation>
+        <translation>Aktualisierungsintervall</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="94"/>
@@ -511,7 +511,7 @@ endete mit Status </translation>
     <message>
         <location filename="../dialogs.cpp" line="130"/>
         <source>No UPDATE</source>
-        <translation type="unfinished"></translation>
+        <translation>Keine Aktualisierung</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="148"/>
@@ -524,7 +524,7 @@ endete mit Status </translation>
     <message>
         <location filename="../listmodel.cpp" line="66"/>
         <source>Event Category</source>
-        <translation>Ereignis-Kategorie</translation>
+        <translation>Ereigniskategorie</translation>
     </message>
     <message>
         <location filename="../listmodel.cpp" line="68"/>
@@ -542,7 +542,7 @@ endete mit Status </translation>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Mapped addresses (hex) )</source>
-        <translation type="unfinished"></translation>
+        <translation>Gemappte Adressen (hex) )</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
@@ -552,27 +552,27 @@ endete mit Status </translation>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Kbytes mapped (dec)</source>
-        <translation type="unfinished"></translation>
+        <translation>Kbytes gemappt (dez)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>Perm</source>
-        <translation type="unfinished"></translation>
+        <translation>Berechtigung</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>Permission flags</source>
-        <translation type="unfinished"></translation>
+        <translation>Berechtigungskennzeichen</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="399"/>
         <source>Offset</source>
-        <translation type="unfinished"></translation>
+        <translation>Versatz</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="399"/>
         <source>File offset at start of mapping (hex)</source>
-        <translation type="unfinished"></translation>
+        <translation>Dateiversatz bei Beginn des Mappings (hex)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="400"/>
@@ -582,17 +582,17 @@ endete mit Status </translation>
     <message>
         <location filename="../details.cpp" line="400"/>
         <source>Major,Minor device numbers (dec)</source>
-        <translation type="unfinished"></translation>
+        <translation>Haupt-,Nebengerätsnummern (dez)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="401"/>
         <source>Inode</source>
-        <translation type="unfinished"></translation>
+        <translation>Inode</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="401"/>
         <source>Inode number (dec)</source>
-        <translation type="unfinished"></translation>
+        <translation>Inode Nummer (dez)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="402"/>
@@ -610,7 +610,7 @@ endete mit Status </translation>
     <message>
         <location filename="../dialogs.cpp" line="273"/>
         <source>Permission</source>
-        <translation type="unfinished"></translation>
+        <translation>Berechtigung</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="282"/>
@@ -638,12 +638,12 @@ endete mit Status </translation>
     <message>
         <location filename="../prefs.cpp" line="173"/>
         <source>Setting</source>
-        <translation type="unfinished"></translation>
+        <translation>Einstellung</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="235"/>
         <source>%CPU divided by</source>
-        <translation type="unfinished"></translation>
+        <translation>%CPU dividiert durch</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="242"/>
