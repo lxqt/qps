@@ -429,7 +429,7 @@ endete mit Status </translation>
     <message>
         <location filename="../execwindow.cpp" line="106"/>
         <source>terminate command</source>
-        <translation type="unfinished"></translation>
+        <translation>Befehl beenden</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="115"/>
