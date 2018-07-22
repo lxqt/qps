@@ -59,7 +59,7 @@
     <message>
         <location filename="../prefs.cpp" line="87"/>
         <source>Branch Lines</source>
-        <translation>Verzweigungslinien</translation>
+        <translation>Zweiglinien</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="93"/>
@@ -130,7 +130,10 @@ scheiterte mit dem Fehler:
 
 could not be executed because it was not found,
 or you did not have execute permission.</source>
-        <translation type="unfinished"></translation>
+        <translation>
+
+konnte nicht ausgeführt werden, mangels fehlender 
+Identifizierbarkeit oder Ausführungsberechtigung.</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="234"/>
@@ -263,12 +266,12 @@ endete mit Status </translation>
     <message>
         <location filename="../details.cpp" line="54"/>
         <source>Sockets</source>
-        <translation type="unfinished"></translation>
+        <translation>Sockets</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="59"/>
         <source>Memory Maps</source>
-        <translation type="unfinished"></translation>
+        <translation>Memory Maps</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="61"/>
@@ -442,7 +445,7 @@ endete mit Status </translation>
     <message>
         <location filename="../fieldsel.cpp" line="34"/>
         <source>Select Custom Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>Benutzerdefinierte Felder auswählen </translation>
     </message>
     <message>
         <location filename="../fieldsel.cpp" line="68"/>
@@ -455,7 +458,7 @@ endete mit Status </translation>
     <message>
         <location filename="../details.cpp" line="525"/>
         <source>Fd</source>
-        <translation type="unfinished"></translation>
+        <translation>Fd</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="525"/>
