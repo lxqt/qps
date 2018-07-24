@@ -1986,7 +1986,7 @@ Proc::Proc()
     categories.insert( F_CPUNUM
                      , new Cat_int( tr( "CPU" ), tr( "CPU the process is executing on (SMP system)" ), 3, &Procinfo::which_cpu));
     categories.insert( F_CMD
-                     , new Cat_string( tr( "Process Name )" ), tr( "the process name" ), &Procinfo::command));
+                     , new Cat_string( tr( "Process Name" ), tr( "the process name" ), &Procinfo::command));
 //    categories.insert( F_PROCESSNAME
 //                     , new Cat_string( tr( "Process Name " ),tr( "the process name" ), &Procinfo::command));
     categories.insert( F_CWD
