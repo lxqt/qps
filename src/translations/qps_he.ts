@@ -1244,7 +1244,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1896"/>
         <source>TGID</source>
-        <translation type="unfinished"></translation>
+        <translation>TGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1896"/>
@@ -1284,12 +1284,12 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1904"/>
         <source>TTY</source>
-        <translation type="unfinished"></translation>
+        <translation>TTY</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1904"/>
         <source>Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>מסוף</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1906"/>
@@ -1304,22 +1304,22 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1908"/>
         <source>USER</source>
-        <translation type="unfinished"></translation>
+        <translation>משתמש</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1908"/>
         <source>Owner (*=suid root, +=suid a user)</source>
-        <translation type="unfinished"></translation>
+        <translation>בעלות (‎*=suid root,‏ ‎+=suid a user)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1910"/>
         <source>GROUP</source>
-        <translation type="unfinished"></translation>
+        <translation>קבוצה</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1910"/>
         <source>Group name (*=sgid other)</source>
-        <translation type="unfinished"></translation>
+        <translation>שם קבוצה ‎(*=sgid other)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1912"/>
@@ -1694,12 +1694,12 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1987"/>
         <source>CPU</source>
-        <translation type="unfinished"></translation>
+        <translation>מעבד</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1987"/>
         <source>CPU the process is executing on (SMP system)</source>
-        <translation type="unfinished"></translation>
+        <translation>המעבד עליו פועל התהליך (מערכת SMP)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1989"/>
@@ -1709,7 +1709,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1989"/>
         <source>the process name</source>
-        <translation type="unfinished"></translation>
+        <translation>שם התהליך</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1993"/>
@@ -1719,7 +1719,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1993"/>
         <source>Current working directory</source>
-        <translation type="unfinished"></translation>
+        <translation>תיקיית העבודה הנוכחית</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1994"/>
