@@ -1144,14 +1144,18 @@ skončilo se stavem </translation>
         <translation>Jádro procesoru na kterém je proces vykonáván</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="1989"/>
         <source>Process Name )</source>
-        <translation>Název procesu )</translation>
+        <translation type="vanished">Název procesu )</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1989"/>
         <source>the process name</source>
         <translation>název procesu</translation>
+    </message>
+    <message>
+        <location filename="../proc.cpp" line="1989"/>
+        <source>Process Name</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1993"/>
