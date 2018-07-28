@@ -1126,13 +1126,13 @@ exited with status </source>
     </message>
     <message>
         <location filename="../proc.cpp" line="1989"/>
-        <source>Process Name )</source>
+        <source>the process name</source>
         <translation></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1989"/>
-        <source>the process name</source>
-        <translation></translation>
+        <source>Process Name</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1993"/>

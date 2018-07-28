@@ -1040,12 +1040,12 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="323"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">אישור</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="325"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ביטול</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="355"/>
@@ -1703,13 +1703,13 @@ exited with status </source>
     </message>
     <message>
         <location filename="../proc.cpp" line="1989"/>
-        <source>Process Name )</source>
-        <translation type="unfinished"></translation>
+        <source>the process name</source>
+        <translation>שם התהליך</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1989"/>
-        <source>the process name</source>
-        <translation>שם התהליך</translation>
+        <source>Process Name</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1993"/>
