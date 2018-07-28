@@ -169,7 +169,7 @@
     <message>
         <location filename="../execwindow.cpp" line="115"/>
         <source>Error %1 : [%2] Maybe command not found</source>
-        <translation type="unfinished"></translation>
+        <translation>Klaida %1 : [%2] Galbūt, komanda nerasta</translation>
     </message>
 </context>
 <context>
