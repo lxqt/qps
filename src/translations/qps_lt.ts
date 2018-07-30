@@ -31,7 +31,7 @@
     <message>
         <location filename="../misc.cpp" line="952"/>
         <source>Running Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Vykdomi procesai</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="984"/>
@@ -164,7 +164,7 @@
     <message>
         <location filename="../execwindow.cpp" line="106"/>
         <source>terminate command</source>
-        <translation type="unfinished"></translation>
+        <translation>baigti komandą</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="115"/>
@@ -293,12 +293,12 @@
     <message>
         <location filename="../qps.cpp" line="506"/>
         <source>Renice...</source>
-        <translation type="unfinished"></translation>
+        <translation>Iš naujo nustatyti &quot;nice&quot;...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="507"/>
         <source>Scheduling...</source>
-        <translation type="unfinished"></translation>
+        <translation>Planavimas...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="509"/>
@@ -438,12 +438,12 @@
     <message>
         <location filename="../qps.cpp" line="1591"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
-        <translation type="unfinished"></translation>
+        <translation>Jūs neturite leidimo iš naujo nustatyti pažymėtų procesų &quot;nice&quot; reikšmę. Tai leidžiama daryti tik proceso savininkui ir supernaudotojui.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1628"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
-        <translation type="unfinished"></translation>
+        <translation>Jūs neturite leidimo iš naujo nustatyti proceso %1 (%2) &quot;nice&quot; reikšmę. Tai leidžiama daryti tik proceso savininkui ir supernaudotojui.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1635"/>
@@ -453,12 +453,12 @@
     <message>
         <location filename="../qps.cpp" line="1657"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tik supernaudotojas gali keisti planavimo politiką ir statinę pirmenybę.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1695"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
-        <translation type="unfinished"></translation>
+        <translation>Jūs neturite leidimo keisti proceso %1 (%2) planavimą ir/ar pirmenybę. Tai gali daryti tik supernaudotojas.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1774"/>
@@ -478,7 +478,7 @@
     <message>
         <location filename="../qps.cpp" line="2373"/>
         <source>&lt;H1&gt;QPS Help&lt;/H1&gt;Updated: May 24 2005&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Quit      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Update      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Space , Enter       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Terminate &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Kill &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;H1&gt;QPS žinynas&lt;/H1&gt;Atnaujintas: 2005 gegužės 24&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Išeiti      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL(VALD) + q , CTRL(VALD) + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Atnaujinti      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Tarpas , Enter(Įvedimas)       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; Baigti procesą &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE(Naik) &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; Nutraukti procesą &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</translation>
     </message>
 </context>
 <context>
@@ -569,7 +569,10 @@ patyrė nesėkmę su klaida:
 
 could not be executed because it was not found,
 or you did not have execute permission.</source>
-        <translation type="unfinished"></translation>
+        <translation>
+
+nepavyko įvykdyti, nes ji nebuvo rasta,
+arba jūs neturite leidimo jos vykdyti.</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="234"/>
@@ -647,7 +650,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../details.cpp" line="36"/>
         <source>Process %1 ( %2 ) - details</source>
-        <translation type="unfinished"></translation>
+        <translation>Procesas %1 ( %2 ) - išsamiau</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="45"/>
@@ -680,7 +683,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>Fd</source>
-        <translation type="unfinished"></translation>
+        <translation>Fd</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
@@ -789,12 +792,12 @@ išėjo su būsena </translation>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>Perm</source>
-        <translation type="unfinished"></translation>
+        <translation>Leid.</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>Permission flags</source>
-        <translation type="unfinished"></translation>
+        <translation>Leidimų vėliavėlės</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="399"/>
@@ -842,7 +845,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../details.cpp" line="525"/>
         <source>Fd</source>
-        <translation type="unfinished"></translation>
+        <translation>Fd</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="525"/>
@@ -857,7 +860,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../details.cpp" line="527"/>
         <source>Open mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Atvėrimo veiksena</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="529"/>
@@ -964,12 +967,12 @@ išėjo su būsena </translation>
     <message>
         <location filename="../dialogs.cpp" line="188"/>
         <source>Renice Process</source>
-        <translation type="unfinished"></translation>
+        <translation>Iš naujo nustatyti procesui &quot;nice&quot; reikšmę</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="194"/>
         <source>New nice value:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nauja &quot;nice&quot; reikšmė:</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="234"/>
@@ -987,12 +990,12 @@ išėjo su būsena </translation>
     <message>
         <location filename="../dialogs.cpp" line="273"/>
         <source>Permission</source>
-        <translation type="unfinished"></translation>
+        <translation>Leidimas</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="282"/>
         <source>Root password</source>
-        <translation type="unfinished"></translation>
+        <translation>Šaknies slaptažodis</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="289"/>
@@ -1010,12 +1013,12 @@ išėjo su būsena </translation>
     <message>
         <location filename="../dialogs.cpp" line="301"/>
         <source>Change scheduling</source>
-        <translation type="unfinished"></translation>
+        <translation>Keisti planavimą</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="305"/>
         <source>Scheduling Policy</source>
-        <translation type="unfinished"></translation>
+        <translation>Planavimo politika</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="307"/>
@@ -1063,7 +1066,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../fieldsel.cpp" line="34"/>
         <source>Select Custom Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>Pasirinkti tinkintus laukus </translation>
     </message>
     <message>
         <location filename="../fieldsel.cpp" line="68"/>
@@ -1090,7 +1093,8 @@ išėjo su būsena </translation>
         <location filename="../misc.cpp" line="347"/>
         <source> This is unstable Alpha feature
  You maybe see a SEGFAULT...</source>
-        <translation type="unfinished"></translation>
+        <translation> Tai yra nestabili Alfa ypatybė
+ Galite pamatyti SEGFAULT...</translation>
     </message>
 </context>
 <context>
@@ -1114,7 +1118,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../misc.cpp" line="806"/>
         <source>PID,COMMAND,USER...</source>
-        <translation type="unfinished"></translation>
+        <translation>PID,KOMANDA,NAUDOTOJAS...</translation>
     </message>
 </context>
 <context>
@@ -1165,7 +1169,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../prefs.cpp" line="96"/>
         <source>Normalize NICE</source>
-        <translation type="unfinished"></translation>
+        <translation>Normalizuoti &quot;NICE&quot;</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="97"/>
@@ -1259,12 +1263,12 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1900"/>
         <source>PGID</source>
-        <translation type="unfinished"></translation>
+        <translation>PGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1900"/>
         <source>Process group ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Proceso grupės ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1902"/>
@@ -1294,12 +1298,12 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1906"/>
         <source>Process group ID of tty owner</source>
-        <translation type="unfinished"></translation>
+        <translation>TTY savininko proceso grupės ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1908"/>
         <source>USER</source>
-        <translation type="unfinished"></translation>
+        <translation>NAUDOTOJAS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1908"/>
@@ -1309,7 +1313,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1910"/>
         <source>GROUP</source>
-        <translation type="unfinished"></translation>
+        <translation>GRUPĖ</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1910"/>
@@ -1404,12 +1408,12 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1928"/>
         <source>Dynamic priority</source>
-        <translation type="unfinished"></translation>
+        <translation>Dinaminė pirmenybė</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1930"/>
         <source>NICE</source>
-        <translation type="unfinished"></translation>
+        <translation>NICE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1930"/>
@@ -1434,7 +1438,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1934"/>
         <source>Scheduling policy</source>
-        <translation type="unfinished"></translation>
+        <translation>Planavimo politika</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1936"/>
@@ -1564,7 +1568,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1961"/>
         <source>Shared memory with other libs</source>
-        <translation type="unfinished"></translation>
+        <translation>Bendrinama atmintis su kitomis bibliotekomis</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1963"/>
@@ -1619,7 +1623,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1973"/>
         <source>FLAGS</source>
-        <translation type="unfinished"></translation>
+        <translation>VĖLIAVĖLĖS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1973"/>
@@ -1669,12 +1673,12 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1983"/>
         <source>START</source>
-        <translation type="unfinished"></translation>
+        <translation>PRADŽIA</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1983"/>
         <source>Time process started</source>
-        <translation type="unfinished"></translation>
+        <translation>Laikas, kai procesas buvo paleistas</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1985"/>
@@ -1708,7 +1712,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1989"/>
         <source>Process Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Proceso pavadinimas</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1993"/>
@@ -1718,27 +1722,27 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1993"/>
         <source>Current working directory</source>
-        <translation type="unfinished"></translation>
+        <translation>Esamas darbinis katalogas</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1994"/>
         <source>ROOT</source>
-        <translation type="unfinished"></translation>
+        <translation>ŠAKNIS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1994"/>
         <source>Root directory of process</source>
-        <translation type="unfinished"></translation>
+        <translation>Proceso šaknies katalogas</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1997"/>
         <source>COMMAND_LINE</source>
-        <translation type="unfinished"></translation>
+        <translation>KOMANDŲ EILUTĖ</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1997"/>
         <source>Command line that started the process</source>
-        <translation type="unfinished"></translation>
+        <translation>Komandų eilutė, kuri paleido procesą</translation>
     </message>
 </context>
 <context>
