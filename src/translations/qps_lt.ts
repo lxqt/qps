@@ -26,7 +26,7 @@
     <message>
         <location filename="../misc.cpp" line="951"/>
         <source>Non-Root Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Ne šaknies procesai</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="952"/>
