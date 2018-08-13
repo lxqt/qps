@@ -44,12 +44,12 @@
     <message>
         <location filename="../prefs.cpp" line="79"/>
         <source>Host Name Lookup</source>
-        <translation type="unfinished"></translation>
+        <translation>Opslag af host navn</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="80"/>
         <source>Service Name Lookup</source>
-        <translation type="unfinished"></translation>
+        <translation>Opslag af service navn</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="86"/>
