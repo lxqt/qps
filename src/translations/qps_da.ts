@@ -117,7 +117,7 @@ mislykkede med fejlen:
     <message>
         <location filename="../command.cpp" line="216"/>
         <source>Too many processes</source>
-        <translation type="unfinished"></translation>
+        <translation>For mange processer</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="219"/>
@@ -130,14 +130,19 @@ mislykkede med fejlen:
 
 could not be executed because it was not found,
 or you did not have execute permission.</source>
-        <translation type="unfinished"></translation>
+        <translation>
+
+kunne ikke eksekveres da den ikke blev fundet,
+eller du ikke har tilladelse til at eksekvere.</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="234"/>
         <source>
 
 exited with status </source>
-        <translation type="unfinished"></translation>
+        <translation>
+
+afsluttede med status </translation>
     </message>
     <message>
         <location filename="../command.cpp" line="238"/>
@@ -177,7 +182,14 @@ exited with status </source>
 %%	%
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Erstatninger:
+%p	PID
+%c	KOMMANDO
+%C	KOMMANDOLINJE
+%u	BRUGER
+%%	%
+
+</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="109"/>
@@ -206,7 +218,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="925"/>
         <source>Linear</source>
-        <translation type="unfinished"></translation>
+        <translation>Lineær</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="928"/>
@@ -216,22 +228,22 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="949"/>
         <source>All Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Alle processer</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="950"/>
         <source>Your Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Dine processer</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="951"/>
         <source>Non-Root Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikke-root processer</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="952"/>
         <source>Running Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Kørende processer</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="984"/>
@@ -244,7 +256,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="36"/>
         <source>Process %1 ( %2 ) - details</source>
-        <translation type="unfinished"></translation>
+        <translation>Proces %1 ( %2 ) - detaljer</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="45"/>
@@ -259,7 +271,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="59"/>
         <source>Memory Maps</source>
-        <translation type="unfinished"></translation>
+        <translation>Hukommelseskort</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="61"/>
@@ -420,12 +432,12 @@ exited with status </source>
     <message>
         <location filename="../execwindow.cpp" line="106"/>
         <source>terminate command</source>
-        <translation type="unfinished"></translation>
+        <translation>terminer kommando</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="115"/>
         <source>Error %1 : [%2] Maybe command not found</source>
-        <translation type="unfinished"></translation>
+        <translation>Fejl %1 : [%2] Måske findes kommendoen ikke</translation>
     </message>
 </context>
 <context>
@@ -433,7 +445,7 @@ exited with status </source>
     <message>
         <location filename="../fieldsel.cpp" line="34"/>
         <source>Select Custom Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>Vælg tilpassede felter </translation>
     </message>
     <message>
         <location filename="../fieldsel.cpp" line="68"/>
@@ -451,7 +463,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="525"/>
         <source>File descriptor</source>
-        <translation type="unfinished"></translation>
+        <translation>Filbeskriver</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="527"/>
@@ -484,7 +496,7 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="57"/>
         <source>New Update Period</source>
-        <translation type="unfinished"></translation>
+        <translation>Ny opdateringsperiode</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="94"/>
@@ -499,7 +511,7 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="130"/>
         <source>No UPDATE</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingen opdatering</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="148"/>
@@ -603,7 +615,7 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="282"/>
         <source>Root password</source>
-        <translation type="unfinished"></translation>
+        <translation>Root-adgangskode</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="289"/>
@@ -631,17 +643,17 @@ exited with status </source>
     <message>
         <location filename="../prefs.cpp" line="235"/>
         <source>%CPU divided by</source>
-        <translation type="unfinished"></translation>
+        <translation>%CPU divideret med</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="242"/>
         <source>Total cpu: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Samlet cpu: %1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="243"/>
         <source>Single cpu: 1</source>
-        <translation type="unfinished"></translation>
+        <translation>Enkelt cpu: 1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="249"/>
@@ -651,7 +663,7 @@ exited with status </source>
     <message>
         <location filename="../prefs.cpp" line="250"/>
         <source>for developer</source>
-        <translation type="unfinished"></translation>
+        <translation>til udvikler</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="286"/>
@@ -669,7 +681,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1894"/>
         <source>Process ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Proces-ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1896"/>
