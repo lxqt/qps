@@ -54,7 +54,7 @@
     <message>
         <location filename="../prefs.cpp" line="86"/>
         <source>Disclosure Triangles</source>
-        <translation type="unfinished"></translation>
+        <translation>Afsløringstrekanter</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="87"/>
@@ -69,7 +69,7 @@
     <message>
         <location filename="../prefs.cpp" line="94"/>
         <source>Selection: Copy PIDs to Clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Markering: Kopiér PID&apos;er til udklipsholder</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="96"/>
@@ -79,7 +79,7 @@
     <message>
         <location filename="../prefs.cpp" line="97"/>
         <source>Use pmap for Map Names</source>
-        <translation type="unfinished"></translation>
+        <translation>Brug pmap til kortnavne</translation>
     </message>
 </context>
 <context>
@@ -155,7 +155,7 @@ afsluttede med status </translation>
     <message>
         <location filename="../commanddialog.cpp" line="47"/>
         <source>Edit Commands 0.1 alpha</source>
-        <translation type="unfinished"></translation>
+        <translation>Rediger kommandoer 0,1 alfa</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="63"/>
@@ -317,7 +317,7 @@ afsluttede med status </translation>
     <message>
         <location filename="../watchdog.ui" line="117"/>
         <source>Eventcat</source>
-        <translation type="unfinished"></translation>
+        <translation>Eventcat</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="162"/>
@@ -473,7 +473,7 @@ afsluttede med status </translation>
     <message>
         <location filename="../details.cpp" line="527"/>
         <source>Open mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Åbningstilstand</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="529"/>
@@ -491,7 +491,7 @@ afsluttede med status </translation>
     <message>
         <location filename="../dialogs.cpp" line="51"/>
         <source>Change Update Period</source>
-        <translation type="unfinished"></translation>
+        <translation>Skift opdateringsperiode</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="57"/>
@@ -542,7 +542,7 @@ afsluttede med status </translation>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Mapped addresses (hex) )</source>
-        <translation type="unfinished"></translation>
+        <translation>Kortlagte adresser (hex) )</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
@@ -1116,7 +1116,7 @@ afsluttede med status </translation>
     <message>
         <location filename="../proc.cpp" line="1983"/>
         <source>START</source>
-        <translation type="unfinished"></translation>
+        <translation>START</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1983"/>
@@ -1136,7 +1136,7 @@ afsluttede med status </translation>
     <message>
         <location filename="../proc.cpp" line="1987"/>
         <source>CPU</source>
-        <translation type="unfinished"></translation>
+        <translation>CPU</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1987"/>
@@ -1146,12 +1146,12 @@ afsluttede med status </translation>
     <message>
         <location filename="../proc.cpp" line="1989"/>
         <source>the process name</source>
-        <translation type="unfinished"></translation>
+        <translation>processens navn</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1989"/>
         <source>Process Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Processens navn</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1993"/>
@@ -1161,7 +1161,7 @@ afsluttede med status </translation>
     <message>
         <location filename="../proc.cpp" line="1993"/>
         <source>Current working directory</source>
-        <translation type="unfinished"></translation>
+        <translation>Nuværende arbejdsmappe</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1994"/>
@@ -1176,7 +1176,7 @@ afsluttede med status </translation>
     <message>
         <location filename="../proc.cpp" line="1997"/>
         <source>COMMAND_LINE</source>
-        <translation type="unfinished"></translation>
+        <translation>KOMMANDOLINJE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1997"/>
@@ -1217,7 +1217,7 @@ afsluttede med status </translation>
     <message>
         <location filename="../qps.cpp" line="190"/>
         <source>Remove Field</source>
-        <translation type="unfinished"></translation>
+        <translation>Fjern felt</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="191"/>
@@ -1247,12 +1247,12 @@ afsluttede med status </translation>
     <message>
         <location filename="../qps.cpp" line="207"/>
         <source>Custom Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Tilpassede felter</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="209"/>
         <source>Basic Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>Grundlæggende felter </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="211"/>
@@ -1262,7 +1262,7 @@ afsluttede med status </translation>
     <message>
         <location filename="../qps.cpp" line="213"/>
         <source>Memory Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>Hukommelsesfelter </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="216"/>
@@ -1272,7 +1272,7 @@ afsluttede med status </translation>
     <message>
         <location filename="../qps.cpp" line="222"/>
         <source>Select Custom Fields...</source>
-        <translation type="unfinished"></translation>
+        <translation>Vælg tilpassede felter...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="236"/>
@@ -1282,28 +1282,28 @@ afsluttede med status </translation>
     <message>
         <location filename="../qps.cpp" line="237"/>
         <source>Update Period...</source>
-        <translation type="unfinished"></translation>
+        <translation>Opdater periode...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="246"/>
         <source>Show Status bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis statuslinje</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="255"/>
         <source>Preferences...</source>
-        <translation type="unfinished"></translation>
+        <translation>Præferencer...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="261"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Hjælp</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="263"/>
         <location filename="../qps.cpp" line="2291"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Om</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="354"/>
@@ -1313,12 +1313,12 @@ afsluttede med status </translation>
     <message>
         <location filename="../qps.cpp" line="395"/>
         <source>test</source>
-        <translation type="unfinished"></translation>
+        <translation>test</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="396"/>
         <source>Copied to Clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopieret til udklipsholder</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="505"/>
