@@ -69,7 +69,7 @@
     <message>
         <location filename="../prefs.cpp" line="94"/>
         <source>Selection: Copy PIDs to Clipboard</source>
-        <translation>Selection : Copier les PIDs dans le presse-papier</translation>
+        <translation>Selection: Copier les PIDs dans le presse-papier</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="96"/>
@@ -108,7 +108,7 @@ failed with the error:
 </source>
         <translation>
 
-Echec sur l&apos;erreur :
+Echec sur l&apos;erreur:
 
 </translation>
     </message>
@@ -158,7 +158,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../commanddialog.cpp" line="63"/>
         <source>Name:</source>
-        <translation>Nom :</translation>
+        <translation>Nom:</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="79"/>
@@ -168,7 +168,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../commanddialog.cpp" line="84"/>
         <source>Command Line:</source>
-        <translation>Ligne de commande :</translation>
+        <translation>Ligne de commande:</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="95"/>
@@ -180,7 +180,8 @@ arrêt avec le statut. </translation>
 %%	%
 
 </source>
-        <translation></translation>
+        <translation>
+</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="109"/>
@@ -427,7 +428,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../execwindow.cpp" line="115"/>
         <source>Error %1 : [%2] Maybe command not found</source>
-        <translation>Erreur %1 : [%2] Peut-être la commande n&apos;a-t-elle pas été trouvée</translation>
+        <translation>Erreur %1: [%2] Peut-être la commande n&apos;a-t-elle pas été trouvée</translation>
     </message>
 </context>
 <context>
@@ -643,7 +644,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../prefs.cpp" line="243"/>
         <source>Single cpu: 1</source>
-        <translation>CPU unique : 1</translation>
+        <translation>CPU unique: 1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="249"/>
@@ -1473,12 +1474,12 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../qps.cpp" line="1635"/>
         <source>Only the super-user may lower the nice value of a process.</source>
-        <translation>Seul le super utilisateur a le droit de diminuer la valeur de nice d&apos;un processus</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1657"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
-        <translation>Seul le super utilisateur a le droit de changer la politique d&apos;ordonnancement et la priorité statique</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1695"/>
@@ -1546,7 +1547,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../dialogs.cpp" line="355"/>
         <source>Priority (1-99):</source>
-        <translation>Priorité (1-99):</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="388"/>
@@ -1589,7 +1590,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../screenshot.cpp" line="335"/>
         <source>Screenshot Delay:</source>
-        <translation>Attente pour la copie d&apos;écran :</translation>
+        <translation>Attente pour la copie d&apos;écran:</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="337"/>
@@ -1625,7 +1626,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../dialogs.cpp" line="194"/>
         <source>New nice value:</source>
-        <translation>Nouvelle valeur nice :</translation>
+        <translation>Nouvelle valeur nice:</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="234"/>
@@ -1732,7 +1733,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../misc.cpp" line="895"/>
         <source>Process count: %1</source>
-        <translation>Nombre de processus : %1</translation>
+        <translation>Nombre de processus: %1</translation>
     </message>
 </context>
 <context>
