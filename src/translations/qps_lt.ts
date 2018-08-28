@@ -388,7 +388,7 @@
     <message>
         <location filename="../qps.cpp" line="552"/>
         <source>SIGCHLD (child death)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGCHLD (vyksnio mirtis)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="554"/>
@@ -1079,7 +1079,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../listmodel.cpp" line="66"/>
         <source>Event Category</source>
-        <translation type="unfinished"></translation>
+        <translation>Įvykio kategorija</translation>
     </message>
     <message>
         <location filename="../listmodel.cpp" line="68"/>
@@ -1110,7 +1110,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../misc.cpp" line="615"/>
         <source>title</source>
-        <translation type="unfinished"></translation>
+        <translation>pavadinimas</translation>
     </message>
 </context>
 <context>
@@ -1398,12 +1398,12 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1926"/>
         <source>File system group ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Failų sistemos grupės ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1928"/>
         <source>PRI</source>
-        <translation type="unfinished"></translation>
+        <translation>PRI</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1928"/>
@@ -1423,17 +1423,17 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1932"/>
         <source>NLWP</source>
-        <translation type="unfinished"></translation>
+        <translation>NLWP</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1932"/>
         <source>Number of tasks(threads) in task group</source>
-        <translation type="unfinished"></translation>
+        <translation>Užduočių (gijų) skaičius užduočių grupėje</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1934"/>
         <source>PLCY</source>
-        <translation type="unfinished"></translation>
+        <translation>PLCY</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1934"/>
@@ -1443,17 +1443,17 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1936"/>
         <source>RPRI</source>
-        <translation type="unfinished"></translation>
+        <translation>RPRI</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1936"/>
         <source>Realtime priority (0-99, more is better)</source>
-        <translation type="unfinished"></translation>
+        <translation>Tikralaikė pirmenybė (0-99, daugiau yra geriau)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1938"/>
         <source>TMS</source>
-        <translation type="unfinished"></translation>
+        <translation>TMS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1938"/>
@@ -1463,7 +1463,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1940"/>
         <source>%SAVG</source>
-        <translation type="unfinished"></translation>
+        <translation>%SAVG</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1940"/>
@@ -1473,7 +1473,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1942"/>
         <source>CPUSET</source>
-        <translation type="unfinished"></translation>
+        <translation>CPUSET</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1942"/>
@@ -1483,37 +1483,37 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1944"/>
         <source>MAJFLT</source>
-        <translation type="unfinished"></translation>
+        <translation>MAJFLT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1944"/>
         <source>Number of major faults (disk access)</source>
-        <translation type="unfinished"></translation>
+        <translation>Stambių klaidų skaičius (disko prieiga)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1946"/>
         <source>MINFLT</source>
-        <translation type="unfinished"></translation>
+        <translation>MINFLT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1946"/>
         <source>Number of minor faults (no disk access)</source>
-        <translation type="unfinished"></translation>
+        <translation>Nežymių klaidų skaičius (jokios disko prieigos)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1949"/>
         <source>VSIZE</source>
-        <translation type="unfinished"></translation>
+        <translation>VSIZE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1949"/>
         <source>Virtual image size of process</source>
-        <translation type="unfinished"></translation>
+        <translation>Proceso virtualaus atvaizdžio dydis</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1951"/>
         <source>RSS</source>
-        <translation type="unfinished"></translation>
+        <translation>RSS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1951"/>
@@ -1523,7 +1523,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1953"/>
         <source>MEM</source>
-        <translation type="unfinished"></translation>
+        <translation>MEM</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1953"/>
@@ -1533,7 +1533,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1955"/>
         <source>TRS</source>
-        <translation type="unfinished"></translation>
+        <translation>TRS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1955"/>
@@ -1543,7 +1543,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1957"/>
         <source>DRS</source>
-        <translation type="unfinished"></translation>
+        <translation>DRS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1957"/>
