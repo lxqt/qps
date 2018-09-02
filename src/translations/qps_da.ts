@@ -1658,7 +1658,7 @@ afsluttede med status </translation>
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>File descriptor</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Filbeskriver</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
