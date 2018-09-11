@@ -412,7 +412,7 @@ afsluttede med status </translation>
     <message>
         <location filename="../execwindow.cpp" line="42"/>
         <source>Qps Watchdog</source>
-        <translation type="unfinished"></translation>
+        <translation>Qps-watchdog</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="97"/>
@@ -458,7 +458,7 @@ afsluttede med status </translation>
     <message>
         <location filename="../details.cpp" line="525"/>
         <source>Fd</source>
-        <translation type="unfinished"></translation>
+        <translation>Fb</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="525"/>
@@ -1448,12 +1448,12 @@ afsluttede med status </translation>
     <message>
         <location filename="../qps.cpp" line="1181"/>
         <source>WatchDog</source>
-        <translation type="unfinished"></translation>
+        <translation>WatchDog</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1185"/>
         <source>Edit Commands...</source>
-        <translation type="unfinished"></translation>
+        <translation>Rediger kommandoer...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1210"/>
