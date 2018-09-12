@@ -144,12 +144,12 @@
     <message>
         <location filename="../execwindow.cpp" line="42"/>
         <source>Qps Watchdog</source>
-        <translation type="unfinished"></translation>
+        <translation>Qps kontrolierius</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="97"/>
         <source>%1 exit with code %2</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 išėjo su kodu %2</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="99"/>
@@ -159,7 +159,7 @@
     <message>
         <location filename="../execwindow.cpp" line="105"/>
         <source>%1 [running]</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 [vykdoma]</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="106"/>
