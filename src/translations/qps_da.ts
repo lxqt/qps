@@ -971,7 +971,7 @@ afsluttede med status </translation>
     <message>
         <location filename="../proc.cpp" line="1953"/>
         <source>memory usage (RSS-SHARE)</source>
-        <translation>Hukommelsesforbrug (RSS-DELING)</translation>
+        <translation>hukommelsesforbrug (RSS-DELING)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1955"/>
