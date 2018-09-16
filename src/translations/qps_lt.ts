@@ -177,7 +177,7 @@
     <message>
         <location filename="../qps.cpp" line="189"/>
         <source>header_popup</source>
-        <translation type="unfinished"></translation>
+        <translation>header_popup</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="190"/>
@@ -288,7 +288,7 @@
     <message>
         <location filename="../qps.cpp" line="505"/>
         <source>context popup</source>
-        <translation type="unfinished"></translation>
+        <translation>iškylantysis kontekstinis langas</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="506"/>
@@ -413,7 +413,7 @@
     <message>
         <location filename="../qps.cpp" line="1181"/>
         <source>WatchDog</source>
-        <translation type="unfinished"></translation>
+        <translation>Kontrolierius</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1185"/>
@@ -708,7 +708,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Bytes in receive queue</source>
-        <translation type="unfinished"></translation>
+        <translation>Baitai gavimo eilėje</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="154"/>
@@ -718,7 +718,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../details.cpp" line="154"/>
         <source>Bytes in send queue</source>
-        <translation type="unfinished"></translation>
+        <translation>Baitai siuntimo eilėje</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
@@ -1243,7 +1243,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1896"/>
         <source>TGID</source>
-        <translation type="unfinished"></translation>
+        <translation>TGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1896"/>
