@@ -278,7 +278,7 @@
     <message>
         <location filename="../qps.cpp" line="395"/>
         <source>test</source>
-        <translation type="unfinished"></translation>
+        <translation>išbandyti</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="396"/>
@@ -308,7 +308,7 @@
     <message>
         <location filename="../qps.cpp" line="511"/>
         <source>Hangup</source>
-        <translation type="unfinished"></translation>
+        <translation>Užstrigdinti</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="512"/>
@@ -594,7 +594,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../commanddialog.cpp" line="47"/>
         <source>Edit Commands 0.1 alpha</source>
-        <translation type="unfinished"></translation>
+        <translation>Taisyti komandas 0.1 alfa</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="63"/>
@@ -621,7 +621,14 @@ išėjo su būsena </translation>
 %%	%
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Pakaitalai:
+%p	PID
+%c	KOMANDA
+%C	KOMANDŲ EILUTĖ
+%u	NAUDOTOJAS
+%%	%
+
+</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="109"/>
@@ -693,7 +700,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../details.cpp" line="152"/>
         <source>Proto</source>
-        <translation type="unfinished"></translation>
+        <translation>Protokolas</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
@@ -703,7 +710,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Recv-Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Gavimo eilė</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
@@ -713,7 +720,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../details.cpp" line="154"/>
         <source>Send-Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Siuntimo eilė</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="154"/>
@@ -1023,17 +1030,17 @@ išėjo su būsena </translation>
     <message>
         <location filename="../dialogs.cpp" line="307"/>
         <source>SCHED_OTHER (time-sharing)</source>
-        <translation type="unfinished"></translation>
+        <translation>SCHED_OTHER (laiko paskirstymo)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="308"/>
         <source>SCHED_FIFO (real-time)</source>
-        <translation type="unfinished"></translation>
+        <translation>SCHED_FIFO (tikralaikė)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="309"/>
         <source>SCHED_RR (real-time)</source>
-        <translation type="unfinished"></translation>
+        <translation>SCHED_RR (tikralaikė)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="323"/>
@@ -1139,7 +1146,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../prefs.cpp" line="79"/>
         <source>Host Name Lookup</source>
-        <translation type="unfinished"></translation>
+        <translation>Serverių vardų paieška</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="80"/>
@@ -1164,7 +1171,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../prefs.cpp" line="94"/>
         <source>Selection: Copy PIDs to Clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Žymėjimas: Kopijuoti PID į iškarpinę</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="96"/>
@@ -1205,12 +1212,12 @@ išėjo su būsena </translation>
     <message>
         <location filename="../prefs.cpp" line="242"/>
         <source>Total cpu: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Iš viso procesorių: %1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="243"/>
         <source>Single cpu: 1</source>
-        <translation type="unfinished"></translation>
+        <translation>Vienas procesorius: 1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="249"/>
@@ -1248,17 +1255,17 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1896"/>
         <source>Task group ID ( parent of threads )</source>
-        <translation type="unfinished"></translation>
+        <translation>Užduočių grupės ID (gijų pirminio)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1898"/>
         <source>PPID</source>
-        <translation type="unfinished"></translation>
+        <translation>PPID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1898"/>
         <source>Parent process ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Pirminio proceso ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1900"/>
@@ -1293,7 +1300,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1906"/>
         <source>TPGID</source>
-        <translation type="unfinished"></translation>
+        <translation>TPGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1906"/>
@@ -1308,7 +1315,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1908"/>
         <source>Owner (*=suid root, +=suid a user)</source>
-        <translation type="unfinished"></translation>
+        <translation>Savininkas (*=suid šaknis, +=suid naudotojas)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1910"/>
@@ -1318,82 +1325,82 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1910"/>
         <source>Group name (*=sgid other)</source>
-        <translation type="unfinished"></translation>
+        <translation>Grupės pavadinimas (*=sgid kita)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1912"/>
         <source>UID</source>
-        <translation type="unfinished"></translation>
+        <translation>UID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1912"/>
         <source>Real user ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Tikrasis naudotojo ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1914"/>
         <source>EUID</source>
-        <translation type="unfinished"></translation>
+        <translation>EUID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1914"/>
         <source>Effective user ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Efektyvusis naudotojo ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1916"/>
         <source>SUID</source>
-        <translation type="unfinished"></translation>
+        <translation>SUID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1916"/>
         <source>Saved user ID (Posix)</source>
-        <translation type="unfinished"></translation>
+        <translation>Įrašytas naudotojo ID (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1918"/>
         <source>FSUID</source>
-        <translation type="unfinished"></translation>
+        <translation>FSUID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1918"/>
         <source>File system user ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Failų sistemos naudotojo ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1920"/>
         <source>GID</source>
-        <translation type="unfinished"></translation>
+        <translation>GID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1920"/>
         <source>Real group ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Tikrasis grupės ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1922"/>
         <source>EGID</source>
-        <translation type="unfinished"></translation>
+        <translation>EGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1922"/>
         <source>Effective group ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Efektyvusis grupės ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1924"/>
         <source>SGID</source>
-        <translation type="unfinished"></translation>
+        <translation>SGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1924"/>
         <source>Saved group ID (Posix)</source>
-        <translation type="unfinished"></translation>
+        <translation>Įrašytas grupės ID (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1926"/>
         <source>FSGID</source>
-        <translation type="unfinished"></translation>
+        <translation>FSGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1926"/>
@@ -1418,7 +1425,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1930"/>
         <source>Scheduling favour (higher -&gt; less cpu time)</source>
-        <translation type="unfinished"></translation>
+        <translation>Planavimo palankumas (didesnis -&gt; mažesnis apdorojimo laikas)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1932"/>
@@ -1458,7 +1465,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1938"/>
         <source>Time slice in milliseconds</source>
-        <translation type="unfinished"></translation>
+        <translation>Laiko tarpas, milisekundėmis</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1940"/>
@@ -1603,7 +1610,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1969"/>
         <source>DT</source>
-        <translation type="unfinished"></translation>
+        <translation>DT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1969"/>
@@ -1618,7 +1625,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1971"/>
         <source>State of the process </source>
-        <translation type="unfinished"></translation>
+        <translation>Proceso būsena </translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1973"/>
@@ -1638,12 +1645,12 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1975"/>
         <source>Kernel function where process is sleeping</source>
-        <translation type="unfinished"></translation>
+        <translation>Branduolio funkcija, kurioje miega procesas</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1977"/>
         <source>%WCPU</source>
-        <translation type="unfinished"></translation>
+        <translation>%WCPU</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1977"/>
@@ -1653,7 +1660,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1979"/>
         <source>%CPU</source>
-        <translation type="unfinished"></translation>
+        <translation>%CPU</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1979"/>
@@ -1663,7 +1670,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1981"/>
         <source>%MEM</source>
-        <translation type="unfinished"></translation>
+        <translation>%MEM</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1981"/>
@@ -1683,7 +1690,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1985"/>
         <source>TIME</source>
-        <translation type="unfinished"></translation>
+        <translation>LAIKAS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1985"/>
@@ -1698,7 +1705,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1987"/>
         <source>CPU the process is executing on (SMP system)</source>
-        <translation type="unfinished"></translation>
+        <translation>Procesorius, kuriame yra vykdomas procesas (SMP sistemose)</translation>
     </message>
     <message>
         <source>Process Name )</source>
@@ -1717,7 +1724,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1993"/>
         <source>CWD</source>
-        <translation type="unfinished"></translation>
+        <translation>CWD</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1993"/>
@@ -1760,7 +1767,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../qps.cpp" line="2224"/>
         <source>ScreenShot</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekrano kopija</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2229"/>
