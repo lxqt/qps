@@ -266,7 +266,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../details.cpp" line="54"/>
         <source>Sockets</source>
-        <translation>Sockets</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="59"/>
@@ -342,7 +342,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../watchdog.ui" line="229"/>
         <source>cpu</source>
-        <translation>cpu</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="248"/>
@@ -731,7 +731,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../proc.cpp" line="1904"/>
         <source>Terminal</source>
-        <translation>Terminal</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1906"/>
@@ -756,7 +756,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../proc.cpp" line="1910"/>
         <source>GROUP</source>
-        <translation type="unfinished"></translation>
+        <translation>GRUPO</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1910"/>
@@ -1116,7 +1116,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../proc.cpp" line="1983"/>
         <source>START</source>
-        <translation type="unfinished"></translation>
+        <translation>INICIO</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1983"/>
@@ -1126,7 +1126,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../proc.cpp" line="1985"/>
         <source>TIME</source>
-        <translation type="unfinished"></translation>
+        <translation>HORA</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1985"/>
@@ -1693,7 +1693,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>Local Addr</source>
-        <translation type="unfinished"></translation>
+        <translation>Dirección local</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
@@ -1704,7 +1704,7 @@ ha terminado con el código de salida </translation>
         <location filename="../details.cpp" line="156"/>
         <location filename="../details.cpp" line="158"/>
         <source>Port</source>
-        <translation type="unfinished"></translation>
+        <translation>Puerto</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="156"/>
@@ -1714,7 +1714,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../details.cpp" line="157"/>
         <source>Remote Addr</source>
-        <translation type="unfinished"></translation>
+        <translation>Dirección remota</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="157"/>
@@ -1724,7 +1724,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../details.cpp" line="158"/>
         <source>Remote port</source>
-        <translation type="unfinished"></translation>
+        <translation>Puerto remoto</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="159"/>
