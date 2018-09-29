@@ -784,7 +784,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Mapped addresses (hex) )</source>
-        <translation type="unfinished"></translation>
+        <translation>Atvaizduojami adresai (šešiolikt.)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
@@ -794,7 +794,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Kbytes mapped (dec)</source>
-        <translation type="unfinished"></translation>
+        <translation>Atvaizduojama kilobaitų (dešimt.)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
@@ -814,7 +814,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../details.cpp" line="399"/>
         <source>File offset at start of mapping (hex)</source>
-        <translation type="unfinished"></translation>
+        <translation>Failo poslinkis atvaizdavimo pradžioje (šešiolikt.)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="400"/>
@@ -824,17 +824,17 @@ išėjo su būsena </translation>
     <message>
         <location filename="../details.cpp" line="400"/>
         <source>Major,Minor device numbers (dec)</source>
-        <translation type="unfinished"></translation>
+        <translation>Pagrindinio, šalutinio įrenginio numeriai (dešimt.)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="401"/>
         <source>Inode</source>
-        <translation type="unfinished"></translation>
+        <translation>Inode</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="401"/>
         <source>Inode number (dec)</source>
-        <translation type="unfinished"></translation>
+        <translation>Inode numeris (dešimt.)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="402"/>
@@ -1151,17 +1151,17 @@ išėjo su būsena </translation>
     <message>
         <location filename="../prefs.cpp" line="80"/>
         <source>Service Name Lookup</source>
-        <translation type="unfinished"></translation>
+        <translation>Tarnybų pavadinimų paieška</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="86"/>
         <source>Disclosure Triangles</source>
-        <translation type="unfinished"></translation>
+        <translation>Trikampių atskleidimas</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="87"/>
         <source>Branch Lines</source>
-        <translation type="unfinished"></translation>
+        <translation>Atšakų linijos</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="93"/>
@@ -1181,7 +1181,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../prefs.cpp" line="97"/>
         <source>Use pmap for Map Names</source>
-        <translation type="unfinished"></translation>
+        <translation>Planų pavadinimams naudoti pmap</translation>
     </message>
 </context>
 <context>
@@ -1207,7 +1207,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../prefs.cpp" line="235"/>
         <source>%CPU divided by</source>
-        <translation type="unfinished"></translation>
+        <translation>%CPU padalintas iš</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="242"/>
@@ -1222,12 +1222,12 @@ išėjo su būsena </translation>
     <message>
         <location filename="../prefs.cpp" line="249"/>
         <source>default</source>
-        <translation type="unfinished"></translation>
+        <translation>numatytasis</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="250"/>
         <source>for developer</source>
-        <translation type="unfinished"></translation>
+        <translation>kūrėjui</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="286"/>
@@ -1475,7 +1475,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1940"/>
         <source>Percentage average sleep time (-1 -&gt; N/A)</source>
-        <translation type="unfinished"></translation>
+        <translation>Vidutinio miego laiko procentinė dalis (-1 -&gt; Nėra)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1942"/>
@@ -1485,7 +1485,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1942"/>
         <source>Affinity CPU mask (0 -&gt; API not supported)</source>
-        <translation type="unfinished"></translation>
+        <translation>Procesoriaus atitikimo kaukė (0 -&gt; API nepalaikomas)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1944"/>
@@ -1525,7 +1525,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1951"/>
         <source>Resident set size</source>
-        <translation type="unfinished"></translation>
+        <translation>Rezidentinio rinkinio dydis</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1953"/>
@@ -1535,7 +1535,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1953"/>
         <source>memory usage (RSS-SHARE)</source>
-        <translation type="unfinished"></translation>
+        <translation>atminties naudojimas (RSS-SHARE)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1955"/>
@@ -1545,7 +1545,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1955"/>
         <source>Text(code) resident set size</source>
-        <translation type="unfinished"></translation>
+        <translation>Teksto (kodo) rezidentinio rinkinio dydis</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1957"/>
@@ -1555,22 +1555,22 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1957"/>
         <source>Data resident set size(malloc+global variable)</source>
-        <translation type="unfinished"></translation>
+        <translation>Duomenų rezidentinio rinkinio dydis (malloc+visuotinis kintamasis)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1959"/>
         <source>STACK</source>
-        <translation type="unfinished"></translation>
+        <translation>STACK</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1959"/>
         <source>Stack size</source>
-        <translation type="unfinished"></translation>
+        <translation>Dėklo dydis</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1961"/>
         <source>SHARE</source>
-        <translation type="unfinished"></translation>
+        <translation>SHARE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1961"/>
@@ -1580,32 +1580,32 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1963"/>
         <source>SWAP</source>
-        <translation type="unfinished"></translation>
+        <translation>SWAP</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1963"/>
         <source>Kbytes on swap device</source>
-        <translation type="unfinished"></translation>
+        <translation>Kilobaitų sukeitimų įrenginyje</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1965"/>
         <source>IO_R</source>
-        <translation type="unfinished"></translation>
+        <translation>IO_R</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1965"/>
         <source>io read (file)</source>
-        <translation type="unfinished"></translation>
+        <translation>io skaitymas (failai)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1967"/>
         <source>IO_W</source>
-        <translation type="unfinished"></translation>
+        <translation>IO_W</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1967"/>
         <source>io write (file)</source>
-        <translation type="unfinished"></translation>
+        <translation>io rašymas (failai)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1969"/>
@@ -1615,12 +1615,12 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1969"/>
         <source>Number of dirty (non-written) pages</source>
-        <translation type="unfinished"></translation>
+        <translation>&quot;Nešvarių&quot; (neįrašytų) puslapių skaičius</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1971"/>
         <source>STAT</source>
-        <translation type="unfinished"></translation>
+        <translation>STAT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1971"/>
@@ -1635,12 +1635,12 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1973"/>
         <source>Process flags (hex)</source>
-        <translation type="unfinished"></translation>
+        <translation>Proceso vėliavėlės (šešiolikt.)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1975"/>
         <source>WCHAN</source>
-        <translation type="unfinished"></translation>
+        <translation>WCHAN</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1975"/>
@@ -1655,7 +1655,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1977"/>
         <source>Weighted percentage of CPU (30 s average)</source>
-        <translation type="unfinished"></translation>
+        <translation>Svertinė procesoriaus procentinė dalis (30 sek. vidurkis)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1979"/>
@@ -1665,7 +1665,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1979"/>
         <source>Percentage of CPU used since last update</source>
-        <translation type="unfinished"></translation>
+        <translation>Procesoriaus procentinė dalis, naudota nuo paskutinio atnaujinimo</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1981"/>
@@ -1675,7 +1675,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1981"/>
         <source>Percentage of memory used (RSS/total mem)</source>
-        <translation type="unfinished"></translation>
+        <translation>Naudotos atminties procentinė dalis (RSS/viso atminties)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1983"/>
@@ -1695,12 +1695,12 @@ išėjo su būsena </translation>
     <message>
         <location filename="../proc.cpp" line="1985"/>
         <source>Total CPU time used since start</source>
-        <translation type="unfinished"></translation>
+        <translation>Bendras procesoriaus laikas, naudotas nuo paleidimo</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1987"/>
         <source>CPU</source>
-        <translation type="unfinished"></translation>
+        <translation>Procesorius</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1987"/>
@@ -1780,17 +1780,17 @@ išėjo su būsena </translation>
     <message>
         <location filename="../watchdogdialog.cpp" line="193"/>
         <source>if process start</source>
-        <translation type="unfinished"></translation>
+        <translation>jei procesas prasidėjo</translation>
     </message>
     <message>
         <location filename="../watchdogdialog.cpp" line="194"/>
         <source>if process finish</source>
-        <translation type="unfinished"></translation>
+        <translation>jei procesas pasibaigė</translation>
     </message>
     <message>
         <location filename="../watchdogdialog.cpp" line="217"/>
         <source>select condition</source>
-        <translation type="unfinished"></translation>
+        <translation>pasirinkite sąlygą</translation>
     </message>
 </context>
 </TS>
