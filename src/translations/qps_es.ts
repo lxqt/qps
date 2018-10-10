@@ -6,7 +6,7 @@
     <message>
         <location filename="../details.cpp" line="698"/>
         <source>Field</source>
-        <translation>Campos</translation>
+        <translation>Campo</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="698"/>
@@ -347,7 +347,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../watchdog.ui" line="248"/>
         <source>%</source>
-        <translation type="unfinished"></translation>
+        <translation>%</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="280"/>
@@ -676,7 +676,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../proc.cpp" line="1894"/>
         <source>PID</source>
-        <translation type="unfinished"></translation>
+        <translation>PID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1894"/>
@@ -686,7 +686,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../proc.cpp" line="1896"/>
         <source>TGID</source>
-        <translation type="unfinished"></translation>
+        <translation>TGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1896"/>
@@ -696,7 +696,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../proc.cpp" line="1898"/>
         <source>PPID</source>
-        <translation type="unfinished"></translation>
+        <translation>PPID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1898"/>
@@ -716,7 +716,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../proc.cpp" line="1902"/>
         <source>SID</source>
-        <translation type="unfinished"></translation>
+        <translation>SID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1902"/>
@@ -726,7 +726,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../proc.cpp" line="1904"/>
         <source>TTY</source>
-        <translation type="unfinished"></translation>
+        <translation>TTY</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1904"/>
@@ -736,7 +736,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../proc.cpp" line="1906"/>
         <source>TPGID</source>
-        <translation type="unfinished"></translation>
+        <translation>TPGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1906"/>
@@ -746,7 +746,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../proc.cpp" line="1908"/>
         <source>USER</source>
-        <translation type="unfinished"></translation>
+        <translation>USUARIO</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1908"/>
@@ -766,7 +766,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../proc.cpp" line="1912"/>
         <source>UID</source>
-        <translation type="unfinished"></translation>
+        <translation>UID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1912"/>
@@ -796,7 +796,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../proc.cpp" line="1918"/>
         <source>FSUID</source>
-        <translation type="unfinished"></translation>
+        <translation>FSUID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1918"/>
