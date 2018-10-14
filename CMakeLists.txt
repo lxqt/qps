@@ -1,13 +1,14 @@
-project(qps)
-# CMP0000 - A minimum required CMake version must be specified.
-# Note that the command invocation must appear in the CMakeLists.txt
-# file itself; a call in an included file is not sufficient.
-cmake_minimum_required(VERSION 3.6.2 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.1.0 FATAL_ERROR)
+# CMP0000: Call the cmake_minimum_required() command at the beginning of the top-level
+# CMakeLists.txt file even before calling the project() command.
+# The cmake_minimum_required(VERSION) command implicitly invokes the cmake_policy(VERSION)
+# command to specify that the current project code is written for the given range of CMake
+# versions.
+Project(qps)
 
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
 
-# additional cmake files
-list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
+set(LXQTBT_MINIMUM_VERSION "0.5.0")
 
 set(MAJOR_VERSION 1)
 set(MINOR_VERSION 10)
@@ -18,12 +19,13 @@ add_definitions(
 )
 
 find_package(Qt5 5.7.1 REQUIRED COMPONENTS Widgets X11Extras DBus LinguistTools)
-find_package(lxqt-build-tools)
+find_package(lxqt-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
 
 include(GNUInstallDirs)
-include(LXQtTranslateTs) # Although the name it doesn't depend on LXQt in any way
-include(LXQtTranslateDesktop)
+include(LXQtPreventInSourceBuilds)
 include(LXQtCompilerSettings)
+include(LXQtTranslateTs)
+include(LXQtTranslateDesktop)
 include(Qt5TranslationLoader)
 
 # Must be defined after including GNUInstallDirs. Move with care.
