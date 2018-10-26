@@ -6,7 +6,7 @@
     <message>
         <location filename="../details.cpp" line="698"/>
         <source>Field</source>
-        <translation>Felder</translation>
+        <translation>Feld</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="698"/>
@@ -87,7 +87,7 @@
     <message>
         <location filename="../prefs.cpp" line="117"/>
         <source>General</source>
-        <translation>Allgemeines</translation>
+        <translation>Allgemein</translation>
     </message>
 </context>
 <context>
