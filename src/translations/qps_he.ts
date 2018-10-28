@@ -1709,12 +1709,12 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1989"/>
         <source>Process Name</source>
-        <translation type="unfinished"></translation>
+        <translation>שם התהליך</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1993"/>
         <source>CWD</source>
-        <translation type="unfinished"></translation>
+        <translation>CWD</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1993"/>
@@ -1724,22 +1724,22 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1994"/>
         <source>ROOT</source>
-        <translation type="unfinished"></translation>
+        <translation>ROOT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1994"/>
         <source>Root directory of process</source>
-        <translation type="unfinished"></translation>
+        <translation>תיקיית הבסיס של התהליך</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1997"/>
         <source>COMMAND_LINE</source>
-        <translation type="unfinished"></translation>
+        <translation>COMMAND_LINE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1997"/>
         <source>Command line that started the process</source>
-        <translation type="unfinished"></translation>
+        <translation>שורת הפקודה שהפעילה את התהליך</translation>
     </message>
 </context>
 <context>
@@ -1747,12 +1747,12 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="2215"/>
         <source>Show</source>
-        <translation type="unfinished"></translation>
+        <translation>הצגה</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2218"/>
         <source>Hide</source>
-        <translation type="unfinished"></translation>
+        <translation>הסתרה</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2224"/>
