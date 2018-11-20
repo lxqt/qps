@@ -258,7 +258,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="61"/>
         <source>Environment</source>
-        <translation></translation>
+        <translation>Contorno</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="62"/>
