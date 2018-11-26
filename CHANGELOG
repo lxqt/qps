@@ -1,4 +1,11 @@
+qps-1.10.19 / 2018-12-01
+========================
 
+  * Bumped patch version to 19
+  * Translations updated
+  * Added translation support and fixed some source strings
+  * Added translation state to README.md
+  
 qps-1.10.18 / 2018-05-21
 ========================
 
