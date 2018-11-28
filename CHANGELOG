@@ -6,8 +6,8 @@ qps-1.10.19 / 2018-12-01
     - set cmake_minimum_required to 3.1.0
     - removed locale compile definitons, use lxqt-build-tools instead
     - use lxqt-build-tools translation scripts
-  * Translations updated
   * Added translation support and fixed some source strings
+  * Translations updated
   * Added translation promo to README.md
   
 qps-1.10.18 / 2018-05-21
