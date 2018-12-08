@@ -59,7 +59,7 @@
     <message>
         <location filename="../prefs.cpp" line="87"/>
         <source>Branch Lines</source>
-        <translation type="unfinished">Liñas das bifurcacións</translation>
+        <translation>Liñas das bifurcacións</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="93"/>
@@ -69,7 +69,7 @@
     <message>
         <location filename="../prefs.cpp" line="94"/>
         <source>Selection: Copy PIDs to Clipboard</source>
-        <translation>Selección: copiar os PID ao portapapeis</translation>
+        <translation>Selección: copiar os PID no portapapeis</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="96"/>
@@ -79,7 +79,7 @@
     <message>
         <location filename="../prefs.cpp" line="97"/>
         <source>Use pmap for Map Names</source>
-        <translation>Usar pmap para os nomes dos mapas</translation>
+        <translation>Usar pmap para os nomes das asignacións</translation>
     </message>
 </context>
 <context>
@@ -110,7 +110,7 @@ failed with the error:
 </source>
         <translation>
 
-tivo un fallo co erro:
+produciuse un fallo co erro:
 
 </translation>
     </message>
@@ -248,7 +248,7 @@ saíu co estado </translation>
     <message>
         <location filename="../misc.cpp" line="984"/>
         <source>Pause (Ctrl+Space)</source>
-        <translation>Pausa(Ctrl+Espazo)</translation>
+        <translation>Pausa (Ctrl+Espazo)</translation>
     </message>
 </context>
 <context>
@@ -317,17 +317,17 @@ saíu co estado </translation>
     <message>
         <location filename="../watchdog.ui" line="117"/>
         <source>Eventcat</source>
-        <translation type="unfinished">Eventcat</translation>
+        <translation>Cat. do evento</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="162"/>
         <source>Select condition</source>
-        <translation type="unfinished">Seleccionar a condición</translation>
+        <translation>Seleccionar a condición</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="170"/>
         <source>labelDescrition</source>
-        <translation type="unfinished">etiquetaDescrición</translation>
+        <translation>Descrición</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="193"/>
@@ -367,7 +367,7 @@ saíu co estado </translation>
     <message>
         <location filename="../watchdog.ui" line="367"/>
         <source>Help (Not yet. just concept)</source>
-        <translation>Axuda (Aínda non está dispoñíbel)</translation>
+        <translation>Axuda (aínda non, só o concepto)</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="394"/>
@@ -402,7 +402,7 @@ saíu co estado </translation>
     <message>
         <location filename="../message.ui" line="13"/>
         <source>Qps</source>
-        <translation type="unfinished">Qps</translation>
+        <translation>Qps</translation>
     </message>
     <message>
         <location filename="../message.ui" line="27"/>
@@ -458,7 +458,7 @@ saíu co estado </translation>
     <message>
         <location filename="../details.cpp" line="525"/>
         <source>Fd</source>
-        <translation type="unfinished">Df</translation>
+        <translation>Df</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="525"/>
@@ -473,7 +473,7 @@ saíu co estado </translation>
     <message>
         <location filename="../details.cpp" line="527"/>
         <source>Open mode</source>
-        <translation type="unfinished">Modo de apertura</translation>
+        <translation>Modo de apertura</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="529"/>
@@ -557,7 +557,7 @@ saíu co estado </translation>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>Perm</source>
-        <translation type="unfinished">Perm</translation>
+        <translation>Perm.</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
@@ -771,7 +771,7 @@ saíu co estado </translation>
     <message>
         <location filename="../proc.cpp" line="1912"/>
         <source>Real user ID</source>
-        <translation>ID de usuario real</translation>
+        <translation>ID do usuario real</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1914"/>
@@ -781,7 +781,7 @@ saíu co estado </translation>
     <message>
         <location filename="../proc.cpp" line="1914"/>
         <source>Effective user ID</source>
-        <translation>ID de usuario efectivo</translation>
+        <translation>ID do usuario efectivo</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1916"/>
@@ -791,7 +791,7 @@ saíu co estado </translation>
     <message>
         <location filename="../proc.cpp" line="1916"/>
         <source>Saved user ID (Posix)</source>
-        <translation>ID de usuario gardado (Posix)</translation>
+        <translation>ID do usuario gardado (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1918"/>
@@ -801,7 +801,7 @@ saíu co estado </translation>
     <message>
         <location filename="../proc.cpp" line="1918"/>
         <source>File system user ID</source>
-        <translation>ID de usuario do sistema de ficheiros</translation>
+        <translation>ID do usuario do sistema de ficheiros</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1920"/>
@@ -811,7 +811,7 @@ saíu co estado </translation>
     <message>
         <location filename="../proc.cpp" line="1920"/>
         <source>Real group ID</source>
-        <translation>ID de grupo real</translation>
+        <translation>ID do grupo real</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1922"/>
@@ -821,7 +821,7 @@ saíu co estado </translation>
     <message>
         <location filename="../proc.cpp" line="1922"/>
         <source>Effective group ID</source>
-        <translation>ID de grupo efectivo</translation>
+        <translation>ID do grupo efectivo</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1924"/>
@@ -831,7 +831,7 @@ saíu co estado </translation>
     <message>
         <location filename="../proc.cpp" line="1924"/>
         <source>Saved group ID (Posix)</source>
-        <translation>ID de grupo gardado (Posix)</translation>
+        <translation>ID do grupo gardado (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1926"/>
@@ -841,7 +841,7 @@ saíu co estado </translation>
     <message>
         <location filename="../proc.cpp" line="1926"/>
         <source>File system group ID</source>
-        <translation>ID de grupo do sistema de ficheiros</translation>
+        <translation>ID do grupo do sistema de ficheiros</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1928"/>
@@ -996,7 +996,7 @@ saíu co estado </translation>
     <message>
         <location filename="../proc.cpp" line="1959"/>
         <source>STACK</source>
-        <translation></translation>
+        <translation>MOREA</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1959"/>
@@ -1006,7 +1006,7 @@ saíu co estado </translation>
     <message>
         <location filename="../proc.cpp" line="1961"/>
         <source>SHARE</source>
-        <translation></translation>
+        <translation>COMPARTIDA</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1961"/>
@@ -1016,7 +1016,7 @@ saíu co estado </translation>
     <message>
         <location filename="../proc.cpp" line="1963"/>
         <source>SWAP</source>
-        <translation></translation>
+        <translation>INTERCAMBIO</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1963"/>
@@ -1026,7 +1026,7 @@ saíu co estado </translation>
     <message>
         <location filename="../proc.cpp" line="1965"/>
         <source>IO_R</source>
-        <translation>ES_L</translation>
+        <translation>L_ES</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1965"/>
@@ -1036,7 +1036,7 @@ saíu co estado </translation>
     <message>
         <location filename="../proc.cpp" line="1967"/>
         <source>IO_W</source>
-        <translation>ES_E</translation>
+        <translation>E_ES</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1967"/>
@@ -1199,7 +1199,7 @@ saíu co estado </translation>
     <message>
         <location filename="../qps.cpp" line="2224"/>
         <source>ScreenShot</source>
-        <translation type="unfinished">Captura de pantalla</translation>
+        <translation>Captura de pantalla</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2229"/>
@@ -1212,7 +1212,7 @@ saíu co estado </translation>
     <message>
         <location filename="../qps.cpp" line="189"/>
         <source>header_popup</source>
-        <translation type="unfinished">header_popup</translation>
+        <translation>header_popup</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="190"/>
@@ -1388,7 +1388,7 @@ saíu co estado </translation>
     <message>
         <location filename="../qps.cpp" line="538"/>
         <source>SIGABRT (abort)</source>
-        <translation>SIGABRT (interromper)</translation>
+        <translation>SIGABRT (anular)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="540"/>
@@ -1473,12 +1473,12 @@ saíu co estado </translation>
     <message>
         <location filename="../qps.cpp" line="1591"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
-        <translation>Non ten permiso para cambiar a prioridade dos procesos seleccionados. Só pode facelo o dono do proceso e o superusuario.</translation>
+        <translation>Non ten permiso para cambiar a prioridade dos procesos seleccionados. Só o dono do proceso e o superusuario poden facelo.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1628"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
-        <translation>Non ten permiso para cambiar a prioridade do proceso s%1 (%2). Só pode facelo o dono do proceso e o superusuario.</translation>
+        <translation>Non ten permiso para cambiar a prioridade do proceso s%1 (%2). Só o dono do proceso e o superusuario poden facelo.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1635"/>
@@ -1574,7 +1574,7 @@ saíu co estado </translation>
     <message>
         <location filename="../screenshot.cpp" line="294"/>
         <source>/untitled.</source>
-        <translation>/sen título.</translation>
+        <translation>/sen_título.</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="299"/>
@@ -1653,7 +1653,7 @@ saíu co estado </translation>
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>Fd</source>
-        <translation type="unfinished">Df</translation>
+        <translation>Df</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
@@ -1663,7 +1663,7 @@ saíu co estado </translation>
     <message>
         <location filename="../details.cpp" line="152"/>
         <source>Proto</source>
-        <translation type="unfinished">Proto</translation>
+        <translation>Proto.</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
@@ -1673,7 +1673,7 @@ saíu co estado </translation>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Recv-Q</source>
-        <translation type="unfinished">Cola_Rec</translation>
+        <translation>Cola_rec</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
@@ -1683,7 +1683,7 @@ saíu co estado </translation>
     <message>
         <location filename="../details.cpp" line="154"/>
         <source>Send-Q</source>
-        <translation type="unfinished">Cola_Env</translation>
+        <translation>Cola_env</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="154"/>
