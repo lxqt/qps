@@ -2,6 +2,218 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="lt">
 <context>
+    <name>AllFields</name>
+    <message>
+        <location filename="../details.cpp" line="698"/>
+        <source>Field</source>
+        <translation>Laukas</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="698"/>
+        <source>Field name</source>
+        <translation>Lauko pavadinimas</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="699"/>
+        <source>Description</source>
+        <translation>Aprašas</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="699"/>
+        <source>Field description</source>
+        <translation>Lauko aprašas</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="700"/>
+        <source>Value</source>
+        <translation>Reikšmė</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="700"/>
+        <source>Field value</source>
+        <translation>Lauko reikšmė</translation>
+    </message>
+</context>
+<context>
+    <name>Boxvar</name>
+    <message>
+        <location filename="../prefs.cpp" line="61"/>
+        <source>Exit On Close Button</source>
+        <translation>Išeiti, užvėrus langą</translation>
+    </message>
+    <message>
+        <location filename="../prefs.cpp" line="79"/>
+        <source>Host Name Lookup</source>
+        <translation>Serverių vardų paieška</translation>
+    </message>
+    <message>
+        <location filename="../prefs.cpp" line="80"/>
+        <source>Service Name Lookup</source>
+        <translation>Tarnybų pavadinimų paieška</translation>
+    </message>
+    <message>
+        <location filename="../prefs.cpp" line="86"/>
+        <source>Disclosure Triangles</source>
+        <translation>Trikampių atskleidimas</translation>
+    </message>
+    <message>
+        <location filename="../prefs.cpp" line="87"/>
+        <source>Branch Lines</source>
+        <translation>Atšakų linijos</translation>
+    </message>
+    <message>
+        <location filename="../prefs.cpp" line="93"/>
+        <source>Auto Save Settings on Exit</source>
+        <translation>Išeinant, automatiškai įrašyti nustatymus</translation>
+    </message>
+    <message>
+        <location filename="../prefs.cpp" line="94"/>
+        <source>Selection: Copy PIDs to Clipboard</source>
+        <translation>Žymėjimas: Kopijuoti PID į iškarpinę</translation>
+    </message>
+    <message>
+        <location filename="../prefs.cpp" line="96"/>
+        <source>Normalize NICE</source>
+        <translation>Normalizuoti &quot;NICE&quot;</translation>
+    </message>
+    <message>
+        <location filename="../prefs.cpp" line="97"/>
+        <source>Use pmap for Map Names</source>
+        <translation>Planų pavadinimams naudoti pmap</translation>
+    </message>
+</context>
+<context>
+    <name>Cbgroup</name>
+    <message>
+        <location filename="../prefs.cpp" line="117"/>
+        <source>General</source>
+        <translation>Bendra</translation>
+    </message>
+</context>
+<context>
+    <name>Command</name>
+    <message>
+        <location filename="../command.cpp" line="209"/>
+        <source>The command:
+
+</source>
+        <translation>Komanda:
+
+</translation>
+    </message>
+    <message>
+        <location filename="../command.cpp" line="213"/>
+        <source>
+
+failed with the error:
+
+</source>
+        <translation>
+
+patyrė nesėkmę su klaida:
+
+</translation>
+    </message>
+    <message>
+        <location filename="../command.cpp" line="216"/>
+        <source>Too many processes</source>
+        <translation>Per daug procesų</translation>
+    </message>
+    <message>
+        <location filename="../command.cpp" line="219"/>
+        <source>Unknown error</source>
+        <translation>Nežinoma klaida</translation>
+    </message>
+    <message>
+        <location filename="../command.cpp" line="229"/>
+        <source>
+
+could not be executed because it was not found,
+or you did not have execute permission.</source>
+        <translation>
+
+nepavyko įvykdyti, nes ji nebuvo rasta,
+arba jūs neturite leidimo jos vykdyti.</translation>
+    </message>
+    <message>
+        <location filename="../command.cpp" line="234"/>
+        <source>
+
+exited with status </source>
+        <translation>
+
+išėjo su būsena </translation>
+    </message>
+    <message>
+        <location filename="../command.cpp" line="238"/>
+        <source>Command Failed</source>
+        <translation>Komanda nepavyko</translation>
+    </message>
+</context>
+<context>
+    <name>CommandDialog</name>
+    <message>
+        <location filename="../commanddialog.cpp" line="47"/>
+        <source>Edit Commands 0.1 alpha</source>
+        <translation>Taisyti komandas 0.1 alfa</translation>
+    </message>
+    <message>
+        <location filename="../commanddialog.cpp" line="63"/>
+        <source>Name:</source>
+        <translation>Pavadinimas:</translation>
+    </message>
+    <message>
+        <location filename="../commanddialog.cpp" line="79"/>
+        <source>Popup</source>
+        <translation>Iškylantysis langas</translation>
+    </message>
+    <message>
+        <location filename="../commanddialog.cpp" line="84"/>
+        <source>Command Line:</source>
+        <translation>Komandų eilutė:</translation>
+    </message>
+    <message>
+        <location filename="../commanddialog.cpp" line="95"/>
+        <source>Substitutions:
+%p	PID
+%c	COMMAND
+%C	CMDLINE
+%u	USER
+%%	%
+
+</source>
+        <translation>Pakaitalai:
+%p	PID
+%c	KOMANDA
+%C	KOMANDŲ EILUTĖ
+%u	NAUDOTOJAS
+%%	%
+
+</translation>
+    </message>
+    <message>
+        <location filename="../commanddialog.cpp" line="109"/>
+        <source>New...</source>
+        <translation>Nauja...</translation>
+    </message>
+    <message>
+        <location filename="../commanddialog.cpp" line="111"/>
+        <location filename="../commanddialog.cpp" line="229"/>
+        <source>Add...</source>
+        <translation>Pridėti...</translation>
+    </message>
+    <message>
+        <location filename="../commanddialog.cpp" line="113"/>
+        <source>Delete</source>
+        <translation>Ištrinti</translation>
+    </message>
+    <message>
+        <location filename="../commanddialog.cpp" line="115"/>
+        <source>Close</source>
+        <translation>Užverti</translation>
+    </message>
+</context>
+<context>
     <name>ControlBar</name>
     <message>
         <location filename="../misc.cpp" line="925"/>
@@ -37,6 +249,62 @@
         <location filename="../misc.cpp" line="984"/>
         <source>Pause (Ctrl+Space)</source>
         <translation>Pristabdyti (Ctrl(Vald)+Tarpas)</translation>
+    </message>
+</context>
+<context>
+    <name>Details</name>
+    <message>
+        <location filename="../details.cpp" line="36"/>
+        <source>Process %1 ( %2 ) - details</source>
+        <translation>Procesas %1 ( %2 ) - išsamiau</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="45"/>
+        <source>Files</source>
+        <translation>Failai</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="54"/>
+        <source>Sockets</source>
+        <translation>Lizdai</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="59"/>
+        <source>Memory Maps</source>
+        <translation>Atminties schemos</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="61"/>
+        <source>Environment</source>
+        <translation>Aplinka</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="62"/>
+        <source>All Fields</source>
+        <translation>Visi laukai</translation>
+    </message>
+</context>
+<context>
+    <name>Environ</name>
+    <message>
+        <location filename="../details.cpp" line="609"/>
+        <source>Variable</source>
+        <translation>Kintamasis</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="609"/>
+        <source>Variable name</source>
+        <translation>Kintamojo pavadinimas</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="610"/>
+        <source>Value</source>
+        <translation>Reikšmė</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="610"/>
+        <source>Variable value</source>
+        <translation>Kintamojo reikšmė</translation>
     </message>
 </context>
 <context>
@@ -173,605 +441,95 @@
     </message>
 </context>
 <context>
-    <name>Qps</name>
+    <name>FieldSelect</name>
     <message>
-        <location filename="../qps.cpp" line="189"/>
-        <source>header_popup</source>
-        <translation>header_popup</translation>
+        <location filename="../fieldsel.cpp" line="34"/>
+        <source>Select Custom Fields </source>
+        <translation>Pasirinkti tinkintus laukus </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="190"/>
-        <source>Remove Field</source>
-        <translation>Šalinti lauką</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="191"/>
-        <source>Add Field</source>
-        <translation>Pridėti lauką</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="197"/>
-        <source>Command</source>
-        <translation>Komanda</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="201"/>
-        <source>View</source>
-        <translation>Rodinys</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="202"/>
-        <source>Process</source>
-        <translation>Procesas</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="203"/>
-        <source>Log</source>
-        <translation>Žurnalas</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="207"/>
-        <source>Custom Fields</source>
-        <translation>Tinkinti laukai</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="209"/>
-        <source>Basic Fields </source>
-        <translation>Pagrindiniai laukai </translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="211"/>
-        <source>Jobs Fields </source>
-        <translation>Užduočių laukai </translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="213"/>
-        <source>Memory Fields </source>
-        <translation>Atminties laukai </translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="216"/>
-        <source>Scheduling Fields </source>
-        <translation>Planavimo laukai </translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="222"/>
-        <source>Select Custom Fields...</source>
-        <translation>Pasirinkti tinkintus laukus...</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="236"/>
-        <source>Option</source>
-        <translation>Parinktis</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="237"/>
-        <source>Update Period...</source>
-        <translation>Atnaujinimo intervalas...</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="246"/>
-        <source>Show Status bar</source>
-        <translation>Rodyti būsenos juostą</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="255"/>
-        <source>Preferences...</source>
-        <translation>Nuostatos...</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="261"/>
-        <source>Help</source>
-        <translation>Žinynas</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="263"/>
-        <location filename="../qps.cpp" line="2291"/>
-        <source>About</source>
-        <translation>Apie</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="354"/>
-        <source>Detail</source>
-        <translation>Išsamiau</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="395"/>
-        <source>test</source>
-        <translation>išbandyti</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="396"/>
-        <source>Copied to Clipboard</source>
-        <translation>Nukopijuota į iškarpinę</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="505"/>
-        <source>context popup</source>
-        <translation>iškylantysis kontekstinis langas</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="506"/>
-        <source>Renice...</source>
-        <translation>Iš naujo nustatyti &quot;nice&quot;...</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="507"/>
-        <source>Scheduling...</source>
-        <translation>Planavimas...</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="509"/>
-        <source>Terminate</source>
-        <translation>Baigti</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="511"/>
-        <source>Hangup</source>
-        <translation>Užstrigdinti</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="512"/>
-        <source>Kill</source>
-        <translation>Nutraukti</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="513"/>
-        <source>Stop</source>
-        <translation>Stabdyti</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="515"/>
-        <source>Continue</source>
-        <translation>Tęsti</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="528"/>
-        <source>SIGINT (interrupt)</source>
-        <translation>SIGINT (pertraukti)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="530"/>
-        <source>SIGCONT (continue)</source>
-        <translation>SIGCONT (tęsti)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="532"/>
-        <source>SIGSTOP (stop)</source>
-        <translation>SIGSTOP (stabdyti)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="534"/>
-        <source>SIGQUIT (quit)</source>
-        <translation>SIGQUIT (išeiti)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="536"/>
-        <source>SIGILL (illegal instruction)</source>
-        <translation>SIGILL (neleidžiamoji komanda)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="538"/>
-        <source>SIGABRT (abort)</source>
-        <translation>SIGABRT (nutraukti)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="540"/>
-        <source>SIGFPE (floating point exception)</source>
-        <translation>SIGFPE (slankiojo kablelio išimtis)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="542"/>
-        <source>SIGSEGV (segmentation violation)</source>
-        <translation>SIGSEGV (segmentavimo pažeidimas)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="544"/>
-        <source>SIGPIPE (broken pipe)</source>
-        <translation>SIGPIPE (neveikiantis kanalas)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="546"/>
-        <source>SIGALRM (timer signal)</source>
-        <translation>SIGALRM (laikmačio signalas)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="548"/>
-        <source>SIGUSR1 (user-defined 1)</source>
-        <translation>SIGUSR1 (naudotojo apibrėžtas 1)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="550"/>
-        <source>SIGUSR2 (user-defined 2)</source>
-        <translation>SIGUSR2 (naudotojo apibrėžtas 2)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="552"/>
-        <source>SIGCHLD (child death)</source>
-        <translation>SIGCHLD (vyksnio mirtis)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="554"/>
-        <source>SIGTSTP (stop from tty)</source>
-        <translation>SIGTSTP (stabdyti iš tty)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="556"/>
-        <source>SIGTTIN (tty input)</source>
-        <translation>SIGTTIN (tty įvestis)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="558"/>
-        <source>SIGTTOU (tty output)</source>
-        <translation>SIGTTOU (tty išvestis)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="565"/>
-        <source>View Details</source>
-        <translation>Rodyti išsamiau</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="1181"/>
-        <source>WatchDog</source>
-        <translation>Kontrolierius</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="1185"/>
-        <source>Edit Commands...</source>
-        <translation>Taisyti komandas...</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="1210"/>
-        <source>Quit</source>
-        <translation>Išeiti</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="1590"/>
-        <location filename="../qps.cpp" line="1627"/>
-        <location filename="../qps.cpp" line="1634"/>
-        <location filename="../qps.cpp" line="1656"/>
-        <location filename="../qps.cpp" line="1694"/>
-        <location filename="../qps.cpp" line="1773"/>
-        <source>Permission denied</source>
-        <translation>Leidimas atmestas</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="1591"/>
-        <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
-        <translation>Jūs neturite leidimo iš naujo nustatyti pažymėtų procesų &quot;nice&quot; reikšmę. Tai leidžiama daryti tik proceso savininkui ir supernaudotojui.</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="1628"/>
-        <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
-        <translation>Jūs neturite leidimo iš naujo nustatyti proceso %1 (%2) &quot;nice&quot; reikšmę. Tai leidžiama daryti tik proceso savininkui ir supernaudotojui.</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="1635"/>
-        <source>Only the super-user may lower the nice value of a process.</source>
-        <translation>Tik supernaudotojas gali mažinti proceso &quot;nice&quot; reikšmę.</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="1657"/>
-        <source>Only the super-user may change the scheduling policy and static priority.</source>
-        <translation>Tik supernaudotojas gali keisti planavimo politiką ir statinę pirmenybę.</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="1695"/>
-        <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
-        <translation>Jūs neturite leidimo keisti proceso %1 (%2) planavimą ir/ar pirmenybę. Tai gali daryti tik supernaudotojas.</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="1774"/>
-        <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
-        <translation>Jūs neturite leidimo siųsti signalą procesui %1 (%2). Tik supernaudotojas ir proceso savininkas gali siųsti jam signalus.</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="2311"/>
-        <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;</source>
-        <translation>&lt;h2&gt; Qps %1 - Vaizdinė procesų tvarkytuvė &lt;/h2&gt; %2 naudoja Qt biblioteką %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Šaltinis: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Klaidų seklys: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="2331"/>
-        <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
-        <translation>&lt;b&gt;Pradinė Qps pagal&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Talkininkai&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="2373"/>
-        <source>&lt;H1&gt;QPS Help&lt;/H1&gt;Updated: May 24 2005&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Quit      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Update      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Space , Enter       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Terminate &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Kill &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</source>
-        <translation>&lt;H1&gt;QPS žinynas&lt;/H1&gt;Atnaujintas: 2005 gegužės 24&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Išeiti      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL(VALD) + q , CTRL(VALD) + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Atnaujinti      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Tarpas , Enter(Įvedimas)       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; Baigti procesą &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE(Naik) &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; Nutraukti procesą &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</translation>
-    </message>
-</context>
-<context>
-    <name>Screenshot</name>
-    <message>
-        <location filename="../screenshot.cpp" line="294"/>
-        <source>/untitled.</source>
-        <translation>/be_pavadinimo.</translation>
-    </message>
-    <message>
-        <location filename="../screenshot.cpp" line="299"/>
-        <source>Save As</source>
-        <translation>Įrašyti kaip</translation>
-    </message>
-    <message>
-        <location filename="../screenshot.cpp" line="300"/>
-        <source>%1 Files (*.%2);;All Files (*)</source>
-        <translation>%1 failai (*.%2);;Visi failai (*)</translation>
-    </message>
-    <message>
-        <location filename="../screenshot.cpp" line="327"/>
-        <source>Options</source>
-        <translation>Parinktys</translation>
-    </message>
-    <message>
-        <location filename="../screenshot.cpp" line="330"/>
-        <source> s</source>
-        <translation> sek.</translation>
-    </message>
-    <message>
-        <location filename="../screenshot.cpp" line="335"/>
-        <source>Screenshot Delay:</source>
-        <translation>Ekrano kopijos delsa:</translation>
-    </message>
-    <message>
-        <location filename="../screenshot.cpp" line="337"/>
-        <source>Hide This Window</source>
-        <translation>Slėpti šį langą</translation>
-    </message>
-    <message>
-        <location filename="../screenshot.cpp" line="349"/>
-        <source>New Screenshot</source>
-        <translation>Nauja ekrano kopija</translation>
-    </message>
-    <message>
-        <location filename="../screenshot.cpp" line="350"/>
-        <source>Quit</source>
-        <translation>Išeiti</translation>
-    </message>
-</context>
-<context>
-    <name>Command</name>
-    <message>
-        <location filename="../command.cpp" line="209"/>
-        <source>The command:
-
-</source>
-        <translation>Komanda:
-
-</translation>
-    </message>
-    <message>
-        <location filename="../command.cpp" line="213"/>
-        <source>
-
-failed with the error:
-
-</source>
-        <translation>
-
-patyrė nesėkmę su klaida:
-
-</translation>
-    </message>
-    <message>
-        <location filename="../command.cpp" line="216"/>
-        <source>Too many processes</source>
-        <translation>Per daug procesų</translation>
-    </message>
-    <message>
-        <location filename="../command.cpp" line="219"/>
-        <source>Unknown error</source>
-        <translation>Nežinoma klaida</translation>
-    </message>
-    <message>
-        <location filename="../command.cpp" line="229"/>
-        <source>
-
-could not be executed because it was not found,
-or you did not have execute permission.</source>
-        <translation>
-
-nepavyko įvykdyti, nes ji nebuvo rasta,
-arba jūs neturite leidimo jos vykdyti.</translation>
-    </message>
-    <message>
-        <location filename="../command.cpp" line="234"/>
-        <source>
-
-exited with status </source>
-        <translation>
-
-išėjo su būsena </translation>
-    </message>
-    <message>
-        <location filename="../command.cpp" line="238"/>
-        <source>Command Failed</source>
-        <translation>Komanda nepavyko</translation>
-    </message>
-</context>
-<context>
-    <name>CommandDialog</name>
-    <message>
-        <location filename="../commanddialog.cpp" line="47"/>
-        <source>Edit Commands 0.1 alpha</source>
-        <translation>Taisyti komandas 0.1 alfa</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="63"/>
-        <source>Name:</source>
-        <translation>Pavadinimas:</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="79"/>
-        <source>Popup</source>
-        <translation>Iškylantysis langas</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="84"/>
-        <source>Command Line:</source>
-        <translation>Komandų eilutė:</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="95"/>
-        <source>Substitutions:
-%p	PID
-%c	COMMAND
-%C	CMDLINE
-%u	USER
-%%	%
-
-</source>
-        <translation>Pakaitalai:
-%p	PID
-%c	KOMANDA
-%C	KOMANDŲ EILUTĖ
-%u	NAUDOTOJAS
-%%	%
-
-</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="109"/>
-        <source>New...</source>
-        <translation>Nauja...</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="111"/>
-        <location filename="../commanddialog.cpp" line="229"/>
-        <source>Add...</source>
-        <translation>Pridėti...</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="113"/>
-        <source>Delete</source>
-        <translation>Ištrinti</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="115"/>
+        <location filename="../fieldsel.cpp" line="68"/>
         <source>Close</source>
         <translation>Užverti</translation>
     </message>
 </context>
 <context>
-    <name>Details</name>
+    <name>Files</name>
     <message>
-        <location filename="../details.cpp" line="36"/>
-        <source>Process %1 ( %2 ) - details</source>
-        <translation>Procesas %1 ( %2 ) - išsamiau</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="45"/>
-        <source>Files</source>
-        <translation>Failai</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="54"/>
-        <source>Sockets</source>
-        <translation>Lizdai</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="59"/>
-        <source>Memory Maps</source>
-        <translation>Atminties schemos</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="61"/>
-        <source>Environment</source>
-        <translation>Aplinka</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="62"/>
-        <source>All Fields</source>
-        <translation>Visi laukai</translation>
-    </message>
-</context>
-<context>
-    <name>Sockets</name>
-    <message>
-        <location filename="../details.cpp" line="151"/>
+        <location filename="../details.cpp" line="525"/>
         <source>Fd</source>
         <translation>Fd</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="151"/>
+        <location filename="../details.cpp" line="525"/>
         <source>File descriptor</source>
         <translation>Failo deskriptorius</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="152"/>
-        <source>Proto</source>
-        <translation>Protokolas</translation>
+        <location filename="../details.cpp" line="527"/>
+        <source>Mode</source>
+        <translation>Veiksena</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="152"/>
-        <source>Protocol (TCP or UDP)</source>
-        <translation>Protokolas (TCP ar UDP)</translation>
+        <location filename="../details.cpp" line="527"/>
+        <source>Open mode</source>
+        <translation>Atvėrimo veiksena</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="153"/>
-        <source>Recv-Q</source>
-        <translation>Gavimo eilė</translation>
+        <location filename="../details.cpp" line="529"/>
+        <source>Name</source>
+        <translation>Pavadinimas</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="153"/>
-        <source>Bytes in receive queue</source>
-        <translation>Baitai gavimo eilėje</translation>
+        <location filename="../details.cpp" line="529"/>
+        <source>File name (if available)</source>
+        <translation>Failo pavadinimas (jei prieinama)</translation>
+    </message>
+</context>
+<context>
+    <name>IntervalDialog</name>
+    <message>
+        <location filename="../dialogs.cpp" line="51"/>
+        <source>Change Update Period</source>
+        <translation>Keisti atnaujinimo intervalą</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="154"/>
-        <source>Send-Q</source>
-        <translation>Siuntimo eilė</translation>
+        <location filename="../dialogs.cpp" line="57"/>
+        <source>New Update Period</source>
+        <translation>Naujas atnaujinimo intervalas</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="154"/>
-        <source>Bytes in send queue</source>
-        <translation>Baitai siuntimo eilėje</translation>
+        <location filename="../dialogs.cpp" line="94"/>
+        <source>Cancel</source>
+        <translation>Atsisakyti</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="155"/>
-        <source>Local Addr</source>
-        <translation>Vietinis adresas</translation>
+        <location filename="../dialogs.cpp" line="96"/>
+        <source>OK</source>
+        <translation>Gerai</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="155"/>
-        <source>Local IP address</source>
-        <translation>Vietinis IP adresas</translation>
+        <location filename="../dialogs.cpp" line="130"/>
+        <source>No UPDATE</source>
+        <translation>Jokio ATNAUJINIMO</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="156"/>
-        <location filename="../details.cpp" line="158"/>
-        <source>Port</source>
-        <translation>Prievadas</translation>
+        <location filename="../dialogs.cpp" line="148"/>
+        <source>Invalid value</source>
+        <translation>Neteisinga reikšmė</translation>
+    </message>
+</context>
+<context>
+    <name>ListModel</name>
+    <message>
+        <location filename="../listmodel.cpp" line="66"/>
+        <source>Event Category</source>
+        <translation>Įvykio kategorija</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="156"/>
-        <source>Local port</source>
-        <translation>Vietinis prievadas</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="157"/>
-        <source>Remote Addr</source>
-        <translation>Nuotolinis adresas</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="157"/>
-        <source>Remote IP address</source>
-        <translation>Nuotolinis IP adresas</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="158"/>
-        <source>Remote port</source>
-        <translation>Nuotolinis prievadas</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="159"/>
-        <source>State</source>
-        <translation>Būsena</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="159"/>
-        <source>Connection state</source>
-        <translation>Ryšio būsena</translation>
+        <location filename="../listmodel.cpp" line="68"/>
+        <source>Enable</source>
+        <translation>Įjungti</translation>
     </message>
 </context>
 <context>
@@ -848,151 +606,6 @@ išėjo su būsena </translation>
     </message>
 </context>
 <context>
-    <name>Files</name>
-    <message>
-        <location filename="../details.cpp" line="525"/>
-        <source>Fd</source>
-        <translation>Fd</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="525"/>
-        <source>File descriptor</source>
-        <translation>Failo deskriptorius</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="527"/>
-        <source>Mode</source>
-        <translation>Veiksena</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="527"/>
-        <source>Open mode</source>
-        <translation>Atvėrimo veiksena</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="529"/>
-        <source>Name</source>
-        <translation>Pavadinimas</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="529"/>
-        <source>File name (if available)</source>
-        <translation>Failo pavadinimas (jei prieinama)</translation>
-    </message>
-</context>
-<context>
-    <name>Environ</name>
-    <message>
-        <location filename="../details.cpp" line="609"/>
-        <source>Variable</source>
-        <translation>Kintamasis</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="609"/>
-        <source>Variable name</source>
-        <translation>Kintamojo pavadinimas</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="610"/>
-        <source>Value</source>
-        <translation>Reikšmė</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="610"/>
-        <source>Variable value</source>
-        <translation>Kintamojo reikšmė</translation>
-    </message>
-</context>
-<context>
-    <name>AllFields</name>
-    <message>
-        <location filename="../details.cpp" line="698"/>
-        <source>Field</source>
-        <translation>Laukas</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="698"/>
-        <source>Field name</source>
-        <translation>Lauko pavadinimas</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="699"/>
-        <source>Description</source>
-        <translation>Aprašas</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="699"/>
-        <source>Field description</source>
-        <translation>Lauko aprašas</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="700"/>
-        <source>Value</source>
-        <translation>Reikšmė</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="700"/>
-        <source>Field value</source>
-        <translation>Lauko reikšmė</translation>
-    </message>
-</context>
-<context>
-    <name>IntervalDialog</name>
-    <message>
-        <location filename="../dialogs.cpp" line="51"/>
-        <source>Change Update Period</source>
-        <translation>Keisti atnaujinimo intervalą</translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="57"/>
-        <source>New Update Period</source>
-        <translation>Naujas atnaujinimo intervalas</translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="94"/>
-        <source>Cancel</source>
-        <translation>Atsisakyti</translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="96"/>
-        <source>OK</source>
-        <translation>Gerai</translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="130"/>
-        <source>No UPDATE</source>
-        <translation>Jokio ATNAUJINIMO</translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="148"/>
-        <source>Invalid value</source>
-        <translation>Neteisinga reikšmė</translation>
-    </message>
-</context>
-<context>
-    <name>SliderDialog</name>
-    <message>
-        <location filename="../dialogs.cpp" line="188"/>
-        <source>Renice Process</source>
-        <translation>Iš naujo nustatyti procesui &quot;nice&quot; reikšmę</translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="194"/>
-        <source>New nice value:</source>
-        <translation>Nauja &quot;nice&quot; reikšmė:</translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="234"/>
-        <source>Cancel</source>
-        <translation>Atsisakyti</translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="238"/>
-        <source>OK</source>
-        <translation>Gerai</translation>
-    </message>
-</context>
-<context>
     <name>PermissionDialog</name>
     <message>
         <location filename="../dialogs.cpp" line="273"/>
@@ -1013,183 +626,6 @@ išėjo su būsena </translation>
         <location filename="../dialogs.cpp" line="292"/>
         <source>OK</source>
         <translation>Gerai</translation>
-    </message>
-</context>
-<context>
-    <name>SchedDialog</name>
-    <message>
-        <location filename="../dialogs.cpp" line="301"/>
-        <source>Change scheduling</source>
-        <translation>Keisti planavimą</translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="305"/>
-        <source>Scheduling Policy</source>
-        <translation>Planavimo politika</translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="307"/>
-        <source>SCHED_OTHER (time-sharing)</source>
-        <translation>SCHED_OTHER (laiko paskirstymo)</translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="308"/>
-        <source>SCHED_FIFO (real-time)</source>
-        <translation>SCHED_FIFO (tikralaikė)</translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="309"/>
-        <source>SCHED_RR (real-time)</source>
-        <translation>SCHED_RR (tikralaikė)</translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="323"/>
-        <source>OK</source>
-        <translation>Gerai</translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="325"/>
-        <source>Cancel</source>
-        <translation>Atsisakyti</translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="355"/>
-        <source>Priority (1-99):</source>
-        <translation>Pirmenybė (1-99):</translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="388"/>
-        <source>Invalid Input</source>
-        <translation>Neteisinga įvestis</translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="389"/>
-        <source>The priority must be in the range 1..99</source>
-        <translation>Pirmenybė privalo būti rėžyje 1..99</translation>
-    </message>
-</context>
-<context>
-    <name>FieldSelect</name>
-    <message>
-        <location filename="../fieldsel.cpp" line="34"/>
-        <source>Select Custom Fields </source>
-        <translation>Pasirinkti tinkintus laukus </translation>
-    </message>
-    <message>
-        <location filename="../fieldsel.cpp" line="68"/>
-        <source>Close</source>
-        <translation>Užverti</translation>
-    </message>
-</context>
-<context>
-    <name>ListModel</name>
-    <message>
-        <location filename="../listmodel.cpp" line="66"/>
-        <source>Event Category</source>
-        <translation>Įvykio kategorija</translation>
-    </message>
-    <message>
-        <location filename="../listmodel.cpp" line="68"/>
-        <source>Enable</source>
-        <translation>Įjungti</translation>
-    </message>
-</context>
-<context>
-    <name>TBloon</name>
-    <message>
-        <location filename="../misc.cpp" line="347"/>
-        <source> This is unstable Alpha feature
- You maybe see a SEGFAULT...</source>
-        <translation> Tai yra nestabili Alfa ypatybė
- Galite pamatyti SEGFAULT...</translation>
-    </message>
-</context>
-<context>
-    <name>TFrame</name>
-    <message>
-        <location filename="../misc.cpp" line="426"/>
-        <source>this is Tframe widget</source>
-        <translation>tai yra Tframe valdiklis</translation>
-    </message>
-</context>
-<context>
-    <name>UFrame</name>
-    <message>
-        <location filename="../misc.cpp" line="615"/>
-        <source>title</source>
-        <translation>pavadinimas</translation>
-    </message>
-</context>
-<context>
-    <name>SearchBox</name>
-    <message>
-        <location filename="../misc.cpp" line="806"/>
-        <source>PID,COMMAND,USER...</source>
-        <translation>PID,KOMANDA,NAUDOTOJAS...</translation>
-    </message>
-</context>
-<context>
-    <name>StatusBar</name>
-    <message>
-        <location filename="../misc.cpp" line="895"/>
-        <source>Process count: %1</source>
-        <translation>Procesų skaičius: %1</translation>
-    </message>
-</context>
-<context>
-    <name>Boxvar</name>
-    <message>
-        <location filename="../prefs.cpp" line="61"/>
-        <source>Exit On Close Button</source>
-        <translation>Išeiti, užvėrus langą</translation>
-    </message>
-    <message>
-        <location filename="../prefs.cpp" line="79"/>
-        <source>Host Name Lookup</source>
-        <translation>Serverių vardų paieška</translation>
-    </message>
-    <message>
-        <location filename="../prefs.cpp" line="80"/>
-        <source>Service Name Lookup</source>
-        <translation>Tarnybų pavadinimų paieška</translation>
-    </message>
-    <message>
-        <location filename="../prefs.cpp" line="86"/>
-        <source>Disclosure Triangles</source>
-        <translation>Trikampių atskleidimas</translation>
-    </message>
-    <message>
-        <location filename="../prefs.cpp" line="87"/>
-        <source>Branch Lines</source>
-        <translation>Atšakų linijos</translation>
-    </message>
-    <message>
-        <location filename="../prefs.cpp" line="93"/>
-        <source>Auto Save Settings on Exit</source>
-        <translation>Išeinant, automatiškai įrašyti nustatymus</translation>
-    </message>
-    <message>
-        <location filename="../prefs.cpp" line="94"/>
-        <source>Selection: Copy PIDs to Clipboard</source>
-        <translation>Žymėjimas: Kopijuoti PID į iškarpinę</translation>
-    </message>
-    <message>
-        <location filename="../prefs.cpp" line="96"/>
-        <source>Normalize NICE</source>
-        <translation>Normalizuoti &quot;NICE&quot;</translation>
-    </message>
-    <message>
-        <location filename="../prefs.cpp" line="97"/>
-        <source>Use pmap for Map Names</source>
-        <translation>Planų pavadinimams naudoti pmap</translation>
-    </message>
-</context>
-<context>
-    <name>Cbgroup</name>
-    <message>
-        <location filename="../prefs.cpp" line="117"/>
-        <source>General</source>
-        <translation>Bendra</translation>
     </message>
 </context>
 <context>
@@ -1708,10 +1144,6 @@ išėjo su būsena </translation>
         <translation>Procesorius, kuriame yra vykdomas procesas (SMP sistemose)</translation>
     </message>
     <message>
-        <source>Process Name )</source>
-        <translation type="vanished">Proceso pavadinimas )</translation>
-    </message>
-    <message>
         <location filename="../proc.cpp" line="1989"/>
         <source>the process name</source>
         <translation>proceso pavadinimas</translation>
@@ -1773,6 +1205,570 @@ išėjo su būsena </translation>
         <location filename="../qps.cpp" line="2229"/>
         <source>Quit</source>
         <translation>Išeiti</translation>
+    </message>
+</context>
+<context>
+    <name>Qps</name>
+    <message>
+        <location filename="../qps.cpp" line="189"/>
+        <source>header_popup</source>
+        <translation>header_popup</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="190"/>
+        <source>Remove Field</source>
+        <translation>Šalinti lauką</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="191"/>
+        <source>Add Field</source>
+        <translation>Pridėti lauką</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="197"/>
+        <source>Command</source>
+        <translation>Komanda</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="201"/>
+        <source>View</source>
+        <translation>Rodinys</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="202"/>
+        <source>Process</source>
+        <translation>Procesas</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="203"/>
+        <source>Log</source>
+        <translation>Žurnalas</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="207"/>
+        <source>Custom Fields</source>
+        <translation>Tinkinti laukai</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="209"/>
+        <source>Basic Fields </source>
+        <translation>Pagrindiniai laukai </translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="211"/>
+        <source>Jobs Fields </source>
+        <translation>Užduočių laukai </translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="213"/>
+        <source>Memory Fields </source>
+        <translation>Atminties laukai </translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="216"/>
+        <source>Scheduling Fields </source>
+        <translation>Planavimo laukai </translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="222"/>
+        <source>Select Custom Fields...</source>
+        <translation>Pasirinkti tinkintus laukus...</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="236"/>
+        <source>Option</source>
+        <translation>Parinktis</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="237"/>
+        <source>Update Period...</source>
+        <translation>Atnaujinimo intervalas...</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="246"/>
+        <source>Show Status bar</source>
+        <translation>Rodyti būsenos juostą</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="255"/>
+        <source>Preferences...</source>
+        <translation>Nuostatos...</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="261"/>
+        <source>Help</source>
+        <translation>Žinynas</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="263"/>
+        <location filename="../qps.cpp" line="2291"/>
+        <source>About</source>
+        <translation>Apie</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="354"/>
+        <source>Detail</source>
+        <translation>Išsamiau</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="395"/>
+        <source>test</source>
+        <translation>išbandyti</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="396"/>
+        <source>Copied to Clipboard</source>
+        <translation>Nukopijuota į iškarpinę</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="505"/>
+        <source>context popup</source>
+        <translation>iškylantysis kontekstinis langas</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="506"/>
+        <source>Renice...</source>
+        <translation>Iš naujo nustatyti &quot;nice&quot;...</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="507"/>
+        <source>Scheduling...</source>
+        <translation>Planavimas...</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="509"/>
+        <source>Terminate</source>
+        <translation>Baigti</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="511"/>
+        <source>Hangup</source>
+        <translation>Užstrigdinti</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="512"/>
+        <source>Kill</source>
+        <translation>Nutraukti</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="513"/>
+        <source>Stop</source>
+        <translation>Stabdyti</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="515"/>
+        <source>Continue</source>
+        <translation>Tęsti</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="528"/>
+        <source>SIGINT (interrupt)</source>
+        <translation>SIGINT (pertraukti)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="530"/>
+        <source>SIGCONT (continue)</source>
+        <translation>SIGCONT (tęsti)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="532"/>
+        <source>SIGSTOP (stop)</source>
+        <translation>SIGSTOP (stabdyti)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="534"/>
+        <source>SIGQUIT (quit)</source>
+        <translation>SIGQUIT (išeiti)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="536"/>
+        <source>SIGILL (illegal instruction)</source>
+        <translation>SIGILL (neleidžiamoji komanda)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="538"/>
+        <source>SIGABRT (abort)</source>
+        <translation>SIGABRT (nutraukti)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="540"/>
+        <source>SIGFPE (floating point exception)</source>
+        <translation>SIGFPE (slankiojo kablelio išimtis)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="542"/>
+        <source>SIGSEGV (segmentation violation)</source>
+        <translation>SIGSEGV (segmentavimo pažeidimas)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="544"/>
+        <source>SIGPIPE (broken pipe)</source>
+        <translation>SIGPIPE (neveikiantis kanalas)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="546"/>
+        <source>SIGALRM (timer signal)</source>
+        <translation>SIGALRM (laikmačio signalas)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="548"/>
+        <source>SIGUSR1 (user-defined 1)</source>
+        <translation>SIGUSR1 (naudotojo apibrėžtas 1)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="550"/>
+        <source>SIGUSR2 (user-defined 2)</source>
+        <translation>SIGUSR2 (naudotojo apibrėžtas 2)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="552"/>
+        <source>SIGCHLD (child death)</source>
+        <translation>SIGCHLD (vyksnio mirtis)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="554"/>
+        <source>SIGTSTP (stop from tty)</source>
+        <translation>SIGTSTP (stabdyti iš tty)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="556"/>
+        <source>SIGTTIN (tty input)</source>
+        <translation>SIGTTIN (tty įvestis)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="558"/>
+        <source>SIGTTOU (tty output)</source>
+        <translation>SIGTTOU (tty išvestis)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="565"/>
+        <source>View Details</source>
+        <translation>Rodyti išsamiau</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="1181"/>
+        <source>WatchDog</source>
+        <translation>Kontrolierius</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="1185"/>
+        <source>Edit Commands...</source>
+        <translation>Taisyti komandas...</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="1210"/>
+        <source>Quit</source>
+        <translation>Išeiti</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="1590"/>
+        <location filename="../qps.cpp" line="1627"/>
+        <location filename="../qps.cpp" line="1634"/>
+        <location filename="../qps.cpp" line="1656"/>
+        <location filename="../qps.cpp" line="1694"/>
+        <location filename="../qps.cpp" line="1773"/>
+        <source>Permission denied</source>
+        <translation>Leidimas atmestas</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="1591"/>
+        <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
+        <translation>Jūs neturite leidimo iš naujo nustatyti pažymėtų procesų &quot;nice&quot; reikšmę. Tai leidžiama daryti tik proceso savininkui ir supernaudotojui.</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="1628"/>
+        <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
+        <translation>Jūs neturite leidimo iš naujo nustatyti proceso %1 (%2) &quot;nice&quot; reikšmę. Tai leidžiama daryti tik proceso savininkui ir supernaudotojui.</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="1635"/>
+        <source>Only the super-user may lower the nice value of a process.</source>
+        <translation>Tik supernaudotojas gali mažinti proceso &quot;nice&quot; reikšmę.</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="1657"/>
+        <source>Only the super-user may change the scheduling policy and static priority.</source>
+        <translation>Tik supernaudotojas gali keisti planavimo politiką ir statinę pirmenybę.</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="1695"/>
+        <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
+        <translation>Jūs neturite leidimo keisti proceso %1 (%2) planavimą ir/ar pirmenybę. Tai gali daryti tik supernaudotojas.</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="1774"/>
+        <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
+        <translation>Jūs neturite leidimo siųsti signalą procesui %1 (%2). Tik supernaudotojas ir proceso savininkas gali siųsti jam signalus.</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="2311"/>
+        <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;</source>
+        <translation>&lt;h2&gt; Qps %1 - Vaizdinė procesų tvarkytuvė &lt;/h2&gt; %2 naudoja Qt biblioteką %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Šaltinis: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Klaidų seklys: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="2331"/>
+        <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
+        <translation>&lt;b&gt;Pradinė Qps pagal&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Talkininkai&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="2373"/>
+        <source>&lt;H1&gt;QPS Help&lt;/H1&gt;Updated: May 24 2005&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Quit      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Update      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Space , Enter       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Terminate &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Kill &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</source>
+        <translation>&lt;H1&gt;QPS žinynas&lt;/H1&gt;Atnaujintas: 2005 gegužės 24&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Išeiti      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL(VALD) + q , CTRL(VALD) + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Atnaujinti      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Tarpas , Enter(Įvedimas)       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; Baigti procesą &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE(Naik) &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; Nutraukti procesą &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</translation>
+    </message>
+</context>
+<context>
+    <name>SchedDialog</name>
+    <message>
+        <location filename="../dialogs.cpp" line="301"/>
+        <source>Change scheduling</source>
+        <translation>Keisti planavimą</translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="305"/>
+        <source>Scheduling Policy</source>
+        <translation>Planavimo politika</translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="307"/>
+        <source>SCHED_OTHER (time-sharing)</source>
+        <translation>SCHED_OTHER (laiko paskirstymo)</translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="308"/>
+        <source>SCHED_FIFO (real-time)</source>
+        <translation>SCHED_FIFO (tikralaikė)</translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="309"/>
+        <source>SCHED_RR (real-time)</source>
+        <translation>SCHED_RR (tikralaikė)</translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="323"/>
+        <source>OK</source>
+        <translation>Gerai</translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="325"/>
+        <source>Cancel</source>
+        <translation>Atsisakyti</translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="355"/>
+        <source>Priority (1-99):</source>
+        <translation>Pirmenybė (1-99):</translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="388"/>
+        <source>Invalid Input</source>
+        <translation>Neteisinga įvestis</translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="389"/>
+        <source>The priority must be in the range 1..99</source>
+        <translation>Pirmenybė privalo būti rėžyje 1..99</translation>
+    </message>
+</context>
+<context>
+    <name>Screenshot</name>
+    <message>
+        <location filename="../screenshot.cpp" line="294"/>
+        <source>/untitled.</source>
+        <translation>/be_pavadinimo.</translation>
+    </message>
+    <message>
+        <location filename="../screenshot.cpp" line="299"/>
+        <source>Save As</source>
+        <translation>Įrašyti kaip</translation>
+    </message>
+    <message>
+        <location filename="../screenshot.cpp" line="300"/>
+        <source>%1 Files (*.%2);;All Files (*)</source>
+        <translation>%1 failai (*.%2);;Visi failai (*)</translation>
+    </message>
+    <message>
+        <location filename="../screenshot.cpp" line="327"/>
+        <source>Options</source>
+        <translation>Parinktys</translation>
+    </message>
+    <message>
+        <location filename="../screenshot.cpp" line="330"/>
+        <source> s</source>
+        <translation> sek.</translation>
+    </message>
+    <message>
+        <location filename="../screenshot.cpp" line="335"/>
+        <source>Screenshot Delay:</source>
+        <translation>Ekrano kopijos delsa:</translation>
+    </message>
+    <message>
+        <location filename="../screenshot.cpp" line="337"/>
+        <source>Hide This Window</source>
+        <translation>Slėpti šį langą</translation>
+    </message>
+    <message>
+        <location filename="../screenshot.cpp" line="349"/>
+        <source>New Screenshot</source>
+        <translation>Nauja ekrano kopija</translation>
+    </message>
+    <message>
+        <location filename="../screenshot.cpp" line="350"/>
+        <source>Quit</source>
+        <translation>Išeiti</translation>
+    </message>
+</context>
+<context>
+    <name>SearchBox</name>
+    <message>
+        <location filename="../misc.cpp" line="806"/>
+        <source>PID,COMMAND,USER...</source>
+        <translation>PID,KOMANDA,NAUDOTOJAS...</translation>
+    </message>
+</context>
+<context>
+    <name>SliderDialog</name>
+    <message>
+        <location filename="../dialogs.cpp" line="188"/>
+        <source>Renice Process</source>
+        <translation>Iš naujo nustatyti procesui &quot;nice&quot; reikšmę</translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="194"/>
+        <source>New nice value:</source>
+        <translation>Nauja &quot;nice&quot; reikšmė:</translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="234"/>
+        <source>Cancel</source>
+        <translation>Atsisakyti</translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="238"/>
+        <source>OK</source>
+        <translation>Gerai</translation>
+    </message>
+</context>
+<context>
+    <name>Sockets</name>
+    <message>
+        <location filename="../details.cpp" line="151"/>
+        <source>Fd</source>
+        <translation>Fd</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="151"/>
+        <source>File descriptor</source>
+        <translation>Failo deskriptorius</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="152"/>
+        <source>Proto</source>
+        <translation>Protokolas</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="152"/>
+        <source>Protocol (TCP or UDP)</source>
+        <translation>Protokolas (TCP ar UDP)</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="153"/>
+        <source>Recv-Q</source>
+        <translation>Gavimo eilė</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="153"/>
+        <source>Bytes in receive queue</source>
+        <translation>Baitai gavimo eilėje</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="154"/>
+        <source>Send-Q</source>
+        <translation>Siuntimo eilė</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="154"/>
+        <source>Bytes in send queue</source>
+        <translation>Baitai siuntimo eilėje</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="155"/>
+        <source>Local Addr</source>
+        <translation>Vietinis adresas</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="155"/>
+        <source>Local IP address</source>
+        <translation>Vietinis IP adresas</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="156"/>
+        <location filename="../details.cpp" line="158"/>
+        <source>Port</source>
+        <translation>Prievadas</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="156"/>
+        <source>Local port</source>
+        <translation>Vietinis prievadas</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="157"/>
+        <source>Remote Addr</source>
+        <translation>Nuotolinis adresas</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="157"/>
+        <source>Remote IP address</source>
+        <translation>Nuotolinis IP adresas</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="158"/>
+        <source>Remote port</source>
+        <translation>Nuotolinis prievadas</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="159"/>
+        <source>State</source>
+        <translation>Būsena</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="159"/>
+        <source>Connection state</source>
+        <translation>Ryšio būsena</translation>
+    </message>
+</context>
+<context>
+    <name>StatusBar</name>
+    <message>
+        <location filename="../misc.cpp" line="895"/>
+        <source>Process count: %1</source>
+        <translation>Procesų skaičius: %1</translation>
+    </message>
+</context>
+<context>
+    <name>TBloon</name>
+    <message>
+        <location filename="../misc.cpp" line="347"/>
+        <source> This is unstable Alpha feature
+ You maybe see a SEGFAULT...</source>
+        <translation> Tai yra nestabili Alfa ypatybė
+ Galite pamatyti SEGFAULT...</translation>
+    </message>
+</context>
+<context>
+    <name>TFrame</name>
+    <message>
+        <location filename="../misc.cpp" line="426"/>
+        <source>this is Tframe widget</source>
+        <translation>tai yra Tframe valdiklis</translation>
+    </message>
+</context>
+<context>
+    <name>UFrame</name>
+    <message>
+        <location filename="../misc.cpp" line="615"/>
+        <source>title</source>
+        <translation>pavadinimas</translation>
     </message>
 </context>
 <context>

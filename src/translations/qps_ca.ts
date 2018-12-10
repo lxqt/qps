@@ -1144,10 +1144,6 @@ ha sortit amb l&apos;estat </translation>
         <translation>CPU en què s&apos;està executant el procés (sistema SMP)</translation>
     </message>
     <message>
-        <source>Process Name )</source>
-        <translation type="vanished">Nom del procés )</translation>
-    </message>
-    <message>
         <location filename="../proc.cpp" line="1989"/>
         <source>the process name</source>
         <translation>el nom del procés</translation>
