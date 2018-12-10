@@ -2,6 +2,213 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="he">
 <context>
+    <name>AllFields</name>
+    <message>
+        <location filename="../details.cpp" line="698"/>
+        <source>Field</source>
+        <translation>שדה</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="698"/>
+        <source>Field name</source>
+        <translation>שם השדה</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="699"/>
+        <source>Description</source>
+        <translation>תיאור</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="699"/>
+        <source>Field description</source>
+        <translation>תיאור שדה</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="700"/>
+        <source>Value</source>
+        <translation>ערך</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="700"/>
+        <source>Field value</source>
+        <translation>ערך שדה</translation>
+    </message>
+</context>
+<context>
+    <name>Boxvar</name>
+    <message>
+        <location filename="../prefs.cpp" line="61"/>
+        <source>Exit On Close Button</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../prefs.cpp" line="79"/>
+        <source>Host Name Lookup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../prefs.cpp" line="80"/>
+        <source>Service Name Lookup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../prefs.cpp" line="86"/>
+        <source>Disclosure Triangles</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../prefs.cpp" line="87"/>
+        <source>Branch Lines</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../prefs.cpp" line="93"/>
+        <source>Auto Save Settings on Exit</source>
+        <translation>שמירת ההגדרות אוטומטית עם היציאה</translation>
+    </message>
+    <message>
+        <location filename="../prefs.cpp" line="94"/>
+        <source>Selection: Copy PIDs to Clipboard</source>
+        <translation>בחירה: העתקת מזהי תהליכים ללוח הגזירים</translation>
+    </message>
+    <message>
+        <location filename="../prefs.cpp" line="96"/>
+        <source>Normalize NICE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../prefs.cpp" line="97"/>
+        <source>Use pmap for Map Names</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Cbgroup</name>
+    <message>
+        <location filename="../prefs.cpp" line="117"/>
+        <source>General</source>
+        <translation>כללי</translation>
+    </message>
+</context>
+<context>
+    <name>Command</name>
+    <message>
+        <location filename="../command.cpp" line="209"/>
+        <source>The command:
+
+</source>
+        <translation>הפקודה:
+
+</translation>
+    </message>
+    <message>
+        <location filename="../command.cpp" line="213"/>
+        <source>
+
+failed with the error:
+
+</source>
+        <translation>
+
+נכשל עם השגיאה:
+
+</translation>
+    </message>
+    <message>
+        <location filename="../command.cpp" line="216"/>
+        <source>Too many processes</source>
+        <translation>יותר מדי תהליכים</translation>
+    </message>
+    <message>
+        <location filename="../command.cpp" line="219"/>
+        <source>Unknown error</source>
+        <translation>שגיאה לא ידועה</translation>
+    </message>
+    <message>
+        <location filename="../command.cpp" line="229"/>
+        <source>
+
+could not be executed because it was not found,
+or you did not have execute permission.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../command.cpp" line="234"/>
+        <source>
+
+exited with status </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../command.cpp" line="238"/>
+        <source>Command Failed</source>
+        <translation>הפקודה נכשלה</translation>
+    </message>
+</context>
+<context>
+    <name>CommandDialog</name>
+    <message>
+        <location filename="../commanddialog.cpp" line="47"/>
+        <source>Edit Commands 0.1 alpha</source>
+        <translation>עריכת פקודות 0.1 אלפא</translation>
+    </message>
+    <message>
+        <location filename="../commanddialog.cpp" line="63"/>
+        <source>Name:</source>
+        <translation>שם:</translation>
+    </message>
+    <message>
+        <location filename="../commanddialog.cpp" line="79"/>
+        <source>Popup</source>
+        <translation>חלון מוקפץ</translation>
+    </message>
+    <message>
+        <location filename="../commanddialog.cpp" line="84"/>
+        <source>Command Line:</source>
+        <translation>שורת פקודה:</translation>
+    </message>
+    <message>
+        <location filename="../commanddialog.cpp" line="95"/>
+        <source>Substitutions:
+%p	PID
+%c	COMMAND
+%C	CMDLINE
+%u	USER
+%%	%
+
+</source>
+        <translation>החלפות:
+%p	מזהה תהליך
+%c	פקודה
+%C	שורת פקודה
+%u	משתמש
+%%	%
+
+</translation>
+    </message>
+    <message>
+        <location filename="../commanddialog.cpp" line="109"/>
+        <source>New...</source>
+        <translation>חדש…</translation>
+    </message>
+    <message>
+        <location filename="../commanddialog.cpp" line="111"/>
+        <location filename="../commanddialog.cpp" line="229"/>
+        <source>Add...</source>
+        <translation>הוספה…</translation>
+    </message>
+    <message>
+        <location filename="../commanddialog.cpp" line="113"/>
+        <source>Delete</source>
+        <translation>מחיקה</translation>
+    </message>
+    <message>
+        <location filename="../commanddialog.cpp" line="115"/>
+        <source>Close</source>
+        <translation>סגירה</translation>
+    </message>
+</context>
+<context>
     <name>ControlBar</name>
     <message>
         <location filename="../misc.cpp" line="925"/>
@@ -37,6 +244,62 @@
         <location filename="../misc.cpp" line="984"/>
         <source>Pause (Ctrl+Space)</source>
         <translation>עצירה (Ctrl+Space)</translation>
+    </message>
+</context>
+<context>
+    <name>Details</name>
+    <message>
+        <location filename="../details.cpp" line="36"/>
+        <source>Process %1 ( %2 ) - details</source>
+        <translation>תהליך %1 ( %2 ) - פרטים</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="45"/>
+        <source>Files</source>
+        <translation>קבצים</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="54"/>
+        <source>Sockets</source>
+        <translation>שקעים</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="59"/>
+        <source>Memory Maps</source>
+        <translation>מפות זיכרון</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="61"/>
+        <source>Environment</source>
+        <translation>סביבה</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="62"/>
+        <source>All Fields</source>
+        <translation>כל השדות</translation>
+    </message>
+</context>
+<context>
+    <name>Environ</name>
+    <message>
+        <location filename="../details.cpp" line="609"/>
+        <source>Variable</source>
+        <translation>משתנה</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="609"/>
+        <source>Variable name</source>
+        <translation>שם המשתנה</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="610"/>
+        <source>Value</source>
+        <translation>ערך</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="610"/>
+        <source>Variable value</source>
+        <translation>ערך המשתנה</translation>
     </message>
 </context>
 <context>
@@ -173,600 +436,95 @@
     </message>
 </context>
 <context>
-    <name>Qps</name>
+    <name>FieldSelect</name>
     <message>
-        <location filename="../qps.cpp" line="189"/>
-        <source>header_popup</source>
+        <location filename="../fieldsel.cpp" line="34"/>
+        <source>Select Custom Fields </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="190"/>
-        <source>Remove Field</source>
-        <translation>הסרת שדה</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="191"/>
-        <source>Add Field</source>
-        <translation>הוספת שדה</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="197"/>
-        <source>Command</source>
-        <translation>פקודה</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="201"/>
-        <source>View</source>
-        <translation>הצגה</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="202"/>
-        <source>Process</source>
-        <translation>תהליך</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="203"/>
-        <source>Log</source>
-        <translation>יומן</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="207"/>
-        <source>Custom Fields</source>
-        <translation>שדות בהתאמה אישית</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="209"/>
-        <source>Basic Fields </source>
-        <translation>שדות בסיסיים </translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="211"/>
-        <source>Jobs Fields </source>
-        <translation>שדות משימות </translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="213"/>
-        <source>Memory Fields </source>
-        <translation>שדות זיכרון </translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="216"/>
-        <source>Scheduling Fields </source>
-        <translation>שדות תזמון </translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="222"/>
-        <source>Select Custom Fields...</source>
-        <translation>בחירת שדות בהתאמה אישית…</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="236"/>
-        <source>Option</source>
-        <translation>אפשרות</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="237"/>
-        <source>Update Period...</source>
-        <translation>טווח עדכון…</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="246"/>
-        <source>Show Status bar</source>
-        <translation>הצגת סרגל מצב</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="255"/>
-        <source>Preferences...</source>
-        <translation>העדפות…</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="261"/>
-        <source>Help</source>
-        <translation>עזרה</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="263"/>
-        <location filename="../qps.cpp" line="2291"/>
-        <source>About</source>
-        <translation>על אודות</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="354"/>
-        <source>Detail</source>
-        <translation>פרט</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="395"/>
-        <source>test</source>
-        <translation>בדיקה</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="396"/>
-        <source>Copied to Clipboard</source>
-        <translation>הועתק ללוח גזירים</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="505"/>
-        <source>context popup</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="506"/>
-        <source>Renice...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="507"/>
-        <source>Scheduling...</source>
-        <translation>תזמון…</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="509"/>
-        <source>Terminate</source>
-        <translation>חיסול</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="511"/>
-        <source>Hangup</source>
-        <translation>ניתוק</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="512"/>
-        <source>Kill</source>
-        <translation>הריגה</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="513"/>
-        <source>Stop</source>
-        <translation>עצירה</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="515"/>
-        <source>Continue</source>
-        <translation>המשך</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="528"/>
-        <source>SIGINT (interrupt)</source>
-        <translation>SIGINT (פסיקה)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="530"/>
-        <source>SIGCONT (continue)</source>
-        <translation>SIGCONT (המשך)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="532"/>
-        <source>SIGSTOP (stop)</source>
-        <translation>SIGSTOP (עצירה)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="534"/>
-        <source>SIGQUIT (quit)</source>
-        <translation>SIGQUIT (יציאה)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="536"/>
-        <source>SIGILL (illegal instruction)</source>
-        <translation>SIGILL (הנחייה בלתי חוקית)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="538"/>
-        <source>SIGABRT (abort)</source>
-        <translation>SIGABRT (ביטול)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="540"/>
-        <source>SIGFPE (floating point exception)</source>
-        <translation>SIGFPE (חריגת נקודה עשרונית)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="542"/>
-        <source>SIGSEGV (segmentation violation)</source>
-        <translation>SIGSEGV (הפרת סגמנטציה)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="544"/>
-        <source>SIGPIPE (broken pipe)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="546"/>
-        <source>SIGALRM (timer signal)</source>
-        <translation>SIGALRM (אות תזמון)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="548"/>
-        <source>SIGUSR1 (user-defined 1)</source>
-        <translation>SIGUSR1 (הגדרת משתמש 1)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="550"/>
-        <source>SIGUSR2 (user-defined 2)</source>
-        <translation>SIGUSR2 (הגדרת משתמש 2)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="552"/>
-        <source>SIGCHLD (child death)</source>
-        <translation>SIGCHLD (מות צאצא)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="554"/>
-        <source>SIGTSTP (stop from tty)</source>
-        <translation>SIGTSTP (עצירה מ־tty)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="556"/>
-        <source>SIGTTIN (tty input)</source>
-        <translation>SIGTTIN (קלט tty)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="558"/>
-        <source>SIGTTOU (tty output)</source>
-        <translation>SIGTTOU (פלט tty)</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="565"/>
-        <source>View Details</source>
-        <translation>הצגת פרטים</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="1181"/>
-        <source>WatchDog</source>
-        <translation>משגיח</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="1185"/>
-        <source>Edit Commands...</source>
-        <translation>עריכת פקודות…</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="1210"/>
-        <source>Quit</source>
-        <translation>יציאה</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="1590"/>
-        <location filename="../qps.cpp" line="1627"/>
-        <location filename="../qps.cpp" line="1634"/>
-        <location filename="../qps.cpp" line="1656"/>
-        <location filename="../qps.cpp" line="1694"/>
-        <location filename="../qps.cpp" line="1773"/>
-        <source>Permission denied</source>
-        <translation>ההרשאה נדחתה</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="1591"/>
-        <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
-        <translation>אין לך אפשרות לשנות nice של התהליכים הנבחרים. רק הבעלים ומשתמש העל מורשים לעשות זאת.</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="1628"/>
-        <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
-        <translation>אין לך אפשרות לשנות nice לתהליך %1 (%2). רק הבעלים של התהליך ומשתמש העל מורשים לעשות זאת.</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="1635"/>
-        <source>Only the super-user may lower the nice value of a process.</source>
-        <translation>רק משתמש העל יכול להוריד את ערך ה־nice של תהליך.</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="1657"/>
-        <source>Only the super-user may change the scheduling policy and static priority.</source>
-        <translation>רק משתמש העל יכול לשנות את מדיניות התזמון ואת העדיפות הסטטית.</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="1695"/>
-        <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
-        <translation>אין לך הרשאות לשנות את התזמון ו/או העדיפות של התהליך %1 (%2). רק משתמש העל יכול לעשות זאת.</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="1774"/>
-        <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
-        <translation>אין לך הרשאות לשלוח אות לתהליך %1 (%2). רק משתמש העל והבעלים של התהליך יכולים לשלוח אליו אותות.</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="2311"/>
-        <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;</source>
-        <translation>&lt;h2&gt; Qps %1 - מנהל תהליכים חזותי &lt;/h2&gt; %2 משתמש בספריית Qt %3&lt;br&gt;&lt;br&gt;&lt;b&gt;מקור: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;עוקב תקלות: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="2331"/>
-        <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
-        <translation>&lt;b&gt;ה־Qps המקורי נוצר על ידי&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;תורמים&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="2373"/>
-        <source>&lt;H1&gt;QPS Help&lt;/H1&gt;Updated: May 24 2005&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Quit      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Update      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Space , Enter       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Terminate &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Kill &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Screenshot</name>
-    <message>
-        <location filename="../screenshot.cpp" line="294"/>
-        <source>/untitled.</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../screenshot.cpp" line="299"/>
-        <source>Save As</source>
-        <translation>שמירה בשם</translation>
-    </message>
-    <message>
-        <location filename="../screenshot.cpp" line="300"/>
-        <source>%1 Files (*.%2);;All Files (*)</source>
-        <translation>קובצי %1 (‎*.%2);;כל הקבצים (*)</translation>
-    </message>
-    <message>
-        <location filename="../screenshot.cpp" line="327"/>
-        <source>Options</source>
-        <translation>אפשרויות</translation>
-    </message>
-    <message>
-        <location filename="../screenshot.cpp" line="330"/>
-        <source> s</source>
-        <translation> שנ׳</translation>
-    </message>
-    <message>
-        <location filename="../screenshot.cpp" line="335"/>
-        <source>Screenshot Delay:</source>
-        <translation>השהיית צילום מסך:</translation>
-    </message>
-    <message>
-        <location filename="../screenshot.cpp" line="337"/>
-        <source>Hide This Window</source>
-        <translation>הסתרת החלון הזה</translation>
-    </message>
-    <message>
-        <location filename="../screenshot.cpp" line="349"/>
-        <source>New Screenshot</source>
-        <translation>צילום מסך חדש</translation>
-    </message>
-    <message>
-        <location filename="../screenshot.cpp" line="350"/>
-        <source>Quit</source>
-        <translation>יציאה</translation>
-    </message>
-</context>
-<context>
-    <name>Command</name>
-    <message>
-        <location filename="../command.cpp" line="209"/>
-        <source>The command:
-
-</source>
-        <translation>הפקודה:
-
-</translation>
-    </message>
-    <message>
-        <location filename="../command.cpp" line="213"/>
-        <source>
-
-failed with the error:
-
-</source>
-        <translation>
-
-נכשל עם השגיאה:
-
-</translation>
-    </message>
-    <message>
-        <location filename="../command.cpp" line="216"/>
-        <source>Too many processes</source>
-        <translation>יותר מדי תהליכים</translation>
-    </message>
-    <message>
-        <location filename="../command.cpp" line="219"/>
-        <source>Unknown error</source>
-        <translation>שגיאה לא ידועה</translation>
-    </message>
-    <message>
-        <location filename="../command.cpp" line="229"/>
-        <source>
-
-could not be executed because it was not found,
-or you did not have execute permission.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../command.cpp" line="234"/>
-        <source>
-
-exited with status </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../command.cpp" line="238"/>
-        <source>Command Failed</source>
-        <translation>הפקודה נכשלה</translation>
-    </message>
-</context>
-<context>
-    <name>CommandDialog</name>
-    <message>
-        <location filename="../commanddialog.cpp" line="47"/>
-        <source>Edit Commands 0.1 alpha</source>
-        <translation>עריכת פקודות 0.1 אלפא</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="63"/>
-        <source>Name:</source>
-        <translation>שם:</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="79"/>
-        <source>Popup</source>
-        <translation>חלון מוקפץ</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="84"/>
-        <source>Command Line:</source>
-        <translation>שורת פקודה:</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="95"/>
-        <source>Substitutions:
-%p	PID
-%c	COMMAND
-%C	CMDLINE
-%u	USER
-%%	%
-
-</source>
-        <translation>החלפות:
-%p	מזהה תהליך
-%c	פקודה
-%C	שורת פקודה
-%u	משתמש
-%%	%
-
-</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="109"/>
-        <source>New...</source>
-        <translation>חדש…</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="111"/>
-        <location filename="../commanddialog.cpp" line="229"/>
-        <source>Add...</source>
-        <translation>הוספה…</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="113"/>
-        <source>Delete</source>
-        <translation>מחיקה</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="115"/>
+        <location filename="../fieldsel.cpp" line="68"/>
         <source>Close</source>
         <translation>סגירה</translation>
     </message>
 </context>
 <context>
-    <name>Details</name>
+    <name>Files</name>
     <message>
-        <location filename="../details.cpp" line="36"/>
-        <source>Process %1 ( %2 ) - details</source>
-        <translation>תהליך %1 ( %2 ) - פרטים</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="45"/>
-        <source>Files</source>
-        <translation>קבצים</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="54"/>
-        <source>Sockets</source>
-        <translation>שקעים</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="59"/>
-        <source>Memory Maps</source>
-        <translation>מפות זיכרון</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="61"/>
-        <source>Environment</source>
-        <translation>סביבה</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="62"/>
-        <source>All Fields</source>
-        <translation>כל השדות</translation>
-    </message>
-</context>
-<context>
-    <name>Sockets</name>
-    <message>
-        <location filename="../details.cpp" line="151"/>
+        <location filename="../details.cpp" line="525"/>
         <source>Fd</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="151"/>
+        <location filename="../details.cpp" line="525"/>
         <source>File descriptor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="152"/>
-        <source>Proto</source>
-        <translation>פרוטו</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="152"/>
-        <source>Protocol (TCP or UDP)</source>
-        <translation>פרוטוקול (TCP או UDP)</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="153"/>
-        <source>Recv-Q</source>
-        <translation>תור נכנס</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="153"/>
-        <source>Bytes in receive queue</source>
-        <translation>בתים בתור הקבלה</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="154"/>
-        <source>Send-Q</source>
-        <translation>תור יוצא</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="154"/>
-        <source>Bytes in send queue</source>
-        <translation>בתים בתור השליחה</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="155"/>
-        <source>Local Addr</source>
-        <translation>כת׳ מקומית</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="155"/>
-        <source>Local IP address</source>
-        <translation>כתובת IP מקומית</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="156"/>
-        <location filename="../details.cpp" line="158"/>
-        <source>Port</source>
-        <translation>פתחה</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="156"/>
-        <source>Local port</source>
-        <translation>פתחה מקומית</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="157"/>
-        <source>Remote Addr</source>
-        <translation>כת׳ מרוחקת</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="157"/>
-        <source>Remote IP address</source>
-        <translation>כתובת IP מרוחקת</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="158"/>
-        <source>Remote port</source>
-        <translation>פתחה מרוחקת</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="159"/>
-        <source>State</source>
+        <location filename="../details.cpp" line="527"/>
+        <source>Mode</source>
         <translation>מצב</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="159"/>
-        <source>Connection state</source>
-        <translation>מצב החיבור</translation>
+        <location filename="../details.cpp" line="527"/>
+        <source>Open mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="529"/>
+        <source>Name</source>
+        <translation>שם</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="529"/>
+        <source>File name (if available)</source>
+        <translation>שם קובץ (אם יש)</translation>
+    </message>
+</context>
+<context>
+    <name>IntervalDialog</name>
+    <message>
+        <location filename="../dialogs.cpp" line="51"/>
+        <source>Change Update Period</source>
+        <translation>שינוי טווח עדכון</translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="57"/>
+        <source>New Update Period</source>
+        <translation>טווח עדכון חדש</translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="94"/>
+        <source>Cancel</source>
+        <translation>ביטול</translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="96"/>
+        <source>OK</source>
+        <translation>אישור</translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="130"/>
+        <source>No UPDATE</source>
+        <translation>אין עדכון</translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="148"/>
+        <source>Invalid value</source>
+        <translation>ערך שגוי</translation>
+    </message>
+</context>
+<context>
+    <name>ListModel</name>
+    <message>
+        <location filename="../listmodel.cpp" line="66"/>
+        <source>Event Category</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../listmodel.cpp" line="68"/>
+        <source>Enable</source>
+        <translation>הפעלה</translation>
     </message>
 </context>
 <context>
@@ -843,151 +601,6 @@ exited with status </source>
     </message>
 </context>
 <context>
-    <name>Files</name>
-    <message>
-        <location filename="../details.cpp" line="525"/>
-        <source>Fd</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="525"/>
-        <source>File descriptor</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="527"/>
-        <source>Mode</source>
-        <translation>מצב</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="527"/>
-        <source>Open mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="529"/>
-        <source>Name</source>
-        <translation>שם</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="529"/>
-        <source>File name (if available)</source>
-        <translation>שם קובץ (אם יש)</translation>
-    </message>
-</context>
-<context>
-    <name>Environ</name>
-    <message>
-        <location filename="../details.cpp" line="609"/>
-        <source>Variable</source>
-        <translation>משתנה</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="609"/>
-        <source>Variable name</source>
-        <translation>שם המשתנה</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="610"/>
-        <source>Value</source>
-        <translation>ערך</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="610"/>
-        <source>Variable value</source>
-        <translation>ערך המשתנה</translation>
-    </message>
-</context>
-<context>
-    <name>AllFields</name>
-    <message>
-        <location filename="../details.cpp" line="698"/>
-        <source>Field</source>
-        <translation>שדה</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="698"/>
-        <source>Field name</source>
-        <translation>שם השדה</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="699"/>
-        <source>Description</source>
-        <translation>תיאור</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="699"/>
-        <source>Field description</source>
-        <translation>תיאור שדה</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="700"/>
-        <source>Value</source>
-        <translation>ערך</translation>
-    </message>
-    <message>
-        <location filename="../details.cpp" line="700"/>
-        <source>Field value</source>
-        <translation>ערך שדה</translation>
-    </message>
-</context>
-<context>
-    <name>IntervalDialog</name>
-    <message>
-        <location filename="../dialogs.cpp" line="51"/>
-        <source>Change Update Period</source>
-        <translation>שינוי טווח עדכון</translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="57"/>
-        <source>New Update Period</source>
-        <translation>טווח עדכון חדש</translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="94"/>
-        <source>Cancel</source>
-        <translation>ביטול</translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="96"/>
-        <source>OK</source>
-        <translation>אישור</translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="130"/>
-        <source>No UPDATE</source>
-        <translation>אין עדכון</translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="148"/>
-        <source>Invalid value</source>
-        <translation>ערך שגוי</translation>
-    </message>
-</context>
-<context>
-    <name>SliderDialog</name>
-    <message>
-        <location filename="../dialogs.cpp" line="188"/>
-        <source>Renice Process</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="194"/>
-        <source>New nice value:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="234"/>
-        <source>Cancel</source>
-        <translation>ביטול</translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="238"/>
-        <source>OK</source>
-        <translation>אישור</translation>
-    </message>
-</context>
-<context>
     <name>PermissionDialog</name>
     <message>
         <location filename="../dialogs.cpp" line="273"/>
@@ -1008,182 +621,6 @@ exited with status </source>
         <location filename="../dialogs.cpp" line="292"/>
         <source>OK</source>
         <translation>אישור</translation>
-    </message>
-</context>
-<context>
-    <name>SchedDialog</name>
-    <message>
-        <location filename="../dialogs.cpp" line="301"/>
-        <source>Change scheduling</source>
-        <translation>החלפת תזמון</translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="305"/>
-        <source>Scheduling Policy</source>
-        <translation>מדיניות תזמון</translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="307"/>
-        <source>SCHED_OTHER (time-sharing)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="308"/>
-        <source>SCHED_FIFO (real-time)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="309"/>
-        <source>SCHED_RR (real-time)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="323"/>
-        <source>OK</source>
-        <translation type="unfinished">אישור</translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="325"/>
-        <source>Cancel</source>
-        <translation type="unfinished">ביטול</translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="355"/>
-        <source>Priority (1-99):</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="388"/>
-        <source>Invalid Input</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../dialogs.cpp" line="389"/>
-        <source>The priority must be in the range 1..99</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>FieldSelect</name>
-    <message>
-        <location filename="../fieldsel.cpp" line="34"/>
-        <source>Select Custom Fields </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../fieldsel.cpp" line="68"/>
-        <source>Close</source>
-        <translation>סגירה</translation>
-    </message>
-</context>
-<context>
-    <name>ListModel</name>
-    <message>
-        <location filename="../listmodel.cpp" line="66"/>
-        <source>Event Category</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../listmodel.cpp" line="68"/>
-        <source>Enable</source>
-        <translation>הפעלה</translation>
-    </message>
-</context>
-<context>
-    <name>TBloon</name>
-    <message>
-        <location filename="../misc.cpp" line="347"/>
-        <source> This is unstable Alpha feature
- You maybe see a SEGFAULT...</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>TFrame</name>
-    <message>
-        <location filename="../misc.cpp" line="426"/>
-        <source>this is Tframe widget</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>UFrame</name>
-    <message>
-        <location filename="../misc.cpp" line="615"/>
-        <source>title</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>SearchBox</name>
-    <message>
-        <location filename="../misc.cpp" line="806"/>
-        <source>PID,COMMAND,USER...</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>StatusBar</name>
-    <message>
-        <location filename="../misc.cpp" line="895"/>
-        <source>Process count: %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Boxvar</name>
-    <message>
-        <location filename="../prefs.cpp" line="61"/>
-        <source>Exit On Close Button</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../prefs.cpp" line="79"/>
-        <source>Host Name Lookup</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../prefs.cpp" line="80"/>
-        <source>Service Name Lookup</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../prefs.cpp" line="86"/>
-        <source>Disclosure Triangles</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../prefs.cpp" line="87"/>
-        <source>Branch Lines</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../prefs.cpp" line="93"/>
-        <source>Auto Save Settings on Exit</source>
-        <translation>שמירת ההגדרות אוטומטית עם היציאה</translation>
-    </message>
-    <message>
-        <location filename="../prefs.cpp" line="94"/>
-        <source>Selection: Copy PIDs to Clipboard</source>
-        <translation>בחירה: העתקת מזהי תהליכים ללוח הגזירים</translation>
-    </message>
-    <message>
-        <location filename="../prefs.cpp" line="96"/>
-        <source>Normalize NICE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../prefs.cpp" line="97"/>
-        <source>Use pmap for Map Names</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Cbgroup</name>
-    <message>
-        <location filename="../prefs.cpp" line="117"/>
-        <source>General</source>
-        <translation>כללי</translation>
     </message>
 </context>
 <context>
@@ -1763,6 +1200,569 @@ exited with status </source>
         <location filename="../qps.cpp" line="2229"/>
         <source>Quit</source>
         <translation>יציאה</translation>
+    </message>
+</context>
+<context>
+    <name>Qps</name>
+    <message>
+        <location filename="../qps.cpp" line="189"/>
+        <source>header_popup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="190"/>
+        <source>Remove Field</source>
+        <translation>הסרת שדה</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="191"/>
+        <source>Add Field</source>
+        <translation>הוספת שדה</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="197"/>
+        <source>Command</source>
+        <translation>פקודה</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="201"/>
+        <source>View</source>
+        <translation>הצגה</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="202"/>
+        <source>Process</source>
+        <translation>תהליך</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="203"/>
+        <source>Log</source>
+        <translation>יומן</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="207"/>
+        <source>Custom Fields</source>
+        <translation>שדות בהתאמה אישית</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="209"/>
+        <source>Basic Fields </source>
+        <translation>שדות בסיסיים </translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="211"/>
+        <source>Jobs Fields </source>
+        <translation>שדות משימות </translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="213"/>
+        <source>Memory Fields </source>
+        <translation>שדות זיכרון </translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="216"/>
+        <source>Scheduling Fields </source>
+        <translation>שדות תזמון </translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="222"/>
+        <source>Select Custom Fields...</source>
+        <translation>בחירת שדות בהתאמה אישית…</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="236"/>
+        <source>Option</source>
+        <translation>אפשרות</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="237"/>
+        <source>Update Period...</source>
+        <translation>טווח עדכון…</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="246"/>
+        <source>Show Status bar</source>
+        <translation>הצגת סרגל מצב</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="255"/>
+        <source>Preferences...</source>
+        <translation>העדפות…</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="261"/>
+        <source>Help</source>
+        <translation>עזרה</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="263"/>
+        <location filename="../qps.cpp" line="2291"/>
+        <source>About</source>
+        <translation>על אודות</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="354"/>
+        <source>Detail</source>
+        <translation>פרט</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="395"/>
+        <source>test</source>
+        <translation>בדיקה</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="396"/>
+        <source>Copied to Clipboard</source>
+        <translation>הועתק ללוח גזירים</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="505"/>
+        <source>context popup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="506"/>
+        <source>Renice...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="507"/>
+        <source>Scheduling...</source>
+        <translation>תזמון…</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="509"/>
+        <source>Terminate</source>
+        <translation>חיסול</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="511"/>
+        <source>Hangup</source>
+        <translation>ניתוק</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="512"/>
+        <source>Kill</source>
+        <translation>הריגה</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="513"/>
+        <source>Stop</source>
+        <translation>עצירה</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="515"/>
+        <source>Continue</source>
+        <translation>המשך</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="528"/>
+        <source>SIGINT (interrupt)</source>
+        <translation>SIGINT (פסיקה)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="530"/>
+        <source>SIGCONT (continue)</source>
+        <translation>SIGCONT (המשך)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="532"/>
+        <source>SIGSTOP (stop)</source>
+        <translation>SIGSTOP (עצירה)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="534"/>
+        <source>SIGQUIT (quit)</source>
+        <translation>SIGQUIT (יציאה)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="536"/>
+        <source>SIGILL (illegal instruction)</source>
+        <translation>SIGILL (הנחייה בלתי חוקית)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="538"/>
+        <source>SIGABRT (abort)</source>
+        <translation>SIGABRT (ביטול)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="540"/>
+        <source>SIGFPE (floating point exception)</source>
+        <translation>SIGFPE (חריגת נקודה עשרונית)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="542"/>
+        <source>SIGSEGV (segmentation violation)</source>
+        <translation>SIGSEGV (הפרת סגמנטציה)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="544"/>
+        <source>SIGPIPE (broken pipe)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="546"/>
+        <source>SIGALRM (timer signal)</source>
+        <translation>SIGALRM (אות תזמון)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="548"/>
+        <source>SIGUSR1 (user-defined 1)</source>
+        <translation>SIGUSR1 (הגדרת משתמש 1)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="550"/>
+        <source>SIGUSR2 (user-defined 2)</source>
+        <translation>SIGUSR2 (הגדרת משתמש 2)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="552"/>
+        <source>SIGCHLD (child death)</source>
+        <translation>SIGCHLD (מות צאצא)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="554"/>
+        <source>SIGTSTP (stop from tty)</source>
+        <translation>SIGTSTP (עצירה מ־tty)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="556"/>
+        <source>SIGTTIN (tty input)</source>
+        <translation>SIGTTIN (קלט tty)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="558"/>
+        <source>SIGTTOU (tty output)</source>
+        <translation>SIGTTOU (פלט tty)</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="565"/>
+        <source>View Details</source>
+        <translation>הצגת פרטים</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="1181"/>
+        <source>WatchDog</source>
+        <translation>משגיח</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="1185"/>
+        <source>Edit Commands...</source>
+        <translation>עריכת פקודות…</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="1210"/>
+        <source>Quit</source>
+        <translation>יציאה</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="1590"/>
+        <location filename="../qps.cpp" line="1627"/>
+        <location filename="../qps.cpp" line="1634"/>
+        <location filename="../qps.cpp" line="1656"/>
+        <location filename="../qps.cpp" line="1694"/>
+        <location filename="../qps.cpp" line="1773"/>
+        <source>Permission denied</source>
+        <translation>ההרשאה נדחתה</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="1591"/>
+        <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
+        <translation>אין לך אפשרות לשנות nice של התהליכים הנבחרים. רק הבעלים ומשתמש העל מורשים לעשות זאת.</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="1628"/>
+        <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
+        <translation>אין לך אפשרות לשנות nice לתהליך %1 (%2). רק הבעלים של התהליך ומשתמש העל מורשים לעשות זאת.</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="1635"/>
+        <source>Only the super-user may lower the nice value of a process.</source>
+        <translation>רק משתמש העל יכול להוריד את ערך ה־nice של תהליך.</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="1657"/>
+        <source>Only the super-user may change the scheduling policy and static priority.</source>
+        <translation>רק משתמש העל יכול לשנות את מדיניות התזמון ואת העדיפות הסטטית.</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="1695"/>
+        <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
+        <translation>אין לך הרשאות לשנות את התזמון ו/או העדיפות של התהליך %1 (%2). רק משתמש העל יכול לעשות זאת.</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="1774"/>
+        <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
+        <translation>אין לך הרשאות לשלוח אות לתהליך %1 (%2). רק משתמש העל והבעלים של התהליך יכולים לשלוח אליו אותות.</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="2311"/>
+        <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;</source>
+        <translation>&lt;h2&gt; Qps %1 - מנהל תהליכים חזותי &lt;/h2&gt; %2 משתמש בספריית Qt %3&lt;br&gt;&lt;br&gt;&lt;b&gt;מקור: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;עוקב תקלות: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="2331"/>
+        <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
+        <translation>&lt;b&gt;ה־Qps המקורי נוצר על ידי&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;תורמים&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="2373"/>
+        <source>&lt;H1&gt;QPS Help&lt;/H1&gt;Updated: May 24 2005&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Quit      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Update      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Space , Enter       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Terminate &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Kill &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SchedDialog</name>
+    <message>
+        <location filename="../dialogs.cpp" line="301"/>
+        <source>Change scheduling</source>
+        <translation>החלפת תזמון</translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="305"/>
+        <source>Scheduling Policy</source>
+        <translation>מדיניות תזמון</translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="307"/>
+        <source>SCHED_OTHER (time-sharing)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="308"/>
+        <source>SCHED_FIFO (real-time)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="309"/>
+        <source>SCHED_RR (real-time)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="323"/>
+        <source>OK</source>
+        <translation type="unfinished">אישור</translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="325"/>
+        <source>Cancel</source>
+        <translation type="unfinished">ביטול</translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="355"/>
+        <source>Priority (1-99):</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="388"/>
+        <source>Invalid Input</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="389"/>
+        <source>The priority must be in the range 1..99</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Screenshot</name>
+    <message>
+        <location filename="../screenshot.cpp" line="294"/>
+        <source>/untitled.</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../screenshot.cpp" line="299"/>
+        <source>Save As</source>
+        <translation>שמירה בשם</translation>
+    </message>
+    <message>
+        <location filename="../screenshot.cpp" line="300"/>
+        <source>%1 Files (*.%2);;All Files (*)</source>
+        <translation>קובצי %1 (‎*.%2);;כל הקבצים (*)</translation>
+    </message>
+    <message>
+        <location filename="../screenshot.cpp" line="327"/>
+        <source>Options</source>
+        <translation>אפשרויות</translation>
+    </message>
+    <message>
+        <location filename="../screenshot.cpp" line="330"/>
+        <source> s</source>
+        <translation> שנ׳</translation>
+    </message>
+    <message>
+        <location filename="../screenshot.cpp" line="335"/>
+        <source>Screenshot Delay:</source>
+        <translation>השהיית צילום מסך:</translation>
+    </message>
+    <message>
+        <location filename="../screenshot.cpp" line="337"/>
+        <source>Hide This Window</source>
+        <translation>הסתרת החלון הזה</translation>
+    </message>
+    <message>
+        <location filename="../screenshot.cpp" line="349"/>
+        <source>New Screenshot</source>
+        <translation>צילום מסך חדש</translation>
+    </message>
+    <message>
+        <location filename="../screenshot.cpp" line="350"/>
+        <source>Quit</source>
+        <translation>יציאה</translation>
+    </message>
+</context>
+<context>
+    <name>SearchBox</name>
+    <message>
+        <location filename="../misc.cpp" line="806"/>
+        <source>PID,COMMAND,USER...</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SliderDialog</name>
+    <message>
+        <location filename="../dialogs.cpp" line="188"/>
+        <source>Renice Process</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="194"/>
+        <source>New nice value:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="234"/>
+        <source>Cancel</source>
+        <translation>ביטול</translation>
+    </message>
+    <message>
+        <location filename="../dialogs.cpp" line="238"/>
+        <source>OK</source>
+        <translation>אישור</translation>
+    </message>
+</context>
+<context>
+    <name>Sockets</name>
+    <message>
+        <location filename="../details.cpp" line="151"/>
+        <source>Fd</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="151"/>
+        <source>File descriptor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="152"/>
+        <source>Proto</source>
+        <translation>פרוטו</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="152"/>
+        <source>Protocol (TCP or UDP)</source>
+        <translation>פרוטוקול (TCP או UDP)</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="153"/>
+        <source>Recv-Q</source>
+        <translation>תור נכנס</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="153"/>
+        <source>Bytes in receive queue</source>
+        <translation>בתים בתור הקבלה</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="154"/>
+        <source>Send-Q</source>
+        <translation>תור יוצא</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="154"/>
+        <source>Bytes in send queue</source>
+        <translation>בתים בתור השליחה</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="155"/>
+        <source>Local Addr</source>
+        <translation>כת׳ מקומית</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="155"/>
+        <source>Local IP address</source>
+        <translation>כתובת IP מקומית</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="156"/>
+        <location filename="../details.cpp" line="158"/>
+        <source>Port</source>
+        <translation>פתחה</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="156"/>
+        <source>Local port</source>
+        <translation>פתחה מקומית</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="157"/>
+        <source>Remote Addr</source>
+        <translation>כת׳ מרוחקת</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="157"/>
+        <source>Remote IP address</source>
+        <translation>כתובת IP מרוחקת</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="158"/>
+        <source>Remote port</source>
+        <translation>פתחה מרוחקת</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="159"/>
+        <source>State</source>
+        <translation>מצב</translation>
+    </message>
+    <message>
+        <location filename="../details.cpp" line="159"/>
+        <source>Connection state</source>
+        <translation>מצב החיבור</translation>
+    </message>
+</context>
+<context>
+    <name>StatusBar</name>
+    <message>
+        <location filename="../misc.cpp" line="895"/>
+        <source>Process count: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TBloon</name>
+    <message>
+        <location filename="../misc.cpp" line="347"/>
+        <source> This is unstable Alpha feature
+ You maybe see a SEGFAULT...</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TFrame</name>
+    <message>
+        <location filename="../misc.cpp" line="426"/>
+        <source>this is Tframe widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>UFrame</name>
+    <message>
+        <location filename="../misc.cpp" line="615"/>
+        <source>title</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

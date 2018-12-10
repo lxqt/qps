@@ -1144,10 +1144,6 @@ endete mit Status </translation>
         <translation>Verwendeter Prozessorkern (SMP System)</translation>
     </message>
     <message>
-        <source>Process Name )</source>
-        <translation type="vanished">Prozessname )</translation>
-    </message>
-    <message>
         <location filename="../proc.cpp" line="1989"/>
         <source>the process name</source>
         <translation>der Prozessname</translation>
