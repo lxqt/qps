@@ -946,7 +946,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../proc.cpp" line="1949"/>
         <source>VSIZE</source>
-        <translation type="unfinished"></translation>
+        <translation>Tamaño virtual</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1949"/>
@@ -966,7 +966,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../proc.cpp" line="1953"/>
         <source>MEM</source>
-        <translation type="unfinished"></translation>
+        <translation>Memoria</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1953"/>
@@ -996,7 +996,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../proc.cpp" line="1959"/>
         <source>STACK</source>
-        <translation type="unfinished"></translation>
+        <translation>Pila</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1959"/>
@@ -1031,7 +1031,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../proc.cpp" line="1965"/>
         <source>io read (file)</source>
-        <translation type="unfinished"></translation>
+        <translation>Lectura E/S (archivo)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1967"/>
@@ -1041,7 +1041,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../proc.cpp" line="1967"/>
         <source>io write (file)</source>
-        <translation type="unfinished"></translation>
+        <translation>Escritura E/S (archivo)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1969"/>
@@ -1056,7 +1056,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../proc.cpp" line="1971"/>
         <source>STAT</source>
-        <translation type="unfinished"></translation>
+        <translation>Estado</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1971"/>
@@ -1106,7 +1106,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../proc.cpp" line="1981"/>
         <source>%MEM</source>
-        <translation type="unfinished"></translation>
+        <translation>%Memoria</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1981"/>
@@ -1176,7 +1176,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../proc.cpp" line="1997"/>
         <source>COMMAND_LINE</source>
-        <translation type="unfinished"></translation>
+        <translation>Orden completa</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1997"/>
