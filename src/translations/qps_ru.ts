@@ -1189,12 +1189,12 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="2215"/>
         <source>Show</source>
-        <translation>Показать</translation>
+        <translation>Показать окно</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2218"/>
         <source>Hide</source>
-        <translation>Скрыть</translation>
+        <translation>Скрыть окно</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2224"/>
