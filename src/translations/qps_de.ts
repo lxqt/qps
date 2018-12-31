@@ -39,7 +39,7 @@
     <message>
         <location filename="../prefs.cpp" line="61"/>
         <source>Exit On Close Button</source>
-        <translation>Beim Schließen des Hauptfensters Anwendung beenden</translation>
+        <translation>Beenden durch Schließen-Schaltfläche</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="79"/>
@@ -64,7 +64,7 @@
     <message>
         <location filename="../prefs.cpp" line="93"/>
         <source>Auto Save Settings on Exit</source>
-        <translation>Einstellungen beim Verlassen automatisch speichern</translation>
+        <translation>Einstellungen beim Beenden automatisch speichern</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="94"/>
@@ -218,12 +218,12 @@ endete mit Status </translation>
     <message>
         <location filename="../misc.cpp" line="925"/>
         <source>Linear</source>
-        <translation>Listenansicht</translation>
+        <translation>Linear</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="928"/>
         <source>Tree</source>
-        <translation>Baumansicht</translation>
+        <translation>Baum</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="949"/>
@@ -511,7 +511,7 @@ endete mit Status </translation>
     <message>
         <location filename="../dialogs.cpp" line="130"/>
         <source>No UPDATE</source>
-        <translation>Keine Aktualisierung</translation>
+        <translation>Keine AKTUALISIERUNG</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="148"/>
@@ -615,7 +615,7 @@ endete mit Status </translation>
     <message>
         <location filename="../dialogs.cpp" line="282"/>
         <source>Root password</source>
-        <translation>Root Kennwort</translation>
+        <translation>Root-Passwort</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="289"/>
@@ -751,7 +751,7 @@ endete mit Status </translation>
     <message>
         <location filename="../proc.cpp" line="1908"/>
         <source>Owner (*=suid root, +=suid a user)</source>
-        <translation>Eigentümer (*=suid Root, +=suid ein Benutzer)</translation>
+        <translation>Besitzer (*=suid Root, +=suid ein Benutzer)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1910"/>
@@ -891,7 +891,7 @@ endete mit Status </translation>
     <message>
         <location filename="../proc.cpp" line="1936"/>
         <source>Realtime priority (0-99, more is better)</source>
-        <translation>Echtzeitrichlinie (0-99, höher ist besser)</translation>
+        <translation>Echtzeitpriorität (0-99, höher ist besser)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1938"/>
@@ -1131,7 +1131,7 @@ endete mit Status </translation>
     <message>
         <location filename="../proc.cpp" line="1985"/>
         <source>Total CPU time used since start</source>
-        <translation>Laufzeit des Prozesses</translation>
+        <translation>Seit dem Start verbrauchte gesamte CPU-Zeit</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1987"/>
@@ -1141,7 +1141,7 @@ endete mit Status </translation>
     <message>
         <location filename="../proc.cpp" line="1987"/>
         <source>CPU the process is executing on (SMP system)</source>
-        <translation>Verwendeter Prozessorkern (SMP System)</translation>
+        <translation>CPU, auf der der Prozess ausgeführt wird (SMP-System)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1989"/>
@@ -1194,7 +1194,7 @@ endete mit Status </translation>
     <message>
         <location filename="../qps.cpp" line="2218"/>
         <source>Hide</source>
-        <translation>Verbergen</translation>
+        <translation>Ausblenden</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2224"/>
@@ -1282,7 +1282,7 @@ endete mit Status </translation>
     <message>
         <location filename="../qps.cpp" line="237"/>
         <source>Update Period...</source>
-        <translation>Aktualisierungszeitraum...</translation>
+        <translation>Aktualisierungsperiode...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="246"/>
@@ -1358,7 +1358,7 @@ endete mit Status </translation>
     <message>
         <location filename="../qps.cpp" line="515"/>
         <source>Continue</source>
-        <translation>Fortfahren</translation>
+        <translation>Fortsetzen</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="528"/>
@@ -1453,7 +1453,7 @@ endete mit Status </translation>
     <message>
         <location filename="../qps.cpp" line="1185"/>
         <source>Edit Commands...</source>
-        <translation>Befehle beabeiten...</translation>
+        <translation>Befehle bearbeiten...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1210"/>
@@ -1468,7 +1468,7 @@ endete mit Status </translation>
         <location filename="../qps.cpp" line="1694"/>
         <location filename="../qps.cpp" line="1773"/>
         <source>Permission denied</source>
-        <translation>Zugriff verweigert</translation>
+        <translation>Berechtigung verweigert</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1591"/>
@@ -1566,7 +1566,7 @@ endete mit Status </translation>
     <message>
         <location filename="../dialogs.cpp" line="389"/>
         <source>The priority must be in the range 1..99</source>
-        <translation>Pioritätsparameter nur von 1 bis 99 zulässig</translation>
+        <translation>Die Priorität muss im Bereich von 1..99 liegen</translation>
     </message>
 </context>
 <context>
@@ -1599,7 +1599,7 @@ endete mit Status </translation>
     <message>
         <location filename="../screenshot.cpp" line="335"/>
         <source>Screenshot Delay:</source>
-        <translation>Bildschirmfoto Verzögerung:</translation>
+        <translation>Bildschirmfotoverzögerung:</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="337"/>
@@ -1704,12 +1704,12 @@ endete mit Status </translation>
         <location filename="../details.cpp" line="156"/>
         <location filename="../details.cpp" line="158"/>
         <source>Port</source>
-        <translation>Anschluss</translation>
+        <translation>Port</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="156"/>
         <source>Local port</source>
-        <translation>Lokaler Anschluss</translation>
+        <translation>Lokaler Port</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="157"/>
