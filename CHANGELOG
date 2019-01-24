@@ -1,4 +1,15 @@
+qps-1.10.19 / 2019-01-25
+========================
 
+  * Bumped version to 1.10.19
+  * Improved cmake scripting
+    - set cmake_minimum_required to 3.1.0
+    - removed locale compile definitons, use lxqt-build-tools instead
+    - use lxqt-build-tools translation scripts
+  * Added translation support and fixed some source strings
+  * Translations updated
+  * Added translation promo to README.md
+  
 qps-1.10.18 / 2018-05-21
 ========================
 
