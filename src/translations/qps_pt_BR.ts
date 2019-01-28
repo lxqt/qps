@@ -16,7 +16,7 @@
     <message>
         <location filename="../details.cpp" line="699"/>
         <source>Description</source>
-        <translation></translation>
+        <translation>Descrição</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="699"/>
