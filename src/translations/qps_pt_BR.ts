@@ -6,12 +6,12 @@
     <message>
         <location filename="../details.cpp" line="698"/>
         <source>Field</source>
-        <translation></translation>
+        <translation>Campo</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="698"/>
         <source>Field name</source>
-        <translation></translation>
+        <translation>Nome do campo</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="699"/>
@@ -21,17 +21,17 @@
     <message>
         <location filename="../details.cpp" line="699"/>
         <source>Field description</source>
-        <translation></translation>
+        <translation>Descrição do campo</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="700"/>
         <source>Value</source>
-        <translation></translation>
+        <translation>Valor</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="700"/>
         <source>Field value</source>
-        <translation></translation>
+        <translation>Valor do campo</translation>
     </message>
 </context>
 <context>
@@ -39,47 +39,47 @@
     <message>
         <location filename="../prefs.cpp" line="61"/>
         <source>Exit On Close Button</source>
-        <translation></translation>
+        <translation>Sair no botão Fechar</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="79"/>
         <source>Host Name Lookup</source>
-        <translation></translation>
+        <translation>Pesquisar Nome do Host</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="80"/>
         <source>Service Name Lookup</source>
-        <translation></translation>
+        <translation>Pesquisar Nome do Serviço</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="86"/>
         <source>Disclosure Triangles</source>
-        <translation></translation>
+        <translation>Triângulos de Divulgação</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="87"/>
         <source>Branch Lines</source>
-        <translation></translation>
+        <translation>Linhas de Ramificação</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="93"/>
         <source>Auto Save Settings on Exit</source>
-        <translation></translation>
+        <translation>Salvar Configurações Automaticamente ao Sair</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="94"/>
         <source>Selection: Copy PIDs to Clipboard</source>
-        <translation></translation>
+        <translation>Seleção: Copiar PIDs para Área de transferência</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="96"/>
         <source>Normalize NICE</source>
-        <translation></translation>
+        <translation>Normalizar NICE</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="97"/>
         <source>Use pmap for Map Names</source>
-        <translation></translation>
+        <translation>Use pmap para Nomes de Mapas</translation>
     </message>
 </context>
 <context>
@@ -87,7 +87,7 @@
     <message>
         <location filename="../prefs.cpp" line="117"/>
         <source>General</source>
-        <translation></translation>
+        <translation>Geral</translation>
     </message>
 </context>
 <context>
@@ -97,7 +97,9 @@
         <source>The command:
 
 </source>
-        <translation></translation>
+        <translation>O comando:
+
+</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="213"/>
@@ -106,17 +108,21 @@
 failed with the error:
 
 </source>
-        <translation></translation>
+        <translation>
+
+falhou com o erro:
+
+</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="216"/>
         <source>Too many processes</source>
-        <translation></translation>
+        <translation>Muitos processos</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="219"/>
         <source>Unknown error</source>
-        <translation></translation>
+        <translation>Erro desconhecido</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="229"/>
@@ -124,19 +130,24 @@ failed with the error:
 
 could not be executed because it was not found,
 or you did not have execute permission.</source>
-        <translation></translation>
+        <translation>
+
+não pôde ser executado porque não foi encontrado,
+ou você não teve permissão de executar.</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="234"/>
         <source>
 
 exited with status </source>
-        <translation></translation>
+        <translation>
+
+saiu com status </translation>
     </message>
     <message>
         <location filename="../command.cpp" line="238"/>
         <source>Command Failed</source>
-        <translation></translation>
+        <translation>Comando falhou</translation>
     </message>
 </context>
 <context>
@@ -144,12 +155,12 @@ exited with status </source>
     <message>
         <location filename="../commanddialog.cpp" line="47"/>
         <source>Edit Commands 0.1 alpha</source>
-        <translation></translation>
+        <translation>Editar comandos 0.1 alpha</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="63"/>
         <source>Name:</source>
-        <translation></translation>
+        <translation>Nome:</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="79"/>
@@ -159,7 +170,7 @@ exited with status </source>
     <message>
         <location filename="../commanddialog.cpp" line="84"/>
         <source>Command Line:</source>
-        <translation></translation>
+        <translation>Linha de Comando:</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="95"/>
@@ -171,28 +182,35 @@ exited with status </source>
 %%	%
 
 </source>
-        <translation></translation>
+        <translation>Substituições:
+%p	PID
+%c	COMMAND
+%C	CMDLINE
+%u	USER
+%%	%
+
+</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="109"/>
         <source>New...</source>
-        <translation></translation>
+        <translation>Novo...</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="111"/>
         <location filename="../commanddialog.cpp" line="229"/>
         <source>Add...</source>
-        <translation></translation>
+        <translation>Adicionar...</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="113"/>
         <source>Delete</source>
-        <translation></translation>
+        <translation>Excluir</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="115"/>
         <source>Close</source>
-        <translation></translation>
+        <translation>Fechar</translation>
     </message>
 </context>
 <context>
@@ -205,32 +223,32 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="928"/>
         <source>Tree</source>
-        <translation></translation>
+        <translation>Árvore</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="949"/>
         <source>All Processes</source>
-        <translation></translation>
+        <translation>Todos os Processos</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="950"/>
         <source>Your Processes</source>
-        <translation></translation>
+        <translation>Seus Processos</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="951"/>
         <source>Non-Root Processes</source>
-        <translation></translation>
+        <translation>Processos Não-Root</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="952"/>
         <source>Running Processes</source>
-        <translation></translation>
+        <translation>Processos em Execução</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="984"/>
         <source>Pause (Ctrl+Space)</source>
-        <translation></translation>
+        <translation>Pausar (Ctrl+Espaço)</translation>
     </message>
 </context>
 <context>
@@ -238,12 +256,12 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="36"/>
         <source>Process %1 ( %2 ) - details</source>
-        <translation></translation>
+        <translation>Processo %1 ( %2 ) - detalhes</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="45"/>
         <source>Files</source>
-        <translation></translation>
+        <translation>Arquivos</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="54"/>
@@ -253,17 +271,17 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="59"/>
         <source>Memory Maps</source>
-        <translation></translation>
+        <translation>Mapas de Memória</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="61"/>
         <source>Environment</source>
-        <translation></translation>
+        <translation>Ambiente</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="62"/>
         <source>All Fields</source>
-        <translation></translation>
+        <translation>Todos os Campos</translation>
     </message>
 </context>
 <context>
@@ -271,22 +289,22 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="609"/>
         <source>Variable</source>
-        <translation></translation>
+        <translation>Variável</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="609"/>
         <source>Variable name</source>
-        <translation></translation>
+        <translation>Nome da variável</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="610"/>
         <source>Value</source>
-        <translation></translation>
+        <translation>Valor</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="610"/>
         <source>Variable value</source>
-        <translation></translation>
+        <translation>Valor da variável</translation>
     </message>
 </context>
 <context>
@@ -304,22 +322,22 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="162"/>
         <source>Select condition</source>
-        <translation></translation>
+        <translation>Selecione a condição</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="170"/>
         <source>labelDescrition</source>
-        <translation></translation>
+        <translation>rótuloDescrição</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="193"/>
         <source>Enable</source>
-        <translation></translation>
+        <translation>Habilitar</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="219"/>
         <source>process name</source>
-        <translation></translation>
+        <translation>nome do processo</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="229"/>
@@ -334,48 +352,49 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="280"/>
         <source>include already running process</source>
-        <translation></translation>
+        <translation>incluir processo já em execução</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="309"/>
         <source>run command</source>
-        <translation></translation>
+        <translation>comando de execução</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="342"/>
         <source>show Message</source>
-        <translation></translation>
+        <translation>exibir Mensagem</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="367"/>
         <source>Help (Not yet. just concept)</source>
-        <translation></translation>
+        <translation>Ajuda (Ainda não, apenas conceito)</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="394"/>
         <source>%p : pid
 %c : command</source>
-        <translation></translation>
+        <translation>%p : pid
+%c : comando</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="425"/>
         <source>New</source>
-        <translation></translation>
+        <translation>Novo</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="432"/>
         <source>Add</source>
-        <translation></translation>
+        <translation>Adicionar</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="439"/>
         <source>Delete</source>
-        <translation></translation>
+        <translation>Excluir</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="446"/>
         <source>Close</source>
-        <translation></translation>
+        <translation>Fechar</translation>
     </message>
 </context>
 <context>
@@ -398,27 +417,27 @@ exited with status </source>
     <message>
         <location filename="../execwindow.cpp" line="97"/>
         <source>%1 exit with code %2</source>
-        <translation></translation>
+        <translation>%1 sair com código %2</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="99"/>
         <source>Close</source>
-        <translation></translation>
+        <translation>Fechar</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="105"/>
         <source>%1 [running]</source>
-        <translation></translation>
+        <translation>%1 [executando]</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="106"/>
         <source>terminate command</source>
-        <translation></translation>
+        <translation>terminar comando</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="115"/>
         <source>Error %1 : [%2] Maybe command not found</source>
-        <translation></translation>
+        <translation>Erro %1 : [%2] Talvez comando não encontrado</translation>
     </message>
 </context>
 <context>
@@ -426,12 +445,12 @@ exited with status </source>
     <message>
         <location filename="../fieldsel.cpp" line="34"/>
         <source>Select Custom Fields </source>
-        <translation></translation>
+        <translation>Selecionar Campos Personalizados </translation>
     </message>
     <message>
         <location filename="../fieldsel.cpp" line="68"/>
         <source>Close</source>
-        <translation></translation>
+        <translation>Fechar</translation>
     </message>
 </context>
 <context>
@@ -444,27 +463,27 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="525"/>
         <source>File descriptor</source>
-        <translation></translation>
+        <translation>Descritor de arquivo</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="527"/>
         <source>Mode</source>
-        <translation></translation>
+        <translation>Modo</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="527"/>
         <source>Open mode</source>
-        <translation></translation>
+        <translation>Modo abrir</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="529"/>
         <source>Name</source>
-        <translation></translation>
+        <translation>Nome</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="529"/>
         <source>File name (if available)</source>
-        <translation></translation>
+        <translation>Nome do arquivo (se disponível)</translation>
     </message>
 </context>
 <context>
@@ -472,17 +491,17 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="51"/>
         <source>Change Update Period</source>
-        <translation></translation>
+        <translation>Alterar Período de Atualização</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="57"/>
         <source>New Update Period</source>
-        <translation></translation>
+        <translation>Novo Período de Atualização</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="94"/>
         <source>Cancel</source>
-        <translation></translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="96"/>
@@ -492,12 +511,12 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="130"/>
         <source>No UPDATE</source>
-        <translation></translation>
+        <translation>Nenhuma ATUALIZAÇÃO</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="148"/>
         <source>Invalid value</source>
-        <translation></translation>
+        <translation>Valor inválido</translation>
     </message>
 </context>
 <context>
@@ -505,12 +524,12 @@ exited with status </source>
     <message>
         <location filename="../listmodel.cpp" line="66"/>
         <source>Event Category</source>
-        <translation></translation>
+        <translation>Categoria do Evento</translation>
     </message>
     <message>
         <location filename="../listmodel.cpp" line="68"/>
         <source>Enable</source>
-        <translation></translation>
+        <translation>Habilitar</translation>
     </message>
 </context>
 <context>
@@ -518,22 +537,22 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Address Range</source>
-        <translation></translation>
+        <translation>Faixa de Endereços</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Mapped addresses (hex) )</source>
-        <translation></translation>
+        <translation>Endereços mapeados (hex) )</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Size</source>
-        <translation></translation>
+        <translation>Tamanho</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Kbytes mapped (dec)</source>
-        <translation></translation>
+        <translation>Kbytes mapeado (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
@@ -543,27 +562,27 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>Permission flags</source>
-        <translation></translation>
+        <translation>Sinalizadores de permissão</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="399"/>
         <source>Offset</source>
-        <translation></translation>
+        <translation>Deslocar</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="399"/>
         <source>File offset at start of mapping (hex)</source>
-        <translation></translation>
+        <translation>Deslocamento de arquivo no início do mapeamento (hex)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="400"/>
         <source>Device</source>
-        <translation></translation>
+        <translation>Dispositivo</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="400"/>
         <source>Major,Minor device numbers (dec)</source>
-        <translation></translation>
+        <translation>Maior,Menor números de dispositivos (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="401"/>
