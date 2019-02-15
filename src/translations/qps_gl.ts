@@ -1212,7 +1212,7 @@ saíu co estado </translation>
     <message>
         <location filename="../qps.cpp" line="189"/>
         <source>header_popup</source>
-        <translation>header_popup</translation>
+        <translation>Xanela emerxente de cabeceira</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="190"/>
@@ -1663,7 +1663,7 @@ saíu co estado </translation>
     <message>
         <location filename="../details.cpp" line="152"/>
         <source>Proto</source>
-        <translation>Proto.</translation>
+        <translation>Proto</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
