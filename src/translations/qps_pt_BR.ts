@@ -39,7 +39,7 @@
     <message>
         <location filename="../prefs.cpp" line="61"/>
         <source>Exit On Close Button</source>
-        <translation>Sair no botão Fechar</translation>
+        <translation>Sair ao Fechar</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="79"/>
@@ -64,7 +64,7 @@
     <message>
         <location filename="../prefs.cpp" line="93"/>
         <source>Auto Save Settings on Exit</source>
-        <translation>Salvar Configurações Automaticamente ao Sair</translation>
+        <translation>Salvar configurações ao sair</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="94"/>
@@ -79,7 +79,7 @@
     <message>
         <location filename="../prefs.cpp" line="97"/>
         <source>Use pmap for Map Names</source>
-        <translation>Use pmap para Nomes de Mapas</translation>
+        <translation>Usar pmap para Nomes de Mapas</translation>
     </message>
 </context>
 <context>
@@ -266,7 +266,7 @@ saiu com status </translation>
     <message>
         <location filename="../details.cpp" line="54"/>
         <source>Sockets</source>
-        <translation></translation>
+        <translation>Soquetes</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="59"/>
@@ -552,7 +552,7 @@ saiu com status </translation>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Kbytes mapped (dec)</source>
-        <translation>Kbytes mapeado (dec)</translation>
+        <translation>Kbytes mapeados (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
@@ -592,17 +592,17 @@ saiu com status </translation>
     <message>
         <location filename="../details.cpp" line="401"/>
         <source>Inode number (dec)</source>
-        <translation></translation>
+        <translation>Número do inode (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="402"/>
         <source>File</source>
-        <translation></translation>
+        <translation>Arquivo</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="402"/>
         <source>File name (if available)</source>
-        <translation></translation>
+        <translation>Nome do arquivo (se disponível)</translation>
     </message>
 </context>
 <context>
@@ -610,17 +610,17 @@ saiu com status </translation>
     <message>
         <location filename="../dialogs.cpp" line="273"/>
         <source>Permission</source>
-        <translation></translation>
+        <translation>Permissão</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="282"/>
         <source>Root password</source>
-        <translation></translation>
+        <translation>Senha root</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="289"/>
         <source>Cancel</source>
-        <translation></translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="292"/>
@@ -633,17 +633,17 @@ saiu com status </translation>
     <message>
         <location filename="../prefs.cpp" line="166"/>
         <source>Preferences</source>
-        <translation></translation>
+        <translation>Preferências</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="173"/>
         <source>Setting</source>
-        <translation></translation>
+        <translation>Configuração</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="235"/>
         <source>%CPU divided by</source>
-        <translation></translation>
+        <translation>%CPU dividido por</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="242"/>
@@ -658,17 +658,17 @@ saiu com status </translation>
     <message>
         <location filename="../prefs.cpp" line="249"/>
         <source>default</source>
-        <translation></translation>
+        <translation>padrão</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="250"/>
         <source>for developer</source>
-        <translation></translation>
+        <translation>para desenvolvedor</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="286"/>
         <source>Appearance</source>
-        <translation></translation>
+        <translation>Aparência</translation>
     </message>
 </context>
 <context>
@@ -681,7 +681,7 @@ saiu com status </translation>
     <message>
         <location filename="../proc.cpp" line="1894"/>
         <source>Process ID</source>
-        <translation></translation>
+        <translation>ID do Processo</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1896"/>
@@ -701,7 +701,7 @@ saiu com status </translation>
     <message>
         <location filename="../proc.cpp" line="1898"/>
         <source>Parent process ID</source>
-        <translation></translation>
+        <translation>ID do Processo filho</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1900"/>
@@ -711,7 +711,7 @@ saiu com status </translation>
     <message>
         <location filename="../proc.cpp" line="1900"/>
         <source>Process group ID</source>
-        <translation></translation>
+        <translation>ID do grupo de processos</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1902"/>
@@ -721,7 +721,7 @@ saiu com status </translation>
     <message>
         <location filename="../proc.cpp" line="1902"/>
         <source>Session ID</source>
-        <translation></translation>
+        <translation>ID de Sessão</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1904"/>
@@ -746,7 +746,7 @@ saiu com status </translation>
     <message>
         <location filename="../proc.cpp" line="1908"/>
         <source>USER</source>
-        <translation></translation>
+        <translation>USUÁRIO</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1908"/>
@@ -756,7 +756,7 @@ saiu com status </translation>
     <message>
         <location filename="../proc.cpp" line="1910"/>
         <source>GROUP</source>
-        <translation></translation>
+        <translation>GRUPO</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1910"/>
