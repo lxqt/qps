@@ -180,7 +180,13 @@ arrêt avec le statut. </translation>
 %%	%
 
 </source>
-        <translation>
+        <translation>Substitutions:
+%p	PID
+%c	COMMANDE
+%C	LIGNE DE COMMANDE
+%u	UTILISATEUR
+%%	%
+
 </translation>
     </message>
     <message>
@@ -359,13 +365,14 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../watchdog.ui" line="367"/>
         <source>Help (Not yet. just concept)</source>
-        <translation></translation>
+        <translation>Aide (pas encore. juste le concept)</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="394"/>
         <source>%p : pid
 %c : command</source>
-        <translation></translation>
+        <translation>%p : pid
+%c : commande</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="425"/>
@@ -423,7 +430,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../execwindow.cpp" line="106"/>
         <source>terminate command</source>
-        <translation></translation>
+        <translation>arrêter la commande</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="115"/>
@@ -629,7 +636,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../prefs.cpp" line="173"/>
         <source>Setting</source>
-        <translation></translation>
+        <translation>Paramétrage</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="235"/>
@@ -872,7 +879,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../proc.cpp" line="1934"/>
         <source>Scheduling policy</source>
-        <translation></translation>
+        <translation>Politique de planification</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1936"/>
@@ -922,7 +929,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../proc.cpp" line="1944"/>
         <source>Number of major faults (disk access)</source>
-        <translation></translation>
+        <translation>Nombre d&apos;échecs majeurs (accès disque)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1946"/>
@@ -1042,7 +1049,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../proc.cpp" line="1969"/>
         <source>Number of dirty (non-written) pages</source>
-        <translation></translation>
+        <translation>Nombre de pages &quot;sales&quot; (non écrites)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1971"/>
@@ -1258,7 +1265,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../qps.cpp" line="216"/>
         <source>Scheduling Fields </source>
-        <translation></translation>
+        <translation>Champs de planification </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="222"/>
@@ -1626,7 +1633,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../dialogs.cpp" line="194"/>
         <source>New nice value:</source>
-        <translation>Nouvelle valeur nice:</translation>
+        <translation>Nouvelle bonne valeur :</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="234"/>
