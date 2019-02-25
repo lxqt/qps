@@ -158,7 +158,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../commanddialog.cpp" line="63"/>
         <source>Name:</source>
-        <translation>Nom:</translation>
+        <translation>Nom :</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="79"/>
@@ -168,7 +168,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../commanddialog.cpp" line="84"/>
         <source>Command Line:</source>
-        <translation>Ligne de commande:</translation>
+        <translation>Ligne de commande :</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="95"/>
@@ -1597,7 +1597,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../screenshot.cpp" line="335"/>
         <source>Screenshot Delay:</source>
-        <translation>Attente pour la copie d&apos;écran:</translation>
+        <translation>Attente pour la copie d&apos;écran :</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="337"/>
