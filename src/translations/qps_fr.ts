@@ -54,32 +54,32 @@
     <message>
         <location filename="../prefs.cpp" line="86"/>
         <source>Disclosure Triangles</source>
-        <translation></translation>
+        <translation>Triangles de divulgation</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="87"/>
         <source>Branch Lines</source>
-        <translation></translation>
+        <translation>Lignes de branchement</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="93"/>
         <source>Auto Save Settings on Exit</source>
-        <translation>Sauvegarde automatiquement les paramètres en sortant</translation>
+        <translation>Enregistrement automatique des paramètres à la sortie</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="94"/>
         <source>Selection: Copy PIDs to Clipboard</source>
-        <translation>Selection: Copier les PIDs dans le presse-papier</translation>
+        <translation>Sélection : copier les PIDs dans le Presse-papiers</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="96"/>
         <source>Normalize NICE</source>
-        <translation></translation>
+        <translation>Normaliser NICE</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="97"/>
         <source>Use pmap for Map Names</source>
-        <translation>Utiliser pmap pour les Map Names</translation>
+        <translation>Utiliser pmap pour les noms de carte</translation>
     </message>
 </context>
 <context>
@@ -87,7 +87,7 @@
     <message>
         <location filename="../prefs.cpp" line="117"/>
         <source>General</source>
-        <translation></translation>
+        <translation>Général</translation>
     </message>
 </context>
 <context>
@@ -97,7 +97,9 @@
         <source>The command:
 
 </source>
-        <translation></translation>
+        <translation>La commande :
+
+</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="213"/>
@@ -108,7 +110,7 @@ failed with the error:
 </source>
         <translation>
 
-Echec sur l&apos;erreur:
+Échec sur l&apos;erreur :
 
 </translation>
     </message>
@@ -145,7 +147,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../command.cpp" line="238"/>
         <source>Command Failed</source>
-        <translation>Echec de la commande</translation>
+        <translation>Échec de la commande</translation>
     </message>
 </context>
 <context>
@@ -153,7 +155,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../commanddialog.cpp" line="47"/>
         <source>Edit Commands 0.1 alpha</source>
-        <translation></translation>
+        <translation>Éditer commandes 0.1 alpha</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="63"/>
@@ -163,7 +165,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../commanddialog.cpp" line="79"/>
         <source>Popup</source>
-        <translation></translation>
+        <translation>Notification</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="84"/>
@@ -192,7 +194,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../commanddialog.cpp" line="109"/>
         <source>New...</source>
-        <translation></translation>
+        <translation>Nouveau...</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="111"/>
@@ -203,7 +205,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../commanddialog.cpp" line="113"/>
         <source>Delete</source>
-        <translation></translation>
+        <translation>Effacer</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="115"/>
@@ -216,7 +218,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../misc.cpp" line="925"/>
         <source>Linear</source>
-        <translation></translation>
+        <translation>Linéaire</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="928"/>
@@ -246,7 +248,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../misc.cpp" line="984"/>
         <source>Pause (Ctrl+Space)</source>
-        <translation></translation>
+        <translation>Pause (Ctrl+Espace)</translation>
     </message>
 </context>
 <context>
@@ -254,12 +256,12 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../details.cpp" line="36"/>
         <source>Process %1 ( %2 ) - details</source>
-        <translation></translation>
+        <translation>Processus %1 ( %2 ) - détails</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="45"/>
         <source>Files</source>
-        <translation></translation>
+        <translation>Fichiers</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="54"/>
@@ -269,12 +271,12 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../details.cpp" line="59"/>
         <source>Memory Maps</source>
-        <translation></translation>
+        <translation>Cartes de mémoire</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="61"/>
         <source>Environment</source>
-        <translation></translation>
+        <translation>Environnement</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="62"/>
@@ -292,7 +294,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../details.cpp" line="609"/>
         <source>Variable name</source>
-        <translation></translation>
+        <translation>Nom de variable</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="610"/>
@@ -310,12 +312,12 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../watchdog.ui" line="23"/>
         <source>Watchdog 0.1 alpha</source>
-        <translation></translation>
+        <translation>Chien de garde 0.1 alpha</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="117"/>
         <source>Eventcat</source>
-        <translation></translation>
+        <translation>Chat de l&apos;événement</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="162"/>
@@ -325,7 +327,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../watchdog.ui" line="170"/>
         <source>labelDescrition</source>
-        <translation></translation>
+        <translation>Étiquette Description</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="193"/>
@@ -335,7 +337,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../watchdog.ui" line="219"/>
         <source>process name</source>
-        <translation></translation>
+        <translation>nom du processus</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="229"/>
@@ -350,12 +352,12 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../watchdog.ui" line="280"/>
         <source>include already running process</source>
-        <translation>inclus les processus déjà en cours d&apos;exécution</translation>
+        <translation>inclure les processus en cours</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="309"/>
         <source>run command</source>
-        <translation></translation>
+        <translation>commande d&apos;exécution</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="342"/>
@@ -377,7 +379,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../watchdog.ui" line="425"/>
         <source>New</source>
-        <translation></translation>
+        <translation>Nouveau</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="432"/>
@@ -387,7 +389,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../watchdog.ui" line="439"/>
         <source>Delete</source>
-        <translation></translation>
+        <translation>Effacer</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="446"/>
@@ -410,7 +412,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../execwindow.cpp" line="42"/>
         <source>Qps Watchdog</source>
-        <translation></translation>
+        <translation>Chien de garde Qps</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="97"/>
@@ -435,7 +437,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../execwindow.cpp" line="115"/>
         <source>Error %1 : [%2] Maybe command not found</source>
-        <translation>Erreur %1: [%2] Peut-être la commande n&apos;a-t-elle pas été trouvée</translation>
+        <translation>Erreur %1 : [%2] Peut-être la commande n&apos;a-t-elle pas été trouvée</translation>
     </message>
 </context>
 <context>
@@ -443,7 +445,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../fieldsel.cpp" line="34"/>
         <source>Select Custom Fields </source>
-        <translation>Choisissez les champs personnalisés </translation>
+        <translation>Choisir les champs personnalisés </translation>
     </message>
     <message>
         <location filename="../fieldsel.cpp" line="68"/>
@@ -471,12 +473,12 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../details.cpp" line="527"/>
         <source>Open mode</source>
-        <translation></translation>
+        <translation>Mode ouvert</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="529"/>
         <source>Name</source>
-        <translation></translation>
+        <translation>Nom</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="529"/>
@@ -489,12 +491,12 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../dialogs.cpp" line="51"/>
         <source>Change Update Period</source>
-        <translation>Changer la fréquence de mise-à-jour</translation>
+        <translation>Changer la fréquence de mise à jour</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="57"/>
         <source>New Update Period</source>
-        <translation>Nouvelle fréquence de mise-à-jour</translation>
+        <translation>Nouvelle fréquence de mise à jour</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="94"/>
@@ -509,12 +511,12 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../dialogs.cpp" line="130"/>
         <source>No UPDATE</source>
-        <translation></translation>
+        <translation>Pas de MISE A JOUR</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="148"/>
         <source>Invalid value</source>
-        <translation>Valeur non valable</translation>
+        <translation>Valeur invalide</translation>
     </message>
 </context>
 <context>
@@ -540,7 +542,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Mapped addresses (hex) )</source>
-        <translation></translation>
+        <translation>Adresses mappées (hex))</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
@@ -550,7 +552,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Kbytes mapped (dec)</source>
-        <translation></translation>
+        <translation>Koctets mappées (dec))</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
@@ -560,42 +562,42 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>Permission flags</source>
-        <translation>Flags de permission</translation>
+        <translation>Drapeaux de permission</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="399"/>
         <source>Offset</source>
-        <translation></translation>
+        <translation>Décalage</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="399"/>
         <source>File offset at start of mapping (hex)</source>
-        <translation></translation>
+        <translation>Décalage de fichier au début du mappage (hex)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="400"/>
         <source>Device</source>
-        <translation></translation>
+        <translation>Dispositif</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="400"/>
         <source>Major,Minor device numbers (dec)</source>
-        <translation>Chiffres majeurs et mineurs des devices (dec)</translation>
+        <translation>Chiffres majeurs et mineurs des dispositifs (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="401"/>
         <source>Inode</source>
-        <translation></translation>
+        <translation>Nœud d&apos;index</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="401"/>
         <source>Inode number (dec)</source>
-        <translation>Numéro d&apos;inode (dec)</translation>
+        <translation>Numéro du nœud d&apos;index (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="402"/>
         <source>File</source>
-        <translation></translation>
+        <translation>Fichier</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="402"/>
@@ -608,12 +610,12 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../dialogs.cpp" line="273"/>
         <source>Permission</source>
-        <translation></translation>
+        <translation>Autorisation</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="282"/>
         <source>Root password</source>
-        <translation></translation>
+        <translation>Mot de passe root</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="289"/>
@@ -631,7 +633,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../prefs.cpp" line="166"/>
         <source>Preferences</source>
-        <translation></translation>
+        <translation>Préférences</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="173"/>
@@ -646,22 +648,22 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../prefs.cpp" line="242"/>
         <source>Total cpu: %1</source>
-        <translation></translation>
+        <translation>Total cpu : %1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="243"/>
         <source>Single cpu: 1</source>
-        <translation>CPU unique: 1</translation>
+        <translation>CPU unique : 1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="249"/>
         <source>default</source>
-        <translation></translation>
+        <translation>défaut</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="250"/>
         <source>for developer</source>
-        <translation></translation>
+        <translation>pour développeur</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="286"/>
@@ -679,7 +681,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../proc.cpp" line="1894"/>
         <source>Process ID</source>
-        <translation></translation>
+        <translation>ID de processus</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1896"/>
@@ -744,17 +746,17 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../proc.cpp" line="1908"/>
         <source>USER</source>
-        <translation></translation>
+        <translation>UTILISATEUR</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1908"/>
         <source>Owner (*=suid root, +=suid a user)</source>
-        <translation>Propriétaire (*=suid root, +=suid a user)</translation>
+        <translation>Propriétaire (*=suid root, +=suid utilisateur)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1910"/>
         <source>GROUP</source>
-        <translation></translation>
+        <translation>GROUPE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1910"/>
@@ -769,7 +771,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../proc.cpp" line="1912"/>
         <source>Real user ID</source>
-        <translation></translation>
+        <translation>ID d&apos;utilisateur réel</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1914"/>
@@ -799,7 +801,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../proc.cpp" line="1918"/>
         <source>File system user ID</source>
-        <translation></translation>
+        <translation>ID utilisateur du système de fichiers</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1920"/>
@@ -859,7 +861,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../proc.cpp" line="1930"/>
         <source>Scheduling favour (higher -&gt; less cpu time)</source>
-        <translation></translation>
+        <translation>Faveur de planification (temps élevé -&gt; moins de temps CPU)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1932"/>
@@ -1265,7 +1267,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../qps.cpp" line="216"/>
         <source>Scheduling Fields </source>
-        <translation>Champs de planification </translation>
+        <translation>Champs d&apos;ordonnancement </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="222"/>
@@ -1496,7 +1498,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../qps.cpp" line="1774"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
-        <translation>Vous n&apos;avez pas la permission d&apos;envoyer un signal au processus %1 (%2). Seuls le super utilisateur et le propriétaire du processus ont le droit de lui envoyer des signaux.</translation>
+        <translation>Vous n&apos;êtes pas autorisé à envoyer un signal pour traiter %1 (%2). Seuls le superutilisateur et le propriétaire du processus peuvent lui envoyer des signaux.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2311"/>
