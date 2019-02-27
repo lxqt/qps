@@ -881,7 +881,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../proc.cpp" line="1934"/>
         <source>Scheduling policy</source>
-        <translation>Politique de planification</translation>
+        <translation>Type d&apos;ordonnancement</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1936"/>
