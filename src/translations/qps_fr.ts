@@ -901,7 +901,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../proc.cpp" line="1938"/>
         <source>Time slice in milliseconds</source>
-        <translation>Tranche de temps en milliseconds</translation>
+        <translation>Tranche de temps en millisecondes</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1940"/>
@@ -911,7 +911,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../proc.cpp" line="1940"/>
         <source>Percentage average sleep time (-1 -&gt; N/A)</source>
-        <translation></translation>
+        <translation>Pourcentage de temps moyen de sommeil (-1 -&gt; N/A)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1942"/>
@@ -941,7 +941,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../proc.cpp" line="1946"/>
         <source>Number of minor faults (no disk access)</source>
-        <translation></translation>
+        <translation>Nombre de défauts mineurs (pas d&apos;accès au disque)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1949"/>
@@ -961,7 +961,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../proc.cpp" line="1951"/>
         <source>Resident set size</source>
-        <translation>Taille du resident set</translation>
+        <translation>Taille de l&apos;ensemble résident</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1953"/>
@@ -981,7 +981,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../proc.cpp" line="1955"/>
         <source>Text(code) resident set size</source>
-        <translation>Taille du resident set texte (code)</translation>
+        <translation>Texte (code) taille du groupe de résidents</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1957"/>
@@ -991,7 +991,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../proc.cpp" line="1957"/>
         <source>Data resident set size(malloc+global variable)</source>
-        <translation>Taille du resident set data (malloc+global variable)</translation>
+        <translation>Taille de l&apos;ensemble de données résidant (malloc+variable globale)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1959"/>
@@ -1011,17 +1011,17 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../proc.cpp" line="1961"/>
         <source>Shared memory with other libs</source>
-        <translation>Mémoire partagée avec d&apos;autres libs</translation>
+        <translation>Mémoire partagée avec d&apos;autres bibliothèques</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1963"/>
         <source>SWAP</source>
-        <translation></translation>
+        <translation>ECHANGE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1963"/>
         <source>Kbytes on swap device</source>
-        <translation>Kbytes sur le disque de swap</translation>
+        <translation>Koctets sur le périphérique d&apos;échange</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1965"/>
@@ -1061,7 +1061,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../proc.cpp" line="1971"/>
         <source>State of the process </source>
-        <translation>Etat du processus </translation>
+        <translation>État du processus </translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1973"/>
