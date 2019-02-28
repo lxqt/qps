@@ -562,7 +562,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>Permission flags</source>
-        <translation>Drapeaux de permission</translation>
+        <translation>Flags de permission</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="399"/>
@@ -1016,7 +1016,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../proc.cpp" line="1963"/>
         <source>SWAP</source>
-        <translation>ECHANGE</translation>
+        <translation>ÉCHANGE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1963"/>
@@ -1081,7 +1081,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../proc.cpp" line="1975"/>
         <source>Kernel function where process is sleeping</source>
-        <translation></translation>
+        <translation>Fonction du noyau où le processus est en sommeil</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1977"/>
@@ -1101,7 +1101,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../proc.cpp" line="1979"/>
         <source>Percentage of CPU used since last update</source>
-        <translation>Pourcentage de CPU utilisé depuis la dernière mise-à-jour</translation>
+        <translation>Pourcentage du CPU utilisé depuis la dernière mise à jour</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1981"/>
@@ -1116,7 +1116,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../proc.cpp" line="1983"/>
         <source>START</source>
-        <translation></translation>
+        <translation>DÉBUT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1983"/>
@@ -1126,7 +1126,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../proc.cpp" line="1985"/>
         <source>TIME</source>
-        <translation></translation>
+        <translation>TEMPS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1985"/>
@@ -1141,12 +1141,12 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../proc.cpp" line="1987"/>
         <source>CPU the process is executing on (SMP system)</source>
-        <translation>CPU sur laquelle le processus s&apos;exécute (SMP system)</translation>
+        <translation>CPU sur laquelle le processus s&apos;exécute (système SMP)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1989"/>
         <source>the process name</source>
-        <translation></translation>
+        <translation>le nom du processus</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1989"/>
@@ -1176,7 +1176,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../proc.cpp" line="1997"/>
         <source>COMMAND_LINE</source>
-        <translation></translation>
+        <translation>LIGNE_DE_COMMANDE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1997"/>
@@ -1199,12 +1199,12 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../qps.cpp" line="2224"/>
         <source>ScreenShot</source>
-        <translation></translation>
+        <translation>Capture d&apos;écran</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2229"/>
         <source>Quit</source>
-        <translation>Abandonner</translation>
+        <translation>Quitter</translation>
     </message>
 </context>
 <context>
@@ -1212,7 +1212,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../qps.cpp" line="189"/>
         <source>header_popup</source>
-        <translation></translation>
+        <translation>en-tête_notification</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="190"/>
@@ -1227,22 +1227,22 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../qps.cpp" line="197"/>
         <source>Command</source>
-        <translation></translation>
+        <translation>Commande</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="201"/>
         <source>View</source>
-        <translation></translation>
+        <translation>Vue</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="202"/>
         <source>Process</source>
-        <translation></translation>
+        <translation>Processus</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="203"/>
         <source>Log</source>
-        <translation></translation>
+        <translation>Registre</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="207"/>
@@ -1257,17 +1257,17 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../qps.cpp" line="211"/>
         <source>Jobs Fields </source>
-        <translation></translation>
+        <translation>Champs d&apos;emplois </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="213"/>
         <source>Memory Fields </source>
-        <translation>Champs mémoire </translation>
+        <translation>Champs de mémoire </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="216"/>
         <source>Scheduling Fields </source>
-        <translation>Champs d&apos;ordonnancement </translation>
+        <translation>Champs ordonnancement </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="222"/>
@@ -1282,7 +1282,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../qps.cpp" line="237"/>
         <source>Update Period...</source>
-        <translation>Fréquence de mise-à-jour...</translation>
+        <translation>Fréquence de mise à jour...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="246"/>
@@ -1292,23 +1292,23 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../qps.cpp" line="255"/>
         <source>Preferences...</source>
-        <translation></translation>
+        <translation>Préférences...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="261"/>
         <source>Help</source>
-        <translation></translation>
+        <translation>Aide</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="263"/>
         <location filename="../qps.cpp" line="2291"/>
         <source>About</source>
-        <translation>A propos</translation>
+        <translation>À propos</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="354"/>
         <source>Detail</source>
-        <translation></translation>
+        <translation>Détail</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="395"/>
@@ -1323,7 +1323,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../qps.cpp" line="505"/>
         <source>context popup</source>
-        <translation>popup de contexte</translation>
+        <translation>contextuel</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="506"/>
@@ -1348,12 +1348,12 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../qps.cpp" line="512"/>
         <source>Kill</source>
-        <translation></translation>
+        <translation>Tuer</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="513"/>
         <source>Stop</source>
-        <translation></translation>
+        <translation>Arrêter</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="515"/>
@@ -1363,7 +1363,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../qps.cpp" line="528"/>
         <source>SIGINT (interrupt)</source>
-        <translation></translation>
+        <translation>SIGINT (interruption)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="530"/>
@@ -1373,12 +1373,12 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../qps.cpp" line="532"/>
         <source>SIGSTOP (stop)</source>
-        <translation></translation>
+        <translation>SIGSTOP (arrêt)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="534"/>
         <source>SIGQUIT (quit)</source>
-        <translation></translation>
+        <translation>SIGQUIT (quitter)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="536"/>
@@ -1388,27 +1388,27 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../qps.cpp" line="538"/>
         <source>SIGABRT (abort)</source>
-        <translation></translation>
+        <translation>SIGABRT (avorter)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="540"/>
         <source>SIGFPE (floating point exception)</source>
-        <translation></translation>
+        <translation>SIGFPE (Erreur sur un nombre flottant)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="542"/>
         <source>SIGSEGV (segmentation violation)</source>
-        <translation></translation>
+        <translation>SIGSEGV (violation de segmentation)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="544"/>
         <source>SIGPIPE (broken pipe)</source>
-        <translation></translation>
+        <translation>SIGPIPE (Erreur de tube)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="546"/>
         <source>SIGALRM (timer signal)</source>
-        <translation></translation>
+        <translation>SIGALRM (signal d&apos;alarme)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="548"/>
@@ -1423,32 +1423,32 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../qps.cpp" line="552"/>
         <source>SIGCHLD (child death)</source>
-        <translation></translation>
+        <translation>SIGCHLD (Processus enfant terminé ou stoppé )</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="554"/>
         <source>SIGTSTP (stop from tty)</source>
-        <translation></translation>
+        <translation>SIGTSTP (arrêt de tty)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="556"/>
         <source>SIGTTIN (tty input)</source>
-        <translation></translation>
+        <translation>SIGTTIN (entrée tty)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="558"/>
         <source>SIGTTOU (tty output)</source>
-        <translation></translation>
+        <translation>SIGTTOU (sortie tty)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="565"/>
         <source>View Details</source>
-        <translation></translation>
+        <translation>Voir les détails</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1181"/>
         <source>WatchDog</source>
-        <translation></translation>
+        <translation>Chien de garde</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1185"/>
@@ -1458,7 +1458,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../qps.cpp" line="1210"/>
         <source>Quit</source>
-        <translation>Abandonner</translation>
+        <translation>Quitter</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1590"/>
@@ -1473,47 +1473,47 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../qps.cpp" line="1591"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
-        <translation></translation>
+        <translation>Vous n&apos;avez pas la permission de recommencer les processus sélectionnés. Seuls le propriétaire du processus et le super-utilisateur sont autorisés à le faire.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1628"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
-        <translation></translation>
+        <translation>Vous n&apos;êtes pas autorisé à exécuter le processus %1 (%2). Seuls le propriétaire du processus et le super-utilisateur sont autorisés à le faire.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1635"/>
         <source>Only the super-user may lower the nice value of a process.</source>
-        <translation></translation>
+        <translation>Seul le super-utilisateur peut réduire la valeur de transaction d&apos;un processus.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1657"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
-        <translation></translation>
+        <translation>Seul le super-utilisateur peut modifier la stratégie d&apos;ordonnancement et la priorité statique.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1695"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
-        <translation>Vous n&apos;avez pas la permission de changer l&apos;ordonnancement et/ou la priorité du processus %1 (%2). Seul le super utilisateur en a le droit.</translation>
+        <translation>Vous n&apos;avez pas la permission de changer l&apos;ordonnancement et/ou la priorité du processus %1 (%2). Seul le super-utilisateur en a le droit.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1774"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
-        <translation>Vous n&apos;êtes pas autorisé à envoyer un signal pour traiter %1 (%2). Seuls le superutilisateur et le propriétaire du processus peuvent lui envoyer des signaux.</translation>
+        <translation>Vous n&apos;êtes pas autorisé à envoyer un signal pour traiter %1 (%2). Seuls le super-utilisateur et le propriétaire du processus peuvent lui envoyer des signaux.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2311"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;</source>
-        <translation></translation>
+        <translation>&lt;h2&gt; Qps %1 - Un gestionnaire de processus visuel &lt;/h2&gt; %2 utilisant la bibliothèque Qt %3&lt;br&gt;&lt;br&gt;&lt;b&gt; Source : &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt; Traqueur de bogues : &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2331"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Origine de Qps par&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributeurs&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2373"/>
         <source>&lt;H1&gt;QPS Help&lt;/H1&gt;Updated: May 24 2005&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Quit      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Update      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Space , Enter       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Terminate &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Kill &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</source>
-        <translation></translation>
+        <translation>&lt;H1&gt;Aide QPS&lt;/H1&gt;Mise à jour : May 24 2005&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Quitter     &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Mise à jour       &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Espace , Entrer       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; processus Terminate &lt;/td&gt;  &lt;td&gt; ALT + T , SUPPR &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; processus Kill &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</translation>
     </message>
 </context>
 <context>
@@ -1531,17 +1531,17 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../dialogs.cpp" line="307"/>
         <source>SCHED_OTHER (time-sharing)</source>
-        <translation></translation>
+        <translation>SCHED_OTHER (en temps partagé)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="308"/>
         <source>SCHED_FIFO (real-time)</source>
-        <translation></translation>
+        <translation>SCHED_FIFO (temps réel)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="309"/>
         <source>SCHED_RR (real-time)</source>
-        <translation></translation>
+        <translation>SCHED_RR (temps réel)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="323"/>
@@ -1556,7 +1556,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../dialogs.cpp" line="355"/>
         <source>Priority (1-99):</source>
-        <translation></translation>
+        <translation>Priorité (1-99) :</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="388"/>
@@ -1574,7 +1574,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../screenshot.cpp" line="294"/>
         <source>/untitled.</source>
-        <translation></translation>
+        <translation>/sans titre.</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="299"/>
@@ -1609,12 +1609,12 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../screenshot.cpp" line="349"/>
         <source>New Screenshot</source>
-        <translation></translation>
+        <translation>Nouvelle capture d&apos;écran</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="350"/>
         <source>Quit</source>
-        <translation>Abandonner</translation>
+        <translation>Quitter</translation>
     </message>
 </context>
 <context>
@@ -1622,7 +1622,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../misc.cpp" line="806"/>
         <source>PID,COMMAND,USER...</source>
-        <translation></translation>
+        <translation>PID,COMMANDE,UTILISATEUR...</translation>
     </message>
 </context>
 <context>
@@ -1630,12 +1630,12 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../dialogs.cpp" line="188"/>
         <source>Renice Process</source>
-        <translation></translation>
+        <translation>Processus Renice</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="194"/>
         <source>New nice value:</source>
-        <translation>Nouvelle bonne valeur :</translation>
+        <translation>Nouvelle nice valeur :</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="234"/>
@@ -1683,7 +1683,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../details.cpp" line="154"/>
         <source>Send-Q</source>
-        <translation></translation>
+        <translation>Send-Q (envoyer)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="154"/>
@@ -1693,12 +1693,12 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>Local Addr</source>
-        <translation>Addresse locale</translation>
+        <translation>Adresse locale</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>Local IP address</source>
-        <translation></translation>
+        <translation>Adresse IP Locale</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="156"/>
@@ -1709,7 +1709,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../details.cpp" line="156"/>
         <source>Local port</source>
-        <translation></translation>
+        <translation>Port local</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="157"/>
@@ -1729,12 +1729,12 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../details.cpp" line="159"/>
         <source>State</source>
-        <translation>Etat</translation>
+        <translation>État</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="159"/>
         <source>Connection state</source>
-        <translation>Etat de la connexion</translation>
+        <translation>État de la connexion</translation>
     </message>
 </context>
 <context>
@@ -1742,7 +1742,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../misc.cpp" line="895"/>
         <source>Process count: %1</source>
-        <translation>Nombre de processus: %1</translation>
+        <translation>Nombre de processus : %1</translation>
     </message>
 </context>
 <context>
@@ -1751,7 +1751,8 @@ arrêt avec le statut. </translation>
         <location filename="../misc.cpp" line="347"/>
         <source> This is unstable Alpha feature
  You maybe see a SEGFAULT...</source>
-        <translation></translation>
+        <translation> C&apos;est une fonctionnalité alpha instable
+ Vous voyez peut-être un SEGFAULT...</translation>
     </message>
 </context>
 <context>
@@ -1759,7 +1760,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../misc.cpp" line="426"/>
         <source>this is Tframe widget</source>
-        <translation></translation>
+        <translation>c&apos;est le widget Tframe</translation>
     </message>
 </context>
 <context>
@@ -1775,7 +1776,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../watchdogdialog.cpp" line="193"/>
         <source>if process start</source>
-        <translation></translation>
+        <translation>si le processus commence</translation>
     </message>
     <message>
         <location filename="../watchdogdialog.cpp" line="194"/>
