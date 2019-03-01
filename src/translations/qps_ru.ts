@@ -1751,8 +1751,8 @@ exited with status </source>
         <location filename="../misc.cpp" line="347"/>
         <source> This is unstable Alpha feature
  You maybe see a SEGFAULT...</source>
-        <translation> Это нестабильная альфа функции
-Она может привести к ошибке сегментации...</translation>
+        <translation> Это нестабильная альфа-функция
+ Она может привести к ошибке сегментации...</translation>
     </message>
 </context>
 <context>
@@ -1760,7 +1760,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="426"/>
         <source>this is Tframe widget</source>
-        <translation></translation>
+        <translation>это Tframe-виджет</translation>
     </message>
 </context>
 <context>
@@ -1768,7 +1768,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="615"/>
         <source>title</source>
-        <translation></translation>
+        <translation>заголовок</translation>
     </message>
 </context>
 <context>
