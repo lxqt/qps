@@ -701,7 +701,7 @@ keluar dengan status </translation>
     <message>
         <location filename="../proc.cpp" line="1898"/>
         <source>Parent process ID</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Parent process ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1900"/>
@@ -741,12 +741,12 @@ keluar dengan status </translation>
     <message>
         <location filename="../proc.cpp" line="1906"/>
         <source>Process group ID of tty owner</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Process group ID of tty owner</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1908"/>
         <source>USER</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">USER</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1908"/>
