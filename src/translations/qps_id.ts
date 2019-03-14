@@ -751,32 +751,32 @@ keluar dengan status </translation>
     <message>
         <location filename="../proc.cpp" line="1908"/>
         <source>Owner (*=suid root, +=suid a user)</source>
-        <translation type="unfinished"></translation>
+        <translation>Pemilik (*=suid root, +=suid pengguna)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1910"/>
         <source>GROUP</source>
-        <translation type="unfinished"></translation>
+        <translation>GRUP</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1910"/>
         <source>Group name (*=sgid other)</source>
-        <translation type="unfinished"></translation>
+        <translation>Nama grup (*=sgid lain)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1912"/>
         <source>UID</source>
-        <translation type="unfinished"></translation>
+        <translation>UID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1912"/>
         <source>Real user ID</source>
-        <translation type="unfinished"></translation>
+        <translation>ID Pengguna Asli</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1914"/>
         <source>EUID</source>
-        <translation type="unfinished"></translation>
+        <translation>EUID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1914"/>
