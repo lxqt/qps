@@ -615,7 +615,7 @@ saiu com status </translation>
     <message>
         <location filename="../dialogs.cpp" line="282"/>
         <source>Root password</source>
-        <translation>Senha root</translation>
+        <translation>Senha de root</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="289"/>
@@ -653,7 +653,7 @@ saiu com status </translation>
     <message>
         <location filename="../prefs.cpp" line="243"/>
         <source>Single cpu: 1</source>
-        <translation></translation>
+        <translation>Único cpu: 1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="249"/>
@@ -691,7 +691,7 @@ saiu com status </translation>
     <message>
         <location filename="../proc.cpp" line="1896"/>
         <source>Task group ID ( parent of threads )</source>
-        <translation></translation>
+        <translation>ID do grupo de tarefas ( pai de threads )</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1898"/>
@@ -741,7 +741,7 @@ saiu com status </translation>
     <message>
         <location filename="../proc.cpp" line="1906"/>
         <source>Process group ID of tty owner</source>
-        <translation></translation>
+        <translation>ID do grupo de processos do proprietário tty</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1908"/>
@@ -751,7 +751,7 @@ saiu com status </translation>
     <message>
         <location filename="../proc.cpp" line="1908"/>
         <source>Owner (*=suid root, +=suid a user)</source>
-        <translation></translation>
+        <translation>Proprietário (*=suid root, +=suid um usuário)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1910"/>
@@ -761,7 +761,7 @@ saiu com status </translation>
     <message>
         <location filename="../proc.cpp" line="1910"/>
         <source>Group name (*=sgid other)</source>
-        <translation></translation>
+        <translation>Nome do grupo (*=sgid outro)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1912"/>
@@ -771,7 +771,7 @@ saiu com status </translation>
     <message>
         <location filename="../proc.cpp" line="1912"/>
         <source>Real user ID</source>
-        <translation></translation>
+        <translation>ID do usuário real</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1914"/>
@@ -781,7 +781,7 @@ saiu com status </translation>
     <message>
         <location filename="../proc.cpp" line="1914"/>
         <source>Effective user ID</source>
-        <translation></translation>
+        <translation>ID do usuário efetivo</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1916"/>
@@ -791,7 +791,7 @@ saiu com status </translation>
     <message>
         <location filename="../proc.cpp" line="1916"/>
         <source>Saved user ID (Posix)</source>
-        <translation></translation>
+        <translation>ID do usuário salvo (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1918"/>
@@ -801,7 +801,7 @@ saiu com status </translation>
     <message>
         <location filename="../proc.cpp" line="1918"/>
         <source>File system user ID</source>
-        <translation></translation>
+        <translation>ID do usuário do sistema de arquivos</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1920"/>
@@ -811,7 +811,7 @@ saiu com status </translation>
     <message>
         <location filename="../proc.cpp" line="1920"/>
         <source>Real group ID</source>
-        <translation></translation>
+        <translation>ID do grupo real</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1922"/>
@@ -821,7 +821,7 @@ saiu com status </translation>
     <message>
         <location filename="../proc.cpp" line="1922"/>
         <source>Effective group ID</source>
-        <translation></translation>
+        <translation>ID de grupo efetivo</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1924"/>
@@ -831,7 +831,7 @@ saiu com status </translation>
     <message>
         <location filename="../proc.cpp" line="1924"/>
         <source>Saved group ID (Posix)</source>
-        <translation></translation>
+        <translation>ID do grupo salvo (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1926"/>
@@ -841,7 +841,7 @@ saiu com status </translation>
     <message>
         <location filename="../proc.cpp" line="1926"/>
         <source>File system group ID</source>
-        <translation></translation>
+        <translation>ID do grupo do sistema de arquivos</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1928"/>
@@ -851,12 +851,12 @@ saiu com status </translation>
     <message>
         <location filename="../proc.cpp" line="1928"/>
         <source>Dynamic priority</source>
-        <translation></translation>
+        <translation>Prioridade dinâmica</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1930"/>
         <source>NICE</source>
-        <translation></translation>
+        <translation>LEGAL</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1930"/>
