@@ -327,7 +327,7 @@ saiu com status </translation>
     <message>
         <location filename="../watchdog.ui" line="170"/>
         <source>labelDescrition</source>
-        <translation>rótuloDescrição</translation>
+        <translation>labelDescription</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="193"/>
@@ -374,7 +374,7 @@ saiu com status </translation>
         <source>%p : pid
 %c : command</source>
         <translation>%p : pid
-%c : comando</translation>
+%c : command</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="425"/>
