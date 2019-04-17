@@ -374,7 +374,7 @@ saiu com status </translation>
         <source>%p : pid
 %c : command</source>
         <translation>%p : pid
-%c : command</translation>
+%c : comando</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="425"/>
