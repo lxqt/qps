@@ -211,7 +211,10 @@ char *read_proc_file2(char *r_path, const char *fname, int *size = NULL)
     r = read(fd, buffer_proc,
              sizeof(buffer_proc) - 1); // return 0 , -1 , read_count
     if (r < 0)
+    {
+        close(fd);
         return 0;
+    }
 
     if (max_size < r)
         max_size = r;
