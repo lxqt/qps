@@ -39,27 +39,27 @@
     <message>
         <location filename="../prefs.cpp" line="61"/>
         <source>Exit On Close Button</source>
-        <translation type="unfinished"></translation>
+        <translation>יציאה עם כפתור הסגירה</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="79"/>
         <source>Host Name Lookup</source>
-        <translation type="unfinished"></translation>
+        <translation>איתור שם מארח</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="80"/>
         <source>Service Name Lookup</source>
-        <translation type="unfinished"></translation>
+        <translation>איתור שם שירות</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="86"/>
         <source>Disclosure Triangles</source>
-        <translation type="unfinished"></translation>
+        <translation>משולשים חושפים</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="87"/>
         <source>Branch Lines</source>
-        <translation type="unfinished"></translation>
+        <translation>קווי ענפים</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="93"/>
@@ -79,7 +79,7 @@
     <message>
         <location filename="../prefs.cpp" line="97"/>
         <source>Use pmap for Map Names</source>
-        <translation type="unfinished"></translation>
+        <translation>להשתמש ב־pmap לשמות במפה</translation>
     </message>
 </context>
 <context>
@@ -440,7 +440,7 @@ exited with status </source>
     <message>
         <location filename="../fieldsel.cpp" line="34"/>
         <source>Select Custom Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>בחירת שדות מותאמים אישית </translation>
     </message>
     <message>
         <location filename="../fieldsel.cpp" line="68"/>
@@ -468,7 +468,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="527"/>
         <source>Open mode</source>
-        <translation type="unfinished"></translation>
+        <translation>מצב פתיחה</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="529"/>
@@ -519,7 +519,7 @@ exited with status </source>
     <message>
         <location filename="../listmodel.cpp" line="66"/>
         <source>Event Category</source>
-        <translation type="unfinished"></translation>
+        <translation>קטגוריית אירוע</translation>
     </message>
     <message>
         <location filename="../listmodel.cpp" line="68"/>
@@ -587,7 +587,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="401"/>
         <source>Inode number (dec)</source>
-        <translation type="unfinished"></translation>
+        <translation>מספר Inode (יורד)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="402"/>
@@ -1121,7 +1121,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1985"/>
         <source>TIME</source>
-        <translation type="unfinished"></translation>
+        <translation>TIME</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1985"/>
