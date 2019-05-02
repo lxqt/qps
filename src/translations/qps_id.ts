@@ -54,12 +54,12 @@
     <message>
         <location filename="../prefs.cpp" line="86"/>
         <source>Disclosure Triangles</source>
-        <translation type="unfinished">Disclosure Triangles</translation>
+        <translation>Segitiga Penutup</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="87"/>
         <source>Branch Lines</source>
-        <translation type="unfinished">Branch Lines</translation>
+        <translation>Cabang Garis</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="93"/>
@@ -562,17 +562,17 @@ keluar dengan status </translation>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>Permission flags</source>
-        <translation type="unfinished">Permission flags</translation>
+        <translation>Tanda Otoritas</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="399"/>
         <source>Offset</source>
-        <translation type="unfinished">Offset</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="399"/>
         <source>File offset at start of mapping (hex)</source>
-        <translation type="unfinished">Berkas offset pada awal pemetaan (hex)</translation>
+        <translation>Berkas offset pada awal pemetaan (hex)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="400"/>
