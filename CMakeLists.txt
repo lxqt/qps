@@ -24,7 +24,7 @@ find_package(lxqt-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
 
 include(GNUInstallDirs)
 include(LXQtPreventInSourceBuilds)
-include(LXQtCompilerSettings)
+include(LXQtCompilerSettings NO_POLICY_SCOPE)
 include(LXQtTranslateTs)
 include(LXQtTranslateDesktop)
 include(Qt5TranslationLoader)
