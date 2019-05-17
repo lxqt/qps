@@ -1194,7 +1194,7 @@ saíu co estado </translation>
     <message>
         <location filename="../qps.cpp" line="2218"/>
         <source>Hide</source>
-        <translation>Agachar</translation>
+        <translation>Agochar</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2224"/>
@@ -1604,7 +1604,7 @@ saíu co estado </translation>
     <message>
         <location filename="../screenshot.cpp" line="337"/>
         <source>Hide This Window</source>
-        <translation>Agachar esta xanela</translation>
+        <translation>Agochar esta xanela</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="349"/>
