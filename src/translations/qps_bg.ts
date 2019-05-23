@@ -11,7 +11,7 @@
     <message>
         <location filename="../details.cpp" line="698"/>
         <source>Field name</source>
-        <translation>Полево име</translation>
+        <translation>Име на полето</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="699"/>
@@ -31,7 +31,7 @@
     <message>
         <location filename="../details.cpp" line="700"/>
         <source>Field value</source>
-        <translation>Полева стойност</translation>
+        <translation>Стойност на полето</translation>
     </message>
 </context>
 <context>
@@ -59,12 +59,12 @@
     <message>
         <location filename="../prefs.cpp" line="87"/>
         <source>Branch Lines</source>
-        <translation type="unfinished"></translation>
+        <translation>Клонови линии</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="93"/>
         <source>Auto Save Settings on Exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Автоматично запазване на настройките при  изход</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="94"/>
@@ -87,7 +87,7 @@
     <message>
         <location filename="../prefs.cpp" line="117"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Общ</translation>
     </message>
 </context>
 <context>
@@ -97,7 +97,9 @@
         <source>The command:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Командата:
+
+</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="213"/>
@@ -111,12 +113,12 @@ failed with the error:
     <message>
         <location filename="../command.cpp" line="216"/>
         <source>Too many processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Твърде много процеси</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="219"/>
         <source>Unknown error</source>
-        <translation type="unfinished"></translation>
+        <translation>Неизвестна грешка</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="229"/>
