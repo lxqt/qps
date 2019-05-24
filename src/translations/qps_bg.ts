@@ -64,7 +64,7 @@
     <message>
         <location filename="../prefs.cpp" line="93"/>
         <source>Auto Save Settings on Exit</source>
-        <translation>Автоматично запазване на настройките при  изход</translation>
+        <translation>Автоматично запазване на настройките при изход</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="94"/>
@@ -126,7 +126,10 @@ failed with the error:
 
 could not be executed because it was not found,
 or you did not have execute permission.</source>
-        <translation type="unfinished"></translation>
+        <translation>
+
+Не може да бъде изпълнено защото не беше намерено,
+или нямате изпълнителни права.</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="234"/>
@@ -151,12 +154,12 @@ exited with status </source>
     <message>
         <location filename="../commanddialog.cpp" line="63"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Име:</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="79"/>
         <source>Popup</source>
-        <translation type="unfinished"></translation>
+        <translation>Изкачащ прозорец</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="84"/>
@@ -178,23 +181,23 @@ exited with status </source>
     <message>
         <location filename="../commanddialog.cpp" line="109"/>
         <source>New...</source>
-        <translation type="unfinished"></translation>
+        <translation>Нов...</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="111"/>
         <location filename="../commanddialog.cpp" line="229"/>
         <source>Add...</source>
-        <translation type="unfinished"></translation>
+        <translation>Добави...</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="113"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Изтрий</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="115"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Затвори</translation>
     </message>
 </context>
 <context>
@@ -202,22 +205,22 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="925"/>
         <source>Linear</source>
-        <translation type="unfinished"></translation>
+        <translation>Линеен</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="928"/>
         <source>Tree</source>
-        <translation type="unfinished"></translation>
+        <translation>Дърво</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="949"/>
         <source>All Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Всички процеси</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="950"/>
         <source>Your Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Твойте процеси</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="951"/>
@@ -227,12 +230,12 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="952"/>
         <source>Running Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Работещи процеси</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="984"/>
         <source>Pause (Ctrl+Space)</source>
-        <translation type="unfinished"></translation>
+        <translation>Паузирай (Ctrl + Space)</translation>
     </message>
 </context>
 <context>
@@ -240,17 +243,17 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="36"/>
         <source>Process %1 ( %2 ) - details</source>
-        <translation type="unfinished"></translation>
+        <translation>Процеси %1 (%2 ) - детайли</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="45"/>
         <source>Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Файлове</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="54"/>
         <source>Sockets</source>
-        <translation type="unfinished"></translation>
+        <translation>Разклонители</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="59"/>
