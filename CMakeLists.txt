@@ -29,6 +29,14 @@ include(LXQtTranslateTs)
 include(LXQtTranslateDesktop)
 include(Qt5TranslationLoader)
 
+# LXQtCompilerSettings adds them but qps still uses implicit string casts
+remove_definitions(
+    -DQT_NO_CAST_FROM_ASCII
+    -DQT_NO_CAST_TO_ASCII
+    -DQT_NO_URL_CAST_FROM_STRING
+    -DQT_NO_CAST_FROM_BYTEARRAY
+)
+
 # Must be defined after including GNUInstallDirs. Move with care.
 set(QPS_TRANSLATIONS_DIR
     "${CMAKE_INSTALL_FULL_DATAROOTDIR}/${PROJECT_NAME}/translations"
