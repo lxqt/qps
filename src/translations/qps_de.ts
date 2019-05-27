@@ -542,7 +542,7 @@ endete mit Status </translation>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Mapped addresses (hex) )</source>
-        <translation>Gemappte Adressen (hex) )</translation>
+        <translation>Gemappte Adressen (hex)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
