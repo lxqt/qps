@@ -39,7 +39,7 @@
     <message>
         <location filename="../prefs.cpp" line="61"/>
         <source>Exit On Close Button</source>
-        <translation type="unfinished"></translation>
+        <translation>Изход при натискане на бутона за затваряне</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="79"/>
@@ -69,17 +69,17 @@
     <message>
         <location filename="../prefs.cpp" line="94"/>
         <source>Selection: Copy PIDs to Clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Избор: Копирайте PID-ите в клипборда</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="96"/>
         <source>Normalize NICE</source>
-        <translation type="unfinished"></translation>
+        <translation>Нормализира NICE</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="97"/>
         <source>Use pmap for Map Names</source>
-        <translation type="unfinished"></translation>
+        <translation>Използвайте pmap за имена на карти</translation>
     </message>
 </context>
 <context>
@@ -108,7 +108,11 @@
 failed with the error:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>
+
+неуспешно с грешката:
+
+</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="216"/>
@@ -136,12 +140,14 @@ or you did not have execute permission.</source>
         <source>
 
 exited with status </source>
-        <translation type="unfinished"></translation>
+        <translation>
+
+излезе със статус </translation>
     </message>
     <message>
         <location filename="../command.cpp" line="238"/>
         <source>Command Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Командата не бе успешна</translation>
     </message>
 </context>
 <context>
@@ -149,7 +155,7 @@ exited with status </source>
     <message>
         <location filename="../commanddialog.cpp" line="47"/>
         <source>Edit Commands 0.1 alpha</source>
-        <translation type="unfinished"></translation>
+        <translation>Команди за редактиране 0.1 alpha</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="63"/>
@@ -164,7 +170,7 @@ exited with status </source>
     <message>
         <location filename="../commanddialog.cpp" line="84"/>
         <source>Command Line:</source>
-        <translation type="unfinished"></translation>
+        <translation>Командна линия:</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="95"/>
@@ -176,7 +182,14 @@ exited with status </source>
 %%	%
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Смените:
+%p	PID
+%c	COMMAND
+%C	CMDLINE
+%u	USER
+%%	%
+
+</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="109"/>
