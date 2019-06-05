@@ -490,7 +490,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../dialogs.cpp" line="51"/>
         <source>Change Update Period</source>
-        <translation></translation>
+        <translation>Mudar Período de Atualização</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="57"/>
@@ -536,7 +536,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Address Range</source>
-        <translation></translation>
+        <translation>Faixa de endereços</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
@@ -680,7 +680,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="1894"/>
         <source>Process ID</source>
-        <translation></translation>
+        <translation>ID do Processo</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1896"/>
@@ -690,7 +690,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="1896"/>
         <source>Task group ID ( parent of threads )</source>
-        <translation></translation>
+        <translation>ID do Grupo de Tarefas ( parente do threads )</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1898"/>
