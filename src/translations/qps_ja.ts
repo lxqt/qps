@@ -1284,7 +1284,7 @@ exited with status </source>
         <location filename="../qps.cpp" line="263"/>
         <location filename="../qps.cpp" line="2291"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>このアプリケーションについて</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="354"/>
