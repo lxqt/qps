@@ -1313,7 +1313,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../qps.cpp" line="395"/>
         <source>test</source>
-        <translation>provar</translation>
+        <translation>probar</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="396"/>
