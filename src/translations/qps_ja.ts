@@ -39,7 +39,7 @@
     <message>
         <location filename="../prefs.cpp" line="61"/>
         <source>Exit On Close Button</source>
-        <translation type="unfinished"></translation>
+        <translation>閉じるボタンで終了する</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="79"/>
@@ -200,37 +200,37 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="925"/>
         <source>Linear</source>
-        <translation type="unfinished"></translation>
+        <translation>リニア</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="928"/>
         <source>Tree</source>
-        <translation type="unfinished"></translation>
+        <translation>ツリー</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="949"/>
         <source>All Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>すべてのプロセス</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="950"/>
         <source>Your Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>自分のプロセス</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="951"/>
         <source>Non-Root Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Root以外のプロセス</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="952"/>
         <source>Running Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>実行中のプロセス</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="984"/>
         <source>Pause (Ctrl+Space)</source>
-        <translation type="unfinished"></translation>
+        <translation>一時停止 (Ctrl+Space)</translation>
     </message>
 </context>
 <context>
@@ -472,12 +472,12 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="51"/>
         <source>Change Update Period</source>
-        <translation type="unfinished"></translation>
+        <translation>更新間隔の変更</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="57"/>
         <source>New Update Period</source>
-        <translation type="unfinished"></translation>
+        <translation>新しい更新間隔</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="94"/>
@@ -492,12 +492,12 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="130"/>
         <source>No UPDATE</source>
-        <translation type="unfinished"></translation>
+        <translation>値を入れて下さい</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="148"/>
         <source>Invalid value</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な値です</translation>
     </message>
 </context>
 <context>
@@ -614,7 +614,7 @@ exited with status </source>
     <message>
         <location filename="../prefs.cpp" line="166"/>
         <source>Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>設定</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="173"/>
@@ -649,7 +649,7 @@ exited with status </source>
     <message>
         <location filename="../prefs.cpp" line="286"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>外観</translation>
     </message>
 </context>
 <context>
@@ -1208,7 +1208,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="197"/>
         <source>Command</source>
-        <translation type="unfinished"></translation>
+        <translation>コマンド</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="201"/>
@@ -1228,57 +1228,57 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="207"/>
         <source>Custom Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>カスタム・フィールド</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="209"/>
         <source>Basic Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>ベーシック・フィールド </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="211"/>
         <source>Jobs Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>ジョブ・フィールド </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="213"/>
         <source>Memory Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>メモリ・フィールド </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="216"/>
         <source>Scheduling Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>スケジュール・フィールド </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="222"/>
         <source>Select Custom Fields...</source>
-        <translation type="unfinished"></translation>
+        <translation>カスタムのフィールドを選択する...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="236"/>
         <source>Option</source>
-        <translation type="unfinished"></translation>
+        <translation>オプション</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="237"/>
         <source>Update Period...</source>
-        <translation type="unfinished"></translation>
+        <translation>更新間隔...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="246"/>
         <source>Show Status bar</source>
-        <translation type="unfinished"></translation>
+        <translation>ステータスバーを表示</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="255"/>
         <source>Preferences...</source>
-        <translation type="unfinished"></translation>
+        <translation>設定...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="261"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>ヘルプ</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="263"/>
@@ -1484,7 +1484,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="2311"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;h2&gt; Qps %1 - ビジュアルなプロセスマネージャー &lt;/h2&gt; %2 Qt library %3  を使用しています&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2331"/>
@@ -1723,7 +1723,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="895"/>
         <source>Process count: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>プロセス数: %1</translation>
     </message>
 </context>
 <context>
