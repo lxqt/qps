@@ -1081,7 +1081,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1975"/>
         <source>Kernel function where process is sleeping</source>
-        <translation type="unfinished"></translation>
+        <translation>Функция на ядрото в която процесът спи</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1977"/>
@@ -1101,7 +1101,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1979"/>
         <source>Percentage of CPU used since last update</source>
-        <translation type="unfinished"></translation>
+        <translation>Процент на CPU(Централния процесор), използван след последната актуализация</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1981"/>
@@ -1126,17 +1126,17 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1985"/>
         <source>TIME</source>
-        <translation type="unfinished"></translation>
+        <translation>Време</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1985"/>
         <source>Total CPU time used since start</source>
-        <translation type="unfinished"></translation>
+        <translation>Общото CPU(Процесорно) време, използвано от стартирането</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1987"/>
         <source>CPU</source>
-        <translation type="unfinished"></translation>
+        <translation>Централен Процесор</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1987"/>
@@ -1161,7 +1161,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1993"/>
         <source>Current working directory</source>
-        <translation type="unfinished"></translation>
+        <translation>Текуща работна директория</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1994"/>
