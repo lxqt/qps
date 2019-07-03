@@ -6,7 +6,7 @@
     <message>
         <location filename="../details.cpp" line="698"/>
         <source>Field</source>
-        <translation type="unfinished"></translation>
+        <translation>フィールド</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="698"/>
@@ -87,7 +87,7 @@
     <message>
         <location filename="../prefs.cpp" line="117"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>全般</translation>
     </message>
 </context>
 <context>
@@ -383,7 +383,7 @@ exited with status </source>
     <message>
         <location filename="../message.ui" line="13"/>
         <source>Qps</source>
-        <translation type="unfinished"></translation>
+        <translation>Qps</translation>
     </message>
     <message>
         <location filename="../message.ui" line="27"/>
@@ -657,7 +657,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1894"/>
         <source>PID</source>
-        <translation type="unfinished"></translation>
+        <translation>PID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1894"/>
@@ -667,7 +667,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1896"/>
         <source>TGID</source>
-        <translation type="unfinished"></translation>
+        <translation>TGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1896"/>
@@ -677,7 +677,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1898"/>
         <source>PPID</source>
-        <translation type="unfinished"></translation>
+        <translation>PPID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1898"/>
@@ -687,7 +687,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1900"/>
         <source>PGID</source>
-        <translation type="unfinished"></translation>
+        <translation>PGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1900"/>
@@ -697,7 +697,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1902"/>
         <source>SID</source>
-        <translation type="unfinished"></translation>
+        <translation>SID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1902"/>
@@ -707,7 +707,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1904"/>
         <source>TTY</source>
-        <translation type="unfinished"></translation>
+        <translation>TTY</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1904"/>
@@ -717,7 +717,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1906"/>
         <source>TPGID</source>
-        <translation type="unfinished"></translation>
+        <translation>TPGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1906"/>
@@ -727,7 +727,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1908"/>
         <source>USER</source>
-        <translation type="unfinished"></translation>
+        <translation>USER</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1908"/>
@@ -737,7 +737,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1910"/>
         <source>GROUP</source>
-        <translation type="unfinished"></translation>
+        <translation>GROUP</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1910"/>
@@ -747,7 +747,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1912"/>
         <source>UID</source>
-        <translation type="unfinished"></translation>
+        <translation>UID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1912"/>
@@ -757,7 +757,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1914"/>
         <source>EUID</source>
-        <translation type="unfinished"></translation>
+        <translation>EUID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1914"/>
@@ -767,7 +767,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1916"/>
         <source>SUID</source>
-        <translation type="unfinished"></translation>
+        <translation>SUID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1916"/>
@@ -777,7 +777,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1918"/>
         <source>FSUID</source>
-        <translation type="unfinished"></translation>
+        <translation>FSUID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1918"/>
@@ -787,7 +787,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1920"/>
         <source>GID</source>
-        <translation type="unfinished"></translation>
+        <translation>GID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1920"/>
@@ -797,7 +797,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1922"/>
         <source>EGID</source>
-        <translation type="unfinished"></translation>
+        <translation>EGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1922"/>
@@ -807,7 +807,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1924"/>
         <source>SGID</source>
-        <translation type="unfinished"></translation>
+        <translation>SGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1924"/>
@@ -817,7 +817,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1926"/>
         <source>FSGID</source>
-        <translation type="unfinished"></translation>
+        <translation>FSGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1926"/>
@@ -827,7 +827,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1928"/>
         <source>PRI</source>
-        <translation type="unfinished"></translation>
+        <translation>PRI</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1928"/>
@@ -837,7 +837,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1930"/>
         <source>NICE</source>
-        <translation type="unfinished"></translation>
+        <translation>NICE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1930"/>
@@ -847,7 +847,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1932"/>
         <source>NLWP</source>
-        <translation type="unfinished"></translation>
+        <translation>NLWP</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1932"/>
@@ -857,7 +857,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1934"/>
         <source>PLCY</source>
-        <translation type="unfinished"></translation>
+        <translation>PLCY</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1934"/>
@@ -867,7 +867,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1936"/>
         <source>RPRI</source>
-        <translation type="unfinished"></translation>
+        <translation>RPRI</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1936"/>
@@ -877,7 +877,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1938"/>
         <source>TMS</source>
-        <translation type="unfinished"></translation>
+        <translation>TMS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1938"/>
@@ -887,7 +887,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1940"/>
         <source>%SAVG</source>
-        <translation type="unfinished"></translation>
+        <translation>%SAVG</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1940"/>
@@ -897,7 +897,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1942"/>
         <source>CPUSET</source>
-        <translation type="unfinished"></translation>
+        <translation>CPUSET</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1942"/>
@@ -907,7 +907,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1944"/>
         <source>MAJFLT</source>
-        <translation type="unfinished"></translation>
+        <translation>MAJFLT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1944"/>
@@ -917,7 +917,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1946"/>
         <source>MINFLT</source>
-        <translation type="unfinished"></translation>
+        <translation>MINFLT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1946"/>
@@ -927,7 +927,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1949"/>
         <source>VSIZE</source>
-        <translation type="unfinished"></translation>
+        <translation>VSIZE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1949"/>
@@ -937,7 +937,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1951"/>
         <source>RSS</source>
-        <translation type="unfinished"></translation>
+        <translation>RSS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1951"/>
@@ -947,7 +947,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1953"/>
         <source>MEM</source>
-        <translation type="unfinished"></translation>
+        <translation>MEM</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1953"/>
@@ -957,7 +957,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1955"/>
         <source>TRS</source>
-        <translation type="unfinished"></translation>
+        <translation>TRS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1955"/>
@@ -967,7 +967,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1957"/>
         <source>DRS</source>
-        <translation type="unfinished"></translation>
+        <translation>DRS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1957"/>
@@ -977,7 +977,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1959"/>
         <source>STACK</source>
-        <translation type="unfinished"></translation>
+        <translation>STACK</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1959"/>
@@ -987,7 +987,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1961"/>
         <source>SHARE</source>
-        <translation type="unfinished"></translation>
+        <translation>SHARE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1961"/>
@@ -997,7 +997,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1963"/>
         <source>SWAP</source>
-        <translation type="unfinished"></translation>
+        <translation>SWAP</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1963"/>
@@ -1007,7 +1007,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1965"/>
         <source>IO_R</source>
-        <translation type="unfinished"></translation>
+        <translation>IO_R</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1965"/>
@@ -1017,7 +1017,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1967"/>
         <source>IO_W</source>
-        <translation type="unfinished"></translation>
+        <translation>IO_W</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1967"/>
@@ -1027,7 +1027,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1969"/>
         <source>DT</source>
-        <translation type="unfinished"></translation>
+        <translation>DT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1969"/>
@@ -1037,7 +1037,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1971"/>
         <source>STAT</source>
-        <translation type="unfinished"></translation>
+        <translation>STAT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1971"/>
@@ -1047,7 +1047,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1973"/>
         <source>FLAGS</source>
-        <translation type="unfinished"></translation>
+        <translation>FLAGS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1973"/>
@@ -1057,7 +1057,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1975"/>
         <source>WCHAN</source>
-        <translation type="unfinished"></translation>
+        <translation>WCHAN</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1975"/>
@@ -1067,7 +1067,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1977"/>
         <source>%WCPU</source>
-        <translation type="unfinished"></translation>
+        <translation>%WCPU</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1977"/>
@@ -1077,7 +1077,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1979"/>
         <source>%CPU</source>
-        <translation type="unfinished"></translation>
+        <translation>%CPU</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1979"/>
@@ -1087,7 +1087,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1981"/>
         <source>%MEM</source>
-        <translation type="unfinished"></translation>
+        <translation>%MEM</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1981"/>
@@ -1097,7 +1097,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1983"/>
         <source>START</source>
-        <translation type="unfinished"></translation>
+        <translation>START</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1983"/>
@@ -1107,7 +1107,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1985"/>
         <source>TIME</source>
-        <translation type="unfinished"></translation>
+        <translation>TIME</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1985"/>
@@ -1117,7 +1117,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1987"/>
         <source>CPU</source>
-        <translation type="unfinished"></translation>
+        <translation>CPU</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1987"/>
@@ -1137,7 +1137,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1993"/>
         <source>CWD</source>
-        <translation type="unfinished"></translation>
+        <translation>CWD</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1993"/>
@@ -1147,7 +1147,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1994"/>
         <source>ROOT</source>
-        <translation type="unfinished"></translation>
+        <translation>ROOT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1994"/>
@@ -1180,12 +1180,12 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="2224"/>
         <source>ScreenShot</source>
-        <translation type="unfinished"></translation>
+        <translation>スクリーンショット</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2229"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>終了</translation>
     </message>
 </context>
 <context>
@@ -1439,7 +1439,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1210"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>終了</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1590"/>
@@ -1484,7 +1484,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="2311"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;</source>
-        <translation>&lt;h2&gt; Qps %1 - ビジュアルなプロセスマネージャー &lt;/h2&gt; %2 Qt library %3  を使用しています&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;</translation>
+        <translation>&lt;h2&gt; Qps %1 - ビジュアルなプロセスマネージャー &lt;/h2&gt; %2 Qt library %3  を使用しています&lt;br&gt;&lt;br&gt;&lt;b&gt;ソース: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2331"/>
@@ -1527,12 +1527,12 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="323"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="325"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>キャンセル</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="355"/>
