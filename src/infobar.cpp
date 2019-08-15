@@ -867,7 +867,6 @@ void GraphBase::mouseMoveEvent(QMouseEvent *e)
     // gap=infobox->width() + px  - width();
 
     int i;
-    int setinfo = 0;
 
     // printf("procview npoints=%d  px=%d\n",npoints,px);
     QString text;
@@ -883,8 +882,7 @@ void GraphBase::mouseMoveEvent(QMouseEvent *e)
         // text ="xxx";
     }
 
-    if (setinfo == 0)
-        infobox->setText(text);
+    infobox->setText(text);
 
     QPoint p = mapTo(qps, e->pos()); //??
 
