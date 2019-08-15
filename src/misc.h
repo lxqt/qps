@@ -141,33 +141,6 @@ class TBloon : public QLabel
     QTimeLine *timeLine;
 };
 
-class FaderWidget : public QWidget
-{
-    Q_OBJECT
-    Q_PROPERTY(QBrush fadeBrush READ fadeBrush WRITE setFadeBrush)
-    Q_PROPERTY(int fadeDuration READ fadeDuration WRITE setFadeDuration)
-  public:
-    FaderWidget(QWidget *parent);
-
-    QBrush fadeBrush() const { return startBrush; }
-    void setFadeBrush(const QBrush &newColor) { startBrush = newColor; }
-
-    int fadeDuration() const { return timeLine->duration(); }
-    void setFadeDuration(int milliseconds)
-    {
-        timeLine->setDuration(milliseconds);
-    }
-
-    void start();
-
-  protected:
-    void paintEvent(QPaintEvent *event);
-
-  private:
-    QTimeLine *timeLine;
-    QBrush startBrush;
-};
-
 class UFrame : public QFrame
 {
     Q_OBJECT
