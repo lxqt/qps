@@ -1316,7 +1316,6 @@ void subcpuRack::paintEvent(QPaintEvent *e)
     QPainter p(this);
     char buff[128];
     int w;
-    int width;
     int x, y;
     int i;
     // QRect cr = contentsRect();
@@ -1335,7 +1334,6 @@ void subcpuRack::paintEvent(QPaintEvent *e)
     // else
     int cpu_n = procview->num_cpus;
     w = 2 + pf_write(&p, 2, 2, "SUB CPU");
-    width = w;
 }
 
 // GraphDisplay, miniDisplay
