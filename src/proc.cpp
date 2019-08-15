@@ -1610,18 +1610,6 @@ bool Procinfo::read_environ()
     if (size <= 0)
         return false;
 
-    // kernel 2.6.x has a bug
-    if (envblock[size - 2] == 0) // how to check the bug.
-    {
-        char buf[128];
-        sprintf(buf, "Kernel Bug= wrong environments !  please, check "
-                     "/proc/%d/environ !",
-                pid);
-        size = strlen(buf) + 1;
-        if (file_size > size)
-            strcpy(envblock, buf);
-    }
-
     int i = 0, n = 0, v = 0;
     char ch;
 
