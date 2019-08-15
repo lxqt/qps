@@ -626,37 +626,7 @@ UFrame::UFrame(QWidget *parent) : QFrame(parent)
     }
 }
 
-FaderWidget::FaderWidget(QWidget *parent) : QWidget(parent)
-{
-    if (parent)
-        startBrush = parent->palette().window();
-    else
-        startBrush = Qt::white;
 
-    timeLine = new QTimeLine(333, this);
-    timeLine->setFrameRange(1000, 0);
-    connect(timeLine, SIGNAL(frameChanged(int)), this, SLOT(update()));
-
-    setAttribute(Qt::WA_DeleteOnClose);
-    resize(parent->size());
-}
-
-void FaderWidget::start()
-{
-    timeLine->start();
-    show();
-}
-
-void FaderWidget::paintEvent(QPaintEvent * /* event */)
-{
-    QPainter painter(this);
-    qreal frame = timeLine->currentFrame();
-    painter.setOpacity(frame / 1000.);
-    painter.fillRect(rect(), startBrush);
-
-    if (frame <= 0.)
-        close();
-}
 
 void UFrame::setTitle(QString str)
 {
