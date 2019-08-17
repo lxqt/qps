@@ -61,8 +61,6 @@
 
 #define PROCDIR "/proc" // hmmm
 
-bool flag_SMPsim = false; // SMP simulation
-
 extern int flag_thread_ok;
 extern bool flag_schedstat;
 extern bool flag_show_thread;
@@ -942,14 +940,6 @@ int Proc::countCpu()
         if (p)
             p++;
     }
-
-    if (flag_devel and flag_SMPsim)
-    {
-        // num_cpus=64;
-        int vals[] = {2, 4, 8, 16, 32};
-        int r = rand() % 5;
-        num_cpus = vals[r];
-    }
     return num_cpus;
 }
 
@@ -1052,14 +1042,6 @@ int Proc::read_system() //
                 p++;
         }
 
-        if (flag_SMPsim)
-        {
-            int vals[] = {2, 4, 8, 16, 32};
-            int r = rand() % 5;
-            num_cpus = vals[r];
-            num_cpus = 8;
-        }
-
         // Hotplugging Detection : save total_cpu
         if (Proc::num_cpus != Proc::old_num_cpus)
         {
@@ -1144,66 +1126,38 @@ int Proc::read_system() //
                         // abort(); // stdlib.h
     }
 
-    //	void watchdog_syscpu(int );
-    //	watchdog_syscpu((user-old_cpu_times(num_cpus,CPUTIME_USER))*100/dt_total);
-    //// test
-
-    // if(flag_devel and flag_SMPsim )
-    if (flag_SMPsim)
+    for (int cpu = 0; cpu < num_cpus; cpu++)
     {
-        // for Developer only !!!
-        // printf("user%d nuce%d system%d
-        // idle%d\n",user,nice,system,idle);
-        for (int cpu = 0; cpu < num_cpus; cpu++)
+        char cpu_buf[10];
+        sprintf(cpu_buf, "cpu%d", cpu);
+        if ((p = strstr(buf, cpu_buf)) != 0)
         {
-            // stdlib.h, int rand();
-            if (dt_used != 0)
-                cpu_times(cpu, CPUTIME_USER) =
-                    old_cpu_times(cpu, CPUTIME_USER) + rand() % dt_used;
-            else
-                cpu_times(cpu, CPUTIME_USER) = 0;
-            cpu_times(cpu, CPUTIME_NICE) = nice;
-            cpu_times(cpu, CPUTIME_SYSTEM) = system;
-            cpu_times(cpu, CPUTIME_IDLE) = idle;
+            nflds = sscanf(p, "%*s %u %u %u %u %u %u %u %u %u",
+                           &cpu_times(cpu, CPUTIME_USER),
+                           &cpu_times(cpu, CPUTIME_NICE),
+                           &cpu_times(cpu, CPUTIME_SYSTEM),
+                           &cpu_times(cpu, CPUTIME_IDLE), &iowait, &irq,
+                           &sftirq, &steal, &guest);
+
+            if (nflds > 4)
+            {
+                // kernel 2.6.x
+                cpu_times(cpu, CPUTIME_SYSTEM) += (irq + sftirq);
+                cpu_times(cpu, CPUTIME_IDLE) += iowait;
+            }
+            if (nflds == 9)
+            {
+                cpu_times(cpu, CPUTIME_SYSTEM) += (steal + guest);
+            }
+
+            // 2.4.27-SMP bug ?
         }
-    }
-    else
-    {
-        // Single-CPU and SMP(Multi-CPU)
-        for (int cpu = 0; cpu < num_cpus; cpu++)
+        else
         {
-            char cpu_buf[10];
-            sprintf(cpu_buf, "cpu%d", cpu);
-            if ((p = strstr(buf, cpu_buf)) != 0)
-            {
-                nflds = sscanf(p, "%*s %u %u %u %u %u %u %u %u %u",
-                               &cpu_times(cpu, CPUTIME_USER),
-                               &cpu_times(cpu, CPUTIME_NICE),
-                               &cpu_times(cpu, CPUTIME_SYSTEM),
-                               &cpu_times(cpu, CPUTIME_IDLE), &iowait, &irq,
-                               &sftirq, &steal, &guest);
-                // cpu_times(cpu, CPUTIME_USER),cpu_times(cpu,
-                // CPUTIME_NICE),
-                if (nflds > 4)
-                {
-                    // kernel 2.6.x
-                    cpu_times(cpu, CPUTIME_SYSTEM) += (irq + sftirq);
-                    cpu_times(cpu, CPUTIME_IDLE) += iowait;
-                }
-                if (nflds == 9)
-                {
-                    cpu_times(cpu, CPUTIME_SYSTEM) += (steal + guest);
-                }
-
-                // 2.4.27-SMP bug ?
-            }
-            else
-            {
-                fprintf(stderr, "Qps: Error reading info for "
-                                "cpu%d (/proc/stat)\n",
-                        cpu);
-                abort();
-            }
+            fprintf(stderr, "Qps: Error reading info for "
+                            "cpu%d (/proc/stat)\n",
+                    cpu);
+            abort();
         }
     }
 
