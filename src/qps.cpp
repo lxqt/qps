@@ -725,7 +725,7 @@ void Qps::resizeEvent(QResizeEvent *e)
 
 /*
  Description :
-        1. called when visible() or hide() state.  QT4
+        1. called when visible() or hide() state.
         2. called when clicked  WINDOW_EXIT_X_BUTTON
         3. NOT called when user logout (session manager)
 */
