@@ -1308,32 +1308,6 @@ void Procview::set_fields()
     }
 }
 
-// SOLARIS:
-// deduce whether the currently selected fields correspond to a field list
-void Procview::deduce_fields()
-{
-    return;
-    /*
-            if( viewfields != CUSTOM )
-                    return;
-
-            Procview::fieldstates tags[3] = {USER, JOBS, MEM};
-            int *lists[3] = {user_fields, jobs_fields, mem_fields};
-            for( int i = 0; i < 3; i++ )
-            {
-                    int *l = lists[i];
-                    int j;
-                    for( j = 0; l[j] != F_END; j++ )
-                            if( findCol(l[j]) < 0 )
-                                    break;
-                    if( l[j] == F_END && j == cats.size() )
-                    {
-                            viewfields = tags[i];
-                            return;
-                    }
-            } */
-}
-
 void check_system_requirement() {}
 
 bool Procinfo::isThread()

@@ -841,22 +841,11 @@ int Proc::field_id_by_name(const QString &s)
 // postInit
 void Proc::commonPostInit()
 {
-    // java style
-    /*
-    QHashIterator<int,Category *> i(categories);  // a little suck!
-    while (i.hasNext()) {
-                    i.next();
-                    i.value()->index=i.key();
-                    i.value()->id=i.key();
-    }*/
-
-    // STL style , set id
     QHash<int, Category *>::iterator i = categories.begin();
     while (i != categories.end())
     {
         i.value()->index = i.key();
         i.value()->id = i.key();
-        // cout << i.key() << ": " << i.value() << endl;
         ++i;
     }
 
@@ -878,7 +867,6 @@ void Proc::commonPostInit()
 
     Proc::mem_buffers = 0;
     Proc::mem_cached = 0;
-    // mem_shared = 0; // only linux kernel 2.4.x???
 
     Proc::swap_total = 0;
     Proc::swap_free = 0;

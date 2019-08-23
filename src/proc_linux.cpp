@@ -232,7 +232,7 @@ char *read_proc_file2(char *r_path, const char *fname, int *size = NULL)
 // Description: read /proc/PID/fd/*  check opened file, count opened files
 //		this fuction will be called  when every update.
 // Return Value :
-int proc_pid_fd(const int pid)
+bool proc_pid_fd(const int pid)
 {
     char path[256];
     char buffer[256], fname[256];
@@ -999,7 +999,7 @@ int Proc::read_system() //
             p += 6;
             // sscanf(p, "%d", &Proc::boot_time); //???? why
             // segfault???
-            sscanf(p, "%d", &boot_time);
+            sscanf(p, "%u", &boot_time);
         }
 
         // Max SMP 1024 cpus,  MOVETO: COMMON
@@ -2143,32 +2143,6 @@ void Procview::set_fields()
         printf("Error ? set_fields_list \n");
     }
     fieldArrange();
-}
-
-// LINUX:
-// deduce whether the currently selected fields correspond to a field list
-void Procview::deduce_fields()
-{
-    return; // under development (by fasthyun@magicn.com) 2006/05/24
-
-    if (viewfields != CUSTOM)
-        return;
-
-    Procview::fieldstates tags[4] = {USER, JOBS, MEM, SCHED};
-    int *lists[4] = {basic_fields, jobs_fields, mem_fields, sched_fields};
-    for (int i = 0; i < 4; i++)
-    {
-        int *l = lists[i];
-        int j;
-        for (j = 0; l[j] != F_END; j++)
-            if (findCol(l[j]) < 0)
-                break;
-        if (l[j] == F_END && j == cats.size())
-        {
-            viewfields = tags[i];
-            return;
-        }
-    }
 }
 
 // move to Proc.cpp

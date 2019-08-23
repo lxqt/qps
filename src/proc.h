@@ -808,7 +808,6 @@ class Procview : public Proc
     void removeField(int FIELD_ID);
     int findCol(int FIELD_ID);
     void moveColumn(int col, int place);
-    void deduce_fields();
     void fieldArrange();
     void update_customfield();
     //
