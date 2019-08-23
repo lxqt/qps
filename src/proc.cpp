@@ -229,7 +229,7 @@ char *read_proc_file2(char *r_path, const char *fname, int *size = NULL)
 // Description: read /proc/PID/fd/*  check opened file, count opened files
 //		this fuction will be called  when every update.
 // Return Value :
-int proc_pid_fd(const int pid)
+bool proc_pid_fd(const int pid)
 {
     char path[256];
     char buffer[256], fname[256];
