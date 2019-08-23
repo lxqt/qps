@@ -2145,32 +2145,6 @@ void Procview::set_fields()
     fieldArrange();
 }
 
-// LINUX:
-// deduce whether the currently selected fields correspond to a field list
-void Procview::deduce_fields()
-{
-    return; // under development (by fasthyun@magicn.com) 2006/05/24
-
-    if (viewfields != CUSTOM)
-        return;
-
-    Procview::fieldstates tags[4] = {USER, JOBS, MEM, SCHED};
-    int *lists[4] = {basic_fields, jobs_fields, mem_fields, sched_fields};
-    for (int i = 0; i < 4; i++)
-    {
-        int *l = lists[i];
-        int j;
-        for (j = 0; l[j] != F_END; j++)
-            if (findCol(l[j]) < 0)
-                break;
-        if (l[j] == F_END && j == cats.size())
-        {
-            viewfields = tags[i];
-            return;
-        }
-    }
-}
-
 // move to Proc.cpp
 #include <sys/utsname.h> // uname()
 int get_kernel_version()

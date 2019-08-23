@@ -2433,38 +2433,6 @@ void Procview::add_cat(Category *c)
 
 void Procview::remove_cat(int index) { cats.remove(index); }
 
-// deduce whether the currently selected fields correspond to a field list
-void Procview::deduce_fields()
-{
-    return;
-
-    if (viewfields != CUSTOM)
-        return;
-    Procview::fieldstates tags[3] = {USER, JOBS, MEM};
-    int *lists[3] = {user_fields, jobs_fields, mem_fields};
-#ifdef MOSIX
-    if (Procinfo::mosix_running)
-    {
-        lists[0] = user_fields_mosix;
-        lists[1] = jobs_fields_mosix;
-        lists[2] = mem_fields_mosix;
-    }
-#endif
-    for (int i = 0; i < 3; i++)
-    {
-        int *l = lists[i];
-        int j;
-        for (j = 0; l[j] != F_END; j++)
-            if (findCol(l[j]) < 0)
-                break;
-        if (l[j] == F_END && j == cats.size())
-        {
-            viewfields = tags[i];
-            return;
-        }
-    }
-}
-
 Category *Procview::static_sortcat = 0;
 
 int Procview::compare(Procinfo *const *a, Procinfo *const *b)
