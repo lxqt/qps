@@ -731,7 +731,7 @@ void Procinfo::read_common()
     // is rather old (and unsuited for SMP anyway) we don't work around it.
 
     p = strstr(buf, "btime") + 6;
-    sscanf(p, "%lu", &boot_time);
+    sscanf(p, "%u", &boot_time);
 }
 #endif // LINUX
 

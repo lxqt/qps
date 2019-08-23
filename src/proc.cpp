@@ -995,7 +995,7 @@ int Proc::read_system() //
             p += 6;
             // sscanf(p, "%d", &Proc::boot_time); //???? why
             // segfault???
-            sscanf(p, "%d", &boot_time);
+            sscanf(p, "%u", &boot_time);
         }
 
         // Max SMP 1024 cpus,  MOVETO: COMMON
