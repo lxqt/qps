@@ -70,17 +70,12 @@ const QString userName(int uid, int euid)
 // return group name (possibly numeric)
 const QString groupName(int gid, int egid)
 {
-    char *p;
+    QString res;
     struct group *gr = getgrgid(gid);
     if (!gr)
-    {
-        p = (char *)malloc(11);
-        sprintf(p, "%d", gid);
-    }
+        res = QString::number(gid);
     else
-        p = strdup(gr->gr_name);
-    QString res(p);
-    free(p);
+        res = QString::fromLocal8Bit(gr->gr_name);
     return res;
 }
 
