@@ -68,7 +68,7 @@ const QString userName(int uid, int euid)
 }
 
 // return group name (possibly numeric)
-QString groupName(int gid, int egid)
+const QString groupName(int gid, int egid)
 {
     char *p;
     struct group *gr = getgrgid(gid);
