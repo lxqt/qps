@@ -37,6 +37,7 @@ int flag_24_ok; // we presume a kernel 2.4.x
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <QString>
 
 // COMMON
 bool Procview::treeview = 0; // true
@@ -49,7 +50,7 @@ int Procview::mini_fields[] = {F_PID, F_STAT, F_MEM, F_CPU, F_CMDLINE, F_END};
 
 // COMMON?
 // return username from /etc/passwd
-char *userName(int uid, int euid)
+const QString userName(int uid, int euid)
 {
     char buff[128];
     struct passwd *pw = getpwuid(uid);
@@ -63,24 +64,19 @@ char *userName(int uid, int euid)
 
     if (uid != euid)
         strcat(buff, euid == 0 ? "*" : "+");
-
-    return strdup(buff);
+    return QString(buff);
 }
 
 // return group name (possibly numeric)
-char *groupName(int gid, int egid)
+const QString groupName(int gid, int egid)
 {
-    char *p;
+    QString res;
     struct group *gr = getgrgid(gid);
     if (!gr)
-    {
-        p = (char *)malloc(11);
-        sprintf(p, "%d", gid);
-    }
+        res = QString::number(gid);
     else
-        p = strdup(gr->gr_name);
-    //	s.append("*");
-    return p;
+        res = QString::fromLocal8Bit(gr->gr_name);
+    return res;
 }
 
 Category::~Category() {}
