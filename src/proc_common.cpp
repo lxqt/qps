@@ -987,6 +987,9 @@ void Proc::refresh()
 {
     current_gen++;
 
+    while (!history.isEmpty())
+        delete history.takeFirst();
+
     // TEST for Process History
     SysHistory *s = new SysHistory;
 
