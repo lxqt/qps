@@ -991,6 +991,12 @@ void Proc::refresh()
     SysHistory *s = new SysHistory;
 
     history.append(s);
+
+    if(hprocs)
+    {
+        qDeleteAll(hprocs->begin(), hprocs->end());
+        hprocs->clear();
+    }
     hprocs = &(s->procs);
 
     // init
