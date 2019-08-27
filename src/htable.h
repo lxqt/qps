@@ -276,22 +276,22 @@ class HeadedTable : public QWidget
     void setNumCols(int cols);
     int clickedColumn() { return head->click_col; }
     void deleteCol(int col, bool update = true);
-    int leftCell() { return body->leftCell(); };
-    int lastColVisible() { return body->lastColVisible(); };
-    int topCell() { return body->topCell(); };
-    int lastRowVisible() { return body->lastRowVisible(); };
+    int leftCell() { return body->leftCell(); }
+    int lastColVisible() { return body->lastColVisible(); }
+    int topCell() { return body->topCell(); }
+    int lastRowVisible() { return body->lastRowVisible(); }
     void updateCell(int row, int col, bool erase = false);
-    void updateHeading(int col){/* head->updateCell(0, col); */};
+    void updateHeading(int col){/* head->updateCell(0, col); */}
     void setAutoUpdate(bool update)
     {
         head->setAutoUpdate(update);
         body->setAutoUpdate(update);
-    };
-    void centerVertically(int row) { body->centerVertically(row); };
-    void showRange(int from, int to) { body->showRange(from, to); };
+    }
+    void centerVertically(int row) { body->centerVertically(row); }
+    void showRange(int from, int to) { body->showRange(from, to); }
     void repaintColumns(int col0, int col1 = -1);
     void setTreeMode(bool tm);
-    bool treeMode() { return treemode; };
+    bool treeMode() { return treemode; }
     int tableWidth() const
     {
         return body->totalWidth() + body->verticalScrollBar()->width();
@@ -301,9 +301,9 @@ class HeadedTable : public QWidget
     int numSelected() { return 0; }
     void clearAllSelections();
 
-    virtual void setSelected(int row, bool sel){};
+    virtual void setSelected(int row, bool sel){}
     virtual bool isSelected(int row) { return false; }
-    virtual void checkTableModel(){};
+    virtual void checkTableModel(){}
 signals:
     void titleClicked(int col);
     void selectionChanged();
@@ -338,13 +338,13 @@ signals:
     virtual void moveCol(int col, int place);
 
     virtual QString tipText(int col);
-    virtual int rowDepth(int row) { return 0; };
-    virtual NodeState folded(int row) { return Leaf; };
-    virtual int parentRow(int row) { return 0; };
-    virtual bool lastChild(int row) { return false; };
-    virtual bool columnMovable(int col) { return true; };
+    virtual int rowDepth(int row) { return 0; }
+    virtual NodeState folded(int row) { return Leaf; }
+    virtual int parentRow(int row) { return 0; }
+    virtual bool lastChild(int row) { return false; }
+    virtual bool columnMovable(int col) { return true; }
     // virtual bool modified(int row){return true;};
-    virtual void overpaintCell(QPainter *p, int row, int col, int xpos){};
+    virtual void overpaintCell(QPainter *p, int row, int col, int xpos){}
 
     void resizeEvent(QResizeEvent *);
 
