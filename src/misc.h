@@ -185,14 +185,6 @@ class SearchBox : public QLineEdit
     void keyPressEvent(QKeyEvent *e);
   protected slots:
     void event_xbutton_clicked();
-    //    		void refresh();
-    //  		void update(int n);
-    //		QToolButton *button,*button2,*button3;
-  protected:
-    void resizeEvent(QResizeEvent *);
-    void timerEvent(QTimerEvent *);
-    int left_time;
-    //	XButton *xb;
 };
 
 class LogBox : public QLabel
@@ -209,9 +201,8 @@ class StatusBar : public QStatusBar
     Q_OBJECT
   public:
     StatusBar(QWidget *parent);
-    void refresh();
     void update(int n);
-    QLabel *label, *label2, *label3;
+    QLabel *label;
 };
 
 class ControlBar : public QFrame
@@ -221,7 +212,7 @@ class ControlBar : public QFrame
     QComboBox *view;
     ControlBar(QWidget *parent);
     void setMode(bool treemode);
-    void update_bar();
+
     QToolButton *pauseButton;
 
 signals:
@@ -234,12 +225,7 @@ signals:
     void view_changed(int idx);
     void tree_clicked();
     void show_thread_clicked();
-    void event_search_box_changed();
-    void event_command_pressed();
     void setPaused(bool);
-
-  protected:
-    void resizeEvent(QResizeEvent *);
 
   private:
     QRadioButton *b_tree, *b_linear, *b_treeT;

@@ -660,16 +660,11 @@ void Qps::refresh()
         return;
 
     procview->refresh(); // important
-    // infobar->update_load(); // add_point and drawGraphOnPixmap();
     infobar->updatePixmap(); // add_point and drawGraphOnPixmap();
 
     if (isVisible())
-    { // infobar->isVisible()
-        // printf("paint\n");
-        // if(search_box and !search_box->hasFocus())
-        // search_box->setFocus(Qt::OtherFocusReason);
+    {
         pstable->refresh();
-        // if(netable and netable->isVisible())netable->refresh();
         if (show_infobar)      // if(Qps::show_load_graph)
             infobar->update(); // TODO: thread update or
                                // infobar->repaint();
@@ -694,32 +689,23 @@ void Qps::earlier_refresh()
 
 void Qps::resizeEvent(QResizeEvent *e)
 {
-    // DEBUG("Qps::resize() w=%d\n",e->size().width());
-    // QWidget::resizeEvent(event);
-
     int w;
     return;
 
-    // search_box->isVisible(true); // imidiate
     w = ctrlbar->sizeHint().width();
     if (!search_box->isVisible())
         w += search_box->sizeHint().width();
 
     if (e->size().width() < w)
     {
-        // ctrlbar->
         search_box->hide();
     }
-    //	else 	search_box->show();
 
     return;
     if (e->size().width() < 639)
     {
-        //	tbar->setDrawBase (false);
         flag_smallscreen = true;
         statusBar->hide();
-        //	void QTabWidget::setTabEnabled ( int index, bool enable
-        //)
     }
     else
     {
@@ -804,14 +790,12 @@ void Qps::focusOutEvent(QFocusEvent *event)
 
 void Qps::keyPressEvent(QKeyEvent *event)
 {
-    //	printf("Qps::key\n"); // not work in compiz
     if (search_box)
     {
         if (!search_box->hasFocus())
             search_box->setFocus(Qt::OtherFocusReason);
         search_box->keyPressEvent(event);
     }
-    // search_box->setFocusProxy(pstable);
 }
 void Qps::moveEvent(QMoveEvent *event)
 {
@@ -2417,14 +2401,8 @@ void SearchBox::keyPressEvent(QKeyEvent *e)
 
     if (e->key() == Qt::Key_Escape)
     {
-
         clear(); // clear searchbox
-
         qps->pstable->clearAllSelections(); // TEMP
-
-        // xb->setDown(true);
-        // event_xbutton_clicked();
-        // xb->setDown(false);
     }
     else
         QLineEdit::keyPressEvent(e);

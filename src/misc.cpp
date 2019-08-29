@@ -635,14 +635,6 @@ void UFrame::setTitle(QString str)
 }
 
 void UFrame::paintEvent(QPaintEvent *event) {}
-/*
-//void SearchBox::event_cursor_moved(QMouseEvent *e)
-{
-        move(e->x(),e->y());
-        //printf("xxxxxxxxxxxxxk\n");
-}
-
-*/
 
 QPixmap *letters;
 int pf_height = 9;
@@ -774,51 +766,18 @@ void XButton::paintEvent(QPaintEvent *event)
 SearchBox::SearchBox(QWidget *parent) : QLineEdit(parent)
 {
     setToolTip( tr( "PID,COMMAND,USER..." ) );
-    left_time = 0;
-    setMaximumWidth(300);
-    setMinimumWidth(20);
+    //setMaximumWidth(300);
+    setMinimumWidth(100);
 
-    //	setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Preferred);
-    //	setContentsMargins(0,3,1,0);
-    //	setLineWidth( 1 );
-    //	setMargin(2);
-
-    /// xb=new XButton(this);
-    /// connect(xb, SIGNAL(clicked()), SLOT(event_xbutton_clicked()));
     setFocus(Qt::ActiveWindowFocusReason); // good
 }
 
 void SearchBox::event_cursor_moved(QMouseEvent *e) { move(e->x(), e->y()); }
 
-void SearchBox::resizeEvent(QResizeEvent *p)
-{
-    int w, h, margin;
-    // setMinimumHeight(height()-4);
-    // setMaximumHeight(p->size().height()-1);
-    // setFixedHeight(p->size().height()-5);
-    // setMaximumHeight(height()-2);
-    w = width();
-    h = height();
-    /// margin=(h - xb->width())/2;
-    /// xb->move(w-h+margin-1,margin);
-    return;
-}
-
 void SearchBox::event_xbutton_clicked()
 {
     QKeyEvent ke(QEvent::KeyPress, Qt::Key_Escape, 0); // temp..
     keyPressEvent(&ke);
-}
-
-// public
-/*void SearchBox::keyPress( QKeyEvent * e )
-{
-
-} */
-
-void SearchBox::timerEvent(QTimerEvent *e)
-{
-    //       qDebug( "timer event, id %d", e->timerId() );
 }
 
 LogBox::LogBox(QWidget *p) : QLabel(p)
@@ -831,66 +790,23 @@ LogBox::LogBox(QWidget *p) : QLabel(p)
 StatusBar::StatusBar(QWidget *parent) : QStatusBar(parent)
 {
     setSizeGripEnabled(true);
-    //	QWidget *le = new QLabel(this);//QButton *button = new
-    // QButton(this);
-    //	QLineEdit *le=new QLineEdit(this);
-
-    //	showMessage ( const QString & message, int timeout = 0 )
-    //	showMessage("aaaaaa");
-    label = new QLabel(this); // QButton *button = new QButton(this);
-    // label->setText ("") ;
+    label = new QLabel(this);
     label->setFrameShape(QFrame::NoFrame);
-    // label->setFrameShape (QFrame::StyledPanel);
-    // label->setFrameShape (QFrame::Panel);
-    // label->setFrameShape (QFrame::WinPanel);
-    // label->setFrameShadow(QFrame::Sunken);
-    //	button2 = new QToolButton(this);//QButton *button = new
-    // QButton(this);
-    //	button2->setTextLabel ("") ;
-    //	button2->setUsesTextLabel ( true );
-    //	button2->setAutoRaise(true);
-    //	button3 = new QLabel(this);//QButton *button = new
-    // QButton(this);
-    //	button3->setText ("") ;
-    //	addPermanentWidget(label);
     addWidget(label);
-    //	addPermanentWidget(le,1);
 }
-
-void StatusBar::refresh() {}
 
 extern int num_opened_files;
 void StatusBar::update(int total_n)
 {
     label->setText(tr( "Process count: %1" ).arg( total_n ) );
-    //	button2->setTextLabel ("Network Process(testing): "+
-    // str.setNum(Procinfo::num_network_process));
-    //	button3->setText ("Opened files : "+
-    // str.setNum(num_opened_files));
 }
 
-#include <QHBoxLayout>
-
-// Pstable or Procview
-// Location :
-QSpacerItem *stretch;
 ControlBar::ControlBar(QWidget *parent) : QFrame(parent)
 {
-    int h;
-    // setSizePolicy(QSizePolicy::Minimum,QSizePolicy::Expanding);
     setFrameStyle(QFrame::NoFrame);
-    // setFrameStyle(Panel | Raised);//bad
-    // setFrameStyle(Panel ); //bad
     layout = new QHBoxLayout(this);
     layout->addSpacing(4); // left gap
     layout->setMargin(0);
-
-    //	setStyleSheet(" QFrame,QCheckBox,QRadioButton { color: rgb(244, 244, 244);\
-	border-image: url(:/icon/vista.png); } ");
-    /*  Frame { background-color: yellow }
-     *  border: 2px solid #8f8f91;
-     min-width: 80px; */
-    /* image: url(:/icon/vista.png);*/
 
     b_linear = new QRadioButton(tr( "Linear" ), this);
     b_linear->setFocusPolicy(Qt::NoFocus);
@@ -901,11 +817,6 @@ ControlBar::ControlBar(QWidget *parent) : QFrame(parent)
     search_box = new SearchBox(this);
     connect(b_linear, SIGNAL(clicked()), SLOT(linear_clicked()));
     connect(b_tree, SIGNAL(clicked()), SLOT(tree_clicked()));
-    connect(search_box, SIGNAL(textChanged(const QString &)),
-            SLOT(event_search_box_changed()));
-    // search_box->setFocusPolicy(Qt::NoFocus);
-    // search_box->setFocus (Qt::ActiveWindowFocusReason);
-    // search_box->setFocusProxy ( parent );
 
     if (flag_thread_ok)
     {
@@ -922,7 +833,6 @@ ControlBar::ControlBar(QWidget *parent) : QFrame(parent)
     view->insertItem(3, tr( "Running Processes" ), Procview::RUNNING);
     connect(view, SIGNAL(activated(int)), SLOT(view_changed(int)));
     view->setFocusPolicy(Qt::NoFocus);
-    // PAUSED view->insertItem("Hidden Processes", Procview::HIDDEN);
 
     layout->addWidget(b_linear);
     layout->addWidget(b_tree);
@@ -931,29 +841,13 @@ ControlBar::ControlBar(QWidget *parent) : QFrame(parent)
     layout->addWidget(search_box);
     layout->addWidget(view);
 
-    // stretch=new QSpacerItem(0,0,QSizePolicy::Expanding);
-    // layout->addItem(stretch);
     layout->addStretch();
 
-    /*
-    QPushButton *mb=new QPushButton;
-    mb->setContentsMargins(0,0,0,0);
-    //mb->setDown(true);
-    mb->setCheckable(true);
-    mb->setText("pause");
-    mb->setFixedWidth(32);
-    mb->setSizePolicy(QSizePolicy::Minimum,QSizePolicy::Minimum);
-    layout->addWidget(mb);
-    */
-
     pauseButton = new QToolButton;
-    // QPushButton *pauseButton = new QPushButton;
     pauseButton->setCheckable(true);
-    pauseButton->setIcon(QIcon(":/icon/pause.png"));
-    pauseButton->setIconSize(QSize(19, 19));
+    pauseButton->setIcon(QIcon::fromTheme("media-playback-pause"));
     pauseButton->setToolTip(tr("Pause (Ctrl+Space)"));
     pauseButton->setFocusPolicy(Qt::NoFocus);
-    // pauseButton->setFlat(true);
     pauseButton->setAutoRaise(true);
     connect(pauseButton, SIGNAL(clicked(bool)), SLOT(setPaused(bool)));
 
@@ -983,19 +877,16 @@ extern bool flag_refresh;
 void ControlBar::setPaused(bool b)
 {
     flag_refresh = !b;
-    //	if(!pauseButton->isDown()) pauseButton->setDown(true);
 }
 
 void ControlBar::linear_clicked()
 {
     setMode(false);
-    //	emit modeChange(FALSE);
 }
 
 void ControlBar::tree_clicked()
 {
     setMode(true);
-    //	emit modeChange(TRUE);
 }
 
 void ControlBar::show_thread_clicked()
@@ -1004,81 +895,9 @@ void ControlBar::show_thread_clicked()
     emit need_refresh();
 }
 
-void ControlBar::event_search_box_changed()
-{
-    // printf("search_box changed!\n");
-}
-
-void ControlBar::event_command_pressed()
-{
-    // printf("command!\n");
-}
-
-// not used
-void ControlBar::update_bar() // trick for Command
-{
-}
-
-// called after resize()
-// simplified by fasthyun@magicn.com
-
-extern bool flag_smallscreen;
-
-void ControlBar::resizeEvent(QResizeEvent *e)
-{
-    return;
-    // QLayoutItem *item=layout->takeAt (layout->count()-1);
-    // return;
-    if (flag_smallscreen)
-    {
-        search_box->hide();
-        pauseButton->hide();
-    }
-    else
-    {
-        search_box->show();
-        pauseButton->show();
-    }
-
-    //	printf("size=%d\n",stretch->geometry().width());
-    // printf("hsize=%d\n",stretch->sizeHint().height());
-    // QSize s=e->size();
-    return;
-    /*
-    if(stretch->geometry().width()==0)
-            search_box->hide();
-    else
-            search_box->show();
-    */
-
-    /* setMaximumHeight (b_tree->sizeHint().height()+2);
-    search_box->setMaximumHeight(height()-4);
-    //search_box->setMinimumHeight(height()-5);
-
-    for(i=0;i< commands.size();i++)
-    {
-            QToolButton *b;
-            b=commands[i]->toolbutton;
-            if(commands[i]->toolbar==true)
-            {
-                    if (layout->findWidget(b)<0)
-                            layout->addWidget(b);
-                    b->show();
-            }
-            else
-                    if(b!=NULL)
-                            b->hide();
-    } */
-}
-
 void ServerAdaptor::accelerate() {}
 
-//#include <QtDBus>
-//#include <QDBusServer>
-//#include <QtDBus/QDBusConnection>
 #include <QDBusConnection>
-// ServerAdaptor::ServerAdaptor(){ }
-// ServerAdaptor::~ServerAdaptor(){}
 
 #define SERVICE_NAME "com.trolltech.qps"
 void dbus_register_server()
