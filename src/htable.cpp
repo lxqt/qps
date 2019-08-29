@@ -36,8 +36,6 @@
 #include <QShortcut>
 #include <QPalette>
 
-#define DEBUG qDebug
-//#define DEBUG
 VPointer *vp = NULL; // Temporary
 
 VPointer::VPointer(QWidget *parent) : QWidget(parent)
