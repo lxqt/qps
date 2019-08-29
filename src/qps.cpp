@@ -159,6 +159,11 @@ QThread *thread_main = 0;
 
 Qps::Qps()
 {
+    // NOTE: Since we set the graph as the icon continuously,
+    // we do not need a big pixmap cache. The default cache limit
+    // is 10240 KB, which is too much for a reasonable memory usage.
+    QPixmapCache::setCacheLimit(1024);
+
     setObjectName("qps_main_window");
     timer_id = 0;
     field_win = 0;
