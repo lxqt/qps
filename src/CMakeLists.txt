@@ -25,8 +25,6 @@ set(SOURCES
     misc.cpp
     trayicon.cpp
     htable.cpp
-  # htable2.cpp
-  # pstable2.cpp
     qttableview.cpp
 )
 
@@ -54,8 +52,6 @@ SET(HEADERS
     misc.h
     trayicon.h
     htable.h
-  # htable2.h
-  # pstable2.h
     qttableview.h
 )
 

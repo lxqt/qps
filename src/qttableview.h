@@ -113,9 +113,6 @@ class QtTableView : public QAbstractScrollArea
     bool rowIsVisible(int row) const;
     bool colIsVisible(int col) const;
 
-    QScrollBar *verticalScrollBar() const;
-    QScrollBar *horizontalScrollBar() const;
-
   private slots:
     void horSbValue(int);
     void horSbSliding(int);
@@ -125,7 +122,7 @@ class QtTableView : public QAbstractScrollArea
     void verSbSlidingDone();
 
   protected:
-    virtual void paintCell(QPainter *, int row, int col, bool update) = 0;
+    virtual void paintCell(QPainter *, int row, int col) = 0;
     virtual void paintEvent(QPaintEvent *);
     virtual void resizeEvent(QResizeEvent *);
     virtual void scrollContentsBy(int dx, int dy);
@@ -183,9 +180,6 @@ class QtTableView : public QAbstractScrollArea
     bool enablePaint;
 
     uint tFlags;
-
-    QScrollBar *vScrollBar;
-    QScrollBar *hScrollBar;
 };
 
 const uint Tbl_vScrollBar = 0x00000001;
