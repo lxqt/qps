@@ -724,7 +724,7 @@ void Qps::closeEvent(QCloseEvent *e)
 {
     // DEBUG("DEBUG: closeEvent()....\n");
     // sleep(2);
-    if ((Qps::flag_exit == false) and trayicon->hasSysTray())
+    if ((Qps::flag_exit == false) and trayicon->hasSysTray)
     {
         e->ignore(); // dont close window!
         hide();
@@ -840,16 +840,12 @@ void Qps::set_load_icon()
         pm->setMask(bm);
     }
     // QApplication::setWindowIcon(*pm);
-    if (trayicon->hasSysTray())
+    if (trayicon->hasSysTray)
     {
         trayicon->setIcon(*pm);
-        // str.sprintf("Qps %2.2f%",Procinfo::loadQps);
-        // trayicon->setToolTip(str);
-        // trayicon->showMessage("str",str);
     }
     // else
     setWindowIcon(*pm);
-    // QApplication::setWindowIcon(*pm);
     default_icon_set = false;
 }
 
@@ -2127,7 +2123,7 @@ void Qps::clicked_trayicon(QSystemTrayIcon::ActivationReason r)
 void Qps::hideEvent(QHideEvent *event)
 {
     //	printf("hideEvent()\n");
-    if (trayicon->hasSysTray())
+    if (trayicon->hasSysTray)
     {
         //	event->accept();
     }
@@ -2234,7 +2230,7 @@ int main(int argc, char **argv, char **envp)
 
     if (flag_session_start or flag_start_mini)
     {
-        if (trayicon->hasSysTray())
+        if (trayicon->hasSysTray)
         {
             qps->hide(); // qps->setHidden(true);
         }

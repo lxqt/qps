@@ -69,6 +69,7 @@ TrayIcon::TrayIcon(const QPixmap &icon, const QString &tooltip, QMenu *popup,
 
     if (!pm.width() || !pm.height())
         pm = QPixmap(45, 45);
+    hasSysTray = QSystemTrayIcon::isSystemTrayAvailable();
 }
 
 /*!
@@ -99,22 +100,12 @@ void TrayIcon::init_WindowMakerDock() {}
 
 void TrayIcon::sysInstall()
 {
-    /// boolSysTray=hasSysTray();
-
-    if (hasSysTray() == true)
+    if (hasSysTray == true)
     {
         show();
     }
-    /*
-    if(hasSysTray()==false)
-    {
-            setFixedSize(46,46); // setIconSize
-            init_WindowMakerDock();
-            setSysTray(true);
-    } */
 }
 
-bool TrayIcon::hasSysTray() { return QSystemTrayIcon::isSystemTrayAvailable(); }
 
 void TrayIcon::sysRemove()
 {
