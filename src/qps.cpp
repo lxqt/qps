@@ -2317,7 +2317,8 @@ void Qps::about()
                      "<br><br>"
                      "<b>Source: </b><a href=\"https://github.com/lxqt/qps\">https://github.com/lxqt/qps/</a>"
                      "<br>"
-                     "<b>Bugtracker: </b><a href=\"https://github.com/lxqt/qps/issues\">https://github.com/lxqt/qps/issues</a>")
+                     "<b>Bugtracker: </b><a href=\"https://github.com/lxqt/qps/issues\">https://github.com/lxqt/qps/issues</a>"
+                     "<br>")
                  .arg( QPS_VERSION )
                  .arg(
 #ifdef SOLARIS
