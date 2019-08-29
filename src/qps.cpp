@@ -2259,13 +2259,6 @@ int main(int argc, char **argv, char **envp)
         qps->show();
     }
 
-    // Testing
-    //	app.setStyleSheet(" QToolTip { opacity: 100;" "border-width:
-    // 1px;
-    // border-style: solid;  border-color: rgb(50,110,80); border-radius:
-    // 4px ;"
-    //"background-color : rgba(0,0,0); padding: 3px; color: rgb(0,255,150);
-    //}");
     AddLog( QString( "Qps %1 launched." ).arg( QPS_VERSION ) );
 
     return app.exec();

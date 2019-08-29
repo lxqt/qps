@@ -168,7 +168,7 @@ class TableHead : public QtTableView
     void scrollSideways(int);
 
   protected:
-    virtual void paintCell(QPainter *p, int row, int col, bool update);
+    virtual void paintCell(QPainter *p, int row, int col);
     virtual int cellWidth(int col);
     virtual void mousePressEvent(QMouseEvent *e);
     virtual void mouseReleaseEvent(QMouseEvent *e);
@@ -214,7 +214,7 @@ class TableBody : public QtTableView
   protected:
     virtual void scrollTrigger(int x, int y); // tmp
 
-    virtual void paintCell(QPainter *p, int row, int col, bool forced);
+    virtual void paintCell(QPainter *p, int row, int col);
     virtual int cellWidth(int col);
     void mousePressEvent(QMouseEvent *e);
     void mouseDoubleClickEvent(QMouseEvent *e);
@@ -281,7 +281,6 @@ class HeadedTable : public QWidget
     int topCell() { return body->topCell(); }
     int lastRowVisible() { return body->lastRowVisible(); }
     void updateCell(int row, int col, bool erase = false);
-    void updateHeading(int col){/* head->updateCell(0, col); */}
     void setAutoUpdate(bool update)
     {
         head->setAutoUpdate(update);

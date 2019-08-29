@@ -99,37 +99,24 @@ TableHead::TableHead(HeadedTable *parent)
     // setMinimumHeight(20);//cellHeight()); //ZERO!! fault
 }
 
-// Description : draw a field name of table  when DRAG !!
-// 		called by paintHeading()
-// 		called by QtTableView::repaint()
-void TableHead::paintCell(QPainter *p, int row, int col, bool use_cache)
+void TableHead::paintCell(QPainter *p, int row, int col)
 {
-    static int count = 0;
-    /// printf(" paintcell %d,%d\n",row,col);
     int w = htable->max_widths[col];
 
-    // if( isCellChanged (row,col,true)==false)
-    {
-        //	printf(" paintcell %d,%d\n",row,col);
-        //	if(use_cache==true)  // check cached value
-        {
-            //	return;
-        }
-    }
-
-    // if( col ==11 )	printf("head: %d  (%d) \n",col,count++);
-    // w = cellUpdateR.width();
-    {
-        QStyleOptionHeader opt;
-        QRect rectR(0, 0, w, height());
-        opt.rect = rectR;
-        opt.text = htable->title(col);
-        opt.state = QStyle::State_Enabled;
-        if (htable->sortedCol() == col)
-            opt.state = opt.state | QStyle::State_Sunken;
-        // CE_Header, CE_HeaderSection, CE_HeaderLabel
-        style()->drawControl(QStyle::CE_Header, &opt, p, this);
-    }
+    QStyleOptionHeader opt;
+    QRect rectR(0, 0, w, height());
+    opt.rect = rectR;
+    opt.text = htable->title(col);
+    opt.state = QStyle::State_Enabled;
+    opt.position = numCols() == 1 ? QStyleOptionHeader::OnlyOneSection
+                                  : col == 0 ? QStyleOptionHeader::Beginning
+                                             : col == numCols() - 1 ? QStyleOptionHeader::End
+                                                                    : QStyleOptionHeader::Middle;
+    if (htable->sortedCol() == col)
+        opt.state = opt.state | QStyle::State_Sunken;
+    else
+        opt.state = opt.state & ~QStyle::State_Sunken;
+    style()->drawControl(QStyle::CE_Header, &opt, p, this);
 }
 
 // works
@@ -459,7 +446,7 @@ bool TableHead::isCellChanged(int row, int col)
 //
 // called by
 // 		1.QtTableView::paintEvent()
-void TableBody::paintCell(QPainter *p, int row, int col, bool use_cache)
+void TableBody::paintCell(QPainter *p, int row, int col)
 {
     // *** sequence important !!!
     //	if(isCellChanged(row,col)==false)	{
@@ -1031,16 +1018,8 @@ void HeadedTable::setTreeMode(bool tm)
 // update table Head !!
 void HeadedTable::setSortedCol(int col)
 {
-    {
-        int old_sorted = sorted_col;
-        sorted_col = col;
-        //		printf("old_sorted=%d\n",old_sorted);
-        //		printf("sorted_col=%d\n",sorted_col);
-        if (old_sorted != -1 && old_sorted < ncols) // ncols bug
-            updateHeading(old_sorted);
-        if (col != -1 && col < ncols)
-            updateHeading(col);
-    }
+    int old_sorted = sorted_col;
+    sorted_col = col;
 }
 
 // should be virtual. why?
