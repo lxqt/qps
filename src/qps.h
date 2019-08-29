@@ -54,8 +54,6 @@
 #include "prefs.h"
 #include "command.h"
 
-#define DEBUG printf
-
 #define FUNC_START
 #define FUNC_END
 
