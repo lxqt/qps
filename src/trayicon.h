@@ -44,7 +44,7 @@ class TrayIcon : public QSystemTrayIcon
     // use WindowMaker dock mode.  ignored on non-X11 platforms
     void setWMDock(bool use) { isWMDock = use; }
     bool checkWMDock() { return isWMDock; }
-    bool hasSysTray();
+    bool hasSysTray;
     void setSysTray(bool val)
     { // boolSysTray=val;
     }
