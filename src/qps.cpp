@@ -1106,7 +1106,7 @@ void Qps::set_table_mode(bool treemode)
 void Qps::field_added(int field_id)
 {
     int where = -1;
-    where = pstable->clickedColumn();
+    where = pstable->rightClickedColumn() + 1;
     procview->addField(field_id, where);
     pstable->refresh(); // pstable->update(); // repaint
                         // update_menu_status();
@@ -1120,7 +1120,7 @@ void Qps::field_added(int field_id)
 void Qps::field_removed(int index)
 {
     procview->removeField(index);
-    if (procview->treeview and index == F_CMD)
+    if (procview->treeview && index == F_PID)
         set_table_mode(false);
 
     if (context_col == pstable->sortedCol())
@@ -1452,8 +1452,6 @@ void Qps::menu_remove_field()
 {
     if (context_col < 0)
         return;
-    /// printf("cats.size=%d , context_col=%d
-    /// \n",procview->cats.size(),context_col);
     field_removed(procview->cats[context_col]->index);
 }
 

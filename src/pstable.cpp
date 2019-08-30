@@ -117,6 +117,17 @@ QString Pstable::title(int col)
     return procview->cats[col]->name;
 }
 
+QString Pstable::dragTitle(int col)
+{
+    if (col >= procview->cats.size()
+        || procview->cats[col]->index == F_CMDLINE
+        || (procview->cats[col]->index == F_PID && procview->treeview))
+    {
+        return ""; // not movable
+    }
+    return procview->cats[col]->name;
+}
+
 // TESTING
 void Pstable::overpaintCell(QPainter *p, int row, int col, int xpos)
 {
@@ -462,14 +473,11 @@ uses
 // 	slot: changes table mode
 void Pstable::setTreeMode(bool treemode)
 {
-    // qDebug("Pstable::setTreeMode() %d , procview.treeview
-    // =%d\n",treemode,procview->treeview);
-    // no more HeadedTable::setTreeMode(treemode);
     HeadedTable::setTreeMode(treemode);
     procview->treeview = treemode;
     procview->fieldArrange();
     set_sortcol();
-    refresh(); //==rebuild();
+    refresh();
 }
 
 //
@@ -491,14 +499,11 @@ bool Pstable::columnMovable(int col)
 //	virtual HeadedTable::moveCol(col,place);
 void Pstable::moveCol(int col, int place)
 {
-    // qDebug("Pstable::moveCol\n");
     procview->moveColumn(col, place);
     set_sortcol(); //???
     procview->fieldArrange();
-    //	update();
     refresh(); // width size changed ,...
     return;
-    // updateColWidth(place); updateColWidth(col);// TEMP
 }
 
 // NEED Check !!

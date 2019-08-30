@@ -75,6 +75,7 @@ class SimpleTable : public HeadedTable
 
   protected:
     virtual QString title(int col);
+    virtual QString dragTitle(int col);
     virtual QString text(int row, int col) = 0;
     virtual int colWidth(int col);
     virtual int alignment(int col);

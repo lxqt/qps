@@ -57,6 +57,7 @@ class Pstable : public HeadedTable
   protected:
     // implementation of the interface to HeadedTable
     virtual QString title(int col);
+    virtual QString dragTitle(int col);
     virtual QString text(int row, int col);
     virtual int colWidth(int col);
     virtual int alignment(int col);

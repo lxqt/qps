@@ -552,31 +552,29 @@ int Procview::findCol(int field_id)
 //
 void Procview::addField(int Fid, int where)
 {
-    //	where=-1;
-    //	printf("Fid =%d where=%d\n",Fid,where);
-    //	where=pstable->clickedColumn();
-    if (where == 0)
-    {
-        // if (pstable->treeMode())  where=1;
-    }
-
-    if (Fid == F_PROCESSNAME)
-        where = 0;
-    if (Fid == F_CMDLINE)
-        where = cats.size(); // always should be the last column
-
-    if (where < 0)
+    if (where < 0 || where > cats.size())
     {
         // this is default
         where = cats.size();
     }
 
-    if (where > cats.size()) // CMD_LINE ! ??????
-        where = 1;
+    if (Fid == F_PID)
+        where = 0;
+    else if (Fid == F_CMDLINE)
+        where = cats.size(); // always should be the last column
+    else if (!cats.isEmpty())
+    {
+        if (where == cats.size())
+        {
+            if (cats[cats.size() - 1]->index == F_CMDLINE)
+              -- where;
+        }
+        else if (where == 0 && cats[0]->index == F_PID)
+            where = 1;
+    }
 
     Category *newcat = categories[Fid];
-    //	printf("name =%s where=%d\n",newcat->name,where);
-    if (cats.indexOf(newcat) < 0) // if not in the list ****
+    if (cats.indexOf(newcat) < 0) // if not in the list
         cats.insert(where, newcat);
 }
 
@@ -653,40 +651,28 @@ void Procview::update_customfield()
 //				  From col To place
 void Procview::moveColumn(int col, int place)
 {
-    int i;
-
-    int f_size = cats.size();
-    if (col < 0 or place < 0 or f_size <= col or f_size <= place)
+    int s = cats.size();
+    if (col < 0 || place < 0 || s <= col || s <= place)
     {
         printf("QPS code bugs!! : moveColumn() col=%d place=%d "
                "cats.size=%d\n",
-               col, place, cats.size());
+               col, place, s);
         return;
     }
 
-    if (treeview == true)
-    {
-        // *** important : F_PROCESSNAME field should be the first in
-        // TreeMode!
-        /// if(place==0)	return;
-        if (cats[col]->index == F_PROCESSNAME)
+    if (cats[col]->index == F_PID)
+    { // PID should always be the first field in the tree model
+        if (treeview == true)
             place = 0;
     }
+    else if (cats[col]->index == F_CMDLINE)
+        place = s; // COMMAND_LINE should always be the last field
 
-    // COMMAND_LINE field should always be the last field
-    // if(cats[place]->index==F_CMDLINE) return;
-    if (cats[col]->index == F_CMDLINE)
-        place = cats.size() - 1;
-
-    Category *cat = cats[col]; // SEGFAULT POSSIBLE!
-    cats.insert(place, cat);   // insert
-
+    Category *cat = cats[col];
+    cats.insert(place, cat);
     if (place < col)
         col++;
-
-    cats.remove(col); // remove idx
-                      // refresh();
-                      /// update_customfield();
+    cats.remove(col);
 }
 
 // always called when linear to tree
@@ -700,49 +686,34 @@ void Procview::saveCOMMANDFIELD() {}
 //	TODO: checkField();
 void Procview::fieldArrange()
 {
+    int s = cats.size();
 
-    if (treeview == true)
+    // PID should always be the first field in the tree model
+    if (treeview == true && cats[0]->index != F_PID)
     {
-        // 	Tree Mode
-        // 	If ProcessName isn't the leftmost column, move it to
-        // leftmost
-        // *** important : F_PROCESSNAME field should be the first in
-        // TreeMode!
-        if (cats[0]->index != F_PROCESSNAME)
+        bool found = false;
+        for (int i = 1; i < s; i++)
         {
-            // find F_PROCESSNAME
-            for (int i = 1; i < cats.size(); i++)
+            if (cats[i]->index == F_PID)
             {
-                if (cats[i]->index == F_PROCESSNAME)
-                    moveColumn(i, 0);
+                found = true;
+                moveColumn(i, 0);
+                break;
             }
         }
-        // PID sort for convenience (default)
-        /*
-        if(false and cats[i]->index == F_PID )
-        {
-                reversed = false;
-                sortcat = cats[i];
-                //// pstable->setSortedCol(i);
-        }	*/
-        // Linear_Mode:
+        if (!found)
+            addField(F_PID, 0);
     }
 
-    if (true)
+    // COMMAND_LINE should always be the last field
+    if (cats[s - 1]->index != F_CMDLINE)
     {
-
-        for (int i = 0; i < cats.size(); i++)
+        for (int i = 0; i < s - 1; i++)
         {
-
             if (cats[i]->index == F_CMDLINE)
             {
-                // COMMAND_LINE field should always be the last
-                // field
-                if (i == (cats.size() - 1))
-                    moveColumn(i, 0);
-                else
-                {
-                }
+                moveColumn(i, 0); // will go to the end; see Procview::moveColumn
+                break;
             }
         }
     }
