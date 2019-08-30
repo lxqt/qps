@@ -292,11 +292,7 @@ Qps::Qps()
 /// proclist.append(procview);
 /// procview->start(); // thread start
 
-#ifdef HTABLE2
-    pstable = new Pstable2(this, procview); //
-#else
     pstable = new Pstable(this, procview); // no refresh()
-#endif
     PDisplay *display = new PDisplay(this);
     infobar = display->addSystem(procview);
     //.	infobar = new Infobar(this,procview); // graph_bar
@@ -309,6 +305,9 @@ Qps::Qps()
         set_update_period(1300); // default
         resize(640, 370);        // default initial size
     }
+
+    // apply the kind of sorting that is read by "read_settings()"
+    pstable->setReveseSort(procview->reversed);
 
     set_table_mode(procview->treeview); //  Pstable::refresh() occur
     make_command_menu();                // after qpsrc reading
@@ -1120,17 +1119,14 @@ void Qps::field_added(int field_id)
 //	2. void Qps::menu_remove_field()
 void Qps::field_removed(int index)
 {
-    /// printf("field_removed() index=%d\n",index);
     procview->removeField(index);
     if (procview->treeview and index == F_CMD)
         set_table_mode(false);
-    // should be changed to linear mode !!
 
-    ///	update_menu_status(); // ???
-
-    //	pstable->update();	// no
+    if (context_col == pstable->sortedCol())
+        pstable->setSortedCol(-1); // the sorted column is removed
     pstable->refresh();
-    context_col = -1; // *** important **** : right clicked column removed
+    context_col = -1; // right clicked column is removed
     return;
 }
 

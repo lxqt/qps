@@ -653,13 +653,6 @@ void Environ::refresh()
 void Environ::sort_change(int col)
 {
     Procinfo *p = procinfo();
-    /*
-    if(!p->environ) {
-            refresh_environ();
-            if(!p->environ)
-                    return;
-    }*/
-    ////rev = (col == sortedCol()) ? !rev : false;
     setSortedCol(col);
     sort();
     refresh_window();

@@ -33,7 +33,6 @@ class Pstable : public HeadedTable
     Pstable(QWidget *parent, Procview *pv);
 
     void set_sortcol();
-    void setProcview(Procview *pv);
     virtual void moveCol(int col, int place);
     void refresh();
 
@@ -44,6 +43,7 @@ class Pstable : public HeadedTable
     virtual void setSelected(int row, bool sel);
     virtual int totalRow();
     virtual void checkTableModel();
+    void setReveseSort(bool reverse);
 
   public slots:
     // void selection_update(const Svec<int> *row);

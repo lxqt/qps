@@ -399,11 +399,7 @@ char *Pstable::total_selectedRow(int col)
 Pstable::Pstable(QWidget *parent, Procview *pv) : HeadedTable(parent, 0)
 {
     procview = pv;
-    //	connect(this, SIGNAL(selectionChanged(const Svec<int>
-    //*)),SLOT(selection_update(const Svec<int> *))); //DEL?
-    //	connect(this,
-    // SIGNAL(selectionChanged()),SLOT(selection_update())); //
-    // when procinfo clicked
+
     connect(this, SIGNAL(titleClicked(int)), SLOT(setSortColumn(int)));
     connect(this, SIGNAL(foldSubTree(int)), SLOT(subtree_folded(int)));
     connect(head, SIGNAL(toolTip(QPoint, int)), this,
@@ -412,8 +408,10 @@ Pstable::Pstable(QWidget *parent, Procview *pv) : HeadedTable(parent, 0)
     connect(this, SIGNAL(outOfCell()), SLOT(mouseOutOfCell()));
 }
 
-// who call this ? : from qps.cpp
-void Pstable::setProcview(Procview *pv) { procview = pv; }
+void Pstable::setReveseSort(bool reverse)
+{
+    head->setReveseSort(reverse);
+}
 
 HeadedTable::NodeState Pstable::folded(int row)
 {
@@ -575,29 +573,11 @@ void Pstable::checkTableModel()
 
 void Pstable::refresh()
 {
-    //    qDebug("Pstable:refresh()");
-    //	procview->refresh(); -> move to Qps::refresh()
-    //	qDebug("catsize=%d\n",procview->cats.size());
     procview->rebuild();                       // for Table
     setNumRows(procview->linear_procs.size()); // 1.
     setNumCols(procview->cats.size());         // 2. resetWidths()  UNINITIAL
     kgen = procview->current_gen;
-    // checkTableModel();
     repaint_changed();
-
-    /*
-    if(true)
-    {
-            int count=0,trow=0;
-            for(int row = 0; row < nrows; row++)
-                    if(isSelected(row))
-                    {
-                            count++;
-                            trow=row;
-                    }
-            if (count == 1)
-                    centerVertically(trow);
-    } */
 
     STATUSBAR_SETCOUNT(procview->num_process);
 }
