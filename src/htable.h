@@ -163,6 +163,9 @@ class TableHead : public QtTableView
     TableHead(HeadedTable *parent = 0);
     virtual bool isCellChanged(int row, int col);
     virtual void checkProfile();
+    void setReveseSort(bool reverse) {
+        reversed_sort = reverse;
+    }
 
   protected slots:
     void scrollSideways(int);
@@ -175,17 +178,16 @@ class TableHead : public QtTableView
     virtual void mouseMoveEvent(QMouseEvent *e);
     virtual void eraseRight(QPainter *, QRect &r);
 
-    virtual void dragEnterEvent(QDragEnterEvent *event);
-    virtual void dragLeaveEvent(QDragLeaveEvent *event);
-
     FloatingHead *floatHead;
 
     HeadedTable *htable; // to access parent class
     QPoint press;
     int click_col; // physical column clicked in
+    bool reversed_sort; // true if sorting backwards
     bool dragging;
     int drag_pos; // previous dragging position
     int drag_offset;
+
 signals:
     void rightClicked(QPoint where, int col);
     void toolTip(QPoint where, int col);
@@ -263,7 +265,7 @@ class HeadedTable : public QWidget
     };
 
     void repaint_changed();
-    int updateColWidth(int col);
+    void updateColWidth(int col);
 
     void resetWidths();
     void resetWidth(int col) { max_widths[col] = -1; } // dont use ?
@@ -362,7 +364,6 @@ signals:
     // Svec<int> widths;		// row widths, indexed by columns
 
     int sorted_col;    // column to emphasize
-    int reversed_sort; // true if sorting backwards
     int options;
     int nrows;
     int ncols;

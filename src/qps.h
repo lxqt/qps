@@ -35,18 +35,9 @@
 #include <QSystemTrayIcon>
 #endif
 
-#if QT_VERSION >= 0x040200
-#else
-//#error Qt library version 4.2 or higher is needed for this version of qps
-#endif
-
 #define HTABLE1
 #include "misc.h"
-#ifdef HTABLE2
-#include "pstable2.h"
-#else
 #include "pstable.h"
-#endif
 #include "proc.h"
 #include "infobar.h"
 #include "fieldsel.h"
@@ -283,11 +274,8 @@ class Qps : public QWidget
     void set_load_icon();
 
   public:
-#ifdef HTABLE2
-    Pstable2 *pstable; // test
-#else
     Pstable *pstable;
-#endif
+
     Procview *procview;
     StatusBar *statusBar;
     // Netable *netable;

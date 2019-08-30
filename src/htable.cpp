@@ -81,12 +81,9 @@ void FloatingHead::paintEvent(QPaintEvent *event)
 
 // TableHead: the horizontally scrollable table head
 TableHead::TableHead(HeadedTable *parent)
-    : QtTableView(parent), htable(parent), dragging(false)
+    : QtTableView(parent), htable(parent), click_col(-1), reversed_sort(false), dragging(false)
 {
     setSizePolicy(QSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum));
-    // setSizePolicy(QSizePolicy
-    // (QSizePolicy::Minimum,QSizePolicy::Expanding));
-    // setTableFlags(Tbl_smoothHScrolling | Tbl_scrollLastHCell);
     setTableFlags(Tbl_scrollLastHCell); // ?
     setNumRows(1);
 
@@ -94,10 +91,9 @@ TableHead::TableHead(HeadedTable *parent)
 
     floatHead = new FloatingHead(parent); // tiny memory leak! don't care.
     floatHead->hide();
-    // setMinimumHeight(20);//cellHeight()); //ZERO!! fault
 }
 
-void TableHead::paintCell(QPainter *p, int row, int col)
+void TableHead::paintCell(QPainter *p, int /*row*/, int col)
 {
     int w = htable->max_widths[col];
 
@@ -105,15 +101,16 @@ void TableHead::paintCell(QPainter *p, int row, int col)
     QRect rectR(0, 0, w, height());
     opt.rect = rectR;
     opt.text = htable->title(col);
-    opt.state = QStyle::State_Enabled;
+    opt.state = QStyle::State_Enabled | QStyle::State_Horizontal;
     opt.position = numCols() == 1 ? QStyleOptionHeader::OnlyOneSection
                                   : col == 0 ? QStyleOptionHeader::Beginning
                                              : col == numCols() - 1 ? QStyleOptionHeader::End
                                                                     : QStyleOptionHeader::Middle;
-    if (htable->sortedCol() == col)
-        opt.state = opt.state | QStyle::State_Sunken;
+    if (col > -1 && htable->sortedCol() == col)
+        opt.sortIndicator = reversed_sort ? QStyleOptionHeader::SortDown
+                                          : QStyleOptionHeader::SortUp;
     else
-        opt.state = opt.state & ~QStyle::State_Sunken;
+        opt.sortIndicator = QStyleOptionHeader::None;
     style()->drawControl(QStyle::CE_Header, &opt, p, this);
 }
 
@@ -139,7 +136,6 @@ void TableHead::mousePressEvent(QMouseEvent *e)
     //	printf("col=%d\n",col);
     if (col == -1)
         return;
-    click_col = col;
 
     if (e->button() == Qt::RightButton)
     // && htable->options & HTBL_HEADING_CONTEXT_MENU)
@@ -150,17 +146,9 @@ void TableHead::mousePressEvent(QMouseEvent *e)
 
     if (e->button() == Qt::LeftButton)
     {
+        click_col = col;
         press = e->pos();
     }
-}
-
-void TableHead::dragEnterEvent(QDragEnterEvent *event)
-{
-    printf("dragEnterEvent()\n");
-}
-void TableHead::dragLeaveEvent(QDragLeaveEvent *event)
-{
-    printf("dragLeaveEvent()\n");
 }
 
 void TableHead::mouseMoveEvent(QMouseEvent *e)
@@ -180,56 +168,38 @@ void TableHead::mouseMoveEvent(QMouseEvent *e)
     if (e->buttons() == Qt::LeftButton //  Button state
         and htable->options & HTBL_REORDER_COLS)
     {
+        if (!dragging && thold > 5)
         {
+            dragging = true;
+            drag_offset =
+                press.x() - htable->colOffset(click_col) + xOffset();
+            floatHead->setTitle(htable->title(click_col),
+                                cellWidth(click_col), height());
+            floatHead->show();
+        }
 
-            if (!dragging and thold > 5)
+        if (dragging)
+        {
+            floatHead->move(e->x() - drag_offset, 0);
+
+            int vcol = findColNoMinus(e->x() - drag_offset);
+            int vcol_offx = htable->colOffset(vcol);
+            static int old_pos = -1;
+
+            // virtual Pointer move!
+            if (old_pos != vcol_offx)
             {
-                dragging = true;
-                drag_offset =
-                    press.x() - htable->colOffset(click_col) + xOffset();
-                floatHead->setTitle(htable->title(click_col),
-                                    cellWidth(click_col), height());
-                floatHead->show();
-                // vp->show();
+                QWidget *p = parentWidget(); // htable
+                old_pos = vcol_offx;
             }
+            drag_pos = e->x(); // save old pos
 
-            if (dragging)
-            {
-                //	htable->body->drawGhostCol(drag_pos -
-                // drag_offset, w);
-                floatHead->move(e->x() - drag_offset, 0);
-
-                int vcol = findColNoMinus(e->x() - drag_offset);
-                int vcol_offx = htable->colOffset(vcol);
-                static int old_pos = -1;
-                //	printf("vcol=%d\n",vcol);
-
-                // virtual Pointer move!
-                if (old_pos != vcol_offx)
-                {
-                    QWidget *p = parentWidget(); // htable
-                    //	vp->setMovable(htable->columnMovable(htable->columnMovable(vcol)
-                    // and htable->columnMovable(click_col)
-                    // ));
-                    //	vp->move(vcol_offx -
-                    // p->geometry().x()
-                    //,p->geometry().y() -
-                    // 13);
-                    // vp->move(e->x()	,10);
-                    old_pos = vcol_offx;
-                }
-                drag_pos = e->x(); // save old pos
-
-                return;
-            }
+            return;
         }
     }
 
     if (col != -1) // ToolTip
     {
-        //	for(int i=0;i<1024*1024;i++)	htable->tipText(col);
-        //// memory leak
-        // test
         QString s = htable->tipText(col);
 
         if (!s.isEmpty())
@@ -239,35 +209,32 @@ void TableHead::mouseMoveEvent(QMouseEvent *e)
 
 void TableHead::mouseReleaseEvent(QMouseEvent *e)
 {
-    if (e->button() == Qt::LeftButton) // Returns the button that caused the
-                                       // event.
+    if (e->button() == Qt::LeftButton)
     {
         int col = findCol(e->x());
         if (col < 0)
             col = (e->x() < 0) ? 0 : htable->ncols - 1; // good!
 
-        if (!dragging and col == click_col)
+        if (!dragging)  // just a click; no dragging
         {
-            // htable->emit_click_signal(col); // just click no drag
-            emit htable->titleClicked(col);
+            if (col > -1 && col == click_col)
+            {
+                if (htable->sortedCol() == col) // sorting is reversed
+                    reversed_sort = !reversed_sort;
+                else // sorting will be done based on a new column
+                    reversed_sort = false;
+                emit htable->titleClicked(col);
+            }
         }
-
-        if (dragging)
+        else
         {
             int vcol = findColNoMinus(e->x() - drag_offset);
             if (click_col >= 0)
-            {
-                htable->moveCol(click_col, vcol); // call
-                                                  // Pstable::moveCol(int
-                                                  // col, int place)
-                                                  // should emit !!
-                // emit colMoved(click_col, vcol);
-            }
-            ///	printf(" vcol2=%d \n",vcol);
+                htable->moveCol(click_col, vcol);
         }
+        click_col = -1;
         dragging = false;
         floatHead->hide();
-        // vp->hide();
     }
 }
 
@@ -319,7 +286,7 @@ bool TableBody::isCellChanged(int row, int col)
         str = htable->text(row, col);
         xpos = htable->colXPos(col);
         selected = htable->isSelected(row);
-        sorted = (htable->sortedCol() == col);
+        sorted = (col > -1 && htable->sortedCol() == col);
         width = htable->max_widths[col];
     }
 
@@ -389,50 +356,32 @@ bool TableBody::isCellChanged(int row, int col)
 
 bool TableHead::isCellChanged(int row, int col)
 {
-    int xpos;
-    int ypos;
-    int w;
-    int fold, dep;
-    QString str;
-    bool sorted = (htable->sortedCol() == col);
+    bool sorted = (col > -1 && htable->sortedCol() == col);
 
-    w = htable->max_widths[col];
-    xpos = htable->colXPos(col);
+    if (!dragging && sorted && col == click_col)
+        return true; // sorting is reversed
 
-    {
-        str = htable->title(col);
-    }
-    // int left = leftCell();
-    // int top	 = topCell();
+    bool result = false;
+
+    QString str = htable->title(col);
+    int xpos = htable->colXPos(col);
     CellAttribute *attr = tablecache.value(row - topCell(), col - leftCell());
 
-    if (attr == NULL) // Uninitialed?
+    if (attr == nullptr) // Uninitialed?
     {
-        return true;
+        result = true;
     }
-    else
+    else if (attr->text != str || attr->sorted != sorted
+             || attr->size != tmp_size || attr->xpos != xpos)
     {
-        bool result = false;
-        if (attr->text == str and attr->sorted == sorted and
-            attr->size == tmp_size and attr->xpos == xpos
-            //	and attr->w==w
-            )
-        {
-            return false;
-        }
-        else
-        {
-            attr->text = str;
-            attr->sorted = sorted;
-            attr->xpos = xpos;
-            //		attr->w=w;
-            attr->size = tmp_size;
-            //			if(head)	printf("head
-            // true");
-            return true;
-        }
-        // printf("return  %s x=%d\n",str.toAscii().data(),xpos);
+        attr->text = str;
+        attr->sorted = sorted;
+        attr->xpos = xpos;
+        attr->size = tmp_size;
+        result = true;
     }
+
+    return result;
 }
 
 #include <Qt>
@@ -461,7 +410,7 @@ void TableBody::paintCell(QPainter *p, int row, int col)
     attr->w = w; //
 
     QColor baseColor = palette().brush(QPalette::Base).color();
-    sort = (col == htable->sorted_col);
+    sort = (col > -1 && col == htable->sorted_col);
     attr->sorted = sort;
 
     // gridline
@@ -896,28 +845,17 @@ HeadedTable::HeadedTable(QWidget *parent, int opts) : QWidget(parent)
     lines = true;
     folding = true;
     gadget_space = 0;
-    nrows = ncols = 0; // hmm...
+    nrows = ncols = 0;
 
-    // printf("style name=%s \n",qPrintable(style()->objectName()));
-    // QApplication::setStyle(new QWindowsStyle);
     head->setFrameShape(QFrame::NoFrame);
-    if (style()->objectName().contains("oxygen"))
-        ;
-    else
-    {
+    if (!style()->objectName().contains("oxygen")) // FIXME: remove this later
         body->setFrameShape(QFrame::NoFrame);
-    }
 
     QVBoxLayout *vlayout = new QVBoxLayout;
     vlayout->setSpacing(0); // distance between Widget and Widget
 
-#if QT_VERSION < 0x040300
-    vlayout->setMargin(0); // qt-4.2
-#else
-    vlayout->setContentsMargins(0, 0, 0, 0); // qt-4.3
-#endif
+    vlayout->setContentsMargins(0, 0, 0, 0);
 
-    //	vlayout->setSizeConstraint ( SizeConstraint )
     vlayout->addWidget(head);
     vlayout->addWidget(body);
     setLayout(vlayout);
@@ -936,19 +874,23 @@ HeadedTable::HeadedTable(QWidget *parent, int opts) : QWidget(parent)
 HeadedTable::~HeadedTable() {}
 
 // ok : move to Qttableview
-void HeadedTable::fontChange(const QFont &oldFont)
+void HeadedTable::fontChange(const QFont& /*oldFont*/)
 {
-    // DEBUG("fontChange()\n");
     int fontHeight = fontMetrics().height() + 1;
-    // printf("cell height =%d \n", cellH);
     if (fontHeight % 2 != 0)
         fontHeight++; // for pretty fold-lines
-    head->setCellHeight(fontHeight + 5);
+
+    // let the widget style calculate the height
+    QStyleOptionHeader opt;
+    opt.text = "W"; // not really needed because all sane styles consider the font height
+    opt.sortIndicator = QStyleOptionHeader::SortUp; // to have space for a sort indicator
+    int H = style()->sizeFromContents(QStyle::CT_HeaderSection, &opt, QSize(), head).height();
+    head->setCellHeight(H);
     head->setMaximumHeight(head->cellHeight());
+
     body->setCellHeight(fontHeight);
     treestep = fontHeight;
     gadget_space = folding ? fontHeight + (fontHeight / 2) : 0;
-    //	QWidget::fontChange ( oldFont );
 }
 
 // DRAFT  virtual !
@@ -1016,7 +958,6 @@ void HeadedTable::setTreeMode(bool tm)
 // update table Head !!
 void HeadedTable::setSortedCol(int col)
 {
-    int old_sorted = sorted_col;
     sorted_col = col;
 }
 
@@ -1141,23 +1082,10 @@ void HeadedTable::setNumCols(int cols)
     body->setNumCols(ncols);
 }
 
-/*
-//virtual
-int HeadedTable::colWidth(int col)
-{
-        int r = numRows();
-        for(int i=0;i<r;i++)	text(i,col);
-} */
-
-// BOTTLENECK
-// find Max width of a column
-// called by
-//		1.  void HeadedTable::setNumCols(int cols)
-int HeadedTable::updateColWidth(int col)
+void HeadedTable::updateColWidth(int col)
 {
     int w = 0;
     int sw = 0;
-    int hw = 0;
     int i = 0;
     int rows = numRows();
     bool treecol = (treemode && col == 0);
@@ -1166,8 +1094,7 @@ int HeadedTable::updateColWidth(int col)
     {
         if (w < 0)
             w = -w; // trick.
-        // if(w<0) printf("w = %d\n",w);
-        // harsh, if procs more than 1000
+
         for (i = 0; i < rows; i++)
         {
             sw = fontMetrics().width(text(i, col)) + 10;
@@ -1183,17 +1110,17 @@ int HeadedTable::updateColWidth(int col)
             w += gadget_space;
         }
     }
-    // don't forget the width of the heading
-    hw = fontMetrics().width(title(col)) + 12;
-    // return 0;
+
+    // get the width of the heading by consulting the widget style
+    QStyleOptionHeader opt;
+    opt.text = title(col);
+    opt.sortIndicator = QStyleOptionHeader::SortUp;
+    int hw = style()->sizeFromContents(QStyle::CT_HeaderSection, &opt, QSize(), this).width();
+
     if (hw > w)
         w = hw;
 
-    // sw=fontmetric.width("0") * colWidth(col);
-    // if(sw>w) w=sw;
-
     max_widths[col] = w;
-    return 0;
 }
 
 void HeadedTable::resetWidths()
