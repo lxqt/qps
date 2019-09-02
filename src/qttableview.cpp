@@ -913,8 +913,6 @@ void QtTableView::verSbSlidingDone()
 // work?
 void QtTableView::repaintCell(int row, int col, bool usecache) // false
 {
-    //
-    static int c = 0;
     int xPos, yPos;
     if (!colXPos(col, &xPos))
         return;
@@ -922,10 +920,7 @@ void QtTableView::repaintCell(int row, int col, bool usecache) // false
         return;
 
     QRect uR = QRect(xPos, yPos, cellWidth(col), cellHeight(row));
-    // printf("repaintCell() %d,
-    // [%d,%d,%d,%d]\n",c++,uR.x(),uR.y(),uR.width(),uR.height() );
     view->repaint(uR.intersected(viewRect())); // slow
-    // view->update( uR.intersect(viewRect()));
 }
 
 // using
@@ -942,13 +937,6 @@ void QtTableView::repaintRow(int row)
 extern QThread *thread_main;
 void QtTableView::paintEvent(QPaintEvent *e)
 {
-    static int count = 0;
-
-    ////if(thread_main!=thread())
-    ///	printf("Error : main_thread(%X) != paint_thread(%X) report this
-    /// message!!!\n",thread_main,thread());
-
-    /// if ( !isVisible() or !enablePaint )	return;
     checkProfile(); // check cache, current_get
 
     if (!isVisible())
@@ -974,7 +962,6 @@ void QtTableView::paintEvent(QPaintEvent *e)
         return;
     }
 
-    // if ( !rowYPos( firstRow, &yStart ) || !colXPos( firstCol, &xStart ) )
     if (!rowYPos(firstRow, &yStart))
     { // get firstRow
         // printf("eraseRect()\n");
@@ -991,24 +978,14 @@ void QtTableView::paintEvent(QPaintEvent *e)
     int nextX;
     int nextY;
 
-    // printf("frow=%d,fcol=%d\n",firstRow,firstCol);
-    // void 	(QtTableView::*painT)( QPainter *, int row, int col
-    // ,bool
-    // update);
-    // painT=&QtTableView::paintCell;
-    // p.setClipRect( 0,0,viewR.width()-30,viewR.height() ); //enable,
-    // font
-    // not clip
-
     p.setClipRect(viewR); // enable, font not clip (less Qt-4.3.x)
-    // p.setClipRect(updateR); //enable, font not clip
 
-    while (yPos <= maxY and row < nRows)
+    while (yPos <= maxY && row < nRows)
     { // row=...5,6,7....
         nextY = yPos + cellHeight();
         col = firstCol;
         xPos = xStart;
-        while (xPos < maxX and col < nCols)
+        while (xPos < maxX && col < nCols)
         {
             QRect cell;
             int width = cellWidth(col);
@@ -1018,8 +995,6 @@ void QtTableView::paintEvent(QPaintEvent *e)
             tmp_x = xPos;
             {
                 p.translate(xPos, yPos); // (0,0) 	// for subclass
-                //(*this.*painT)( &p, row, col ,
-                // flag_use_cache);
                 paintCell(&p, row, col);
                 p.translate(-xPos, -yPos); // p.translate(0,0);
             }
@@ -1029,10 +1004,6 @@ void QtTableView::paintEvent(QPaintEvent *e)
         row++;
         yPos = nextY;
     }
-
-    //	printf("%s: xoff=%d ,yoff=%d
-    //\n",objectName().toAscii().data(),xOffs,
-    // yOffs);
 
     // while painting we have to erase any areas in the view that
     // are not covered by cells but are covered by the paint event

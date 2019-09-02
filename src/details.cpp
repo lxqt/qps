@@ -131,6 +131,8 @@ QSize SimpleTable::sizeHint() const
 
 QString SimpleTable::title(int col) { return fields[col].name; }
 
+QString SimpleTable::dragTitle(int col) { return fields[col].name; }
+
 int SimpleTable::colWidth(int col) { return fields[col].width; }
 
 inline int SimpleTable::alignment(int col) { return fields[col].align; }

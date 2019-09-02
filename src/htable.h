@@ -147,10 +147,9 @@ class FloatingHead : public QWidget
     Q_OBJECT
   public:
     FloatingHead(QWidget *parent);
-    QPixmap *pix;
-    void setTitle(QString str, int w, int h);
+    void setTitleAndSize(QString str, int w, int h);
     QString title;
-  protected slots:
+
   protected:
     virtual void paintEvent(QPaintEvent *event);
 };
@@ -183,9 +182,9 @@ class TableHead : public QtTableView
     HeadedTable *htable; // to access parent class
     QPoint press;
     int click_col; // physical column clicked in
+    int right_click_col;
     bool reversed_sort; // true if sorting backwards
     bool dragging;
-    int drag_pos; // previous dragging position
     int drag_offset;
 
 signals:
@@ -277,6 +276,7 @@ class HeadedTable : public QWidget
     void setNumRows(int rows);
     void setNumCols(int cols);
     int clickedColumn() { return head->click_col; }
+    int rightClickedColumn() { return head->right_click_col; }
     void deleteCol(int col, bool update = true);
     int leftCell() { return body->leftCell(); }
     int lastColVisible() { return body->lastColVisible(); }
@@ -313,9 +313,7 @@ signals:
     void foldSubTree(int row);
     void colMoved(int col, int place);
     void flyOnCell(int row, int col);
-    void flyOnHCell(int col);
     void outOfCell();
-    void outOfHCell();
 
   public slots:
     void selectAll();
@@ -325,6 +323,7 @@ signals:
     void fontChange(const QFont &oldFont);
     // These must be implemented in subclasses
     virtual QString title(int col) = 0;
+    virtual QString dragTitle(int col) = 0;
     virtual QString text(int row, int col) = 0;
     virtual char *total_selectedRow(int col);
     // colWidth returns width in digit units; negative means variable width.

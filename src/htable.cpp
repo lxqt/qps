@@ -35,6 +35,7 @@
 #include <QStyleOption>
 #include <QShortcut>
 #include <QPalette>
+#include <QApplication>
 
 VPointer *vp = NULL; // Temporary
 
@@ -59,7 +60,7 @@ void VPointer::paintEvent(QPaintEvent *event)
 
 FloatingHead::FloatingHead(QWidget *parent) : QWidget(parent) {}
 
-void FloatingHead::setTitle(QString str, int w, int h)
+void FloatingHead::setTitleAndSize(QString str, int w, int h)
 {
     title = str;
     resize(w, h);
@@ -71,9 +72,8 @@ void FloatingHead::paintEvent(QPaintEvent *event)
     p.setOpacity(0.7);
     opt.rect = rect();
     opt.text = title;
-    opt.state = QStyle::State_Enabled;
-    // if(htable->sortedCol()==col) opt.state= opt.state |
-    // QStyle::State_Sunken;
+    opt.state = QStyle::State_Enabled | QStyle::State_Horizontal;
+    opt.position = QStyleOptionHeader::OnlyOneSection;
     // CE_Header, CE_HeaderSection, CE_HeaderLabel
     style()->drawControl(QStyle::CE_Header, &opt, &p, this);
     return;
@@ -81,7 +81,12 @@ void FloatingHead::paintEvent(QPaintEvent *event)
 
 // TableHead: the horizontally scrollable table head
 TableHead::TableHead(HeadedTable *parent)
-    : QtTableView(parent), htable(parent), click_col(-1), reversed_sort(false), dragging(false)
+    : QtTableView(parent)
+    , htable(parent)
+    , click_col(-1)
+    , right_click_col(-1)
+    , reversed_sort(false)
+    , dragging(false)
 {
     setSizePolicy(QSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum));
     setTableFlags(Tbl_scrollLastHCell); // ?
@@ -133,18 +138,15 @@ void TableHead::scrollSideways(int val) { setXOffset(val); }
 void TableHead::mousePressEvent(QMouseEvent *e)
 {
     int col = findCol(e->x());
-    //	printf("col=%d\n",col);
     if (col == -1)
         return;
 
     if (e->button() == Qt::RightButton)
-    // && htable->options & HTBL_HEADING_CONTEXT_MENU)
     {
+        right_click_col = col;
         emit rightClicked(e->globalPos(), col);
-        return;
     }
-
-    if (e->button() == Qt::LeftButton)
+    else if (e->button() == Qt::LeftButton)
     {
         click_col = col;
         press = e->pos();
@@ -153,47 +155,28 @@ void TableHead::mousePressEvent(QMouseEvent *e)
 
 void TableHead::mouseMoveEvent(QMouseEvent *e)
 {
-    //	printf("mouseMoveEvent()\n");
     int col = findCol(e->x());
     if (col < 0)
-    {
-        emit htable->outOfHCell();
         return;
-    }
-    //	if( !dragging) return;
-    emit htable->flyOnHCell(col);
 
-    int thold = abs(press.x() - e->pos().x());
-
-    if (e->buttons() == Qt::LeftButton //  Button state
-        and htable->options & HTBL_REORDER_COLS)
+    if (e->buttons() == Qt::LeftButton
+        && (htable->options & HTBL_REORDER_COLS))
     {
-        if (!dragging && thold > 5)
+        if (!dragging && abs(press.x() - e->pos().x()) > QApplication::startDragDistance())
         {
-            dragging = true;
-            drag_offset =
-                press.x() - htable->colOffset(click_col) + xOffset();
-            floatHead->setTitle(htable->title(click_col),
-                                cellWidth(click_col), height());
-            floatHead->show();
+            QString title = htable->dragTitle(click_col);
+            if (!title.isEmpty())
+            {
+                dragging = true;
+                drag_offset = press.x() - htable->colOffset(click_col) + xOffset();
+                floatHead->setTitleAndSize(title, cellWidth(click_col), height());
+                floatHead->show();
+            }
         }
 
         if (dragging)
         {
             floatHead->move(e->x() - drag_offset, 0);
-
-            int vcol = findColNoMinus(e->x() - drag_offset);
-            int vcol_offx = htable->colOffset(vcol);
-            static int old_pos = -1;
-
-            // virtual Pointer move!
-            if (old_pos != vcol_offx)
-            {
-                QWidget *p = parentWidget(); // htable
-                old_pos = vcol_offx;
-            }
-            drag_pos = e->x(); // save old pos
-
             return;
         }
     }
@@ -215,7 +198,7 @@ void TableHead::mouseReleaseEvent(QMouseEvent *e)
         if (col < 0)
             col = (e->x() < 0) ? 0 : htable->ncols - 1; // good!
 
-        if (!dragging)  // just a click; no dragging
+        if (!dragging)  // just a click; no DND
         {
             if (col > -1 && col == click_col)
             {
@@ -226,15 +209,18 @@ void TableHead::mouseReleaseEvent(QMouseEvent *e)
                 emit htable->titleClicked(col);
             }
         }
-        else
+        else if (click_col > -1) // dropping
         {
             int vcol = findColNoMinus(e->x() - drag_offset);
-            if (click_col >= 0)
-                htable->moveCol(click_col, vcol);
+            htable->moveCol(click_col, vcol);
         }
         click_col = -1;
         dragging = false;
-        floatHead->hide();
+        if (floatHead->isVisible())
+        {
+            floatHead->hide();
+            viewport()->update();
+        }
     }
 }
 
