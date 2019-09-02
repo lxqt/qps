@@ -236,7 +236,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="951"/>
         <source>Non-Root Processes</source>
-        <translation>Root以外のプロセス</translation>
+        <translation>Root 以外のプロセス</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="952"/>
@@ -350,7 +350,7 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="280"/>
         <source>include already running process</source>
-        <translation type="unfinished"></translation>
+        <translation>既に実行中のプロセスを含める</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="309"/>
@@ -360,7 +360,7 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="342"/>
         <source>show Message</source>
-        <translation type="unfinished"></translation>
+        <translation>メッセージの表示</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="367"/>
@@ -1214,12 +1214,12 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="190"/>
         <source>Remove Field</source>
-        <translation type="unfinished"></translation>
+        <translation>フィールドの削除</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="191"/>
         <source>Add Field</source>
-        <translation type="unfinished"></translation>
+        <translation>フィールドの追加</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="197"/>
