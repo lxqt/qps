@@ -1123,11 +1123,20 @@ void Qps::field_removed(int index)
     if (procview->treeview && index == F_PID)
         set_table_mode(false);
 
-    if (context_col == pstable->sortedCol())
-        pstable->setSortedCol(-1); // the sorted column is removed
+    int sc = pstable->sortedCol();
+    if (context_col == sc)
+    { // the sorted column is removed
+        pstable->setSortedCol(-1);
+        procview->setSortColumn(-1);
+    }
+    else if (context_col < sc)
+    {
+        pstable->setSortedCol(sc - 1);
+        procview->setSortColumn(sc - 1, true); // don't change sort order
+    }
+
     pstable->refresh();
     context_col = -1; // right clicked column is removed
-    return;
 }
 
 // moveto command?
@@ -1822,7 +1831,7 @@ extern QList<watchCond *> watchlist;
 bool Qps::read_settings()
 {
     char path[512];
-    if (settings_path(path) == NULL)
+    if (settings_path(path) == nullptr)
     {
         return false;
     }
@@ -1852,23 +1861,30 @@ bool Qps::read_settings()
         QApplication::setFont(font);
     }
 
-    // Field
+    // flags (should be read before fields because "tree" decides how fields are added)
+    QStringList sl = set.value("flags").toStringList();
+    for (Sflagvar *fs = flagvars; fs->name; fs++)
+    {
+        if (sl.contains(fs->name))
+            *(fs->var) = true;
+        else
+            *(fs->var) = false;
+    }
+
+    // fields
     procview->cats.clear();
-    QStringList sl = set.value("field").toStringList();
+    sl = set.value("field").toStringList();
     for (int i = 0; i < sl.size(); i++)
     {
         QString str = sl[i];
         procview->addField(str.toUtf8().data());
     }
-    /// procview->saveCOMMANDFIELD(); // TMP
-
-    // procview->idxF_CMD=set.value("F_CMD").toInt();
 
     if (sl.size() ==
-        0) // *** for safe , if there is no field. this happen when no qpsrc
+        0) // *** for safety , if there is no field. this happen when no qpsrc
     {
         procview->viewfields = Procview::USER;
-        procview->set_fields(); ///
+        procview->set_fields();
     }
     else
     {
@@ -1878,28 +1894,15 @@ bool Qps::read_settings()
     int fid = procview->field_id_by_name( set.value("sort/field").toString() ); // procview->sortcat->name
     int col = procview->findCol(fid);
     if (col >= 0)
-        // pstable->setSortColumn(col);  // Pstable::refresh()
         procview->setSortColumn(col); // Pstable::refresh()
     // pstable -> procview
     procview->reversed = set.value("sort/reversed").toBool(); // tmp
-
-    sl = set.value("flags").toStringList();
-    // for(int i=0;i<sl.size();i++)
-    for (Sflagvar *fs = flagvars; fs->name; fs++)
-    {
-        if (sl.contains(fs->name))
-            *(fs->var) = true;
-        else
-            *(fs->var) = false;
-    }
-    // procview->treeview=set.value("treeview").toBool();
 
     int i = set.value("interval").toInt();
     set_update_period(i);
     i = set.value("viewproc").toInt();
     procview->viewproc = i;
-    ctrlbar->view->setCurrentIndex(
-        i); // procview->viewproc=set.value("viewproc").toInt();
+    ctrlbar->view->setCurrentIndex(i); // procview->viewproc=set.value("viewproc").toInt();
 
     int size = set.beginReadArray("watchdog");
     for (int i = 0; i < size; i++)
@@ -1921,16 +1924,6 @@ bool Qps::read_settings()
     set.endArray();
 
     return true;
-    /*
-            } else if(strcmp(buf, "swaplim") == 0) {
-                            swaplimit = atoi(p);
-                            swaplim_percent = false;
-                            if(swaplimit < 0) {
-                                    swaplimit = -swaplimit;
-                                    swaplim_percent = true;
-                            }
-            fclose(f); */
-    return true;
 }
 
 // USING :
@@ -1946,8 +1939,6 @@ void Qps::write_settings() // save setting
     QSettings set(path, QSettings::NativeFormat);
 
     set.setValue("version", QPS_FILE_VERSION);
-    // set.beginGroup("");
-    // set.endGroup();
     set.setValue("geometry/x",
                  geometry().x()); // if hide then, wrong value saved!!
     set.setValue("geometry/y", geometry().y());
@@ -1957,32 +1948,26 @@ void Qps::write_settings() // save setting
                  isVisible()); // isVisible() ? "show":"hide");
     set.setValue("viewproc",
                  procview->viewproc); //	All, your , running process...
-    /// set.setValue("treeview",procview->treeview);
 
     QStringList sl;
-    // printf("procview cats.size=%d\n",procview->cats.size());
     procview->update_customfield();
     set.setValue("field", procview->customfields);
-    //	set.setValue("F_CMD",procview->idxF_CMD);
 
-    if (procview->sortcat) // sometimes,  sortcat==NULL.
+    if (procview->sortcat) // nullptr by default
     {
         set.setValue("sort/field", procview->sortcat->name);
         set.setValue("sort/reversed", procview->reversed);
     }
-    //	return;
+    else
+        set.remove("sort");
+
     sl.clear();
     for (Sflagvar *fs = flagvars; fs->name; fs++)
     {
         if (*(fs->var))
-            sl.append(fs->name); // fprintf(f, " %s", fs->name);
+            sl.append(fs->name);
     }
     set.setValue("flags", sl);
-
-    //	fprintf(f,	"swaplim: %d\n"	"interval: %d\n",
-    //				swaplim_percent ? -swaplimit :
-    // swaplimit,
-    //				update_period);
 
     sl.clear();
     set.setValue("font/name", QApplication::font().family());
@@ -2005,16 +1990,6 @@ void Qps::write_settings() // save setting
         set.setValue("cmd", commands[i]->getString());
     }
     set.endArray();
-
-    /*
-            fprintf(f, "hidden_process:");
-            for(int i = 0; i < hidden_process.size(); i++) {
-                    if(i!=0) fprintf(f,",");
-                    fprintf(f,"%s",(const char *)hidden_process[i]);
-            }
-    */
-
-    ///	printf("Qps: setting saved !\n");
 }
 
 // set the window_group hint to that of the main (qps) window

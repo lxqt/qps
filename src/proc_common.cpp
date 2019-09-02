@@ -378,7 +378,7 @@ Procview::Procview()
     viewfields = USER;
     set_fields();
 
-    sortcat = 0; // categories[F_PID];
+    sortcat = nullptr; // categories[F_PID];
     sort_column = -1;
     sortcat_linear = NULL;
     enable = true;
@@ -558,10 +558,18 @@ void Procview::addField(int Fid, int where)
         where = cats.size();
     }
 
-    if (Fid == F_PID)
-        where = 0;
-    else if (Fid == F_CMDLINE)
+    if (Fid == F_CMDLINE)
         where = cats.size(); // always should be the last column
+    else if (Fid == F_PID)
+    {
+        if (treeview == true)
+            where = 0; // always should be the first column with the tree
+        else if (!cats.isEmpty() && where == cats.size()
+                 && cats[cats.size() - 1]->index == F_CMDLINE)
+        {
+            -- where;
+        }
+    }
     else if (!cats.isEmpty())
     {
         if (where == cats.size())
@@ -569,7 +577,7 @@ void Procview::addField(int Fid, int where)
             if (cats[cats.size() - 1]->index == F_CMDLINE)
               -- where;
         }
-        else if (where == 0 && cats[0]->index == F_PID)
+        else if (where == 0 && treeview == true && cats[0]->index == F_PID)
             where = 1;
     }
 
@@ -579,40 +587,25 @@ void Procview::addField(int Fid, int where)
 }
 
 // add a category to last by name
-void Procview::addField(char *name) // interface
+void Procview::addField(char *name)
 {
-    // QString str=sl[i];
     int id = field_id_by_name(name);
     if (id >= 0)
         addField(id); // add to last
-
-    return;
-
-    Category *cat = cat_by_name(name);
-    if (cat)
-        cats.append(cat);
 }
 
 void Procview::removeField(int field_id)
 {
     for (int i = 0; i < cats.size();)
     {
-        //	 	printf("Fid=%d cats[%d].id=%d
-        //\n",field_id,i,cats[i]->id);
-        if (true)
+        if (cats[i]->id == field_id)
         {
-            if (cats[i]->id == field_id)
-            {
-                //	if(cats[i]->id==F_CMD and !treeview)
-                // idxF_CMD=-1;
-                cats.remove(i);
-                break;
-            }
-            else
-                i++;
+            cats.remove(i);
+            break;
         }
+        else
+            i++;
     }
-    //	printf("Fid=%d cats.size=%d\n",field_id,cats.size());
 }
 
 //	called by
@@ -659,6 +652,8 @@ void Procview::moveColumn(int col, int place)
                col, place, s);
         return;
     }
+    if (col == place)
+        return;
 
     if (cats[col]->index == F_PID)
     { // PID should always be the first field in the tree model
@@ -668,10 +663,13 @@ void Procview::moveColumn(int col, int place)
     else if (cats[col]->index == F_CMDLINE)
         place = s; // COMMAND_LINE should always be the last field
 
+    // first insert it into the new place; then remove it from the old one
     Category *cat = cats[col];
-    cats.insert(place, cat);
     if (place < col)
-        col++;
+        ++col;
+    else// if (place > col)
+        place = qMin(place + 1, s - 1);
+    cats.insert(place, cat);
     cats.remove(col);
 }
 
@@ -730,7 +728,7 @@ void Procview::setTreeMode(bool b)
     }
 }
 
-void Procview::setSortColumn(int col, bool r)
+void Procview::setSortColumn(int col, bool keepSortOrder)
 {
     // qDebug("xxx error? col>=cats.size() %d",col);
     if (col >= cats.size())
@@ -739,11 +737,22 @@ void Procview::setSortColumn(int col, bool r)
         return;
     }
 
-    // if(!procview->treeview) just reverse the lines
-    if (col == sort_column)
-        reversed = !reversed;
-    else
+    if (col < 0)
+    { // restore defaults
+        sort_column = -1;
+        sortcat = nullptr;
         reversed = false;
+        return;
+    }
+
+    // if(!procview->treeview) ?
+    if (!keepSortOrder)
+    {
+        if (col == sort_column)
+            reversed = !reversed;
+        else
+            reversed = false;
+    }
     sortcat = cats[col];
     sort_column = col;
 }

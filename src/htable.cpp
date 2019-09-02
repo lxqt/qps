@@ -87,6 +87,7 @@ TableHead::TableHead(HeadedTable *parent)
     , right_click_col(-1)
     , reversed_sort(false)
     , dragging(false)
+    , drag_offset(0)
 {
     setSizePolicy(QSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum));
     setTableFlags(Tbl_scrollLastHCell); // ?
@@ -112,8 +113,8 @@ void TableHead::paintCell(QPainter *p, int /*row*/, int col)
                                              : col == numCols() - 1 ? QStyleOptionHeader::End
                                                                     : QStyleOptionHeader::Middle;
     if (col > -1 && htable->sortedCol() == col)
-        opt.sortIndicator = reversed_sort ? QStyleOptionHeader::SortDown
-                                          : QStyleOptionHeader::SortUp;
+        opt.sortIndicator = reversed_sort ? QStyleOptionHeader::SortUp
+                                          : QStyleOptionHeader::SortDown;
     else
         opt.sortIndicator = QStyleOptionHeader::None;
     style()->drawControl(QStyle::CE_Header, &opt, p, this);
@@ -162,7 +163,7 @@ void TableHead::mouseMoveEvent(QMouseEvent *e)
     if (e->buttons() == Qt::LeftButton
         && (htable->options & HTBL_REORDER_COLS))
     {
-        if (!dragging && abs(press.x() - e->pos().x()) > QApplication::startDragDistance())
+        if (!dragging && abs(press.x() - e->x()) > QApplication::startDragDistance())
         {
             QString title = htable->dragTitle(click_col);
             if (!title.isEmpty())
@@ -198,7 +199,7 @@ void TableHead::mouseReleaseEvent(QMouseEvent *e)
         if (col < 0)
             col = (e->x() < 0) ? 0 : htable->ncols - 1; // good!
 
-        if (!dragging)  // just a click; no DND
+        if (!dragging) // just a click; no DND
         {
             if (col > -1 && col == click_col)
             {
@@ -211,8 +212,8 @@ void TableHead::mouseReleaseEvent(QMouseEvent *e)
         }
         else if (click_col > -1) // dropping
         {
-            int vcol = findColNoMinus(e->x() - drag_offset);
-            htable->moveCol(click_col, vcol);
+            int vcol = findColNoMinus(e->x());
+            htable->moveCol(click_col, vcol); // -> Pstable::moveCol -> Procview::moveColumn
         }
         click_col = -1;
         dragging = false;
@@ -869,7 +870,7 @@ void HeadedTable::fontChange(const QFont& /*oldFont*/)
     // let the widget style calculate the height
     QStyleOptionHeader opt;
     opt.text = "W"; // not really needed because all sane styles consider the font height
-    opt.sortIndicator = QStyleOptionHeader::SortUp; // to have space for a sort indicator
+    opt.sortIndicator = QStyleOptionHeader::SortDown; // to have space for a sort indicator
     int H = style()->sizeFromContents(QStyle::CT_HeaderSection, &opt, QSize(), head).height();
     head->setCellHeight(H);
     head->setMaximumHeight(head->cellHeight());
@@ -1100,7 +1101,7 @@ void HeadedTable::updateColWidth(int col)
     // get the width of the heading by consulting the widget style
     QStyleOptionHeader opt;
     opt.text = title(col);
-    opt.sortIndicator = QStyleOptionHeader::SortUp;
+    opt.sortIndicator = QStyleOptionHeader::SortDown;
     int hw = style()->sizeFromContents(QStyle::CT_HeaderSection, &opt, QSize(), this).width();
 
     if (hw > w)

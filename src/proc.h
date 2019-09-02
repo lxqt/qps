@@ -811,7 +811,7 @@ class Procview : public Proc
     void fieldArrange();
     void update_customfield();
     //
-    void setSortColumn(int col, bool r = false);
+    void setSortColumn(int col, bool keepSortOrder = false);
     void setTreeMode(bool b);
     void saveCOMMANDFIELD();
 
