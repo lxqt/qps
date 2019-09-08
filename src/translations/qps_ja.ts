@@ -11,27 +11,27 @@
     <message>
         <location filename="../details.cpp" line="698"/>
         <source>Field name</source>
-        <translation type="unfinished"></translation>
+        <translation>フィールド名</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="699"/>
         <source>Description</source>
-        <translation type="unfinished"></translation>
+        <translation>説明</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="699"/>
         <source>Field description</source>
-        <translation type="unfinished"></translation>
+        <translation>フィールドの説明</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="700"/>
         <source>Value</source>
-        <translation type="unfinished"></translation>
+        <translation>値</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="700"/>
         <source>Field value</source>
-        <translation type="unfinished"></translation>
+        <translation>フィールドの値</translation>
     </message>
 </context>
 <context>
@@ -44,42 +44,42 @@
     <message>
         <location filename="../prefs.cpp" line="79"/>
         <source>Host Name Lookup</source>
-        <translation type="unfinished"></translation>
+        <translation>ホスト名参照</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="80"/>
         <source>Service Name Lookup</source>
-        <translation type="unfinished"></translation>
+        <translation>サービス名参照</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="86"/>
         <source>Disclosure Triangles</source>
-        <translation type="unfinished"></translation>
+        <translation>展開三角形</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="87"/>
         <source>Branch Lines</source>
-        <translation type="unfinished"></translation>
+        <translation>ブランチライン</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="93"/>
         <source>Auto Save Settings on Exit</source>
-        <translation type="unfinished"></translation>
+        <translation>終了時に自動保存</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="94"/>
         <source>Selection: Copy PIDs to Clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>選択: PIDをクリップボードにコピー</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="96"/>
         <source>Normalize NICE</source>
-        <translation type="unfinished"></translation>
+        <translation>NICE正規化</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="97"/>
         <source>Use pmap for Map Names</source>
-        <translation type="unfinished"></translation>
+        <translation>マップ名としてpmapを使用</translation>
     </message>
 </context>
 <context>
@@ -97,7 +97,9 @@
         <source>The command:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>コマンド:
+
+</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="213"/>
@@ -131,7 +133,7 @@ or you did not have execute permission.</source>
         <translation>
 
 見つからないため実行されませんでした。
-または、パーミッションで実行されませんでした。</translation>
+または、実効権限が不足しています。</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="234"/>
@@ -153,7 +155,7 @@ exited with status </source>
     <message>
         <location filename="../commanddialog.cpp" line="47"/>
         <source>Edit Commands 0.1 alpha</source>
-        <translation type="unfinished"></translation>
+        <translation>コマンドを編集 0.1 alpha</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="63"/>
