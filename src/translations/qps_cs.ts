@@ -133,7 +133,7 @@ or you did not have execute permission.</source>
         <translation>
 
 se nepodařilo spustit protože nebylo nalezeno,
-nebo nemá nastavené oprávnění pro spouštění.</translation>
+nebo (pro vás) nemá nastavené oprávnění pro spouštění.</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="234"/>
@@ -317,7 +317,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../watchdog.ui" line="117"/>
         <source>Eventcat</source>
-        <translation></translation>
+        <translation>KatUdal</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="162"/>
@@ -542,7 +542,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Mapped addresses (hex) )</source>
-        <translation>Mapované adresy (osmičkově) )</translation>
+        <translation>Mapované adresy (šestnáctkově) )</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
@@ -572,7 +572,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../details.cpp" line="399"/>
         <source>File offset at start of mapping (hex)</source>
-        <translation>Posun souboru na začátku mapování (osmičkově)</translation>
+        <translation>Posun souboru na začátku mapování (šestnáctkově)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="400"/>
@@ -771,7 +771,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../proc.cpp" line="1912"/>
         <source>Real user ID</source>
-        <translation>Skutečný identif. uživatele</translation>
+        <translation>identif. skutečného uživatele</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1914"/>
@@ -1001,7 +1001,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../proc.cpp" line="1959"/>
         <source>Stack size</source>
-        <translation>Velikost stacku</translation>
+        <translation>Velikost zásobníku</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1961"/>
@@ -1031,7 +1031,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../proc.cpp" line="1965"/>
         <source>io read (file)</source>
-        <translation>čtení vst/výst. (soubor)</translation>
+        <translation>vst/výst. čtení (soubor)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1967"/>
@@ -1041,7 +1041,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../proc.cpp" line="1967"/>
         <source>io write (file)</source>
-        <translation>zápis vst/výst. (soubor)</translation>
+        <translation>vst/výst. zápisu (soubor)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1969"/>
@@ -1071,7 +1071,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../proc.cpp" line="1973"/>
         <source>Process flags (hex)</source>
-        <translation>Příznaky procesu (osmičkově)</translation>
+        <translation>Příznaky procesu (šestnáctkově)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1975"/>
@@ -1473,7 +1473,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../qps.cpp" line="1591"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
-        <translation>Nemáte oprávnění upravovat prioritu procesů (nice). To může udělat pouze vlastník procesu nebo správce systému.</translation>
+        <translation>Nemáte oprávnění upravovat prioritu označených procesů (nice). To může udělat pouze vlastník procesu nebo správce systému.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1628"/>
@@ -1483,7 +1483,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../qps.cpp" line="1635"/>
         <source>Only the super-user may lower the nice value of a process.</source>
-        <translation>Zvýšit nebo snížit prioritu procesu (nice) může pouze správce systému.</translation>
+        <translation>Snížit prioritu procesu (nice) může pouze správce systému.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1657"/>
@@ -1493,7 +1493,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../qps.cpp" line="1695"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
-        <translation>Nemáte oprávnění měnit plánování a/nebo prioritu procesu %1 (%2). To může udělat pouze vlastník procesu nebo správce systému.</translation>
+        <translation>Nemáte oprávnění měnit plánování a/nebo prioritu procesu %1 (%2). To může udělat pouze správce systému.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1774"/>
@@ -1503,7 +1503,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../qps.cpp" line="2311"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;</source>
-        <translation>&lt;h2&gt; Qps %1 – vizuální správce procesů &lt;/h2&gt; %2 založený na knihovně Qt %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Zdrojové kódy: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Hlášení chyb: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;</translation>
+        <translation>&lt;h2&gt; Qps %1 – vizuální správce procesů &lt;/h2&gt; %2 založeno na knihovně Qt %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Zdrojové kódy: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Hlášení chyb: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2331"/>
@@ -1513,7 +1513,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../qps.cpp" line="2373"/>
         <source>&lt;H1&gt;QPS Help&lt;/H1&gt;Updated: May 24 2005&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Quit      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Update      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Space , Enter       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Terminate &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Kill &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</source>
-        <translation>&lt;H1&gt;Nápověda ke QPS&lt;/H1&gt;Aktualizováno: 24. květen 2005&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Ukončit      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Aktualizovat      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Space , Enter       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Terminate &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; Vynucené ukončení procesu &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</translation>
+        <translation>&lt;H1&gt;Nápověda ke QPS&lt;/H1&gt;Aktualizováno: 24. květen 2005&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Ukončit      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Aktualizovat      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Space , Enter       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; ukončit proces &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; Vynucené ukončení procesu &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</translation>
     </message>
 </context>
 <context>
@@ -1724,7 +1724,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../details.cpp" line="158"/>
         <source>Remote port</source>
-        <translation>Vzdálený port</translation>
+        <translation>Port na protějšku</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="159"/>
@@ -1776,7 +1776,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../watchdogdialog.cpp" line="193"/>
         <source>if process start</source>
-        <translation>pokud je proces spuštěn</translation>
+        <translation>pokud je proces spouštěn</translation>
     </message>
     <message>
         <location filename="../watchdogdialog.cpp" line="194"/>
