@@ -648,7 +648,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../prefs.cpp" line="242"/>
         <source>Total cpu: %1</source>
-        <translation>Celkem procesoru: %1</translation>
+        <translation>Celkem procesorů: %1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="243"/>
@@ -668,7 +668,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../prefs.cpp" line="286"/>
         <source>Appearance</source>
-        <translation>Vzhled</translation>
+        <translation>Písmo</translation>
     </message>
 </context>
 <context>
@@ -1277,7 +1277,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../qps.cpp" line="236"/>
         <source>Option</source>
-        <translation>Volba</translation>
+        <translation>Možnosti</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="237"/>
@@ -1343,7 +1343,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../qps.cpp" line="511"/>
         <source>Hangup</source>
-        <translation>Zavěsit</translation>
+        <translation>Terminál uzavřen (hangup)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="512"/>
@@ -1503,7 +1503,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../qps.cpp" line="2311"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;</source>
-        <translation>&lt;h2&gt; Qps %1 – vizuální správce procesů &lt;/h2&gt; %2 založeno na knihovně Qt %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Zdrojové kódy: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Hlášení chyb: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
+        <translation>&lt;h2&gt; Qps %1 – vizuální správce procesů &lt;/h2&gt; %2 založeno na knihovně Qt %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Zdrojové kódy: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Hlášení chyb: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2331"/>
