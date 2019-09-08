@@ -1503,7 +1503,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../qps.cpp" line="2311"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;</source>
-        <translation>&lt;h2&gt; Qps %1 – vizuální správce procesů &lt;/h2&gt; %2 založeno na knihovně Qt %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Zdrojové kódy: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Hlášení chyb: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;</translation>
+        <translation>&lt;h2&gt; Qps %1 – vizuální správce procesů &lt;/h2&gt; %2 založeno na knihovně Qt %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Zdrojové kódy: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Hlášení chyb: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2331"/>
