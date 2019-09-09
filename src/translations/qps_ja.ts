@@ -367,7 +367,7 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="367"/>
         <source>Help (Not yet. just concept)</source>
-        <translation type="unfinished"></translation>
+        <translation>ヘルプ (まだ構想段階です)</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="394"/>
@@ -1578,12 +1578,12 @@ exited with status </source>
     <message>
         <location filename="../screenshot.cpp" line="299"/>
         <source>Save As</source>
-        <translation type="unfinished"></translation>
+        <translation>名前を付けて保存</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="300"/>
         <source>%1 Files (*.%2);;All Files (*)</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 ファイル (*.%2);;すべてのファイル (*)</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="327"/>
