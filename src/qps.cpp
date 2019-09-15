@@ -1805,52 +1805,18 @@ static Sflagvar flagvars[] = {{"ExitOnClose", &Qps::flag_exit},
                               ,
                               {0, 0}};
 
-char *settings_path(char *name)
-{
-    char *home = getenv("HOME");
-    if (!home)
-        return 0;
-    strcpy(name, home);
-    strcat(name, "/" SETTINGS_FILE);
-    return name;
-}
-
 #include <QSettings>
 extern QList<watchCond *> watchlist;
 // 1.Procview should be contstructed !
 // 2.
 bool Qps::read_settings()
 {
-    char path[512];
-    if (settings_path(path) == NULL)
-    {
-        return false;
-    }
-    QSettings set(path, QSettings::NativeFormat);
+    QSettings set(QApplication::organizationName(), QApplication::applicationName());
 
+    // Version
     int v = set.value("version", 0).toInt();
     if (v == 0)
         return false;
-
-    int x, y, w, h;
-    x = set.value("geometry/x").toInt();
-    y = set.value("geometry/y").toInt();
-    w = set.value("geometry/width").toInt();
-    h = set.value("geometry/height").toInt();
-    // set.value("geometry/visiable",isVisible());
-    Qps::flag_show = true;
-    setGeometry(x, y, w, h);
-
-    if (set.value("font/name") != QVariant() and
-        set.value("font/size") != QVariant())
-    {
-        QString fname = set.value("font/name").toString();
-        int fsize = set.value("font/size").toInt(); // if not exist then 0
-        QFont font;
-        font.setFamily(fname);
-        font.setPointSize(fsize);
-        QApplication::setFont(font);
-    }
 
     // Field
     procview->cats.clear();
@@ -1860,31 +1826,19 @@ bool Qps::read_settings()
         QString str = sl[i];
         procview->addField(str.toUtf8().data());
     }
-    /// procview->saveCOMMANDFIELD(); // TMP
 
-    // procview->idxF_CMD=set.value("F_CMD").toInt();
-
-    if (sl.size() ==
-        0) // *** for safe , if there is no field. this happen when no qpsrc
+    if (sl.size() == 0) // *** for safety, if there is no field. this happen when no qpsrc
     {
         procview->viewfields = Procview::USER;
-        procview->set_fields(); ///
+        procview->set_fields();
     }
     else
     {
         procview->viewfields = Procview::CUSTOM;
     }
 
-    int fid = procview->field_id_by_name( set.value("sort/field").toString() ); // procview->sortcat->name
-    int col = procview->findCol(fid);
-    if (col >= 0)
-        // pstable->setSortColumn(col);  // Pstable::refresh()
-        procview->setSortColumn(col); // Pstable::refresh()
-    // pstable -> procview
-    procview->reversed = set.value("sort/reversed").toBool(); // tmp
-
+    // Flags
     sl = set.value("flags").toStringList();
-    // for(int i=0;i<sl.size();i++)
     for (Sflagvar *fs = flagvars; fs->name; fs++)
     {
         if (sl.contains(fs->name))
@@ -1892,25 +1846,18 @@ bool Qps::read_settings()
         else
             *(fs->var) = false;
     }
-    // procview->treeview=set.value("treeview").toBool();
 
+    // Interval
     int i = set.value("interval").toInt();
     set_update_period(i);
+
+    // Viewproc
     i = set.value("viewproc").toInt();
     procview->viewproc = i;
-    ctrlbar->view->setCurrentIndex(
-        i); // procview->viewproc=set.value("viewproc").toInt();
+    ctrlbar->view->setCurrentIndex(i);
+    // END General
 
-    int size = set.beginReadArray("watchdog");
-    for (int i = 0; i < size; i++)
-    {
-        set.setArrayIndex(i);
-        watchCond *w = new watchCond;
-        w->putstring(set.value("cat").toString());
-        watchlist.append(w);
-    }
-    set.endArray();
-    size = set.beginReadArray("commands");
+    int size = set.beginReadArray("commands");
     for (int i = 0; i < size; i++)
     {
         set.setArrayIndex(i);
@@ -1920,85 +1867,76 @@ bool Qps::read_settings()
     }
     set.endArray();
 
-    return true;
-    /*
-            } else if(strcmp(buf, "swaplim") == 0) {
-                            swaplimit = atoi(p);
-                            swaplim_percent = false;
-                            if(swaplimit < 0) {
-                                    swaplimit = -swaplimit;
-                                    swaplim_percent = true;
-                            }
-            fclose(f); */
+    set.beginGroup("Font");
+    if (set.value("name") != QVariant() and
+        set.value("size") != QVariant())
+    {
+        QString fname = set.value("name").toString();
+        int fsize = set.value("size").toInt(); // if not exist then 0
+        QFont font;
+        font.setFamily(fname);
+        font.setPointSize(fsize);
+        QApplication::setFont(font);
+    }
+    set.endGroup();
+
+    set.beginGroup("Geometry");
+    int x, y, w, h;
+    x = set.value("x").toInt();
+    y = set.value("y").toInt();
+    w = set.value("width").toInt();
+    h = set.value("height").toInt();
+    // set.value("visible", isVisible());
+    Qps::flag_show = true;
+    setGeometry(x, y, w, h);
+    set.endGroup();
+
+    set.beginGroup("Sort");
+    int fid = procview->field_id_by_name(set.value("field").toString()); // procview->sortcat->name
+    int col = procview->findCol(fid);
+    if (col >= 0)
+        procview->setSortColumn(col); // Pstable::refresh()
+    procview->reversed = set.value("reversed").toBool(); // tmp
+    set.endGroup();
+
+    size = set.beginReadArray("watchdog");
+    for (int i = 0; i < size; i++)
+    {
+        set.setArrayIndex(i);
+        watchCond *w = new watchCond;
+        w->putstring(set.value("cat").toString());
+        watchlist.append(w);
+    }
+    set.endArray();
+
     return true;
 }
 
 // USING :
-// write geometry, visible fields and other settings to $HOME/.qps-settings
+// write geometry, visible fields and other settings
 void Qps::write_settings() // save setting
 {
-    char path[512];
-    if (settings_path(path) == NULL)
-    {
-        return;
-    }
+    QSettings set(QApplication::organizationName(), QApplication::applicationName());
 
-    QSettings set(path, QSettings::NativeFormat);
-
-    set.setValue("version", QPS_FILE_VERSION);
-    // set.beginGroup("");
-    // set.endGroup();
-    set.setValue("geometry/x",
-                 geometry().x()); // if hide then, wrong value saved!!
-    set.setValue("geometry/y", geometry().y());
-    set.setValue("geometry/width", geometry().width());
-    set.setValue("geometry/height", geometry().height());
-    set.setValue("geometry/visiable",
-                 isVisible()); // isVisible() ? "show":"hide");
-    set.setValue("viewproc",
-                 procview->viewproc); //	All, your , running process...
-    /// set.setValue("treeview",procview->treeview);
+    procview->update_customfield();
+    // General
+    set.setValue("field", procview->customfields);
 
     QStringList sl;
-    // printf("procview cats.size=%d\n",procview->cats.size());
-    procview->update_customfield();
-    set.setValue("field", procview->customfields);
-    //	set.setValue("F_CMD",procview->idxF_CMD);
-
-    if (procview->sortcat) // sometimes,  sortcat==NULL.
-    {
-        set.setValue("sort/field", procview->sortcat->name);
-        set.setValue("sort/reversed", procview->reversed);
-    }
-    //	return;
-    sl.clear();
     for (Sflagvar *fs = flagvars; fs->name; fs++)
     {
         if (*(fs->var))
-            sl.append(fs->name); // fprintf(f, " %s", fs->name);
+            sl.append(fs->name);
     }
     set.setValue("flags", sl);
-
-    //	fprintf(f,	"swaplim: %d\n"	"interval: %d\n",
-    //				swaplim_percent ? -swaplimit :
-    // swaplimit,
-    //				update_period);
-
     sl.clear();
-    set.setValue("font/name", QApplication::font().family());
-    set.setValue("font/size", QApplication::font().pointSize());
 
     set.setValue("interval", update_period);
+    set.setValue("version", QPS_FILE_VERSION);
+    set.setValue("viewproc", procview->viewproc); // All your running process...
 
-    set.beginWriteArray("watchdog");
-    for (int i = 0; i < watchlist.size(); i++)
-    {
-        set.setArrayIndex(i);
-        set.setValue("cat", watchlist[i]->getstring());
-    }
-    set.endArray();
-
-    set.beginWriteArray("commands");
+    // Commands
+    set.beginWriteArray("Commands");
     for (int i = 0; i < commands.size(); i++)
     {
         set.setArrayIndex(i);
@@ -2006,15 +1944,38 @@ void Qps::write_settings() // save setting
     }
     set.endArray();
 
-    /*
-            fprintf(f, "hidden_process:");
-            for(int i = 0; i < hidden_process.size(); i++) {
-                    if(i!=0) fprintf(f,",");
-                    fprintf(f,"%s",(const char *)hidden_process[i]);
-            }
-    */
+    // Font
+    set.beginGroup("Font");
+    set.setValue("name", QApplication::font().family());
+    set.setValue("size", QApplication::font().pointSize());
+    set.endGroup();
 
-    ///	printf("Qps: setting saved !\n");
+    // Geometry
+    set.beginGroup("Geometry");
+    set.setValue("x", geometry().x()); // if hidden, then wrong value saved!!
+    set.setValue("y", geometry().y());
+    set.setValue("width", geometry().width());
+    set.setValue("height", geometry().height());
+    set.setValue("visible", isVisible()); // isVisible() ? "show":"hide");
+    set.endGroup();
+
+    // Sort
+    if (procview->sortcat) // sometimes,  sortcat==NULL.
+    {
+        set.beginGroup("Sort");
+        set.setValue("field", procview->sortcat->name);
+        set.setValue("reversed", procview->reversed);
+        set.endGroup();
+    }
+
+    // Watchdog
+    set.beginWriteArray("Watchdog");
+    for (int i = 0; i < watchlist.size(); i++)
+    {
+        set.setArrayIndex(i);
+        set.setValue("cat", watchlist[i]->getstring());
+    }
+    set.endArray();
 }
 
 // set the window_group hint to that of the main (qps) window
@@ -2175,6 +2136,9 @@ int main(int argc, char **argv, char **envp)
     //	codec = QTextCodec::codecForLocale(); // for Local locale
     check_system_requirement(); // check kernel version.. etc in proc.cpp
     check_qps_running();        // check already qps running.  in misc.cpp
+
+    QApplication::setOrganizationName("qps");
+    QApplication::setApplicationName("qps");
 
     QpsApp app(argc, argv);
 
