@@ -50,7 +50,6 @@ Q_DECLARE_TR_FUNCTIONS(Boxvar)
 public:
     const QString text;
     bool *variable;
-    // CrossBox *cb;
     QCheckBox *cb;
 
     Boxvar() : text( QString() ), variable( static_cast<  bool * >( 0 ) ), cb( static_cast< QCheckBox *>( 0 ) ) {}
@@ -58,17 +57,8 @@ public:
 
     static QVector< Boxvar > *general_boxes()
     {
-        static QVector< Boxvar > boxes( { { tr( "Exit On Close Button" ), &Qps::flag_exit, 0}
-//                                        , { tr( "Graphic Load Display" ), &Qps::show_load_graph, 0 }
-//                                        , { tr( "Graphic CPU Display" ), &Qps::show_cpu_bar, 0}
-//                                        , { tr( "Minimized on Close Button" ), &Qps::flag_systray, 0}
-// TEMPO
-//                                        , { tr( "Use Tab-View" ), &Qps::flag_useTabView, 0}
-//                                        , { tr( "Hide qps in Linear mode" ), &Qps::flag_qps_hide, 0}
-//                                        , { tr( "Load Graph in Icon" ), &Qps::load_in_icon, 0}
-//                                        , { tr( "Selection: Copy PIDs to Clipboard" ), &Qps::pids_to_selection, 0}
-//                                        , { tr( "show underdevelopment" ), &Qps::flag_devel, 0}
-//                                        , { tr( "Vertical CPU Bar (under development)" ), &Qps::vertical_cpu_bar, 0}
+        static QVector< Boxvar > boxes( { { tr( "Exit on closing" ), &Qps::flag_exit, 0}
+                                        , { tr( "Remember Position" ), &Qps::save_pos, 0}
                                         } );
         return &boxes;
     }
@@ -115,11 +105,6 @@ public:
     static QVector< Cbgroup > &groups()
     {
         static QVector< Cbgroup > groups( { { tr( "General" ), Boxvar::general_boxes() }
-#ifdef LINUX
-//                                          , { tr( "Socket Info Window" ), Boxvar::sockinfo_boxes() }
-#endif
-//                                          , { tr( "Tree View" ), Boxvar::tree_boxes() }
-//                                          , { tr( "Miscellaneous" ), Boxvar::misc_boxes() }
                                           } );
         return groups;
     }
@@ -160,7 +145,7 @@ QValidator::State Swapvalid::validate(QString &s, int &) const
     return Acceptable;
 }
 
-Preferences::Preferences() : QDialog()
+Preferences::Preferences(QWidget *parent) : QDialog(parent)
 {
     int flag_test = 0;
     setWindowTitle( tr( "Preferences" ) );
@@ -194,7 +179,6 @@ Preferences::Preferences() : QDialog()
                 itB->cb = new QCheckBox( itB->text, grp );
                 vbox->addWidget( itB->cb );
                 connect( itB->cb, SIGNAL(clicked()), SLOT(update_reality()));
-                // -> EMIT prefs_change()
             }
         }
         grp->setLayout(vbox);
@@ -202,31 +186,6 @@ Preferences::Preferences() : QDialog()
     }
 
     update_boxes();
-
-    /*
-    QGroupBox *wgrp = new QGroupBox("Swap Warning", this);
-  QHBoxLayout *hl = new QHBoxLayout;
-    wgrp->setLayout(hl);
-    QLabel *lbl = new QLabel("Warn when free swap below", wgrp);
-    QLineEdit *swaped = new QLineEdit(wgrp);
-  hl->addWidget(lbl);
-  hl->addWidget(swaped);
-    //swaped->setAlignment (  Qt::AlignRight );
-    QString s;
-    if(Qps::swaplim_percent) {
-            s.sprintf("%d%%", Qps::swaplimit);
-    } else {
-            if(Qps::swaplimit >= 1024 && (Qps::swaplimit & 0x7ff) == 0)
-                    s.sprintf("%dM", Qps::swaplimit >> 10);
-            else
-                    s.sprintf("%dK", Qps::swaplimit);
-    }
-    swaped->setText(s);
-    swaped->setValidator(new Swapvalid(this));
-    connect(swaped, SIGNAL(textChanged(const QString &)),
-  SIGNAL(prefs_change()));
-    v_layout->addWidget(wgrp);
-    */
 
     rb_totalcpu = NULL; // tmp
 
@@ -265,13 +224,11 @@ Preferences::Preferences() : QDialog()
         font_cb->setCurrentFont(QApplication::font());
 
         // remove Some Ugly Font : hershey...
-        // printf("size=%d\n",font_cb->count());
         for (int i = 0; i < font_cb->count();)
         {
             QString name = font_cb->itemText(i);
             if (name.contains("hershey", Qt::CaseInsensitive) == true)
             {
-                //		printf("%s\n",qPrintable(name));
                 font_cb->removeItem(i);
             }
             else
@@ -294,27 +251,12 @@ Preferences::Preferences() : QDialog()
         gbox->setLayout(vbox);
         v_layout->addWidget(gbox);
 
-        // connect(font_cb, SIGNAL(activated( int)),this,
-        // SLOT(font_changed(int)));
         connect(font_cb, SIGNAL(activated(int)), this, SLOT(font_changed(int)));
         connect(psizecombo, SIGNAL(activated(int)), SLOT(font_changed(int)));
 
         // add to font size
         init_font_size();
     }
-
-    /*
-    // Style, Themes ==================================
-    QLabel *label3 = new QLabel("Themes", font_grp);
-    QComboBox *theme_combo = new QComboBox(font_grp);
-
-    QStringList styles = QStyleFactory::keys();
-  styles.sort();
-  theme_combo->insertStringList(styles);
-
-    QString currentstyle;
-    currentstyle = QApplication::style().className();
-  */
 
     QPushButton *saveButton = new QPushButton("OK", this);
     // saveButton->setFocusPolicy(QWidget::NoFocus);
@@ -329,10 +271,6 @@ Preferences::Preferences() : QDialog()
 //
 void Preferences::init_font_size()
 {
-    // 	QFontDatabase db;
-    //	QStringList families ( WritingSystem writingSystem = Any ) const
-    //	QStringList families = db.families(QFontDatabase::Latin);
-    //	QStringList extra;
     psizecombo->clear();
     int i, idx = 0;
     for (i = 5; i < 24; i++)
@@ -399,11 +337,16 @@ void Preferences::update_config()
 
 void Preferences::closed()
 {
-    //	delete font_cb;	font_cb==NULL;
-    //	font_cb->clear();
     update_config();
     hide();
     emit prefs_change();
+}
+
+void Preferences::closeEvent(QCloseEvent *event)
+{
+    // since we never close the dialog, we hide it here explicitly
+    hide();
+    event->ignore();
 }
 
 // work

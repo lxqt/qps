@@ -34,7 +34,7 @@ class Preferences : public QDialog
 {
     Q_OBJECT
   public:
-    Preferences();
+    Preferences(QWidget *parent = nullptr);
     QComboBox *psizecombo;
     //    QFontComboBox *font_cb;
     QRadioButton *rb_totalcpu;
@@ -49,6 +49,9 @@ class Preferences : public QDialog
     void fontset_changed(int);
 signals:
     void prefs_change();
+
+  protected:
+    virtual void closeEvent(QCloseEvent *event);
 };
 
 #endif // PREFS_H

@@ -373,7 +373,7 @@ Procview::Procview()
     cats.clear();
     reversed = false;
     viewproc = ALL;
-    treeview = true;
+    treeview = false;
     idxF_CMD = 0; // **** important ****
     viewfields = USER;
     set_fields();
