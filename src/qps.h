@@ -60,8 +60,6 @@ class Qps : public QWidget
     ~Qps();
 
     void set_update_period(int milliseconds);
-    void setWindowGroup(QWidget *w);
-    void setCommand(int argc, char **argv);
     void setIconSize(int w, int h) { icon_width = w, icon_height = h; }
     void write_settings();
     void save_settings();
@@ -103,6 +101,7 @@ class Qps : public QWidget
     // switching
     static bool flag_systray; // trayicon , sytemtray
     static bool flag_exit;
+    static bool save_pos;
     static bool flag_show; // last qps-main_window state
     static bool flag_useTabView;
     static bool flag_qps_hide;
@@ -214,24 +213,20 @@ class Qps : public QWidget
     void save_quit();
     void add_fields_menu(int id);
     void add_fields_menu(QAction *act);
-    void tabChanged(int i);
 
     void show_popup_menu(QPoint p);
     void context_heading_menu(QPoint p, int col);
 
-    void update_menu_selection_status();
     void field_added(int index);
     void field_removed(int index);
     void set_table_mode(bool treemode); // hmmm
 
-    void details_closed(Details *d);
     void open_details(int row);
 
     void config_change();
 
     void update_timer();
     void refresh();
-    void refresh_details();
     void test_popup(const QUrl &link);
     void update_menu_status();
 
@@ -239,20 +234,10 @@ class Qps : public QWidget
     // reimplementation of QWidget methods
     virtual void timerEvent(QTimerEvent *);
     virtual void closeEvent(QCloseEvent *);
-    virtual void moveEvent(QMoveEvent *event);
-    virtual void mouseMoveEvent(QMouseEvent *event);
-    virtual void hideEvent(QHideEvent *event);
     virtual void resizeEvent(QResizeEvent *event);
-    virtual void paintEvent(QPaintEvent *event);
-    virtual void enterEvent(QEvent *event);
-    virtual void leaveEvent(QEvent *event);
-    virtual void showEvent(QShowEvent *event);
-    virtual void focusInEvent(QFocusEvent *event);
-    virtual void focusOutEvent(QFocusEvent *event);
     virtual void keyPressEvent(QKeyEvent *event);
     // bool event(QEvent *e);
     void transfer_selection();
-    void adjust_popup_menu(QMenu *m, bool cont);
     void adjust_popup_menu();
     bool all_selected_stopped();
 
@@ -264,7 +249,6 @@ class Qps : public QWidget
 #endif
     void send_to_selected(int sig);
     void sendsig(Procinfo *p, int sig);
-    void earlier_refresh();
     bool read_settings();
 
     bool load_settings();
@@ -319,6 +303,8 @@ class Qps : public QWidget
     QPixmap *default_icon;
     bool default_icon_set; // true if default icon is current icon
     int context_col;       // where heading context menu was clicked
+
+    QPoint winPos;
 };
 
 #endif // QPS_H
