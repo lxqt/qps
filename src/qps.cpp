@@ -2030,17 +2030,33 @@ void Qps::start_screenshot() {}
 // MOVETO qps::keyPressEvent()
 void SearchBox::keyPressEvent(QKeyEvent *e)
 {
+    // signals
     if (e->key() == Qt::Key_Delete)
     {
         qps->sig_term();
         return;
     }
+    if (e->modifiers() == Qt::AltModifier)
+    {
+        if (e->key() == Qt::Key_H)
+        {
+            qps->sig_hup();
+            return;
+        }
+        if (e->key() == Qt::Key_K)
+        {
+            qps->sig_kill();
+            return;
+        }
+    }
 
     if (e->key() == Qt::Key_Escape)
     {
-        clear(); // clear searchbox
-        qps->pstable->clearAllSelections(); // TEMP
+        clear();
+        qps->pstable->clearAllSelections();
     }
+    else if (e->modifiers() == Qt::ControlModifier && e->key() == Qt::Key_A)
+        qps->pstable->selectAll();
     else
         QLineEdit::keyPressEvent(e);
 

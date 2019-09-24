@@ -911,7 +911,7 @@ void QtTableView::verSbSlidingDone()
   Calls paintCell() for the cells that needs to be repainted.
 */
 // work?
-void QtTableView::repaintCell(int row, int col, bool usecache) // false
+void QtTableView::repaintCell(int row, int col, bool /*usecache*/) // false
 {
     int xPos, yPos;
     if (!colXPos(col, &xPos))
@@ -928,10 +928,7 @@ void QtTableView::repaintRow(int row)
 {
     int y;
     if (rowYPos(row, &y))
-    {
-        // view->repaint(minViewX(),y,viewWidth(),cellHeight());
         view->update(minViewX(), y, viewWidth(), cellHeight());
-    };
 }
 
 extern QThread *thread_main;
@@ -955,16 +952,13 @@ void QtTableView::paintEvent(QPaintEvent *e)
     if (!colXPos(firstCol, &xStart))
     {
         // right empty area of table
-        // p.eraseRect( updateR ); // erase area outside cells but
-        // in view
-        // printf("colXPos null\n");
+        // p.eraseRect( updateR ); // erase area outside cells but in view
         eraseRight(&p, updateR);
         return;
     }
 
     if (!rowYPos(firstRow, &yStart))
     { // get firstRow
-        // printf("eraseRect()\n");
         p.eraseRect(updateR);
         return;
     }
@@ -1014,9 +1008,8 @@ void QtTableView::paintEvent(QPaintEvent *e)
         QRect r = viewR;
         r.setLeft(xPos);
         r.setBottom(yPos < maxY ? yPos : maxY);
-
         // QRect ir=r.intersect( updateR );
-        eraseRight(&p, r); //????????
+        eraseRight(&p, r);
     }
 
     if (yPos <= maxY)
@@ -1043,15 +1036,12 @@ void QtTableView::repaintChanged() // only fullpainting
     if (!colXPos(firstCol, &xStart))
     {
         // right empty area of table
-        printf("b\n");
         view->update(updateR);
         return;
     }
 
-    // if ( !rowYPos( firstRow, &yStart ) || !colXPos( firstCol, &xStart ) )
     if (!rowYPos(firstRow, &yStart))
     { // get firstRow
-        /// printf("a\n");
         view->update(updateR);
         return;
     }
@@ -1084,12 +1074,9 @@ void QtTableView::repaintChanged() // only fullpainting
                 if (col == firstCol)
                 {
                     repaintRow(row); //  speed up!  update()...
-                    //	view->update(minViewX(),y,viewWidth(),cellHeight());
-                    ///	printf("row %d\n",row);
                     break;
                 }
 
-                // printf("row %d col=%d\n",row,col);
                 repaintCell(row, col, false);
             }
             col++;
@@ -1112,39 +1099,13 @@ void QtTableView::repaintChanged() // only fullpainting
         r.setTop(yPos);
         view->repaint(r.intersected(updateR)); // why? CPU +2~3% -> rect.unite()
     }
-
-    return;
-
-    int rows = numRows();
-    int cols = numCols();
-    int left = leftCell(), right = lastColVisible();
-    int top = topCell(), bottom = lastRowVisible();
-
-    if (right >= cols)
-        right = cols - 1; //???
-    if (bottom >= rows)
-        bottom = rows - 1;
-    // if width[col] be changed ,then the right of [col] should be repainted
-    // !
-    // repaintColumns(c,-1);
-    // printf("left=%d \n",left);
-
-    for (int r = top; r <= bottom; r++)
-    {
-        for (int c = left; c <= right; c++)
-        {
-            // if(isCellChanged(r,c)) 	repaintCell(r, c,false);
-        }
-    }
 }
 
-void QtTableView::resizeEvent(QResizeEvent *e)
+void QtTableView::resizeEvent(QResizeEvent* /*e*/)
 {
-    //    printf("QtTableView::resize [%d,%d] \n",width(),height());
     // QAbstractScrollArea::resizeEvent(e);
     updateScrollBars(horValue | verValue | horSteps | horRange | verSteps |
                      verRange);
-    return;
 }
 
 // BOTTLENECK?

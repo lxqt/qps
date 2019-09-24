@@ -125,23 +125,6 @@ class TableCache
     }
 };
 
-class VPointer : public QWidget
-{
-    Q_OBJECT
-  public:
-    VPointer(QWidget *parent);
-    QPixmap *pix;
-    QPixmap *pix_vcross;
-    void setMovable(bool b) { flag_movable = b; }
-    bool flag_movable;
-  protected slots:
-    //		void event_cursor_moved(QMouseEvent *e);
-  protected:
-    // virtual void drawButton 3( QPainter * ) ;
-    virtual void paintEvent(QPaintEvent *event);
-    //	void resizeEvent(QResizeEvent *p);
-};
-
 class FloatingHead : public QWidget
 {
     Q_OBJECT
@@ -200,8 +183,6 @@ class TableBody : public QtTableView
   public:
     TableCache tablecache;
     TableBody(HeadedTable *parent = 0);
-    void drawGhostCol(int x, int w);
-    // int zerowidth;		// width of the digit 0
 
     virtual bool isCellChanged(int row, int col);
     virtual void checkProfile();
@@ -226,7 +207,6 @@ class TableBody : public QtTableView
     void timerEvent(QTimerEvent *);
     void updateRow(int row);
     void dragSelectTo(int row);
-    QColor getXorColor();
     HeadedTable *htable; // to access parent class
     int first_drag_row;  // row where drag started
     int prev_drag_row;   // row where drag was at last event
@@ -301,6 +281,7 @@ class HeadedTable : public QWidget
     void selectOnlyOne(int row);
     int numSelected() { return 0; }
     void clearAllSelections();
+    void selectAll();
 
     virtual void setSelected(int row, bool sel){}
     virtual bool isSelected(int row) { return false; }
@@ -316,11 +297,10 @@ signals:
     void outOfCell();
 
   public slots:
-    void selectAll();
     void repaintAll();
 
   protected:
-    void fontChange(const QFont &oldFont);
+    virtual bool event(QEvent *event);
     // These must be implemented in subclasses
     virtual QString title(int col) = 0;
     virtual QString dragTitle(int col) = 0;
@@ -352,6 +332,7 @@ signals:
     int treestep; // indentation for each tree level
 
   private:
+    void fontChange();
     inline int computedWidth(int col);
     int colOffset(int col);
     inline int colXPos(int col);

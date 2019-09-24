@@ -33,30 +33,8 @@
 #include "htable.h"
 #include <QMouseEvent>
 #include <QStyleOption>
-#include <QShortcut>
 #include <QPalette>
 #include <QApplication>
-
-VPointer *vp = NULL; // Temporary
-
-VPointer::VPointer(QWidget *parent) : QWidget(parent)
-{
-    pix = new QPixmap(":/icon/vpointer.png");
-    pix_vcross = new QPixmap(":/icon/vcross.png");
-    int w = pix->width();
-    bool flag_movable = true;
-    setGeometry(0, 0, w, w);
-}
-
-void VPointer::paintEvent(QPaintEvent *event)
-{
-    QPainter p(this);
-    p.setClipping(false); // not work
-    if (flag_movable)
-        p.drawPixmap(0, 0, *pix);
-    else
-        p.drawPixmap(0, 0, *pix_vcross);
-}
 
 FloatingHead::FloatingHead(QWidget *parent) : QWidget(parent) {}
 
@@ -69,6 +47,9 @@ void FloatingHead::paintEvent(QPaintEvent *event)
 {
     QPainter p(this);
     QStyleOptionHeader opt;
+    opt.orientation = Qt::Horizontal;
+    opt.textAlignment = Qt::AlignVCenter | Qt::AlignLeft;
+    opt.fontMetrics = fontMetrics();
     p.setOpacity(0.7);
     opt.rect = rect();
     opt.text = title;
@@ -104,6 +85,9 @@ void TableHead::paintCell(QPainter *p, int /*row*/, int col)
     int w = htable->max_widths[col];
 
     QStyleOptionHeader opt;
+    opt.orientation = Qt::Horizontal;
+    opt.textAlignment = Qt::AlignVCenter | Qt::AlignLeft;
+    opt.fontMetrics = fontMetrics();
     QRect rectR(0, 0, w, height());
     opt.rect = rectR;
     opt.text = htable->title(col);
@@ -120,14 +104,10 @@ void TableHead::paintCell(QPainter *p, int /*row*/, int col)
     style()->drawControl(QStyle::CE_Header, &opt, p, this);
 }
 
-// works
-void TableHead::eraseRight(QPainter *p, QRect &r)
+void TableHead::eraseRight(QPainter* /*p*/, QRect& /*r*/)
 {
-    QStyleOptionHeader opt;
-    //		printf("widt=%d \n",r.width());
-    opt.rect = r;
-    opt.text = "";
-    style()->drawControl(QStyle::CE_Header, &opt, p, this);
+    // Do nothing because this is an empty area
+    // with the base background color.
 }
 
 // virtual !
@@ -225,8 +205,6 @@ void TableHead::mouseReleaseEvent(QMouseEvent *e)
     }
 }
 
-#include <QStyleFactory>
-
 // TableBody: the table body, scrollable in all ways
 TableBody::TableBody(HeadedTable *parent) : QtTableView(parent), htable(parent)
 {
@@ -238,10 +216,6 @@ TableBody::TableBody(HeadedTable *parent) : QtTableView(parent), htable(parent)
     autoscrolling = false;
     gadget_click = false;
     setMouseTracking(true);
-
-    QStyle *s = QStyleFactory::create("windows");
-    if (s)
-        setStyle(s);
 }
 
 // virtual from QtTableView
@@ -382,47 +356,23 @@ bool TableHead::isCellChanged(int row, int col)
 // 		1.QtTableView::paintEvent()
 void TableBody::paintCell(QPainter *p, int row, int col)
 {
-    // *** sequence important !!!
-    //	if(isCellChanged(row,col)==false)	{
-    // if(use_cache==true)	return;
-    //}
-
     CellAttribute *attr =
         tablecache.value(row - topCell(), col - leftCell()); // save cache
-    //	isCellChanged(row,col);
 
     bool sort;
-    int h = cellHeight();
+    const int h = cellHeight();
     int w = htable->max_widths[col];
-    attr->w = w; //
+    attr->w = w;
 
-    QColor baseColor = palette().brush(QPalette::Base).color();
     sort = (col > -1 && col == htable->sorted_col);
     attr->sorted = sort;
 
-    // gridline
-    QColor lineColor, textColor;
-    QColor altColor = palette().brush(QPalette::AlternateBase).color();
-    lineColor.setRgb((baseColor.red() * 0.5 + altColor.red() * 0.5),
-                     (baseColor.green() * 0.4 + altColor.green() * 0.6),
-                     (baseColor.blue() * 0.4 + altColor.blue() * 0.6));
-
-    //	QStyleOption opt;
-    //	opt.rect=QRect(0,0,w,h-1);
-    //	opt.state = QStyle::State_Active; //?
-    // QStyle::SH_ItemView_PaintAlternatingRowColorsForEmptyArea
-    //  const int gridHint =
-    //  style()->styleHint(QStyle::SH_Table_GridLineColor,
-    //  &opt, this);
-
-    p->setPen(lineColor);
-    p->drawLine(0, h - 1, w, h - 1);
 
     // background
     if (htable->isSelected(row))
     {
-        p->fillRect(0, 0, w, h - 1, palette().brush(QPalette::Highlight));
-        p->setPen(palette().brush(QPalette::HighlightedText).color()); // text
+        p->fillRect(0, 0, w, h, palette().brush(QPalette::Highlight));
+        p->setPen(palette().color(QPalette::HighlightedText)); // text
         attr->selected = true;
     }
     else
@@ -430,116 +380,98 @@ void TableBody::paintCell(QPainter *p, int row, int col)
         attr->selected = false;
         if (sort)
         {
-            p->fillRect(0, 0, w, h - 1, lineColor.dark(101));
+            p->fillRect(0, 0, w, h, palette().color(QPalette::AlternateBase));
+        }
+        // the background already has the base color, so there is no need to paint it here
+        /*else
+        {
+            p->fillRect(0, 0, w, h, palette().color(QPalette::Base));
+        }*/
+        p->setPen(palette().color(QPalette::Text)); // text
+    }
+
+    // gridline (QPalette::Mid isn't good enough here)
+    p->save();
+    p->setOpacity(0.1);
+    p->drawLine(0, h - 1, w, h - 1);
+    p->restore();
+
+    int align = Qt::AlignVCenter;
+    int gap = h / 4;
+    if (col == 0 && htable->treemode)
+    {
+        p->save();
+        p->setOpacity(0.4); // only to draw branch lines
+
+        QStyleOption opt;
+        const int d = htable->rowDepth(row);
+        attr->depth = d;
+        int treestep = htable->treestep;
+
+        for (int level = d, prow = row; level >= 0 && prow >= 0;
+                level--, prow = htable->parentRow(prow))
+        {
+            if (level == d)
+                continue;
+            int x = gap + level * treestep;
+            if (!htable->lastChild(prow))
+            {
+                p->drawLine(x + treestep / 2, 0, x + treestep / 2, h - 1); // vertical (first branch)
+            }
+        }
+
+        const int x = gap + d * treestep + treestep / 2;
+        p->drawLine(x + 1, h / 2, x + treestep - 1, h / 2); // horizontal
+
+        HeadedTable::NodeState fs = htable->folded(row);
+        attr->folded = fs;
+        if (fs != HeadedTable::Leaf)
+        {
+            opt.state = opt.state | QStyle::State_Children;
+            if (fs != HeadedTable::Closed)
+            {
+                opt.state = opt.state | QStyle::State_Open;
+                p->drawLine(x + treestep, h / 2, x + treestep, h - 1); // vertical (after horizontal line)
+            }
+        }
+
+        if (!htable->lastChild(row))
+        {
+            p->drawLine(x, 0, x, h - 1); // vertical (sub-branch)
         }
         else
         {
-            p->fillRect(0, 0, w, h - 1, baseColor);
+            p->drawLine(x, 0, x, h / 2); // vertical (end)
         }
-        // style()->drawPrimitive(QStyle::PE_FrameFocusRect, &opt, p,
-        // this);
-        p->setPen(palette().brush(QPalette::Text).color()); // text
-    }
+        p->restore();
 
-    // tree gadget , treestep=height
-    int gap = h / 4;
-    int testFlag = 0;
-    if (col == 0 and htable->treemode == true)
+        attr->lastchild = htable->lastChild(row);
+
+        QRect branchR(gap + d * treestep, 0, treestep, h);
+        opt.rect = branchR;
+
+        p->save(); // not really needed
+        style()->drawPrimitive(QStyle::PE_IndicatorBranch, &opt, p, this);
+        p->restore();
+
+        gap = x + treestep + 1;
+        align |= Qt::AlignLeft;
+    }
+    else
     {
-        QStyleOption opt;
-        int d = htable->rowDepth(row);
-        attr->depth = d; //**
-        int treestep = htable->treestep;
-        if (true /*lines*/)
+        align |= htable->alignment_col[col];
+        if (htable->alignment_col[col] == Qt::AlignRight) // using cache
         {
-            /// int dx = folding ? gadget_space : 6;
-            for (int level = d, prow = row; level >= 0 and prow >= 0;
-                 level--, prow = htable->parentRow(prow))
-            {
-                if (level == d)
-                    continue;
-                int x = gap + level * treestep;
-                QRect branchR(x, 0, treestep, h);
-                opt.rect = branchR;
-
-                if (htable->lastChild(prow) == false)
-                {
-                    if (testFlag)
-                    {
-                        p->drawLine(x + treestep / 2, 0, x + treestep / 2, h);
-                    }
-                    else
-                    {
-                        opt.state = QStyle::State_Sibling; // | vertical
-                                                           // line
-                        style()->drawPrimitive(QStyle::PE_IndicatorBranch, &opt,
-                                               p, this);
-                    }
-                }
-            }
-
-            QRect branchR(gap + d * treestep, 0, treestep, h);
-            opt.rect = branchR;
-            if (testFlag)
-            {
-                int x = gap + d * treestep + treestep / 2;
-
-                p->drawLine(x, h / 2, x + treestep / 2, h / 2);
-                if (!htable->lastChild(row))
-                {
-                    p->drawLine(x, 0, x, h);
-                }
-                else
-                {
-                    p->drawLine(x, 0, x, h / 2);
-                }
-            }
-            else
-            {
-                opt.state = QStyle::State_Item; //?
-                if (!htable->lastChild(row))
-                    opt.state = opt.state | QStyle::State_Sibling; // |
-            }
-            attr->lastchild = htable->lastChild(row);
+            w -= gap;
+            gap = 0;
         }
-
-        if (true /*folding*/)
-        {
-            HeadedTable::NodeState fs = htable->folded(row);
-            attr->folded = fs; //**
-            if (fs != HeadedTable::Leaf)
-            {
-                opt.state = opt.state | QStyle::State_Children;
-                if (fs != HeadedTable::Closed)
-                    opt.state = opt.state | QStyle::State_Open;
-            }
-            p->save(); // temp , save pencolor
-            style()->drawPrimitive(QStyle::PE_IndicatorBranch, &opt, p, this);
-            p->restore();
-        }
-        gap = htable->gadget_space + d * treestep + 1;
     }
 
-    // virtual int Pstable::alignment(int col)
-    if (htable->alignment_col[col] == Qt::AlignRight) // using cache
-    {
-        w -= gap;
-        gap = 0;
-    }
-    // Qt::IncludeTrailingSpaces
-    // p->drawText(gap, 0, w , h, Qt::TextIncludeTrailingSpace |
-    // Qt::IncludeTrailingSpaces | Qt::AlignVCenter |
-    // htable->alignment_col[col],htable->text(row,col));
-    // p->drawText(gap, 0, w , h, Qt::TextIncludeTrailingSpace |
-    // Qt::AlignVCenter
-    // | htable->alignment_col[col],htable->text(row,col));
-    p->drawText(gap, 0, w, h, Qt::AlignVCenter | htable->alignment_col[col],
-                htable->text(row, col));
+    p->drawText(gap, 0, w, h, align, htable->text(row, col));
 
-    htable->overpaintCell(p, row, col, gap);
+    //htable->overpaintCell(p, row, col, gap); // senseless; Pstable::overpaintCell() should be removed
 
     // cache write!
-    // attr->xpos=tmp_x ;
     attr->text = htable->text(row, col);
     attr->xpos = htable->colXPos(col);
     attr->size = tmp_size;
@@ -620,11 +552,16 @@ void TableBody::mousePressEvent(QMouseEvent *e)
         if (e->modifiers() & Qt::ShiftModifier)
         {
             if (row < last_row)
+            {
                 for (int i = row; i < last_row; i++)
                     htable->setSelected(i, true); // virtual
+            }
             else
-                for (int i = last_row; i <= row; i++)
+            {
+                int lastRow = qMax(last_row, 0);
+                for (int i = lastRow; i <= row; i++)
                     htable->setSelected(i, true); // virtual
+            }
         }
         else if (e->modifiers() & Qt::ControlModifier)
         {
@@ -788,30 +725,6 @@ void TableBody::dragSelectTo(int row)
     emit htable->selectionChanged();
 }
 
-// heuristic for determining a good XOR color: This is in general a hard
-// problem but since we know (most of) the background and the foreground,
-// we can try. Note that this function might not return an allocated QColor,
-// so it is only useful for XOR drawing.
-
-QColor TableBody::getXorColor()
-{
-    QColor fg = palette().brush(QPalette::Base).color();
-
-    return fg; /// QColor(0, fg.pixel() ^ backgroundColor().pixel());
-}
-
-void TableBody::drawGhostCol(int x, int w)
-{
-    static QColor xorcol = getXorColor();
-
-    QPainter p(this);
-
-    p.setPen(xorcol);
-    // p.setRasterOp(XorROP);
-    /// p.drawLine(x, 0, x, height());
-    ////p.drawLine(x + w, 0, x + w, height());
-}
-
 // HeadedTable: the actually useable class
 HeadedTable::HeadedTable(QWidget *parent, int opts) : QWidget(parent)
 {
@@ -835,11 +748,10 @@ HeadedTable::HeadedTable(QWidget *parent, int opts) : QWidget(parent)
     nrows = ncols = 0;
 
     head->setFrameShape(QFrame::NoFrame);
-    if (!style()->objectName().contains("oxygen")) // FIXME: remove this later
-        body->setFrameShape(QFrame::NoFrame);
+    body->setFrameShape(QFrame::NoFrame);
 
     QVBoxLayout *vlayout = new QVBoxLayout;
-    vlayout->setSpacing(0); // distance between Widget and Widget
+    vlayout->setSpacing(0);
 
     vlayout->setContentsMargins(0, 0, 0, 0);
 
@@ -847,33 +759,44 @@ HeadedTable::HeadedTable(QWidget *parent, int opts) : QWidget(parent)
     vlayout->addWidget(body);
     setLayout(vlayout);
 
-    // connect keyboard shortcuts
-    QShortcut *c;
-    c = new QShortcut(Qt::CTRL + Qt::Key_A, this, SLOT(selectAll()));
     // synchronize horizontal scrolling of head and body
     connect(body->horizontalScrollBar(), SIGNAL(valueChanged(int)), head,
             SLOT(scrollSideways(int)));
-    fontChange(font()); // *** need for init
-                        //	vp=new VPointer((QWidget *)QObject::parent());
-                        //	vp->hide();		//memory leak!!
+
+    // NOTE: It isn't enough to consider the font here because it may change at startup.
+    // Instead, it will be taken into account when QEvent::FontChange() is sent.
+    fontChange();
 }
 
 HeadedTable::~HeadedTable() {}
 
-// ok : move to Qttableview
-void HeadedTable::fontChange(const QFont& /*oldFont*/)
+bool HeadedTable::event(QEvent *event)
 {
-    int fontHeight = fontMetrics().height() + 1;
-    if (fontHeight % 2 != 0)
-        fontHeight++; // for pretty fold-lines
+    if (event->type() == QEvent::FontChange)
+        fontChange();
+    return QWidget::event(event);
+}
 
-    // let the widget style calculate the height
+// Find the correct heights of header and body cells with the current font
+void HeadedTable::fontChange()
+{
+    // let the widget style calculate the heights
+
     QStyleOptionHeader opt;
+    opt.textAlignment = Qt::AlignVCenter | Qt::AlignLeft;
+    opt.orientation = Qt::Horizontal;
+    opt.fontMetrics = fontMetrics();
     opt.text = "W"; // not really needed because all sane styles consider the font height
     opt.sortIndicator = QStyleOptionHeader::SortDown; // to have space for a sort indicator
     int H = style()->sizeFromContents(QStyle::CT_HeaderSection, &opt, QSize(), head).height();
+    if (H % 2 != 0) H++;
     head->setCellHeight(H);
     head->setMaximumHeight(head->cellHeight());
+
+    QStyleOptionViewItem ivOpt;
+    ivOpt.fontMetrics = fontMetrics();
+    int fontHeight = style()->sizeFromContents(QStyle::CT_ItemViewItem, &ivOpt, QSize(), this).height();
+    if (fontHeight % 2 != 0) fontHeight++;
 
     body->setCellHeight(fontHeight);
     treestep = fontHeight;
@@ -954,13 +877,10 @@ void HeadedTable::clearAllSelections()
     for (int row = 0; row < nrows; row++)
         setSelected(row, false);
     body->view->update();
-    //	update(); // not work why?
 }
 
-// BottleNeck ?
 void HeadedTable::selectOnlyOne(int row)
 {
-    // this apply to the current list only!
     for (int r = 0; r < nrows; r++)
         setSelected(r, r == row);
 }
@@ -969,7 +889,7 @@ void HeadedTable::selectAll()
 {
     for (int r = 0; r < nrows; r++)
         setSelected(r, true);
-    emit selectionChanged(); // notwork?
+    emit selectionChanged();
 }
 
 // default implementation returns a null string (no tip d)
@@ -1100,6 +1020,9 @@ void HeadedTable::updateColWidth(int col)
 
     // get the width of the heading by consulting the widget style
     QStyleOptionHeader opt;
+    opt.orientation = Qt::Horizontal;
+    opt.textAlignment = Qt::AlignVCenter | Qt::AlignLeft;
+    opt.fontMetrics = fontMetrics();
     opt.text = title(col);
     opt.sortIndicator = QStyleOptionHeader::SortDown;
     int hw = style()->sizeFromContents(QStyle::CT_HeaderSection, &opt, QSize(), this).width();
