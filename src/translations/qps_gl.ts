@@ -1131,7 +1131,7 @@ saíu co estado </translation>
     <message>
         <location filename="../proc.cpp" line="1985"/>
         <source>Total CPU time used since start</source>
-        <translation>Tempo total de uso de CPU desde o inicio</translation>
+        <translation>Tempo total de uso de CPU dende o inicio</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1987"/>
@@ -1663,7 +1663,7 @@ saíu co estado </translation>
     <message>
         <location filename="../details.cpp" line="152"/>
         <source>Proto</source>
-        <translation>Proto</translation>
+        <translation>Protocolo</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
