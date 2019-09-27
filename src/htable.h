@@ -263,20 +263,12 @@ class HeadedTable : public QWidget
     int topCell() { return body->topCell(); }
     int lastRowVisible() { return body->lastRowVisible(); }
     void updateCell(int row, int col, bool erase = false);
-    void setAutoUpdate(bool update)
-    {
-        head->setAutoUpdate(update);
-        body->setAutoUpdate(update);
-    }
     void centerVertically(int row) { body->centerVertically(row); }
     void showRange(int from, int to) { body->showRange(from, to); }
     void repaintColumns(int col0, int col1 = -1);
     void setTreeMode(bool tm);
     bool treeMode() { return treemode; }
-    int tableWidth() const
-    {
-        return body->totalWidth() + body->verticalScrollBar()->width();
-    }
+    int tableWidth() const;
 
     void selectOnlyOne(int row);
     int numSelected() { return 0; }
@@ -336,7 +328,7 @@ signals:
     inline int computedWidth(int col);
     int colOffset(int col);
     inline int colXPos(int col);
-    void updateCols(int deltacols, int place, bool update);
+    void updateTable();
 
     int alignment_col[64];
     int headwidth_col[64];

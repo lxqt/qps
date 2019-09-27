@@ -302,9 +302,9 @@ Qps::Qps()
 
     if (!read_settings())
     {
-        // printf("default value\n");
-        set_update_period(1300); // default
-        resize(640, 370);        // default initial size
+        procview->setSortColumn(procview->findCol(F_CPU)); // default sorted column
+        set_update_period(1300); // default update interval
+        resize(700, 400); // default initial size
     }
 
     // apply the kind of sorting that is read by "read_settings()"
