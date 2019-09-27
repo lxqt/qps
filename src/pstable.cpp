@@ -500,8 +500,8 @@ bool Pstable::columnMovable(int col)
 void Pstable::moveCol(int col, int place)
 {
     procview->moveColumn(col, place);
-    set_sortcol(); //???
     procview->fieldArrange();
+    set_sortcol();
     refresh(); // width size changed ,...
     return;
 }
@@ -529,9 +529,7 @@ void Pstable::subtree_folded(int row)
         int r = row + 1;
         while (r < numRows() && procview->linear_procs[r] != nextp)
             r++;
-        //	setAutoUpdate(FALSE);
         showRange(row, r - 1);
-        // setAutoUpdate(TRUE);
     }
     // This is a stopgap solution; it would be better to have htable
     // take care of the hiding of subtrees and repaint only the rows under
@@ -561,8 +559,6 @@ void Pstable::checkTableModel()
         //		printf("Warnning: maybe this is the bug.. wrong!
         //%d
         //%d\n",kgen,procview->current_gen);
-        //		setAutoUpdate(false);  // ********** important for
-        // GUI-thread
         //		HeadedTable::setTreeMode(procview->treeview);
         procview->rebuild();                       // for Table
         setNumRows(procview->linear_procs.size()); // 1.
@@ -570,7 +566,6 @@ void Pstable::checkTableModel()
         //=%d\n",treemode,procview->treeview);
         setNumCols(procview->cats.size()); // 2. resetWidths()
         kgen = procview->current_gen;
-        //		setAutoUpdate(true);
     }
 }
 

@@ -61,7 +61,6 @@ class QtTableView : public QAbstractScrollArea
     virtual void eraseRight(QPainter *, QRect &r) { return; }
     virtual void checkProfile(){};
     QSize tmp_size; // testing.
-    int tmp_x;
     bool test;
     QColor backColor;
 
@@ -84,7 +83,7 @@ class QtTableView : public QAbstractScrollArea
     int yOffset() const;
     virtual void setXOffset(int);
     virtual void setYOffset(int);
-    virtual void setOffset(int x, int y, bool updateScrBars = true);
+    virtual void setOffset(int x, int y, bool updateScrBars = true, bool scroll = true);
     virtual void scrollTrigger(int x, int y){}; // tmp
 
     virtual int cellWidth(int col);
@@ -99,8 +98,6 @@ class QtTableView : public QAbstractScrollArea
     //    bool	testTableFlags( uint f ) const;
     virtual void setTableFlags(uint f);
     void clearTableFlags(uint f = ~0);
-
-    void setAutoUpdate(bool);
 
     void repaintCell(int row, int column, bool usecache = false);
 
@@ -147,7 +144,7 @@ class QtTableView : public QAbstractScrollArea
     int viewHeight() const;
 
     void updateScrollBars();
-    void updateTableSize();
+    void updateOffsets();
 
     QRect cellUpdateR;
 
@@ -176,8 +173,6 @@ class QtTableView : public QAbstractScrollArea
     uint coveringCornerSquare : 1;
     uint sbDirty : 8;
     uint inSbUpdate : 1;
-
-    bool enablePaint;
 
     uint tFlags;
 };
@@ -228,7 +223,5 @@ inline uint QtTableView::tableFlags() const { return tFlags; }
 // != 0; }
 
 inline QRect QtTableView::cellUpdateRect() const { return cellUpdateR; }
-
-inline void QtTableView::updateScrollBars() { updateScrollBars(0); }
 
 #endif // QTTABLEVIEW_H

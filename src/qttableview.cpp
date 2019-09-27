@@ -65,7 +65,6 @@ QtTableView::QtTableView(QWidget *parent, const char *name)
     inSbUpdate = false;
     flag_view = 0;
     view = viewport();
-    enablePaint = true;
     test = false;
 
     QScrollBar *sb = verticalScrollBar();
@@ -92,7 +91,6 @@ QtTableView::~QtTableView()
 
 void QtTableView::setNumRows(int rows)
 {
-    ///	view->setMaximumHeight(rows*cellH);
     if (rows < 0)
     {
         qWarning("QtTableView::setNumRows: (%s) Negative argument %d.",
@@ -102,13 +100,8 @@ void QtTableView::setNumRows(int rows)
     if (nRows == rows)
         return;
 
-    if (isVisible())
-    {
-        int oldLastVisible = lastRowVisible();
-        int oldTopCell = topCell();
-    }
     nRows = rows;
-    updateScrollBars(verRange);
+    //updateScrollBars(verRange); // not needed; see HeadedTable::setNumCols()
 }
 
 void QtTableView::setNumCols(int cols)
@@ -121,9 +114,9 @@ void QtTableView::setNumCols(int cols)
     }
     if (nCols == cols)
         return;
-    int oldCols = nCols;
+
     nCols = cols;
-    updateScrollBars(horRange); // int maxCol = lastColVisible();
+    //updateScrollBars(horRange); // not needed; see HeadedTable::setNumCols()
 }
 
 /*
@@ -249,12 +242,14 @@ void QtTableView::setYOffset(int y) { setOffset(xOffset(), y, true); }
   \sa xOffset(), yOffset(), setXOffset(), setYOffset(), setTopLeftCell()
 */
 
-void QtTableView::setOffset(int x, int y, bool updateScrBars)
+void QtTableView::setOffset(int x, int y, bool updateScrBars, bool scroll)
 {
     if ((!testTableFlags(Tbl_snapToHGrid) || xCellDelta == 0) &&
         (!testTableFlags(Tbl_snapToVGrid) || yCellDelta == 0) &&
         (x == xOffs && y == yOffs))
+    {
         return;
+    }
 
     if (x < 0)
         x = 0;
@@ -284,7 +279,7 @@ void QtTableView::setOffset(int x, int y, bool updateScrBars)
             xn += xcd;
             col++;
         }
-        xCellOffs = col; //!!!
+        xCellOffs = col;
         if (testTableFlags(Tbl_snapToHGrid))
         {
             xCellDelta = 0;
@@ -299,7 +294,7 @@ void QtTableView::setOffset(int x, int y, bool updateScrBars)
     { // same cellHegiht
         if (y > maxYOffset())
             y = maxYOffset();
-        yCellOffs = y / cellH; //********
+        yCellOffs = y / cellH;
         if (!testTableFlags(Tbl_snapToVGrid))
         {
             yCellDelta = (short)(y % cellH);
@@ -310,18 +305,13 @@ void QtTableView::setOffset(int x, int y, bool updateScrBars)
             yCellDelta = 0;
         }
     }
-    else
-    {
-    }
-    //	printf("y=%d yOffs=%d ", y,yOffs);
+
     int dx = (xOffs - x);
-    int dy = (yOffs - y); //
+    int dy = (yOffs - y);
     xOffs = x;
     yOffs = y;
-    if (updatesEnabled() && isVisible())
+    if (scroll && updatesEnabled() && isVisible())
     {
-        // *** scroll() call update( desposal region ) !!
-        // printf("scroll: xpixel=%d , ypixel=%d \n",xPixels,yPixels);
         scrollTrigger(dx, dy);
         view->scroll(dx, dy);
     }
@@ -351,7 +341,7 @@ void QtTableView::scrollContentsBy(int dx, int dy)
   \sa setCellWidth(), cellHeight()
   Returns the width of column \a col in pixels.
 
-  setCellWidth(), cellHeight(), totalWidth(), updateTableSize()
+  setCellWidth(), cellHeight(), totalWidth(), updateOffsets()
 */
 
 // virtual
@@ -399,7 +389,7 @@ void QtTableView::setCellWidth(int cellWidth)
 
   This function is virtual and must be reimplemented by subclasses that
   have variable cell heights.  Note that if the total table height
-  changes, updateTableSize() must be called.
+  changes, updateOffsets() must be called.
 
   \sa setCellHeight(), cellWidth(), totalHeight()
 */
@@ -551,7 +541,6 @@ void QtTableView::setTableFlags(uint f)
     tFlags |= f;
 
     bool updateOn = updatesEnabled();
-    setAutoUpdate(false);
 
     uint repaintMask = Tbl_cutCellsV | Tbl_cutCellsH;
 
@@ -591,7 +580,6 @@ void QtTableView::setTableFlags(uint f)
 
     if (updateOn)
     {
-        setAutoUpdate(true);
         updateScrollBars();
         if (isVisible() && (f & repaintMask))
             update();
@@ -618,7 +606,6 @@ void QtTableView::clearTableFlags(uint f)
     tFlags &= ~f;
 
     bool updateOn = updatesEnabled();
-    setAutoUpdate(false);
 
     uint repaintMask = Tbl_cutCellsV | Tbl_cutCellsH;
 
@@ -661,38 +648,9 @@ void QtTableView::clearTableFlags(uint f)
     }
     if (updateOn)
     {
-        setAutoUpdate(true);
         updateScrollBars(); // returns immediately if nothing to do
         if (isVisible() && (f & repaintMask))
             update(); // repaint();
-    }
-}
-
-/*
-  Sets the auto-update option of the table view to  enable.
-
-  If enable is true (this is the default), the view updates itself
-  automatically whenever it has changed in some way (for example, when a
-  setTableFlags() flag\endlink is changed).
-*/
-
-void QtTableView::setAutoUpdate(bool enable)
-{
-    enablePaint = enable;
-    // updatesEnabled= enable ;
-
-    // setAttribute(Qt::WA_ForceUpdatesDisabled, !enable);
-    ////    setAttribute(Qt::WA_UpdatesDisabled, !enable);
-    //     d->setUpdatesEnabled_helper(enable);
-
-    return;
-
-    if (updatesEnabled() == enable)
-        return;
-    setUpdatesEnabled(enable); // update() call
-    if (enable)
-    {
-        //  updateScrollBars();
     }
 }
 
@@ -969,34 +927,29 @@ void QtTableView::paintEvent(QPaintEvent *e)
     int col;
     int yPos = yStart;
     int xPos = maxX + 1; // in case the while() is empty
-    int nextX;
-    int nextY;
 
     p.setClipRect(viewR); // enable, font not clip (less Qt-4.3.x)
 
     while (yPos <= maxY && row < nRows)
     { // row=...5,6,7....
-        nextY = yPos + cellHeight();
         col = firstCol;
         xPos = xStart;
         while (xPos < maxX && col < nCols)
         {
             QRect cell;
             int width = cellWidth(col);
-            nextX = xPos + width;
             cell.setRect(xPos, yPos, width, cellH);
             tmp_size = viewR.intersected(cell).size();
-            tmp_x = xPos;
-            {
-                p.translate(xPos, yPos); // (0,0) 	// for subclass
-                paintCell(&p, row, col);
-                p.translate(-xPos, -yPos); // p.translate(0,0);
-            }
+
+            p.translate(xPos, yPos); // (0,0) 	// for subclass
+            paintCell(&p, row, col);
+            p.translate(-xPos, -yPos); // p.translate(0,0);
+
             col++;
-            xPos = nextX;
+            xPos += width;
         }
         row++;
-        yPos = nextY;
+        yPos += cellHeight();
     }
 
     // while painting we have to erase any areas in the view that
@@ -1101,11 +1054,10 @@ void QtTableView::repaintChanged() // only fullpainting
     }
 }
 
-void QtTableView::resizeEvent(QResizeEvent* /*e*/)
+void QtTableView::resizeEvent(QResizeEvent *e)
 {
-    // QAbstractScrollArea::resizeEvent(e);
-    updateScrollBars(horValue | verValue | horSteps | horRange | verSteps |
-                     verRange);
+    QAbstractScrollArea::resizeEvent(e);
+    updateScrollBars();
 }
 
 // BOTTLENECK?
@@ -1404,15 +1356,10 @@ int QtTableView::viewHeight() const
     return maxViewY(); /// - minViewY() + 1;
 }
 
-/*
-  \fn void QtTableView::updateScrollBars()
-  Updates the scroll bars' contents and presence to match the table's
-  state.  Generally, you should not need to call this.
-  \sa setTableFlags()
-  Updates the scroll bars' contents and presence to match the table's
-  state \c or \a f.
-  \sa setTableFlags()
-*/
+void QtTableView::updateScrollBars()
+{
+    updateScrollBars(horValue | verValue | horSteps | horRange | verSteps | verRange);
+}
 
 void QtTableView::updateScrollBars(uint f)
 {
@@ -1478,23 +1425,17 @@ void QtTableView::updateScrollBars(uint f)
 }
 
 /*
-  Updates the scroll bars and internal state.
+  Updates the internal state.
 
   Call this function when the table view's total size is changed;
   typically because the result of cellHeight() or cellWidth() have changed.
   This function does not repaint the widget.
 */
-//->  updateViewSize();
-void QtTableView::updateTableSize()
+void QtTableView::updateOffsets()
 {
-    updateScrollBars(horSteps | horRange | verSteps | verRange);
-    return;
-    bool updateOn = updatesEnabled();
-    setAutoUpdate(false);
     int xofs = xOffset();
-    xOffs++; // so that setOffset will not return immediately
-    setOffset(xofs, yOffset(), false); // to calculate internal state correctly
-    setAutoUpdate(updateOn);
+    xOffs++; // for setOffset() not to return immediately
+    setOffset(xofs, yOffset(), false, false); // to calculate internal state correctly
 }
 
 /*

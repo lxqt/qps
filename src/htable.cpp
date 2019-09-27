@@ -92,6 +92,7 @@ void TableHead::paintCell(QPainter *p, int /*row*/, int col)
     opt.rect = rectR;
     opt.text = htable->title(col);
     opt.state = QStyle::State_Enabled | QStyle::State_Horizontal;
+    opt.section = col; // only KDE styles need this to draw separators
     opt.position = numCols() == 1 ? QStyleOptionHeader::OnlyOneSection
                                   : col == 0 ? QStyleOptionHeader::Beginning
                                              : col == numCols() - 1 ? QStyleOptionHeader::End
@@ -393,7 +394,7 @@ void TableBody::paintCell(QPainter *p, int row, int col)
     // gridline (QPalette::Mid isn't good enough here)
     p->save();
     p->setOpacity(0.1);
-    p->drawLine(0, h - 1, w, h - 1);
+    p->drawLine(0, h - 1, w -1, h - 1);
     p->restore();
 
     int align = Qt::AlignVCenter;
@@ -865,6 +866,14 @@ void HeadedTable::setTreeMode(bool tm)
     body->clearCache();
 }
 
+int HeadedTable::tableWidth() const
+{
+    QScrollBar *vs = body->verticalScrollBar();
+    bool hidden = vs->minimum() == vs->maximum() // instead of !isVisible(), if update is paused
+                  || vs->style()->styleHint(QStyle::SH_ScrollBar_Transient, nullptr, vs);
+    return body->totalWidth() + (hidden ? 0 : vs->style()->pixelMetric(QStyle::PM_ScrollBarExtent));
+}
+
 // update table Head !!
 void HeadedTable::setSortedCol(int col)
 {
@@ -896,11 +905,17 @@ void HeadedTable::selectAll()
 QString HeadedTable::tipText(int) { return ""; }
 char *HeadedTable::total_selectedRow(int col) { return 0; }
 
+// should be called before setNumCols()
 void HeadedTable::setNumRows(int rows)
 {
     nrows = rows;
     head->setNumRows(1);
     body->setNumRows(rows);
+
+    // if update is paused or we don't want to wait for it;
+    // to be used to spread the last column in updateColWidth()
+    // (updateTable will be called in setNumCols)
+    body->updateScrollBars();
 }
 
 void TableCache::setRow(int row)
@@ -973,10 +988,9 @@ void TableBody::checkProfile()
     tablecache.setRow(maxViewRow);
 }
 
+// should be called after setNumRows()
 void HeadedTable::setNumCols(int cols)
 {
-    // printf("cols=%d\n",cols);
-
     ncols = cols;
     // resetWidths();
     for (int i = 0; i < cols; i++)
@@ -984,16 +998,18 @@ void HeadedTable::setNumCols(int cols)
         alignment_col[i] = alignment(i);
         updateColWidth(i);
     }
-    //	printf("ncols=%d\n",ncols);
     head->setNumCols(ncols);
     body->setNumCols(ncols);
+
+    // WARNING: The scrollbars, table viewport and offsets should be
+    // updated here for the table and header widths to be correct.
+    updateTable();
 }
 
 void HeadedTable::updateColWidth(int col)
 {
     int w = 0;
     int sw = 0;
-    int i = 0;
     int rows = numRows();
     bool treecol = (treemode && col == 0);
 
@@ -1002,7 +1018,7 @@ void HeadedTable::updateColWidth(int col)
         if (w < 0)
             w = -w; // trick.
 
-        for (i = 0; i < rows; i++)
+        for (int i = 0; i < rows; i++)
         {
             sw = fontMetrics().width(text(i, col)) + 10;
 
@@ -1018,7 +1034,7 @@ void HeadedTable::updateColWidth(int col)
         }
     }
 
-    // get the width of the heading by consulting the widget style
+    // get the header width by consulting the widget style
     QStyleOptionHeader opt;
     opt.orientation = Qt::Horizontal;
     opt.textAlignment = Qt::AlignVCenter | Qt::AlignLeft;
@@ -1030,7 +1046,28 @@ void HeadedTable::updateColWidth(int col)
     if (hw > w)
         w = hw;
 
+    // to have an elegant table, spread the last column if its contents are left aligned
+    if (col == ncols - 1 && alignment_col[col] == Qt::AlignLeft)
+    {
+        int prevWidths = 0;
+        for (int i = 0 ; i < col; i++)
+            prevWidths += max_widths[i];
+        QScrollBar *vs = body->verticalScrollBar();
+        bool hidden = vs->minimum() == vs->maximum() // instead of !isVisible(), if update is paused
+                      || vs->style()->styleHint(QStyle::SH_ScrollBar_Transient, nullptr, vs);
+        int scrollWidth = hidden ? 0 : vs->style()->pixelMetric(QStyle::PM_ScrollBarExtent);
+        w = qMax(w, width() - scrollWidth - prevWidths);
+    }
+
     max_widths[col] = w;
+}
+
+void HeadedTable::updateTable()
+{
+    body->updateOffsets();
+    head->updateOffsets();
+    body->updateScrollBars();
+    body->viewport()->update();
 }
 
 void HeadedTable::resetWidths()
@@ -1097,6 +1134,11 @@ void HeadedTable::resizeEvent(QResizeEvent *e)
     // DEBUG("resizeEvent() HeadedTable %d\n",head->cellHeight());
     ////	head->repaintRow(0);
     QWidget::resizeEvent(e);
+
+    // update the width of the last column
+    updateColWidth(numCols() - 1);
+    updateTable();
+
     head->clearCache();
     body->clearCache();
 }

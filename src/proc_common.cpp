@@ -523,17 +523,13 @@ void Procview::set_fields_list(int fields[])
     cats.clear();
     for (int i = 0; fields[i] != F_END; i++)
     {
-        if (fields[i] == F_CPUNUM and Proc::num_cpus < 2)
-            continue; // not correctly work
+        if (fields[i] == F_CPUNUM && Proc::num_cpus < 2)
+            continue; // does not work correctly
 
-        Category *c = categories.value(fields[i], NULL);
+        Category *c = categories.value(fields[i], nullptr);
         if (c)
-        {
-            // printf("name=%s\n",c->name);
             cats.append(c);
-        }
     }
-    return;
 }
 
 // return the column number of a field, or -1 if not displayed
@@ -668,7 +664,7 @@ void Procview::moveColumn(int col, int place)
     if (place < col)
         ++col;
     else// if (place > col)
-        place = qMin(place + 1, s - 1);
+        place = qMin(place + 1, s);
     cats.insert(place, cat);
     cats.remove(col);
 }
