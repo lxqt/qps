@@ -302,7 +302,7 @@ Qps::Qps()
 
     if (!read_settings())
     {
-        procview->setSortColumn(procview->findCol(F_CPU)); // default sorted column
+        procview->setSortColumn(qMax(procview->findCol(F_CPU), 0)); // default sorted column
         set_update_period(1300); // default update interval
         resize(700, 400); // default initial size
     }
@@ -914,14 +914,14 @@ void Qps::field_removed(int index)
 
     int sc = pstable->sortedCol();
     if (context_col == sc)
-    { // the sorted column is removed
-        pstable->setSortedCol(-1);
-        procview->setSortColumn(-1);
+    { // the sorted column is removed; sort the first column
+        pstable->setSortedCol(0);
+        procview->setSortColumn(0, true); // don't change sort order
     }
     else if (context_col < sc)
     {
         pstable->setSortedCol(sc - 1);
-        procview->setSortColumn(sc - 1, true); // don't change sort order
+        procview->setSortColumn(sc - 1, true);
     }
 
     pstable->refresh();
@@ -1596,8 +1596,7 @@ bool Qps::read_settings()
         procview->addField(str.toUtf8().data());
     }
 
-    if (sl.size() ==
-        0) // *** for safety , if there is no field. this happen when no qpsrc
+    if (procview->cats.isEmpty()) // happens without config file or with a corrupt one
     {
         procview->viewfields = Procview::USER;
         procview->set_fields();
@@ -1609,8 +1608,9 @@ bool Qps::read_settings()
 
     int fid = procview->field_id_by_name( set.value("sort/field").toString() ); // procview->sortcat->name
     int col = procview->findCol(fid);
-    if (col >= 0)
-        procview->setSortColumn(col); // Pstable::refresh()
+    if (col < 0) // don't allow an unsorted table; sort the CPU column by default if it exists
+        col = qMax(procview->findCol(F_CPU), 0);
+    procview->setSortColumn(col); // Pstable::refresh()
     // pstable -> procview
     procview->reversed = set.value("sort/reversed").toBool(); // tmp
 
@@ -1917,6 +1917,7 @@ void Qps::about()
 {
     QDialog *diag = new QDialog(this);
     diag->setWindowTitle( tr( "About" ) );
+    diag->setMinimumWidth(400);
     QVBoxLayout *lay = new QVBoxLayout(diag);
 
     QLabel *label = new QLabel(diag);
@@ -1931,6 +1932,8 @@ void Qps::about()
     lay->addWidget(label);
     lay->addWidget(browser);
 
+    QString title( tr( "<center><h2> Qps %1</center>").arg( QPS_VERSION ) );
+    label->setText( title );
     QString str( tr( "<h2> Qps %1 - A Visual Process Manager </h2> %2 using Qt library %3"
                      "<br><br>"
                      "<b>Source: </b><a href=\"https://github.com/lxqt/qps\">https://github.com/lxqt/qps/</a>"
@@ -1951,7 +1954,6 @@ void Qps::about()
 #endif // SOLARIS
                      )
                  .arg( qVersion() ) );
-    label->setText( str );
     str.append( tr( "<b>Original Qps by</b><br>"
                     "Mattias Engdegård (f91-men@nada.kth.se)<br><br>"
                     "<b>Contributors</b><br>"
