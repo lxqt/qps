@@ -332,7 +332,7 @@ avsluttet med status </translation>
     <message>
         <location filename="../watchdog.ui" line="193"/>
         <source>Enable</source>
-        <translation>Aktiver</translation>
+        <translation>Skru på</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="219"/>
@@ -529,7 +529,7 @@ avsluttet med status </translation>
     <message>
         <location filename="../listmodel.cpp" line="68"/>
         <source>Enable</source>
-        <translation>Aktiver</translation>
+        <translation>Skru på</translation>
     </message>
 </context>
 <context>
@@ -658,7 +658,7 @@ avsluttet med status </translation>
     <message>
         <location filename="../prefs.cpp" line="249"/>
         <source>default</source>
-        <translation>forvalgt</translation>
+        <translation>standard</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="250"/>
