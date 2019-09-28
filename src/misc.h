@@ -184,6 +184,7 @@ class SearchBox : public QLineEdit
     void event_cursor_moved(QMouseEvent *e);
     void keyPressEvent(QKeyEvent *e);
   protected slots:
+    void onClearButtonClicked();
     void event_xbutton_clicked();
 };
 

@@ -765,11 +765,20 @@ void XButton::paintEvent(QPaintEvent *event)
 
 SearchBox::SearchBox(QWidget *parent) : QLineEdit(parent)
 {
-    setToolTip( tr( "PID,COMMAND,USER..." ) );
-    //setMaximumWidth(300);
+    setToolTip( tr( "PID, COMMAND, USER..." ) );
+    setPlaceholderText( tr("Filter"));
+    setClearButtonEnabled(true);
     setMinimumWidth(100);
 
-    setFocus(Qt::ActiveWindowFocusReason); // good
+    setFocus(Qt::ActiveWindowFocusReason);
+
+    QList<QToolButton*> list = findChildren<QToolButton*>();
+    if (!list.isEmpty())
+    {
+        QToolButton *clearButton = list.at(0);
+        if (clearButton)
+            connect (clearButton, &QAbstractButton::clicked, this, &SearchBox::onClearButtonClicked);
+    }
 }
 
 void SearchBox::event_cursor_moved(QMouseEvent *e) { move(e->x(), e->y()); }
