@@ -2064,6 +2064,13 @@ void SearchBox::keyPressEvent(QKeyEvent *e)
     qps->pstable->refresh(); /// qps->refresh(); // better ?
 }
 
+void SearchBox::onClearButtonClicked()
+{
+    qps->pstable->clearAllSelections();
+    qps->procview->filterstr = text();
+    qps->pstable->refresh();
+}
+
 void STATUSBAR_COUNT_UPDATE() {}
 
 void STATUSBAR_SETCOUNT(int n)
