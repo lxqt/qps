@@ -1833,6 +1833,7 @@ int main(int argc, char **argv, char **envp)
     check_qps_running();        // check already qps running.  in misc.cpp
 
     QpsApp app(argc, argv);
+    app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
 
     init_misc(0); // init misc, some test code runs ...
     qps = new Qps();
