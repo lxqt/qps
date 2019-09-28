@@ -726,15 +726,10 @@ void Procview::setTreeMode(bool b)
 
 void Procview::setSortColumn(int col, bool keepSortOrder)
 {
-    // qDebug("xxx error? col>=cats.size() %d",col);
-    if (col >= cats.size())
+    if (col < 0 || col >= cats.size()) // restore defaults
     {
-        qDebug("hmmm error? col>=cats.size() %d", col);
-        return;
-    }
-
-    if (col < 0)
-    { // restore defaults
+        if (col >= 0)
+            qDebug("hmmm error? col>=cats.size() %d", col);
         sort_column = -1;
         sortcat = nullptr;
         reversed = false;
