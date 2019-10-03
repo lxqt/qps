@@ -301,7 +301,6 @@ signals:
     // colWidth returns width in digit units; negative means variable width.
     virtual int colWidth(int col) = 0; // head_width
     virtual int alignment(int col) { return 0; }
-    virtual int sizeHintForColumn(int col) const { return -1; }
     virtual void paintEvent(QPaintEvent *);
     virtual void hideEvent(QHideEvent *event);
     virtual void showEvent(QShowEvent *event);
