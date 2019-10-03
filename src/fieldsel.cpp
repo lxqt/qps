@@ -44,6 +44,13 @@ FieldSelect::FieldSelect(Procview *pv)
 
     QList<int> keys = pv->categories.keys();
 
+    // sort the list alphabetically
+    std::sort(keys.begin(), keys.end(), [pv](int a, int b) {
+        if (pv->categories.contains(a) && pv->categories.contains(b))
+            return QString::localeAwareCompare(pv->categories[a]->name, pv->categories[b]->name) < 0;
+        return false;
+    });
+
     for (int i = 0; i < nbuttons; i++)
     {
         Category *cat = pv->categories[keys.takeFirst()]; // fieldlist

@@ -1144,6 +1144,14 @@ void Qps::context_heading_menu(QPoint p, int col)
     if (init == 0)
     {
 	    QList<int> keys = procview->categories.keys();
+
+	    // sort the list alphabetically
+        std::sort(keys.begin(), keys.end(), [this](int a, int b) {
+            if (procview->categories.contains(a) && procview->categories.contains(b))
+                return QString::localeAwareCompare(procview->categories[a]->name, procview->categories[b]->name) < 0;
+            return false;
+        });
+
         for (int i = 0; i < ncats; i++)
         {
             Category *cat = procview->categories[keys.takeFirst()];
