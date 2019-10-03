@@ -67,7 +67,6 @@ class Pstable : public HeadedTable
     virtual int parentRow(int row);
     virtual bool lastChild(int row);
     virtual char *total_selectedRow(int col);
-    virtual int sizeHintForColumn(int col) const;
     virtual bool columnMovable(int col);
 
     virtual void overpaintCell(QPainter *p, int row, int col, int xpos);

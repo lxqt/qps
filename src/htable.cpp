@@ -1013,25 +1013,22 @@ void HeadedTable::updateColWidth(int col)
     int rows = numRows();
     bool treecol = (treemode && col == 0);
 
-    if ((w = sizeHintForColumn(col)) < 0) // width
+    for (int i = 0; i < rows; i++)
     {
-        if (w < 0)
-            w = -w; // trick.
-
-        for (int i = 0; i < rows; i++)
-        {
-            sw = fontMetrics().width(text(i, col)) + 10;
-
-            if (treecol)
-                sw += treestep * rowDepth(i);
-            if (sw > w)
-                w = sw;
-        }
-
+#if (QT_VERSION >= QT_VERSION_CHECK(5,11,0))
+        sw = fontMetrics().horizontalAdvance(text(i, col)) + 10;
+#else
+        sw = fontMetrics().width(text(i, col)) + 10;
+#endif
         if (treecol)
-        {
-            w += gadget_space;
-        }
+            sw += treestep * rowDepth(i);
+        if (sw > w)
+            w = sw;
+    }
+
+    if (treecol)
+    {
+        w += gadget_space;
     }
 
     // get the header width by consulting the widget style

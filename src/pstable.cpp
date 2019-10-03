@@ -69,43 +69,6 @@ void Pstable::set_sortcol()
     setSortedCol(-1);
 }
 
-// for Optimization
-int Pstable::sizeHintForColumn(int col) const
-{
-    // int aw=fontMetrics().averageCharWidth();
-    int aw = fontMetrics().width("0");
-    int cat_idx = procview->cats[col]->index;
-    // if(col==0) printf("col.idx=%d
-    // %s\n",cat_idx,procview->cats[col]->name);
-    switch (cat_idx)
-    {
-    // 	only COMMON Field
-    //		case F_PID :
-    case F_RSS:
-    case F_SIZE:
-    case F_TTY:
-        return aw * 6;
-    case F_MEM:
-    case F_START:
-    case F_CPU: // PCPU
-        return aw * 6 + 2;
-    case F_TIME:
-        return aw * 5;
-    case F_WCPU:
-    case F_NICE:
-        return aw * 5;
-    case F_CMD:
-        return -(aw * 20);
-
-    case F_USER:
-    //		case F_USER : return aw*10;
-    case F_CMDLINE:
-    default:
-        return -1;
-    }
-    return -1;
-}
-
 // inner
 QString Pstable::title(int col)
 {
