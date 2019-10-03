@@ -78,6 +78,7 @@ TableHead::TableHead(HeadedTable *parent)
 
     floatHead = new FloatingHead(parent); // tiny memory leak! don't care.
     floatHead->hide();
+    setLayoutDirection(Qt::LeftToRight); // FIXME: A real fix for RTL is needed!
 }
 
 void TableHead::paintCell(QPainter *p, int /*row*/, int col)
@@ -112,7 +113,7 @@ void TableHead::eraseRight(QPainter* /*p*/, QRect& /*r*/)
 }
 
 // virtual !
-int TableHead::cellWidth(int col) { return htable->max_widths[col]; }
+int TableHead::cellWidth(int col) const { return htable->max_widths[col]; }
 
 //
 void TableHead::scrollSideways(int val) { setXOffset(val); }
@@ -217,6 +218,7 @@ TableBody::TableBody(HeadedTable *parent) : QtTableView(parent), htable(parent)
     autoscrolling = false;
     gadget_click = false;
     setMouseTracking(true);
+    setLayoutDirection(Qt::LeftToRight); // FIXME: A real fix for RTL is needed!
 }
 
 // virtual from QtTableView
@@ -456,11 +458,21 @@ void TableBody::paintCell(QPainter *p, int row, int col)
         p->restore();
 
         gap = x + treestep + 1;
-        align |= Qt::AlignLeft;
+        // FIXME: A real fix for RTL is needed!
+        align |= (htable->layoutDirection() == Qt::RightToLeft ? Qt::AlignRight : Qt::AlignLeft);
     }
     else
     {
-        align |= htable->alignment_col[col];
+        // FIXME: A real fix for RTL is needed!
+        if (htable->layoutDirection() == Qt::RightToLeft)
+        { // reverse the alignment with RTL
+            if (htable->alignment_col[col] == Qt::AlignRight)
+              align |= Qt::AlignLeft;
+            else
+              align |= Qt::AlignRight;
+        }
+        else
+            align |= htable->alignment_col[col];
         if (htable->alignment_col[col] == Qt::AlignRight) // using cache
         {
             w -= gap;
@@ -503,7 +515,7 @@ void TableBody::showRange(int from, int to)
 // virtual
 // called by
 //	1.
-int TableBody::cellWidth(int col) { return htable->max_widths[col]; }
+int TableBody::cellWidth(int col) const { return htable->max_widths[col]; }
 
 // **** fix !!
 void TableBody::updateRow(int row)

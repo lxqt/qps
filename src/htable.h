@@ -154,7 +154,7 @@ class TableHead : public QtTableView
 
   protected:
     virtual void paintCell(QPainter *p, int row, int col);
-    virtual int cellWidth(int col);
+    virtual int cellWidth(int col) const;
     virtual void mousePressEvent(QMouseEvent *e);
     virtual void mouseReleaseEvent(QMouseEvent *e);
     virtual void mouseMoveEvent(QMouseEvent *e);
@@ -197,7 +197,7 @@ class TableBody : public QtTableView
     virtual void scrollTrigger(int x, int y); // tmp
 
     virtual void paintCell(QPainter *p, int row, int col);
-    virtual int cellWidth(int col);
+    virtual int cellWidth(int col) const;
     void mousePressEvent(QMouseEvent *e);
     void mouseDoubleClickEvent(QMouseEvent *e);
     void mouseMoveEvent(QMouseEvent *e);

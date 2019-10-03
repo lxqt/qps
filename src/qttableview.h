@@ -57,8 +57,15 @@ class QtTableView : public QAbstractScrollArea
     void coverCornerSquare(bool);
     void clearCache() {}
     void repaintChanged();
-    virtual bool isCellChanged(int r, int c) { return true; };
-    virtual void eraseRight(QPainter *, QRect &r) { return; }
+    virtual bool isCellChanged(int r, int c) {
+        Q_UNUSED(r);
+        Q_UNUSED(c);
+        return true;
+    };
+    virtual void eraseRight(QPainter *, QRect &r) {
+        Q_UNUSED(r);
+        return;
+    }
     virtual void checkProfile(){};
     QSize tmp_size; // testing.
     bool test;
@@ -84,10 +91,13 @@ class QtTableView : public QAbstractScrollArea
     virtual void setXOffset(int);
     virtual void setYOffset(int);
     virtual void setOffset(int x, int y, bool updateScrBars = true, bool scroll = true);
-    virtual void scrollTrigger(int x, int y){}; // tmp
+    virtual void scrollTrigger(int x, int y) {
+        Q_UNUSED(x);
+        Q_UNUSED(y);
+    }; // tmp
 
-    virtual int cellWidth(int col);
-    int cellHeight(int row);
+    virtual int cellWidth(int col) const;
+    int cellHeight(int row) const;
     virtual void setCellWidth(int);
     virtual void setCellHeight(int);
 
@@ -122,7 +132,6 @@ class QtTableView : public QAbstractScrollArea
     virtual void paintCell(QPainter *, int row, int col) = 0;
     virtual void paintEvent(QPaintEvent *);
     virtual void resizeEvent(QResizeEvent *);
-    virtual void scrollContentsBy(int dx, int dy);
 
     int findRow(int yPos) const;
     int findCol(int xPos) const;
