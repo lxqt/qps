@@ -135,28 +135,15 @@ Cat_memory::Cat_memory(const QString &heading, const QString &explain, int w,
 QString Cat_memory::string(Procinfo *p)
 {
     QString s;
-    char buff[128];
-
-    long sizeK, sizeM;
-    sizeK = p->*uintl_member;
-
-    sizeM = sizeK / 1024;
-    /*	if ( sizeM > 1024 )
-            {
-                    sprintf(buff,"%dM",sizeM/1024);
-            }
-            else */
-    if (sizeM > 0)
-    {
-        sprintf(buff, "%ldM", sizeM);
-    }
+    long sizeK = p->*uintl_member;
+    double sizeM = static_cast<double>(sizeK) / 1024;
+    if (sizeM > 1.0)
+        s = QString::number(sizeM, 'f', 1) + QStringLiteral("M");
     else
-        sprintf(buff, "%ldK", sizeK);
+        s = QString::number(sizeK) + QStringLiteral("K");
 
     if (sizeK == 0)
-        s = "0";
-    else
-        s = buff;
+        s = QStringLiteral("0");
     return s;
 }
 
