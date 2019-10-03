@@ -47,7 +47,7 @@ enum ScrollBarDirtyFlags
     horMask = 0xF0
 };
 
-QtTableView::QtTableView(QWidget *parent, const char *name)
+QtTableView::QtTableView(QWidget *parent, const char* /*name*/)
     : QAbstractScrollArea(parent)
 {
     nRows = nCols = 0; // zero rows/cols
@@ -319,11 +319,6 @@ void QtTableView::setOffset(int x, int y, bool updateScrBars, bool scroll)
         updateScrollBars(verValue | horValue);
 }
 
-void QtTableView::scrollContentsBy(int dx, int dy)
-{
-    // view->update() //default
-    // printf("scroll: dx=%d , dy=%d \n",dx,dy);
-}
 /*
   Moves the visible area of the table right by \a xPixels and
   down by \a yPixels pixels.  Both may be negative.
@@ -345,7 +340,7 @@ void QtTableView::scrollContentsBy(int dx, int dy)
 */
 
 // virtual
-int QtTableView::cellWidth(int col) { return cellW; }
+int QtTableView::cellWidth(int /*col*/) const { return cellW; }
 
 /*
   Sets the width in pixels of the table cells to \a cellWidth.
@@ -394,7 +389,7 @@ void QtTableView::setCellWidth(int cellWidth)
   \sa setCellHeight(), cellWidth(), totalHeight()
 */
 
-int QtTableView::cellHeight(int) { return cellH; }
+int QtTableView::cellHeight(int) const { return cellH; }
 
 /*
   Sets the height in pixels of the table cells to \a cellHeight.
@@ -796,8 +791,8 @@ void QtTableView::horSbSliding(int val)
 
 void QtTableView::horSbSlidingDone()
 {
-    if (testTableFlags(Tbl_snapToHGrid) && testTableFlags(Tbl_smoothHScrolling))
-        ; //	snapToGrid( true,  false );
+    //if (testTableFlags(Tbl_snapToHGrid) && testTableFlags(Tbl_smoothHScrolling))
+        //; //	snapToGrid( true,  false );
 }
 
 /*
@@ -853,8 +848,8 @@ void QtTableView::verSbSliding(int val)
 
 void QtTableView::verSbSlidingDone()
 {
-    if (testTableFlags(Tbl_snapToVGrid) && testTableFlags(Tbl_smoothVScrolling))
-        ; // snapToGrid(  false, true );
+    //if (testTableFlags(Tbl_snapToVGrid) && testTableFlags(Tbl_smoothVScrolling))
+        //; // snapToGrid(  false, true );
 }
 
 /*
@@ -1019,7 +1014,6 @@ void QtTableView::repaintChanged() // only fullpainting
             int width = cellWidth(col);
             nextX = xPos + width;
             cell.setRect(xPos, yPos, width, cellH);
-            int ctl = 0;
             tmp_size = viewR.intersected(cell).size();
 
             if (isCellChanged(row, col))
@@ -1066,7 +1060,13 @@ int QtTableView::findRawRow(int yPos, int *cellMaxY, int *cellMinY,
 {
     int r = -1;
     if (nRows == 0)
+    {
+        if (cellMaxY)
+            *cellMaxY = 0;
+        if (cellMinY)
+            *cellMinY = 0;
         return r;
+    }
     if (goOutsideView || (yPos >= minViewY() && yPos <= maxViewY()))
     {
         if (yPos < minViewY())
@@ -1077,6 +1077,10 @@ int QtTableView::findRawRow(int yPos, int *cellMaxY, int *cellMinY,
                      "not supported. (%d,%d)",
                      name("unnamed"), yPos, yOffs);
 #endif
+            if (cellMaxY)
+                *cellMaxY = 0;
+            if (cellMinY)
+                *cellMinY = 0;
             return -1;
         }
         if (cellH)
@@ -1090,15 +1094,14 @@ int QtTableView::findRawRow(int yPos, int *cellMaxY, int *cellMinY,
         }
         else
         { // variable cell height
-            QtTableView *tw = (QtTableView *)this;
             r = yCellOffs;
-            int h = minViewY() - yCellDelta; //##arnt3
+            int h = minViewY() - yCellDelta;
             int oldH = h;
             Q_ASSERT(r < nRows);
             while (r < nRows)
             {
                 oldH = h;
-                h += tw->cellHeight(r); // Start of next cell
+                h += cellHeight(r); // Start of next cell
                 if (yPos < h)
                     break;
                 r++;
@@ -1109,6 +1112,13 @@ int QtTableView::findRawRow(int yPos, int *cellMaxY, int *cellMinY,
                 *cellMinY = oldH;
         }
     }
+    else
+    {
+        if (cellMaxY)
+            *cellMaxY = 0;
+        if (cellMinY)
+            *cellMinY = 0;
+    }
     return r;
 }
 
@@ -1118,7 +1128,13 @@ int QtTableView::findRawCol(int xPos, int *cellMaxX, int *cellMinX,
 {
     int c = -1;
     if (nCols == 0)
+    {
+        if (cellMaxX)
+            *cellMaxX = 0;
+        if (cellMinX)
+            *cellMinX = 0;
         return c;
+    }
     if (goOutsideView || (xPos >= minViewX() && xPos <= maxViewX()))
     {
         if (xPos < minViewX())
@@ -1129,6 +1145,10 @@ int QtTableView::findRawCol(int xPos, int *cellMaxX, int *cellMinX,
                      "not supported. (%d,%d)",
                      name("unnamed"), xPos, xOffs);
 #endif
+            if (cellMaxX)
+                *cellMaxX = 0;
+            if (cellMinX)
+                *cellMinX = 0;
             return -1;
         }
         if (cellW)
@@ -1142,15 +1162,14 @@ int QtTableView::findRawCol(int xPos, int *cellMaxX, int *cellMinX,
         }
         else
         { // variable cell width
-            QtTableView *tw = (QtTableView *)this;
             c = xCellOffs;
-            int w = minViewX() - xCellDelta; //##arnt3
+            int w = minViewX() - xCellDelta;
             int oldW = w;
             Q_ASSERT(c < nCols);
             while (c < nCols)
             {
                 oldW = w;
-                w += tw->cellWidth(c); // Start of next cell
+                w += cellWidth(c); // Start of next cell
                 if (xPos < w)
                     break;
                 c++;
@@ -1160,6 +1179,13 @@ int QtTableView::findRawCol(int xPos, int *cellMaxX, int *cellMinX,
             if (cellMinX)
                 *cellMinX = oldW;
         }
+    }
+    else
+    {
+        if (cellMaxX)
+            *cellMaxX = 0;
+        if (cellMinX)
+            *cellMinX = 0;
     }
     return c;
 }
@@ -1244,10 +1270,9 @@ bool QtTableView::rowYPos(int row, int *yPos) const
             //##arnt3
             y = minViewY() - yCellDelta; // y of leftmost cell in view
             int r = yCellOffs;
-            QtTableView *tw = (QtTableView *)this;
             int maxY = maxViewY();
             while (r < row && y <= maxY)
-                y += tw->cellHeight(r++);
+                y += cellHeight(r++);
             if (y > maxY)
                 return false;
         }
@@ -1288,10 +1313,9 @@ bool QtTableView::colXPos(int col, int *xPos) const
             //##arnt3
             x = minViewX() - xCellDelta; // x of uppermost cell in view
             int c = xCellOffs;
-            QtTableView *tw = (QtTableView *)this;
             int maxX = maxViewX();
             while (c < col && x <= maxX)
-                x += tw->cellWidth(c++);
+                x += cellWidth(c++);
             if (x > maxX)
                 return false;
         }
