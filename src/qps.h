@@ -211,13 +211,12 @@ class Qps : public QWidget
     void make_command_menu();
     void view_menu(QAction *);
     void save_quit();
-    void add_fields_menu(int id);
     void add_fields_menu(QAction *act);
 
     void show_popup_menu(QPoint p);
     void context_heading_menu(QPoint p, int col);
 
-    void field_added(int index);
+    void field_added(int index, bool fromContextMenu = false);
     void field_removed(int index);
     void set_table_mode(bool treemode); // hmmm
 

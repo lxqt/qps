@@ -804,7 +804,7 @@ class Procview : public Proc
     void set_fields();
     void set_fields_list(int fields[]);
     void addField(char *name);                   // interface
-    void addField(int FIELD_ID, int where = -1); // base interface
+    int addField(int FIELD_ID, int where = -1); // base interface
     void removeField(int FIELD_ID);
     int findCol(int FIELD_ID);
     void moveColumn(int col, int place);
