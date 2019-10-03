@@ -196,9 +196,6 @@ Qps::Qps()
     m_headpopup->addAction( tr( "Remove Field" ), this, SLOT(menu_remove_field()));
     m_fields = new QMenu( tr( "Add Field" ), this);
     m_headpopup->addMenu(m_fields);
-    // connect(m_fields, SIGNAL(activated(int)),
-    // SLOT(add_fields_menu(int)));
-    // m_headpopup->addAction("Select Field", this, SLOT(menu_custom()) );
 
     m_command = new QMenu( tr( "Command" ), this); // filled in later
 
@@ -890,15 +887,23 @@ void Qps::set_table_mode(bool treemode)
 // Slot:
 // SEGFAULT CODE:  MOVETO Pstable
 // called by
-//      1. void Qps::add_fields_menu(int id)
+//      1. void Qps::add_fields_menu()
 //      2. field_win
-void Qps::field_added(int field_id)
+void Qps::field_added(int field_id, bool fromContextMenu)
 {
     int where = -1;
-    where = pstable->rightClickedColumn() + 1;
-    procview->addField(field_id, where);
-    pstable->refresh(); // pstable->update(); // repaint
-                        // update_menu_status();
+    if (fromContextMenu)
+        where = pstable->rightClickedColumn() + 1;
+    where = procview->addField(field_id, where);
+
+    int sc = pstable->sortedCol();
+    if (where >= 0 && where <= sc)
+    { // the sorted column is moved to the right
+        pstable->setSortedCol(sc + 1);
+        procview->setSortColumn(sc + 1, true);
+    }
+
+    pstable->refresh();
 }
 
 // MOVETO Proview
@@ -908,24 +913,28 @@ void Qps::field_added(int field_id)
 //	2. void Qps::menu_remove_field()
 void Qps::field_removed(int index)
 {
+    int col = procview->findCol(index);
     procview->removeField(index);
     if (procview->treeview && index == F_PID)
         set_table_mode(false);
 
     int sc = pstable->sortedCol();
-    if (context_col == sc)
-    { // the sorted column is removed; sort the first column
-        pstable->setSortedCol(0);
-        procview->setSortColumn(0, true); // don't change sort order
-    }
-    else if (context_col < sc)
+    if (sc >= 0)
     {
-        pstable->setSortedCol(sc - 1);
-        procview->setSortColumn(sc - 1, true);
+        if (col == sc)
+        { // the sorted column is removed; sort the first column
+            pstable->setSortedCol(0);
+            procview->setSortColumn(0, true); // don't change sort order
+        }
+        else if (col < sc)
+        {
+            pstable->setSortedCol(sc - 1);
+            procview->setSortColumn(sc - 1, true);
+        }
     }
 
     pstable->refresh();
-    context_col = -1; // right clicked column is removed
+    context_col = -1;
 }
 
 // moveto command?
@@ -1177,18 +1186,12 @@ void Qps::context_heading_menu(QPoint p, int col)
     m_headpopup->popup(p);
 }
 
+// called when field is added from heading context menu
+// called by 1. context_heading_menu
 void Qps::add_fields_menu(QAction *act)
 {
     int id = act->data().toInt();
-    field_added(id);
-}
-
-// called when field is added from heading context menu
-// called by 1. context_heading_menu
-void Qps::add_fields_menu(int cat_id)
-{
-    field_added(cat_id);
-    context_col = -1;
+    field_added(id, true);
 }
 
 //

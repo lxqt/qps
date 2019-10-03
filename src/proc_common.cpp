@@ -542,11 +542,13 @@ int Procview::findCol(int field_id)
 }
 
 // basis
+// returns the place where the field is added
+// (-1 if it already exists)
 // called by
 // 	void Procview::fieldArrange();
 // 	qps();
 //
-void Procview::addField(int Fid, int where)
+int Procview::addField(int Fid, int where)
 {
     if (where < 0 || where > cats.size())
     {
@@ -579,7 +581,11 @@ void Procview::addField(int Fid, int where)
 
     Category *newcat = categories[Fid];
     if (cats.indexOf(newcat) < 0) // if not in the list
+    {
         cats.insert(where, newcat);
+        return where;
+    }
+    return -1; // nothings is added
 }
 
 // add a category to last by name
