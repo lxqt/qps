@@ -200,8 +200,11 @@ QString Cat_swap::string(Procinfo *p)
     // Possible with Linux ?
 
     long sizeK, sizeM;
+#ifdef LINUX
+    sizeK = p->swap;
+#else
     sizeK = p->size > p->resident ? p->size - p->resident : 0;
-
+#endif
     sizeM = sizeK / 1024;
 
     if (sizeM > 0)

@@ -100,7 +100,7 @@ enum fields
     F_STACK,
 #endif
     F_SIZE, // VSIZE
-    F_SWAP, // Linux not correct
+    F_SWAP,
     F_MEM,
     F_RSS,
 #ifdef LINUX
@@ -572,6 +572,7 @@ class Procinfo // Process Infomation
     unsigned long
         dt; // dirty pages (number of pages, not K), obsolute in Kernel 2.6
     unsigned long stack; // stack size (K)
+    unsigned long swap;  // swap size (K)
 #endif
 
 #ifdef SOLARIS

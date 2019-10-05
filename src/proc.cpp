@@ -317,6 +317,7 @@ Procinfo::Procinfo(Proc *system_proc, int process_id, int thread_id) : refcnt(1)
     stack = 0;
     share = 0;
     mem = 0;
+    swap = 0;
 
     io_read_prev = 0; // **
     io_write_prev = 0;
@@ -831,6 +832,8 @@ int Procinfo::readproc()
             mini_sscanf(buf, "VmStk: %d", &stack); // stack	in kByte
             mini_sscanf(buf, "VmExe: %d", &trs);   // text
         }
+        if (strstr(buf, "VmSwap:"))
+            mini_sscanf(buf, "VmSwap: %d", &swap);   // swap in kByte
     }
 
     /*
