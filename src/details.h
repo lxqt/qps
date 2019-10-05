@@ -50,12 +50,8 @@ class Details : public QWidget
     Proc *proc() { return pr; }
     void set_procinfo(Procinfo *p);
 
-signals:
-    void closed(Details *);
-
   protected:
     virtual void resizeEvent(QResizeEvent *);
-    virtual void closeEvent(QCloseEvent *);
 
   private:
     QTabWidget *tbar;

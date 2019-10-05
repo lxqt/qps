@@ -66,16 +66,13 @@ Details::Details(Procinfo *p, Proc *proc) : QWidget(0)
     if (s0.width() > 800)
         s0.setWidth(800);
     resize(s0);
+    setAttribute(Qt::WA_DeleteOnClose, true);
 }
 
 Details::~Details()
 {
-    //	printf("~Details()\n");
     if (pi)
-        pi->detail = 0;
-    int i;
-    /// for(i=0;i<tbar->count();i++)	delete tbar->page(i);
-    delete tbar;
+        pi->detail = nullptr;
 }
 
 void Details::set_procinfo(Procinfo *p)
@@ -111,9 +108,6 @@ void Details::resizeEvent(QResizeEvent *s)
     tbar->resize(s->size()); //**
     QWidget::resizeEvent(s);
 }
-
-// user closed the window (via window manager)
-void Details::closeEvent(QCloseEvent *) { emit closed(this); }
 
 SimpleTable::SimpleTable(QWidget *parent, int nfields, TableField *f,
                          int options)
