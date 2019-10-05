@@ -357,6 +357,15 @@ Procinfo::~Procinfo()
             detail = 0;
         }
 
+        qDeleteAll(sock_inodes.begin(), sock_inodes.end());
+        sock_inodes.clear();
+
+        qDeleteAll(fd_files.begin(), fd_files.end());
+        fd_files.clear();
+
+        qDeleteAll(maps.begin(), maps.end());
+        maps.clear();
+
         //    if(environ)    delete environ;
         if (envblock)
             free(envblock); /// double free , SEGFAULT
@@ -1497,6 +1506,10 @@ void Proc::invalidate_sockets() { socks_current = usocks_current = false; }
 // return true if /proc/XX/maps could be read, false otherwise
 bool Procinfo::read_maps()
 {
+    // prevent memory leak
+    qDeleteAll(maps.begin(), maps.end());
+    maps.clear();
+
     // idea: here we could readlink /proc/XX/exe to identify the executable
     // when running 2.0.x
     char name[80];
@@ -1948,7 +1961,22 @@ Proc::Proc()
 
 Proc::~Proc()
 {
-    // killall procinfos
+    if(hprocs)
+    {
+        qDeleteAll(hprocs->begin(), hprocs->end());
+        hprocs->clear();
+    }
+    while (history.size() > 0)
+        delete history.takeFirst();
+
+    qDeleteAll(socks.begin(), socks.end());
+    socks.clear();
+
+    qDeleteAll(usocks.begin(), usocks.end());
+    usocks.clear();
+
+    qDeleteAll(categories.begin(), categories.end());
+    categories.clear();
 }
 
 // COMMON for LINUX,SOLARIS

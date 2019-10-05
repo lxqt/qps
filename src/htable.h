@@ -83,14 +83,17 @@ class TableCache
   public:
     TableCache()
     {
-        // for(int i=0;i<1;i++) // tmp
         rows.append(new TableRow);
         nrow = 0;
         ncol = 0;
     }
 
-    void reset() {} // clear cache
-    void setSize(int row, int col);
+    ~TableCache()
+    {
+        while (rows.size() > 0)
+            delete rows.takeFirst();
+    }
+
     void setRow(int row);
     void setCol(int col);
 
