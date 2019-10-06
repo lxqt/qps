@@ -195,14 +195,8 @@ class Environ : public SimpleTable
     void refresh();
     void refresh_window();
 
-  public slots:
-    void sort_change(int);
-
   protected:
     virtual QString text(int row, int col);
-
-    void sort();
-    static int compare(const NameValue *a, const NameValue *b);
 
   private:
     enum
@@ -211,9 +205,8 @@ class Environ : public SimpleTable
         ENVVALUE,
         ENVFIELDS
     };
-    bool rev;                   // sorting reversed
-    static Environ *static_env; // for sorting, must have static pointer
     static TableField *fields();
+    QVector<NameValue> sorted_environs;
 };
 
 class AllFields : public SimpleTable
@@ -237,6 +230,7 @@ class AllFields : public SimpleTable
         FIELDSFIELDS
     };
     static TableField *fields();
+    QList<Category*> sorted_cats;
 };
 
 #endif // DETAILS_H
