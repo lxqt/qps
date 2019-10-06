@@ -1587,16 +1587,7 @@ bool Qps::read_settings()
     else
         resize(w, h);
 
-    if (set.value("font/name") != QVariant() and
-        set.value("font/size") != QVariant())
-    {
-        QString fname = set.value("font/name").toString();
-        int fsize = set.value("font/size").toInt(); // if not exist then 0
-        QFont font;
-        font.setFamily(fname);
-        font.setPointSize(fsize);
-        QApplication::setFont(font);
-    }
+    QApplication::setFont(qvariant_cast<QFont>(set.value("font")));
 
     // fields
     procview->cats.clear();
@@ -1699,10 +1690,7 @@ void Qps::write_settings() // save setting
     }
     set.setValue("flags", sl);
 
-    set.beginGroup("font");
-    set.setValue("name", QApplication::font().family());
-    set.setValue("size", QApplication::font().pointSize());
-    set.endGroup();
+    set.setValue("font", QApplication::font());
 
     set.setValue("interval", update_period);
 
