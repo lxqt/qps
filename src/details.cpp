@@ -607,11 +607,9 @@ TableField *Environ::fields()
     return fields.data();
 }
 
-Environ *Environ::static_env = 0;
 Environ::Environ(QWidget *parent)
-    : SimpleTable(parent, ENVFIELDS, fields() ), rev(false)
+    : SimpleTable(parent, ENVFIELDS, fields() )
 {
-    connect(this, SIGNAL(titleClicked(int)), SLOT(sort_change(int)));
     refresh();
 }
 
@@ -622,7 +620,7 @@ QString Environ::text(int row, int col)
     Procinfo *p = procinfo(); // if dead process then
     if (row >= p->environ.size())
         printf("size dddd=row=%d\n", row);
-    NameValue nv = p->environ[row]; // Segfault !!
+    NameValue nv = sorted_environs[row];
     return (col == ENVNAME) ? nv.name : nv.value;
 }
 
@@ -630,7 +628,6 @@ void Environ::refresh_window()
 {
     if (!procinfo())
         return;
-    /// resetWidths();
     int rows = procinfo()->environ.size();
     setNumRows(rows);
     setNumCols(ENVFIELDS);
@@ -639,47 +636,16 @@ void Environ::refresh_window()
 
 void Environ::refresh()
 {
-    if (procinfo()->read_environ())
+    if (procinfo() && procinfo()->read_environ())
     {
-        // sort();
+        // sort the variable name column alphabetically
+        sorted_environs = procinfo()->environ;
+        std::sort(sorted_environs.begin(), sorted_environs.end(), [](NameValue a, NameValue b) {
+            return QString::localeAwareCompare(a.name, b.name) < 0;
+        });
+
         refresh_window();
     }
-}
-
-void Environ::sort_change(int col)
-{
-    Procinfo *p = procinfo();
-    setSortedCol(col);
-    sort();
-    refresh_window();
-}
-
-// sort table according to current settings
-void Environ::sort()
-{
-    /////if(sortedCol() >= 0)
-    {
-        static_env = this;
-        //	if(procinfo()->environ==NULL)
-        //		printf("qps : Environ::sort() error ???\n");
-        //	else
-        //	procinfo()->environ.sort(compare);
-    }
-}
-
-int Environ::compare(const NameValue *a, const NameValue *b)
-{
-    Environ *e = Environ::static_env;
-    int r;
-    /*
-    if(e->sortedCol() == ENVNAME)
-            r = strcmp(a->name, b->name);
-    else
-            r = strcmp(a->value, b->value);  SimpleTable(QWidget *parent,
-    int
-    nfields, TableField *f, int options = 0);
-  */
-    return e->rev ? -r : r;
 }
 
 TableField *AllFields::fields()
@@ -707,13 +673,9 @@ AllFields::~AllFields() {}
 QString AllFields::text(int row, int col)
 {
     QString s;
-    // printf("text start r=%d , c=%d\n",row,col);
-    // if( ((Details *)parent())->proc()==NULL)
-    // printf("size=%d\n", ((Details *)parent())->proc()->allcats.size() );
-    // printf("size=%d\n", proc()->allcats.size() );
 
-    Category *cat = proc()->categories.values()[row];
-    //	Category *cat = proc()->allcats[row];
+    Category *cat = sorted_cats[row];
+
     switch (col)
     {
     case FIELDNAME:
@@ -726,7 +688,7 @@ QString AllFields::text(int row, int col)
         s = cat->string(procinfo());
         break;
     }
-    // printf("text end\n");
+
     return s;
 }
 
@@ -743,4 +705,13 @@ void AllFields::refresh_window()
     repaintAll();
 }
 
-void AllFields::refresh() { refresh_window(); }
+void AllFields::refresh()
+{
+    // sort the field name column alphabetically
+    sorted_cats = proc()->categories.values();
+    std::sort(sorted_cats.begin(), sorted_cats.end(), [](Category* a, Category* b) {
+        return QString::localeAwareCompare(a->name, b->name) < 0;
+    });
+
+    refresh_window();
+}
