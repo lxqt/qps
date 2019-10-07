@@ -1,3 +1,44 @@
+qps-2.0.0 / 2019-10-08
+======================
+
+  * Several code cleanups:
+    - Silenced compiler warnings about QtTableView
+    - Do not detect systray on every refresh
+    - Removed the method `HeadedTable::sizeHintForColumn`
+    - htable.cpp: remove unused define
+    - qps.h: remove unused define
+    - Cleaned up the classes SearchBox, ControlBar and StatusBar
+    - Do not cast bool to integer on return
+    - Get rid of flag_SMPsim
+    - Get rid of FaderWidget
+    - Removed no strings casts definitions
+    - Removed unmanaged code
+    - Remove some comments
+    - Corrected sscanf format
+    - Removed unused variable
+    - Simplified groupName
+    - Add missing "const"
+    - Apply LXQtCompilerSettings to project
+  * Fixed memory leaks:
+    - Fixed memory leak in showing process details dialogs
+    - Frevent file a descriptor leak
+    - Fixed several memory leaks
+  * UI and other improvements:
+    - Sort fields list alphabetically
+    - Update sort indicator on adding columns
+    - Use float for memory column if in megabytes
+    - Support HDPI pixmaps
+    - A better filter box with clear button and place holder
+    - Don't allow an unsorted table
+    - Fixed table size and scrollbars
+    - Made column DND predictable
+    - Fixes for the header, especially for its DND
+    - Fixed painting of cells, branch lines and...
+    - Fixed settings and preferences and added signal prompt
+    - Fixed SWAP column
+    - Use a smaller pixmap cache
+    - Improved translations
+
 qps-1.10.20 / 2019-02-25
 ========================
 
@@ -15,7 +56,7 @@ qps-1.10.19 / 2019-01-25
   * Added translation support and fixed some source strings
   * Translations updated
   * Added translation promo to README.md
-  
+
 qps-1.10.18 / 2018-05-21
 ========================
 
