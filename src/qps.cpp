@@ -1587,14 +1587,11 @@ bool Qps::read_settings()
     else
         resize(w, h);
 
-    if (set.value("font/name") != QVariant() and
-        set.value("font/size") != QVariant())
+    QString fontStr = set.value("font").toString();
+    if (!fontStr.isEmpty())
     {
-        QString fname = set.value("font/name").toString();
-        int fsize = set.value("font/size").toInt(); // if not exist then 0
         QFont font;
-        font.setFamily(fname);
-        font.setPointSize(fsize);
+        font.fromString(fontStr);
         QApplication::setFont(font);
     }
 
@@ -1699,10 +1696,7 @@ void Qps::write_settings() // save setting
     }
     set.setValue("flags", sl);
 
-    set.beginGroup("font");
-    set.setValue("name", QApplication::font().family());
-    set.setValue("size", QApplication::font().pointSize());
-    set.endGroup();
+    set.setValue("font", QApplication::font().toString());
 
     set.setValue("interval", update_period);
 
