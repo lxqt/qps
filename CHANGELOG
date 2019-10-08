@@ -9,8 +9,6 @@ qps-2.0.0 / 2019-10-08
     - qps.h: remove unused define
     - Cleaned up the classes SearchBox, ControlBar and StatusBar
     - Do not cast bool to integer on return
-    - Get rid of flag_SMPsim
-    - Get rid of FaderWidget
     - Removed no strings casts definitions
     - Removed unmanaged code
     - Remove some comments
@@ -24,6 +22,7 @@ qps-2.0.0 / 2019-10-08
     - Prevent a file descriptor leak
     - Fixed several memory leaks
   * UI and other improvements:
+    - Properly save font info
     - Sort fields list alphabetically
     - Update sort indicator on adding columns
     - Use float for memory column if in megabytes
