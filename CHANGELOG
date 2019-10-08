@@ -21,7 +21,7 @@ qps-2.0.0 / 2019-10-08
     - Apply LXQtCompilerSettings to project
   * Fixed memory leaks:
     - Fixed memory leak in showing process details dialogs
-    - Frevent a file descriptor leak
+    - Prevent a file descriptor leak
     - Fixed several memory leaks
   * UI and other improvements:
     - Sort fields list alphabetically
