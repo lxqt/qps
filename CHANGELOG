@@ -71,7 +71,7 @@ qps-1.10.18 / 2018-05-21
   * Drop Qt foreach
   * Fix links QtDesktop --> lxqt
 
-1.10.17 / 2017-09-22
+qps-1.10.17 / 2017-09-22
 ====================
 
   * Release 1.10.17: Update changelog
@@ -116,7 +116,7 @@ qps-1.10.18 / 2018-05-21
   * Add install instruction in CMakeLists.txt
   * Add clang-format file and format all files
 
-v1.10.16 / 2015-06-14
+qps-1.10.16 / 2015-06-14
 =====================
 
   * Ported to Qt5 and fixed all warnings
