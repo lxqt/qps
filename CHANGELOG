@@ -3,7 +3,7 @@ qps-2.0.0 / 2019-10-08
 
   * Several code cleanups:
     - Silenced compiler warnings about QtTableView
-    - Do not detect systray on every refresh
+    - Do not detect systray on every refresh (this also fixes memory leak under some GTK DEs)
     - Removed the method `HeadedTable::sizeHintForColumn`
     - htable.cpp: remove unused define
     - qps.h: remove unused define
@@ -21,7 +21,7 @@ qps-2.0.0 / 2019-10-08
     - Apply LXQtCompilerSettings to project
   * Fixed memory leaks:
     - Fixed memory leak in showing process details dialogs
-    - Frevent file a descriptor leak
+    - Frevent a file descriptor leak
     - Fixed several memory leaks
   * UI and other improvements:
     - Sort fields list alphabetically
