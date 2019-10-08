@@ -1587,7 +1587,13 @@ bool Qps::read_settings()
     else
         resize(w, h);
 
-    QApplication::setFont(qvariant_cast<QFont>(set.value("font")));
+    QString fontStr = set.value("font").toString();
+    if (!fontStr.isEmpty())
+    {
+        QFont font;
+        font.fromString(fontStr);
+        QApplication::setFont(font);
+    }
 
     // fields
     procview->cats.clear();
@@ -1690,7 +1696,7 @@ void Qps::write_settings() // save setting
     }
     set.setValue("flags", sl);
 
-    set.setValue("font", QApplication::font());
+    set.setValue("font", QApplication::font().toString());
 
     set.setValue("interval", update_period);
 
