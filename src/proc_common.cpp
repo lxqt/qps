@@ -219,7 +219,11 @@ QString Cat_swap::string(Procinfo *p)
 
 int Cat_swap::compare(Procinfo *a, Procinfo *b)
 {
+#ifdef LINUX
+    return b->swap - a->swap;
+#else
     return (b->size - b->resident) - (a->size - a->resident);
+#endif
 }
 
 Cat_string::Cat_string(const QString &heading, const QString &explain,
