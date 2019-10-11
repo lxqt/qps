@@ -205,6 +205,8 @@ Qps::Qps()
     act = m_view->addAction( tr( "Process" ) ); // act->setData(Procview::CUSTOM);
     act = m_view->addAction( tr( "Log" ) );     // act->setData(Procview::CUSTOM);
     // m_view->hide();
+	
+    QActionGroup* group = new QActionGroup (this);
 
     m_field = new QMenu("Field", this);
     act = m_field->addAction( tr( "Custom Fields" ) );
@@ -218,7 +220,18 @@ Qps::Qps()
 #ifdef LINUX
     act = m_field->addAction( tr( "Scheduling Fields " ) );
     act->setData(Procview::SCHED);
+    act->setActionGroup(group);
+    act->setCheckable(true);
+    act->setChecked(false);	
 #endif
+
+    QList<QAction *> list = m_field->actions ();
+    for (int i = 0; i < list.size () - 1; i++)
+    {
+        QAction *act = list[i];
+        act->setCheckable(true);
+        act->setActionGroup(group);
+    }
 
     m_field->addSeparator();
     act = m_field->addAction( QIcon::fromTheme(QStringLiteral("edit-find-replace"))
@@ -729,12 +742,12 @@ void Qps::update_menu_status()
     for (int i = 0; i < list.size() - 1; i++)
     {
         QAction *act = list[i];
-        act->setCheckable(true);
         int id = act->data().toInt();
         if (id == procview->viewfields)
+	{
             act->setChecked(true);
-        else
-            act->setChecked(false);
+	    break;
+	}
     }
 
     // Option Menu
