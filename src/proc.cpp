@@ -863,10 +863,10 @@ int Procinfo::readproc()
     {
         // rchar = ... not file maybe sockread
         //
-        mini_sscanf(buf, "read_bytes:%d", &io_read);   // io_read in Byte
-        mini_sscanf(buf, "write_bytes:%d", &io_write); // io_write in Byte
-        io_read /= 1024;
-        io_write /= 1024;
+        mini_sscanf(buf, "read_bytes:%d", &io_read);
+        mini_sscanf(buf, "write_bytes:%d", &io_write);
+        io_read /= 1024; // io_read is in KB
+        io_write /= 1024; // io_write is in KB
 
         // if(io_read_prev!=0)
         {
@@ -875,10 +875,8 @@ int Procinfo::readproc()
             if (io_write_prev == 0)
                 io_write_prev = io_write;
 
-            // NOTE: Kbps right????
-            io_read_KBps = (io_read - io_read_prev) /
-                           proc->update_msec; // not accurate....
-            io_write_KBps = (io_write - io_write_prev) / proc->update_msec;
+            io_read_KBps = 1000 * (io_read - io_read_prev) / proc->update_msec;
+            io_write_KBps = 1000 * (io_write - io_write_prev) / proc->update_msec;
 
             proc->io_byte += io_read_KBps; // test
             proc->io_byte += io_write_KBps;
