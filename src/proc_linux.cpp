@@ -857,10 +857,8 @@ int Procinfo::readproc()
     {
         // rchar = ... not file maybe sockread
         //
-        mini_sscanf(buf, "read_bytes:%d", &io_read);   // io_read in Byte
-        mini_sscanf(buf, "write_bytes:%d", &io_write); // io_write in Byte
-        io_read /= 1024;
-        io_write /= 1024;
+        mini_sscanf(buf, "read_bytes:%d", &io_read);
+        mini_sscanf(buf, "write_bytes:%d", &io_write);
 
         // if(io_read_prev!=0)
         {
