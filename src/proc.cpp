@@ -863,27 +863,31 @@ int Procinfo::readproc()
     {
         // rchar = ... not file maybe sockread
         //
-        mini_sscanf(buf, "read_bytes:%d", &io_read);
-        mini_sscanf(buf, "write_bytes:%d", &io_write);
+        unsigned long io_r, io_w;
+        mini_sscanf(buf, "read_bytes:%lu", &io_r);  // io_r in Byte
+        mini_sscanf(buf, "write_bytes:%lu", &io_w); // io_w in Byte
+        io_read = io_r / 1024;
+        io_write = io_w / 1024;
 
         // if(io_read_prev!=0)
         {
             if (io_read_prev == 0)
-                io_read_prev = io_read;
+                io_read_prev = io_r;
             if (io_write_prev == 0)
-                io_write_prev = io_write;
+                io_write_prev = io_w;
 
-            // NOTE: Kbps right????
-            io_read_KBps = (io_read - io_read_prev) /
+            // NOTE: Kbps = byte / (msec / 1000) / 1024    // accurate
+            //       Kbps = (byte / 1024) / (msec / 1024)  // not accurate
+            io_read_KBps = (io_r - io_read_prev) /
                            proc->update_msec; // not accurate....
-            io_write_KBps = (io_write - io_write_prev) / proc->update_msec;
+            io_write_KBps = (io_w - io_write_prev) / proc->update_msec;
 
             proc->io_byte += io_read_KBps; // test
             proc->io_byte += io_write_KBps;
         }
 
-        io_read_prev = io_read;
-        io_write_prev = io_write;
+        io_read_prev = io_r;
+        io_write_prev = io_w;
 
         // io_read>>=10; //  divide by 1024
         // io_write>>=10; //  divide by 1024

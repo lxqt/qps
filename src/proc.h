@@ -540,11 +540,11 @@ class Procinfo // Process Infomation
     unsigned long cmajflt;
 #endif
 
-    unsigned long io_read;       // byte, testing
-    unsigned long io_write;      // testing
+    unsigned long io_read;       // K byte, testing
+    unsigned long io_write;      // K byte, testing
     unsigned long io_read_KBps;  // K byte/sec
     unsigned long io_write_KBps; // K byte/sec
-    unsigned long io_read_prev, io_write_prev;
+    unsigned long io_read_prev, io_write_prev; // byte
 
     unsigned long flags; //?
     unsigned long minflt;
