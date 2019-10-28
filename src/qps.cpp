@@ -1480,22 +1480,27 @@ void Qps::mig_menu(int) {}
 void Qps::send_to_selected(int sig)
 {
     bool allow = (sig != SIGTERM && sig != SIGHUP && sig != SIGKILL);
-    for (auto p : procview->linear_procs)
+    QString msg = (sig == SIGTERM ?
+                   tr("Do you really want to terminate the selected process(es)?\n") :
+                   sig == SIGHUP ?
+                   tr("Do you really want to hang up the selected process(es)?\n") :
+                   sig == SIGKILL ?
+                   tr("Do you really want to kill the selected process(es)?\n") :
+                   QString());
+    QVector<Procinfo *> procs = procview->linear_procs;
+    for (auto p : procs)
+    {
+        if (p->selected)
+        {
+            msg.append(tr("\n%1 (PID:%2)").arg(p->command).arg(p->pid));
+        }
+    }
+    for (auto p : procs)
     {
         if (p->selected)
         {
             if (!allow)
             {
-                QString msg = (sig == SIGTERM ?
-                               tr("Do you really want to terminate the selected process(es)?\n\n%1 (PID:%2)")
-                               .arg(p->command).arg(p->pid) :
-                               sig == SIGHUP ?
-                               tr("Do you really want to hang up the selected process(es)?\n\n%1 (PID:%2)")
-                               .arg(p->command).arg(p->pid) :
-                               sig == SIGKILL ?
-                               tr("Do you really want to kill the selected process(es)?\n\n%1 (PID:%2)")
-                               .arg(p->command).arg(p->pid) :
-                               QString());
                 allow = (QMessageBox::question(this, tr("Question"), msg,
                                                QMessageBox::Yes | QMessageBox::No,
                                                QMessageBox::No) == QMessageBox::Yes);
