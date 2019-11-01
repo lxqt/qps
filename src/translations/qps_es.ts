@@ -44,7 +44,7 @@
     <message>
         <location filename="../prefs.cpp" line="79"/>
         <source>Host Name Lookup</source>
-        <translation>Búsqueda del nombre de host</translation>
+        <translation>Búsqueda del nombre del equipo</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="80"/>
@@ -59,12 +59,12 @@
     <message>
         <location filename="../prefs.cpp" line="87"/>
         <source>Branch Lines</source>
-        <translation>Líneas de las ramas</translation>
+        <translation>Líneas de las bifurcaciones</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="93"/>
         <source>Auto Save Settings on Exit</source>
-        <translation>Autoguardar la configuración al salir</translation>
+        <translation>Guardar automáticamente la configuración al salir</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="94"/>
@@ -79,7 +79,7 @@
     <message>
         <location filename="../prefs.cpp" line="97"/>
         <source>Use pmap for Map Names</source>
-        <translation>Usar pmap para el nombre del mapa</translation>
+        <translation>Usar pmap para el nombre de las asignaciones</translation>
     </message>
 </context>
 <context>
@@ -133,7 +133,7 @@ or you did not have execute permission.</source>
         <translation>
 
 no se ha podido ejecutar porque no se ha encontrado
-o porque usted no tiene los permisos para ejecutarlo.</translation>
+o porque no tiene los permisos para ejecutarlo.</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="234"/>
@@ -342,7 +342,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../watchdog.ui" line="229"/>
         <source>cpu</source>
-        <translation></translation>
+        <translation>procesador</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="248"/>
@@ -1663,7 +1663,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../details.cpp" line="152"/>
         <source>Proto</source>
-        <translation>Proto</translation>
+        <translation>Protocolo</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
