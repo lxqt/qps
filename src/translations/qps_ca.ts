@@ -39,7 +39,7 @@
     <message>
         <location filename="../prefs.cpp" line="61"/>
         <source>Exit On Close Button</source>
-        <translation>Botó tanca en sortir</translation>
+        <translation>Surt en prémer el botó de tancar</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="79"/>
