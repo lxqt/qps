@@ -132,8 +132,8 @@ could not be executed because it was not found,
 or you did not have execute permission.</source>
         <translation>
 
-konnte nicht ausgeführt werden, mangels fehlender 
-Identifizierbarkeit oder Ausführungsberechtigung.</translation>
+konnte nicht ausgeführt werden, weil es nicht gefunden wurde
+oder keine Rechte zum Ausführen bestehen.</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="234"/>
@@ -155,7 +155,7 @@ endete mit Status </translation>
     <message>
         <location filename="../commanddialog.cpp" line="47"/>
         <source>Edit Commands 0.1 alpha</source>
-        <translation type="unfinished"></translation>
+        <translation>Befehle bearbeiten 0.1 alpha</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="63"/>
@@ -233,7 +233,7 @@ endete mit Status </translation>
     <message>
         <location filename="../misc.cpp" line="950"/>
         <source>Your Processes</source>
-        <translation>Ihre Prozesse</translation>
+        <translation>Eigene Prozesse</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="951"/>
@@ -367,7 +367,7 @@ endete mit Status </translation>
     <message>
         <location filename="../watchdog.ui" line="367"/>
         <source>Help (Not yet. just concept)</source>
-        <translation>Hilfe (Existiert noch nicht.)</translation>
+        <translation>Hilfe (Noch nicht. Nur konzeptionell)</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="394"/>
@@ -1599,7 +1599,7 @@ endete mit Status </translation>
     <message>
         <location filename="../screenshot.cpp" line="335"/>
         <source>Screenshot Delay:</source>
-        <translation>Bildschirmfotoverzögerung:</translation>
+        <translation>Verzögerung des Bildschirmfotos:</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="337"/>
