@@ -261,7 +261,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="45"/>
         <source>Files</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイル</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="54"/>
@@ -271,17 +271,17 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="59"/>
         <source>Memory Maps</source>
-        <translation type="unfinished"></translation>
+        <translation>メモリ マップ</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="61"/>
         <source>Environment</source>
-        <translation type="unfinished"></translation>
+        <translation>環境</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="62"/>
         <source>All Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>すべてのフィールド</translation>
     </message>
 </context>
 <context>
@@ -289,22 +289,22 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="609"/>
         <source>Variable</source>
-        <translation type="unfinished"></translation>
+        <translation>変数</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="609"/>
         <source>Variable name</source>
-        <translation type="unfinished"></translation>
+        <translation>変数名</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="610"/>
         <source>Value</source>
-        <translation type="unfinished"></translation>
+        <translation>値</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="610"/>
         <source>Variable value</source>
-        <translation type="unfinished"></translation>
+        <translation>変数の値</translation>
     </message>
 </context>
 <context>
@@ -312,7 +312,7 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="23"/>
         <source>Watchdog 0.1 alpha</source>
-        <translation type="unfinished"></translation>
+        <translation>ウォッチドッグ 0.1 alpha</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="117"/>
@@ -710,7 +710,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1900"/>
         <source>Process group ID</source>
-        <translation type="unfinished"></translation>
+        <translation>プロセス グループ ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1902"/>
