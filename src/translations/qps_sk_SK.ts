@@ -6,12 +6,12 @@
     <message>
         <location filename="../details.cpp" line="698"/>
         <source>Field</source>
-        <translation>Kolonka</translation>
+        <translation>Pole</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="698"/>
         <source>Field name</source>
-        <translation>Názov kolonky</translation>
+        <translation>Názov poľa</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="699"/>
@@ -21,7 +21,7 @@
     <message>
         <location filename="../details.cpp" line="699"/>
         <source>Field description</source>
-        <translation>Popis kolonky</translation>
+        <translation>Popis poľa</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="700"/>
@@ -31,7 +31,7 @@
     <message>
         <location filename="../details.cpp" line="700"/>
         <source>Field value</source>
-        <translation>Hodnota v kolonke</translation>
+        <translation>Hodnota v poli</translation>
     </message>
 </context>
 <context>
@@ -39,7 +39,7 @@
     <message>
         <location filename="../prefs.cpp" line="61"/>
         <source>Exit On Close Button</source>
-        <translation>Pri kliknutí na tlačítko zatvorenia ukončiť</translation>
+        <translation>Ukončiť pri kliknutí na tlačítko zatvorenia</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="79"/>
