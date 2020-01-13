@@ -259,6 +259,11 @@ bool proc_pid_fd(const int pid)
         if (e->d_name[0] == '.')
             continue; // skip "." and ".."
 
+        if (strlen(path) + 1 + strlen(e->d_name) >= 256) // overflow
+        {
+            closedir(d);
+            return false;
+        }
         path[path_len] = '/';
         path[path_len + 1] = 0;
         strcat(path, e->d_name);
