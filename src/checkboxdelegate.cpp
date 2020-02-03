@@ -96,7 +96,7 @@ void checkBoxDelegate::paint(QPainter *painter,
     printf("paint\n");
     if (index.column() == 1)
     {
-        QVariant value = 0; // index.model()->data(index, Qt::UserRole);
+//        QVariant value = 0; // index.model()->data(index, Qt::UserRole);
                             /* if (!isSupportedType(value.type())) {
                                      QStyleOptionViewItem myOption = option;
                                      myOption.state &= ~QStyle::State_Enabled;

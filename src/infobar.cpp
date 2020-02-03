@@ -1318,7 +1318,7 @@ void subcpuRack::paintEvent(QPaintEvent *e)
     int i;
     // QRect cr = contentsRect();
     // QRect cr = p->viewport();
-    QRect cr = p.window(); // rect.
+//    QRect cr = p.window(); // rect.
 
     p.fillRect(rect(), QBrush(Qt::black));
 
