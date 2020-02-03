@@ -1346,7 +1346,6 @@ void Qps::menu_renice()
         {
             if (setpriority(PRIO_PROCESS, p->pid, new_nice) < 0)
             {
-                QString s;
                 switch (errno)
                 {
                 case EPERM:

@@ -42,9 +42,6 @@ ExecWindow::ExecWindow(watchCond *wc, int pid, QString cmd)
     setWindowTitle( tr( "Qps Watchdog" ) );
 
     wcond = wc;
-
-    QString str;
-
     if (wc->cond == WATCH_PROCESS_START)
     {
         textEdit->append(cmd + "(" + QString::number(pid) + ")" + " start");

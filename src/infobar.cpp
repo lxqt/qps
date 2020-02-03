@@ -92,8 +92,6 @@ char rotate_char = '|';
 // DEL
 void Infobar::refresh()
 {
-    QString s;
-
     if (rotate_str[++rotate_idx] == 0)
         rotate_idx = 0;
     rotate_char = rotate_str[rotate_idx];

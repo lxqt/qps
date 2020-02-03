@@ -59,7 +59,6 @@ IntervalDialog::IntervalDialog(const char *ed_txt, bool enabled) : QDialog()
     h1->addStretch(1);
 
     lined = new QLineEdit(this);
-    QFont f = font();
     lined->setMaxLength(7);
     lined->setText(ed_txt);
     if (enabled)
