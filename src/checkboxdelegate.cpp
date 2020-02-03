@@ -81,7 +81,7 @@ void checkBoxDelegate::setModelData(QWidget *editor, QAbstractItemModel *model,
 //! [4]
 void checkBoxDelegate::updateEditorGeometry(QWidget *editor,
                                             const QStyleOptionViewItem &option,
-                                            const QModelIndex &index) const
+                                            const QModelIndex & /*index*/) const
 {
     printf("updateEditorGeometry\n");
     //	if(index.column()==1)

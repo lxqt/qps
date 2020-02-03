@@ -25,11 +25,11 @@
 
 extern QList<Command *> commands;
 
-CommandModel::CommandModel(QObject *parent) {}
+CommandModel::CommandModel(QObject * /*parent*/) {}
 CommandModel::~CommandModel() {}
 
 QModelIndex CommandModel::index(int row, int column,
-                                const QModelIndex &parent) const
+                                const QModelIndex & /*parent*/) const
 {
     if (row >= 0 and column >= 0 and row < commands.size() and column < 1)
     {
@@ -39,11 +39,11 @@ QModelIndex CommandModel::index(int row, int column,
     else
         return QModelIndex();
 }
-QModelIndex CommandModel::parent(const QModelIndex &child) const
+QModelIndex CommandModel::parent(const QModelIndex & /*child*/) const
 {
     return QModelIndex();
 }
-int CommandModel::rowCount(const QModelIndex &parent) const
+int CommandModel::rowCount(const QModelIndex & /*parent*/) const
 {
     return commands.size();
 }

@@ -85,13 +85,13 @@ WatchdogDialog::WatchdogDialog()
     return;
 }
 
-void WatchdogDialog::showEvent(QShowEvent *event)
+void WatchdogDialog::showEvent(QShowEvent * /*event*/)
 {
     //  Qt 4.4.0 bug?
     //  printf("show!!!!!!!!!\n");
     listmodel->update();
 }
-void WatchdogDialog::comboChanged(int idx)
+void WatchdogDialog::comboChanged(int /*idx*/)
 {
 
     // itemText(idx);
@@ -165,7 +165,7 @@ void WatchdogDialog::eventcat_slected(const QModelIndex &idx)
     comboBox->setCurrentIndex(w->cond);
 }
 
-void WatchdogDialog::Changed(const QString &str)
+void WatchdogDialog::Changed(const QString & /*str*/)
 {
     QModelIndex idx = tableView->currentIndex();
     //	QModelIndexList list=tableView->selectedIndexes ();
@@ -197,7 +197,7 @@ void WatchdogDialog::checkCombo()
 }
 
 // comboChanged() -> checkCombo()
-void WatchdogDialog::condChanged(const QString &str)
+void WatchdogDialog::condChanged(const QString & /*str*/)
 {
     checkCombo();
     // what is this?

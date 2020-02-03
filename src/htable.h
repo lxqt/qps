@@ -278,8 +278,8 @@ class HeadedTable : public QWidget
     void clearAllSelections();
     void selectAll();
 
-    virtual void setSelected(int row, bool sel){}
-    virtual bool isSelected(int row) { return false; }
+    virtual void setSelected(int /*row*/, bool /*sel*/){}
+    virtual bool isSelected(int /*row*/) { return false; }
     virtual void checkTableModel(){}
 signals:
     void titleClicked(int col);
@@ -303,7 +303,7 @@ signals:
     virtual char *total_selectedRow(int col);
     // colWidth returns width in digit units; negative means variable width.
     virtual int colWidth(int col) = 0; // head_width
-    virtual int alignment(int col) { return 0; }
+    virtual int alignment(int /*col*/) { return 0; }
     virtual void paintEvent(QPaintEvent *);
     virtual void hideEvent(QHideEvent *event);
     virtual void showEvent(QShowEvent *event);
@@ -312,13 +312,13 @@ signals:
     virtual void moveCol(int col, int place);
 
     virtual QString tipText(int col);
-    virtual int rowDepth(int row) { return 0; }
-    virtual NodeState folded(int row) { return Leaf; }
-    virtual int parentRow(int row) { return 0; }
-    virtual bool lastChild(int row) { return false; }
-    virtual bool columnMovable(int col) { return true; }
+    virtual int rowDepth(int /*row*/) { return 0; }
+    virtual NodeState folded(int /*row*/) { return Leaf; }
+    virtual int parentRow(int /*row*/) { return 0; }
+    virtual bool lastChild(int /*row*/) { return false; }
+    virtual bool columnMovable(int /*col*/) { return true; }
     // virtual bool modified(int row){return true;};
-    virtual void overpaintCell(QPainter *p, int row, int col, int xpos){}
+    virtual void overpaintCell(QPainter */*p*/, int /*row*/, int /*col*/, int /*xpos*/){}
 
     void resizeEvent(QResizeEvent *);
 

@@ -30,13 +30,13 @@ class ListModel : public QAbstractTableModel
 {
     Q_OBJECT
   public:
-    ListModel(QObject *parent = 0){};
+    ListModel(/*QObject *parent = 0*/){};
     ~ListModel(){};
     QModelIndex index(int row, int column,
                       const QModelIndex &parent = QModelIndex()) const; // pure
     QModelIndex parent(const QModelIndex &child) const; // pure virtual
     int rowCount(const QModelIndex &parent) const;
-    int columnCount(const QModelIndex &parent) const { return 2; };
+    int columnCount(const QModelIndex & /*parent*/) const { return 2; };
     QVariant data(const QModelIndex &index, int role) const;
     QVariant headerData(int section, Qt::Orientation o, int role) const;
     //	QMap<int, QVariant> itemData ( const QModelIndex & index ) const

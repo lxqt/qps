@@ -268,7 +268,7 @@ void SliderDialog::slider_change(int val)
 }
 
 // DRAFT CODE,
-PermissionDialog::PermissionDialog(QString msg, QString passwd) : QDialog()
+PermissionDialog::PermissionDialog(QString msg, QString /*passwd*/) : QDialog()
 {
     setWindowTitle( tr( "Permission" ) );
     QVBoxLayout *vbox = new QVBoxLayout;
@@ -392,7 +392,7 @@ void SchedDialog::done_dialog()
         accept();
 }
 
-void SchedDialog::button_clicked(bool val)
+void SchedDialog::button_clicked(bool /*val*/)
 {
     //	printf("SchedDialog::checked()\n");
     if (rb_other->isChecked())

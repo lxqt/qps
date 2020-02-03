@@ -85,7 +85,7 @@ void ShotArea::resizeEvent(QResizeEvent * /* event */)
     // QPixmap pixmap = QPixmap(screenshotLabel->size());
 }
 
-void ShotArea::paintEvent(QPaintEvent *event)
+void ShotArea::paintEvent(QPaintEvent * /*event*/)
 {
     //	printf("ShotArea::paintEvent\n");
     //	QPainter painter(this);
@@ -212,7 +212,7 @@ void Screenshot::mouseMoveEvent(QMouseEvent *e)
 }
 
 extern bool flag_xcompmgr;
-void Screenshot::paintEvent(QPaintEvent *e)
+void Screenshot::paintEvent(QPaintEvent * /*e*/)
 {
     QPainter p(this);
     // printf("Screenshot::paintEvent\n");
@@ -243,7 +243,7 @@ void Screenshot::paintEvent(QPaintEvent *e)
     style()->drawPrimitive(QStyle::PE_Frame, &opt, &p, 0);
 }
 
-void Screenshot::resizeEvent(QResizeEvent *e /* event */)
+void Screenshot::resizeEvent(QResizeEvent * /*e*/)
 {
 
     //	printf("Screenshot::resizeEvent()\n");

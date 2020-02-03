@@ -75,7 +75,7 @@ Details::~Details()
         pi->detail = nullptr;
 }
 
-void Details::set_procinfo(Procinfo *p)
+void Details::set_procinfo(Procinfo * /*p*/)
 {
     //	printf("p=%x, pi=%x\n",p,pi);
 }
@@ -325,7 +325,7 @@ void Sockets::config_change()
 }
 
 // slot: called when a host name has been looked up
-void Sockets::update_hostname(unsigned addr)
+void Sockets::update_hostname(unsigned /*addr*/)
 {
     // if(widthChanged(REMOTEADDR) || widthChanged(LOCALADDR)) {
     if (1)

@@ -564,7 +564,7 @@ void Qps::bar_visibility()
         statusBar->hide();
 }
 
-void Qps::timerEvent(QTimerEvent *e) { Qps::refresh(); }
+void Qps::timerEvent(QTimerEvent */*e*/) { Qps::refresh(); }
 //
 // dialogs.cpp:    qps->update_timer();
 void Qps::update_timer()
@@ -1753,7 +1753,7 @@ bool opt_eq(const char *arg, const char *opt)
 }
 
 // print some help to stdout and exit
-void print_help(char *cmdname)
+void print_help(char * /*cmdname*/)
 {
     fprintf(stderr, "Usage: qps [options]\n"
                     "Options:\n"
@@ -1803,7 +1803,7 @@ void Qps::clicked_trayicon(QSystemTrayIcon::ActivationReason r)
 }
 
 #include <signal.h>
-void signal_handler(int sig)
+void signal_handler(int /*sig*/)
 {
     qps->save_quit();
 }

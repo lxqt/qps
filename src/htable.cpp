@@ -43,7 +43,7 @@ void FloatingHead::setTitleAndSize(QString str, int w, int h)
     title = str;
     resize(w, h);
 }
-void FloatingHead::paintEvent(QPaintEvent *event)
+void FloatingHead::paintEvent(QPaintEvent * /*event*/)
 {
     QPainter p(this);
     QStyleOptionHeader opt;
@@ -222,7 +222,7 @@ TableBody::TableBody(HeadedTable *parent) : QtTableView(parent), htable(parent)
 }
 
 // virtual from QtTableView
-void TableBody::scrollTrigger(int rx, int ry)
+void TableBody::scrollTrigger(int /*rx*/, int ry)
 {
     if (ry == 0)
         return;
@@ -518,7 +518,7 @@ void TableBody::showRange(int from, int to)
 int TableBody::cellWidth(int col) const { return htable->max_widths[col]; }
 
 // **** fix !!
-void TableBody::updateRow(int row)
+void TableBody::updateRow(int /*row*/)
 {
     // ??
     // for(int col = 0; col < htable->ncols; col++)
@@ -739,7 +739,7 @@ void TableBody::dragSelectTo(int row)
 }
 
 // HeadedTable: the actually useable class
-HeadedTable::HeadedTable(QWidget *parent, int opts) : QWidget(parent)
+HeadedTable::HeadedTable(QWidget *parent, int /*opts*/) : QWidget(parent)
 {
     // meaningless?
     options = HTBL_ROW_CONTEXT_MENU | HTBL_ROW_SELECTION |
@@ -817,7 +817,7 @@ void HeadedTable::fontChange()
 }
 
 // DRAFT  virtual !
-void HeadedTable::moveCol(int col, int place)
+void HeadedTable::moveCol(int /*col*/, int /*place*/)
 {
     // go to void Procview::moveColumn(int col, int place)
 }
@@ -915,7 +915,7 @@ void HeadedTable::selectAll()
 
 // default implementation returns a null string (no tip d)
 QString HeadedTable::tipText(int) { return ""; }
-char *HeadedTable::total_selectedRow(int col) { return 0; }
+char *HeadedTable::total_selectedRow(int /*col*/) { return 0; }
 
 // should be called before setNumCols()
 void HeadedTable::setNumRows(int rows)
@@ -1119,9 +1119,9 @@ void HeadedTable::repaint_changed()
     body->repaintChanged();
 }
 
-void HeadedTable::hideEvent(QHideEvent *event) {}
+void HeadedTable::hideEvent(QHideEvent * /*event*/) {}
 
-void HeadedTable::paintEvent(QPaintEvent *e)
+void HeadedTable::paintEvent(QPaintEvent * /*e*/)
 {
     static int c = 0;
     //	printf("HeadedTable paintEvent %d\n",c++); //works ?

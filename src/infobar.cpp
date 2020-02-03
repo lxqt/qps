@@ -61,7 +61,7 @@ class VCursor
 VCursor vcursor;
 
 // DEL
-void Infobar::hideEvent(QHideEvent *event)
+void Infobar::hideEvent(QHideEvent * /*event*/)
 {
     // printf("Infobar::hideEvent()\n");
     // cpubar->hide();
@@ -646,7 +646,7 @@ class w_load_avg : public gwidget
     };
 };
 
-GraphBase::GraphBase(QWidget *parent, Procview *pv)
+GraphBase::GraphBase(QWidget * /*parent*/, Procview *pv)
 {
     procview = pv;
     // setCursor ( QCursor(Qt::CrossCursor) ) ;
@@ -944,7 +944,7 @@ void IO_Graph::mouseMoveEvent ( QMouseEvent *e ) {
         GraphBase::mouseMoveEvent(e);
 } */
 
-void GraphBase::mousePressEvent(QMouseEvent *e) {}
+void GraphBase::mousePressEvent(QMouseEvent * /*e*/) {}
 
 Infobar::Infobar(QWidget *parent, Procview *pv) : QFrame(parent)
 {
@@ -1001,7 +1001,7 @@ Infobar::Infobar(QWidget *parent, Procview *pv) : QFrame(parent)
 Infobar::~Infobar() { delete[] history; }
 
 // a System's Info bar
-Infobar2::Infobar2(QWidget *parent, Procview *pv)
+Infobar2::Infobar2(QWidget * /*parent*/, Procview *pv)
 {
     // procview=pv; //***
     official_height = 35;
@@ -1281,7 +1281,7 @@ void Infobar::make_graph(int w, int h, QPainter *p, bool test)
     dirty = false;
 }
 
-void Infobar::resizeEvent(QResizeEvent *e)
+void Infobar::resizeEvent(QResizeEvent * /*e*/)
 {
     // static int first=0; if(first==0){	drawPixmap(); first=1;}
     drawGraphOnPixmap();
@@ -1309,7 +1309,7 @@ void subcpuRack::mousePressEvent(QMouseEvent *e)
 }
 
 // DRAFT CODE  !!!
-void subcpuRack::paintEvent(QPaintEvent *e)
+void subcpuRack::paintEvent(QPaintEvent * /*e*/)
 {
 
     // static QPaint *p=// QPainter *p=new QPainter(this);

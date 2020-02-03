@@ -24,7 +24,7 @@
 
 #include "qpsapp.h"
 
-void QpsApp::saveState(QSessionManager &manager)
+void QpsApp::saveState(QSessionManager &/*manager*/)
 {
     //	printf("saveState()\n");
     // manager.setRestartHint(QSessionManager::RestartIfRunning);
@@ -33,7 +33,7 @@ void QpsApp::saveState(QSessionManager &manager)
 
 // this is called  when X Logout
 // closeEvent() never called !!
-void QpsApp::commitData(QSessionManager &manager)
+void QpsApp::commitData(QSessionManager &/*manager*/)
 {
     /*
     printf("commitData()\n");

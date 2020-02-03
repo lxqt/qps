@@ -45,7 +45,7 @@ class TrayIcon : public QSystemTrayIcon
     void setWMDock(bool use) { isWMDock = use; }
     bool checkWMDock() { return isWMDock; }
     bool hasSysTray;
-    void setSysTray(bool val)
+    void setSysTray(bool /*val*/)
     { // boolSysTray=val;
     }
 
