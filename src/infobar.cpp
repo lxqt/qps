@@ -92,8 +92,6 @@ char rotate_char = '|';
 // DEL
 void Infobar::refresh()
 {
-    QString s;
-
     if (rotate_str[++rotate_idx] == 0)
         rotate_idx = 0;
     rotate_char = rotate_str[rotate_idx];
@@ -1320,7 +1318,7 @@ void subcpuRack::paintEvent(QPaintEvent * /*e*/)
     int i;
     // QRect cr = contentsRect();
     // QRect cr = p->viewport();
-    QRect cr = p.window(); // rect.
+//    QRect cr = p.window(); // rect.
 
     p.fillRect(rect(), QBrush(Qt::black));
 
