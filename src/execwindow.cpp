@@ -73,7 +73,7 @@ ExecWindow::ExecWindow(watchCond *wc, int pid, QString cmd)
     execlist.append(this);
 }
 
-ExecWindow::ExecWindow(QString str, QString exec_cmd, int pid, QString cmd)
+ExecWindow::ExecWindow(QString /*str*/, QString /*exec_cmd*/, int /*pid*/, QString /*cmd*/)
 {
     setupUi(this);
     //
@@ -92,7 +92,7 @@ void ExecWindow::cmd_ok()
 }
 
 // slot : catch terminate signal.
-void ExecWindow::cmd_finished(int exitCode, QProcess::ExitStatus exitStatus)
+void ExecWindow::cmd_finished(int /*exitCode*/, QProcess::ExitStatus exitStatus)
 {
     textEdit->append( tr( "%1 exit with code %2" ).arg( wcond->command )
                                                   .arg( exitStatus ) );

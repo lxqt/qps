@@ -55,7 +55,7 @@ extern bool flag_xcompmgr;
 #define SYSTEM_TRAY_CANCEL_MESSAGE 2
 
 TrayIcon::TrayIcon(const QPixmap &icon, const QString &tooltip, QMenu *popup,
-                   QWidget *parent, const char *name)
+                   QWidget * /*parent*/, const char * /*name*/)
     : QSystemTrayIcon(0 /* shoud be NULL!! */), pop(popup), pm(icon),
       tip(tooltip)
 {
@@ -238,7 +238,7 @@ void TrayIcon::closeEvent(QCloseEvent *e)
 }
 
 // called after size changed
-void TrayIcon::resizeEvent(QResizeEvent *e)
+void TrayIcon::resizeEvent(QResizeEvent * /*e*/)
 {
     int w, h;
     // printf("TrayIcon::resizeEvent(): w=%d,h=%d\n",width(),height());

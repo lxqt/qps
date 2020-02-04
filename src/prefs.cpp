@@ -350,7 +350,7 @@ void Preferences::closeEvent(QCloseEvent *event)
 }
 
 // work
-void Preferences::font_changed(int i)
+void Preferences::font_changed(int /*i*/)
 {
     int size = psizecombo->currentText().toInt();
     QFont font = font_cb->currentFont();
@@ -360,4 +360,4 @@ void Preferences::font_changed(int i)
 }
 
 // DRAFT CODE:
-void Preferences::fontset_changed(int i) {}
+void Preferences::fontset_changed(int /*i*/) {}

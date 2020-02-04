@@ -68,7 +68,7 @@ const QString userName(int uid, int euid)
 }
 
 // return group name (possibly numeric)
-const QString groupName(int gid, int egid)
+const QString groupName(int gid, int /*egid*/)
 {
     QString res;
     struct group *gr = getgrgid(gid);
@@ -713,7 +713,7 @@ void Procview::fieldArrange()
     }
 }
 
-void Procview::setTreeMode(bool b)
+void Procview::setTreeMode(bool /*b*/)
 {
     if (treeview == false)
     {

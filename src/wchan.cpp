@@ -51,7 +51,7 @@ static char *hexstr(unsigned long x)
 // called  by ????
 // return wchan symbol (possibly numeric, and empty string if addr=0)
 
-QString Wchan::name(unsigned long addr)
+QString Wchan::name(unsigned long /*addr*/)
 {
 #ifdef LINUX
     return "";

@@ -26,7 +26,7 @@
 extern QList<watchCond *> watchlist;
 
 QModelIndex ListModel::index(int row, int column,
-                             const QModelIndex &parent) const
+                             const QModelIndex & /*parent*/) const
 {
     // printf("index %d %d\n",row,column);
     if (row >= 0 and column >= 0 and row < watchlist.size())
@@ -48,15 +48,15 @@ void ListModel::update(int row)
 void ListModel::update(const QModelIndex &idx) { emit dataChanged(idx, idx); }
 
 // Pure Virtual
-QModelIndex ListModel::parent(const QModelIndex &child) const
+QModelIndex ListModel::parent(const QModelIndex & /*child*/) const
 {
     return QModelIndex(); // no parent!
 }
-int ListModel::rowCount(const QModelIndex &parent) const
+int ListModel::rowCount(const QModelIndex & /*parent*/) const
 {
     return watchlist.size();
 }
-QVariant ListModel::headerData(int section, Qt::Orientation orientation,
+QVariant ListModel::headerData(int section, Qt::Orientation /*orientation*/,
                                int role) const
 {
     //	printf("headerData\n");

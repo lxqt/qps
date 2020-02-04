@@ -325,7 +325,7 @@ CrossBox::CrossBox(const char *text, QWidget *parent) : QCheckBox(text, parent)
 {
 }
 
-void CrossBox::drawButton(QPainter *p)
+void CrossBox::drawButton(QPainter * /*p*/)
 {
     /////	QCheckBox::drawButton(p);
 }
@@ -364,7 +364,7 @@ void TBloon::start_ani()
 
 } */
 
-void TBloon::update(int val)
+void TBloon::update(int /*val*/)
 {
     //`QPoint p=QCursor::pos();
     // qDebug("pos %d %d", p.x(),p.y());
@@ -467,7 +467,7 @@ void TFrame::move(int x,int y)
 } */
 
 // QToolTip::showText(e->globalPos(), s);
-void TFrame::showText(QPoint glob_pos, QString str) {}
+void TFrame::showText(QPoint /*glob_pos*/, QString /*str*/) {}
 
 void TFrame::setText(QString str)
 {
@@ -538,7 +538,7 @@ void TFrame::setPos(int x, int y)
     move(x + 16, y + 4);
 }
 
-void TFrame::moveEvent(QMoveEvent *e)
+void TFrame::moveEvent(QMoveEvent * /*e*/)
 {
     // int x=e->pos().x();
     // printf("pos (%d %d) \n",e->pos().x(),e->pos().y());
@@ -551,7 +551,7 @@ void TFrame::setValue(int val)
     update();
 }
 
-void TFrame::showEvent(QShowEvent *event)
+void TFrame::showEvent(QShowEvent * /*event*/)
 {
     opacity = 0.2;
     //	timeLine->start();
@@ -634,7 +634,7 @@ void UFrame::setTitle(QString str)
     title = str;
 }
 
-void UFrame::paintEvent(QPaintEvent *event) {}
+void UFrame::paintEvent(QPaintEvent * /*event*/) {}
 
 QPixmap *letters;
 int pf_height = 9;
@@ -738,7 +738,7 @@ XButton::XButton(QWidget *parent) : QAbstractButton(parent)
     setGeometry(0, 0, w, w);
 }
 
-void XButton::resizeEvent(QResizeEvent *p)
+void XButton::resizeEvent(QResizeEvent * /*p*/)
 {
     int i, h;
     i = height() % 2;
@@ -750,7 +750,7 @@ void XButton::resizeEvent(QResizeEvent *p)
     setFixedSize(h, h);
 }
 
-void XButton::paintEvent(QPaintEvent *event)
+void XButton::paintEvent(QPaintEvent * /*event*/)
 {
     QPainter p(this);
     int w, h, m;
@@ -973,7 +973,7 @@ void check_qps_running()
 }
 
 char *read_proc_file(const char *fname, int pid = -1, int tgid = -1); // Temp
-void init_misc(QWidget *main)
+void init_misc(QWidget * /*main*/)
 {
 
     init_xpm(); // xpm image file load
@@ -1012,7 +1012,7 @@ void init_misc(QWidget *main)
     }
 }
 
-QTabWidgetX::QTabWidgetX(QWidget *parent) {}
+QTabWidgetX::QTabWidgetX(QWidget * /*parent*/) {}
 
 void QTabWidgetX::showTab(bool flag)
 {

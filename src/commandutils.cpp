@@ -50,7 +50,7 @@ bool hasAmpersand(QString cmdline)
         return false;
 }
 
-void check_command(int idx) {}
+void check_command(int /*idx*/) {}
 
 //
 void check_commandAll()

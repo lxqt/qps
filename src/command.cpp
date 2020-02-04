@@ -42,7 +42,7 @@ extern Qps *qps;
 extern ControlBar *controlbar;
 extern QList<Command *> commands;
 
-Command::Command(QString n, QString cmd, bool flag)
+Command::Command(QString n, QString cmd, bool /*flag*/)
 {
     // printf("Command init\n");
     name = n;
@@ -297,7 +297,7 @@ void watchdog_check_if_finish(QString cmd, Procinfo *pi)
 }
 
 // NOTYET
-void watchdog_syscpu(int cpu)
+void watchdog_syscpu(int /*cpu*/)
 {
     //	printf("Watchdog: watchdog_syscpu\n");
     // if(watchdogDialog->flag_ifsyscpu)
