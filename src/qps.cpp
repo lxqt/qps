@@ -324,12 +324,10 @@ Qps::Qps()
     make_command_menu();                // after qpsrc reading
 
     // misc. accelerators
-    QShortcut *c1 =
-        new QShortcut(Qt::CTRL + Qt::Key_Q, this, SLOT(save_quit()));
-    QShortcut *c3 = new QShortcut(Qt::CTRL + Qt::Key_Space,
+    (void) new QShortcut(Qt::CTRL + Qt::Key_Q, this, SLOT(save_quit()));
+    (void) new QShortcut(Qt::CTRL + Qt::Key_Space,
                                   ctrlbar->pauseButton, SLOT(click()));
-    QShortcut *c2 =
-        new QShortcut(Qt::CTRL + Qt::Key_L, pstable, SLOT(repaintAll()));
+    (void) new QShortcut(Qt::CTRL + Qt::Key_L, pstable, SLOT(repaintAll()));
 
     // MOVETO : pstable better? hmmm...
     // where is leftClick?

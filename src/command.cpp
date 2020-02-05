@@ -260,8 +260,7 @@ void watchdog_check_if_start(QString cmd, Procinfo *pi)
                     // ExecWindow *mw=new
                     // ExecWindow(wc->message,wc->command,pi->pid,pi->command);
                     // // leak
-                    ExecWindow *mw =
-                        new ExecWindow(wc, pi->pid, pi->command); // leak
+                        (void) new ExecWindow(wc, pi->pid, pi->command); // leak
 
                 // note :
                 //	1.system("./loop"); //block !!
@@ -286,8 +285,7 @@ void watchdog_check_if_finish(QString cmd, Procinfo *pi)
                 if (!pi->isThread())
                     // if(pi->pid==pi->tgid) // not a thread
                     // !
-                    ExecWindow *mw =
-                        new ExecWindow(w, pi->pid, pi->command); // leak
+                        (void) new ExecWindow(w, pi->pid, pi->command); // leak
                 //	ExecWindow *mw=new
                 // ExecWindow(w->message,w->command,pi->pid,pi->command);
             }
