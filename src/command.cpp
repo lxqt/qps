@@ -172,7 +172,6 @@ void Command::call(Procinfo *p)
     QString msg;
 
     printf("called !\n");
-    int len = cmdline.length();
 
     if (p == NULL)
     {

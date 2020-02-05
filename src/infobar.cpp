@@ -370,7 +370,6 @@ class w_cpu : public gwidget
         int cpu_id;
         int cpu_n;
         int gheight = 10;
-        int w;
         int mw;
 
         user = 0, system = 0, idle = 0, nice = 0, wait = 0;
@@ -469,7 +468,6 @@ class w_cpu : public gwidget
 
     virtual char *info()
     {
-        char str[80];
         float f_user, f_nice, f_system, f_wait;
 
         f_user = (float)user / total * 100;
@@ -804,7 +802,6 @@ void IO_Graph::paintEvent ( QPaintEvent *e )
 QString doHistory(SysHistory *sysh)
 {
     QString str;
-    int max = 0;
 
     char buf[128];
     // sprintf(buf,"miniHistory /* %.02f%%",sysh->load_cpu*100);
@@ -832,7 +829,6 @@ QString doHistory(SysHistory *sysh)
 QString GraphBase::doHistoryTXT(SysHistory *sysh)
 {
     QString str;
-    int max = 0;
 
     char buf[128];
     // sprintf(buf,"miniHistory /* %.02f%%",sysh->load_cpu*100);
@@ -850,10 +846,8 @@ QString GraphBase::doHistoryTXT(SysHistory *sysh)
 
 void GraphBase::mouseMoveEvent(QMouseEvent *e)
 {
-    int x = 0, y = 0;
     int half_height = height() / 2;
     int dy;
-    int gap;
 
     px = e->pos().x(); // x in Infobar
     py = e->pos().y(); // y in Infobar
@@ -863,8 +857,6 @@ void GraphBase::mouseMoveEvent(QMouseEvent *e)
 
     // printf("px=%d py=%d  y=%d h=%d , dy=%d\n",px,py,y,height(),dy);
     // gap=infobox->width() + px  - width();
-
-    int i;
 
     // printf("procview npoints=%d  px=%d\n",npoints,px);
     QString text;
@@ -900,7 +892,6 @@ void GraphBase::mouseMoveEvent(QMouseEvent *e)
 QString IO_Graph::doHistoryTXT(SysHistory *sysh)
 {
     QString str;
-    int max = 0;
 
     char buf[64], mem_str[64];
     // sprintf(buf,"miniHistory /* %.02f%%",sysh->load_cpu*100);
@@ -984,7 +975,6 @@ Infobar::Infobar(QWidget *parent, Procview *pv) : QFrame(parent)
         QWidget::setMouseTracking(true);
     } //
 
-    int i = 0;
     // is_vertical = Qps::vertical_cpu_bar; //DEL
 
     //	cpubar=new subcpuRack(parent,pv);
@@ -1072,7 +1062,6 @@ void Infobar::add_history_point(unsigned int value)
 // BACKUP: add value to the history, updating peak.
 void Infobar::add_history_point2(float value)
 {
-    static float v[3] = {0, 0, 0};
     static float last_val = 0;
 
     float f;
@@ -1141,7 +1130,6 @@ void Infobar::mousePressEvent(QMouseEvent *e)
 // only works if mouse cursor in this area
 void Infobar::mouseMoveEvent(QMouseEvent *e)
 {
-    int x = 0, y = 0;
     int half_height = height() / 2;
     int dy;
     int gap;
@@ -1312,10 +1300,7 @@ void subcpuRack::paintEvent(QPaintEvent * /*e*/)
 
     // static QPaint *p=// QPainter *p=new QPainter(this);
     QPainter p(this);
-    char buff[128];
     int w;
-    int x, y;
-    int i;
     // QRect cr = contentsRect();
     // QRect cr = p->viewport();
 //    QRect cr = p.window(); // rect.
@@ -1327,10 +1312,8 @@ void subcpuRack::paintEvent(QPaintEvent * /*e*/)
     p.drawLine(0, 0, QWidget::width(), 0);
     // p.fillRect(cr,QBrush(QColor(255,255,255,50)));
 
-    unsigned long total = 0, user = 0, system = 0, idle = 0, nice = 0, wait = 0;
     // if(procview->num_cpus>=4) // temporaly...
     // else
-    int cpu_n = procview->num_cpus;
     w = 2 + pf_write(&p, 2, 2, "SUB CPU");
 }
 

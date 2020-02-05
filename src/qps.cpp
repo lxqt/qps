@@ -1332,11 +1332,6 @@ void Qps::menu_renice()
         if (ok && new_nice >= -20 && new_nice <= 19)
             break;
     }
-    int nicecol = procview->findCol(F_NICE);
-    int statcol = procview->findCol(F_STAT);
-#ifdef LINUX
-    int tmscol = procview->findCol(F_TMS);
-#endif
 
     // do the actual renicing
     for (int i = 0; i < procview->linear_procs.size(); i++)
@@ -1401,11 +1396,7 @@ void Qps::menu_sched()
 
     if (sd.out_policy == SCHED_OTHER)
         sd.out_prio = 0; // only allowed value
-    int plcycol = procview->findCol(F_PLCY);
-    int rpricol = procview->findCol(F_RPRI);
-#ifdef LINUX
-    int tmscol = procview->findCol(F_TMS);
-#endif
+
     for (int i = 0; i < procview->linear_procs.size(); i++)
     {
         Procinfo *p = procview->linear_procs[i];

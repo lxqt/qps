@@ -163,8 +163,6 @@ Preferences::Preferences(QWidget *parent) : QDialog(parent)
 
     v_layout->setSpacing(1);
     // v_layout->setSpacing(1);
-    const int border_x = 10;
-    int min_x = 0;
 
     QVector< Cbgroup >::iterator endItG = Cbgroup::groups().end();
     for( QVector< Cbgroup >::iterator itG = Cbgroup::groups().begin(); itG != endItG; ++ itG )

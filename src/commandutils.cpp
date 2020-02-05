@@ -55,7 +55,7 @@ void check_command(int /*idx*/) {}
 //
 void check_commandAll()
 {
-    int i, idx;
+    int idx;
 
     return;
     for (int i = 0; i < commands.size(); i++)

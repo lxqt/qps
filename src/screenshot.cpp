@@ -436,8 +436,6 @@ int screenshot_main(int argc, char **argv)
     //    Qt::HANDLE(colormap));
     QApplication app(argc, argv);
 
-    Display *dsp = QX11Info::display(); // get the display(X server?)
-
     Screenshot *w = new Screenshot();
     w->show();
     // Widget w;

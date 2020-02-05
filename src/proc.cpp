@@ -232,7 +232,7 @@ char *read_proc_file2(char *r_path, const char *fname, int *size = NULL)
 bool proc_pid_fd(const int pid)
 {
     char path[256];
-    char buffer[256], fname[256];
+    char fname[256];
     DIR *d;
     int fdnum;
     int len, path_len;
@@ -497,7 +497,6 @@ int Procinfo::readproc()
 {
     char cmdbuf[MAX_CMD_LEN];
     char path[64];
-    int len;
     char *sbuf; // should be enough to acommodate /proc/PID/stat
     char *buf;
 
@@ -928,7 +927,6 @@ void Proc::read_loadavg()
 
 int Proc::countCpu()
 {
-    static bool first_run = true;
     char path[80];
     char buf[1024 * 8]; // for SMP
 
@@ -1090,7 +1088,6 @@ int Proc::read_system() //
     */
 
     // Total_cpu
-    int total_cpu = Proc::num_cpus;
     unsigned user, nice, system, idle, iowait, irq, sftirq, steal, guest, nflds;
     nflds = sscanf(buf, "cpu %u %u %u %u %u %u %u %u %u", &user, &nice, &system,
                    &idle, &iowait, &irq, &sftirq, &steal, &guest);
@@ -1350,7 +1347,7 @@ void Procinfo::read_fd(int fdnum, char *path)
 // called by Detail()
 bool Procinfo::read_fds()
 {
-    char path[128], *p;
+    char path[128];
     if (flag_thread_ok && flag_show_thread)
         sprintf(path, "/proc/%d/task/%d/fd", pid, pid);
     else
@@ -1786,8 +1783,6 @@ QString Cat_time::string(Procinfo *p)
     int ticks = p->utime;
     int ms;
 
-    int proctick = p->proc->clk_tick;
-
     if (Procview::flag_cumulative)
         ticks += p->cutime;
 
@@ -2146,7 +2141,6 @@ int get_kernel_version()
             Q_UNUSED(uname_info.release[0]);
         }
         p = uname_info.release;
-        char str[32];
         int major, minor, patch;
         int result;
 
