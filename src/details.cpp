@@ -345,7 +345,7 @@ void Sockets::update_hostname(unsigned /*addr*/)
         int rows = p->sock_inodes.size();
         for (int i = 0; i < rows; i++)
         {
-            int inode = p->sock_inodes[i]->inode;
+            /// int inode = p->sock_inodes[i]->inode;
             /// Sockinfo *si = Procinfo::socks[inode];
             /// if(si->local_addr == addr) updateCell(i, LOCALADDR);
             /// if(si->rem_addr == addr)	updateCell(i,
@@ -428,7 +428,7 @@ Maps::Maps(QWidget *parent) : SimpleTable(parent, MAPSFIELDS, fields() )
     }
     else
     {
-        int ps = f.pointSize();
+        /// int ps = f.pointSize();
         /// setBodyFont(QFont("Courier", ps ? ps : 10));
     }
 

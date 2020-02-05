@@ -764,7 +764,7 @@ void Infobar::paintEvent(QPaintEvent *e)
     // drww VCursor
     if (vcursor.enable)
     {
-        int px = vcursor.px;
+        /// int px = vcursor.px;
         ///	p.setPen(QColor(80,195,80));
         ///	p.drawLine (px,0,px,height());
     }
@@ -1132,7 +1132,7 @@ void Infobar::mouseMoveEvent(QMouseEvent *e)
 {
     int half_height = height() / 2;
     int dy;
-    int gap;
+    // int gap;
 
     px = e->pos().x(); // x in Infobar
     py = e->pos().y(); // y in Infobar
@@ -1170,7 +1170,7 @@ void Infobar::mouseMoveEvent(QMouseEvent *e)
     if (setinfo == 0)
         infobox->setText(text);
 
-    QPoint p = mapTo(qps, e->pos()); //??
+    // QPoint p = mapTo(qps, e->pos()); //??
 
     // infobox->move(a.x()+16,a.y()+4);
     // infobox->setPos(p.x()+16,p.y()+4);

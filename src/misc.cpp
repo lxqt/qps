@@ -402,7 +402,7 @@ bool TBloon::eventFilter(QObject *obj, QEvent *event)
     }
     else if (event->type() == QEvent::MouseMove)
     {
-        QMouseEvent *me = static_cast<QMouseEvent *>(event);
+        // QMouseEvent *me = static_cast<QMouseEvent *>(event);
         //	qDebug("Ate key press %d %d", me->x(),me->y());
         //	move(me->x()+5,me->y()+4);
         return false;

@@ -234,7 +234,7 @@ bool proc_pid_fd(const int pid)
     char path[256];
     char fname[256];
     DIR *d;
-    int fdnum;
+//    int fdnum;
     int len, path_len;
 
     sprintf(path, "/proc/%d/fd", pid);
@@ -500,7 +500,7 @@ int Procinfo::readproc()
     char *sbuf; // should be enough to acommodate /proc/PID/stat
     char *buf;
 
-    int x_pid; // just pid
+//    int x_pid; // just pid
     int i_tty; //
     long stime, cstime;
 
