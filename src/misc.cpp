@@ -61,7 +61,7 @@ QWidget *getQpsWidget()
         if (w->objectName() == "qps")
             return w;
     }
-    return 0;
+    return nullptr;
 }
 
 #include <stdarg.h>
@@ -126,7 +126,7 @@ int mini_sscanf(const char *s1, const char *fmt, ...)
             else if (fmt[1] == '*' && fmt[2] == 's') // skip
             {
                 p = strchr(s, ' '); // 0x20,0x00,0x0A, 123 435 54054
-                if (p == 0)
+                if (p == nullptr)
                 {
                     //	printf("%s : %c [%s]
                     //\n",__FUNCTION__,fmt[1],s);
@@ -204,7 +204,7 @@ int mini_sscanf(const char *s1, const char *fmt, ...)
                 strncpy(sstr, fmt, n);
                 sstr[n] = 0;
                 p = strstr(s, sstr);
-                if (p == 0)
+                if (p == nullptr)
                 {
                     if (0 and flag_devel)
                         printf("%s : can't found [%s] "
@@ -285,7 +285,7 @@ void msleep(long msec)
 
     tv.tv_sec = 0;
     tv.tv_usec = msec * 1000;
-    select(0, NULL, NULL, NULL, &tv);
+    select(0, nullptr, nullptr, nullptr, &tv);
     return;
 #endif
 }
@@ -782,7 +782,7 @@ void SearchBox::event_cursor_moved(QMouseEvent *e) { move(e->x(), e->y()); }
 
 void SearchBox::event_xbutton_clicked()
 {
-    QKeyEvent ke(QEvent::KeyPress, Qt::Key_Escape, 0); // temp..
+    QKeyEvent ke(QEvent::KeyPress, Qt::Key_Escape, Qt::NoModifier); // temp..
     keyPressEvent(&ke);
 }
 
@@ -996,7 +996,7 @@ void init_misc(QWidget * /*main*/)
         char sstr[32] = "pu%s";
         char buffer[128];
 
-        if ((buf = read_proc_file("stat", 1)) == 0)
+        if ((buf = read_proc_file("stat", 1)) == nullptr)
         {
             printf("cant open [%s]\n", "sss");
         }

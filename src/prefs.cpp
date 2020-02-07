@@ -52,13 +52,13 @@ public:
     bool *variable;
     QCheckBox *cb;
 
-    Boxvar() : text( QString() ), variable( static_cast<  bool * >( 0 ) ), cb( static_cast< QCheckBox *>( 0 ) ) {}
+    Boxvar() : text( QString() ), variable( static_cast<  bool * >( nullptr ) ), cb( static_cast< QCheckBox *>( nullptr ) ) {}
     Boxvar( const QString t, bool *v, QCheckBox *c ) : text( t ), variable( v ), cb( c ) {}
 
     static QVector< Boxvar > *general_boxes()
     {
-        static QVector< Boxvar > boxes( { { tr( "Exit on closing" ), &Qps::flag_exit, 0}
-                                        , { tr( "Remember Position" ), &Qps::save_pos, 0}
+        static QVector< Boxvar > boxes( { { tr( "Exit on closing" ), &Qps::flag_exit, nullptr}
+                                        , { tr( "Remember Position" ), &Qps::save_pos, nullptr}
                                         } );
         return &boxes;
     }
@@ -66,22 +66,22 @@ public:
 //#ifdef LINUX
     static QVector< Boxvar > *sockinfo_boxes()
     {
-        static QVector< Boxvar > boxes( { { tr( "Host Name Lookup" ), &Qps::hostname_lookup, 0}
-                                        , { tr( "Service Name Lookup" ), &Qps::service_lookup, 0} } );
+        static QVector< Boxvar > boxes( { { tr( "Host Name Lookup" ), &Qps::hostname_lookup, nullptr}
+                                        , { tr( "Service Name Lookup" ), &Qps::service_lookup, nullptr} } );
         return &boxes;
     }
 //#endif
     static QVector< Boxvar > *tree_boxes()
     {
-        static QVector< Boxvar > boxes( { { tr( "Disclosure Triangles" ), &Qps::tree_gadgets, 0}
-                                        , { tr( "Branch Lines" ), &Qps::tree_lines, 0} } );
+        static QVector< Boxvar > boxes( { { tr( "Disclosure Triangles" ), &Qps::tree_gadgets, nullptr}
+                                        , { tr( "Branch Lines" ), &Qps::tree_lines, nullptr} } );
         return &boxes;
     }
 
     static QVector< Boxvar > *misc_boxes()
     {
-        static QVector< Boxvar > boxes( { { tr( "Auto Save Settings on Exit" ), &Qps::auto_save_options, 0}
-                                        , { tr( "Selection: Copy PIDs to Clipboard" ), &Qps::pids_to_selection, 0}
+        static QVector< Boxvar > boxes( { { tr( "Auto Save Settings on Exit" ), &Qps::auto_save_options, nullptr}
+                                        , { tr( "Selection: Copy PIDs to Clipboard" ), &Qps::pids_to_selection, nullptr}
 #ifdef SOLARIS
                                         , { tr( "Normalize NICE" ), &Qps::normalize_nice, 0}
                                         , { tr( "Use pmap for Map Names" ), &Qps::use_pmap, 0}
@@ -99,7 +99,7 @@ public:
     const QString caption;
     QVector< Boxvar > *boxvar;
 
-    Cbgroup() : caption( QString() ), boxvar( static_cast< QVector< Boxvar > * >( 0 ) ) {}
+    Cbgroup() : caption( QString() ), boxvar( static_cast< QVector< Boxvar > * >( nullptr ) ) {}
     Cbgroup( const QString c, QVector< Boxvar > *b ) : caption( c ), boxvar( b ) {}
 
     static QVector< Cbgroup > &groups()
@@ -185,7 +185,7 @@ Preferences::Preferences(QWidget *parent) : QDialog(parent)
 
     update_boxes();
 
-    rb_totalcpu = NULL; // tmp
+    rb_totalcpu = nullptr; // tmp
 
     if (QPS_PROCVIEW_CPU_NUM() > 1)
     {
@@ -215,7 +215,7 @@ Preferences::Preferences(QWidget *parent) : QDialog(parent)
     }
 
     // Appearance ====================================
-    if (font_cb == NULL)
+    if (font_cb == nullptr)
     {
         font_cb = new QFontComboBox(this); // preload
         font_cb->setWritingSystem(QFontDatabase::Latin);

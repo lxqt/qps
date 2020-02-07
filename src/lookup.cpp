@@ -66,7 +66,7 @@ unsigned UintQueue::dequeue()
 Hostnode::Hostnode() : next(this), prev(this) {}
 
 // create a new cache node, initialized with null string
-Hostnode::Hostnode(unsigned addr) : ipaddr(addr), next(0), prev(0) {}
+Hostnode::Hostnode(unsigned addr) : ipaddr(addr), next(nullptr), prev(nullptr) {}
 
 // must be called on the head of the list
 void Hostnode::moveToFront(Hostnode *node)
@@ -104,7 +104,7 @@ void Hostnode::insertFirst(Hostnode *node)
 Lookup::Lookup() // : hostdict(17)
 {
     sockfd = -1; // no lookup helper is running
-    readsn = writesn = 0;
+    readsn = writesn = nullptr;
     outstanding = 0;
 }
 

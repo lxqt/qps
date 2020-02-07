@@ -729,14 +729,14 @@ int QtTableView::lastColVisible() const
   \sa colIsVisible()
 */
 
-bool QtTableView::rowIsVisible(int row) const { return rowYPos(row, 0); }
+bool QtTableView::rowIsVisible(int row) const { return rowYPos(row, nullptr); }
 
 /*
   Returns true if \a col is at least partially visible.
   \sa rowIsVisible()
 */
 
-bool QtTableView::colIsVisible(int col) const { return colXPos(col, 0); }
+bool QtTableView::colIsVisible(int col) const { return colXPos(col, nullptr); }
 
 /*
   \internal

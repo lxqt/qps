@@ -56,7 +56,7 @@ extern bool flag_xcompmgr;
 
 TrayIcon::TrayIcon(const QPixmap &icon, const QString &tooltip, QMenu *popup,
                    QWidget * /*parent*/, const char * /*name*/)
-    : QSystemTrayIcon(0 /* shoud be NULL!! */), pop(popup), pm(icon),
+    : QSystemTrayIcon(nullptr /* shoud be NULL!! */), pop(popup), pm(icon),
       tip(tooltip)
 {
     flag_show_tip = false;

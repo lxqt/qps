@@ -257,7 +257,7 @@ bool TableBody::isCellChanged(int row, int col)
     // int left = leftCell(), top = topCell();
     CellAttribute *attr = tablecache.value(row - topCell(), col - leftCell());
 
-    if (attr == NULL) // never NULL
+    if (attr == nullptr) // never NULL
     {
         return true;
     }
@@ -915,7 +915,7 @@ void HeadedTable::selectAll()
 
 // default implementation returns a null string (no tip d)
 QString HeadedTable::tipText(int) { return ""; }
-char *HeadedTable::total_selectedRow(int /*col*/) { return 0; }
+char *HeadedTable::total_selectedRow(int /*col*/) { return nullptr; }
 
 // should be called before setNumCols()
 void HeadedTable::setNumRows(int rows)

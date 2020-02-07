@@ -137,7 +137,7 @@ inline int read_file(char *name, char *buf, int max)
 // return 0 : if error occurs.
 char buffer_proc[1024 * 4]; // enough..maybe
 char *read_proc_file(const char *fname, int pid = -1, int tgid = -1,
-                     int *size = NULL)
+                     int *size = nullptr)
 {
     static int max_size = 0;
     char path[256];
@@ -161,20 +161,20 @@ char *read_proc_file(const char *fname, int pid = -1, int tgid = -1,
             return buffer_proc;
         }
         else
-            return 0;
+            return nullptr;
     }
 
     int fd = open(path, O_RDONLY);
     if (fd < 0)
-        return 0;
+        return nullptr;
     r = read(fd, buffer_proc, sizeof(buffer_proc) - 1); // return 0 , -1 ,
     if (r < 0)
-        return 0;
+        return nullptr;
 
     if (max_size < r)
         max_size = r;
 
-    if (size != 0)
+    if (size != nullptr)
         *size = r;
 
     buffer_proc[r] = 0; // safer
@@ -183,7 +183,7 @@ char *read_proc_file(const char *fname, int pid = -1, int tgid = -1,
     // note: not work  fgets(sbuf, sizeof(64), fp) why???
 }
 
-char *read_proc_file2(char *r_path, const char *fname, int *size = NULL)
+char *read_proc_file2(char *r_path, const char *fname, int *size = nullptr)
 {
     static int max_size = 0;
     char path[256];
@@ -201,21 +201,21 @@ char *read_proc_file2(char *r_path, const char *fname, int *size = NULL)
             return buffer_proc;
         }
         else
-            return 0;
+            return nullptr;
     }
 
     int fd = open(path, O_RDONLY);
     if (fd < 0)
-        return 0;
+        return nullptr;
     r = read(fd, buffer_proc,
              sizeof(buffer_proc) - 1); // return 0 , -1 , read_count
     if (r < 0)
-        return 0;
+        return nullptr;
 
     if (max_size < r)
         max_size = r;
 
-    if (size != 0)
+    if (size != nullptr)
         *size = r;
 
     buffer_proc[r] = 0; // safer
@@ -251,7 +251,7 @@ bool proc_pid_fd(const int pid)
     }
 
     struct dirent *e;
-    while ((e = readdir(d)) != 0)
+    while ((e = readdir(d)) != nullptr)
     {
         if (e->d_name[0] == '.')
             continue; // skip "." and ".."
@@ -304,14 +304,14 @@ Procinfo::Procinfo(Proc *system_proc, int process_id, int thread_id) : refcnt(1)
     ppid = 0; // no parent
     selected = false;
     hidekids = false;
-    envblock = 0; //!!
+    envblock = nullptr; //!!
 
     table_child_seq = -1;
     child_seq_prev = -1;
 
     lastchild = 0;
     generation = -1;
-    detail = 0;
+    detail = nullptr;
 
     /// per_cpu_times = 0; not yet
 
@@ -360,7 +360,7 @@ Procinfo::~Procinfo()
         {
             //	printf("~Procinfo() : pid=%d\n",pid);
             detail->process_gone();
-            detail = 0;
+            detail = nullptr;
         }
 
         qDeleteAll(sock_inodes.begin(), sock_inodes.end());
@@ -417,7 +417,7 @@ int Proc::read_pid_tasks(int pid)
     struct dirent *e;
     int thread_pid;
     int thread_n = 0;
-    Procinfo *pi = 0;
+    Procinfo *pi = nullptr;
 
     sprintf(path, "/proc/%d/task", pid);
 
@@ -425,7 +425,7 @@ int Proc::read_pid_tasks(int pid)
     if (!d)
         return -1; // process dead  already!
 
-    while ((e = readdir(d)) != 0)
+    while ((e = readdir(d)) != nullptr)
     {
         if (e->d_name[0] == '.')
             continue; // skip "." , ".."
@@ -436,7 +436,7 @@ int Proc::read_pid_tasks(int pid)
 
         pi = procs.value(thread_pid, NULL);
 
-        if (pi == NULL)
+        if (pi == nullptr)
         {
             pi = new Procinfo(this, pid, thread_pid);
             procs.insert(thread_pid, pi);
@@ -519,7 +519,7 @@ int Procinfo::readproc()
         old_wcpu = wcpu = pcpu = 0.0;
 
         // read /proc/PID/status
-        if ((buf = read_proc_file2(path, "status")) == 0)
+        if ((buf = read_proc_file2(path, "status")) == nullptr)
             return -1;
 
         // Note: Process_name from
@@ -565,7 +565,7 @@ int Procinfo::readproc()
         cmdline_cmd[0] = 0;
 
         // anyone can read [cmdline]
-        if ((buf = read_proc_file2(path, "cmdline", &size)) == 0)
+        if ((buf = read_proc_file2(path, "cmdline", &size)) == nullptr)
             return -1;
         else
         {
@@ -630,15 +630,15 @@ int Procinfo::readproc()
                 //
                 char *p;
                 p = strstr(cmdline_cmd, ": "); // cut the options !
-                if (p != 0)
+                if (p != nullptr)
                     *p = 0;
                 p = strchr(cmdline_cmd, ' '); // cut the options !
-                if (p != 0)
+                if (p != nullptr)
                     *p = 0;
 
                 // printf("Qps:debug %s\n",cmdline_cmd );
                 char *pstart = strstr(basename(cmdline_cmd), cmdbuf);
-                if (pstart != 0)
+                if (pstart != nullptr)
                 {
                     command = pstart; // copy
                                       /// printf("Qps:debug2
@@ -667,14 +667,14 @@ int Procinfo::readproc()
         // if no change then return.    twice faster !
         // MAX_256 bytes check...?
         // 2.6.9 upper only and some system no has
-        if ((sbuf = read_proc_file2(path, "schedstat")) == 0)
+        if ((sbuf = read_proc_file2(path, "schedstat")) == nullptr)
             return -1;
 
         if (hashcmp(sbuf))
             return 1; // no change
     }
     // read /proc/PID/stat
-    if ((sbuf = read_proc_file2(path, "stat")) == 0)
+    if ((sbuf = read_proc_file2(path, "stat")) == nullptr)
         return -1;
 
     if (flag_schedstat == false) // if no change then return.    twice faster !
@@ -714,7 +714,7 @@ int Procinfo::readproc()
     // name.
     p = strchr(sbuf, '(');
     p1 = strrchr(sbuf, ')');
-    if (p == 0 || p1 == 0)
+    if (p == nullptr || p1 == nullptr)
         return -1;
     p1++;
     // we can safely use sscanf() on the rest of the string
@@ -810,7 +810,7 @@ int Procinfo::readproc()
     // read /proc/%PID/statm  - memory usage
     if (1)
     {
-        if ((buf = read_proc_file2(path, "statm")) == 0)
+        if ((buf = read_proc_file2(path, "statm")) == nullptr)
             return -1; // kernel 2.2 ?
         sscanf(buf, "%lu %lu %lu %lu %lu %lu %lu", &size, &resident, &share,
                &trs, &lrs, &drs, &dt);
@@ -828,7 +828,7 @@ int Procinfo::readproc()
     }
 
     // read /proc/PID/status check !!
-    if ((buf = read_proc_file2(path, "status")) == 0)
+    if ((buf = read_proc_file2(path, "status")) == nullptr)
         return -1;
     else
     {
@@ -863,7 +863,7 @@ int Procinfo::readproc()
     // read /proc/PID/file_io
     // NOTE:  2.6.11 dont have IO file
     // COMPLEX_CODE
-    if ((buf = read_proc_file2(path, "io")) != 0)
+    if ((buf = read_proc_file2(path, "io")) != nullptr)
     {
         // rchar = ... not file maybe sockread
         //
@@ -894,7 +894,7 @@ int Procinfo::readproc()
     }
     // per_cpu_times = 0; // not yet
 
-    if ((buf = read_proc_file2(path, "wchan")) != 0)
+    if ((buf = read_proc_file2(path, "wchan")) != nullptr)
     {
         wchan_str = buf;
     }
@@ -999,7 +999,7 @@ int Proc::read_system() //
             return 0;
         buf[n] = '\0';
         p = strstr(buf, "btime");
-        if (p == NULL)
+        if (p == nullptr)
         {
             // used
             printf("Qps: A bug occurs ! [boot_time] \n");
@@ -1144,7 +1144,7 @@ int Proc::read_system() //
     {
         char cpu_buf[10];
         sprintf(cpu_buf, "cpu%d", cpu);
-        if ((p = strstr(buf, cpu_buf)) != 0)
+        if ((p = strstr(buf, cpu_buf)) != nullptr)
         {
             nflds = sscanf(p, "%*s %u %u %u %u %u %u %u %u %u",
                            &cpu_times(cpu, CPUTIME_USER),
@@ -1186,11 +1186,11 @@ int Proc::read_system() //
     // as well.  (values are now in kB)
     if ((p = strstr(buf, "MemTotal:")))
         sscanf(p, "MemTotal: %d kB\n", &mem_total);
-    if ((p = strstr(buf, "MemFree:")) != NULL)
+    if ((p = strstr(buf, "MemFree:")) != nullptr)
         sscanf(p, "MemFree: %d kB\n", &mem_free);
-    if ((p = strstr(buf, "Buffers:")) != NULL)
+    if ((p = strstr(buf, "Buffers:")) != nullptr)
         sscanf(p, "Buffers: %d kB\n", &mem_buffers);
-    if ((p = strstr(buf, "Cached:")) != NULL)
+    if ((p = strstr(buf, "Cached:")) != nullptr)
         sscanf(p, "Cached: %d kB\n", &mem_cached);
 
     p = strstr(buf, "SwapTotal:");
@@ -1273,7 +1273,7 @@ void Procinfo::read_fd(int fdnum, char *path)
             ||
             sscanf(buf, "socket:[%lu]", &ino) > 0) // Linux 2.1 upper
         {
-            Sockinfo *si = NULL;
+            Sockinfo *si = nullptr;
             si = proc->socks.value(ino, NULL); // sock
             char buf[80];
             if (si)
@@ -1291,7 +1291,7 @@ void Procinfo::read_fd(int fdnum, char *path)
             {
                 // maybe a unix domain socket?
                 // read_usockets();
-                UnixSocket *us = NULL;
+                UnixSocket *us = nullptr;
 
                 us = proc->usocks.value(ino, NULL);
                 if (us)
@@ -1365,7 +1365,7 @@ bool Procinfo::read_fds()
 
     fd_files.clear(); //
     struct dirent *e;
-    while ((e = readdir(d)) != 0)
+    while ((e = readdir(d)) != nullptr)
     {
         char str[128];
         if (e->d_name[0] == '.')
@@ -1400,7 +1400,7 @@ bool Proc::read_socket_list(Sockinfo::proto_t proto, const char *filename)
 
     printf("read_socket_list()\n");
     fgets(buf, sizeof(buf), f); // skip header
-    while (fgets(buf, sizeof(buf), f) != 0)
+    while (fgets(buf, sizeof(buf), f) != nullptr)
     {
         //	Sockinfo *si = new Sockinfo;
         si.pid = -1;
@@ -1418,7 +1418,7 @@ bool Proc::read_socket_list(Sockinfo::proto_t proto, const char *filename)
 
         Sockinfo *psi;
         psi = socks.value(si.inode, NULL);
-        if (psi == NULL)
+        if (psi == nullptr)
         {
             printf("inode =%d \n", si.inode);
             psi = new Sockinfo;
@@ -1465,7 +1465,7 @@ bool Proc::read_usocket_list()
 
         UnixSocket *pus;
         pus = usocks.value(us.inode, NULL);
-        if (pus == NULL)
+        if (pus == nullptr)
         {
             printf("inode =%lu \n", us.inode);
 
@@ -1604,7 +1604,7 @@ bool Procinfo::read_environ()
     if (envblock)
     {
         free(envblock); // refresh() // INVALID VALGRIND
-        envblock = 0;
+        envblock = nullptr;
     }
     return true;
 }
@@ -1989,12 +1989,12 @@ void Proc::read_proc_all()
     DIR *d = opendir("/proc");
     struct dirent *e;
 
-    while ((e = readdir(d)) != 0)
+    while ((e = readdir(d)) != nullptr)
     {
         if (e->d_name[0] >= '0' and e->d_name[0] <= '9')
         { // good idea !
             int pid;
-            Procinfo *pi = NULL;
+            Procinfo *pi = nullptr;
 
             // inline int x_atoi(const char *sstr);
             // pid=x_atoi(e->d_name);	//if(pid<100) continue;
@@ -2002,7 +2002,7 @@ void Proc::read_proc_all()
 
             pi = procs.value(pid, NULL);
 
-            if (pi == NULL) // new process
+            if (pi == nullptr) // new process
             {
                 pi = new Procinfo(this, pid);
                 procs.insert(pid, pi);
@@ -2062,14 +2062,14 @@ void Proc::setHistory(int tick)
     return;
     if (tick <= 0)
     {
-        mprocs = 0;
+        mprocs = nullptr;
         return;
     }
     int size = history.size();
     if (size > tick)
         mprocs = &history[size - tick]->procs;
     else
-        mprocs = 0;
+        mprocs = nullptr;
 }
 
 bool Procinfo::isThread()
