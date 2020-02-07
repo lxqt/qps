@@ -448,13 +448,13 @@ class w_cpu : public gwidget
                 }
 
 #ifdef LINUX
-                int z = drawSPECTRUM2(p, mw, gheight + 1 + r * (gheight - 1),
+                (void) drawSPECTRUM2(p, mw, gheight + 1 + r * (gheight - 1),
                                       buff, total, user, system, nice,
                                       gheight - 2, bar_w);
 #endif
 
 #ifdef SOLARIS
-                int z = drawSPECTRUM2(p, mw, gheight + 1 + r * (gheight - 1),
+                (void) drawSPECTRUM2(p, mw, gheight + 1 + r * (gheight - 1),
                                       buff, total, user, system, wait,
                                       gheight - 2, bar_w);
 // drawSPECTRUM(p,0,cpu_id*10,buff,total,user,system,wait);
