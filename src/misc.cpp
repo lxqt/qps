@@ -271,7 +271,7 @@ int fsize(char *fname)
 void msleep(long msec)
 {
 #ifdef LINUX
-    timespec req, remain;
+    timespec req;
     timeval tv;
     req.tv_sec = 0;
     req.tv_nsec = msec * 1000000;
@@ -402,7 +402,7 @@ bool TBloon::eventFilter(QObject *obj, QEvent *event)
     }
     else if (event->type() == QEvent::MouseMove)
     {
-        QMouseEvent *me = static_cast<QMouseEvent *>(event);
+        // QMouseEvent *me = static_cast<QMouseEvent *>(event);
         //	qDebug("Ate key press %d %d", me->x(),me->y());
         //	move(me->x()+5,me->y()+4);
         return false;
@@ -660,7 +660,6 @@ class MyThread : public QThread
 
         while (true)
         {
-            int m = 0;
             for (int i = 0; i < 20000; i++)
             {
                 int p = rand() % 120;
@@ -708,7 +707,6 @@ int pf_write(QPainter *p, int x, int y, const char *str)
 {
     int i, len, n;
     int ch;
-    int sx, sy;
     int x0 = x;
     len = strlen(str);
     for (i = 0; i < len; i++)
@@ -753,7 +751,6 @@ void XButton::resizeEvent(QResizeEvent * /*p*/)
 void XButton::paintEvent(QPaintEvent * /*event*/)
 {
     QPainter p(this);
-    int w, h, m;
 
     if (isDown())
         p.drawPixmap(0, 0, *x2);

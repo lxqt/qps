@@ -55,7 +55,7 @@ void check_command(int /*idx*/) {}
 //
 void check_commandAll()
 {
-    int i, idx;
+    // int idx;
 
     return;
     for (int i = 0; i < commands.size(); i++)
@@ -69,7 +69,7 @@ void check_commandAll()
 void add_default_command()
 {
 
-    int idx;
+    // int idx;
 
     /*
     idx=find_command("Update");

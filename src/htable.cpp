@@ -1123,7 +1123,7 @@ void HeadedTable::hideEvent(QHideEvent * /*event*/) {}
 
 void HeadedTable::paintEvent(QPaintEvent * /*e*/)
 {
-    static int c = 0;
+    // static int c = 0;
     //	printf("HeadedTable paintEvent %d\n",c++); //works ?
     //	QWidget::paintEvent(e);
     // body->clearCache();

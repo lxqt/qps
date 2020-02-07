@@ -81,7 +81,7 @@ WatchdogDialog::WatchdogDialog()
     //	tableView->update();
     //	listmodel->update(); // meaningless..
 
-    TBloon *bloon = new TBloon(this);
+    (void) new TBloon(this);
     return;
 }
 

@@ -47,7 +47,7 @@ extern bool flag_session_start;
 // common stuff
 //----------------------------------------------------------------------------
 // for Gnome2 Notification Area
-static int dock_xerror = 0;
+
 extern bool flag_xcompmgr;
 
 #define SYSTEM_TRAY_REQUEST_DOCK 0
@@ -240,7 +240,7 @@ void TrayIcon::closeEvent(QCloseEvent *e)
 // called after size changed
 void TrayIcon::resizeEvent(QResizeEvent * /*e*/)
 {
-    int w, h;
+    /// int w, h;
     // printf("TrayIcon::resizeEvent(): w=%d,h=%d\n",width(),height());
     // if(isVisible()==false) return;  // X11 error !!
     /// w=width();h=height();

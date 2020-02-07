@@ -129,7 +129,7 @@ CommandDialog::CommandDialog()
     // SLOT(event_toolbar_checked(bool
     // )));
 
-    TBloon *bloon = new TBloon(this);
+    (void) new TBloon(this);
     /// for(int i = 0; i < commands.size(); i++)
     /// listview->insertItem(commands[i]->name);
     /// listview->addItem(commands[i]->name);
