@@ -28,15 +28,15 @@
         TGID thread group leader's pid
 */
 
-#include <stdio.h>
-#include <string.h>
+#include <cstdio>
+#include <cstring>
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <sys/stat.h>
 #include <sys/syscall.h>
 #include <dirent.h>
 #include <fcntl.h>
-#include <time.h>
+#include <ctime>
 
 #include <sched.h>  // sched_rr_get_interval(pid, &ts);
 #include <libgen.h> // basename()

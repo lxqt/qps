@@ -20,7 +20,7 @@
  * MA 02110-1301, USA.
  */
 
-#include <stdio.h>
+#include <cstdio>
 #include <netdb.h>
 #include <netinet/in.h>
 

@@ -45,15 +45,15 @@
 
 #include "../icon/icon.xpm"
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <math.h>
+#include <cstdlib>
+#include <cstdio>
+#include <cmath>
 #include <sys/types.h>
 #include <sys/time.h>
 #include <sys/resource.h>
 #include <sys/utsname.h> // uname
-#include <signal.h>
-#include <errno.h>
+#include <csignal>
+#include <cerrno>
 #include <sched.h>
 #include <unistd.h> //for sleep
 
@@ -1790,7 +1790,7 @@ void Qps::clicked_trayicon(QSystemTrayIcon::ActivationReason r)
     }
 }
 
-#include <signal.h>
+#include <csignal>
 void signal_handler(int /*sig*/)
 {
     qps->save_quit();
