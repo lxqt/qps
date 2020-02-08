@@ -20,9 +20,9 @@
  * MA 02110-1301, USA.
  */
 
-#include <stdlib.h>
-#include <string.h>
-#include <errno.h>
+#include <cstdlib>
+#include <cstring>
+#include <cerrno>
 
 #include <QMessageBox>
 

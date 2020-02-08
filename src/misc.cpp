@@ -33,9 +33,9 @@ extern bool flag_devel;
 #include "../icon/x1.xpm"
 #include "../icon/x2.xpm"
 
-#include <stdio.h>
-#include <time.h>
-#include <errno.h>
+#include <cstdio>
+#include <ctime>
+#include <cerrno>
 
 // 300% faster than glibc (by fasthyun@magicn.com)
 int x_atoi(const char *sstr)
@@ -64,8 +64,8 @@ QWidget *getQpsWidget()
     return nullptr;
 }
 
-#include <stdarg.h>
-#include <string.h>
+#include <cstdarg>
+#include <cstring>
 /*
   ver 0.2
   A simplified vsscanf implementation from Internet

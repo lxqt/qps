@@ -22,12 +22,12 @@
 
 // This module implements asynchronous address->hostname lookup.
 
-#include <stdio.h>
+#include <cstdio>
 #include <unistd.h>
 #include <fcntl.h>
 #include <sys/types.h>
 #include <sys/socket.h>
-#include <signal.h>
+#include <csignal>
 #include <netinet/in.h>
 #include <netdb.h>
 

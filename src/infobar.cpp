@@ -20,9 +20,9 @@
  * MA 02110-1301, USA.
  */
 
-#include <stdio.h>
+#include <cstdio>
 #include <sys/types.h>
-#include <time.h>
+#include <ctime>
 
 #include "infobar.h"
 #include "proc.h"
