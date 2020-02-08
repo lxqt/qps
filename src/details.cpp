@@ -27,7 +27,7 @@
 #include "details.h"
 //#include "proc.h" // static flag
 #include "qps.h" // static flag
-Details::Details(Procinfo *p, Proc *proc) : QWidget(0)
+Details::Details(Procinfo *p, Proc *proc) : QWidget(nullptr)
 {
     pi = p;
     pi->detail = this;
@@ -82,9 +82,9 @@ void Details::set_procinfo(Procinfo * /*p*/)
 void Details::refresh()
 {
     printf("Details::refresh()\n");
-    QWidget *w = NULL; // tbar->currentPage ();
+    QWidget *w = nullptr; // tbar->currentPage ();
     // QWidget *w= tbar->currentPage ();
-    if (w != NULL)
+    if (w != nullptr)
     {
         /// printf("refresh()\n");
         ((SimpleTable *)w)->refresh();
@@ -94,7 +94,7 @@ void Details::refresh()
 void Details::process_gone()
 {
     ///	printf("process_gone() *******************************\n");
-    pi = 0;
+    pi = nullptr;
     // for now, we just close the window. Another possibility would be
     // to leave it with a "process terminated" note.
     close();
@@ -140,7 +140,7 @@ QString SimpleTable::tipText(int col) { return fields[col].tooltip; }
 // declaration of static members
 bool Sockets::have_services = false;
 QHash<int, char *> Sockets::servdict;
-Lookup *Sockets::lookup = 0;
+Lookup *Sockets::lookup = nullptr;
 
 TableField *Sockets::fields()
 {
@@ -362,7 +362,7 @@ const char *Sockets::servname(unsigned port)
         // fill servdict from /etc/services (just try once)
         setservent(1);
         struct servent *s;
-        while ((s = getservent()) != 0)
+        while ((s = getservent()) != nullptr)
         {
             unsigned short hport = ntohs((unsigned short)s->s_port);
             if (!servdict.value(hport, NULL))
@@ -564,7 +564,7 @@ void Files::refresh_window()
 QString Files::text(int row, int col)
 {
     Procinfo *p = procinfo(); // alot!!
-    if (p == 0)
+    if (p == nullptr)
         return "zero";
     //	printf("p=%x px=%x\n",p,px);
     if (p->fd_files.size() == 0)

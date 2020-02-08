@@ -173,7 +173,7 @@ void Command::call(Procinfo *p)
 
     printf("called !\n");
 
-    if (p == NULL)
+    if (p == nullptr)
     {
         if (cmdline == "%update")
         {
@@ -210,7 +210,7 @@ void Command::call(Procinfo *p)
         if (ret == -1)
         {
             msg.append( tr( "\n\nfailed with the error:\n\n" ) );
-            const char *e = static_cast< const char * >( 0 );
+            const char *e = static_cast< const char * >( nullptr );
             msg.append( ( errno == EAGAIN )
                         ? tr( "Too many processes" )
                         : ( ( e = strerror( errno ) ) )
@@ -234,7 +234,7 @@ void Command::call(Procinfo *p)
             msg.append(QString().setNum(ret >> 8));
             msg.append(".");
         }
-        QMessageBox::warning(0, tr( "Command Failed" ), msg);
+        QMessageBox::warning(nullptr, tr( "Command Failed" ), msg);
     }
 }
 

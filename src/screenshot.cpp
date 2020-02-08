@@ -240,7 +240,7 @@ void Screenshot::paintEvent(QPaintEvent * /*e*/)
     opt.midLineWidth = 1;
     opt.state = opt.state | QStyle::State_Sunken;
     /// style()->drawControl(QStyle::CE_Header, &opt, p, this);
-    style()->drawPrimitive(QStyle::PE_Frame, &opt, &p, 0);
+    style()->drawPrimitive(QStyle::PE_Frame, &opt, &p, nullptr);
 }
 
 void Screenshot::resizeEvent(QResizeEvent * /*e*/)
@@ -391,7 +391,7 @@ int screenshot_main(int argc, char **argv)
 
     int screen = DefaultScreen(dpy);
     Colormap colormap = 0;
-    Visual *visual = 0;
+    Visual *visual = nullptr;
     int eventBase, errorBase;
 
     if (0 and XRenderQueryExtension(dpy, &eventBase, &errorBase))

@@ -106,22 +106,22 @@ bool flag_firstRun = true; // test
 
 Qps *qps;
 // ControlBar 		*controlbar=NULL;
-SearchBox *search_box = NULL;
-TFrame *infobox = NULL; // testing
+SearchBox *search_box = nullptr;
+TFrame *infobox = nullptr; // testing
 // DEL Screenshot 		*screenshot=NULL;
-QFontComboBox *font_cb = NULL;
-WatchdogDialog *watchdogDialog = NULL;
+QFontComboBox *font_cb = nullptr;
+WatchdogDialog *watchdogDialog = nullptr;
 
 /// PDisplay *pdisplay;
 
 QList<Procview *> proclist;
 
 #include "trayicon.h"
-TrayIcon *trayicon = NULL;
+TrayIcon *trayicon = nullptr;
 
 // for Non-ASCII Languages (CJK:chinese,japanese,korean, arabic ...)
 #include <QTextCodec>
-QTextCodec *codec = NULL;
+QTextCodec *codec = nullptr;
 #define UniString(str) str // codec->toUnicode(str)
 /* ------------------------ END global variables -------------------------- */
 
@@ -156,7 +156,7 @@ bool Qps::tree_lines = true;
 int Qps::swaplimit = 5; // default: warn when less than 10% swap left
 bool Qps::swaplim_percent = true;
 
-QThread *thread_main = 0;
+QThread *thread_main = nullptr;
 
 Qps::Qps()
 {
@@ -167,10 +167,10 @@ Qps::Qps()
 
     setObjectName("qps_main_window");
     timer_id = 0;
-    field_win = 0;
-    prefs_win = 0;
-    command_win = 0;
-    default_icon = 0;
+    field_win = nullptr;
+    prefs_win = nullptr;
+    command_win = nullptr;
+    default_icon = nullptr;
     default_icon_set = false;
 
     setIconSize(24, 24); // Important!!
@@ -1018,7 +1018,7 @@ void Qps::run_command(QAction *act)
         {
             if (commands[idx]->IsNeedProc() == false)
             {
-                commands[idx]->call(NULL);
+                commands[idx]->call(nullptr);
                 return;
             }
 
@@ -1297,7 +1297,7 @@ void Qps::menu_renice()
     // use nice of first selected process as default, and check permission
     bool possible = true;
     int euid = geteuid();
-    Procinfo *p = 0;
+    Procinfo *p = nullptr;
 
     for (int i = 0; i < procview->linear_procs.size(); i++)
     {
@@ -1379,7 +1379,7 @@ void Qps::menu_sched()
     }
 
     // provide reasonable defaults (first selected process)
-    Procinfo *p = 0;
+    Procinfo *p = nullptr;
     for (int i = 0; i < procview->linear_procs.size(); i++)
     {
         p = procview->linear_procs[i];
@@ -1552,7 +1552,7 @@ static Sflagvar flagvars[] = {{"ExitOnClose", &Qps::flag_exit},
                               {"pmap", &Qps::use_pmap}
 #endif
                               ,
-                              {0, 0}};
+                              {nullptr, nullptr}};
 
 #include <QSettings>
 extern QList<watchCond *> watchlist;
@@ -1841,7 +1841,7 @@ int main(int argc, char **argv, char **envp)
     QpsApp app(argc, argv);
     app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
 
-    init_misc(0); // init misc, some test code runs ...
+    init_misc(nullptr); // init misc, some test code runs ...
     qps = new Qps();
     //	sleep(20);
 

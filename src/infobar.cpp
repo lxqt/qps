@@ -41,7 +41,7 @@ float cpu_idle = 0;
 float cpu_used = 0;
 
 QMenu *m_popup;
-subcpuRack *cpubar = 0; // DEL extra CPU_window
+subcpuRack *cpubar = nullptr; // DEL extra CPU_window
 
 // ============================
 gwidget *x_cpu;
@@ -576,7 +576,7 @@ int drawUTIME(QPainter *p, int x, int y, long boot_time)
     char buff[1024];
     // printf("size of long=%d, size of time_t=%d
     // \n",sizeof(long),sizeof(time_t));
-    long u = (long)time(NULL) - (long)boot_time;
+    long u = (long)time(nullptr) - (long)boot_time;
     int up_days = u / (3600 * 24);
     u %= (3600 * 24);
     int up_hrs = u / 3600;

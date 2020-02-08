@@ -41,7 +41,7 @@ QWidget *checkBoxDelegate::createEditor(QWidget *parent,
         return editor;
     }
     return QItemDelegate::createEditor(parent, option, index);
-    return 0;
+    return nullptr;
 }
 //! [1]
 

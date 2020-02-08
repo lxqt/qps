@@ -274,7 +274,7 @@ void Pstable::mouseOnCell(int row, int col)
         return;
     }
 
-    if (infobox != NULL)
+    if (infobox != nullptr)
     {
         // p.setY(p.y() + geometry().y());
         // p.setY(QCursor::pos().y() - geometry().y());
@@ -285,7 +285,7 @@ void Pstable::mouseOnCell(int row, int col)
 
         infobox->show();
         infobox->setPos();
-        if (s > 0)
+        if (s > nullptr)
         {
             infobox->setText(s);
         }
@@ -308,7 +308,7 @@ char *Pstable::total_selectedRow(int col)
     int index;
 
     if (procview->cats.size() <= col or col < 0)
-        return 0; // col == -1
+        return nullptr; // col == -1
     index = procview->cats[col]->index;
 
     switch (index)
@@ -331,7 +331,7 @@ char *Pstable::total_selectedRow(int col)
         break;
 #endif
     default:
-        return 0;
+        return nullptr;
     }
 
     int total = 0;

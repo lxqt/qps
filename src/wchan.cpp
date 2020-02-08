@@ -35,7 +35,7 @@
 
 #ifdef LINUX
 QHash<int, char *> Wchan::dict;
-char *Wchan::sysmap = 0;
+char *Wchan::sysmap = nullptr;
 bool Wchan::sysmap_inited = false;
 int Wchan::sysmap_size = 0;
 
@@ -75,7 +75,7 @@ bool Wchan::open_sysmap()
         "/boot/System.map-%s", "/boot/System.map", "/lib/modules/%s/System.map",
         "/usr/src/linux-%s/System.map", "/usr/src/linux/System.map",
         "/usr/local/src/linux-%s/System.map", "/usr/local/src/linux/System.map",
-        0};
+        nullptr};
     sysmap_inited = true; // don't try again
     for (const char **p = paths; *p; p++)
     {
@@ -105,7 +105,7 @@ bool Wchan::open_sysmap()
                                     "kernel\n",
                             buf);
                     munmap(sysmap, sysmap_size + ps);
-                    sysmap = 0;
+                    sysmap = nullptr;
                     continue; // search the list for a
                               // better file
                 }
@@ -127,12 +127,12 @@ bool Wchan::try_sysmap(const char *path)
         {
             sysmap_size = sbuf.st_size;
             // make room for a zero page after the sysmap
-            sysmap = (char *)mmap(0, sysmap_size + getpagesize(), PROT_READ,
+            sysmap = (char *)mmap(nullptr, sysmap_size + getpagesize(), PROT_READ,
                                   MAP_SHARED, fd, 0);
             close(fd);
             if (sysmap != (char *)-1)
                 return true;
-            sysmap = 0;
+            sysmap = nullptr;
             return false;
         }
         close(fd);
