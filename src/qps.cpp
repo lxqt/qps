@@ -1836,13 +1836,14 @@ int main(int argc, char **argv, char **envp)
     }
     //	codec = QTextCodec::codecForLocale(); // for Local locale
     check_system_requirement(); // check kernel version.. etc in proc.cpp
-    check_qps_running();        // check already qps running.  in misc.cpp
 
     QpsApp app(argc, argv);
     app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
 
     init_misc(nullptr); // init misc, some test code runs ...
     qps = new Qps();
+    app.setActivationWindow(qps);
+
     //	sleep(20);
 
     QString caption( QString( "%1@%2").arg( getenv( "USER" ) )

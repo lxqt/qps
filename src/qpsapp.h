@@ -25,14 +25,14 @@
 #ifndef QPSAPP_H
 #define QPSAPP_H
 
-#include <QApplication>
+#include <LXQt/SingleApplication>
 
 // MOD!!!: For systray update.
 // this trick very suck, but I can't find a better solution.
-class QpsApp : public QApplication
+class QpsApp : public LXQt::SingleApplication
 {
   public:
-    QpsApp(int &argc, char **argv) : QApplication(argc, argv){};
+    QpsApp(int &argc, char **argv) : LXQt::SingleApplication(argc, argv){};
     void commitData(QSessionManager &sm);
     void saveState(QSessionManager &manager);
 
