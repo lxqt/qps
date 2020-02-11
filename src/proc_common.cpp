@@ -45,9 +45,6 @@ bool Procview::flag_show_file_path = false;
 bool Procview::flag_cumulative = false;  // times cumulative with children's
 bool Procview::flag_pcpu_single = false; // %CPU= pcpu/num_cpus
 
-// COMMON: basic field
-int Procview::mini_fields[] = {F_PID, F_STAT, F_MEM, F_CPU, F_CMDLINE, F_END};
-
 // COMMON?
 // return username from /etc/passwd
 const QString userName(int uid, int euid)
@@ -609,31 +606,13 @@ void Procview::removeField(int field_id)
 //	DEL? -> not yet
 void Procview::update_customfield()
 {
-    int i;
-    //	printf("update custom_fields\n");
-
     customfields.clear();
 
-    for (i = 0; i < cats.size(); i++)
-        customfields.append(cats[i]->name);
-
-    // DEL
-    if (false and treeview)
+    for (int i = 0; i < cats.size(); i++)
     {
-        int idx = customfields.indexOf("COMMAND"); // == removeField(F_CMD);
-        if (idx >= 0)
-            customfields.removeAt(idx);
-
-        if (idxF_CMD >= 0)
-        {
-            /* if(customfields.size()<=idxF_CMD)
-                    customfields.append(categories[F_CMD]->name);
-            else	*/
-            customfields.insert(idxF_CMD, categories[F_CMD]->name);
-        }
+        customfields.append(cats[i]->name);
+        customFieldIDs.append(cats[i]->id);
     }
-
-    return;
 }
 
 // Description : FIELD movement by mouse drag

@@ -205,7 +205,7 @@ Qps::Qps()
     act = m_view->addAction( tr( "Process" ) ); // act->setData(Procview::CUSTOM);
     act = m_view->addAction( tr( "Log" ) );     // act->setData(Procview::CUSTOM);
     // m_view->hide();
-	
+
     QActionGroup* group = new QActionGroup (this);
 
     m_field = new QMenu("Field", this);
@@ -222,7 +222,7 @@ Qps::Qps()
     act->setData(Procview::SCHED);
     act->setActionGroup(group);
     act->setCheckable(true);
-    act->setChecked(false);	
+    act->setChecked(false);
 #endif
 
     QList<QAction *> list = m_field->actions ();
@@ -1598,11 +1598,14 @@ bool Qps::read_settings()
 
     // fields
     procview->cats.clear();
-    sl = set.value("field").toStringList();
-    for (int i = 0; i < sl.size(); i++)
+
+    QList<QVariant> l = set.value("field").toList();
+    for (int i = 0; i < l.size(); i++)
     {
-        QString str = sl[i];
-        procview->addField(str.toUtf8().data());
+        bool ok;
+        int id = l[i].toInt(&ok);
+        if (ok)
+            procview->addField(id);
     }
 
     if (procview->cats.isEmpty()) // happens without config file or with a corrupt one
@@ -1615,8 +1618,11 @@ bool Qps::read_settings()
         procview->viewfields = Procview::CUSTOM;
     }
 
-    int fid = procview->field_id_by_name( set.value("sort/field").toString() ); // procview->sortcat->name
-    int col = procview->findCol(fid);
+    int col = -1;
+    bool ok;
+    int fid = set.value("sort/field").toInt(&ok);
+    if (ok)
+        col = procview->findCol(fid);
     if (col < 0) // don't allow an unsorted table; sort the CPU column by default if it exists
         col = qMax(procview->findCol(F_CPU), 0);
     procview->setSortColumn(col); // Pstable::refresh()
@@ -1677,12 +1683,12 @@ void Qps::write_settings() // save setting
     set.setValue("viewproc", procview->viewproc);
 
     procview->update_customfield();
-    set.setValue("field", procview->customfields);
+    set.setValue("field", procview->customFieldIDs);
 
     if (procview->sortcat) // nullptr by default
     {
         set.beginGroup("sort");
-        set.setValue("field", procview->sortcat->name);
+        set.setValue("field", procview->sortcat->id);
         set.setValue("reversed", procview->reversed);
         set.endGroup();
     }
