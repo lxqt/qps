@@ -108,7 +108,6 @@ Qps *qps;
 // ControlBar 		*controlbar=NULL;
 SearchBox *search_box = nullptr;
 TFrame *infobox = nullptr; // testing
-// DEL Screenshot 		*screenshot=NULL;
 QFontComboBox *font_cb = nullptr;
 WatchdogDialog *watchdogDialog = nullptr;
 
@@ -1827,12 +1826,6 @@ int main(int argc, char **argv, char **envp)
         {
             flag_start_mini = true;
         }
-        else if (strstr(argv[i], "screen"))
-        {
-            // int screenshot_main(int argc, char **argv);
-            // screenshot_main(argc,argv);
-            // return 1;
-        }
     }
     //	codec = QTextCodec::codecForLocale(); // for Local locale
     check_system_requirement(); // check kernel version.. etc in proc.cpp
@@ -1861,13 +1854,6 @@ int main(int argc, char **argv, char **envp)
                    , qps
                    , SLOT( hide() ) );
     menu->addSeparator();
-    if (flag_devel)
-    {
-        menu->addAction( QObject::tr( "ScreenShot" )
-                       , qps
-                       , SLOT(start_screenshot()));
-    }
-
     menu->addAction( QObject::tr( "Quit" )
                    , qps
                    , SLOT(save_quit())
@@ -2032,9 +2018,6 @@ void Qps::license() // -> help()
                           "</table>" ) );
     diag->exec();
 }
-
-// slot
-void Qps::start_screenshot() {}
 
 // MOVETO qps::keyPressEvent()
 void SearchBox::keyPressEvent(QKeyEvent *e)

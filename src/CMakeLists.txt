@@ -2,7 +2,6 @@ set(SOURCES
     proc.cpp
     qpsapp.cpp
     qps.cpp
-    screenshot.cpp
     pstable.cpp
     uidstr.cpp
     ttystr.cpp
@@ -31,7 +30,6 @@ set(SOURCES
 SET(HEADERS
     qpsapp.h
     qps.h
-    screenshot.h
     pstable.h
     dialogs.h
     fieldsel.h

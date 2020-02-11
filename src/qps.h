@@ -179,7 +179,6 @@ class Qps : public QWidget
     };
 
   public slots:
-    void start_screenshot();
     void clicked_trayicon(QSystemTrayIcon::ActivationReason);
     void clicked_trayicon();
     void sig_term();
