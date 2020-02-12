@@ -95,7 +95,6 @@ QList<Command *> commands;
 bool previous_flag_show_thread_prev = false; // previous state
 bool flag_show_thread = false; // to see informations at the thread level
 int flag_thread_ok = true;     // we presume a kernel 2.6.x using NPTL
-bool flag_session_start = false;
 bool flag_start_mini = false; // Need for Xorg.Session
 bool flag_refresh = true;     // DEL
 bool flag_xcompmgr = false;   // DEL test.compiz..
@@ -1823,11 +1822,6 @@ int main(int argc, char **argv, char **envp)
             print_help(argv[0]);
             exit(1);
         }
-        else if (opt_eq(argv[i], "session") or opt_eq(argv[i], "sm"))
-        {
-            flag_session_start = true;
-            sleep(2); // **** important !! maybe systray runs later
-        }
         else if (opt_eq(argv[i], "min")) // mini
         {
             flag_start_mini = true;
@@ -1878,7 +1872,7 @@ int main(int argc, char **argv, char **envp)
 
     trayicon->sysInstall(); // ok
 
-    if (flag_session_start or flag_start_mini)
+    if (flag_start_mini)
     {
         if (trayicon->hasSysTray)
         {
