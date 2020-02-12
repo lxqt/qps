@@ -42,7 +42,6 @@
 // QIcon icon = iconComboBox->itemIcon(index);
 //   trayIcon->setIcon(icon);
 
-extern bool flag_session_start;
 //----------------------------------------------------------------------------
 // common stuff
 //----------------------------------------------------------------------------
