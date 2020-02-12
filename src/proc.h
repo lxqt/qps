@@ -864,9 +864,9 @@ class Procview : public Proc
 
     int idxF_CMD; ////Test
     QStringList customfields;
+    QList<QVariant> customFieldIDs;
     static int custom_fields[64];
     // lists of fields to be used for different views, terminated by -1:
-    static int mini_fields[]; // for mobile
     static int basic_fields[];
     static int jobs_fields[];
     static int mem_fields[];
