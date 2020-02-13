@@ -30,13 +30,11 @@
 #include <kstat.h> // kstat_ctl_t
 #endif
 
-#ifndef USING_PCH
 #include <QHash>
 #include <QVector>
 #include <QString>
 #include <QStringList>
 #include <QDir>
-#endif
 
 class Procinfo;
 int read_file(char *name, char *buf, int max);

@@ -67,7 +67,6 @@
 #include "lookup.h"
 #include "misc.h"
 
-#ifndef USING_PCH
 #include <QBitmap>
 #include <QTimerEvent>
 #include <QVBoxLayout>
@@ -85,8 +84,6 @@
 #include <QTextEdit>
 #include <QSystemTrayIcon>
 #include <QSplitter>
-#endif
-
 #include <QDockWidget>
 #include <QSplitter>
 /* --------------------- Global Variable START ---------------------- */

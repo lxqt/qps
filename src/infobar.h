@@ -25,14 +25,12 @@
 
 #include "proc.h"
 
-#ifndef USING_PCH
 #include <QString>
 #include <QPixmap>
 #include <QResizeEvent>
 #include <QFrame>
 #include <QEvent>
 #include <QMouseEvent>
-#endif
 
 class subcpuRack : public QWidget
 {

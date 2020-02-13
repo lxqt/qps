@@ -24,7 +24,6 @@
 #ifndef MISC_H
 #define MISC_H
 
-#ifndef USING_PCH
 #include <QAbstractButton>
 #include <QCheckBox>
 #include <QRadioButton>
@@ -50,7 +49,6 @@
 #include <QMenu>
 #include <QMouseEvent>
 #include <QTimeLine>
-#endif
 
 char *userName(int uid, int euid);
 char *groupName(int gid, int egid);

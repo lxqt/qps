@@ -28,11 +28,9 @@
 
 #include "qttableview.h"
 
-#ifndef USING_PCH
 #include <QHash>
 #include <QToolTip>
 #include <QVBoxLayout>
-#endif
 
 // table options (bits to be ORed together)
 #define HTBL_ROW_SELECTION 1         // rows are selectable

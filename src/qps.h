@@ -23,7 +23,6 @@
 #ifndef QPS_H
 #define QPS_H
 
-#ifndef USING_PCH
 #include <QWidget>
 #include <QMenuBar>
 #include <QColor>
@@ -33,7 +32,6 @@
 #include <QPixmap>
 #include <QUrl>
 #include <QSystemTrayIcon>
-#endif
 
 #define HTABLE1
 #include "misc.h"

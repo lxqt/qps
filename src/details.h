@@ -23,14 +23,12 @@
 #ifndef DETAILS_H
 #define DETAILS_H
 
-#ifndef USING_PCH
 #include <QTabWidget>
 #include <QFrame>
 #include <QHash>
 #include <QCloseEvent>
 #include <QResizeEvent>
 #include <QLayout>
-#endif
 
 #include "proc.h"
 #include "lookup.h"
