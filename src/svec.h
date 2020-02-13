@@ -25,6 +25,7 @@
 
 #include <map>
 #include <iostream>
+#include <stdlib.h>
 
 template <typename Key, typename T> class SHash : public std::map<Key, T>
 {
@@ -51,8 +52,6 @@ template <typename Key, typename T> class SHash : public std::map<Key, T>
             return true;
     }
 };
-
-#include <stdlib.h>
 
 //#ifndef NDEBUG
 //#define CHECK_INDICES		// Check invalid vector indices (the default)

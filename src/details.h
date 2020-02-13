@@ -33,6 +33,7 @@
 #include "proc.h"
 #include "lookup.h"
 #include "tablefield.h"
+#include "htable.h"
 
 class Details : public QWidget
 {
@@ -58,7 +59,6 @@ class Details : public QWidget
 };
 
 // SimpleTable: a HeadedTable with fixed number of columns
-#include "htable.h"
 class SimpleTable : public HeadedTable
 {
     Q_OBJECT

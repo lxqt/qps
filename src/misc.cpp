@@ -36,6 +36,8 @@ extern bool flag_devel;
 #include <cstdio>
 #include <ctime>
 #include <cerrno>
+#include <cstdarg>
+#include <cstring>
 
 // 300% faster than glibc (by fasthyun@magicn.com)
 int x_atoi(const char *sstr)
@@ -64,8 +66,6 @@ QWidget *getQpsWidget()
     return nullptr;
 }
 
-#include <cstdarg>
-#include <cstring>
 /*
   ver 0.2
   A simplified vsscanf implementation from Internet

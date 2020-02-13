@@ -85,6 +85,13 @@
 #include <QSystemTrayIcon>
 #include <QSplitter>
 #include <QDockWidget>
+#include <QDialog>
+#include <QTextBrowser>
+#include <QDesktopServices>
+#include <QDialogButtonBox>
+#include <QClipboard>
+#include <QSettings>
+#include <QTextCodec>
 
 /* --------------------- Global Variable START ---------------------- */
 QList<Command *> commands;
@@ -115,7 +122,6 @@ QList<Procview *> proclist;
 TrayIcon *trayicon = nullptr;
 
 // for Non-ASCII Languages (CJK:chinese,japanese,korean, arabic ...)
-#include <QTextCodec>
 QTextCodec *codec = nullptr;
 #define UniString(str) str // codec->toUnicode(str)
 /* ------------------------ END global variables -------------------------- */
@@ -1549,7 +1555,6 @@ static Sflagvar flagvars[] = {{"ExitOnClose", &Qps::flag_exit},
                               ,
                               {nullptr, nullptr}};
 
-#include <QSettings>
 extern QList<watchCond *> watchlist;
 // 1.Procview should be contstructed !
 // 2.
@@ -1888,12 +1893,6 @@ int main(int argc, char **argv, char **envp)
 
     return app.exec();
 }
-
-#include <QDialog>
-#include <QTextBrowser>
-#include <QDesktopServices>
-#include <QDialogButtonBox>
-#include <QClipboard>
 
 void Qps::test_popup(const QUrl &link)
 {

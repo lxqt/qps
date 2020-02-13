@@ -36,6 +36,7 @@ int flag_24_ok; // we presume a kernel 2.4.x
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <math.h> // log()
 #include <string.h>
 #include <QString>
 
@@ -928,7 +929,6 @@ void Procview::rebuild()
     linearize_tree(&root_procs, 0, -1);
 }
 
-#include <math.h> // log()
 // COMMON: CORE
 // Description: update the process list      BottleNeck 1.5%
 // 		read /proc/*
