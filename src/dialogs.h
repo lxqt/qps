@@ -26,7 +26,6 @@
 #ifndef DIALOGS_H
 #define DIALOGS_H
 
-#ifndef USING_PCH
 #include <QDialog>
 #include <QSlider>
 #include <QGroupBox>
@@ -40,7 +39,6 @@
 #include <QLabel>
 #include <QFrame>
 #include <QPushButton>
-#endif
 
 #include "misc.h"
 

@@ -35,6 +35,7 @@
 #include <QStyleOption>
 #include <QPalette>
 #include <QApplication>
+#include <Qt>
 
 FloatingHead::FloatingHead(QWidget *parent) : QWidget(parent) {}
 
@@ -347,8 +348,6 @@ bool TableHead::isCellChanged(int row, int col)
 
     return result;
 }
-
-#include <Qt>
 
 // DRAFT CODE !!  BOTTLENECK !!!
 // Description : draw a cell of table

@@ -44,7 +44,6 @@
 #include <sys/mkdev.h>
 #include <limits.h>
 
-//#include <sys/procfs.h>
 #define _STRUCTURED_PROC 1
 #include <sys/procfs.h> //	psinfo_t ,
                         /*

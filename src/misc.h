@@ -24,7 +24,8 @@
 #ifndef MISC_H
 #define MISC_H
 
-#ifndef USING_PCH
+#include <QtCore/QObject>
+#include <QtDBus/QtDBus>
 #include <QAbstractButton>
 #include <QCheckBox>
 #include <QRadioButton>
@@ -40,9 +41,6 @@
 #include <QKeyEvent>
 #include <QBoxLayout>
 #include <QHBoxLayout>
-#include <QAbstractButton>
-#include <QTimerEvent>
-#include <QKeyEvent>
 #include <QLabel>
 #include <QPixmap>
 #include <QFrame>
@@ -50,7 +48,7 @@
 #include <QMenu>
 #include <QMouseEvent>
 #include <QTimeLine>
-#endif
+#include <QTabWidget>
 
 char *userName(int uid, int euid);
 char *groupName(int gid, int egid);
@@ -234,8 +232,6 @@ signals:
     QBoxLayout *layout;
 };
 
-#include <QTabWidget>
-
 class QTabWidgetX : public QTabWidget
 {
     Q_OBJECT
@@ -243,9 +239,6 @@ class QTabWidgetX : public QTabWidget
     QTabWidgetX(QWidget *parent);
     void showTab(bool);
 };
-
-#include <QtCore/QObject>
-#include <QtDBus/QtDBus>
 
 // class ServerAdaptor: public QDBusAbstractAdaptor
 class ServerAdaptor : public QObject

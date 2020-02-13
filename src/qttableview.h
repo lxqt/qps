@@ -36,13 +36,11 @@
 #ifndef QTTABLEVIEW_H
 #define QTTABLEVIEW_H
 
-#ifndef USING_PCH
 #include <QScrollBar>
 #include <QAbstractScrollArea>
 #include <QPainter>
 #include <QPaintEvent>
 #include <QPushButton>
-#endif
 
 class QScrollBar;
 class QtTableView : public QAbstractScrollArea

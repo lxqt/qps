@@ -43,6 +43,7 @@
 #include <unistd.h> // sysconf()  POSIX.1-2001
 
 #include <sys/time.h>
+#include <sys/utsname.h> // uname()
 //#include <sys/param.h>	//HZ defined, no more used.
 //#include "misc.h"			// x_atoi() , userName() ,groupname()
 
@@ -2127,7 +2128,6 @@ void Procview::set_fields()
 }
 
 // move to Proc.cpp
-#include <sys/utsname.h> // uname()
 int get_kernel_version()
 {
     int version = 0;

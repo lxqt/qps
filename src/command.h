@@ -23,14 +23,12 @@
 #ifndef COMMAND_H
 #define COMMAND_H
 
-#ifndef USING_PCH
 #include <QDialog>
 #include <QLineEdit>
 #include <QCheckBox>
 #include <QToolButton>
 #include <QPushButton>
 #include <QListView>
-#endif
 
 #include "proc.h"
 #include "misc.h"

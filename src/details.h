@@ -23,18 +23,17 @@
 #ifndef DETAILS_H
 #define DETAILS_H
 
-#ifndef USING_PCH
 #include <QTabWidget>
 #include <QFrame>
 #include <QHash>
 #include <QCloseEvent>
 #include <QResizeEvent>
 #include <QLayout>
-#endif
 
 #include "proc.h"
 #include "lookup.h"
 #include "tablefield.h"
+#include "htable.h"
 
 class Details : public QWidget
 {
@@ -60,7 +59,6 @@ class Details : public QWidget
 };
 
 // SimpleTable: a HeadedTable with fixed number of columns
-#include "htable.h"
 class SimpleTable : public HeadedTable
 {
     Q_OBJECT
