@@ -32,7 +32,6 @@
 #include <QFontComboBox>
 
 //#include <qstylefactory.h>
-#include "qps.h"
 extern Qps *qps;
 
 extern QFontComboBox *font_cb;

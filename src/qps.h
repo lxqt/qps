@@ -46,8 +46,6 @@
 #define FUNC_START
 #define FUNC_END
 
-#include <QSystemTrayIcon>
-
 class CommandDialog;
 
 class Qps : public QWidget

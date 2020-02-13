@@ -39,9 +39,6 @@
 #include <QKeyEvent>
 #include <QBoxLayout>
 #include <QHBoxLayout>
-#include <QAbstractButton>
-#include <QTimerEvent>
-#include <QKeyEvent>
 #include <QLabel>
 #include <QPixmap>
 #include <QFrame>

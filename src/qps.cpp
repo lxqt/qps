@@ -85,7 +85,7 @@
 #include <QSystemTrayIcon>
 #include <QSplitter>
 #include <QDockWidget>
-#include <QSplitter>
+
 /* --------------------- Global Variable START ---------------------- */
 QList<Command *> commands;
 
@@ -1791,7 +1791,6 @@ void Qps::clicked_trayicon(QSystemTrayIcon::ActivationReason r)
     }
 }
 
-#include <csignal>
 void signal_handler(int /*sig*/)
 {
     qps->save_quit();
