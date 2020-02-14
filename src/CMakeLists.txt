@@ -51,6 +51,7 @@ SET(HEADERS
     trayicon.h
     htable.h
     qttableview.h
+    svec.h
 )
 
 set(UIS
