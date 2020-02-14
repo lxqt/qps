@@ -22,6 +22,10 @@
 
 // This module implements asynchronous address->hostname lookup.
 
+#include "lookup.h"
+
+#include "svec.h"
+
 #include <cstdio>
 #include <unistd.h>
 #include <fcntl.h>
@@ -31,8 +35,7 @@
 #include <netinet/in.h>
 #include <netdb.h>
 
-#include "lookup.h"
-#include "svec.cpp"
+#define fatal printf
 
 // declarations of static members
 char *Lookup::argv0;
