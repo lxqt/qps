@@ -23,9 +23,9 @@
 #ifndef SVEC_H
 #define SVEC_H
 
-#include <map>
+#include <cstdlib>
 #include <iostream>
-#include <stdlib.h>
+#include <map>
 
 extern "C" {
 typedef int (*compare_func)(const void *, const void *);
