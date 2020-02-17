@@ -32,7 +32,9 @@
 */
 
 #include <cstdio>
+#include <cstdlib>
 #include <cstring>
+#include <cmath> // log()
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <sys/stat.h>
@@ -41,6 +43,8 @@
 #include <fcntl.h>
 #include <ctime>
 
+#include <grp.h>
+#include <pwd.h>
 #include <sched.h>  // sched_rr_get_interval(pid, &ts);
 #include <libgen.h> // basename()
 #include <unistd.h> // sysconf()  POSIX.1-2001
@@ -54,6 +58,8 @@
 #include "uidstr.h"
 #include "ttystr.h"
 #include "wchan.h"
+
+#include <QString>
 
 #ifdef GTK
 #include "detail_gtk.h"
@@ -69,16 +75,6 @@
 //#define UniString(str)   codec->toUnicode(str)
 
 int flag_24_ok; // we presume a kernel 2.4.x
-
-#include <grp.h>
-#include <pwd.h>
-#include <sys/types.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <math.h> // log()
-#include <string.h>
-#include <QString>
 
 // COMMON
 bool Procview::treeview = 0; // true
