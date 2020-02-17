@@ -57,8 +57,6 @@
 #include "details.h" //qt
 #endif
 
-#include "proc_common.cpp" // COMMON code !!!!
-
 #define PROCDIR "/proc" // hmmm
 
 

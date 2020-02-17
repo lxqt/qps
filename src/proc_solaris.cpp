@@ -64,7 +64,6 @@
                         #if defined(__SUNPRO_C)
 
                          */
-#include "proc_common.cpp"
 
 char procdir[128] = "/proc";
 

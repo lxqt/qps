@@ -46,8 +46,6 @@
 #include <limits.h>
 #endif
 
-#include "proc_common.cpp"
-
 // socket states, from <linux/net.h> and touched to avoid name collisions
 enum
 {
