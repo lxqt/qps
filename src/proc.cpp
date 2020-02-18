@@ -627,7 +627,7 @@ Procview::Procview()
 
     sortcat = nullptr; // categories[F_PID];
     sort_column = -1;
-    sortcat_linear = NULL;
+    sortcat_linear = nullptr;
     enable = true;
     maxSizeHistory = 1200;
     refresh(); // before reading Watchdog list
@@ -670,7 +670,7 @@ bool Procview::accept_proc(Procinfo *p)
     else if (viewproc == NROOT)
         result = (p->uid != 0);
     else if (viewproc == RUNNING)
-        result = strchr("ORDW", p->state) != 0;
+        result = strchr("ORDW", p->state) != nullptr;
 
     /*
     if ( viewproc == HIDDEN)
@@ -952,7 +952,7 @@ void Procview::setTreeMode(bool /*b*/)
 {
     if (treeview == false)
     {
-        if (sortcat_linear == NULL)
+        if (sortcat_linear == nullptr)
             sortcat_linear = sortcat;
         else
             sortcat = sortcat_linear;
@@ -983,10 +983,10 @@ void Procview::setSortColumn(int col, bool keepSortOrder)
     sort_column = col;
 }
 
-Category *Procview::static_sortcat = 0;
+Category *Procview::static_sortcat = nullptr;
 int Procview::compare(Procinfo *const *a, Procinfo *const *b)
 {
-    if (static_sortcat == 0)
+    if (static_sortcat == nullptr)
         return 0;
     int r = static_sortcat->compare(*a, *b);
     return (r == 0) ? ((*a)->pid > (*b)->pid ? 1 : -1) : r;
@@ -994,7 +994,7 @@ int Procview::compare(Procinfo *const *a, Procinfo *const *b)
 
 int Procview::compare_backwards(Procinfo *const *a, Procinfo *const *b)
 {
-    if (static_sortcat == 0)
+    if (static_sortcat == nullptr)
         return 0;
     int r = static_sortcat->compare(*b, *a);
     return (r == 0) ? ((*b)->pid > (*a)->pid ? 1 : -1) : r;
@@ -1018,7 +1018,7 @@ Category *Proc::cat_by_name( const QString &s )
             //     cout << i.key() << ": " << i.value() << endl;
         }
     }
-    return 0;
+    return nullptr;
 }
 
 // COMMON
@@ -1076,15 +1076,15 @@ void Proc::commonPostInit()
     Proc::qps_pid = -1;
     Proc::loadQps = 0.0;
 
-    Proc::cpu_times_vec = 0; // array.
-    Proc::old_cpu_times_vec = 0;
+    Proc::cpu_times_vec = nullptr; // array.
+    Proc::old_cpu_times_vec = nullptr;
 
     Proc::boot_time = 0;
     Proc::clk_tick = 100; // for most system
 
     current_gen = 0; // !
-    mprocs = NULL;
-    hprocs = NULL;
+    mprocs = nullptr;
+    hprocs = nullptr;
 
     clk_tick =
         sysconf(_SC_CLK_TCK); //****** The  number  of  clock ticks per second.
@@ -1124,7 +1124,7 @@ void Procview::build_tree(Proclist &procs)
 
         if (p->accepted)
         {
-            Procinfo *parent = 0;
+            Procinfo *parent = nullptr;
             int virtual_parent_pid;
 
             if (p->isThread())
@@ -1215,7 +1215,7 @@ void Proc::refresh()
     // read_system();
 
     s->load_cpu = load_cpu; // after read_system();
-    s->time = time(NULL);   // save current time in seconds since epoch
+    s->time = time(nullptr);   // save current time in seconds since epoch
 
     // TODO: clean
     // Procinfo::read_sockets(); // for future, BottleNect 2%

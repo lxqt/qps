@@ -298,7 +298,7 @@ class Cat_string : public Category
 {
   public:
     Cat_string(const QString &heading, const QString &explain,
-               QString Procinfo::*member = 0);
+               QString Procinfo::*member = nullptr);
     virtual int alignment() { return Qt::AlignLeft; };
     virtual QString string(Procinfo *p);
     virtual int width() { return -9; };
