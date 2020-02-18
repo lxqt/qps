@@ -70,6 +70,13 @@
 // extern QTextCodec * codec ;
 //#define UniString(str)   codec->toUnicode(str)
 
+#define PROCDIR "/proc" // hmmm
+
+extern int flag_thread_ok;
+extern bool flag_schedstat;
+extern bool flag_show_thread;
+extern bool flag_devel;
+
 int flag_24_ok; // we presume a kernel 2.4.x
 
 // COMMON
@@ -77,6 +84,222 @@ bool Procview::treeview = 0; // true
 bool Procview::flag_show_file_path = false;
 bool Procview::flag_cumulative = false;  // times cumulative with children's
 bool Procview::flag_pcpu_single = false; // %CPU= pcpu/num_cpus
+int pagesize;
+int Proc::update_msec = 1024;
+
+// socket states, from <linux/net.h> and touched to avoid name collisions
+enum
+{
+    SSFREE = 0,     /* not allocated		*/
+    SSUNCONNECTED,  /* unconnected to any socket	*/
+    SSCONNECTING,   /* in process of connecting	*/
+    SSCONNECTED,    /* connected to socket		*/
+    SSDISCONNECTING /* in process of disconnecting	*/
+};
+
+#define QPS_SCHED_AFFINITY ok
+
+#ifdef QPS_SCHED_AFFINITY
+#ifndef SYS_sched_setaffinity
+#define SYS_sched_setaffinity 241
+#endif
+#ifndef SYS_sched_getaffinity
+#define SYS_sched_getaffinity 242
+#endif
+
+// Needed for some glibc
+int qps_sched_setaffinity(pid_t pid, unsigned int len, unsigned long *mask)
+{
+    return syscall(SYS_sched_setaffinity, pid, len, mask);
+};
+int qps_sched_getaffinity(pid_t pid, unsigned int len, unsigned long *mask)
+{
+    return syscall(SYS_sched_getaffinity, pid, len, mask);
+};
+#endif
+
+/*
+   Thread Problems.
+   pthread_exit()
+   */
+
+struct proc_info_
+{
+    int proc_id;
+    char flag;
+    char type;
+    int files;
+} proc_info; // TESTING
+
+struct list_files_
+{
+    int proc_id;
+    int flag;
+    char *filename; //  path + filename
+} list_files;       // TESTING
+
+// read() the number of bytes read is returned (zero indicates end  of  file)
+// return the number of bytes read if ok, -1 if failed
+inline int read_file(char *name, char *buf, int max)
+{
+    int fd = open(name, O_RDONLY);
+    if (fd < 0)
+        return -1;
+    int r = read(fd, buf, max);
+    close(fd);
+    //	buf[r]=0;
+    return r;
+}
+
+// Description : read proc files
+// return 0 : if error occurs.
+char buffer_proc[1024 * 4]; // enough..maybe
+char *read_proc_file(const char *fname, int pid = -1, int tgid = -1,
+                     int *size = nullptr)
+{
+    static int max_size = 0;
+    char path[256];
+    int r;
+
+    if (pid < 0)
+        sprintf(path, "/proc/%s", fname);
+    else
+    {
+        if (tgid > 0)
+            sprintf(path, "/proc/%d/task/%d/%s", tgid, pid, fname);
+        else
+            sprintf(path, "/proc/%d/%s", pid, fname);
+    }
+
+    if (strcmp(fname, "exe") == 0)
+    {
+        if ((r = readlink(path, buffer_proc, sizeof(buffer_proc) - 1)) >= 0)
+        {
+            buffer_proc[r] = 0; // safer
+            return buffer_proc;
+        }
+        else
+            return nullptr;
+    }
+
+    int fd = open(path, O_RDONLY);
+    if (fd < 0)
+        return nullptr;
+    r = read(fd, buffer_proc, sizeof(buffer_proc) - 1); // return 0 , -1 ,
+    if (r < 0)
+        return nullptr;
+
+    if (max_size < r)
+        max_size = r;
+
+    if (size != nullptr)
+        *size = r;
+
+    buffer_proc[r] = 0; // safer
+
+    return buffer_proc;
+    // note: not work  fgets(sbuf, sizeof(64), fp) why???
+}
+
+char *read_proc_file2(char *r_path, const char *fname, int *size = nullptr)
+{
+    static int max_size = 0;
+    char path[256];
+    int r;
+
+    // strcpy(path,r_path);
+
+    sprintf(path, "%s/%s", r_path, fname);
+
+    if (strcmp(fname, "exe") == 0)
+    {
+        if ((r = readlink(path, buffer_proc, sizeof(buffer_proc) - 1)) >= 0)
+        {
+            buffer_proc[r] = 0; // safer
+            return buffer_proc;
+        }
+        else
+            return nullptr;
+    }
+
+    int fd = open(path, O_RDONLY);
+    if (fd < 0)
+        return nullptr;
+    r = read(fd, buffer_proc,
+             sizeof(buffer_proc) - 1); // return 0 , -1 , read_count
+    if (r < 0)
+        return nullptr;
+
+    if (max_size < r)
+        max_size = r;
+
+    if (size != nullptr)
+        *size = r;
+
+    buffer_proc[r] = 0; // safer
+    close(fd);
+
+    return buffer_proc;
+    // note: not work  fgets(sbuf, sizeof(64), fp) why???
+}
+
+// TEST CODE ,  Bottleneck
+// Description: read /proc/PID/fd/*  check opened file, count opened files
+//		this fuction will be called  when every update.
+// Return Value :
+bool proc_pid_fd(const int pid)
+{
+    char path[256];
+    char fname[256];
+    DIR *d;
+//    int fdnum;
+    int len, path_len;
+
+    sprintf(path, "/proc/%d/fd", pid);
+
+    path_len = strlen(path);
+    d = opendir(path);
+
+    if (!d)
+    {
+        // this happend when the process died already or Zombie process
+        // printf("Qps : read fail !! /proc/%d/fd !!! kernel bug ?
+        // \n",pid);
+        return false;
+    }
+
+    struct dirent *e;
+    while ((e = readdir(d)) != nullptr)
+    {
+        if (e->d_name[0] == '.')
+            continue; // skip "." and ".."
+
+        if (strlen(path) + 1 + strlen(e->d_name) >= 256) // overflow
+        {
+            closedir(d);
+            return false;
+        }
+        path[path_len] = '/';
+        path[path_len + 1] = 0;
+        strcat(path, e->d_name);
+
+        len = readlink(path, fname, sizeof(fname) - 1);
+        if (len > 0)
+        {
+            fname[len] = 0;
+            // printf("DEBUG: %s[%s]\n",path,fname);
+            // if (strcmp(fname,"/dev/null")==0 ) continue;
+        }
+
+        /// num_opened_files++;
+        // strcpy(p, e->d_name);
+        // fdnum = atoi(p);
+        // read_fd(fdnum, path);
+    }
+    closedir(d);
+    return true;
+}
+
 
 // COMMON?
 // return username from /etc/passwd
@@ -1090,229 +1313,6 @@ int  Proc::field_id_by_name(const char *s)
     return -1;
 }
 */
-
-#define PROCDIR "/proc" // hmmm
-
-extern int flag_thread_ok;
-extern bool flag_schedstat;
-extern bool flag_show_thread;
-extern bool flag_devel;
-
-int pagesize;
-int Proc::update_msec = 1024;
-
-// socket states, from <linux/net.h> and touched to avoid name collisions
-enum
-{
-    SSFREE = 0,     /* not allocated		*/
-    SSUNCONNECTED,  /* unconnected to any socket	*/
-    SSCONNECTING,   /* in process of connecting	*/
-    SSCONNECTED,    /* connected to socket		*/
-    SSDISCONNECTING /* in process of disconnecting	*/
-};
-
-#define QPS_SCHED_AFFINITY ok
-
-#ifdef QPS_SCHED_AFFINITY
-#ifndef SYS_sched_setaffinity
-#define SYS_sched_setaffinity 241
-#endif
-#ifndef SYS_sched_getaffinity
-#define SYS_sched_getaffinity 242
-#endif
-
-// Needed for some glibc
-int qps_sched_setaffinity(pid_t pid, unsigned int len, unsigned long *mask)
-{
-    return syscall(SYS_sched_setaffinity, pid, len, mask);
-};
-int qps_sched_getaffinity(pid_t pid, unsigned int len, unsigned long *mask)
-{
-    return syscall(SYS_sched_getaffinity, pid, len, mask);
-};
-#endif
-
-/*
-   Thread Problems.
-   pthread_exit()
-   */
-
-struct proc_info_
-{
-    int proc_id;
-    char flag;
-    char type;
-    int files;
-} proc_info; // TESTING
-
-struct list_files_
-{
-    int proc_id;
-    int flag;
-    char *filename; //  path + filename
-} list_files;       // TESTING
-
-// read() the number of bytes read is returned (zero indicates end  of  file)
-// return the number of bytes read if ok, -1 if failed
-inline int read_file(char *name, char *buf, int max)
-{
-    int fd = open(name, O_RDONLY);
-    if (fd < 0)
-        return -1;
-    int r = read(fd, buf, max);
-    close(fd);
-    //	buf[r]=0;
-    return r;
-}
-
-// Description : read proc files
-// return 0 : if error occurs.
-char buffer_proc[1024 * 4]; // enough..maybe
-char *read_proc_file(const char *fname, int pid = -1, int tgid = -1,
-                     int *size = nullptr)
-{
-    static int max_size = 0;
-    char path[256];
-    int r;
-
-    if (pid < 0)
-        sprintf(path, "/proc/%s", fname);
-    else
-    {
-        if (tgid > 0)
-            sprintf(path, "/proc/%d/task/%d/%s", tgid, pid, fname);
-        else
-            sprintf(path, "/proc/%d/%s", pid, fname);
-    }
-
-    if (strcmp(fname, "exe") == 0)
-    {
-        if ((r = readlink(path, buffer_proc, sizeof(buffer_proc) - 1)) >= 0)
-        {
-            buffer_proc[r] = 0; // safer
-            return buffer_proc;
-        }
-        else
-            return nullptr;
-    }
-
-    int fd = open(path, O_RDONLY);
-    if (fd < 0)
-        return nullptr;
-    r = read(fd, buffer_proc, sizeof(buffer_proc) - 1); // return 0 , -1 ,
-    if (r < 0)
-        return nullptr;
-
-    if (max_size < r)
-        max_size = r;
-
-    if (size != nullptr)
-        *size = r;
-
-    buffer_proc[r] = 0; // safer
-
-    return buffer_proc;
-    // note: not work  fgets(sbuf, sizeof(64), fp) why???
-}
-
-char *read_proc_file2(char *r_path, const char *fname, int *size = nullptr)
-{
-    static int max_size = 0;
-    char path[256];
-    int r;
-
-    // strcpy(path,r_path);
-
-    sprintf(path, "%s/%s", r_path, fname);
-
-    if (strcmp(fname, "exe") == 0)
-    {
-        if ((r = readlink(path, buffer_proc, sizeof(buffer_proc) - 1)) >= 0)
-        {
-            buffer_proc[r] = 0; // safer
-            return buffer_proc;
-        }
-        else
-            return nullptr;
-    }
-
-    int fd = open(path, O_RDONLY);
-    if (fd < 0)
-        return nullptr;
-    r = read(fd, buffer_proc,
-             sizeof(buffer_proc) - 1); // return 0 , -1 , read_count
-    if (r < 0)
-        return nullptr;
-
-    if (max_size < r)
-        max_size = r;
-
-    if (size != nullptr)
-        *size = r;
-
-    buffer_proc[r] = 0; // safer
-    close(fd);
-
-    return buffer_proc;
-    // note: not work  fgets(sbuf, sizeof(64), fp) why???
-}
-
-// TEST CODE ,  Bottleneck
-// Description: read /proc/PID/fd/*  check opened file, count opened files
-//		this fuction will be called  when every update.
-// Return Value :
-bool proc_pid_fd(const int pid)
-{
-    char path[256];
-    char fname[256];
-    DIR *d;
-//    int fdnum;
-    int len, path_len;
-
-    sprintf(path, "/proc/%d/fd", pid);
-
-    path_len = strlen(path);
-    d = opendir(path);
-
-    if (!d)
-    {
-        // this happend when the process died already or Zombie process
-        // printf("Qps : read fail !! /proc/%d/fd !!! kernel bug ?
-        // \n",pid);
-        return false;
-    }
-
-    struct dirent *e;
-    while ((e = readdir(d)) != nullptr)
-    {
-        if (e->d_name[0] == '.')
-            continue; // skip "." and ".."
-
-        if (strlen(path) + 1 + strlen(e->d_name) >= 256) // overflow
-        {
-            closedir(d);
-            return false;
-        }
-        path[path_len] = '/';
-        path[path_len + 1] = 0;
-        strcat(path, e->d_name);
-
-        len = readlink(path, fname, sizeof(fname) - 1);
-        if (len > 0)
-        {
-            fname[len] = 0;
-            // printf("DEBUG: %s[%s]\n",path,fname);
-            // if (strcmp(fname,"/dev/null")==0 ) continue;
-        }
-
-        /// num_opened_files++;
-        // strcpy(p, e->d_name);
-        // fdnum = atoi(p);
-        // read_fd(fdnum, path);
-    }
-    closedir(d);
-    return true;
-}
 
 // new process created
 Procinfo::Procinfo(Proc *system_proc, int process_id, int thread_id) : refcnt(1)
