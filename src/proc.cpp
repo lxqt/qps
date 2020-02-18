@@ -61,11 +61,7 @@
 
 #include <QString>
 
-#ifdef GTK
-#include "detail_gtk.h"
-#else
-#include "details.h" //qt
-#endif
+#include "details.h"
 
 // for Non-ASCII locale
 //#include <global.h>

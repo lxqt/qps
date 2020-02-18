@@ -51,11 +51,7 @@
 #include "ttystr.h"
 #include "wchan.h"
 
-#ifdef GTK
-#include "detail_gtk.h"
-#else
-#include "details.h" //qt
-#endif
+#include "details.h"
 
 #define PROCDIR "/proc" // hmmm
 

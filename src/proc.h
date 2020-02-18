@@ -814,9 +814,7 @@ class Procview : public Proc
     void setTreeMode(bool b);
     void saveCOMMANDFIELD();
 
-#ifndef GTK
     Procinfo *getProcinfoByPID(int pid) { return procs.value(pid, NULL); };
-#endif
 
     QVector<Procinfo *> linear_procs; // this is linear_proc_list for viewer
 
