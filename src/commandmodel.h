@@ -26,7 +26,7 @@ class CommandModel : public QAbstractItemModel
 {
     Q_OBJECT
   public:
-    CommandModel(QObject *parent = 0);
+    CommandModel(QObject *parent = nullptr);
     ~CommandModel();
     QModelIndex index(int row, int column, const QModelIndex &parent) const;
     QModelIndex parent(const QModelIndex &child) const;

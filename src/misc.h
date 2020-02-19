@@ -82,7 +82,7 @@ class CrossBox : public QCheckBox
 class CheckMenu : public QMenu
 {
   public:
-    CheckMenu(QWidget *parent = 0);
+    CheckMenu(QWidget *parent = nullptr);
 };
 
 class TFrame : public QLabel

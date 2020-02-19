@@ -60,7 +60,7 @@ class gwidget
     gwidget(QWidget *p) { parent = p; };
     virtual void draw(QPainter */*p*/) { printf("gwidget\n"); };
     virtual void setPosition(int /*parent_width*/, int /*parent_height*/){};
-    virtual const char *info() { return NULL; };
+    virtual const char *info() { return nullptr; };
     void setParent(QWidget *p, Procview *procv)
     {
         parent = p;

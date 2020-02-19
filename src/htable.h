@@ -143,7 +143,7 @@ class TableHead : public QtTableView
     Q_OBJECT
   public:
     TableCache tablecache;
-    TableHead(HeadedTable *parent = 0);
+    TableHead(HeadedTable *parent = nullptr);
     virtual bool isCellChanged(int row, int col);
     virtual void checkProfile();
     void setReveseSort(bool reverse) {
@@ -183,7 +183,7 @@ class TableBody : public QtTableView
     Q_OBJECT
   public:
     TableCache tablecache;
-    TableBody(HeadedTable *parent = 0);
+    TableBody(HeadedTable *parent = nullptr);
 
     virtual bool isCellChanged(int row, int col);
     virtual void checkProfile();

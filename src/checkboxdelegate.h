@@ -29,7 +29,7 @@ class checkBoxDelegate : public QItemDelegate
 {
     Q_OBJECT
   public:
-    checkBoxDelegate(QObject *parent = 0);
+    checkBoxDelegate(QObject *parent = nullptr);
     QWidget *createEditor(QWidget *parent, const QStyleOptionViewItem &option,
                           const QModelIndex &index) const;
     void setEditorData(QWidget *editor, const QModelIndex &index) const;
