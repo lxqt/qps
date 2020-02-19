@@ -235,10 +235,10 @@ class Cat_int : public Category
   public:
     Cat_int(const QString &heading, const QString &explain, int w,
             int Procinfo::*member);
-    virtual int alignment() { return Qt::AlignRight; };
-    virtual QString string(Procinfo *p);
-    virtual int width() { return field_width; };
-    virtual int compare(Procinfo *a, Procinfo *b);
+    int alignment() override { return Qt::AlignRight; };
+    QString string(Procinfo *p) override;
+    int width() override { return field_width; };
+    int compare(Procinfo *a, Procinfo *b) override;
 
   protected:
     int Procinfo::*int_member;
@@ -251,10 +251,10 @@ class Cat_memory : public Category
   public:
     Cat_memory(const QString &heading, const QString &explain, int w,
                unsigned long Procinfo::*member);
-    virtual int alignment() { return Qt::AlignRight; };
-    virtual QString string(Procinfo *p);
-    virtual int width() { return field_width; };
-    virtual int compare(Procinfo *a, Procinfo *b);
+    int alignment() override { return Qt::AlignRight; };
+    QString string(Procinfo *p) override;
+    int width() override { return field_width; };
+    int compare(Procinfo *a, Procinfo *b) override;
 
   protected:
     unsigned long Procinfo::*uintl_member;
@@ -266,10 +266,10 @@ class Cat_uintl : public Category
   public:
     Cat_uintl(const QString &heading, const QString &explain, int w,
               unsigned long Procinfo::*member);
-    virtual int alignment() { return Qt::AlignRight; };
-    virtual QString string(Procinfo *p);
-    virtual int width() { return field_width; };
-    virtual int compare(Procinfo *a, Procinfo *b);
+    int alignment() override { return Qt::AlignRight; };
+    QString string(Procinfo *p) override;
+    int width() override { return field_width; };
+    int compare(Procinfo *a, Procinfo *b) override;
 
   protected:
     unsigned long Procinfo::*uintl_member;
@@ -281,17 +281,17 @@ class Cat_hex : public Cat_uintl
   public:
     Cat_hex(const QString &heading, const QString &explain, int w,
             unsigned long Procinfo::*member);
-    virtual QString string(Procinfo *p);
+    QString string(Procinfo *p) override;
 };
 
 class Cat_swap : public Category
 {
   public:
     Cat_swap(const QString &heading, const QString &explain);
-    virtual int alignment() { return Qt::AlignRight; };
-    virtual QString string(Procinfo *p);
-    virtual int width() { return 8; };
-    virtual int compare(Procinfo *a, Procinfo *b);
+    int alignment() override { return Qt::AlignRight; };
+    QString string(Procinfo *p) override;
+    int width() override { return 8; };
+    int compare(Procinfo *a, Procinfo *b) override;
 };
 
 class Cat_string : public Category
@@ -299,9 +299,9 @@ class Cat_string : public Category
   public:
     Cat_string(const QString &heading, const QString &explain,
                QString Procinfo::*member = nullptr);
-    virtual int alignment() { return Qt::AlignLeft; };
-    virtual QString string(Procinfo *p);
-    virtual int width() { return -9; };
+    int alignment() override { return Qt::AlignLeft; };
+    QString string(Procinfo *p) override;
+    int width() override { return -9; };
     virtual int gap() { return 8; };
 
   protected:
@@ -312,21 +312,21 @@ class Cat_user : public Cat_string
 {
   public:
     Cat_user(const QString &heading, const QString &explain);
-    virtual QString string(Procinfo *p);
+    QString string(Procinfo *p) override;
 };
 
 class Cat_group : public Cat_string
 {
   public:
     Cat_group(const QString &heading, const QString &explain);
-    virtual QString string(Procinfo *p);
+    QString string(Procinfo *p) override;
 };
 
 class Cat_wchan : public Cat_string
 {
   public:
     Cat_wchan(const QString &heading, const QString &explain);
-    virtual QString string(Procinfo *p);
+    QString string(Procinfo *p) override;
 };
 
 class Cat_dir : public Cat_string
@@ -334,7 +334,7 @@ class Cat_dir : public Cat_string
   public:
     Cat_dir(const QString &heading, const QString &explain, const char *dirname,
             QString Procinfo::*member);
-    virtual QString string(Procinfo *p);
+    QString string(Procinfo *p) override;
 
   protected:
     const char *dir;
@@ -345,16 +345,16 @@ class Cat_cmdline : public Cat_string
 {
   public:
     Cat_cmdline(const QString &heading, const QString &explain);
-    virtual QString string(Procinfo *p);
+    QString string(Procinfo *p) override;
 };
 
 class Cat_state : public Category
 {
   public:
     Cat_state(const QString &heading, const QString &explain);
-    virtual int alignment() { return Qt::AlignLeft; };
-    virtual QString string(Procinfo *p);
-    virtual int width() { return 6; };
+    int alignment() override { return Qt::AlignLeft; };
+    QString string(Procinfo *p) override;
+    int width() override { return 6; };
     virtual int gap() { return 8; };
 };
 
@@ -362,21 +362,21 @@ class Cat_policy : public Category
 {
   public:
     Cat_policy(const QString &heading, const QString &explain);
-    virtual int alignment() { return Qt::AlignLeft; };
-    virtual QString string(Procinfo *p);
-    virtual int width() { return 3; };
+    int alignment() override { return Qt::AlignLeft; };
+    QString string(Procinfo *p) override;
+    int width() override { return 3; };
     virtual int gap() { return 8; };
-    virtual int compare(Procinfo *a, Procinfo *b);
+    int compare(Procinfo *a, Procinfo *b) override;
 };
 
 class Cat_rtprio : public Category
 {
   public:
     Cat_rtprio(const QString &heading, const QString &explain);
-    virtual int alignment() { return Qt::AlignRight; };
-    virtual QString string(Procinfo *p);
-    virtual int width() { return 5; };
-    virtual int compare(Procinfo *a, Procinfo *b);
+    int alignment() override { return Qt::AlignRight; };
+    QString string(Procinfo *p) override;
+    int width() override { return 5; };
+    int compare(Procinfo *a, Procinfo *b) override;
 };
 
 #ifdef LINUX
@@ -384,19 +384,19 @@ class Cat_tms : public Category
 {
   public:
     Cat_tms(const QString &heading, const QString &explain);
-    virtual int alignment() { return Qt::AlignRight; };
-    virtual QString string(Procinfo *p);
-    virtual int width() { return 5; };
-    virtual int compare(Procinfo *a, Procinfo *b);
+    int alignment() override { return Qt::AlignRight; };
+    QString string(Procinfo *p) override;
+    int width() override { return 5; };
+    int compare(Procinfo *a, Procinfo *b) override;
 };
 
 class Cat_affcpu : public Category
 {
   public:
     Cat_affcpu(const QString &heading, const QString &explain);
-    virtual int alignment() { return Qt::AlignRight; };
-    virtual QString string(Procinfo *p);
-    virtual int width() { return 8; };
+    int alignment() override { return Qt::AlignRight; };
+    QString string(Procinfo *p) override;
+    int width() override { return 8; };
     // virtual int compare(Procinfo *a, Procinfo *b);
 };
 #endif
@@ -405,20 +405,20 @@ class Cat_time : public Category
 {
   public:
     Cat_time(const QString &heading, const QString &explain);
-    virtual int alignment() { return Qt::AlignRight; };
-    virtual QString string(Procinfo *p);
-    virtual int width() { return 7; };
-    virtual int compare(Procinfo *a, Procinfo *b);
+    int alignment() override { return Qt::AlignRight; };
+    QString string(Procinfo *p) override;
+    int width() override { return 7; };
+    int compare(Procinfo *a, Procinfo *b) override;
 };
 
 class Cat_start : public Category
 {
   public:
     Cat_start(const QString &heading, const QString &explain);
-    virtual int alignment() { return Qt::AlignRight; };
-    virtual QString string(Procinfo *p);
-    virtual int width() { return 8; };
-    virtual int compare(Procinfo *a, Procinfo *b);
+    int alignment() override { return Qt::AlignRight; };
+    QString string(Procinfo *p) override;
+    int width() override { return 8; };
+    int compare(Procinfo *a, Procinfo *b) override;
 };
 
 class Cat_percent : public Category
@@ -426,10 +426,10 @@ class Cat_percent : public Category
   public:
     Cat_percent(const QString &heading, const QString &explain, int w,
                 float Procinfo::*member);
-    virtual int alignment() { return Qt::AlignRight; };
-    virtual QString string(Procinfo *p);
-    virtual int width() { return field_width; };
-    virtual int compare(Procinfo *a, Procinfo *b);
+    int alignment() override { return Qt::AlignRight; };
+    QString string(Procinfo *p) override;
+    int width() override { return field_width; };
+    int compare(Procinfo *a, Procinfo *b) override;
 
   protected:
     float Procinfo::*float_member;
@@ -440,7 +440,7 @@ class Cat_tty : public Cat_string
 {
   public:
     Cat_tty(const QString &heading, const QString &explain);
-    virtual QString string(Procinfo *p);
+    QString string(Procinfo *p) override;
 };
 
 #define CPU_TIMES(cpu, kind) cpu_times_vec[cpu * CPUTIMES + kind]

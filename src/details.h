@@ -40,7 +40,7 @@ class Details : public QWidget
     Q_OBJECT
   public:
     Details(Procinfo *p, Proc *proc);
-    ~Details();
+    ~Details() override;
 
     void refresh();
     void config_change();
@@ -50,7 +50,7 @@ class Details : public QWidget
     void set_procinfo(Procinfo *p);
 
   protected:
-    virtual void resizeEvent(QResizeEvent *);
+    void resizeEvent(QResizeEvent *) override;
 
   private:
     QTabWidget *tbar;
@@ -64,17 +64,17 @@ class SimpleTable : public HeadedTable
     Q_OBJECT
   public:
     SimpleTable(QWidget *parent, int nfields, TableField *f, int options = 0);
-    QSize sizeHint() const;
+    QSize sizeHint() const override;
     virtual void refresh(){};
 
   protected:
-    virtual QString title(int col);
-    virtual QString dragTitle(int col);
-    virtual QString text(int row, int col) = 0;
-    virtual int colWidth(int col);
-    virtual int alignment(int col);
+    QString title(int col) override;
+    QString dragTitle(int col) override;
+    QString text(int row, int col) override = 0;
+    int colWidth(int col) override;
+    int alignment(int col) override;
     virtual int leftGap(int col);
-    virtual QString tipText(int col);
+    QString tipText(int col) override;
     //   Procinfo *procinfo() { return ((Details
     //   *)parentWidget())->procinfo(); }
     Procinfo *procinfo() { return detail->get_procinfo(); }
@@ -90,9 +90,9 @@ class Sockets : public SimpleTable
     Q_OBJECT
   public:
     Sockets(QWidget *parent);
-    ~Sockets();
+    ~Sockets() override;
 
-    void refresh();
+    void refresh() override;
     void refresh_window();
     bool refresh_sockets();
     const char *servname(unsigned port);
@@ -104,7 +104,7 @@ class Sockets : public SimpleTable
     void update_hostname(unsigned addr);
 
   protected:
-    virtual QString text(int row, int col);
+    QString text(int row, int col) override;
 
   private:
     enum
@@ -133,14 +133,14 @@ class Maps : public SimpleTable
 {
   public:
     Maps(QWidget *parent);
-    ~Maps();
+    ~Maps() override;
 
-    void refresh();
+    void refresh() override;
     void refresh_window();
     bool refresh_maps();
 
   protected:
-    virtual QString text(int row, int col);
+    QString text(int row, int col) override;
 
   private:
     enum
@@ -161,14 +161,14 @@ class Files : public SimpleTable
 {
   public:
     Files(QWidget *parent);
-    ~Files();
+    ~Files() override;
 
-    void refresh();
+    void refresh() override;
     void refresh_window();
     bool refresh_fds();
 
   protected:
-    virtual QString text(int row, int col);
+    QString text(int row, int col) override;
 
   private:
     enum
@@ -188,13 +188,13 @@ class Environ : public SimpleTable
     Q_OBJECT
   public:
     Environ(QWidget *parent);
-    ~Environ();
+    ~Environ() override;
 
-    void refresh();
+    void refresh() override;
     void refresh_window();
 
   protected:
-    virtual QString text(int row, int col);
+    QString text(int row, int col) override;
 
   private:
     enum
@@ -211,13 +211,13 @@ class AllFields : public SimpleTable
 {
   public:
     AllFields(QWidget *parent);
-    ~AllFields();
+    ~AllFields() override;
 
-    void refresh();
+    void refresh() override;
     void refresh_window();
 
   protected:
-    virtual QString text(int row, int col);
+    QString text(int row, int col) override;
 
   private:
     enum

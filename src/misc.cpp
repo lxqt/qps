@@ -654,7 +654,7 @@ char strong_buff[128];
 class MyThread : public QThread
 {
   public:
-    void run()
+    void run() override
     {
         prctl(PR_SET_NAME, "thread_test123456789");
 
@@ -673,7 +673,7 @@ class MyThread : public QThread
 class MyThread2 : public QThread
 {
   public:
-    void run()
+    void run() override
     {
         prctl(PR_SET_NAME, "thread_test987654321");
 

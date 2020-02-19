@@ -363,7 +363,7 @@ class w_cpu : public gwidget
     long total, user, system, idle, nice, wait;
 
   public:
-    virtual void draw(QPainter *p)
+    void draw(QPainter *p) override
     {
         x = 0;
         char buff[32];
@@ -466,7 +466,7 @@ class w_cpu : public gwidget
         height = gheight * 1;
     }
 
-    virtual char *info()
+    char *info() override
     {
         float f_user, f_nice, f_system, f_wait;
 
@@ -493,7 +493,7 @@ class w_mem : public gwidget
     int used;
 
   public:
-    virtual void draw(QPainter *p)
+    void draw(QPainter *p) override
     {
         height = pf_char_height() + 4;
         x = x_cpu->xpluswidth() + 10;
@@ -509,7 +509,7 @@ class w_mem : public gwidget
         width = drawSPECTRUM(p, x, 0, "MEM", procview->mem_total, used);
 #endif
     }
-    virtual char *info()
+    char *info() override
     {
         char str[80];
 
@@ -543,14 +543,14 @@ class w_swap : public gwidget
     int used;
 
   public:
-    virtual void draw(QPainter *p)
+    void draw(QPainter *p) override
     {
         x = x_mem->xpluswidth() + 10;
         used = procview->swap_total - procview->swap_free;
         width = drawSPECTRUM(p, x, 0, "SWAP", procview->swap_total, used);
         height = pf_char_height() + 4;
     }
-    virtual char *info()
+    char *info() override
     {
         char str[80];
 
@@ -599,18 +599,18 @@ int drawUTIME(QPainter *p, int x, int y, long boot_time)
 class w_utime : public gwidget
 {
   public:
-    virtual void draw(QPainter *p)
+    void draw(QPainter *p) override
     {
         height = pf_char_height() + 4;
         x = x_swap->xpluswidth() + 10;
         width = drawUTIME(p, x, 2, procview->boot_time);
     }
-    virtual const char *info() { return "passed time after system booting"; };
+    const char *info() override { return "passed time after system booting"; };
 };
 
 class w_load_avg : public gwidget
 {
-    virtual void draw(QPainter *p)
+    void draw(QPainter *p) override
     {
         char buff[64];
         // printf("w_load_avg\n");
@@ -636,7 +636,7 @@ class w_load_avg : public gwidget
         str[0] = rotate_char;
         pf_write(p, x, y, str);
     }
-    virtual const char *info()
+    const char *info() override
     {
         return "Average CPU%% each 1, 5 ,15 minutes";
     };

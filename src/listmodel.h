@@ -31,14 +31,14 @@ class ListModel : public QAbstractTableModel
     Q_OBJECT
   public:
     ListModel(/*QObject *parent = 0*/){};
-    ~ListModel(){};
+    ~ListModel() override{};
     QModelIndex index(int row, int column,
-                      const QModelIndex &parent = QModelIndex()) const; // pure
-    QModelIndex parent(const QModelIndex &child) const; // pure virtual
-    int rowCount(const QModelIndex &parent) const;
-    int columnCount(const QModelIndex & /*parent*/) const { return 2; };
-    QVariant data(const QModelIndex &index, int role) const;
-    QVariant headerData(int section, Qt::Orientation o, int role) const;
+                      const QModelIndex &parent = QModelIndex()) const override; // pure
+    QModelIndex parent(const QModelIndex &child) const override; // pure virtual
+    int rowCount(const QModelIndex &parent) const override;
+    int columnCount(const QModelIndex & /*parent*/) const override { return 2; };
+    QVariant data(const QModelIndex &index, int role) const override;
+    QVariant headerData(int section, Qt::Orientation o, int role) const override;
     //	QMap<int, QVariant> itemData ( const QModelIndex & index ) const
     //;
     void update()

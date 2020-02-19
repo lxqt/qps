@@ -71,7 +71,7 @@ class QtTableView : public QAbstractScrollArea
 
   protected:
     QtTableView(QWidget *parent = nullptr, const char *name = nullptr);
-    ~QtTableView();
+    ~QtTableView() override;
 
     int numRows() const;
     int numCols() const;
@@ -128,8 +128,8 @@ class QtTableView : public QAbstractScrollArea
 
   protected:
     virtual void paintCell(QPainter *, int row, int col) = 0;
-    virtual void paintEvent(QPaintEvent *);
-    virtual void resizeEvent(QResizeEvent *);
+    void paintEvent(QPaintEvent *) override;
+    void resizeEvent(QResizeEvent *) override;
 
     int findRow(int yPos) const;
     int findCol(int xPos) const;

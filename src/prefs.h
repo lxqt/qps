@@ -51,7 +51,7 @@ signals:
     void prefs_change();
 
   protected:
-    virtual void closeEvent(QCloseEvent *event);
+    void closeEvent(QCloseEvent *event) override;
 };
 
 #endif // PREFS_H

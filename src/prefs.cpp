@@ -40,7 +40,7 @@ class Swapvalid : public QValidator
 {
   public:
     Swapvalid(QWidget *parent) : QValidator(parent) {}
-    virtual State validate(QString &s, int &) const;
+    State validate(QString &s, int &) const override;
 };
 
 struct Boxvar

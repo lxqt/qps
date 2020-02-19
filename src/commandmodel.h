@@ -27,12 +27,12 @@ class CommandModel : public QAbstractItemModel
     Q_OBJECT
   public:
     CommandModel(QObject *parent = nullptr);
-    ~CommandModel();
-    QModelIndex index(int row, int column, const QModelIndex &parent) const;
-    QModelIndex parent(const QModelIndex &child) const;
-    int rowCount(const QModelIndex &parent) const;
-    int columnCount(const QModelIndex & /*parent*/) const { return 1; };
-    QVariant data(const QModelIndex &index, int role) const;
+    ~CommandModel() override;
+    QModelIndex index(int row, int column, const QModelIndex &parent) const override;
+    QModelIndex parent(const QModelIndex &child) const override;
+    int rowCount(const QModelIndex &parent) const override;
+    int columnCount(const QModelIndex & /*parent*/) const override { return 1; };
+    QVariant data(const QModelIndex &index, int role) const override;
     //  Qt::ItemFlags flags(const QModelIndex &index) const;
     void update(); // TEMP
 };

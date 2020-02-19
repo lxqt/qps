@@ -33,16 +33,16 @@ class Pstable : public HeadedTable
     Pstable(QWidget *parent, Procview *pv);
 
     void set_sortcol();
-    virtual void moveCol(int col, int place);
+    void moveCol(int col, int place) override;
     void refresh();
 
     // called by super
     bool hasSelection() { return 0; };
 
-    virtual bool isSelected(int row);
-    virtual void setSelected(int row, bool sel);
+    bool isSelected(int row) override;
+    void setSelected(int row, bool sel) override;
     virtual int totalRow();
-    virtual void checkTableModel();
+    void checkTableModel() override;
     void setReveseSort(bool reverse);
 
   public slots:
@@ -56,23 +56,23 @@ class Pstable : public HeadedTable
 
   protected:
     // implementation of the interface to HeadedTable
-    virtual QString title(int col);
-    virtual QString dragTitle(int col);
-    virtual QString text(int row, int col);
-    virtual int colWidth(int col);
-    virtual int alignment(int col);
-    virtual QString tipText(int col);
-    virtual int rowDepth(int row);
-    virtual NodeState folded(int row);
-    virtual int parentRow(int row);
-    virtual bool lastChild(int row);
-    virtual char *total_selectedRow(int col);
-    virtual bool columnMovable(int col);
+    QString title(int col) override;
+    QString dragTitle(int col) override;
+    QString text(int row, int col) override;
+    int colWidth(int col) override;
+    int alignment(int col) override;
+    QString tipText(int col) override;
+    int rowDepth(int row) override;
+    NodeState folded(int row) override;
+    int parentRow(int row) override;
+    bool lastChild(int row) override;
+    char *total_selectedRow(int col) override;
+    bool columnMovable(int col) override;
 
-    virtual void overpaintCell(QPainter *p, int row, int col, int xpos);
+    void overpaintCell(QPainter *p, int row, int col, int xpos) override;
     //	virtual bool hasChildren(int row);
 
-    virtual void leaveEvent(QEvent *);
+    void leaveEvent(QEvent *) override;
 
   private:
     Procview *procview;

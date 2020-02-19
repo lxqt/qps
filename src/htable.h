@@ -135,7 +135,7 @@ class FloatingHead : public QWidget
     QString title;
 
   protected:
-    virtual void paintEvent(QPaintEvent *event);
+    void paintEvent(QPaintEvent *event) override;
 };
 
 class TableHead : public QtTableView
@@ -144,8 +144,8 @@ class TableHead : public QtTableView
   public:
     TableCache tablecache;
     TableHead(HeadedTable *parent = nullptr);
-    virtual bool isCellChanged(int row, int col);
-    virtual void checkProfile();
+    bool isCellChanged(int row, int col) override;
+    void checkProfile() override;
     void setReveseSort(bool reverse) {
         reversed_sort = reverse;
     }
@@ -154,12 +154,12 @@ class TableHead : public QtTableView
     void scrollSideways(int);
 
   protected:
-    virtual void paintCell(QPainter *p, int row, int col);
-    virtual int cellWidth(int col) const;
-    virtual void mousePressEvent(QMouseEvent *e);
-    virtual void mouseReleaseEvent(QMouseEvent *e);
-    virtual void mouseMoveEvent(QMouseEvent *e);
-    virtual void eraseRight(QPainter *, QRect &r);
+    void paintCell(QPainter *p, int row, int col) override;
+    int cellWidth(int col) const override;
+    void mousePressEvent(QMouseEvent *e) override;
+    void mouseReleaseEvent(QMouseEvent *e) override;
+    void mouseMoveEvent(QMouseEvent *e) override;
+    void eraseRight(QPainter *, QRect &r) override;
 
     FloatingHead *floatHead;
 
@@ -185,8 +185,8 @@ class TableBody : public QtTableView
     TableCache tablecache;
     TableBody(HeadedTable *parent = nullptr);
 
-    virtual bool isCellChanged(int row, int col);
-    virtual void checkProfile();
+    bool isCellChanged(int row, int col) override;
+    void checkProfile() override;
   protected slots:
     // for keyboard accelerators
     void jumpTop();
@@ -195,17 +195,17 @@ class TableBody : public QtTableView
     void showRange(int from, int to);
 
   protected:
-    virtual void scrollTrigger(int x, int y); // tmp
+    void scrollTrigger(int x, int y) override; // tmp
 
-    virtual void paintCell(QPainter *p, int row, int col);
-    virtual int cellWidth(int col) const;
-    void mousePressEvent(QMouseEvent *e);
-    void mouseDoubleClickEvent(QMouseEvent *e);
-    void mouseMoveEvent(QMouseEvent *e);
-    void mouseReleaseEvent(QMouseEvent *);
-    void leaveEvent(QEvent *);
+    void paintCell(QPainter *p, int row, int col) override;
+    int cellWidth(int col) const override;
+    void mousePressEvent(QMouseEvent *e) override;
+    void mouseDoubleClickEvent(QMouseEvent *e) override;
+    void mouseMoveEvent(QMouseEvent *e) override;
+    void mouseReleaseEvent(QMouseEvent *) override;
+    void leaveEvent(QEvent *) override;
 
-    void timerEvent(QTimerEvent *);
+    void timerEvent(QTimerEvent *) override;
     void updateRow(int row);
     void dragSelectTo(int row);
     HeadedTable *htable; // to access parent class
@@ -230,7 +230,7 @@ class HeadedTable : public QWidget
     Q_OBJECT
   public:
     HeadedTable(QWidget *parent, int opts = 0);
-    ~HeadedTable();
+    ~HeadedTable() override;
     TableHead *header() { return head; } // interface
 
     TableHead *head;
@@ -293,7 +293,7 @@ signals:
     void repaintAll();
 
   protected:
-    virtual bool event(QEvent *event);
+    bool event(QEvent *event) override;
     // These must be implemented in subclasses
     virtual QString title(int col) = 0;
     virtual QString dragTitle(int col) = 0;
@@ -302,9 +302,9 @@ signals:
     // colWidth returns width in digit units; negative means variable width.
     virtual int colWidth(int col) = 0; // head_width
     virtual int alignment(int /*col*/) { return 0; }
-    virtual void paintEvent(QPaintEvent *);
-    virtual void hideEvent(QHideEvent *event);
-    virtual void showEvent(QShowEvent *event);
+    void paintEvent(QPaintEvent *) override;
+    void hideEvent(QHideEvent *event) override;
+    void showEvent(QShowEvent *event) override;
 
     // may be reimplemented (default exists)
     virtual void moveCol(int col, int place);
@@ -318,7 +318,7 @@ signals:
     // virtual bool modified(int row){return true;};
     virtual void overpaintCell(QPainter */*p*/, int /*row*/, int /*col*/, int /*xpos*/){}
 
-    void resizeEvent(QResizeEvent *);
+    void resizeEvent(QResizeEvent *) override;
 
     bool treemode;
     int treestep; // indentation for each tree level
