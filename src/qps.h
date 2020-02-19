@@ -53,7 +53,7 @@ class Qps : public QWidget
     Q_OBJECT
   public:
     Qps();
-    ~Qps();
+    ~Qps() override;
 
     void set_update_period(int milliseconds);
     void setIconSize(int w, int h) { icon_width = w, icon_height = h; }
@@ -226,10 +226,10 @@ class Qps : public QWidget
 
   protected:
     // reimplementation of QWidget methods
-    virtual void timerEvent(QTimerEvent *);
-    virtual void closeEvent(QCloseEvent *);
-    virtual void resizeEvent(QResizeEvent *event);
-    virtual void keyPressEvent(QKeyEvent *event);
+    void timerEvent(QTimerEvent *) override;
+    void closeEvent(QCloseEvent *) override;
+    void resizeEvent(QResizeEvent *event) override;
+    void keyPressEvent(QKeyEvent *event) override;
     // bool event(QEvent *e);
     void transfer_selection();
     void adjust_popup_menu();

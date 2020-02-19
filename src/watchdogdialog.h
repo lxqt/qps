@@ -53,7 +53,7 @@ class WatchdogDialog : public QDialog, private Ui_EventDialog
     void eventcat_slected(const QModelIndex &idx);
 
   protected:
-    virtual void showEvent(QShowEvent *event);
+    void showEvent(QShowEvent *event) override;
 
     //  void set_select( const QModelIndex & );
     //  void event_name_midified(const QString &new_name);

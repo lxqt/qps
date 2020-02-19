@@ -37,7 +37,7 @@ class ExecWindow : public QWidget, private Ui_ExecWindow
     ExecWindow();
     ExecWindow(QString str, QString exec_cmd, int pid = 0, QString cmd = "");
     ExecWindow(watchCond *wc, int pid = 0, QString cmd = "");
-    ~ExecWindow();
+    ~ExecWindow() override;
     void setText(QString str);
     QProcess *pr;
     // QProcess 	proc;

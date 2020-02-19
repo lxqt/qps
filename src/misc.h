@@ -82,7 +82,7 @@ class CrossBox : public QCheckBox
 class CheckMenu : public QMenu
 {
   public:
-    CheckMenu(QWidget *parent = 0);
+    CheckMenu(QWidget *parent = nullptr);
 };
 
 class TFrame : public QLabel
@@ -104,9 +104,9 @@ class TFrame : public QLabel
     void setValue(int val);
 
   protected:
-    virtual void paintEvent(QPaintEvent *event);
-    virtual void moveEvent(QMoveEvent *event);
-    virtual void showEvent(QShowEvent *event);
+    void paintEvent(QPaintEvent *event) override;
+    void moveEvent(QMoveEvent *event) override;
+    void showEvent(QShowEvent *event) override;
 
   private:
     QString text;
@@ -123,7 +123,7 @@ class TBloon : public QLabel
     //	void draw( QPainter &p );
     //	void showText(QPoint pos,QString str);
 
-    virtual bool eventFilter(QObject *watched, QEvent *event);
+    bool eventFilter(QObject *watched, QEvent *event) override;
   protected slots:
     void update(int val);
     //    		void refresh();
@@ -151,7 +151,7 @@ class UFrame : public QFrame
     //		QToolButton *button,*button2,*button3;
     //		void event_cursor_moved(QMouseEvent *e);
   protected:
-    virtual void paintEvent(QPaintEvent *event);
+    void paintEvent(QPaintEvent *event) override;
 
   private:
     QString title;
@@ -170,8 +170,8 @@ class XButton : public QAbstractButton
     //		void event_cursor_moved(QMouseEvent *e);
   protected:
     // virtual void drawButton 3( QPainter * ) ;
-    virtual void paintEvent(QPaintEvent *event);
-    void resizeEvent(QResizeEvent *p);
+    void paintEvent(QPaintEvent *event) override;
+    void resizeEvent(QResizeEvent *p) override;
 };
 
 class SearchBox : public QLineEdit
@@ -180,7 +180,7 @@ class SearchBox : public QLineEdit
   public:
     SearchBox(QWidget *parent);
     void event_cursor_moved(QMouseEvent *e);
-    void keyPressEvent(QKeyEvent *e);
+    void keyPressEvent(QKeyEvent *e) override;
   protected slots:
     void onClearButtonClicked();
     void event_xbutton_clicked();
@@ -258,7 +258,7 @@ class ServerAdaptor : public QObject
   public:
     //    ServerAdaptor(QObject *parent);
     ServerAdaptor(){};
-    virtual ~ServerAdaptor(){};
+    ~ServerAdaptor() override{};
 
   public:         // PROPERTIES
   public Q_SLOTS: // METHODS

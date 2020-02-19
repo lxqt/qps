@@ -70,8 +70,8 @@ class QtTableView : public QAbstractScrollArea
     QColor backColor;
 
   protected:
-    QtTableView(QWidget *parent = 0, const char *name = 0);
-    ~QtTableView();
+    QtTableView(QWidget *parent = nullptr, const char *name = nullptr);
+    ~QtTableView() override;
 
     int numRows() const;
     int numCols() const;
@@ -128,8 +128,8 @@ class QtTableView : public QAbstractScrollArea
 
   protected:
     virtual void paintCell(QPainter *, int row, int col) = 0;
-    virtual void paintEvent(QPaintEvent *);
-    virtual void resizeEvent(QResizeEvent *);
+    void paintEvent(QPaintEvent *) override;
+    void resizeEvent(QResizeEvent *) override;
 
     int findRow(int yPos) const;
     int findCol(int xPos) const;
@@ -156,9 +156,9 @@ class QtTableView : public QAbstractScrollArea
     QRect cellUpdateR;
 
   private:
-    int findRawRow(int yPos, int *cellMaxY, int *cellMinY = 0,
+    int findRawRow(int yPos, int *cellMaxY, int *cellMinY = nullptr,
                    bool goOutsideView = false) const;
-    int findRawCol(int xPos, int *cellMaxX, int *cellMinX = 0,
+    int findRawCol(int xPos, int *cellMaxX, int *cellMinX = nullptr,
                    bool goOutsideView = false) const;
     int maxColsVisible() const;
 

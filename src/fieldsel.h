@@ -59,8 +59,8 @@ signals:
     Procview *procview;
 
     void set_disp_fields();
-    void closeEvent(QCloseEvent *);
-    virtual void showEvent(QShowEvent *);
+    void closeEvent(QCloseEvent *) override;
+    void showEvent(QShowEvent *) override;
 };
 
 #endif // FIELDSEL_H

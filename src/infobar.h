@@ -42,8 +42,8 @@ class subcpuRack : public QWidget
     //   void show_and_hide(bool, QWidget *, QWidget *);
     // signals:  void config_change();
   protected:
-    void paintEvent(QPaintEvent *);
-    void mousePressEvent(QMouseEvent *);
+    void paintEvent(QPaintEvent *) override;
+    void mousePressEvent(QMouseEvent *) override;
 
   private:
     //	List<gwidget*>  wlist;
@@ -60,7 +60,7 @@ class gwidget
     gwidget(QWidget *p) { parent = p; };
     virtual void draw(QPainter */*p*/) { printf("gwidget\n"); };
     virtual void setPosition(int /*parent_width*/, int /*parent_height*/){};
-    virtual const char *info() { return NULL; };
+    virtual const char *info() { return nullptr; };
     void setParent(QWidget *p, Procview *procv)
     {
         parent = p;
@@ -102,7 +102,7 @@ class Infobar : public QFrame
     Infobar(){};
 
     Infobar(QWidget *parent, Procview *);
-    ~Infobar();
+    ~Infobar() override;
 
     void configure(); // respond to configuration change
 
@@ -119,13 +119,13 @@ signals:
     void config_change();
 
   protected:
-    void paintEvent(QPaintEvent *);
-    void mousePressEvent(QMouseEvent *);
-    void mouseMoveEvent(QMouseEvent *);
-    void leaveEvent(QEvent *);
-    virtual void enterEvent(QEvent *event);
-    void hideEvent(QHideEvent *event);
-    void resizeEvent(QResizeEvent *e);
+    void paintEvent(QPaintEvent *) override;
+    void mousePressEvent(QMouseEvent *) override;
+    void mouseMoveEvent(QMouseEvent *) override;
+    void leaveEvent(QEvent *) override;
+    void enterEvent(QEvent *event) override;
+    void hideEvent(QHideEvent *event) override;
+    void resizeEvent(QResizeEvent *e) override;
 
     void add_history_point(unsigned value);
     void add_history_point2(float value);
@@ -162,10 +162,10 @@ class GraphBase : public QWidget
     void drawGraphOnPixmap();
 
   protected:
-    void paintEvent(QPaintEvent *);
-    virtual void mousePressEvent(QMouseEvent *);
-    virtual void mouseMoveEvent(QMouseEvent *);
-    virtual void leaveEvent(QEvent *);
+    void paintEvent(QPaintEvent *) override;
+    void mousePressEvent(QMouseEvent *) override;
+    void mouseMoveEvent(QMouseEvent *) override;
+    void leaveEvent(QEvent *) override;
     //	virtual	void enterEvent ( QEvent * event ) ;
     //	void resizeEvent ( QResizeEvent * e );
 
@@ -198,8 +198,8 @@ class IO_Graph : public GraphBase
     IO_Graph(QWidget *parent, Procview *);
 
   protected:
-    void make_graph(int w, int h, QPainter *p);
-    QString doHistoryTXT(SysHistory *sysh);
+    void make_graph(int w, int h, QPainter *p) override;
+    QString doHistoryTXT(SysHistory *sysh) override;
 
   private:
 };

@@ -37,9 +37,9 @@ class TrayIcon : public QSystemTrayIcon
 {
     Q_OBJECT
   public:
-    TrayIcon(const QPixmap &, const QString &, QMenu *popup = 0,
-             QWidget *parent = 0, const char *name = 0);
-    ~TrayIcon();
+    TrayIcon(const QPixmap &, const QString &, QMenu *popup = nullptr,
+             QWidget *parent = nullptr, const char *name = nullptr);
+    ~TrayIcon() override;
 
     // use WindowMaker dock mode.  ignored on non-X11 platforms
     void setWMDock(bool use) { isWMDock = use; }

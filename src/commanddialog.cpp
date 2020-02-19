@@ -73,7 +73,7 @@ CommandDialog::CommandDialog()
     // qcheck1->setText("Toolbar");
     // qcheck1->setEnabled(false);
     // hbox2->addWidget(qcheck1);
-    if (0)
+    if (false)
     {
         qcheck2 = new QCheckBox(this);
         qcheck2->setText( tr( "Popup" ) );
@@ -155,10 +155,10 @@ void CommandDialog::event_name_midified(const QString &new_name)
     idx = find_command(new_name);
     if (idx == -1)
     {
-        add->setEnabled(1);
+        add->setEnabled(true);
     }
     else
-        add->setEnabled(0);
+        add->setEnabled(false);
 
     // printf("debug:changed_description() end \n");
 }
@@ -227,15 +227,15 @@ void CommandDialog::reset()
     name->setText("");
     cmdline->setText("");
     add->setText( tr( "Add..." ) );
-    add->setEnabled(0);
-    button_ok->setEnabled(1);
+    add->setEnabled(false);
+    button_ok->setEnabled(true);
     listview->clearSelection();
 }
 
 void CommandDialog::new_cmd()
 {
     reset();
-    add->setEnabled(1);
+    add->setEnabled(true);
     name->setFocus();
 }
 
@@ -251,9 +251,9 @@ void CommandDialog::add_new()
     check_commandAll(); // TEMP
 
     listview->reset();
-    add->setEnabled(0);
-    del->setEnabled(0);
-    button_ok->setEnabled(1);
+    add->setEnabled(false);
+    del->setEnabled(false);
+    button_ok->setEnabled(true);
 
     emit command_change(); // notice to refresh Qps::make_command_menu()
                            //	control_bar->update_bar(); // ** important

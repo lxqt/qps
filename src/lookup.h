@@ -70,7 +70,7 @@ class Lookup : public QObject
     Q_OBJECT
   public:
     Lookup();
-    ~Lookup();
+    ~Lookup() override;
     QString hostname(unsigned addr);
 
     static void initproctitle(char **argv, char **envp);

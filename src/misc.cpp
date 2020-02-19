@@ -206,7 +206,7 @@ int mini_sscanf(const char *s1, const char *fmt, ...)
                 p = strstr(s, sstr);
                 if (p == nullptr)
                 {
-                    if (0 and flag_devel)
+                    if (false and flag_devel)
                         printf("%s : can't found [%s] "
                                "in %s\n",
                                __FUNCTION__, sstr, s);
@@ -238,7 +238,7 @@ int mini_sscanf(const char *s1, const char *fmt, ...)
 int fsize(char *fname)
 {
     int size = 0;
-    if (0)
+    if (false)
     {
         // !!! important !! not works with [/proc] , because [/proc/*]
         // always zero
@@ -654,7 +654,7 @@ char strong_buff[128];
 class MyThread : public QThread
 {
   public:
-    void run()
+    void run() override
     {
         prctl(PR_SET_NAME, "thread_test123456789");
 
@@ -673,7 +673,7 @@ class MyThread : public QThread
 class MyThread2 : public QThread
 {
   public:
-    void run()
+    void run() override
     {
         prctl(PR_SET_NAME, "thread_test987654321");
 
