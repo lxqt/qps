@@ -207,7 +207,7 @@ bool Pstable::lastChild(int row)
     if (pi)
         return pi->lastchild;
     qDebug("Qps bug: over row  %d!!!\n", row);
-    return 0;
+    return false;
 }
 
 // Segfault !!!!

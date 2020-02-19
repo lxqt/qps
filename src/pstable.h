@@ -37,7 +37,7 @@ class Pstable : public HeadedTable
     void refresh();
 
     // called by super
-    bool hasSelection() { return 0; };
+    bool hasSelection() { return false; };
 
     bool isSelected(int row) override;
     void setSelected(int row, bool sel) override;

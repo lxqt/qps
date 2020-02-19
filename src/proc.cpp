@@ -80,7 +80,7 @@ extern bool flag_devel;
 int flag_24_ok; // we presume a kernel 2.4.x
 
 // COMMON
-bool Procview::treeview = 0; // true
+bool Procview::treeview = false; // true
 bool Procview::flag_show_file_path = false;
 bool Procview::flag_cumulative = false;  // times cumulative with children's
 bool Procview::flag_pcpu_single = false; // %CPU= pcpu/num_cpus
@@ -1341,7 +1341,7 @@ Procinfo::Procinfo(Proc *system_proc, int process_id, int thread_id) : refcnt(1)
     table_child_seq = -1;
     child_seq_prev = -1;
 
-    lastchild = 0;
+    lastchild = false;
     generation = -1;
     detail = nullptr;
 
@@ -1840,7 +1840,7 @@ int Procinfo::readproc()
     old_utime = utime; // ****
 
     // read /proc/%PID/statm  - memory usage
-    if (1)
+    if (true)
     {
         if ((buf = read_proc_file2(path, "statm")) == nullptr)
             return -1; // kernel 2.2 ?

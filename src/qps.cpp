@@ -360,9 +360,9 @@ Qps::Qps()
     /// vlayout->addSpacing(5);
 
     // if(flag_devel){
-    if (0)
+    if (false)
     {
-        if (0)
+        if (false)
         {
             QSplitter *splitter = new QSplitter(Qt::Vertical);
             QDockWidget *dock = new QDockWidget(tr("Detail"), this);
@@ -383,7 +383,7 @@ Qps::Qps()
     logbox = new QTextEdit(this);
     logbox->setReadOnly(true);
 
-    if (0) // if(flag_smallscreen==false)
+    if (false) // if(flag_smallscreen==false)
     {
         //
     }

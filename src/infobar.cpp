@@ -440,7 +440,7 @@ class w_cpu : public gwidget
                 if (c >= 2)
                     mw -= 6;
 
-                if (0)
+                if (false)
                 {
                     printf("cpuid %d , user %d , %d \n", 1,
                            procview->cpu_times(1, Proc::CPUTIME_USER),
@@ -1101,7 +1101,7 @@ QPixmap *Infobar::make_icon(int w, int h)
     QPainter pt(&icon_pm);
     pt.fillRect(0, 0, w, h, QBrush(Qt::black));
 
-    if (0)
+    if (false)
     {
         /*	int thick=h/10;
                 int bottom=h/4;
@@ -1347,7 +1347,7 @@ Infobar2 *PDisplay::addSystem(Procview *pv)
 
     /// pv->read_system(); //
 
-    if (0 and pv->num_cpus > 9)
+    if (false and pv->num_cpus > 9)
     {
         QWidget *rack;
         rack = new subcpuRack(this, pv);

@@ -328,7 +328,7 @@ void Sockets::config_change()
 void Sockets::update_hostname(unsigned /*addr*/)
 {
     // if(widthChanged(REMOTEADDR) || widthChanged(LOCALADDR)) {
-    if (1)
+    if (true)
     {
         ////	updateTableSize();
         ///	repaintAll();
