@@ -508,7 +508,7 @@ void Pstable::subtree_folded(int row)
 // 	1.void Qps::refresh()
 void STATUSBAR_SETCOUNT(int n);
 
-static int kgen = 123;
+static unsigned int kgen = 123;
 void Pstable::checkTableModel()
 {
     //	int size=procview->linear_procs.size();
