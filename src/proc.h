@@ -298,7 +298,7 @@ class Cat_string : public Category
 {
   public:
     Cat_string(const QString &heading, const QString &explain,
-               QString Procinfo::*member = 0);
+               QString Procinfo::*member = nullptr);
     virtual int alignment() { return Qt::AlignLeft; };
     virtual QString string(Procinfo *p);
     virtual int width() { return -9; };
@@ -814,9 +814,7 @@ class Procview : public Proc
     void setTreeMode(bool b);
     void saveCOMMANDFIELD();
 
-#ifndef GTK
     Procinfo *getProcinfoByPID(int pid) { return procs.value(pid, NULL); };
-#endif
 
     QVector<Procinfo *> linear_procs; // this is linear_proc_list for viewer
 
