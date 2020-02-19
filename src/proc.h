@@ -499,7 +499,7 @@ class Procinfo // Process Infomation
 
     bool first_run;        // for optimization
     char hashstr[128 * 8]; // cache
-    int hashlen;
+    size_t hashlen;
     int hashcmp(char *str);
 
     QString command;   // COMMAND

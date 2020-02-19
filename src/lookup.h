@@ -99,7 +99,7 @@ signals:
 
     QSocketNotifier *readsn, *writesn;
 
-    static const unsigned hostname_cache_size = 400; // max names to cache
+    static const int hostname_cache_size = 400; // max names to cache
 };
 
 #endif // LOOKUP_H

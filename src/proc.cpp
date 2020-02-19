@@ -1493,13 +1493,13 @@ void Procinfo::calculate_cpu() //
 // using cache for Speed up
 int Procinfo::hashcmp(char *sbuf)
 {
-    int statlen;
+    size_t statlen;
 
     statlen = strlen(sbuf);
     if (statlen > sizeof(hashstr))
     {
         // some user reported 265byte.
-        printf("Qps BUG:  hashstr shortage statlen(%d) > hashstr(%lu), "
+        printf("Qps BUG:  hashstr shortage statlen(%zu) > hashstr(%zu), "
                "report this "
                "message to fasthyun@magicn.com \n",
                statlen, sizeof(hashstr));
