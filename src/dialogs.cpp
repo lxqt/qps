@@ -148,7 +148,7 @@ void IntervalDialog::event_label_changed()
         return;
     }
 
-    txt.sprintf("%d ms", (int)period);
+    txt = QString::asprintf("%d ms", (int)period);
     label->setText(txt);
 }
 
