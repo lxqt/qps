@@ -269,7 +269,7 @@ QString Sockets::ipAddr(unsigned addr)
         s = lookup->hostname(addr);
         if (s.isNull())
         {
-            s.sprintf("(%d.%d.%d.%d)", (a >> 24) & 0xff, (a >> 16) & 0xff,
+            s = QString::asprintf("(%d.%d.%d.%d)", (a >> 24) & 0xff, (a >> 16) & 0xff,
                       (a >> 8) & 0xff, a & 0xff);
         }
     }
@@ -278,7 +278,7 @@ QString Sockets::ipAddr(unsigned addr)
         if (a == 0)
             s = "*";
         else
-            s.sprintf("%d.%d.%d.%d", (a >> 24) & 0xff, (a >> 16) & 0xff,
+            s = QString::asprintf("%d.%d.%d.%d", (a >> 24) & 0xff, (a >> 16) & 0xff,
                       (a >> 8) & 0xff, a & 0xff);
     }
     return s;
@@ -479,7 +479,7 @@ QString Maps::text(int row, int col)
         s = buf;
         break;
     case DEVICE:
-        s.sprintf("%2u,%2u", mi->major, mi->minor);
+        s = QString::asprintf("%2u,%2u", mi->major, mi->minor);
         break;
     case INODE:
         s.setNum(mi->inode);

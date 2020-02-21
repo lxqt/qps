@@ -1229,9 +1229,9 @@ void Qps::menu_update()
     if (update_period == eternity)
         txt = "1 s";
     else if (update_period % 1000 == 0)
-        txt.sprintf("%d s", update_period / 1000);
+        txt = QString::asprintf("%d s", update_period / 1000);
     else
-        txt.sprintf("%d ms", update_period);
+        txt = QString::asprintf("%d ms", update_period);
     IntervalDialog id(txt.toUtf8().data(), update_period != eternity);
     id.exec();
     /// save_settings();

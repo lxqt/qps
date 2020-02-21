@@ -368,9 +368,7 @@ Cat_percent::Cat_percent(const QString &heading, const QString &explain, int w,
 
 QString Cat_percent::string(Procinfo *p)
 {
-    QString s;
-    s.sprintf("%01.2f", (double)(p->*float_member));
-    return s;
+    return QString::asprintf("%01.2f", (double)(p->*float_member));
 }
 
 int Cat_percent::compare(Procinfo *a, Procinfo *b)
@@ -435,9 +433,7 @@ Cat_hex::Cat_hex(const QString &heading, const QString &explain, int w,
 // but QString structuring & destructring eat more time
 QString Cat_hex::string(Procinfo *p)
 {
-    QString s;
-    s.sprintf("%8x", (unsigned)(p->*uintl_member));
-    return s;
+    return QString::asprintf("%8x", (unsigned)(p->*uintl_member));
 }
 
 // COMMON,
@@ -2771,11 +2767,9 @@ Cat_tms::Cat_tms(const QString &heading, const QString &explain)
 
 QString Cat_tms::string(Procinfo *p)
 {
-    QString s;
     p->tms = p->get_tms();
-    s.sprintf("%.3f", p->tms);
+    return QString::asprintf("%.3f", p->tms);
     // s.sprintf("%d",p->tms);
-    return s;
 }
 
 int Cat_tms::compare(Procinfo *a, Procinfo *b)
@@ -2790,10 +2784,8 @@ Cat_affcpu::Cat_affcpu(const QString &heading, const QString &explain)
 
 QString Cat_affcpu::string(Procinfo *p)
 {
-    QString s;
     p->affcpu = p->get_affcpu();
-    s.sprintf("%lx", p->affcpu);
-    return s;
+    return QString::asprintf("%lx", p->affcpu);
 }
 /*
    int Cat_affcpu::compare(Procinfo *a, Procinfo *b)
