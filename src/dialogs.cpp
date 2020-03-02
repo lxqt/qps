@@ -35,14 +35,6 @@ static void center_window(QWidget *a)
             b->y() + (b->height() - a->height()) / 2);
 }
 
-static void move_mouse_window(QWidget *a)
-{
-    // QWidget *b = qApp->mainWidget();
-    QWidget *b = QApplication::activeWindow();
-    a->move(b->x() + (b->width() - a->width()) / 2,
-            b->y() + (b->height() - a->height()) / 2);
-}
-
 static void fix_size(QWidget *w) { w->setFixedSize(w->sizeHint()); }
 
 // Modal dialog
