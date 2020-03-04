@@ -119,8 +119,7 @@ void Pstable::overpaintCell(QPainter *p, int row, int col, int xpos)
     if (size <= 0)
         return; // saver!
 
-    int h = body->cellHeight();
-    h = p->fontMetrics().height(); // return pixel
+    int h = p->fontMetrics().height(); // return pixel
 
     int msize = h * 3.0 / 8.0;
     // printf("DEBUG: height=%d, msize=%d\n",h,msize);
