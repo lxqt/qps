@@ -93,6 +93,8 @@
 #include <QSettings>
 #include <QTextCodec>
 
+#include <iostream>
+
 /* --------------------- Global Variable START ---------------------- */
 QList<Command *> commands;
 
@@ -180,8 +182,8 @@ Qps::Qps()
     if (flag_devel)
     {
         thread_main = thread(); // Test
-        printf("qps thread =%p , qApp thread =%p\n", thread(),
-               QApplication::instance()->thread());
+        std::cout << "qps thread = " << thread() << " qApp thread = "
+            << QApplication::instance()->thread() << std::endl;
     }
 
     // watchdogDialog = new WatchdogDialog; //Memory Leak
