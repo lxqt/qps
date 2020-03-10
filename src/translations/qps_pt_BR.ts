@@ -312,7 +312,7 @@ saiu com status </translation>
     <message>
         <location filename="../watchdog.ui" line="23"/>
         <source>Watchdog 0.1 alpha</source>
-        <translation></translation>
+        <translation>Watchdog 0.1 alfa</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="117"/>
