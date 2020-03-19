@@ -317,7 +317,7 @@ saiu com status </translation>
     <message>
         <location filename="../watchdog.ui" line="117"/>
         <source>Eventcat</source>
-        <translation></translation>
+        <translation>Evento</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="162"/>
@@ -648,7 +648,7 @@ saiu com status </translation>
     <message>
         <location filename="../prefs.cpp" line="242"/>
         <source>Total cpu: %1</source>
-        <translation></translation>
+        <translation>Total de CPU: %1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="243"/>
@@ -1423,7 +1423,7 @@ saiu com status </translation>
     <message>
         <location filename="../qps.cpp" line="552"/>
         <source>SIGCHLD (child death)</source>
-        <translation></translation>
+        <translation>SIGCHLD (matar processo filho)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="554"/>
