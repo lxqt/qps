@@ -1141,7 +1141,7 @@ saíu co estado </translation>
     <message>
         <location filename="../proc.cpp" line="1987"/>
         <source>CPU the process is executing on (SMP system)</source>
-        <translation>A CPU onde se está  a executar o proceso (sistema SMP)</translation>
+        <translation>A CPU onde se está a executar o proceso (sistema SMP)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1989"/>
@@ -1752,7 +1752,7 @@ saíu co estado </translation>
         <source> This is unstable Alpha feature
  You maybe see a SEGFAULT...</source>
         <translation> Esta é unha función alfa inestábel
- É probábel que vexa algún SEGFAULT...</translation>
+ É probábel que vexa algún FALLO DE SEGMENTO (SEGFAULT)...</translation>
     </message>
 </context>
 <context>
