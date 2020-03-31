@@ -129,12 +129,12 @@ QString substString(QString str, Procinfo *p)
         int v = str.indexOf('%', i);
         if (v < 0)
         {
-            s.append(str.right(len - i));
+            s.append(str.rightRef(len - i));
             break;
         }
         else
         {
-            s.append(str.mid(i, v - i));
+            s.append(str.midRef(i, v - i));
             if (++v >= len)
                 break;
             QString subst;
