@@ -1,3 +1,30 @@
+qps-2.1.0 / 2020-04-23
+======================
+  * Fixed IO_R column and IO_W column.
+  * Fixed sorting in SWAP column.
+  * Used radio buttons in Field menu.
+  * Fixed I/O graph.
+  * Avoided overflow.
+  * Removed CMake artifacts.
+  * Removed unused, nontrivial variables.
+  * Silenced unused parameter warnings.
+  * Explicitly ignore return values when needed.
+  * Drop C deprecated headers.
+  * Use nullptr.
+  * Use SingleApplication from LXQt.
+  * Removed screenshot capability.
+  * Dropped pre-compiled headers (PCH).
+  * Reorganized Svec class.
+  * Dropped C deprecated headers.
+  * Got rid of `proc_common.cpp`.
+  * Removed GTK conditional code.
+  * Removed unused platform files.
+  * Ported towards C++11 override.
+  * Fix sign compare warnings.
+  * Stopped using deprecated QString method `printf()`.
+  * Fix a printf() format warning.
+  * Avoid temporary heap allocations.
+
 qps-2.0.0 / 2019-10-08
 ======================
 
