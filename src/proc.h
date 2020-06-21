@@ -36,6 +36,8 @@
 #include <QStringList>
 #include <QDir>
 
+#include <sys/types.h>
+
 class Procinfo;
 int read_file(char *name, char *buf, int max);
 int read_file_addNULL(char *name, void *buf, int max);
