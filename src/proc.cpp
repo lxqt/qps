@@ -2400,7 +2400,7 @@ bool Procinfo::read_fds()
             continue; // skip . and ..
         int fdnum = atoi(e->d_name);
         strcpy(str, path);
-        strncat(str, e->d_name, 128 - strlen(str));
+        strncat(str, e->d_name, 128 - 1 - strlen(str));
         //	printf("str=%s\n",str);
         read_fd(fdnum, str);
     }
