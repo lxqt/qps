@@ -1750,7 +1750,7 @@ int Procinfo::readproc()
            " %c %d %d %d %d %d"
            " %lu %lu %lu %lu %lu "
            "%ld %ld %ld %ld %d %d %d %*s %lu %*s %*s %*s %*s %*s %*s %*s %*s "
-           "%*s %*s %*s %*s %lu %*s %*s %*s %u %*s %*s %*s %u %u",
+           "%*s %*s %*s %*s %lu %*s %*s %*s %d %*s %*s %*s %u %u",
 #else
     // some errors will occur !
     mini_sscanf(
@@ -2170,7 +2170,7 @@ int Proc::read_system() //
 
     for (int cpu = 0; cpu < num_cpus; cpu++)
     {
-        char cpu_buf[10];
+        char cpu_buf[13];
         sprintf(cpu_buf, "cpu%d", cpu);
         if ((p = strstr(buf, cpu_buf)) != nullptr)
         {
@@ -2483,7 +2483,7 @@ bool Proc::read_usocket_list()
         unsigned q;
         unsigned type, state;
         int n;
-        sscanf(buf, "%x: %x %x %x %x %x %ld %n",
+        sscanf(buf, "%x: %x %x %x %x %x %lud %n",
                // Num	refcount protocol flags type state indoe path
                &q, &q, &q /*protocol*/, &us.flags, &type, &state, &us.inode,
                &n);
