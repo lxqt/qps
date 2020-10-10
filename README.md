@@ -10,8 +10,11 @@ Qps is licensed under the terms of the
 [GPLv2](http://choosealicense.com/licenses/gpl-2.0/) or any later version.
 
 
-### Translation (Weblate)
+### Translation
 
-<a href="https://weblate.lxqt.org/projects/lxqt/qps/">
-<img src="https://weblate.lxqt.org/widgets/lxqt/-/qps/multi-auto.svg" alt="Translation status" />
+Translations can be done in [LXQt-Weblate](https://translate.lxqt-project.org/projects/lxqt-desktop/qps/)
+
+<a href="https://translate.lxqt-project.org/projects/lxqt-desktop/qps/">
+<img src="https://translate.lxqt-project.org/widgets/lxqt-desktop/-/qps/multi-auto.svg" alt="Translation status" />
 </a>
+

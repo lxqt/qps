@@ -501,7 +501,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../dialogs.cpp" line="94"/>
         <source>Cancel</source>
-        <translation>Storno</translation>
+        <translation>Zrušit</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="96"/>
@@ -620,7 +620,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../dialogs.cpp" line="289"/>
         <source>Cancel</source>
-        <translation>Storno</translation>
+        <translation>Zrušit</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="292"/>
@@ -1551,7 +1551,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../dialogs.cpp" line="325"/>
         <source>Cancel</source>
-        <translation>Storno</translation>
+        <translation>Zrušit</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="355"/>
@@ -1640,7 +1640,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../dialogs.cpp" line="234"/>
         <source>Cancel</source>
-        <translation>Storno</translation>
+        <translation>Zrušit</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="238"/>
