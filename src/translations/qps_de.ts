@@ -1693,7 +1693,7 @@ endete mit Status </translation>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>Local Addr</source>
-        <translation>Local Addr</translation>
+        <translation>Lokale Addr</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
