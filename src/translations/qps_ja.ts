@@ -342,7 +342,7 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="229"/>
         <source>cpu</source>
-        <translation>cpu</translation>
+        <translation>CPU</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="248"/>
@@ -444,7 +444,7 @@ exited with status </source>
     <message>
         <location filename="../fieldsel.cpp" line="34"/>
         <source>Select Custom Fields </source>
-        <translation>カスタム・フィールドの選択</translation>
+        <translation>カスタム・フィールドの選択 </translation>
     </message>
     <message>
         <location filename="../fieldsel.cpp" line="68"/>
@@ -1502,7 +1502,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="2311"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;</source>
-        <translation>&lt;h2&gt; Qps %1 - ビジュアルなプロセスマネージャー &lt;/h2&gt; %2 Qt library %3  を使用しています&lt;br&gt;&lt;br&gt;&lt;b&gt;ソース: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
+        <translation>&lt;h2&gt; Qps %1 - ビジュアルなプロセスマネージャー &lt;/h2&gt; %2 Qt library %3 を使用しています&lt;br&gt;&lt;br&gt;&lt;b&gt;ソース: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2331"/>
