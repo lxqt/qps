@@ -342,7 +342,7 @@ saiu com status </translation>
     <message>
         <location filename="../watchdog.ui" line="229"/>
         <source>cpu</source>
-        <translation></translation>
+        <translation>Cpu</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="248"/>
