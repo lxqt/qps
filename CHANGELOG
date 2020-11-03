@@ -1,3 +1,8 @@
+2.2.0 / 2020-11-01
+==================
+  * Avoided compiler warnings.
+  * Avoided overflow in "proc.cpp".
+
 qps-2.1.0 / 2020-04-23
 ======================
   * Fixed IO_R column and IO_W column.
