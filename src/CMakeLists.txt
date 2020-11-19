@@ -77,6 +77,7 @@ qt5_translation_loader(
 
 lxqt_translate_desktop(DESKTOP_FILES
     SOURCES "${CMAKE_SOURCE_DIR}/qps.desktop.in"
+    USE_YAML
 )
 #-----------------------------------------------------------------------------
 # End of translations

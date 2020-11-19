@@ -1,7 +1,5 @@
 [Desktop Entry]
 Type=Application
-Name=qps
-GenericName=Qt process manager
 GenericName[ca]=Gestor de processos Qt
 GenericName[cs]=Správce procesů, založený na Qt
 GenericName[da]=Qt-proceshåndtering
@@ -12,7 +10,6 @@ GenericName[pt]=Gestor de processos em Qt
 GenericName[ru]=Менеджер процессов Qt
 GenericName[tr]=Qt İşlem Yöneticisi
 GenericName[ja]=プロセスマネージャー Qt
-Comment=Qt application to display and manage running processes
 Comment[ca]=Aplicació Qt per visualitzar i gestionar els processos en execució
 Comment[cs]=Qt aplikace pro zobrazení a správu spuštěných procesů
 Comment[da]=Qt-program til at vise og håndtere kørende processer
