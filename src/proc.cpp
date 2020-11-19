@@ -111,11 +111,11 @@ enum
 int qps_sched_setaffinity(pid_t pid, unsigned int len, unsigned long *mask)
 {
     return syscall(SYS_sched_setaffinity, pid, len, mask);
-};
+}
 int qps_sched_getaffinity(pid_t pid, unsigned int len, unsigned long *mask)
 {
     return syscall(SYS_sched_getaffinity, pid, len, mask);
-};
+}
 #endif
 
 /*

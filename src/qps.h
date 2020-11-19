@@ -176,7 +176,6 @@ class Qps : public QWidget
 
   public slots:
     void clicked_trayicon(QSystemTrayIcon::ActivationReason);
-    void clicked_trayicon();
     void sig_term();
     void sig_hup();
     void sig_stop();
@@ -221,6 +220,7 @@ class Qps : public QWidget
 
     void update_timer();
     void refresh();
+    void showWindow();
     void test_popup(const QUrl &link);
     void update_menu_status();
 

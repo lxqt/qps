@@ -609,6 +609,22 @@ void Qps::refresh()
         update_icon(); // make icon for systray
 }
 
+void Qps::showWindow()
+{
+    // NOTE: If Qps is started minimized to the tray, the list of processes won't be refreshed
+    // until its window is shown. But the first showing calls HeadedTable::resizeEvent(), which
+    // checks the known processes to calculate the width of the last column. If a process was
+    // stopped before that moment, a crash will happen because the app tries to get its info.
+    // Therefore, the list should be refreshed before the first showing of the main window.
+    if (flag_refresh && flag_start_mini)
+    {
+        procview->refresh();
+        pstable->refresh();
+    }
+    showNormal();
+    flag_start_mini = false; // the window has been shown for the first time
+}
+
 void Qps::resizeEvent(QResizeEvent *e)
 {
     int w;
@@ -1757,27 +1773,6 @@ void print_help(char * /*cmdname*/)
                     "  -mini     \t\tstart Minimized\n");
 }
 
-/// #include	<QX11Info>
-QByteArray geo;
-void Qps::clicked_trayicon()
-{
-    if (isMinimized() or (isVisible() == false)) // if hidden
-    {
-        showNormal();
-        return;
-    }
-
-    if (isActiveWindow() == false) // if lower than other windows
-    {
-        raise();
-        activateWindow();
-        return;
-    }
-    winPos.setX(geometry().x());
-    winPos.setY(geometry().y());
-    hide();
-}
-
 void Qps::clicked_trayicon(QSystemTrayIcon::ActivationReason r)
 {
     if (r == QSystemTrayIcon::Trigger)
@@ -1790,11 +1785,8 @@ void Qps::clicked_trayicon(QSystemTrayIcon::ActivationReason r)
         }
         else
         {
-            showNormal();
+            showWindow();
         }
-    }
-    if (r == QSystemTrayIcon::Context)
-    {
     }
 }
 
@@ -1853,7 +1845,7 @@ int main(int argc, char **argv, char **envp)
     /// menu->addAction( UniString("About"), qps, SLOT(about()) );
     menu->addAction( QObject::tr( "Show" )
                    , qps
-                   , SLOT( showNormal() ) );
+                   , SLOT( showWindow() ) );
     menu->addAction( QObject::tr( "Hide" )
                    , qps
                    , SLOT( hide() ) );
@@ -1865,23 +1857,15 @@ int main(int argc, char **argv, char **envp)
 
     trayicon = new TrayIcon(QPixmap((const char **)icon_xpm /* init icon */),
                             "qps", menu);
-    QObject::connect(trayicon, SIGNAL(clicked(const QPoint &)), qps,
-                     SLOT(clicked_trayicon()));
-    QObject::connect(trayicon, SIGNAL(doubleClicked(const QPoint &)), qps,
-                     SLOT(clicked_trayicon()));
     QObject::connect(trayicon,
                      SIGNAL(activated(QSystemTrayIcon::ActivationReason)), qps,
                      SLOT(clicked_trayicon(QSystemTrayIcon::ActivationReason)));
 
-    trayicon->sysInstall(); // ok
+    trayicon->sysInstall();
 
     if (flag_start_mini)
     {
-        if (trayicon->hasSysTray)
-        {
-            qps->hide(); // qps->setHidden(true);
-        }
-        else
+        if (!trayicon->hasSysTray)
         {
             qps->showMinimized();
         }
@@ -2073,12 +2057,6 @@ void PSTABLE_SETTREEMODE(bool mode)
 {
     if (qps)
         qps->pstable->setTreeMode(mode);
-}
-
-void QPS_SHOW()
-{
-    if (qps)
-        qps->showNormal();
 }
 
 // TESTING
