@@ -1302,7 +1302,7 @@ terminou com o estado </translation>
         <location filename="../qps.cpp" line="263"/>
         <location filename="../qps.cpp" line="2291"/>
         <source>About</source>
-        <translation></translation>
+        <translation>Acerca</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="354"/>
