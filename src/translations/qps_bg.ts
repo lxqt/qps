@@ -1071,12 +1071,12 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1973"/>
         <source>Process flags (hex)</source>
-        <translation type="unfinished"></translation>
+        <translation>Обработка на флагове (hex)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1975"/>
         <source>WCHAN</source>
-        <translation type="unfinished"></translation>
+        <translation>WCHAN</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1975"/>
@@ -1086,17 +1086,17 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1977"/>
         <source>%WCPU</source>
-        <translation type="unfinished"></translation>
+        <translation>%WCPU</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1977"/>
         <source>Weighted percentage of CPU (30 s average)</source>
-        <translation type="unfinished"></translation>
+        <translation>Усреднен процент на процесора (средно 30 s)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1979"/>
         <source>%CPU</source>
-        <translation type="unfinished"></translation>
+        <translation>%CPU</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1979"/>
@@ -1106,22 +1106,22 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1981"/>
         <source>%MEM</source>
-        <translation type="unfinished"></translation>
+        <translation>%MEM</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1981"/>
         <source>Percentage of memory used (RSS/total mem)</source>
-        <translation type="unfinished"></translation>
+        <translation>Процент използвана памет (RSS / обща памет)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1983"/>
         <source>START</source>
-        <translation type="unfinished"></translation>
+        <translation>НАЧАЛО</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1983"/>
         <source>Time process started</source>
-        <translation type="unfinished"></translation>
+        <translation>Време от стартиране на процеса</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1985"/>
@@ -1141,22 +1141,22 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1987"/>
         <source>CPU the process is executing on (SMP system)</source>
-        <translation type="unfinished"></translation>
+        <translation>CPU Процесът се извършва на (SMP система)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1989"/>
         <source>the process name</source>
-        <translation type="unfinished"></translation>
+        <translation>Име на процес</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1989"/>
         <source>Process Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Име на процес</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1993"/>
         <source>CWD</source>
-        <translation type="unfinished"></translation>
+        <translation>CWD</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1993"/>
@@ -1166,22 +1166,22 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1994"/>
         <source>ROOT</source>
-        <translation type="unfinished"></translation>
+        <translation>ROOT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1994"/>
         <source>Root directory of process</source>
-        <translation type="unfinished"></translation>
+        <translation>Главна директория на процеса</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1997"/>
         <source>COMMAND_LINE</source>
-        <translation type="unfinished"></translation>
+        <translation>COMAND_LINE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1997"/>
         <source>Command line that started the process</source>
-        <translation type="unfinished"></translation>
+        <translation>Команда, стартирала процеса</translation>
     </message>
 </context>
 <context>
@@ -1189,22 +1189,22 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="2215"/>
         <source>Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Покажи</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2218"/>
         <source>Hide</source>
-        <translation type="unfinished"></translation>
+        <translation>Скрий</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2224"/>
         <source>ScreenShot</source>
-        <translation type="unfinished"></translation>
+        <translation>Снимка на екрана</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2229"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>Изход</translation>
     </message>
 </context>
 <context>
@@ -1212,223 +1212,223 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="189"/>
         <source>header_popup</source>
-        <translation type="unfinished"></translation>
+        <translation>header_popup</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="190"/>
         <source>Remove Field</source>
-        <translation type="unfinished"></translation>
+        <translation>Премахни поле</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="191"/>
         <source>Add Field</source>
-        <translation type="unfinished"></translation>
+        <translation>Добави поле</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="197"/>
         <source>Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Команда</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="201"/>
         <source>View</source>
-        <translation type="unfinished"></translation>
+        <translation>Изглед</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="202"/>
         <source>Process</source>
-        <translation type="unfinished"></translation>
+        <translation>Процес</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="203"/>
         <source>Log</source>
-        <translation type="unfinished"></translation>
+        <translation>Регистър</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="207"/>
         <source>Custom Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Допълнителни полета</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="209"/>
         <source>Basic Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>Основни полета </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="211"/>
         <source>Jobs Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>Полета на процесите </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="213"/>
         <source>Memory Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>Полета на паметта </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="216"/>
         <source>Scheduling Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>Полета на разписанията </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="222"/>
         <source>Select Custom Fields...</source>
-        <translation type="unfinished"></translation>
+        <translation>Избиране допълнителни полета...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="236"/>
         <source>Option</source>
-        <translation type="unfinished"></translation>
+        <translation>Опции</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="237"/>
         <source>Update Period...</source>
-        <translation type="unfinished"></translation>
+        <translation>Период на актуализация...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="246"/>
         <source>Show Status bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Покажи лентата на състоянието</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="255"/>
         <source>Preferences...</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройки...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="261"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Помощ</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="263"/>
         <location filename="../qps.cpp" line="2291"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Относно</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="354"/>
         <source>Detail</source>
-        <translation type="unfinished"></translation>
+        <translation>Детайл</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="395"/>
         <source>test</source>
-        <translation type="unfinished"></translation>
+        <translation>тест</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="396"/>
         <source>Copied to Clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Записано в обменния буфер</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="505"/>
         <source>context popup</source>
-        <translation type="unfinished"></translation>
+        <translation>контекстно съдържание</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="506"/>
         <source>Renice...</source>
-        <translation type="unfinished"></translation>
+        <translation>Промяна приоритет...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="507"/>
         <source>Scheduling...</source>
-        <translation type="unfinished"></translation>
+        <translation>Промяна на разписанието...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="509"/>
         <source>Terminate</source>
-        <translation type="unfinished"></translation>
+        <translation>Прекъсни</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="511"/>
         <source>Hangup</source>
-        <translation type="unfinished"></translation>
+        <translation>Задръж</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="512"/>
         <source>Kill</source>
-        <translation type="unfinished"></translation>
+        <translation>Прекрати</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="513"/>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Стоп</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="515"/>
         <source>Continue</source>
-        <translation type="unfinished"></translation>
+        <translation>Продължи</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="528"/>
         <source>SIGINT (interrupt)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">SIGINT (interrupt)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="530"/>
         <source>SIGCONT (continue)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">SIGCONT (continue)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="532"/>
         <source>SIGSTOP (stop)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">SIGSTOP (stop)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="534"/>
         <source>SIGQUIT (quit)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">SIGQUIT (quit)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="536"/>
         <source>SIGILL (illegal instruction)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">SIGILL (illegal instruction)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="538"/>
         <source>SIGABRT (abort)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">SIGABRT (abort)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="540"/>
         <source>SIGFPE (floating point exception)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">SIGFPE (floating point exception)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="542"/>
         <source>SIGSEGV (segmentation violation)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">SIGSEGV (segmentation violation)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="544"/>
         <source>SIGPIPE (broken pipe)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">SIGPIPE (broken pipe)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="546"/>
         <source>SIGALRM (timer signal)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">SIGALRM (timer signal)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="548"/>
         <source>SIGUSR1 (user-defined 1)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">SIGUSR1 (user-defined 1)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="550"/>
         <source>SIGUSR2 (user-defined 2)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">SIGUSR2 (user-defined 2)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="552"/>
         <source>SIGCHLD (child death)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">SIGCHLD (child death)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="554"/>
         <source>SIGTSTP (stop from tty)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">SIGTSTP (stop from tty)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="556"/>
@@ -1438,27 +1438,27 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="558"/>
         <source>SIGTTOU (tty output)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">SIGTTOU (tty output)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="565"/>
         <source>View Details</source>
-        <translation type="unfinished"></translation>
+        <translation>Покажи детайли</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1181"/>
         <source>WatchDog</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">WatchDog</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1185"/>
         <source>Edit Commands...</source>
-        <translation type="unfinished"></translation>
+        <translation>Редактиране на команда...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1210"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>Изход</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1590"/>
@@ -1468,37 +1468,37 @@ exited with status </source>
         <location filename="../qps.cpp" line="1694"/>
         <location filename="../qps.cpp" line="1773"/>
         <source>Permission denied</source>
-        <translation type="unfinished"></translation>
+        <translation>Отказан достъп</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1591"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
-        <translation type="unfinished"></translation>
+        <translation>Нямате разрешение да промените приоритетите на избраните процеси. Само собственикът на процеса и суперпотребителят имат право да правят това.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1628"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
-        <translation type="unfinished"></translation>
+        <translation>Нямате разрешение да промените приоритета на  процеса % 1 (% 2). Само собственикът на процеса и суперпотребителят имат право да правят това.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1635"/>
         <source>Only the super-user may lower the nice value of a process.</source>
-        <translation type="unfinished"></translation>
+        <translation>Само суперпотребителят може да намали приоритета на даден процес.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1657"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
-        <translation type="unfinished"></translation>
+        <translation>Само суперпотребителят може да промени политиката на разпределение и статичния приоритет.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1695"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
-        <translation type="unfinished"></translation>
+        <translation>Нямате разрешение да промените разпределението и / или приоритета на процеса% 1 (% 2). Това може да направи само суперпотребителят.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1774"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
-        <translation type="unfinished"></translation>
+        <translation>Нямате разрешение да изпратите сигнал към процес % 1 (% 2). Само суперпотребителят и собственикът на процеса могат да му изпращат сигнали.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2311"/>
