@@ -44,7 +44,7 @@
     <message>
         <location filename="../prefs.cpp" line="79"/>
         <source>Host Name Lookup</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ricerca del nome host</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="80"/>
@@ -165,7 +165,7 @@ uscito con stato </translation>
     <message>
         <location filename="../commanddialog.cpp" line="79"/>
         <source>Popup</source>
-        <translation>Popup</translation>
+        <translation>Finestra a comparsa</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="84"/>
@@ -587,7 +587,7 @@ uscito con stato </translation>
     <message>
         <location filename="../details.cpp" line="401"/>
         <source>Inode</source>
-        <translation type="unfinished">Inode</translation>
+        <translation>Inode</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="401"/>
