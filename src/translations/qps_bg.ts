@@ -1363,82 +1363,82 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="528"/>
         <source>SIGINT (interrupt)</source>
-        <translation type="unfinished">SIGINT (interrupt)</translation>
+        <translation>SIGINT (прекъсване)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="530"/>
         <source>SIGCONT (continue)</source>
-        <translation type="unfinished">SIGCONT (continue)</translation>
+        <translation>SIGCONT (продължаване)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="532"/>
         <source>SIGSTOP (stop)</source>
-        <translation type="unfinished">SIGSTOP (stop)</translation>
+        <translation>SIGSTOP (стоп)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="534"/>
         <source>SIGQUIT (quit)</source>
-        <translation type="unfinished">SIGQUIT (quit)</translation>
+        <translation>SIGQUIT (изход)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="536"/>
         <source>SIGILL (illegal instruction)</source>
-        <translation type="unfinished">SIGILL (illegal instruction)</translation>
+        <translation>SIGILL (нелегална инструкция)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="538"/>
         <source>SIGABRT (abort)</source>
-        <translation type="unfinished">SIGABRT (abort)</translation>
+        <translation>SIGABRT (прекъсване)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="540"/>
         <source>SIGFPE (floating point exception)</source>
-        <translation type="unfinished">SIGFPE (floating point exception)</translation>
+        <translation>SIGFPE (изключение с плаваща запетая)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="542"/>
         <source>SIGSEGV (segmentation violation)</source>
-        <translation type="unfinished">SIGSEGV (segmentation violation)</translation>
+        <translation>SIGSEGV (нарушение на сегментацията)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="544"/>
         <source>SIGPIPE (broken pipe)</source>
-        <translation type="unfinished">SIGPIPE (broken pipe)</translation>
+        <translation>SIGPIPE (счупена тръба)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="546"/>
         <source>SIGALRM (timer signal)</source>
-        <translation type="unfinished">SIGALRM (timer signal)</translation>
+        <translation>SIGALRM (сигнал на таймера)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="548"/>
         <source>SIGUSR1 (user-defined 1)</source>
-        <translation type="unfinished">SIGUSR1 (user-defined 1)</translation>
+        <translation>SIGUSR1 (дефиниран от потребителя 1)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="550"/>
         <source>SIGUSR2 (user-defined 2)</source>
-        <translation type="unfinished">SIGUSR2 (user-defined 2)</translation>
+        <translation>SIGUSR2 (дефиниран от потребителя 2)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="552"/>
         <source>SIGCHLD (child death)</source>
-        <translation type="unfinished">SIGCHLD (child death)</translation>
+        <translation>SIGCHLD (мъртво дете)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="554"/>
         <source>SIGTSTP (stop from tty)</source>
-        <translation type="unfinished">SIGTSTP (stop from tty)</translation>
+        <translation>SIGTSTP (спиране от tty)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="556"/>
         <source>SIGTTIN (tty input)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGTTIN (tty въвеждане)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="558"/>
         <source>SIGTTOU (tty output)</source>
-        <translation type="unfinished">SIGTTOU (tty output)</translation>
+        <translation>SIGTTOU (tty изход)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="565"/>
@@ -1448,7 +1448,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1181"/>
         <source>WatchDog</source>
-        <translation type="unfinished">WatchDog</translation>
+        <translation>&quot;WatchDog&quot;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1185"/>
@@ -1478,7 +1478,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1628"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
-        <translation>Нямате разрешение да промените приоритета на  процеса % 1 (% 2). Само собственикът на процеса и суперпотребителят имат право да правят това.</translation>
+        <translation>Нямате разрешение да промените приоритета на процеса % 1 (% 2). Само собственикът на процеса и суперпотребителят имат право да правят това.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1635"/>
@@ -1503,7 +1503,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="2311"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;h2&gt; Qps %1 - Мениджър на визуални процеси &lt;/h2&gt; %2 с помощта на Qt библиотека %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Източник: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Проследяване на грешки:&lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2331"/>
