@@ -271,7 +271,7 @@ endete mit Status </translation>
     <message>
         <location filename="../details.cpp" line="59"/>
         <source>Memory Maps</source>
-        <translation>Memory Maps</translation>
+        <translation>Speicherabbildungen</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="61"/>
@@ -362,7 +362,7 @@ endete mit Status </translation>
     <message>
         <location filename="../watchdog.ui" line="342"/>
         <source>show Message</source>
-        <translation>zeige Nachricht</translation>
+        <translation>Nachricht anzeigen</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="367"/>
