@@ -322,7 +322,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../watchdog.ui" line="162"/>
         <source>Select condition</source>
-        <translation></translation>
+        <translation>Selecionar condição</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="170"/>
@@ -332,7 +332,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../watchdog.ui" line="193"/>
         <source>Enable</source>
-        <translation></translation>
+        <translation>Ativar</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="219"/>
@@ -352,17 +352,17 @@ terminou com o estado </translation>
     <message>
         <location filename="../watchdog.ui" line="280"/>
         <source>include already running process</source>
-        <translation></translation>
+        <translation>incluir processos já em execução</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="309"/>
         <source>run command</source>
-        <translation></translation>
+        <translation>executar comando</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="342"/>
         <source>show Message</source>
-        <translation></translation>
+        <translation>mostrar mensagem</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="367"/>
