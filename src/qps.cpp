@@ -211,7 +211,7 @@ Qps::Qps()
 
     QActionGroup* group = new QActionGroup (this);
 
-    m_field = new QMenu("Field", this);
+    m_field = new QMenu(tr("Field"), this);
     act = m_field->addAction( tr( "Custom Fields" ) );
     act->setData(Procview::CUSTOM);
     act = m_field->addAction( tr( "Basic Fields " ) );
