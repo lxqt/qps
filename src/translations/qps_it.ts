@@ -170,7 +170,7 @@ uscito con stato </translation>
     <message>
         <location filename="../commanddialog.cpp" line="84"/>
         <source>Command Line:</source>
-        <translation>Linea di Comando:</translation>
+        <translation>Riga di comando:</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="95"/>
@@ -182,11 +182,11 @@ uscito con stato </translation>
 %%	%
 
 </source>
-        <translation>Sostituzioni:
+        <translation>Substitutions:
 %p	PID
 %c	COMANDO
-%C	LINEACOMANDO
-%u UTENTE
+%C	RIGACOMANDO
+%u	UTENTE
 %%	%
 
 </translation>
@@ -1176,12 +1176,12 @@ uscito con stato </translation>
     <message>
         <location filename="../proc.cpp" line="1997"/>
         <source>COMMAND_LINE</source>
-        <translation>LINEA_DI_COMANDO</translation>
+        <translation>RIGA_DI_COMANDO</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1997"/>
         <source>Command line that started the process</source>
-        <translation>Linea di comando che ha avviato il processo</translation>
+        <translation>Riga di comando che ha avviato il processo</translation>
     </message>
 </context>
 <context>
@@ -1227,7 +1227,7 @@ uscito con stato </translation>
     <message>
         <location filename="../qps.cpp" line="197"/>
         <source>Command</source>
-        <translation>Comando</translation>
+        <translation>Qps</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="201"/>
