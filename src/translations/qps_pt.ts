@@ -44,32 +44,32 @@
     <message>
         <location filename="../prefs.cpp" line="79"/>
         <source>Host Name Lookup</source>
-        <translation></translation>
+        <translation>Procura do nome do host</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="80"/>
         <source>Service Name Lookup</source>
-        <translation></translation>
+        <translation>Procura de nome de serviço</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="86"/>
         <source>Disclosure Triangles</source>
-        <translation></translation>
+        <translation>Triângulos de Divulgação</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="87"/>
         <source>Branch Lines</source>
-        <translation></translation>
+        <translation>Linhas de ramificação</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="93"/>
         <source>Auto Save Settings on Exit</source>
-        <translation></translation>
+        <translation>Guardar automaticamente as definições ao sair</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="94"/>
         <source>Selection: Copy PIDs to Clipboard</source>
-        <translation>Seleção: Copiar PID(s) para a área de transferência</translation>
+        <translation>Seleção: Copiar PIDs para a área de transferência</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="96"/>
@@ -238,12 +238,12 @@ terminou com o estado </translation>
     <message>
         <location filename="../misc.cpp" line="951"/>
         <source>Non-Root Processes</source>
-        <translation>processos não root</translation>
+        <translation>Processos não root</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="952"/>
         <source>Running Processes</source>
-        <translation>processos em execução</translation>
+        <translation>Processos em execução</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="984"/>
@@ -266,7 +266,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../details.cpp" line="54"/>
         <source>Sockets</source>
-        <translation></translation>
+        <translation>Tomadas</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="59"/>
@@ -337,7 +337,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../watchdog.ui" line="219"/>
         <source>process name</source>
-        <translation></translation>
+        <translation>nome do processo</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="229"/>
@@ -367,33 +367,34 @@ terminou com o estado </translation>
     <message>
         <location filename="../watchdog.ui" line="367"/>
         <source>Help (Not yet. just concept)</source>
-        <translation></translation>
+        <translation>Ajuda (Ainda não, apenas conceito)</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="394"/>
         <source>%p : pid
 %c : command</source>
-        <translation></translation>
+        <translation>%p : pid
+%c : comando</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="425"/>
         <source>New</source>
-        <translation></translation>
+        <translation>Novo</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="432"/>
         <source>Add</source>
-        <translation></translation>
+        <translation>Adicionar</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="439"/>
         <source>Delete</source>
-        <translation></translation>
+        <translation>Eliminar</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="446"/>
         <source>Close</source>
-        <translation></translation>
+        <translation>Fechar</translation>
     </message>
 </context>
 <context>
@@ -472,7 +473,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../details.cpp" line="527"/>
         <source>Open mode</source>
-        <translation>modo de abertura</translation>
+        <translation>Modo de abertura</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="529"/>
@@ -495,12 +496,12 @@ terminou com o estado </translation>
     <message>
         <location filename="../dialogs.cpp" line="57"/>
         <source>New Update Period</source>
-        <translation></translation>
+        <translation>Novo período de atualização</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="94"/>
         <source>Cancel</source>
-        <translation></translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="96"/>
@@ -515,7 +516,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../dialogs.cpp" line="148"/>
         <source>Invalid value</source>
-        <translation></translation>
+        <translation>Valor inválido</translation>
     </message>
 </context>
 <context>
@@ -541,17 +542,17 @@ terminou com o estado </translation>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Mapped addresses (hex) )</source>
-        <translation></translation>
+        <translation>Endereços mapeados (hex) )</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Size</source>
-        <translation></translation>
+        <translation>Tamanho</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Kbytes mapped (dec)</source>
-        <translation></translation>
+        <translation>Kbytes mapeados (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
@@ -561,27 +562,27 @@ terminou com o estado </translation>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>Permission flags</source>
-        <translation></translation>
+        <translation>Sinalizadores de permissão</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="399"/>
         <source>Offset</source>
-        <translation></translation>
+        <translation>Deslocar</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="399"/>
         <source>File offset at start of mapping (hex)</source>
-        <translation></translation>
+        <translation>Deslocamento de ficheiro no início do mapear (hex)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="400"/>
         <source>Device</source>
-        <translation></translation>
+        <translation>Dispositivo</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="400"/>
         <source>Major,Minor device numbers (dec)</source>
-        <translation></translation>
+        <translation>Maior,Menor números de dispositivos (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="401"/>
@@ -591,17 +592,17 @@ terminou com o estado </translation>
     <message>
         <location filename="../details.cpp" line="401"/>
         <source>Inode number (dec)</source>
-        <translation></translation>
+        <translation>Número do inode (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="402"/>
         <source>File</source>
-        <translation></translation>
+        <translation>Ficheiro</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="402"/>
         <source>File name (if available)</source>
-        <translation></translation>
+        <translation>Nome do ficheiro (se disponível)</translation>
     </message>
 </context>
 <context>
@@ -700,7 +701,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="1898"/>
         <source>Parent process ID</source>
-        <translation></translation>
+        <translation>ID do processo principal</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1900"/>
@@ -710,7 +711,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="1900"/>
         <source>Process group ID</source>
-        <translation></translation>
+        <translation>ID do grupo de processo</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1902"/>
@@ -720,7 +721,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="1902"/>
         <source>Session ID</source>
-        <translation></translation>
+        <translation>ID da sessão</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1904"/>
