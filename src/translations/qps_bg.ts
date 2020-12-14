@@ -6,12 +6,12 @@
     <message>
         <location filename="../details.cpp" line="698"/>
         <source>Field</source>
-        <translation>Поле</translation>
+        <translation>Полета</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="698"/>
         <source>Field name</source>
-        <translation>Име на полето</translation>
+        <translation>Име на поле</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="699"/>
@@ -21,7 +21,7 @@
     <message>
         <location filename="../details.cpp" line="699"/>
         <source>Field description</source>
-        <translation>Полево описание</translation>
+        <translation>Описание на поле</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="700"/>
@@ -31,7 +31,7 @@
     <message>
         <location filename="../details.cpp" line="700"/>
         <source>Field value</source>
-        <translation>Стойност на полето</translation>
+        <translation>Стойност на поле</translation>
     </message>
 </context>
 <context>
@@ -69,17 +69,17 @@
     <message>
         <location filename="../prefs.cpp" line="94"/>
         <source>Selection: Copy PIDs to Clipboard</source>
-        <translation>Избор: Копирайте PID-ите в клипборда</translation>
+        <translation>Избор: Копиране PID-ите в клипборда</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="96"/>
         <source>Normalize NICE</source>
-        <translation>Нормализира NICE</translation>
+        <translation>Нормализиране NICE</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="97"/>
         <source>Use pmap for Map Names</source>
-        <translation>Използвайте pmap за имена на карти</translation>
+        <translation>Използване pmap за имена на карти</translation>
     </message>
 </context>
 <context>
@@ -87,7 +87,7 @@
     <message>
         <location filename="../prefs.cpp" line="117"/>
         <source>General</source>
-        <translation>Общ</translation>
+        <translation>Общи</translation>
     </message>
 </context>
 <context>
@@ -110,7 +110,7 @@ failed with the error:
 </source>
         <translation>
 
-неуспешно с грешката:
+неуспешна с грешка:
 
 </translation>
     </message>
@@ -132,8 +132,8 @@ could not be executed because it was not found,
 or you did not have execute permission.</source>
         <translation>
 
-Не може да бъде изпълнено защото не беше намерено,
-или нямате изпълнителни права.</translation>
+Не може да бъде изпълнено, защото не беше намерено,
+или нямате права за изпълнение.</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="234"/>
@@ -147,7 +147,7 @@ exited with status </source>
     <message>
         <location filename="../command.cpp" line="238"/>
         <source>Command Failed</source>
-        <translation>Командата не бе успешна</translation>
+        <translation>Командата неуспешна</translation>
     </message>
 </context>
 <context>
@@ -155,7 +155,7 @@ exited with status </source>
     <message>
         <location filename="../commanddialog.cpp" line="47"/>
         <source>Edit Commands 0.1 alpha</source>
-        <translation>Команди за редактиране 0.1 alpha</translation>
+        <translation>Редактиране команди 0.1 alpha</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="63"/>
@@ -170,7 +170,7 @@ exited with status </source>
     <message>
         <location filename="../commanddialog.cpp" line="84"/>
         <source>Command Line:</source>
-        <translation>Командна линия:</translation>
+        <translation>Команден ред:</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="95"/>
@@ -182,7 +182,8 @@ exited with status </source>
 %%	%
 
 </source>
-        <translation>Смените:
+        <translation>Замени
+:
 %p	PID
 %c	COMMAND
 %C	CMDLINE
@@ -200,17 +201,17 @@ exited with status </source>
         <location filename="../commanddialog.cpp" line="111"/>
         <location filename="../commanddialog.cpp" line="229"/>
         <source>Add...</source>
-        <translation>Добави...</translation>
+        <translation>Добавяне...</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="113"/>
         <source>Delete</source>
-        <translation>Изтрий</translation>
+        <translation>Изтриване</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="115"/>
         <source>Close</source>
-        <translation>Затвори</translation>
+        <translation>Затваряне</translation>
     </message>
 </context>
 <context>
@@ -223,7 +224,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="928"/>
         <source>Tree</source>
-        <translation>Дърво</translation>
+        <translation>Разклонен</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="949"/>
@@ -233,7 +234,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="950"/>
         <source>Your Processes</source>
-        <translation>Твойте процеси</translation>
+        <translation>Собствени процеси</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="951"/>
@@ -248,7 +249,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="984"/>
         <source>Pause (Ctrl+Space)</source>
-        <translation>Паузирай (Ctrl + Space)</translation>
+        <translation>Пауза (Ctrl + Space)</translation>
     </message>
 </context>
 <context>
@@ -266,7 +267,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="54"/>
         <source>Sockets</source>
-        <translation>Разклонители</translation>
+        <translation type="unfinished">Sockets</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="59"/>
@@ -276,7 +277,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="61"/>
         <source>Environment</source>
-        <translation>Заобикаляща среда</translation>
+        <translation>Среда</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="62"/>
@@ -294,7 +295,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="609"/>
         <source>Variable name</source>
-        <translation>Име на променливата</translation>
+        <translation>Име на променлива</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="610"/>
@@ -317,12 +318,12 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="117"/>
         <source>Eventcat</source>
-        <translation>Евенткат</translation>
+        <translation>Eventcat</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="162"/>
         <source>Select condition</source>
-        <translation>Изберете условие</translation>
+        <translation>Избиране условие</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="170"/>
@@ -342,7 +343,7 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="229"/>
         <source>cpu</source>
-        <translation>процесор</translation>
+        <translation>cpu</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="248"/>
@@ -352,17 +353,17 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="280"/>
         <source>include already running process</source>
-        <translation>включи вече изпълняващ процес</translation>
+        <translation>включване вече изпълняващ процес</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="309"/>
         <source>run command</source>
-        <translation>изпълни командата</translation>
+        <translation>изпълняване команда</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="342"/>
         <source>show Message</source>
-        <translation>покажи Съобщение</translation>
+        <translation>показване Съобщение</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="367"/>
@@ -384,17 +385,17 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="432"/>
         <source>Add</source>
-        <translation>Добави</translation>
+        <translation>Добавяне</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="439"/>
         <source>Delete</source>
-        <translation>Изтрий</translation>
+        <translation>Изтриване</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="446"/>
         <source>Close</source>
-        <translation>Затвори</translation>
+        <translation>Затваряне</translation>
     </message>
 </context>
 <context>
@@ -402,17 +403,17 @@ exited with status </source>
     <message>
         <location filename="../message.ui" line="13"/>
         <source>Qps</source>
-        <translation>QPS</translation>
+        <translation>Qps</translation>
     </message>
     <message>
         <location filename="../message.ui" line="27"/>
         <source>Ok</source>
-        <translation>Ок</translation>
+        <translation>Добре</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="42"/>
         <source>Qps Watchdog</source>
-        <translation>QPS Watchdog</translation>
+        <translation>Qps Watchdog</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="97"/>
@@ -422,17 +423,17 @@ exited with status </source>
     <message>
         <location filename="../execwindow.cpp" line="99"/>
         <source>Close</source>
-        <translation>Затвори</translation>
+        <translation>Затваряне</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="105"/>
         <source>%1 [running]</source>
-        <translation>% 1 [работещ]</translation>
+        <translation>%1 [работещ]</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="106"/>
         <source>terminate command</source>
-        <translation>прекрати командата</translation>
+        <translation>прекратяване команда</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="115"/>
@@ -445,12 +446,12 @@ exited with status </source>
     <message>
         <location filename="../fieldsel.cpp" line="34"/>
         <source>Select Custom Fields </source>
-        <translation>Изберете персонализирани полета </translation>
+        <translation>Избиране на персонализирани полета </translation>
     </message>
     <message>
         <location filename="../fieldsel.cpp" line="68"/>
         <source>Close</source>
-        <translation>Затвори</translation>
+        <translation>Затваряне</translation>
     </message>
 </context>
 <context>
@@ -458,7 +459,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="525"/>
         <source>Fd</source>
-        <translation>FD</translation>
+        <translation>Fd</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="525"/>
@@ -483,7 +484,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="529"/>
         <source>File name (if available)</source>
-        <translation>Име на файла (ако е налице)</translation>
+        <translation>Име на файл (ако е налице)</translation>
     </message>
 </context>
 <context>
@@ -491,7 +492,7 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="51"/>
         <source>Change Update Period</source>
-        <translation>Промяна на периода за актуализиране</translation>
+        <translation>Промяна на период за актуализиране</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="57"/>
@@ -506,7 +507,7 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="96"/>
         <source>OK</source>
-        <translation>ОК</translation>
+        <translation>Добре</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="130"/>
@@ -516,7 +517,7 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="148"/>
         <source>Invalid value</source>
-        <translation>невалидна стойност</translation>
+        <translation>Невалидна стойност</translation>
     </message>
 </context>
 <context>
@@ -524,7 +525,7 @@ exited with status </source>
     <message>
         <location filename="../listmodel.cpp" line="66"/>
         <source>Event Category</source>
-        <translation>Категория на събитието</translation>
+        <translation>Категория на събитие</translation>
     </message>
     <message>
         <location filename="../listmodel.cpp" line="68"/>
@@ -557,7 +558,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>Perm</source>
-        <translation>Prem &quot;разрешение&quot;</translation>
+        <translation>Разр</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
@@ -587,7 +588,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="401"/>
         <source>Inode</source>
-        <translation>INODE</translation>
+        <translation>Inode</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="401"/>
@@ -602,7 +603,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="402"/>
         <source>File name (if available)</source>
-        <translation>Име на файла (ако е налице)</translation>
+        <translation>Име на файл (ако е налице)</translation>
     </message>
 </context>
 <context>
@@ -625,7 +626,7 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="292"/>
         <source>OK</source>
-        <translation>ОК</translation>
+        <translation>Добре</translation>
     </message>
 </context>
 <context>
@@ -658,12 +659,12 @@ exited with status </source>
     <message>
         <location filename="../prefs.cpp" line="249"/>
         <source>default</source>
-        <translation>подазбиране</translation>
+        <translation>по подразбиране</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="250"/>
         <source>for developer</source>
-        <translation>за разработчик</translation>
+        <translation>за разработчици</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="286"/>
@@ -681,7 +682,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1894"/>
         <source>Process ID</source>
-        <translation>ID на процеса</translation>
+        <translation>ID процеса</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1896"/>
@@ -721,7 +722,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1902"/>
         <source>Session ID</source>
-        <translation>Сесиен идентификатор</translation>
+        <translation>ID Сесия</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1904"/>
@@ -741,12 +742,12 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1906"/>
         <source>Process group ID of tty owner</source>
-        <translation>Идентификатор на група процеси на tty собственик</translation>
+        <translation>ID група процеси на tty собственик</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1908"/>
         <source>USER</source>
-        <translation>ПОТРЕБИТЕЛ</translation>
+        <translation>USER</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1908"/>
@@ -756,7 +757,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1910"/>
         <source>GROUP</source>
-        <translation>ГРУПА</translation>
+        <translation>GROUP</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1910"/>
@@ -771,7 +772,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1912"/>
         <source>Real user ID</source>
-        <translation>Истински потребителски идентификатор</translation>
+        <translation>Реален потребителски ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1914"/>
@@ -791,7 +792,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1916"/>
         <source>Saved user ID (Posix)</source>
-        <translation>Запазен потребителски идентификатор (Posix)</translation>
+        <translation>Запазен потребителски ID (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1918"/>
@@ -801,7 +802,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1918"/>
         <source>File system user ID</source>
-        <translation>Потребителски идентификатор на файловата система</translation>
+        <translation>ID на файловата система на потребител</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1920"/>
@@ -811,7 +812,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1920"/>
         <source>Real group ID</source>
-        <translation>Истинска идентификация на групата</translation>
+        <translation>Реален ID на група</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1922"/>
@@ -821,7 +822,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1922"/>
         <source>Effective group ID</source>
-        <translation>Ефективна група ID</translation>
+        <translation>Ефективен ID група</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1924"/>
@@ -831,7 +832,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1924"/>
         <source>Saved group ID (Posix)</source>
-        <translation>Записан идентификатор на група (Posix)</translation>
+        <translation>Записан ID на група (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1926"/>
@@ -841,7 +842,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1926"/>
         <source>File system group ID</source>
-        <translation>ID на файловата система на групата</translation>
+        <translation>ID на файловата система на група</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1928"/>
@@ -856,12 +857,12 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1930"/>
         <source>NICE</source>
-        <translation>Чудесно</translation>
+        <translation>NICE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1930"/>
         <source>Scheduling favour (higher -&gt; less cpu time)</source>
-        <translation>Полза за планирането (по-висока -&gt; по-малко от времето в CPU)</translation>
+        <translation>Полза за планирането (по-висока -&gt; по-малко от времето на CPU)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1932"/>
@@ -881,7 +882,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1934"/>
         <source>Scheduling policy</source>
-        <translation>Правила за планиране</translation>
+        <translation>Правила за разписанието</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1936"/>
@@ -911,7 +912,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1940"/>
         <source>Percentage average sleep time (-1 -&gt; N/A)</source>
-        <translation>Процентно средно време на сън (-1 -&gt; N/A)</translation>
+        <translation>Процентно средно време на sleep (-1 -&gt; N/A)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1942"/>
@@ -961,7 +962,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1951"/>
         <source>Resident set size</source>
-        <translation>Размер на постоянния набор</translation>
+        <translation>Размер на резидентен набор</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1953"/>
@@ -996,7 +997,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1959"/>
         <source>STACK</source>
-        <translation>Купчина</translation>
+        <translation>STACK</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1959"/>
@@ -1006,7 +1007,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1961"/>
         <source>SHARE</source>
-        <translation>СПОДЕЛЯНЕ</translation>
+        <translation>SHARE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1961"/>
@@ -1016,7 +1017,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1963"/>
         <source>SWAP</source>
-        <translation>РАЗМЕНЯНЕ</translation>
+        <translation>SWAP</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1963"/>
@@ -1066,7 +1067,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1973"/>
         <source>FLAGS</source>
-        <translation>ЗНАМЕНА</translation>
+        <translation>FLAGS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1973"/>
@@ -1081,7 +1082,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1975"/>
         <source>Kernel function where process is sleeping</source>
-        <translation>Функция на ядрото в която процесът спи</translation>
+        <translation>Функция на ядрото, в която процесът спи</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1977"/>
@@ -1101,7 +1102,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1979"/>
         <source>Percentage of CPU used since last update</source>
-        <translation>Процент на CPU(Централния процесор), използван след последната актуализация</translation>
+        <translation>Процент на CPU, използван след последната актуализация</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1981"/>
@@ -1116,7 +1117,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1983"/>
         <source>START</source>
-        <translation>НАЧАЛО</translation>
+        <translation>START</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1983"/>
@@ -1126,27 +1127,27 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1985"/>
         <source>TIME</source>
-        <translation>Време</translation>
+        <translation>TIME</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1985"/>
         <source>Total CPU time used since start</source>
-        <translation>Общото CPU(Процесорно) време, използвано от стартирането</translation>
+        <translation>Общото CPU време, използвано от стартирането</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1987"/>
         <source>CPU</source>
-        <translation>Централен Процесор</translation>
+        <translation>CPU</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1987"/>
         <source>CPU the process is executing on (SMP system)</source>
-        <translation>CPU Процесът се извършва на (SMP система)</translation>
+        <translation>CPU процесът се извършва на (SMP система)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1989"/>
         <source>the process name</source>
-        <translation>Име на процес</translation>
+        <translation>име на процес</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="1989"/>
@@ -1181,7 +1182,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="1997"/>
         <source>Command line that started the process</source>
-        <translation>Команда, стартирала процеса</translation>
+        <translation>Команден ред, стартирал процеса</translation>
     </message>
 </context>
 <context>
@@ -1189,12 +1190,12 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="2215"/>
         <source>Show</source>
-        <translation>Покажи</translation>
+        <translation>Показване</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2218"/>
         <source>Hide</source>
-        <translation>Скрий</translation>
+        <translation>Скриване</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2224"/>
@@ -1217,12 +1218,12 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="190"/>
         <source>Remove Field</source>
-        <translation>Премахни поле</translation>
+        <translation>Премахване на поле</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="191"/>
         <source>Add Field</source>
-        <translation>Добави поле</translation>
+        <translation>Добавяне на поле</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="197"/>
@@ -1247,7 +1248,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="207"/>
         <source>Custom Fields</source>
-        <translation>Допълнителни полета</translation>
+        <translation>Потребителски полета</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="209"/>
@@ -1272,7 +1273,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="222"/>
         <source>Select Custom Fields...</source>
-        <translation>Избиране допълнителни полета...</translation>
+        <translation>Избиране потребителски полета...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="236"/>
@@ -1287,12 +1288,12 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="246"/>
         <source>Show Status bar</source>
-        <translation>Покажи лентата на състоянието</translation>
+        <translation>Показване на лентата на състоянието</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="255"/>
         <source>Preferences...</source>
-        <translation>Настройки...</translation>
+        <translation>Предпочитания...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="261"/>
@@ -1318,7 +1319,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="396"/>
         <source>Copied to Clipboard</source>
-        <translation>Записано в обменния буфер</translation>
+        <translation>Записано в клипборда</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="505"/>
@@ -1338,17 +1339,17 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="509"/>
         <source>Terminate</source>
-        <translation>Прекъсни</translation>
+        <translation>Прекъсване</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="511"/>
         <source>Hangup</source>
-        <translation>Задръж</translation>
+        <translation>Задържане</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="512"/>
         <source>Kill</source>
-        <translation>Прекрати</translation>
+        <translation>Прекратяване</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="513"/>
@@ -1358,7 +1359,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="515"/>
         <source>Continue</source>
-        <translation>Продължи</translation>
+        <translation>Продължаване</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="528"/>
@@ -1403,7 +1404,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="544"/>
         <source>SIGPIPE (broken pipe)</source>
-        <translation>SIGPIPE (счупена тръба)</translation>
+        <translation>SIGPIPE (нарушен поток)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="546"/>
@@ -1423,7 +1424,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="552"/>
         <source>SIGCHLD (child death)</source>
-        <translation>SIGCHLD (мъртво дете)</translation>
+        <translation>SIGCHLD (прек. дъщерен процес)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="554"/>
@@ -1433,7 +1434,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="556"/>
         <source>SIGTTIN (tty input)</source>
-        <translation>SIGTTIN (tty въвеждане)</translation>
+        <translation>SIGTTIN (tty вход)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="558"/>
@@ -1448,7 +1449,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1181"/>
         <source>WatchDog</source>
-        <translation>&quot;WatchDog&quot;</translation>
+        <translation>WatchDog&quot;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1185"/>
@@ -1508,12 +1509,12 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="2331"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
-        <translation>&lt;b&gt;Оригинални Qps&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Сътрудници&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
+        <translation>&lt;b&gt;Оригинален Qps от&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Сътрудници&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="2373"/>
         <source>&lt;H1&gt;QPS Help&lt;/H1&gt;Updated: May 24 2005&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Quit      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Update      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Space , Enter       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Terminate &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Kill &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</source>
-        <translation>&lt;H1&gt;QPS Помощ&lt;/H1&gt;Актуализиран: May 24 2005&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Изход      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Актуализиране      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Space , Enter       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; Прекъсване на процес &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; Прекратяване на процес &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</translation>
+        <translation>&lt;H1&gt;QPS Помощ&lt;/H1&gt;Актуализирана: May 24 2005&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Изход      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Актуализиране      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Интервал , Enter       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; Прекъсване на процес &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; Прекратяване на процес &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</translation>
     </message>
 </context>
 <context>
@@ -1526,22 +1527,22 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="305"/>
         <source>Scheduling Policy</source>
-        <translation>Управление на разписанието</translation>
+        <translation>Правила за разписанието</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="307"/>
         <source>SCHED_OTHER (time-sharing)</source>
-        <translation type="unfinished">SCHED_OTHER (time-sharing)</translation>
+        <translation>SCHED_OTHER (time-sharing)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="308"/>
         <source>SCHED_FIFO (real-time)</source>
-        <translation type="unfinished">SCHED_FIFO (real-time)</translation>
+        <translation>SCHED_FIFO (real-time)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="309"/>
         <source>SCHED_RR (real-time)</source>
-        <translation type="unfinished">SCHED_RR (real-time)</translation>
+        <translation>SCHED_RR (real-time)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="323"/>
@@ -1561,12 +1562,12 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="388"/>
         <source>Invalid Input</source>
-        <translation>Невалиден вход</translation>
+        <translation>Невалидно въвеждане</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="389"/>
         <source>The priority must be in the range 1..99</source>
-        <translation>Приоритетът трябва да бъде в диапазона 1..99</translation>
+        <translation>Приоритетът трябва да бъде в рамките на 1..99</translation>
     </message>
 </context>
 <context>
@@ -1584,37 +1585,37 @@ exited with status </source>
     <message>
         <location filename="../screenshot.cpp" line="300"/>
         <source>%1 Files (*.%2);;All Files (*)</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 файла (*.%2);;Всички файлове (*)</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="327"/>
         <source>Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Опции</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="330"/>
         <source> s</source>
-        <translation type="unfinished"></translation>
+        <translation> s</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="335"/>
         <source>Screenshot Delay:</source>
-        <translation type="unfinished"></translation>
+        <translation>Забавяне при снимка на екрана:</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="337"/>
         <source>Hide This Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Скриване на този прозорец</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="349"/>
         <source>New Screenshot</source>
-        <translation type="unfinished"></translation>
+        <translation>Нова снимка на екрана</translation>
     </message>
     <message>
         <location filename="../screenshot.cpp" line="350"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>Изход</translation>
     </message>
 </context>
 <context>
@@ -1622,7 +1623,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="806"/>
         <source>PID,COMMAND,USER...</source>
-        <translation type="unfinished"></translation>
+        <translation>PID,COMMAND,USER...</translation>
     </message>
 </context>
 <context>
@@ -1630,22 +1631,22 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="188"/>
         <source>Renice Process</source>
-        <translation type="unfinished"></translation>
+        <translation>Renice Process</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="194"/>
         <source>New nice value:</source>
-        <translation type="unfinished"></translation>
+        <translation>New nice value:</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="234"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Отказ</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="238"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>Добре</translation>
     </message>
 </context>
 <context>
@@ -1653,88 +1654,88 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>Fd</source>
-        <translation type="unfinished"></translation>
+        <translation>Fd</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>File descriptor</source>
-        <translation type="unfinished"></translation>
+        <translation>Дескриптор на файл</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
         <source>Proto</source>
-        <translation type="unfinished"></translation>
+        <translation>Proto</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
         <source>Protocol (TCP or UDP)</source>
-        <translation type="unfinished"></translation>
+        <translation>Протокол (TCP or UDP)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Recv-Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Recv-Q</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Bytes in receive queue</source>
-        <translation type="unfinished"></translation>
+        <translation>Байтове в опашка на получване</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="154"/>
         <source>Send-Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Send-Q</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="154"/>
         <source>Bytes in send queue</source>
-        <translation type="unfinished"></translation>
+        <translation>Байтове в опашка на изпращане</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>Local Addr</source>
-        <translation type="unfinished"></translation>
+        <translation>Local Addr</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>Local IP address</source>
-        <translation type="unfinished"></translation>
+        <translation>Локален IP адрес</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="156"/>
         <location filename="../details.cpp" line="158"/>
         <source>Port</source>
-        <translation type="unfinished"></translation>
+        <translation>Порт</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="156"/>
         <source>Local port</source>
-        <translation type="unfinished"></translation>
+        <translation>Локален порт</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="157"/>
         <source>Remote Addr</source>
-        <translation type="unfinished"></translation>
+        <translation>Remote Addr</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="157"/>
         <source>Remote IP address</source>
-        <translation type="unfinished"></translation>
+        <translation>Отдалечен IP адрес</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="158"/>
         <source>Remote port</source>
-        <translation type="unfinished"></translation>
+        <translation>Отдалечен порт</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="159"/>
         <source>State</source>
-        <translation type="unfinished"></translation>
+        <translation>Състояние</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="159"/>
         <source>Connection state</source>
-        <translation type="unfinished"></translation>
+        <translation>Състояние на връзка</translation>
     </message>
 </context>
 <context>
@@ -1742,7 +1743,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="895"/>
         <source>Process count: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Брой процеси: %1</translation>
     </message>
 </context>
 <context>
@@ -1751,7 +1752,8 @@ exited with status </source>
         <location filename="../misc.cpp" line="347"/>
         <source> This is unstable Alpha feature
  You maybe see a SEGFAULT...</source>
-        <translation type="unfinished"></translation>
+        <translation> Това е нестабилна алфа функция
+ Може би виждате SEGFAULT ...</translation>
     </message>
 </context>
 <context>
@@ -1759,7 +1761,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="426"/>
         <source>this is Tframe widget</source>
-        <translation type="unfinished"></translation>
+        <translation>това е Tframe widget</translation>
     </message>
 </context>
 <context>
@@ -1767,7 +1769,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="615"/>
         <source>title</source>
-        <translation type="unfinished"></translation>
+        <translation>заглавие</translation>
     </message>
 </context>
 <context>
@@ -1775,17 +1777,17 @@ exited with status </source>
     <message>
         <location filename="../watchdogdialog.cpp" line="193"/>
         <source>if process start</source>
-        <translation type="unfinished"></translation>
+        <translation>ако процесът стартира</translation>
     </message>
     <message>
         <location filename="../watchdogdialog.cpp" line="194"/>
         <source>if process finish</source>
-        <translation type="unfinished"></translation>
+        <translation>ако процесът завърши</translation>
     </message>
     <message>
         <location filename="../watchdogdialog.cpp" line="217"/>
         <source>select condition</source>
-        <translation type="unfinished"></translation>
+        <translation>избиране условие</translation>
     </message>
 </context>
 </TS>
