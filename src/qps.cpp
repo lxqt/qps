@@ -211,7 +211,7 @@ Qps::Qps()
 
     QActionGroup* group = new QActionGroup (this);
 
-    m_field = new QMenu("Field", this);
+    m_field = new QMenu( tr( "Fields" ), this);
     act = m_field->addAction( tr( "Custom Fields" ) );
     act->setData(Procview::CUSTOM);
     act = m_field->addAction( tr( "Basic Fields " ) );
@@ -252,7 +252,7 @@ Qps::Qps()
     /// *)));
     /// connect(m_view, SIGNAL(aboutToShow ()), SLOT(update_menu_status()));
 
-    m_options = new QMenu( tr( "Option" ), this);
+    m_options = new QMenu( tr( "Options" ), this);
     m_options->addAction( tr( "Update Period..." ), this, SLOT(menu_update()));
     m_options->addSeparator();
     act = m_options->addAction("", /* MENU_PATH */ this,
