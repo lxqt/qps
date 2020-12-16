@@ -778,19 +778,19 @@ void Qps::update_menu_status()
         {
             act->setCheckable(true);
             act->setChecked(Procview::flag_show_file_path);
-            act->setText("Show File Path");
+            act->setText( tr( "Show File Path" ) );
         }
         else if (id == MENU_INFOBAR)
         {
             act->setCheckable(true);
             act->setChecked(show_infobar);
-            act->setText("Show Graph");
+            act->setText( tr( "Show Graph" ) );
         }
         else if (id == MENU_CTRLBAR)
         {
             act->setCheckable(true);
             act->setChecked(show_ctrlbar);
-            act->setText("Show Control Bar");
+            act->setText( tr( "Show Control Bar" ) );
         }
         else if (id == MENU_STATUS)
         {
@@ -801,7 +801,7 @@ void Qps::update_menu_status()
         {
             act->setCheckable(true);
             act->setChecked(Procview::flag_cumulative);
-            act->setText("Include Child Times");
+            act->setText( tr( "Include Child Times" ) );
         }
     }
 }
