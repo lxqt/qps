@@ -92,7 +92,7 @@
     <message>
         <location filename="../prefs.cpp" line="106"/>
         <source>General</source>
-        <translation>一般</translation>
+        <translation>全般</translation>
     </message>
 </context>
 <context>
@@ -137,8 +137,8 @@ could not be executed because it was not found,
 or you did not have execute permission.</source>
         <translation>
 
-見つからないため実行されませんでした。
-または、実効権限が不足しています。</translation>
+見つからないか、または実行権限が
+ないため実行できませんでした。</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="233"/>
@@ -1241,7 +1241,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="214"/>
         <source>Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>フィールド</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="215"/>
@@ -1271,7 +1271,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="241"/>
         <source>Select Custom Fields...</source>
-        <translation>カスタムのフィールドを選択する...</translation>
+        <translation>カスタム・フィールドの選択...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="203"/>
