@@ -39,12 +39,12 @@
     <message>
         <location filename="../prefs.cpp" line="59"/>
         <source>Exit on closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Esci alla chiusura</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="60"/>
         <source>Remember Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Ricorda posizione</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="68"/>
@@ -1151,7 +1151,7 @@ uscito con stato </translation>
     <message>
         <location filename="../proc.cpp" line="2971"/>
         <source>the process name</source>
-        <translation>il nome del processo</translation>
+        <translation>Il nome del processo</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2971"/>
@@ -1242,7 +1242,7 @@ uscito con stato </translation>
     <message>
         <location filename="../qps.cpp" line="214"/>
         <source>Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Campi</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="215"/>
@@ -1277,12 +1277,12 @@ uscito con stato </translation>
     <message>
         <location filename="../qps.cpp" line="203"/>
         <source>Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Comand</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="255"/>
         <source>Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Opzioni</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="256"/>
@@ -1503,22 +1503,22 @@ uscito con stato </translation>
     <message>
         <location filename="../qps.cpp" line="1491"/>
         <source>Do you really want to terminate the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Si è sicuro di voler terminare il/i iprocesso/i selezionati?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1493"/>
         <source>Do you really want to hang up the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Si è sicuro di voler sospendere il/i iprocesso/i selezionati?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1495"/>
         <source>Do you really want to kill the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation>Si è sicuro di voler uccidere il/i iprocesso/i selezionati?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1504"/>
         <source>Question</source>
-        <translation type="unfinished"></translation>
+        <translation>Domanda</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1525"/>
@@ -1528,17 +1528,17 @@ uscito con stato </translation>
     <message>
         <location filename="../qps.cpp" line="1910"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1912"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;h2&gt; Qps %1 - Un gestore processi visuale &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Sorgenti: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1932"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
-        <translation type="unfinished">&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
+        <translation>&lt;b&gt;Qps originale da&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Collaboratori&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1970"/>
@@ -1604,12 +1604,12 @@ uscito con stato </translation>
     <message>
         <location filename="../misc.cpp" line="765"/>
         <source>PID, COMMAND, USER...</source>
-        <translation type="unfinished"></translation>
+        <translation>PID, COMANDO,UTENTE...</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="766"/>
         <source>Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtro</translation>
     </message>
 </context>
 <context>
@@ -1627,12 +1627,12 @@ uscito con stato </translation>
     <message>
         <location filename="../dialogs.cpp" line="225"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Cancella</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="229"/>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -1640,7 +1640,7 @@ uscito con stato </translation>
     <message>
         <location filename="../details.cpp" line="147"/>
         <source>Fd</source>
-        <translation type="unfinished">Fd</translation>
+        <translation>Fd</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="147"/>
@@ -1691,12 +1691,12 @@ uscito con stato </translation>
         <location filename="../details.cpp" line="152"/>
         <location filename="../details.cpp" line="154"/>
         <source>Port</source>
-        <translation type="unfinished"></translation>
+        <translation>Porta</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
         <source>Local port</source>
-        <translation type="unfinished"></translation>
+        <translation>Porta locale</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
@@ -1716,7 +1716,7 @@ uscito con stato </translation>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>State</source>
-        <translation type="unfinished"></translation>
+        <translation>Stato</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
@@ -1729,7 +1729,7 @@ uscito con stato </translation>
     <message>
         <location filename="../misc.cpp" line="807"/>
         <source>Process count: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Numero processi: %1</translation>
     </message>
 </context>
 <context>
@@ -1762,7 +1762,7 @@ uscito con stato </translation>
     <message>
         <location filename="../watchdogdialog.cpp" line="193"/>
         <source>if process start</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">se il processo si avvia</translation>
     </message>
     <message>
         <location filename="../watchdogdialog.cpp" line="194"/>
