@@ -231,6 +231,11 @@ keluar dengan status </translation>
         <translation>Tree</translation>
     </message>
     <message>
+        <location filename="../misc.cpp" line="829"/>
+        <source>Thread</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../misc.cpp" line="836"/>
         <source>All Processes</source>
         <translation>Semua Proses</translation>
@@ -1448,6 +1453,21 @@ keluar dengan status </translation>
     <message>
         <location filename="../qps.cpp" line="515"/>
         <source>View Details</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="781"/>
+        <source>Show File Path</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="787"/>
+        <source>Show Graph</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="804"/>
+        <source>Include Child Times</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

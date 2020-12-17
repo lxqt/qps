@@ -826,7 +826,7 @@ ControlBar::ControlBar(QWidget *parent) : QFrame(parent)
 
     if (flag_thread_ok)
     {
-        check_thread = new QCheckBox( ( "Thread" ), this);
+        check_thread = new QCheckBox( ( tr( "Thread" ) ), this);
         check_thread->setFocusPolicy(Qt::NoFocus);
         connect(check_thread, SIGNAL(clicked()), SLOT(show_thread_clicked()));
         check_thread->setChecked(flag_show_thread);
