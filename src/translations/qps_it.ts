@@ -238,22 +238,22 @@ uscito con stato </translation>
     <message>
         <location filename="../misc.cpp" line="836"/>
         <source>All Processes</source>
-        <translation>Tutti i Processi</translation>
+        <translation>Tutti processi</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="837"/>
         <source>Your Processes</source>
-        <translation>I Tuoi Processi</translation>
+        <translation>Processi propri</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="838"/>
         <source>Non-Root Processes</source>
-        <translation>Processi Non-Amministratore</translation>
+        <translation>Processi non-amministratore</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="839"/>
         <source>Running Processes</source>
-        <translation>Processi in Esecuzione</translation>
+        <translation>Processi in esecuzione</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="855"/>
@@ -281,7 +281,7 @@ uscito con stato </translation>
     <message>
         <location filename="../details.cpp" line="59"/>
         <source>Memory Maps</source>
-        <translation>Mappa Memoria</translation>
+        <translation>Mappa memoria</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="61"/>
@@ -678,7 +678,7 @@ uscito con stato </translation>
     <message>
         <location filename="../prefs.cpp" line="240"/>
         <source>Appearance</source>
-        <translation>Apparenza</translation>
+        <translation>Aspetto</translation>
     </message>
 </context>
 <context>
@@ -981,7 +981,7 @@ uscito con stato </translation>
     <message>
         <location filename="../proc.cpp" line="2935"/>
         <source>memory usage (RSS-SHARE)</source>
-        <translation>utilizo memoria (RSS-CONDIVISA)</translation>
+        <translation>Utilizzo memoria (RSS-CONDIVISA)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2937"/>
@@ -1161,7 +1161,7 @@ uscito con stato </translation>
     <message>
         <location filename="../proc.cpp" line="2971"/>
         <source>Process Name</source>
-        <translation>Nome Processo</translation>
+        <translation>Nome processo</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2975"/>
@@ -1257,22 +1257,22 @@ uscito con stato </translation>
     <message>
         <location filename="../qps.cpp" line="217"/>
         <source>Basic Fields </source>
-        <translation>Campi Base </translation>
+        <translation>Campi di base </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="219"/>
         <source>Jobs Fields </source>
-        <translation>Campi Processo </translation>
+        <translation>Campi processi </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="221"/>
         <source>Memory Fields </source>
-        <translation>Campi Memoria </translation>
+        <translation>Campi memoria </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="224"/>
         <source>Scheduling Fields </source>
-        <translation>Campi Pianificazione </translation>
+        <translation>Campi pianificazione </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="241"/>
@@ -1282,7 +1282,7 @@ uscito con stato </translation>
     <message>
         <location filename="../qps.cpp" line="203"/>
         <source>Command</source>
-        <translation>Comand</translation>
+        <translation>Comando</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="255"/>
@@ -1297,7 +1297,7 @@ uscito con stato </translation>
     <message>
         <location filename="../qps.cpp" line="265"/>
         <source>Show Status bar</source>
-        <translation>Mostra Barra di Stato</translation>
+        <translation>Mostra barra di stato</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="274"/>
@@ -1453,17 +1453,17 @@ uscito con stato </translation>
     <message>
         <location filename="../qps.cpp" line="515"/>
         <source>View Details</source>
-        <translation>Mostra Dettagli</translation>
+        <translation>Mostra dettagli</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="781"/>
         <source>Show File Path</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra percorso file</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="787"/>
         <source>Show Graph</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra grafico</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>
