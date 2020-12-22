@@ -54,7 +54,12 @@ ExecWindow::ExecWindow(watchCond *wc, int pid, QString cmd)
     pr = new QProcess;          // leak?
     if (!wc->command.isEmpty()) // conflict pid's command
     {
+#if (QT_VERSION >= QT_VERSION_CHECK(5,15,0))
+        QStringList args = QProcess::splitCommand(wc->command);
+        pr->start(args.takeFirst(), args); // thread run, if null then segfault occurs. ?
+#else
         pr->start(wc->command); // thread run, if null then segfault occurs. ?
+#endif
     }
 
     connect(okButton, SIGNAL(clicked()), this, SLOT(cmd_ok()));
