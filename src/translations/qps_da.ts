@@ -39,12 +39,12 @@
     <message>
         <location filename="../prefs.cpp" line="59"/>
         <source>Exit on closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Afslut ved lukning</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="60"/>
         <source>Remember Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Husk placering</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="68"/>
@@ -233,7 +233,7 @@ afsluttede med status </translation>
     <message>
         <location filename="../misc.cpp" line="829"/>
         <source>Thread</source>
-        <translation type="unfinished"></translation>
+        <translation>Tråd</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="836"/>
@@ -1247,7 +1247,7 @@ afsluttede med status </translation>
     <message>
         <location filename="../qps.cpp" line="214"/>
         <source>Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Felter</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="215"/>
@@ -1282,12 +1282,12 @@ afsluttede med status </translation>
     <message>
         <location filename="../qps.cpp" line="203"/>
         <source>Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Kommando</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="255"/>
         <source>Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Valgmuligheder</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="256"/>
@@ -1458,12 +1458,12 @@ afsluttede med status </translation>
     <message>
         <location filename="../qps.cpp" line="781"/>
         <source>Show File Path</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis filsti</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="787"/>
         <source>Show Graph</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis graf</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>
@@ -1538,7 +1538,7 @@ afsluttede med status </translation>
     <message>
         <location filename="../qps.cpp" line="1504"/>
         <source>Question</source>
-        <translation type="unfinished"></translation>
+        <translation>Spørgsmål</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1525"/>
@@ -1548,7 +1548,7 @@ afsluttede med status </translation>
     <message>
         <location filename="../qps.cpp" line="1910"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1912"/>
@@ -1624,7 +1624,7 @@ afsluttede med status </translation>
     <message>
         <location filename="../misc.cpp" line="765"/>
         <source>PID, COMMAND, USER...</source>
-        <translation type="unfinished"></translation>
+        <translation>PID, KOMMANDO, BRUGER...</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="766"/>
