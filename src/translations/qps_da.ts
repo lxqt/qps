@@ -1468,7 +1468,7 @@ afsluttede med status </translation>
     <message>
         <location filename="../qps.cpp" line="804"/>
         <source>Include Child Times</source>
-        <translation type="unfinished"></translation>
+        <translation>Medtag barnetider</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="998"/>
@@ -1523,17 +1523,17 @@ afsluttede med status </translation>
     <message>
         <location filename="../qps.cpp" line="1491"/>
         <source>Do you really want to terminate the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation>Vil du virkelig terminere de valgte processer?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1493"/>
         <source>Do you really want to hang up the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation>Vil du virkelig lægge de valgte processer på?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1495"/>
         <source>Do you really want to kill the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation>Vil du virkelig dræbe de valgte processer?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1504"/>
@@ -1553,7 +1553,7 @@ afsluttede med status </translation>
     <message>
         <location filename="../qps.cpp" line="1912"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;h2&gt; Qps %1 - En visuel proceshåntering &lt;/h2&gt; %2 bruger Qt-bibliotek %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Kilde: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1932"/>
@@ -1629,7 +1629,7 @@ afsluttede med status </translation>
     <message>
         <location filename="../misc.cpp" line="766"/>
         <source>Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtrér</translation>
     </message>
 </context>
 <context>
