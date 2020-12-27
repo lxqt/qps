@@ -39,12 +39,12 @@
     <message>
         <location filename="../prefs.cpp" line="59"/>
         <source>Exit on closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Kapanışta çık</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="60"/>
         <source>Remember Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Konumu Hatırla</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="68"/>
@@ -233,7 +233,7 @@ durumdan çıkıldı </translation>
     <message>
         <location filename="../misc.cpp" line="829"/>
         <source>Thread</source>
-        <translation type="unfinished"></translation>
+        <translation>Konu</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="836"/>
@@ -1247,7 +1247,7 @@ durumdan çıkıldı </translation>
     <message>
         <location filename="../qps.cpp" line="214"/>
         <source>Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Alanlar</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="215"/>
@@ -1282,12 +1282,12 @@ durumdan çıkıldı </translation>
     <message>
         <location filename="../qps.cpp" line="203"/>
         <source>Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Komut</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="255"/>
         <source>Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçenekler</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="256"/>
@@ -1458,17 +1458,17 @@ durumdan çıkıldı </translation>
     <message>
         <location filename="../qps.cpp" line="781"/>
         <source>Show File Path</source>
-        <translation type="unfinished"></translation>
+        <translation>Dosya Yolunu Göster</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="787"/>
         <source>Show Graph</source>
-        <translation type="unfinished"></translation>
+        <translation>Grafiği Göster</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>
         <source>Include Child Times</source>
-        <translation type="unfinished"></translation>
+        <translation>Çocuk Zamanlarını Dahil Et</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="998"/>
@@ -1523,22 +1523,22 @@ durumdan çıkıldı </translation>
     <message>
         <location filename="../qps.cpp" line="1491"/>
         <source>Do you really want to terminate the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen işlem(ler)i gerçekten sonlandırmak istiyor musunuz?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1493"/>
         <source>Do you really want to hang up the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen işlem(ler)i gerçekten askıya almak istiyor musunuz?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1495"/>
         <source>Do you really want to kill the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation>Seçilen işlem(ler)i gerçekten sonlandırmak istiyor musunuz?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1504"/>
         <source>Question</source>
-        <translation type="unfinished"></translation>
+        <translation>Soru</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1525"/>
@@ -1548,7 +1548,7 @@ durumdan çıkıldı </translation>
     <message>
         <location filename="../qps.cpp" line="1910"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1912"/>
@@ -1625,12 +1625,12 @@ tarafından yazıldı&lt;br&gt;&lt;br&gt;&lt;b&gt;Katkıda bulunanlar&lt;/b&gt;&
     <message>
         <location filename="../misc.cpp" line="765"/>
         <source>PID, COMMAND, USER...</source>
-        <translation type="unfinished"></translation>
+        <translation>PID, COMMAND, USER...</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="766"/>
         <source>Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Süzgeç</translation>
     </message>
 </context>
 <context>
