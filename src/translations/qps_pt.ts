@@ -1766,7 +1766,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../misc.cpp" line="426"/>
         <source>this is Tframe widget</source>
-        <translation></translation>
+        <translation>isto é Tframe widget</translation>
     </message>
 </context>
 <context>
