@@ -39,12 +39,12 @@
     <message>
         <location filename="../prefs.cpp" line="59"/>
         <source>Exit on closing</source>
-        <translation type="unfinished"></translation>
+        <translation>[閉じる] で終了する</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="60"/>
         <source>Remember Position</source>
-        <translation type="unfinished"></translation>
+        <translation>位置を記憶する</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="68"/>
@@ -233,7 +233,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="829"/>
         <source>Thread</source>
-        <translation type="unfinished"></translation>
+        <translation>スレッド</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="836"/>
@@ -1281,12 +1281,12 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="203"/>
         <source>Command</source>
-        <translation type="unfinished"></translation>
+        <translation>コマンド</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="255"/>
         <source>Options</source>
-        <translation type="unfinished"></translation>
+        <translation>オプション</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="256"/>
@@ -1296,7 +1296,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="265"/>
         <source>Show Status bar</source>
-        <translation>ステータスバーを表示</translation>
+        <translation>ステータスバーの表示</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="274"/>
@@ -1457,12 +1457,12 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="781"/>
         <source>Show File Path</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイルのパスを表示</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="787"/>
         <source>Show Graph</source>
-        <translation type="unfinished"></translation>
+        <translation>グラフの表示</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>
@@ -1542,7 +1542,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1525"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
-        <translation>プロセス %1 (%2) に信号を送信するアクセス許可がありません。プロセスの所有者とスーパーユーザのみが信号を送信できます。</translation>
+        <translation>プロセス %1 (%2) に信号を送信するアクセス許可がありません。プロセスの所有者とスーパーユーザーのみが信号を送信できます。</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1910"/>
@@ -1628,7 +1628,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="766"/>
         <source>Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>フィルター</translation>
     </message>
 </context>
 <context>
