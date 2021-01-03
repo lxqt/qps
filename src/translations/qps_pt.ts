@@ -1758,7 +1758,8 @@ terminou com o estado </translation>
         <location filename="../misc.cpp" line="347"/>
         <source> This is unstable Alpha feature
  You maybe see a SEGFAULT...</source>
-        <translation></translation>
+        <translation> Esta é uma funcionalidade Alfa instável
+ Talvez veja um SEGFAULT...</translation>
     </message>
 </context>
 <context>
