@@ -6,27 +6,27 @@
     <message>
         <location filename="../details.cpp" line="653"/>
         <source>Field</source>
-        <translation type="unfinished"></translation>
+        <translation>Mező</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="653"/>
         <source>Field name</source>
-        <translation type="unfinished"></translation>
+        <translation>Mezőnév</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="654"/>
         <source>Description</source>
-        <translation type="unfinished"></translation>
+        <translation>Leírás</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="654"/>
         <source>Field description</source>
-        <translation type="unfinished"></translation>
+        <translation>Mező leírása</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="655"/>
         <source>Value</source>
-        <translation type="unfinished"></translation>
+        <translation>Érték</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="655"/>
