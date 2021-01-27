@@ -39,12 +39,12 @@
     <message>
         <location filename="../prefs.cpp" line="59"/>
         <source>Exit on closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Έξοδος κατά το κλείσιμο</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="60"/>
         <source>Remember Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Απομνημόνευση της θέσης</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="68"/>
@@ -215,7 +215,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="829"/>
         <source>Thread</source>
-        <translation type="unfinished"></translation>
+        <translation>Νήμα</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="836"/>
@@ -1228,7 +1228,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="214"/>
         <source>Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Πεδία</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="215"/>
@@ -1263,12 +1263,12 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="203"/>
         <source>Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Εντολή</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="255"/>
         <source>Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλογές</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="256"/>
@@ -1439,12 +1439,12 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="781"/>
         <source>Show File Path</source>
-        <translation type="unfinished"></translation>
+        <translation>Εμφάνιση της διαδρομής αρχείου</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="787"/>
         <source>Show Graph</source>
-        <translation type="unfinished"></translation>
+        <translation>Εμφάνιση γραφήματος</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>
