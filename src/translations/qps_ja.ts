@@ -276,7 +276,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="54"/>
         <source>Sockets</source>
-        <translation type="unfinished"></translation>
+        <translation>ソケット</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="59"/>
@@ -332,22 +332,22 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="162"/>
         <source>Select condition</source>
-        <translation type="unfinished"></translation>
+        <translation>状態の選択</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="170"/>
         <source>labelDescrition</source>
-        <translation type="unfinished"></translation>
+        <translation>ラベルの説明</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="193"/>
         <source>Enable</source>
-        <translation type="unfinished"></translation>
+        <translation>有効にする</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="219"/>
         <source>process name</source>
-        <translation type="unfinished"></translation>
+        <translation>プロセスの名前</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="229"/>
@@ -367,7 +367,7 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="309"/>
         <source>run command</source>
-        <translation type="unfinished"></translation>
+        <translation>実行コマンド</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="342"/>
@@ -383,7 +383,8 @@ exited with status </source>
         <location filename="../watchdog.ui" line="394"/>
         <source>%p : pid
 %c : command</source>
-        <translation type="unfinished"></translation>
+        <translation>%p : PID
+%c : コマンド</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="425"/>
@@ -416,7 +417,7 @@ exited with status </source>
     <message>
         <location filename="../message.ui" line="27"/>
         <source>Ok</source>
-        <translation>Ok</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="42"/>
@@ -426,7 +427,7 @@ exited with status </source>
     <message>
         <location filename="../execwindow.cpp" line="94"/>
         <source>%1 exit with code %2</source>
-        <translation>%1 終了コード %2</translation>
+        <translation>%1 はコード %2 で終了</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="96"/>
@@ -538,7 +539,7 @@ exited with status </source>
     <message>
         <location filename="../listmodel.cpp" line="68"/>
         <source>Enable</source>
-        <translation type="unfinished"></translation>
+        <translation>有効</translation>
     </message>
 </context>
 <context>
@@ -546,7 +547,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="392"/>
         <source>Address Range</source>
-        <translation type="unfinished"></translation>
+        <translation>アドレス範囲</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="392"/>
@@ -576,7 +577,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="395"/>
         <source>Offset</source>
-        <translation type="unfinished"></translation>
+        <translation>オフセット</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="395"/>
@@ -586,7 +587,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Device</source>
-        <translation type="unfinished"></translation>
+        <translation>デバイス</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
@@ -606,7 +607,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>File</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイル</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
@@ -810,7 +811,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2900"/>
         <source>File system user ID</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイルシステムのユーザー ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2902"/>
@@ -980,7 +981,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2935"/>
         <source>memory usage (RSS-SHARE)</source>
-        <translation type="unfinished"></translation>
+        <translation>メモリ使用量 (RSS-SHARE)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2937"/>
@@ -1010,7 +1011,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2941"/>
         <source>Stack size</source>
-        <translation type="unfinished"></translation>
+        <translation>スタックサイズ</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2943"/>
@@ -1070,7 +1071,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2953"/>
         <source>State of the process </source>
-        <translation type="unfinished"></translation>
+        <translation>プロセスの状態 </translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2955"/>
@@ -1155,12 +1156,12 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2971"/>
         <source>the process name</source>
-        <translation type="unfinished"></translation>
+        <translation>プロセスの名前</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2971"/>
         <source>Process Name</source>
-        <translation type="unfinished"></translation>
+        <translation>プロセス名</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2975"/>
@@ -1170,7 +1171,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2975"/>
         <source>Current working directory</source>
-        <translation type="unfinished"></translation>
+        <translation>現在の作業ディレクトリ</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2976"/>
@@ -1180,7 +1181,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2976"/>
         <source>Root directory of process</source>
-        <translation type="unfinished"></translation>
+        <translation>プロセスのルートディレクトリ</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2979"/>
@@ -1190,7 +1191,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2979"/>
         <source>Command line that started the process</source>
-        <translation type="unfinished"></translation>
+        <translation>プロセスを開始したコマンドライン</translation>
     </message>
 </context>
 <context>
@@ -1472,12 +1473,12 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="998"/>
         <source>WatchDog</source>
-        <translation type="unfinished"></translation>
+        <translation>ウォッチドッグ</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1000"/>
         <source>Edit Commands...</source>
-        <translation type="unfinished"></translation>
+        <translation>コマンドの編集...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1017"/>
@@ -1537,7 +1538,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1504"/>
         <source>Question</source>
-        <translation type="unfinished"></translation>
+        <translation>質問</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1525"/>
@@ -1547,7 +1548,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1910"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1912"/>
@@ -1674,73 +1675,73 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="148"/>
         <source>Protocol (TCP or UDP)</source>
-        <translation type="unfinished"></translation>
+        <translation>プロトコル (TCP または UDP)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="149"/>
         <source>Recv-Q</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Recv-Q</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="149"/>
         <source>Bytes in receive queue</source>
-        <translation type="unfinished"></translation>
+        <translation>受信キューのバイト数</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="150"/>
         <source>Send-Q</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Send-Q</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="150"/>
         <source>Bytes in send queue</source>
-        <translation type="unfinished"></translation>
+        <translation>送信キューのバイト数</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>Local Addr</source>
-        <translation type="unfinished"></translation>
+        <translation>ローカル アド</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>Local IP address</source>
-        <translation type="unfinished"></translation>
+        <translation>ローカル IP アドレス</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
         <location filename="../details.cpp" line="154"/>
         <source>Port</source>
-        <translation type="unfinished"></translation>
+        <translation>ポート</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
         <source>Local port</source>
-        <translation type="unfinished"></translation>
+        <translation>ローカル ポート</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Remote Addr</source>
-        <translation type="unfinished"></translation>
+        <translation>リモート アド</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Remote IP address</source>
-        <translation type="unfinished"></translation>
+        <translation>リモート IP アドレス</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="154"/>
         <source>Remote port</source>
-        <translation type="unfinished"></translation>
+        <translation>リモート ポート</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>State</source>
-        <translation type="unfinished"></translation>
+        <translation>状態</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>Connection state</source>
-        <translation type="unfinished"></translation>
+        <translation>接続の状態</translation>
     </message>
 </context>
 <context>
@@ -1774,7 +1775,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="615"/>
         <source>title</source>
-        <translation type="unfinished"></translation>
+        <translation>タイトル</translation>
     </message>
 </context>
 <context>
@@ -1792,7 +1793,7 @@ exited with status </source>
     <message>
         <location filename="../watchdogdialog.cpp" line="217"/>
         <source>select condition</source>
-        <translation type="unfinished"></translation>
+        <translation>状態の選択</translation>
     </message>
 </context>
 </TS>
