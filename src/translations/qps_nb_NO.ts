@@ -74,7 +74,7 @@
     <message>
         <location filename="../prefs.cpp" line="83"/>
         <source>Selection: Copy PIDs to Clipboard</source>
-        <translation>Markering: Kopier PIDer til utklippsboken</translation>
+        <translation>Markering: Kopier PID-er til utklippstavlen</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="85"/>
