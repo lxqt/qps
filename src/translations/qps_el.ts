@@ -1504,7 +1504,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1491"/>
         <source>Do you really want to terminate the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιθυμείτε πραγματικά τον τερματισμό των επιλεγμένων διεργασιών;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1493"/>
