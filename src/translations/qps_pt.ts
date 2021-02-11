@@ -751,7 +751,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2888"/>
         <source>Process group ID of tty owner</source>
-        <translation></translation>
+        <translation>ID do grupo de processo do proprietário de tty</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2890"/>
@@ -761,7 +761,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2890"/>
         <source>Owner (*=suid root, +=suid a user)</source>
-        <translation></translation>
+        <translation>Proprietário (*=suid root, +=suid um utilizador)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2892"/>
@@ -771,7 +771,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2892"/>
         <source>Group name (*=sgid other)</source>
-        <translation></translation>
+        <translation>Nome do grupo (*=sgid outro)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2894"/>
@@ -791,7 +791,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2896"/>
         <source>Effective user ID</source>
-        <translation></translation>
+        <translation>ID de utilizador efectivo</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2898"/>
@@ -801,7 +801,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2898"/>
         <source>Saved user ID (Posix)</source>
-        <translation></translation>
+        <translation>ID de utilizador guardado (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2900"/>
@@ -821,7 +821,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2902"/>
         <source>Real group ID</source>
-        <translation></translation>
+        <translation>ID do grupo verdadeiro</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2904"/>
@@ -831,7 +831,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2904"/>
         <source>Effective group ID</source>
-        <translation></translation>
+        <translation>ID de grupo efectivo</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2906"/>
@@ -841,7 +841,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2906"/>
         <source>Saved group ID (Posix)</source>
-        <translation></translation>
+        <translation>ID de grupo guardado (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2908"/>
@@ -851,7 +851,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2908"/>
         <source>File system group ID</source>
-        <translation></translation>
+        <translation>ID do grupo do sistema de ficheiros</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2910"/>
@@ -861,7 +861,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2910"/>
         <source>Dynamic priority</source>
-        <translation></translation>
+        <translation>Prioridade dinâmica</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2912"/>
@@ -871,7 +871,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2912"/>
         <source>Scheduling favour (higher -&gt; less cpu time)</source>
-        <translation></translation>
+        <translation>Favor de programação (mais alto -&gt; menos tempo de cpu)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2914"/>
@@ -881,7 +881,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2914"/>
         <source>Number of tasks(threads) in task group</source>
-        <translation></translation>
+        <translation>Número de tarefas (fios de execução) no grupo de tarefas</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2916"/>
@@ -891,7 +891,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2916"/>
         <source>Scheduling policy</source>
-        <translation></translation>
+        <translation>Política de programação</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2918"/>
@@ -901,7 +901,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2918"/>
         <source>Realtime priority (0-99, more is better)</source>
-        <translation></translation>
+        <translation>Prioridade em tempo real (0-99, mais é melhor)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2920"/>
@@ -911,7 +911,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2920"/>
         <source>Time slice in milliseconds</source>
-        <translation></translation>
+        <translation>Fatia de tempo em milissegundos</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2922"/>
@@ -921,7 +921,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2922"/>
         <source>Percentage average sleep time (-1 -&gt; N/A)</source>
-        <translation></translation>
+        <translation>Percentagem do tempo médio de sono (-1 -&gt; N/A)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2924"/>
@@ -931,7 +931,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2924"/>
         <source>Affinity CPU mask (0 -&gt; API not supported)</source>
-        <translation></translation>
+        <translation>Máscara CPU de afinidade (0 -&gt; API não suportado)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2926"/>
@@ -941,7 +941,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2926"/>
         <source>Number of major faults (disk access)</source>
-        <translation></translation>
+        <translation>Número de avarias principais (acesso ao disco)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2928"/>
@@ -951,7 +951,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2928"/>
         <source>Number of minor faults (no disk access)</source>
-        <translation></translation>
+        <translation>Número de falhas menores (sem acesso ao disco)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2931"/>
@@ -961,7 +961,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2931"/>
         <source>Virtual image size of process</source>
-        <translation></translation>
+        <translation>Tamanho de imagem virtual do processo</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2933"/>
@@ -971,7 +971,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2933"/>
         <source>Resident set size</source>
-        <translation></translation>
+        <translation>Tamanho do conjunto residente</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2935"/>
@@ -981,7 +981,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2935"/>
         <source>memory usage (RSS-SHARE)</source>
-        <translation></translation>
+        <translation>utilização de memória (RSS-SHARE)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2937"/>
@@ -991,7 +991,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2937"/>
         <source>Text(code) resident set size</source>
-        <translation></translation>
+        <translation>Texto(código) tamanho do conjunto residente</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2939"/>
@@ -1001,7 +1001,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2939"/>
         <source>Data resident set size(malloc+global variable)</source>
-        <translation></translation>
+        <translation>Tamanho do conjunto residente de dados (variável malloc+global)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2941"/>
@@ -1011,7 +1011,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2941"/>
         <source>Stack size</source>
-        <translation></translation>
+        <translation>Tamanho da pilha</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2943"/>
@@ -1021,7 +1021,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2943"/>
         <source>Shared memory with other libs</source>
-        <translation></translation>
+        <translation>Memória partilhada com outras libs</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2945"/>
@@ -1031,7 +1031,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2945"/>
         <source>Kbytes on swap device</source>
-        <translation></translation>
+        <translation>Kbytes no dispositivo de swap</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2947"/>
@@ -1041,7 +1041,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2947"/>
         <source>io read (file)</source>
-        <translation></translation>
+        <translation>io leitura (ficheiro)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2949"/>
@@ -1051,7 +1051,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2949"/>
         <source>io write (file)</source>
-        <translation></translation>
+        <translation>io gravação (ficheiro)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2951"/>
@@ -1061,7 +1061,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2951"/>
         <source>Number of dirty (non-written) pages</source>
-        <translation></translation>
+        <translation>Número de páginas corruptas (não escritas)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2953"/>
@@ -1071,7 +1071,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2953"/>
         <source>State of the process </source>
-        <translation></translation>
+        <translation>Estado do processo </translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2955"/>
