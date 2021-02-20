@@ -1161,7 +1161,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2971"/>
         <source>Process Name</source>
-        <translation>プロセス名</translation>
+        <translation>Process Name</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2975"/>
@@ -1680,7 +1680,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="149"/>
         <source>Recv-Q</source>
-        <translation type="unfinished">Recv-Q</translation>
+        <translation>Recv-Q</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="149"/>
