@@ -1247,7 +1247,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../qps.cpp" line="214"/>
         <source>Fields</source>
-        <translation type="unfinished">Champ</translation>
+        <translation>Champ</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="215"/>

@@ -668,7 +668,7 @@ exited with status </source>
     <message>
         <location filename="../prefs.cpp" line="205"/>
         <source>default</source>
-        <translation>デフォルト</translation>
+        <translation>既定</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="206"/>
@@ -1759,7 +1759,7 @@ exited with status </source>
         <source> This is unstable Alpha feature
  You maybe see a SEGFAULT...</source>
         <translation> これは不安定なアルファの機能です
- SEGFAULT を参照してください...</translation>
+ SEGFAULT を参照して下さい...</translation>
     </message>
 </context>
 <context>
