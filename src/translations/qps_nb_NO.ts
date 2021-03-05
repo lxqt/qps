@@ -1463,12 +1463,12 @@ avsluttet med status </translation>
     <message>
         <location filename="../qps.cpp" line="787"/>
         <source>Show Graph</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Vis graf</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>
         <source>Include Child Times</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Inkluder barnetider</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="998"/>
@@ -1548,12 +1548,12 @@ avsluttet med status </translation>
     <message>
         <location filename="../qps.cpp" line="1910"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1912"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;h2&gt; Qps %1 - En visuell prosessbehandler &lt;/h2&gt; %2 bruker Qt-bibliotek %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Kilde: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Feilsporer: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1932"/>
@@ -1624,7 +1624,7 @@ avsluttet med status </translation>
     <message>
         <location filename="../misc.cpp" line="765"/>
         <source>PID, COMMAND, USER...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">PID, KOMMANDO, BRUKER…</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="766"/>
