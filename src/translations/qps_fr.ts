@@ -187,7 +187,7 @@ arrêt avec le statut. </translation>
 %%	%
 
 </source>
-        <translation>Substitutions:
+        <translation>Substitutions :
 %p	PID
 %c	COMMANDE
 %C	LIGNE DE COMMANDE
@@ -1468,7 +1468,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../qps.cpp" line="804"/>
         <source>Include Child Times</source>
-        <translation type="unfinished">Inclure le temps des enfants</translation>
+        <translation>Inclure le temps des enfants</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="998"/>
@@ -1528,7 +1528,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../qps.cpp" line="1493"/>
         <source>Do you really want to hang up the selected process(es)?</source>
-        <translation type="unfinished">Voulez-vous vraiment raccrocher le ou les processus sélectionnés?</translation>
+        <translation>Voulez-vous vraiment suspendre le ou les processus sélectionnés ?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1495"/>
@@ -1563,7 +1563,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../qps.cpp" line="1970"/>
         <source>&lt;H1&gt;QPS Help&lt;/H1&gt;Updated: May 24 2005&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Quit      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Update      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Space , Enter       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Terminate &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Kill &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</source>
-        <translation>&lt;H1&gt;Aide QPS&lt;/H1&gt;Mise à jour : May 24 2005&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Quitter     &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Mise à jour       &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Espace , Entrer       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; processus Terminate &lt;/td&gt;  &lt;td&gt; ALT + T , SUPPR &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; processus Kill &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</translation>
+        <translation>&lt;H1&gt;Aide QPS&lt;/H1&gt;Mise à jour :24 Mai 2005&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Quitter     &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Mise à jour       &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Espace , Entrer       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;Terminer le processus &lt;/td&gt;  &lt;td&gt; ALT + T , SUPPR &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; Tuer le processus &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</translation>
     </message>
 </context>
 <context>

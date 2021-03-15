@@ -49,12 +49,12 @@
     <message>
         <location filename="../prefs.cpp" line="68"/>
         <source>Host Name Lookup</source>
-        <translation>Procura do nome do host</translation>
+        <translation>Procura do nome da máquina</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="69"/>
         <source>Service Name Lookup</source>
-        <translation>Procura de nome de serviço</translation>
+        <translation>Procura do nome de serviço</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="75"/>
@@ -337,7 +337,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../watchdog.ui" line="170"/>
         <source>labelDescrition</source>
-        <translation></translation>
+        <translation>Descrição do rótulo</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="193"/>
@@ -1081,7 +1081,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2955"/>
         <source>Process flags (hex)</source>
-        <translation></translation>
+        <translation>Flags de processo (hex)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2957"/>
@@ -1091,7 +1091,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2957"/>
         <source>Kernel function where process is sleeping</source>
-        <translation></translation>
+        <translation>Função do kernel onde o processo está adormecido</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2959"/>
@@ -1101,7 +1101,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2959"/>
         <source>Weighted percentage of CPU (30 s average)</source>
-        <translation></translation>
+        <translation>Percentagem ponderada de CPU (média de 30 s)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2961"/>
@@ -1111,7 +1111,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2961"/>
         <source>Percentage of CPU used since last update</source>
-        <translation></translation>
+        <translation>Percentagem de CPU utilizada desde a última atualização</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2963"/>
@@ -1121,7 +1121,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2963"/>
         <source>Percentage of memory used (RSS/total mem)</source>
-        <translation></translation>
+        <translation>Percentagem de memória utilizada (RSS/total mem)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2965"/>
@@ -1131,7 +1131,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2965"/>
         <source>Time process started</source>
-        <translation></translation>
+        <translation>Hora de início de processo</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2967"/>
@@ -1141,7 +1141,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2967"/>
         <source>Total CPU time used since start</source>
-        <translation></translation>
+        <translation>Tempo total de CPU utilizado desde o início</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2969"/>
@@ -1151,17 +1151,17 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2969"/>
         <source>CPU the process is executing on (SMP system)</source>
-        <translation></translation>
+        <translation>CPU em que o processo está a ser executado (sistema SMP)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2971"/>
         <source>the process name</source>
-        <translation></translation>
+        <translation>o nome do processo</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2971"/>
         <source>Process Name</source>
-        <translation></translation>
+        <translation>Nome do processo</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2975"/>
@@ -1171,7 +1171,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2975"/>
         <source>Current working directory</source>
-        <translation></translation>
+        <translation>Diretório de trabalho atual</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2976"/>
@@ -1181,17 +1181,17 @@ terminou com o estado </translation>
     <message>
         <location filename="../proc.cpp" line="2976"/>
         <source>Root directory of process</source>
-        <translation></translation>
+        <translation>Diretório root do processo</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2979"/>
         <source>COMMAND_LINE</source>
-        <translation></translation>
+        <translation>LINHA_COMANDO</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2979"/>
         <source>Command line that started the process</source>
-        <translation></translation>
+        <translation>Linha de comando que iniciou o processo</translation>
     </message>
 </context>
 <context>
@@ -1222,27 +1222,27 @@ terminou com o estado </translation>
     <message>
         <location filename="../qps.cpp" line="199"/>
         <source>Remove Field</source>
-        <translation></translation>
+        <translation>Remover campo</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="200"/>
         <source>Add Field</source>
-        <translation></translation>
+        <translation>Adicionar campo</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="207"/>
         <source>View</source>
-        <translation></translation>
+        <translation>Ver</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="208"/>
         <source>Process</source>
-        <translation></translation>
+        <translation>Processo</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="209"/>
         <source>Log</source>
-        <translation></translation>
+        <translation>Registo</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="214"/>
@@ -1252,32 +1252,32 @@ terminou com o estado </translation>
     <message>
         <location filename="../qps.cpp" line="215"/>
         <source>Custom Fields</source>
-        <translation></translation>
+        <translation>Campos personalizados</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="217"/>
         <source>Basic Fields </source>
-        <translation></translation>
+        <translation>Campos básicos </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="219"/>
         <source>Jobs Fields </source>
-        <translation></translation>
+        <translation>Campos de trabalho </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="221"/>
         <source>Memory Fields </source>
-        <translation></translation>
+        <translation>Campos de memória </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="224"/>
         <source>Scheduling Fields </source>
-        <translation></translation>
+        <translation>Campos de agendamento </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="241"/>
         <source>Select Custom Fields...</source>
-        <translation></translation>
+        <translation>Selecionar campos personalizados...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="203"/>
@@ -1292,22 +1292,22 @@ terminou com o estado </translation>
     <message>
         <location filename="../qps.cpp" line="256"/>
         <source>Update Period...</source>
-        <translation></translation>
+        <translation>Período de atualização...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="265"/>
         <source>Show Status bar</source>
-        <translation></translation>
+        <translation>Mostrar barra de estado</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="274"/>
         <source>Preferences...</source>
-        <translation></translation>
+        <translation>Preferências...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="280"/>
         <source>Help</source>
-        <translation></translation>
+        <translation>Ajuda</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="282"/>
@@ -1318,22 +1318,22 @@ terminou com o estado </translation>
     <message>
         <location filename="../qps.cpp" line="370"/>
         <source>Detail</source>
-        <translation></translation>
+        <translation>Detalhes</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="411"/>
         <source>test</source>
-        <translation></translation>
+        <translation>teste</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="412"/>
         <source>Copied to Clipboard</source>
-        <translation></translation>
+        <translation>Copiado para a área de transferência</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="464"/>
         <source>context popup</source>
-        <translation></translation>
+        <translation>popup de contexto</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="465"/>
@@ -1343,117 +1343,117 @@ terminou com o estado </translation>
     <message>
         <location filename="../qps.cpp" line="466"/>
         <source>Scheduling...</source>
-        <translation></translation>
+        <translation>Agendamento...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="468"/>
         <source>Terminate</source>
-        <translation></translation>
+        <translation>Terminar</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="470"/>
         <source>Hangup</source>
-        <translation></translation>
+        <translation>Desligar</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="471"/>
         <source>Kill</source>
-        <translation></translation>
+        <translation>Parar</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="472"/>
         <source>Stop</source>
-        <translation></translation>
+        <translation>Parar</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="474"/>
         <source>Continue</source>
-        <translation></translation>
+        <translation>Continuar</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="478"/>
         <source>SIGINT (interrupt)</source>
-        <translation></translation>
+        <translation>SIGINT (interromper)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="480"/>
         <source>SIGCONT (continue)</source>
-        <translation></translation>
+        <translation>SIGCONT (continuar)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="482"/>
         <source>SIGSTOP (stop)</source>
-        <translation></translation>
+        <translation>SIGSTOP (parar)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="484"/>
         <source>SIGQUIT (quit)</source>
-        <translation></translation>
+        <translation>SIGQUIT (sair)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="486"/>
         <source>SIGILL (illegal instruction)</source>
-        <translation></translation>
+        <translation>SIGILL (instrução ilegal)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="488"/>
         <source>SIGABRT (abort)</source>
-        <translation></translation>
+        <translation>SIGABRT (abortar)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="490"/>
         <source>SIGFPE (floating point exception)</source>
-        <translation></translation>
+        <translation>SIGFPE (excepção do ponto flutuante)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="492"/>
         <source>SIGSEGV (segmentation violation)</source>
-        <translation></translation>
+        <translation>SIGSEGV (violação da segmentação)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="494"/>
         <source>SIGPIPE (broken pipe)</source>
-        <translation></translation>
+        <translation>SIGPIPE (pipe corrompido)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="496"/>
         <source>SIGALRM (timer signal)</source>
-        <translation></translation>
+        <translation>SIGALRM (sinal temporizador)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="498"/>
         <source>SIGUSR1 (user-defined 1)</source>
-        <translation></translation>
+        <translation>SIGUSR1 (definido pelo utilizador 1)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="500"/>
         <source>SIGUSR2 (user-defined 2)</source>
-        <translation></translation>
+        <translation>SIGUSR2 (definido pelo utilizador 2)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="502"/>
         <source>SIGCHLD (child death)</source>
-        <translation></translation>
+        <translation>SIGCHLD (paragem de processo secundário)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="504"/>
         <source>SIGTSTP (stop from tty)</source>
-        <translation></translation>
+        <translation>SIGTSTP (parar do tty)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="506"/>
         <source>SIGTTIN (tty input)</source>
-        <translation></translation>
+        <translation>SIGTTIN (entrada tty)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="508"/>
         <source>SIGTTOU (tty output)</source>
-        <translation></translation>
+        <translation>SIGTTOU (saída tty)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="515"/>
         <source>View Details</source>
-        <translation></translation>
+        <translation>Ver detalhes</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="781"/>
@@ -1478,12 +1478,12 @@ terminou com o estado </translation>
     <message>
         <location filename="../qps.cpp" line="1000"/>
         <source>Edit Commands...</source>
-        <translation></translation>
+        <translation>Editar comandos...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1017"/>
         <source>Quit</source>
-        <translation></translation>
+        <translation>Sair</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1336"/>
@@ -1493,32 +1493,32 @@ terminou com o estado </translation>
         <location filename="../qps.cpp" line="1429"/>
         <location filename="../qps.cpp" line="1524"/>
         <source>Permission denied</source>
-        <translation></translation>
+        <translation>Permissão negada</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1337"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
-        <translation></translation>
+        <translation>Não tem permissão para executar o comando renice aos processos selecionados. Apenas o proprietário do processo e o super-utilizador têm autorização para o fazer.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1368"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
-        <translation></translation>
+        <translation>Não tem permissão para executar o comando renice ao processo %1 (%2). Apenas o proprietário do processo e o super-utilizador têm permissão para o fazer.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1375"/>
         <source>Only the super-user may lower the nice value of a process.</source>
-        <translation></translation>
+        <translation>Apenas o super-utilizador pode baixar o valor nice de um processo.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1396"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
-        <translation></translation>
+        <translation>Apenas o super-utilizador pode alterar a política de agendamento e a prioridade estática.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1430"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
-        <translation></translation>
+        <translation>Não tem autorização para alterar o agendamento e/ou prioridade do processo %1 (%2). Apenas o super-utilizador pode fazer isso.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1491"/>
@@ -1543,7 +1543,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../qps.cpp" line="1525"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
-        <translation></translation>
+        <translation>Não tem permissão para enviar um sinal para processar %1 (%2). Apenas o super-utilizador e o proprietário do processo pode enviar sinais para o mesmo.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1910"/>
@@ -1558,12 +1558,12 @@ terminou com o estado </translation>
     <message>
         <location filename="../qps.cpp" line="1932"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contribuidores&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1970"/>
         <source>&lt;H1&gt;QPS Help&lt;/H1&gt;Updated: May 24 2005&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Quit      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Update      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Space , Enter       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Terminate &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Kill &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</source>
-        <translation></translation>
+        <translation>&lt;H1&gt;Ajuda QPS&lt;/H1&gt;Atualizado: Maio24 2005&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Quit      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Update      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Space , Enter       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Terminate &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Kill &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</translation>
     </message>
 </context>
 <context>
@@ -1571,12 +1571,12 @@ terminou com o estado </translation>
     <message>
         <location filename="../dialogs.cpp" line="292"/>
         <source>Change scheduling</source>
-        <translation></translation>
+        <translation>Alterar o agendamento</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="296"/>
         <source>Scheduling Policy</source>
-        <translation></translation>
+        <translation>Política de agendamento</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="298"/>
@@ -1601,22 +1601,22 @@ terminou com o estado </translation>
     <message>
         <location filename="../dialogs.cpp" line="316"/>
         <source>Cancel</source>
-        <translation></translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="346"/>
         <source>Priority (1-99):</source>
-        <translation></translation>
+        <translation>Prioridade (1-99):</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="379"/>
         <source>Invalid Input</source>
-        <translation></translation>
+        <translation>Entrada inválida</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="380"/>
         <source>The priority must be in the range 1..99</source>
-        <translation></translation>
+        <translation>A prioridade deve estar no intervalo 1..99</translation>
     </message>
 </context>
 <context>
