@@ -337,7 +337,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../watchdog.ui" line="170"/>
         <source>labelDescrition</source>
-        <translation></translation>
+        <translation>Descrição do rótulo</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="193"/>
