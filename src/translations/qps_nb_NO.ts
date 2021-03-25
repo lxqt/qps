@@ -1463,12 +1463,12 @@ avsluttet med status </translation>
     <message>
         <location filename="../qps.cpp" line="787"/>
         <source>Show Graph</source>
-        <translation type="unfinished">Vis graf</translation>
+        <translation>Vis graf</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>
         <source>Include Child Times</source>
-        <translation type="unfinished">Inkluder barnetider</translation>
+        <translation>Inkluder barnetider</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="998"/>
@@ -1624,7 +1624,7 @@ avsluttet med status </translation>
     <message>
         <location filename="../misc.cpp" line="765"/>
         <source>PID, COMMAND, USER...</source>
-        <translation type="unfinished">PID, KOMMANDO, BRUKER…</translation>
+        <translation>PID, KOMMANDO, BRUKER…</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="766"/>
