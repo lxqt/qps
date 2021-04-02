@@ -327,7 +327,7 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="117"/>
         <source>Eventcat</source>
-        <translation>Γεγονότα</translation>
+        <translation>Συμβάντα</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="162"/>
@@ -447,7 +447,7 @@ exited with status </source>
     <message>
         <location filename="../execwindow.cpp" line="112"/>
         <source>Error %1 : [%2] Maybe command not found</source>
-        <translation></translation>
+        <translation>Σφάλμα %1 : [%2] Ίσως η εντολή δεν βρέθηκε</translation>
     </message>
 </context>
 <context>
@@ -455,12 +455,12 @@ exited with status </source>
     <message>
         <location filename="../fieldsel.cpp" line="34"/>
         <source>Select Custom Fields </source>
-        <translation></translation>
+        <translation>Επιλογή προσαρμοσμένων πεδίων </translation>
     </message>
     <message>
         <location filename="../fieldsel.cpp" line="75"/>
         <source>Close</source>
-        <translation type="unfinished">Κλείσιμο</translation>
+        <translation>Κλείσιμο</translation>
     </message>
 </context>
 <context>
@@ -473,7 +473,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="521"/>
         <source>File descriptor</source>
-        <translation type="unfinished">περιγραφέας αρχείου, περιγραφέας αρχειοφακέλλου</translation>
+        <translation>Περιγραφέας αρχείου</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="523"/>
@@ -483,17 +483,17 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="523"/>
         <source>Open mode</source>
-        <translation type="unfinished">ανοικτός τρόπος</translation>
+        <translation>Ανοιχτή λειτουργία</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="525"/>
         <source>Name</source>
-        <translation type="unfinished">Όνομα</translation>
+        <translation>Όνομα</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="525"/>
         <source>File name (if available)</source>
-        <translation></translation>
+        <translation>Όνομα αρχείου (αν είναι διαθέσιμο)</translation>
     </message>
 </context>
 <context>
@@ -501,17 +501,17 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="43"/>
         <source>Change Update Period</source>
-        <translation></translation>
+        <translation>Αλλαγή περιόδου ενημέρωσης</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="49"/>
         <source>New Update Period</source>
-        <translation></translation>
+        <translation>Νέα περίοδος ενημέρωσης</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="85"/>
         <source>Cancel</source>
-        <translation type="unfinished">Ακύρωση</translation>
+        <translation>Ακύρωση</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="87"/>
@@ -526,7 +526,7 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="139"/>
         <source>Invalid value</source>
-        <translation></translation>
+        <translation>Μη έγκυρη τιμή</translation>
     </message>
 </context>
 <context>
@@ -534,12 +534,12 @@ exited with status </source>
     <message>
         <location filename="../listmodel.cpp" line="66"/>
         <source>Event Category</source>
-        <translation></translation>
+        <translation>Κατηγορία συμβάντος</translation>
     </message>
     <message>
         <location filename="../listmodel.cpp" line="68"/>
         <source>Enable</source>
-        <translation type="unfinished">Ενεργοποίηση</translation>
+        <translation>Ενεργοποίηση</translation>
     </message>
 </context>
 <context>
@@ -547,12 +547,12 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="392"/>
         <source>Address Range</source>
-        <translation></translation>
+        <translation>Εύρος διεύθυνσης</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="392"/>
         <source>Mapped addresses (hex) )</source>
-        <translation></translation>
+        <translation>Απεικονιζόμενες διευθύνσεις</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="393"/>
@@ -562,57 +562,57 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="393"/>
         <source>Kbytes mapped (dec)</source>
-        <translation></translation>
+        <translation>Απεικονιζόμενα Kbyte (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="394"/>
         <source>Perm</source>
-        <translation></translation>
+        <translation>Άδεια</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="394"/>
         <source>Permission flags</source>
-        <translation></translation>
+        <translation>Σημαίες άδειας</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="395"/>
         <source>Offset</source>
-        <translation type="unfinished">Décalage</translation>
+        <translation>Μετατόπιση</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="395"/>
         <source>File offset at start of mapping (hex)</source>
-        <translation></translation>
+        <translation>Μετατόπιση αρχείου και έναρξη απεικόνισης (hex)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Device</source>
-        <translation type="unfinished">Συσκευή</translation>
+        <translation>Συσκευή</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Major,Minor device numbers (dec)</source>
-        <translation></translation>
+        <translation>Μείζονες, ελάσσονες αριθμοί συσκευής (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Inode</source>
-        <translation></translation>
+        <translation>Κόμβος πληροφοριών</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Inode number (dec)</source>
-        <translation></translation>
+        <translation>Αριθμός κόμβου πληροφοριών (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>File</source>
-        <translation type="unfinished">Αρχείο</translation>
+        <translation>Αρχείο</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>File name (if available)</source>
-        <translation></translation>
+        <translation>Όνομα αρχείου (αν είναι διαθέσιμο)</translation>
     </message>
 </context>
 <context>
@@ -625,12 +625,12 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="273"/>
         <source>Root password</source>
-        <translation></translation>
+        <translation>Κωδικός πρόσβασης υπερχρήστη</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="280"/>
         <source>Cancel</source>
-        <translation type="unfinished">Ακύρωση</translation>
+        <translation>Ακύρωση</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="283"/>
@@ -643,7 +643,7 @@ exited with status </source>
     <message>
         <location filename="../prefs.cpp" line="150"/>
         <source>Preferences</source>
-        <translation type="unfinished">Προτιμήσεις</translation>
+        <translation>Προτιμήσεις</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="157"/>
