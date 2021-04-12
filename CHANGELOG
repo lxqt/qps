@@ -1,3 +1,8 @@
+2.3.0 / 2021-04-15
+==================
+  * Fixed a crash when Qps is started minimized to tray.
+  * Dropped the obsolete method QProcess::start().
+
 2.2.0 / 2020-11-01
 ==================
   * Avoided compiler warnings.
