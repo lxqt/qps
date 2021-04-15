@@ -653,32 +653,32 @@ exited with status </source>
     <message>
         <location filename="../prefs.cpp" line="191"/>
         <source>%CPU divided by</source>
-        <translation></translation>
+        <translation>%CPU διαχωρισμός ανά</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="198"/>
         <source>Total cpu: %1</source>
-        <translation></translation>
+        <translation>Ολική cpu: %1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="199"/>
         <source>Single cpu: 1</source>
-        <translation></translation>
+        <translation>Μια cpu: 1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="205"/>
         <source>default</source>
-        <translation type="unfinished">προκαθορισμένο</translation>
+        <translation>προκαθορισμένο</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="206"/>
         <source>for developer</source>
-        <translation></translation>
+        <translation>για τον προγραμματιστή</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="240"/>
         <source>Appearance</source>
-        <translation type="unfinished">Εμφάνιση</translation>
+        <translation>Εμφάνιση</translation>
     </message>
 </context>
 <context>
@@ -691,7 +691,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2876"/>
         <source>Process ID</source>
-        <translation type="unfinished">ID διεργασίας</translation>
+        <translation>Αναγνωριστικό διεργασίας</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2878"/>
@@ -701,7 +701,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2878"/>
         <source>Task group ID ( parent of threads )</source>
-        <translation></translation>
+        <translation>Αναγνωριστικό ομάδος διεργασιών (γονέας των νημάτων)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2880"/>
@@ -711,7 +711,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2880"/>
         <source>Parent process ID</source>
-        <translation></translation>
+        <translation>Αναγνωριστικό γονικής διεργασίας</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2882"/>
@@ -721,7 +721,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2882"/>
         <source>Process group ID</source>
-        <translation></translation>
+        <translation>Αναγνωριστικό ομάδος διεργασίας</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2884"/>
@@ -731,7 +731,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2884"/>
         <source>Session ID</source>
-        <translation></translation>
+        <translation>Αναγνωριστικό συνεδρίας</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2886"/>
@@ -751,37 +751,37 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2888"/>
         <source>Process group ID of tty owner</source>
-        <translation></translation>
+        <translation>Αναγνωριστικό ομάδος της διεργασίας του ιδιοκτήτη tty</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2890"/>
         <source>USER</source>
-        <translation type="unfinished">Χρήστης:</translation>
+        <translation>ΧΡΗΣΤΗΣ</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2890"/>
         <source>Owner (*=suid root, +=suid a user)</source>
-        <translation></translation>
+        <translation>Ιδιοκτήτης (*=suid root, +=suid χρήστη)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2892"/>
         <source>GROUP</source>
-        <translation type="unfinished">Ομάδα</translation>
+        <translation>ΟΜΑΔΑ</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2892"/>
         <source>Group name (*=sgid other)</source>
-        <translation></translation>
+        <translation>Όνομα ομάδος (*=sgid άλλο)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2894"/>
         <source>UID</source>
-        <translation type="unfinished">UID</translation>
+        <translation>UID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2894"/>
         <source>Real user ID</source>
-        <translation></translation>
+        <translation>Αναγνωριστικό πραγματικού χρήστη</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2896"/>
@@ -791,7 +791,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2896"/>
         <source>Effective user ID</source>
-        <translation></translation>
+        <translation>Αναγνωριστικό ενεργού χρήστη</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2898"/>
@@ -801,7 +801,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2898"/>
         <source>Saved user ID (Posix)</source>
-        <translation></translation>
+        <translation>Αναγνωριστικό αποθηκευμένου χρήστη (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2900"/>
@@ -811,17 +811,17 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2900"/>
         <source>File system user ID</source>
-        <translation></translation>
+        <translation>Αναγνωριστικό χρήστη αρχείου συστήματος</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2902"/>
         <source>GID</source>
-        <translation type="unfinished">GID</translation>
+        <translation>GID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2902"/>
         <source>Real group ID</source>
-        <translation></translation>
+        <translation>Αναγνωριστικό πραγματικής ομάδος</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2904"/>
@@ -831,7 +831,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2904"/>
         <source>Effective group ID</source>
-        <translation></translation>
+        <translation>Αναγνωριστικό ενεργής ομάδος</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2906"/>
@@ -841,7 +841,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2906"/>
         <source>Saved group ID (Posix)</source>
-        <translation></translation>
+        <translation>Αναγνωριστικό αποθηκευμένης ομάδος (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2908"/>
@@ -851,7 +851,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2908"/>
         <source>File system group ID</source>
-        <translation></translation>
+        <translation>Αναγνωριστικό ομάδος αρχείου συστήματος</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2910"/>
@@ -861,17 +861,17 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2910"/>
         <source>Dynamic priority</source>
-        <translation></translation>
+        <translation>Δυναμική προτεραιότητα</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2912"/>
         <source>NICE</source>
-        <translation>&amp;Προτεραιότητα</translation>
+        <translation>NICE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2912"/>
         <source>Scheduling favour (higher -&gt; less cpu time)</source>
-        <translation></translation>
+        <translation>Εύνοια χρονοπρογραμματισμός (υψηλότερη -&gt; λιγότερος χρόνος επεξεργασίας) </translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2914"/>
@@ -881,7 +881,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2914"/>
         <source>Number of tasks(threads) in task group</source>
-        <translation></translation>
+        <translation>Αριθμός διεργασιών (νήματα) στην ομάδα εργασίας</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2916"/>
@@ -891,7 +891,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2916"/>
         <source>Scheduling policy</source>
-        <translation></translation>
+        <translation>Πολιτική χρονοπρογραμματισμού</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2918"/>
@@ -901,7 +901,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2918"/>
         <source>Realtime priority (0-99, more is better)</source>
-        <translation></translation>
+        <translation>Προτεραιότητα πραγματικού χρόνου (0-99, το περισσότερο είναι καλύτερο)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2920"/>
@@ -911,7 +911,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2920"/>
         <source>Time slice in milliseconds</source>
-        <translation></translation>
+        <translation>Τεμαχισμός χρόνου σε χιλιοστά δευτερολέπτου</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2922"/>
@@ -921,7 +921,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2922"/>
         <source>Percentage average sleep time (-1 -&gt; N/A)</source>
-        <translation></translation>
+        <translation>Μέσο ποσοστό χρόνου κοιμήσεως (-1 -&gt; Μ/Δ) </translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2924"/>
@@ -931,7 +931,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2924"/>
         <source>Affinity CPU mask (0 -&gt; API not supported)</source>
-        <translation></translation>
+        <translation>Μάσκα συνάφειας CPU (0 -&gt; μη υποστηριζόμενο API)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2926"/>
@@ -941,7 +941,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2926"/>
         <source>Number of major faults (disk access)</source>
-        <translation></translation>
+        <translation>Αριθμός μειζόνων σφαλμάτων (προσπέλαση δίσκου)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2928"/>
@@ -951,7 +951,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2928"/>
         <source>Number of minor faults (no disk access)</source>
-        <translation></translation>
+        <translation>Αριθμός ελασσόνων σφαλμάτων (προσπέλαση δίσκου)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2931"/>
@@ -1106,7 +1106,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2961"/>
         <source>%CPU</source>
-        <translation>Επεξεργαστής</translation>
+        <translation>%CPU</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2961"/>
@@ -1126,7 +1126,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2965"/>
         <source>START</source>
-        <translation></translation>
+        <translation>ΕΝΑΡΞΗ</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2965"/>
@@ -1136,7 +1136,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2967"/>
         <source>TIME</source>
-        <translation type="unfinished">Ώρα</translation>
+        <translation>ΧΡΟΝΟΣ</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2967"/>
@@ -1146,7 +1146,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2969"/>
         <source>CPU</source>
-        <translation type="unfinished">Επεξεργαστής</translation>
+        <translation>CPU</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2969"/>
@@ -1176,7 +1176,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2976"/>
         <source>ROOT</source>
-        <translation type="unfinished">Κατάτμηση root</translation>
+        <translation>ROOT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2976"/>
