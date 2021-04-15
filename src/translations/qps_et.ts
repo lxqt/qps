@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="el">
+<TS version="2.1" language="et">
 <context>
     <name>AllFields</name>
     <message>
         <location filename="../details.cpp" line="653"/>
         <source>Field</source>
-        <translation>Πεδίο</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="653"/>
         <source>Field name</source>
-        <translation>Όνομα πεδίου</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="654"/>
         <source>Description</source>
-        <translation>Περιγραφή</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="654"/>
         <source>Field description</source>
-        <translation>Περιγραφή πεδίου</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="655"/>
         <source>Value</source>
-        <translation>Τιμή</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="655"/>
         <source>Field value</source>
-        <translation>Τιμή πεδίου</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -39,52 +39,52 @@
     <message>
         <location filename="../prefs.cpp" line="59"/>
         <source>Exit on closing</source>
-        <translation>Έξοδος κατά το κλείσιμο</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="60"/>
         <source>Remember Position</source>
-        <translation>Απομνημόνευση της θέσης</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="68"/>
         <source>Host Name Lookup</source>
-        <translation>Αναζήτηση του ονόματος υπολογιστή</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="69"/>
         <source>Service Name Lookup</source>
-        <translation>Αναζήτηση του ονόματος υπηρεσίας</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="75"/>
         <source>Disclosure Triangles</source>
-        <translation>Τρίγωνα αποκάλυψης</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="76"/>
         <source>Branch Lines</source>
-        <translation>Γραμμές κλάδου</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="82"/>
         <source>Auto Save Settings on Exit</source>
-        <translation>Αυτόματη αποθήκευση τροποποιήσεων κατά την έξοδο</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="83"/>
         <source>Selection: Copy PIDs to Clipboard</source>
-        <translation>Επιλογή: Αντιγραφή των PID στο πρόχειρο</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="85"/>
         <source>Normalize NICE</source>
-        <translation>Εξομάλυνση NICE</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="86"/>
         <source>Use pmap for Map Names</source>
-        <translation>Χρήση του pmap για το όνομα χαρτών</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -92,7 +92,7 @@
     <message>
         <location filename="../prefs.cpp" line="106"/>
         <source>General</source>
-        <translation>Γενικά</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -102,9 +102,7 @@
         <source>The command:
 
 </source>
-        <translation>Η εντολή:
-
-</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../command.cpp" line="212"/>
@@ -113,21 +111,17 @@
 failed with the error:
 
 </source>
-        <translation>
-
-απέτυχε με το σφάλμα:
-
-</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../command.cpp" line="215"/>
         <source>Too many processes</source>
-        <translation>Πολυάριθμες διεργασίες</translation>
+        <translation>Liiga palju protsesse</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="218"/>
         <source>Unknown error</source>
-        <translation>Άγνωστο σφάλμα</translation>
+        <translation>Teadmata viga</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="228"/>
@@ -135,24 +129,19 @@ failed with the error:
 
 could not be executed because it was not found,
 or you did not have execute permission.</source>
-        <translation>
-
-δεν ήταν δυνατή η εκτέλεσή του διότι είτε δεν βρέθηκε,
-είτε δεν διαθέτετε άδεια εκτέλεσης.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../command.cpp" line="233"/>
         <source>
 
 exited with status </source>
-        <translation>
-
-τερματίστηκε με την κατάσταση </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../command.cpp" line="237"/>
         <source>Command Failed</source>
-        <translation>Η εντολή απέτυχε</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -160,22 +149,22 @@ exited with status </source>
     <message>
         <location filename="../commanddialog.cpp" line="47"/>
         <source>Edit Commands 0.1 alpha</source>
-        <translation>Επεξεργασία εντολών 0.1 alpha</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="63"/>
         <source>Name:</source>
-        <translation>Όνομα:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="79"/>
         <source>Popup</source>
-        <translation>Ειδοποίηση</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="84"/>
         <source>Command Line:</source>
-        <translation>Γραμμή εντολών:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="95"/>
@@ -187,35 +176,28 @@ exited with status </source>
 %%	%
 
 </source>
-        <translation>Υποκατάστατα:
-%p	PID
-%c	ΕΝΤΟΛΗ
-%C	ΓΡΑΜΜΗ ΕΝΤΟΛΩΝ
-%u	ΧΡΗΣΤΗΣ
-%%	%
-
-</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="109"/>
         <source>New...</source>
-        <translation>Νέο...</translation>
+        <translation>Uus...</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="111"/>
         <location filename="../commanddialog.cpp" line="229"/>
         <source>Add...</source>
-        <translation>Προσθήκη...</translation>
+        <translation>Lisa...</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="113"/>
         <source>Delete</source>
-        <translation>Διαγραφή</translation>
+        <translation>Kustuta</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="115"/>
         <source>Close</source>
-        <translation>Κλείσιμο</translation>
+        <translation>Sulge</translation>
     </message>
 </context>
 <context>
@@ -223,42 +205,42 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="817"/>
         <source>Linear</source>
-        <translation>Γραμμική</translation>
+        <translation>Lineaarne</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="820"/>
         <source>Tree</source>
-        <translation>Δέντρο</translation>
+        <translation>Protsesside puu</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="829"/>
         <source>Thread</source>
-        <translation>Νήμα</translation>
+        <translation>Lõimed</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="836"/>
         <source>All Processes</source>
-        <translation>Όλες οι διεργασίες</translation>
+        <translation>Kõik protsessid</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="837"/>
         <source>Your Processes</source>
-        <translation>Οι διεργασίες σας</translation>
+        <translation>Sinu protsessid</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="838"/>
         <source>Non-Root Processes</source>
-        <translation>Διεργασίες μη root</translation>
+        <translation>Mitte-juurkasutaja protsessid</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="839"/>
         <source>Running Processes</source>
-        <translation>Τρέχουσες διεργασίες</translation>
+        <translation>Töötavad protsessid</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="855"/>
         <source>Pause (Ctrl+Space)</source>
-        <translation>Παύση (Ctrl+Διάστημα)</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -266,32 +248,32 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="36"/>
         <source>Process %1 ( %2 ) - details</source>
-        <translation>Διεργασία %1 ( %2 ) - λεπτομέρειες</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="45"/>
         <source>Files</source>
-        <translation>Αρχεία</translation>
+        <translation>Failid</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="54"/>
         <source>Sockets</source>
-        <translation>Υποδοχές</translation>
+        <translation>Soklid</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="59"/>
         <source>Memory Maps</source>
-        <translation>Χάρτες μνήμης</translation>
+        <translation>Mälu jaotumine</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="61"/>
         <source>Environment</source>
-        <translation>Περιβάλλον</translation>
+        <translation>Keskkond</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="62"/>
         <source>All Fields</source>
-        <translation>Όλα τα πεδία</translation>
+        <translation>Kõik väljad</translation>
     </message>
 </context>
 <context>
@@ -299,22 +281,22 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="605"/>
         <source>Variable</source>
-        <translation>Μεταβλητή</translation>
+        <translation>Muutuja</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="605"/>
         <source>Variable name</source>
-        <translation>Όνομα μεταβλητής</translation>
+        <translation>Muutuja nimi</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="606"/>
         <source>Value</source>
-        <translation>Τιμή</translation>
+        <translation>Väärtus</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="606"/>
         <source>Variable value</source>
-        <translation>Τιμή μεταβλητής</translation>
+        <translation>Muutuja väärtus</translation>
     </message>
 </context>
 <context>
@@ -322,89 +304,88 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="23"/>
         <source>Watchdog 0.1 alpha</source>
-        <translation>Επιτηρητής 0.1 alpha</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="117"/>
         <source>Eventcat</source>
-        <translation>Συμβάντα</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="162"/>
         <source>Select condition</source>
-        <translation>Επιλογή συνθήκης</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="170"/>
         <source>labelDescrition</source>
-        <translation>Περιγραφή ετικέτας</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="193"/>
         <source>Enable</source>
-        <translation>Ενεργοποίηση</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="219"/>
         <source>process name</source>
-        <translation>όνομα διεργασίας</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="229"/>
         <source>cpu</source>
-        <translation>επεξεργαστής</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="248"/>
         <source>%</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="280"/>
         <source>include already running process</source>
-        <translation>συμπερίληψη των τρεχουσών διεργασιών</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="309"/>
         <source>run command</source>
-        <translation>εκτέλεση εντολής</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="342"/>
         <source>show Message</source>
-        <translation>εμφάνιση μηνύματος</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="367"/>
         <source>Help (Not yet. just concept)</source>
-        <translation>Βοήθεια (Όχι ακόμα, απλώς η έννοια)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="394"/>
         <source>%p : pid
 %c : command</source>
-        <translation>%p : pid
-%c : εντολή</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="425"/>
         <source>New</source>
-        <translation>Νέο</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="432"/>
         <source>Add</source>
-        <translation>Προσθήκη</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="439"/>
         <source>Delete</source>
-        <translation>Διαγραφή</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="446"/>
         <source>Close</source>
-        <translation>Κλείσιμο</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -412,42 +393,42 @@ exited with status </source>
     <message>
         <location filename="../message.ui" line="13"/>
         <source>Qps</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../message.ui" line="27"/>
         <source>Ok</source>
-        <translation>Εντάξει</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="42"/>
         <source>Qps Watchdog</source>
-        <translation>Επιτηρητής Qps</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="94"/>
         <source>%1 exit with code %2</source>
-        <translation>Το %1 τερματίστηκε με τον κωδικό %2</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="96"/>
         <source>Close</source>
-        <translation>Κλείσιμο</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="102"/>
         <source>%1 [running]</source>
-        <translation>%1 [εκτελείται]</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="103"/>
         <source>terminate command</source>
-        <translation>εντολή τερματισμού</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="112"/>
         <source>Error %1 : [%2] Maybe command not found</source>
-        <translation>Σφάλμα %1 : [%2] Ίσως η εντολή δεν βρέθηκε</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -455,12 +436,12 @@ exited with status </source>
     <message>
         <location filename="../fieldsel.cpp" line="34"/>
         <source>Select Custom Fields </source>
-        <translation>Επιλογή προσαρμοσμένων πεδίων </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../fieldsel.cpp" line="75"/>
         <source>Close</source>
-        <translation>Κλείσιμο</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -468,32 +449,32 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="521"/>
         <source>Fd</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="521"/>
         <source>File descriptor</source>
-        <translation>Περιγραφέας αρχείου</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="523"/>
         <source>Mode</source>
-        <translation>Λειτουργία</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="523"/>
         <source>Open mode</source>
-        <translation>Ανοιχτή λειτουργία</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="525"/>
         <source>Name</source>
-        <translation>Όνομα</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="525"/>
         <source>File name (if available)</source>
-        <translation>Όνομα αρχείου (αν είναι διαθέσιμο)</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -501,32 +482,32 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="43"/>
         <source>Change Update Period</source>
-        <translation>Αλλαγή περιόδου ενημέρωσης</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="49"/>
         <source>New Update Period</source>
-        <translation>Νέα περίοδος ενημέρωσης</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="85"/>
         <source>Cancel</source>
-        <translation>Ακύρωση</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="87"/>
         <source>OK</source>
-        <translation>Εντάξει</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="121"/>
         <source>No UPDATE</source>
-        <translation>Χωρίς ενημέρωση</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="139"/>
         <source>Invalid value</source>
-        <translation>Μη έγκυρη τιμή</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -534,12 +515,12 @@ exited with status </source>
     <message>
         <location filename="../listmodel.cpp" line="66"/>
         <source>Event Category</source>
-        <translation>Κατηγορία συμβάντος</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../listmodel.cpp" line="68"/>
         <source>Enable</source>
-        <translation>Ενεργοποίηση</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -547,72 +528,72 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="392"/>
         <source>Address Range</source>
-        <translation>Εύρος διεύθυνσης</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="392"/>
         <source>Mapped addresses (hex) )</source>
-        <translation>Απεικονιζόμενες διευθύνσεις</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="393"/>
         <source>Size</source>
-        <translation>Μέγεθος</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="393"/>
         <source>Kbytes mapped (dec)</source>
-        <translation>Απεικονιζόμενα Kbyte (dec)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="394"/>
         <source>Perm</source>
-        <translation>Άδεια</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="394"/>
         <source>Permission flags</source>
-        <translation>Σημαίες άδειας</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="395"/>
         <source>Offset</source>
-        <translation>Μετατόπιση</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="395"/>
         <source>File offset at start of mapping (hex)</source>
-        <translation>Μετατόπιση αρχείου και έναρξη απεικόνισης (hex)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Device</source>
-        <translation>Συσκευή</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Major,Minor device numbers (dec)</source>
-        <translation>Μείζονες, ελάσσονες αριθμοί συσκευής (dec)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Inode</source>
-        <translation>Κόμβος πληροφοριών</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Inode number (dec)</source>
-        <translation>Αριθμός κόμβου πληροφοριών (dec)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>File</source>
-        <translation>Αρχείο</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>File name (if available)</source>
-        <translation>Όνομα αρχείου (αν είναι διαθέσιμο)</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -620,22 +601,22 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="264"/>
         <source>Permission</source>
-        <translation>Άδεια</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="273"/>
         <source>Root password</source>
-        <translation>Κωδικός πρόσβασης υπερχρήστη</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="280"/>
         <source>Cancel</source>
-        <translation>Ακύρωση</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="283"/>
         <source>OK</source>
-        <translation>Εντάξει</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -643,42 +624,42 @@ exited with status </source>
     <message>
         <location filename="../prefs.cpp" line="150"/>
         <source>Preferences</source>
-        <translation>Προτιμήσεις</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="157"/>
         <source>Setting</source>
-        <translation>Ρύθμιση</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="191"/>
         <source>%CPU divided by</source>
-        <translation>%CPU διαχωρισμός ανά</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="198"/>
         <source>Total cpu: %1</source>
-        <translation>Ολική cpu: %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="199"/>
         <source>Single cpu: 1</source>
-        <translation>Μια cpu: 1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="205"/>
         <source>default</source>
-        <translation>προκαθορισμένο</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="206"/>
         <source>for developer</source>
-        <translation>για τον προγραμματιστή</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="240"/>
         <source>Appearance</source>
-        <translation>Εμφάνιση</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -686,512 +667,512 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2876"/>
         <source>PID</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2876"/>
         <source>Process ID</source>
-        <translation>Αναγνωριστικό διεργασίας</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2878"/>
         <source>TGID</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2878"/>
         <source>Task group ID ( parent of threads )</source>
-        <translation>Αναγνωριστικό ομάδος διεργασιών (γονέας των νημάτων)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2880"/>
         <source>PPID</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2880"/>
         <source>Parent process ID</source>
-        <translation>Αναγνωριστικό γονικής διεργασίας</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2882"/>
         <source>PGID</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2882"/>
         <source>Process group ID</source>
-        <translation>Αναγνωριστικό ομάδος διεργασίας</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2884"/>
         <source>SID</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2884"/>
         <source>Session ID</source>
-        <translation>Αναγνωριστικό συνεδρίας</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2886"/>
         <source>TTY</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2886"/>
         <source>Terminal</source>
-        <translation>Τερματικό</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2888"/>
         <source>TPGID</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2888"/>
         <source>Process group ID of tty owner</source>
-        <translation>Αναγνωριστικό ομάδος της διεργασίας του ιδιοκτήτη tty</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2890"/>
         <source>USER</source>
-        <translation>ΧΡΗΣΤΗΣ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2890"/>
         <source>Owner (*=suid root, +=suid a user)</source>
-        <translation>Ιδιοκτήτης (*=suid root, +=suid χρήστη)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2892"/>
         <source>GROUP</source>
-        <translation>ΟΜΑΔΑ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2892"/>
         <source>Group name (*=sgid other)</source>
-        <translation>Όνομα ομάδος (*=sgid άλλο)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2894"/>
         <source>UID</source>
-        <translation>UID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2894"/>
         <source>Real user ID</source>
-        <translation>Αναγνωριστικό πραγματικού χρήστη</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2896"/>
         <source>EUID</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2896"/>
         <source>Effective user ID</source>
-        <translation>Αναγνωριστικό ενεργού χρήστη</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2898"/>
         <source>SUID</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2898"/>
         <source>Saved user ID (Posix)</source>
-        <translation>Αναγνωριστικό αποθηκευμένου χρήστη (Posix)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2900"/>
         <source>FSUID</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2900"/>
         <source>File system user ID</source>
-        <translation>Αναγνωριστικό χρήστη αρχείου συστήματος</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2902"/>
         <source>GID</source>
-        <translation>GID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2902"/>
         <source>Real group ID</source>
-        <translation>Αναγνωριστικό πραγματικής ομάδος</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2904"/>
         <source>EGID</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2904"/>
         <source>Effective group ID</source>
-        <translation>Αναγνωριστικό ενεργής ομάδος</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2906"/>
         <source>SGID</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2906"/>
         <source>Saved group ID (Posix)</source>
-        <translation>Αναγνωριστικό αποθηκευμένης ομάδος (Posix)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2908"/>
         <source>FSGID</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2908"/>
         <source>File system group ID</source>
-        <translation>Αναγνωριστικό ομάδος αρχείου συστήματος</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2910"/>
         <source>PRI</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2910"/>
         <source>Dynamic priority</source>
-        <translation>Δυναμική προτεραιότητα</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2912"/>
         <source>NICE</source>
-        <translation>NICE</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2912"/>
         <source>Scheduling favour (higher -&gt; less cpu time)</source>
-        <translation>Εύνοια χρονοπρογραμματισμός (υψηλότερη -&gt; λιγότερος χρόνος επεξεργασίας) </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2914"/>
         <source>NLWP</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2914"/>
         <source>Number of tasks(threads) in task group</source>
-        <translation>Αριθμός διεργασιών (νήματα) στην ομάδα εργασίας</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2916"/>
         <source>PLCY</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2916"/>
         <source>Scheduling policy</source>
-        <translation>Πολιτική χρονοπρογραμματισμού</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2918"/>
         <source>RPRI</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2918"/>
         <source>Realtime priority (0-99, more is better)</source>
-        <translation>Προτεραιότητα πραγματικού χρόνου (0-99, το περισσότερο είναι καλύτερο)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2920"/>
         <source>TMS</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2920"/>
         <source>Time slice in milliseconds</source>
-        <translation>Τεμαχισμός χρόνου σε χιλιοστά δευτερολέπτου</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2922"/>
         <source>%SAVG</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2922"/>
         <source>Percentage average sleep time (-1 -&gt; N/A)</source>
-        <translation>Μέσο ποσοστό χρόνου κοιμήσεως (-1 -&gt; Μ/Δ) </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2924"/>
         <source>CPUSET</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2924"/>
         <source>Affinity CPU mask (0 -&gt; API not supported)</source>
-        <translation>Μάσκα συνάφειας CPU (0 -&gt; μη υποστηριζόμενο API)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2926"/>
         <source>MAJFLT</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2926"/>
         <source>Number of major faults (disk access)</source>
-        <translation>Αριθμός μειζόνων σφαλμάτων (προσπέλαση δίσκου)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2928"/>
         <source>MINFLT</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2928"/>
         <source>Number of minor faults (no disk access)</source>
-        <translation>Αριθμός ελασσόνων σφαλμάτων (προσπέλαση δίσκου)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2931"/>
         <source>VSIZE</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2931"/>
         <source>Virtual image size of process</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2933"/>
         <source>RSS</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2933"/>
         <source>Resident set size</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2935"/>
         <source>MEM</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2935"/>
         <source>memory usage (RSS-SHARE)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2937"/>
         <source>TRS</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2937"/>
         <source>Text(code) resident set size</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2939"/>
         <source>DRS</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2939"/>
         <source>Data resident set size(malloc+global variable)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2941"/>
         <source>STACK</source>
-        <translation>Στοίβα</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2941"/>
         <source>Stack size</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2943"/>
         <source>SHARE</source>
-        <translation>Κοινοποίηση</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2943"/>
         <source>Shared memory with other libs</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2945"/>
         <source>SWAP</source>
-        <translation>Swap</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2945"/>
         <source>Kbytes on swap device</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2947"/>
         <source>IO_R</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2947"/>
         <source>io read (file)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2949"/>
         <source>IO_W</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2949"/>
         <source>io write (file)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2951"/>
         <source>DT</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2951"/>
         <source>Number of dirty (non-written) pages</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2953"/>
         <source>STAT</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2953"/>
         <source>State of the process </source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2955"/>
         <source>FLAGS</source>
-        <translation>Σημαίες</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2955"/>
         <source>Process flags (hex)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2957"/>
         <source>WCHAN</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2957"/>
         <source>Kernel function where process is sleeping</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2959"/>
         <source>%WCPU</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2959"/>
         <source>Weighted percentage of CPU (30 s average)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2961"/>
         <source>%CPU</source>
-        <translation>%CPU</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2961"/>
         <source>Percentage of CPU used since last update</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2963"/>
         <source>%MEM</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2963"/>
         <source>Percentage of memory used (RSS/total mem)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2965"/>
         <source>START</source>
-        <translation>ΕΝΑΡΞΗ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2965"/>
         <source>Time process started</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2967"/>
         <source>TIME</source>
-        <translation>ΧΡΟΝΟΣ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2967"/>
         <source>Total CPU time used since start</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2969"/>
         <source>CPU</source>
-        <translation>CPU</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2969"/>
         <source>CPU the process is executing on (SMP system)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2971"/>
         <source>the process name</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2971"/>
         <source>Process Name</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2975"/>
         <source>CWD</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2975"/>
         <source>Current working directory</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2976"/>
         <source>ROOT</source>
-        <translation>ROOT</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2976"/>
         <source>Root directory of process</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2979"/>
         <source>COMMAND_LINE</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2979"/>
         <source>Command line that started the process</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1199,17 +1180,17 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1846"/>
         <source>Show</source>
-        <translation type="unfinished">Εμφάνιση</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1849"/>
         <source>Hide</source>
-        <translation>Απόκρυψη</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1853"/>
         <source>Quit</source>
-        <translation type="unfinished">Έξοδος</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1217,253 +1198,253 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="198"/>
         <source>header_popup</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="199"/>
         <source>Remove Field</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="200"/>
         <source>Add Field</source>
-        <translation>Προσθήκη ενός πεδίου</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="207"/>
         <source>View</source>
-        <translation type="unfinished">Προβολή</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="208"/>
         <source>Process</source>
-        <translation>Διεργασία</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="209"/>
         <source>Log</source>
-        <translation type="unfinished">Καταγραφή</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="214"/>
         <source>Fields</source>
-        <translation>Πεδία</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="215"/>
         <source>Custom Fields</source>
-        <translation>Προσαρμοσμένα πεδία</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="217"/>
         <source>Basic Fields </source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="219"/>
         <source>Jobs Fields </source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="221"/>
         <source>Memory Fields </source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="224"/>
         <source>Scheduling Fields </source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="241"/>
         <source>Select Custom Fields...</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="203"/>
         <source>Command</source>
-        <translation>Εντολή</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="255"/>
         <source>Options</source>
-        <translation>Επιλογές</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="256"/>
         <source>Update Period...</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="265"/>
         <source>Show Status bar</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="274"/>
         <source>Preferences...</source>
-        <translation>Προτιμήσεις...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="280"/>
         <source>Help</source>
-        <translation type="unfinished">Βοήθεια</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="282"/>
         <location filename="../qps.cpp" line="1894"/>
         <source>About</source>
-        <translation type="unfinished">Σχετικά</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="370"/>
         <source>Detail</source>
-        <translation type="unfinished">Détail</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="411"/>
         <source>test</source>
-        <translation type="unfinished">&lt;emphasis role=&quot;bold&quot;&gt;Δοκιμή:&lt;/emphasis&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="412"/>
         <source>Copied to Clipboard</source>
-        <translation type="unfinished">Αντιγράφηκε στο πρόχειρο</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="464"/>
         <source>context popup</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="465"/>
         <source>Renice...</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="466"/>
         <source>Scheduling...</source>
-        <translation>Προγραμματισμός</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="468"/>
         <source>Terminate</source>
-        <translation>Τερματισμός</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="470"/>
         <source>Hangup</source>
-        <translation>Αποσύνδεση</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="471"/>
         <source>Kill</source>
-        <translation>kill</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="472"/>
         <source>Stop</source>
-        <translation type="unfinished">Διακοπή</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="474"/>
         <source>Continue</source>
-        <translation type="unfinished">Συνέχεια</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="478"/>
         <source>SIGINT (interrupt)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="480"/>
         <source>SIGCONT (continue)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="482"/>
         <source>SIGSTOP (stop)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="484"/>
         <source>SIGQUIT (quit)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="486"/>
         <source>SIGILL (illegal instruction)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="488"/>
         <source>SIGABRT (abort)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="490"/>
         <source>SIGFPE (floating point exception)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="492"/>
         <source>SIGSEGV (segmentation violation)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="494"/>
         <source>SIGPIPE (broken pipe)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="496"/>
         <source>SIGALRM (timer signal)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="498"/>
         <source>SIGUSR1 (user-defined 1)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="500"/>
         <source>SIGUSR2 (user-defined 2)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="502"/>
         <source>SIGCHLD (child death)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="504"/>
         <source>SIGTSTP (stop from tty)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="506"/>
         <source>SIGTTIN (tty input)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="508"/>
         <source>SIGTTOU (tty output)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="515"/>
         <source>View Details</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="781"/>
         <source>Show File Path</source>
-        <translation>Εμφάνιση της διαδρομής αρχείου</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="787"/>
         <source>Show Graph</source>
-        <translation>Εμφάνιση γραφήματος</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>
@@ -1473,17 +1454,17 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="998"/>
         <source>WatchDog</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1000"/>
         <source>Edit Commands...</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1017"/>
         <source>Quit</source>
-        <translation type="unfinished">Έξοδος</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1336"/>
@@ -1493,37 +1474,37 @@ exited with status </source>
         <location filename="../qps.cpp" line="1429"/>
         <location filename="../qps.cpp" line="1524"/>
         <source>Permission denied</source>
-        <translation type="unfinished">Άρνηση αδείας</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1337"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1368"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1375"/>
         <source>Only the super-user may lower the nice value of a process.</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1396"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1430"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1491"/>
         <source>Do you really want to terminate the selected process(es)?</source>
-        <translation>Επιθυμείτε πραγματικά τον τερματισμό των επιλεγμένων διεργασιών;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1493"/>
@@ -1533,22 +1514,22 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1495"/>
         <source>Do you really want to kill the selected process(es)?</source>
-        <translation>Επιθυμείτε πραγματικά να σκοτώσετε τις επιλεγμένες διεργασίες;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1504"/>
         <source>Question</source>
-        <translation>Ερώτηση</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1525"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1910"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
-        <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1912"/>
@@ -1558,12 +1539,12 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1932"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1970"/>
         <source>&lt;H1&gt;QPS Help&lt;/H1&gt;Updated: May 24 2005&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Quit      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Update      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Space , Enter       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Terminate &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Kill &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1571,52 +1552,52 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="292"/>
         <source>Change scheduling</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="296"/>
         <source>Scheduling Policy</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="298"/>
         <source>SCHED_OTHER (time-sharing)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="299"/>
         <source>SCHED_FIFO (real-time)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="300"/>
         <source>SCHED_RR (real-time)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="314"/>
         <source>OK</source>
-        <translation>Εντάξει</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="316"/>
         <source>Cancel</source>
-        <translation type="unfinished">Ακύρωση</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="346"/>
         <source>Priority (1-99):</source>
-        <translation>Προτεραιότητα</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="379"/>
         <source>Invalid Input</source>
-        <translation>Μη έγκυρη εισαγωγή</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="380"/>
         <source>The priority must be in the range 1..99</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1624,12 +1605,12 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="765"/>
         <source>PID, COMMAND, USER...</source>
-        <translation>PID, ΕΝΤΟΛΗ, ΧΡΗΣΤΗΣ...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="766"/>
         <source>Filter</source>
-        <translation>Φίλτρο</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1637,22 +1618,22 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="179"/>
         <source>Renice Process</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="185"/>
         <source>New nice value:</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="225"/>
         <source>Cancel</source>
-        <translation type="unfinished">Ακύρωση</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="229"/>
         <source>OK</source>
-        <translation>Εντάξει</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1660,88 +1641,88 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="147"/>
         <source>Fd</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="147"/>
         <source>File descriptor</source>
-        <translation type="unfinished">περιγραφέας αρχείου, περιγραφέας αρχειοφακέλλου</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="148"/>
         <source>Proto</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="148"/>
         <source>Protocol (TCP or UDP)</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="149"/>
         <source>Recv-Q</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="149"/>
         <source>Bytes in receive queue</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="150"/>
         <source>Send-Q</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="150"/>
         <source>Bytes in send queue</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>Local Addr</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>Local IP address</source>
-        <translation>Τοπική διεύθυνση IP</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
         <location filename="../details.cpp" line="154"/>
         <source>Port</source>
-        <translation type="unfinished">Θύρα</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
         <source>Local port</source>
-        <translation>Τοπική θύρα</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Remote Addr</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Remote IP address</source>
-        <translation>Απομακρυσμένη διεύθυνση IP</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="154"/>
         <source>Remote port</source>
-        <translation>Απομακρυσμένη θύρα</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>State</source>
-        <translation type="unfinished">Κατάσταση</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>Connection state</source>
-        <translation type="unfinished">Κατάσταση της σύνδεσης</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1749,7 +1730,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="807"/>
         <source>Process count: %1</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1758,7 +1739,7 @@ exited with status </source>
         <location filename="../misc.cpp" line="347"/>
         <source> This is unstable Alpha feature
  You maybe see a SEGFAULT...</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1766,7 +1747,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="426"/>
         <source>this is Tframe widget</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1774,7 +1755,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="615"/>
         <source>title</source>
-        <translation type="unfinished">Τίτλος</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1782,17 +1763,17 @@ exited with status </source>
     <message>
         <location filename="../watchdogdialog.cpp" line="193"/>
         <source>if process start</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdogdialog.cpp" line="194"/>
         <source>if process finish</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdogdialog.cpp" line="217"/>
         <source>select condition</source>
-        <translation></translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
