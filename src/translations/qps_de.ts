@@ -233,7 +233,7 @@ endete mit Status </translation>
     <message>
         <location filename="../misc.cpp" line="829"/>
         <source>Thread</source>
-        <translation type="unfinished"></translation>
+        <translation>Ausführungsstrang</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="836"/>
@@ -1468,7 +1468,7 @@ endete mit Status </translation>
     <message>
         <location filename="../qps.cpp" line="804"/>
         <source>Include Child Times</source>
-        <translation type="unfinished">Kind-Zeiten einbeziehen</translation>
+        <translation>Laufzeit der Kindprozesse einbeziehen</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="998"/>
