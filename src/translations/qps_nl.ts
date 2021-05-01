@@ -135,19 +135,24 @@ mislukt met de volgende foutmelding:
 
 could not be executed because it was not found,
 or you did not have execute permission.</source>
-        <translation type="unfinished"></translation>
+        <translation>
+
+kan niet worden uitgevoerd omdat het niet aangetroffen is
+of omdat u niet beschikt over uitvoerrechten.</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="233"/>
         <source>
 
 exited with status </source>
-        <translation type="unfinished"></translation>
+        <translation>
+
+afgesloten met status </translation>
     </message>
     <message>
         <location filename="../command.cpp" line="237"/>
         <source>Command Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Opdracht mislukt</translation>
     </message>
 </context>
 <context>
@@ -155,22 +160,22 @@ exited with status </source>
     <message>
         <location filename="../commanddialog.cpp" line="47"/>
         <source>Edit Commands 0.1 alpha</source>
-        <translation type="unfinished"></translation>
+        <translation>Opdrachten bewerken (0.1 alfa)</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="63"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Naam:</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="79"/>
         <source>Popup</source>
-        <translation type="unfinished"></translation>
+        <translation>Pop-up</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="84"/>
         <source>Command Line:</source>
-        <translation type="unfinished"></translation>
+        <translation>Opdrachtregel:</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="95"/>
@@ -182,28 +187,35 @@ exited with status </source>
 %%	%
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Vervangingen:
+%p	PID
+%c	OPDRACHT
+%C	OPDRACHTREGEL
+%u	GEBRUIKER
+%%	%
+
+</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="109"/>
         <source>New...</source>
-        <translation type="unfinished"></translation>
+        <translation>Nieuw…</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="111"/>
         <location filename="../commanddialog.cpp" line="229"/>
         <source>Add...</source>
-        <translation type="unfinished"></translation>
+        <translation>Toevoegen…</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="113"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Verwijderen</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="115"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Sluiten</translation>
     </message>
 </context>
 <context>
@@ -211,42 +223,42 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="817"/>
         <source>Linear</source>
-        <translation type="unfinished"></translation>
+        <translation>Lineair</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="820"/>
         <source>Tree</source>
-        <translation type="unfinished"></translation>
+        <translation>Boom</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="829"/>
         <source>Thread</source>
-        <translation type="unfinished"></translation>
+        <translation>Proces</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="836"/>
         <source>All Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Alle processen</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="837"/>
         <source>Your Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Mijn processen</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="838"/>
         <source>Non-Root Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Niet-root-processen</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="839"/>
         <source>Running Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Actieve processen</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="855"/>
         <source>Pause (Ctrl+Space)</source>
-        <translation type="unfinished"></translation>
+        <translation>Onderbreken (Ctrl+spatiebalk)</translation>
     </message>
 </context>
 <context>
@@ -254,32 +266,32 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="36"/>
         <source>Process %1 ( %2 ) - details</source>
-        <translation type="unfinished"></translation>
+        <translation>Proces %1 (%2) - details</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="45"/>
         <source>Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Bestanden</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="54"/>
         <source>Sockets</source>
-        <translation type="unfinished"></translation>
+        <translation>Sockets</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="59"/>
         <source>Memory Maps</source>
-        <translation type="unfinished"></translation>
+        <translation>Geheugenkaarten</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="61"/>
         <source>Environment</source>
-        <translation type="unfinished"></translation>
+        <translation>Omgeving</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="62"/>
         <source>All Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Alle velden</translation>
     </message>
 </context>
 <context>
@@ -287,22 +299,22 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="605"/>
         <source>Variable</source>
-        <translation type="unfinished"></translation>
+        <translation>Variabel</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="605"/>
         <source>Variable name</source>
-        <translation type="unfinished"></translation>
+        <translation>Naam van variabel</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="606"/>
         <source>Value</source>
-        <translation type="unfinished"></translation>
+        <translation>Waarde</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="606"/>
         <source>Variable value</source>
-        <translation type="unfinished"></translation>
+        <translation>Waarde van variabel</translation>
     </message>
 </context>
 <context>
@@ -310,88 +322,89 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="23"/>
         <source>Watchdog 0.1 alpha</source>
-        <translation type="unfinished"></translation>
+        <translation>Watchdog (0.1 alpha)</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="117"/>
         <source>Eventcat</source>
-        <translation type="unfinished"></translation>
+        <translation>Eventcat</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="162"/>
         <source>Select condition</source>
-        <translation type="unfinished"></translation>
+        <translation>Kies een voorwaarde</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="170"/>
         <source>labelDescrition</source>
-        <translation type="unfinished"></translation>
+        <translation>labelomschrijving</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="193"/>
         <source>Enable</source>
-        <translation type="unfinished"></translation>
+        <translation>Inschakelen</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="219"/>
         <source>process name</source>
-        <translation type="unfinished"></translation>
+        <translation>procesnaam</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="229"/>
         <source>cpu</source>
-        <translation type="unfinished"></translation>
+        <translation>cpu</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="248"/>
         <source>%</source>
-        <translation type="unfinished"></translation>
+        <translation>%</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="280"/>
         <source>include already running process</source>
-        <translation type="unfinished"></translation>
+        <translation>inclusief reeds actieve processen</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="309"/>
         <source>run command</source>
-        <translation type="unfinished"></translation>
+        <translation>opdracht uitvoeren</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="342"/>
         <source>show Message</source>
-        <translation type="unfinished"></translation>
+        <translation>Bericht tonen</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="367"/>
         <source>Help (Not yet. just concept)</source>
-        <translation type="unfinished"></translation>
+        <translation>Hulp (nog niet - slechts een concept)</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="394"/>
         <source>%p : pid
 %c : command</source>
-        <translation type="unfinished"></translation>
+        <translation>%p : pid
+%c : opdracht</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="425"/>
         <source>New</source>
-        <translation type="unfinished"></translation>
+        <translation>Nieuw</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="432"/>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>Toevoegen</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="439"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Verwijderen</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="446"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Sluiten</translation>
     </message>
 </context>
 <context>
@@ -399,42 +412,42 @@ exited with status </source>
     <message>
         <location filename="../message.ui" line="13"/>
         <source>Qps</source>
-        <translation type="unfinished"></translation>
+        <translation>Qps</translation>
     </message>
     <message>
         <location filename="../message.ui" line="27"/>
         <source>Ok</source>
-        <translation type="unfinished"></translation>
+        <translation>Oké</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="42"/>
         <source>Qps Watchdog</source>
-        <translation type="unfinished"></translation>
+        <translation>Qps-watchdog</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="94"/>
         <source>%1 exit with code %2</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 is afgesloten met code %2</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="96"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Sluiten</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="102"/>
         <source>%1 [running]</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 [actief]</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="103"/>
         <source>terminate command</source>
-        <translation type="unfinished"></translation>
+        <translation>opdracht afbreken</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="112"/>
         <source>Error %1 : [%2] Maybe command not found</source>
-        <translation type="unfinished"></translation>
+        <translation>Foutmelding: [%2] opdracht wellicht niet gevonden</translation>
     </message>
 </context>
 <context>
@@ -442,12 +455,12 @@ exited with status </source>
     <message>
         <location filename="../fieldsel.cpp" line="34"/>
         <source>Select Custom Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>Kies aangepaste velden </translation>
     </message>
     <message>
         <location filename="../fieldsel.cpp" line="75"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Sluiten</translation>
     </message>
 </context>
 <context>
@@ -455,32 +468,32 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="521"/>
         <source>Fd</source>
-        <translation type="unfinished"></translation>
+        <translation>Vd</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="521"/>
         <source>File descriptor</source>
-        <translation type="unfinished"></translation>
+        <translation>Bestandsomschrijving</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="523"/>
         <source>Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Modus</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="523"/>
         <source>Open mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Modus openen</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="525"/>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Naam</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="525"/>
         <source>File name (if available)</source>
-        <translation type="unfinished"></translation>
+        <translation>Bestandsnaam (indien beschikbaar)</translation>
     </message>
 </context>
 <context>
@@ -488,32 +501,32 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="43"/>
         <source>Change Update Period</source>
-        <translation type="unfinished"></translation>
+        <translation>Bijwerktussenpoos wijzigen</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="49"/>
         <source>New Update Period</source>
-        <translation type="unfinished"></translation>
+        <translation>Nieuwe bijwerktussenpoos</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="85"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Annuleren</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="87"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>Oké</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="121"/>
         <source>No UPDATE</source>
-        <translation type="unfinished"></translation>
+        <translation>BIJWERKEN niet nodig</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="139"/>
         <source>Invalid value</source>
-        <translation type="unfinished"></translation>
+        <translation>Ongeldige waarde</translation>
     </message>
 </context>
 <context>
@@ -521,12 +534,12 @@ exited with status </source>
     <message>
         <location filename="../listmodel.cpp" line="66"/>
         <source>Event Category</source>
-        <translation type="unfinished"></translation>
+        <translation>Gebeurteniscategorie</translation>
     </message>
     <message>
         <location filename="../listmodel.cpp" line="68"/>
         <source>Enable</source>
-        <translation type="unfinished"></translation>
+        <translation>Inschakelen</translation>
     </message>
 </context>
 <context>
@@ -534,32 +547,32 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="392"/>
         <source>Address Range</source>
-        <translation type="unfinished"></translation>
+        <translation>Adresbereik</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="392"/>
         <source>Mapped addresses (hex) )</source>
-        <translation type="unfinished"></translation>
+        <translation>Toegewezen adressen (hex) )</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="393"/>
         <source>Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Grootte</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="393"/>
         <source>Kbytes mapped (dec)</source>
-        <translation type="unfinished"></translation>
+        <translation>Toegewezen kilobytes (dec.)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="394"/>
         <source>Perm</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechten</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="394"/>
         <source>Permission flags</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechtenopties</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="395"/>
