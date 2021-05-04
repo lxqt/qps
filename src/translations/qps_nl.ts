@@ -577,42 +577,42 @@ afgesloten met status </translation>
     <message>
         <location filename="../details.cpp" line="395"/>
         <source>Offset</source>
-        <translation type="unfinished"></translation>
+        <translation>Verschuiving</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="395"/>
         <source>File offset at start of mapping (hex)</source>
-        <translation type="unfinished"></translation>
+        <translation>Bestandsverschuiving van toewijzing (in hex)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Device</source>
-        <translation type="unfinished"></translation>
+        <translation>Apparaat</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Major,Minor device numbers (dec)</source>
-        <translation type="unfinished"></translation>
+        <translation>Grote,kleine apparaatnummers (dec.)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Inode</source>
-        <translation type="unfinished"></translation>
+        <translation>Inode</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Inode number (dec)</source>
-        <translation type="unfinished"></translation>
+        <translation>Inode-nummer (dec.)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>File</source>
-        <translation type="unfinished"></translation>
+        <translation>Bestand</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>File name (if available)</source>
-        <translation type="unfinished"></translation>
+        <translation>Bestandsnaam (indien beschikbaar)</translation>
     </message>
 </context>
 <context>
@@ -620,22 +620,22 @@ afgesloten met status </translation>
     <message>
         <location filename="../dialogs.cpp" line="264"/>
         <source>Permission</source>
-        <translation type="unfinished"></translation>
+        <translation>Recht</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="273"/>
         <source>Root password</source>
-        <translation type="unfinished"></translation>
+        <translation>Beheerderswachtwoord</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="280"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Annuleren</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="283"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>Oké</translation>
     </message>
 </context>
 <context>
@@ -643,42 +643,42 @@ afgesloten met status </translation>
     <message>
         <location filename="../prefs.cpp" line="150"/>
         <source>Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Instellingen</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="157"/>
         <source>Setting</source>
-        <translation type="unfinished"></translation>
+        <translation>Instelling</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="191"/>
         <source>%CPU divided by</source>
-        <translation type="unfinished"></translation>
+        <translation>%CPU gedeeld door</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="198"/>
         <source>Total cpu: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Totaal cpu-gebruik: %1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="199"/>
         <source>Single cpu: 1</source>
-        <translation type="unfinished"></translation>
+        <translation>Eén cpu: 1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="205"/>
         <source>default</source>
-        <translation type="unfinished"></translation>
+        <translation>standaard</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="206"/>
         <source>for developer</source>
-        <translation type="unfinished"></translation>
+        <translation>voor ontwikkelaars</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="240"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Vormgeving</translation>
     </message>
 </context>
 <context>
@@ -686,427 +686,427 @@ afgesloten met status </translation>
     <message>
         <location filename="../proc.cpp" line="2876"/>
         <source>PID</source>
-        <translation type="unfinished"></translation>
+        <translation>PID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2876"/>
         <source>Process ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Proces-id</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2878"/>
         <source>TGID</source>
-        <translation type="unfinished"></translation>
+        <translation>TGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2878"/>
         <source>Task group ID ( parent of threads )</source>
-        <translation type="unfinished"></translation>
+        <translation>Taakgroep-id (hoofdproces)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2880"/>
         <source>PPID</source>
-        <translation type="unfinished"></translation>
+        <translation>PPID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2880"/>
         <source>Parent process ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Hoofdproces-id</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2882"/>
         <source>PGID</source>
-        <translation type="unfinished"></translation>
+        <translation>PGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2882"/>
         <source>Process group ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Procesgroep-id</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2884"/>
         <source>SID</source>
-        <translation type="unfinished"></translation>
+        <translation>SID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2884"/>
         <source>Session ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Sessie-id</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2886"/>
         <source>TTY</source>
-        <translation type="unfinished"></translation>
+        <translation>TTY</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2886"/>
         <source>Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminalvenster</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2888"/>
         <source>TPGID</source>
-        <translation type="unfinished"></translation>
+        <translation>TPGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2888"/>
         <source>Process group ID of tty owner</source>
-        <translation type="unfinished"></translation>
+        <translation>Procesgroep-id van tty-eigenaar</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2890"/>
         <source>USER</source>
-        <translation type="unfinished"></translation>
+        <translation>GEBRUIKER</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2890"/>
         <source>Owner (*=suid root, +=suid a user)</source>
-        <translation type="unfinished"></translation>
+        <translation>Eigenaar (*=suid op beheerder - +=suid op gebruiker)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2892"/>
         <source>GROUP</source>
-        <translation type="unfinished"></translation>
+        <translation>GROEP</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2892"/>
         <source>Group name (*=sgid other)</source>
-        <translation type="unfinished"></translation>
+        <translation>Groepsnaam (*=sgid overig)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2894"/>
         <source>UID</source>
-        <translation type="unfinished"></translation>
+        <translation>UID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2894"/>
         <source>Real user ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Echte gebruikersid</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2896"/>
         <source>EUID</source>
-        <translation type="unfinished"></translation>
+        <translation>EUID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2896"/>
         <source>Effective user ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Effectieve gebruikersid</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2898"/>
         <source>SUID</source>
-        <translation type="unfinished"></translation>
+        <translation>SUID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2898"/>
         <source>Saved user ID (Posix)</source>
-        <translation type="unfinished"></translation>
+        <translation>Opgeslagen gebruikersid (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2900"/>
         <source>FSUID</source>
-        <translation type="unfinished"></translation>
+        <translation>FSUID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2900"/>
         <source>File system user ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Gebruikersid op bestandssysteem</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2902"/>
         <source>GID</source>
-        <translation type="unfinished"></translation>
+        <translation>GID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2902"/>
         <source>Real group ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Echte groepsid</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2904"/>
         <source>EGID</source>
-        <translation type="unfinished"></translation>
+        <translation>EGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2904"/>
         <source>Effective group ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Effectieve groepsid</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2906"/>
         <source>SGID</source>
-        <translation type="unfinished"></translation>
+        <translation>SGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2906"/>
         <source>Saved group ID (Posix)</source>
-        <translation type="unfinished"></translation>
+        <translation>Opgeslagen groepsid (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2908"/>
         <source>FSGID</source>
-        <translation type="unfinished"></translation>
+        <translation>FSGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2908"/>
         <source>File system group ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Groepsid op bestandssysteem</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2910"/>
         <source>PRI</source>
-        <translation type="unfinished"></translation>
+        <translation>PRI</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2910"/>
         <source>Dynamic priority</source>
-        <translation type="unfinished"></translation>
+        <translation>Dynamische prioriteit</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2912"/>
         <source>NICE</source>
-        <translation type="unfinished"></translation>
+        <translation>NICE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2912"/>
         <source>Scheduling favour (higher -&gt; less cpu time)</source>
-        <translation type="unfinished"></translation>
+        <translation>Schedulingprioriteit (hoger = kortere cpu-verwerkingstijd)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2914"/>
         <source>NLWP</source>
-        <translation type="unfinished"></translation>
+        <translation>NLWP</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2914"/>
         <source>Number of tasks(threads) in task group</source>
-        <translation type="unfinished"></translation>
+        <translation>Aantal taken (processen) binnen taakgroep</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2916"/>
         <source>PLCY</source>
-        <translation type="unfinished"></translation>
+        <translation>PLCY</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2916"/>
         <source>Scheduling policy</source>
-        <translation type="unfinished"></translation>
+        <translation>Schedulingbeleid</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2918"/>
         <source>RPRI</source>
-        <translation type="unfinished"></translation>
+        <translation>RPRI</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2918"/>
         <source>Realtime priority (0-99, more is better)</source>
-        <translation type="unfinished"></translation>
+        <translation>Real-timepriorteit (0-99 - hoger is beter)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2920"/>
         <source>TMS</source>
-        <translation type="unfinished"></translation>
+        <translation>TMS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2920"/>
         <source>Time slice in milliseconds</source>
-        <translation type="unfinished"></translation>
+        <translation>Tijddeel (in milliseconden)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2922"/>
         <source>%SAVG</source>
-        <translation type="unfinished"></translation>
+        <translation>%SAVG</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2922"/>
         <source>Percentage average sleep time (-1 -&gt; N/A)</source>
-        <translation type="unfinished"></translation>
+        <translation>Percentage van gemiddelde slaaptijd (-1 = n/b)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2924"/>
         <source>CPUSET</source>
-        <translation type="unfinished"></translation>
+        <translation>CPUSET</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2924"/>
         <source>Affinity CPU mask (0 -&gt; API not supported)</source>
-        <translation type="unfinished"></translation>
+        <translation>Affiniteit van cpu-maskering (0 = api wordt niet ondersteund)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2926"/>
         <source>MAJFLT</source>
-        <translation type="unfinished"></translation>
+        <translation>MAJFLT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2926"/>
         <source>Number of major faults (disk access)</source>
-        <translation type="unfinished"></translation>
+        <translation>Aantal grote fouten (schijftoegang)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2928"/>
         <source>MINFLT</source>
-        <translation type="unfinished"></translation>
+        <translation>MINFLT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2928"/>
         <source>Number of minor faults (no disk access)</source>
-        <translation type="unfinished"></translation>
+        <translation>Aantal kleine fouten (geen schijftoegang)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2931"/>
         <source>VSIZE</source>
-        <translation type="unfinished"></translation>
+        <translation>VSIZE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2931"/>
         <source>Virtual image size of process</source>
-        <translation type="unfinished"></translation>
+        <translation>Virtuele schijfkopiegrootte van proces</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2933"/>
         <source>RSS</source>
-        <translation type="unfinished"></translation>
+        <translation>RSS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2933"/>
         <source>Resident set size</source>
-        <translation type="unfinished"></translation>
+        <translation>Reeksgrootte</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2935"/>
         <source>MEM</source>
-        <translation type="unfinished"></translation>
+        <translation>MEM</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2935"/>
         <source>memory usage (RSS-SHARE)</source>
-        <translation type="unfinished"></translation>
+        <translation>geheugengebruik (RSS-SHARE)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2937"/>
         <source>TRS</source>
-        <translation type="unfinished"></translation>
+        <translation>TRS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2937"/>
         <source>Text(code) resident set size</source>
-        <translation type="unfinished"></translation>
+        <translation>Tekst(code) van reeksgrootte</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2939"/>
         <source>DRS</source>
-        <translation type="unfinished"></translation>
+        <translation>DRS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2939"/>
         <source>Data resident set size(malloc+global variable)</source>
-        <translation type="unfinished"></translation>
+        <translation>Reeksgrootte van gegevens (malloc+globaal variabel)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2941"/>
         <source>STACK</source>
-        <translation type="unfinished"></translation>
+        <translation>STACK</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2941"/>
         <source>Stack size</source>
-        <translation type="unfinished"></translation>
+        <translation>Stapelgrootte</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2943"/>
         <source>SHARE</source>
-        <translation type="unfinished"></translation>
+        <translation>SHARE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2943"/>
         <source>Shared memory with other libs</source>
-        <translation type="unfinished"></translation>
+        <translation>Gedeeld geheugen met andere bibliotheken</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2945"/>
         <source>SWAP</source>
-        <translation type="unfinished"></translation>
+        <translation>SWAP</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2945"/>
         <source>Kbytes on swap device</source>
-        <translation type="unfinished"></translation>
+        <translation>Aantal kilobytes op wisselgeheugenapparaat</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2947"/>
         <source>IO_R</source>
-        <translation type="unfinished"></translation>
+        <translation>IO_R</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2947"/>
         <source>io read (file)</source>
-        <translation type="unfinished"></translation>
+        <translation>io-lezing (bestand)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2949"/>
         <source>IO_W</source>
-        <translation type="unfinished"></translation>
+        <translation>IO_W</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2949"/>
         <source>io write (file)</source>
-        <translation type="unfinished"></translation>
+        <translation>io-wegschrijving (bestand)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2951"/>
         <source>DT</source>
-        <translation type="unfinished"></translation>
+        <translation>DT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2951"/>
         <source>Number of dirty (non-written) pages</source>
-        <translation type="unfinished"></translation>
+        <translation>Aantal ‘dirty’ (niet-weggeschreven) pagina&apos;s</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2953"/>
         <source>STAT</source>
-        <translation type="unfinished"></translation>
+        <translation>STAT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2953"/>
         <source>State of the process </source>
-        <translation type="unfinished"></translation>
+        <translation>Processtatus </translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2955"/>
         <source>FLAGS</source>
-        <translation type="unfinished"></translation>
+        <translation>FLAGS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2955"/>
         <source>Process flags (hex)</source>
-        <translation type="unfinished"></translation>
+        <translation>Procesopties (hex)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2957"/>
         <source>WCHAN</source>
-        <translation type="unfinished"></translation>
+        <translation>WCHAN</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2957"/>
         <source>Kernel function where process is sleeping</source>
-        <translation type="unfinished"></translation>
+        <translation>De kernelfunctie waar het proces in de slaapstand staat</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2959"/>
         <source>%WCPU</source>
-        <translation type="unfinished"></translation>
+        <translation>%WCPU</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2959"/>
         <source>Weighted percentage of CPU (30 s average)</source>
-        <translation type="unfinished"></translation>
+        <translation>Afgewogen percentage van cpu (gem. 30 sec.)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2961"/>
         <source>%CPU</source>
-        <translation type="unfinished"></translation>
+        <translation>%CPU</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2961"/>
