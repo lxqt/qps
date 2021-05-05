@@ -19,7 +19,7 @@ add_definitions(
 # Minimum Versions
 set(LXQTBT_MINIMUM_VERSION "0.9.0")
 set(LXQT_MINIMUM_VERSION "0.17.0")
-set(QT_MINIMUM_VERSION "5.12.0")
+set(QT_MINIMUM_VERSION "5.15.0")
 
 find_package(lxqt ${LXQT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt5 ${QT_MINIMUM_VERSION} REQUIRED COMPONENTS Widgets X11Extras DBus LinguistTools)

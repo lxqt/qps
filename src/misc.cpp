@@ -500,9 +500,6 @@ void TFrame::draw(QPainter &p)
     //	p.drawRoundRect(rect(),10,10);
     //	p.fillRect ( cr,QColor(0,0,0));
     QColor bg = QColor(0, 0, 0, 120);
-#if QT_VERSION < 0x040400
-    p.fillRect(rect(), QColor(0, 0, 0, 120));
-#else
     // p.fillRect(rect(),QColor(0,0,0,90));
 
     //	p.setPen(QColor(0,255,155)); // less visually obtrusive than
@@ -510,8 +507,6 @@ void TFrame::draw(QPainter &p)
     //	p.setBrush(QBrush(bg));
     //	p.drawRoundedRect(0,0,w,h, 4, 4);
     p.fillRect(rect(), bg);
-
-#endif
 
     p.setPen(QColor(0, 255, 155)); // less visually obtrusive than black
     p.drawText(0, 0, w, h, Qt::AlignVCenter | Qt::AlignHCenter, text);
@@ -956,7 +951,5 @@ void QTabWidgetX::showTab(bool flag)
     else
         tb->hide();
 // if flag_useTabView == false
-#if QT_VERSION > 0x040500
 //	setDocumentMode (true); // QT 4.5
-#endif
 }

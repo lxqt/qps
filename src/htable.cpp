@@ -1026,11 +1026,7 @@ void HeadedTable::updateColWidth(int col)
 
     for (int i = 0; i < rows; i++)
     {
-#if (QT_VERSION >= QT_VERSION_CHECK(5,11,0))
         sw = fontMetrics().horizontalAdvance(text(i, col)) + 10;
-#else
-        sw = fontMetrics().width(text(i, col)) + 10;
-#endif
         if (treecol)
             sw += treestep * rowDepth(i);
         if (sw > w)
