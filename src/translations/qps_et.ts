@@ -6,32 +6,32 @@
     <message>
         <location filename="../details.cpp" line="653"/>
         <source>Field</source>
-        <translation type="unfinished"></translation>
+        <translation>Andmeväli</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="653"/>
         <source>Field name</source>
-        <translation type="unfinished"></translation>
+        <translation>Välja nimi</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="654"/>
         <source>Description</source>
-        <translation type="unfinished"></translation>
+        <translation>Kirjeldus</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="654"/>
         <source>Field description</source>
-        <translation type="unfinished"></translation>
+        <translation>Välja kirjeldus</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="655"/>
         <source>Value</source>
-        <translation type="unfinished"></translation>
+        <translation>Väärtus</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="655"/>
         <source>Field value</source>
-        <translation type="unfinished"></translation>
+        <translation>Välja väärtus</translation>
     </message>
 </context>
 <context>
@@ -39,12 +39,12 @@
     <message>
         <location filename="../prefs.cpp" line="59"/>
         <source>Exit on closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Sulgemisnupu vajutamisel lõpeta rakenduse töö</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="60"/>
         <source>Remember Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Jäta asukoht meelde</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="68"/>
@@ -69,7 +69,7 @@
     <message>
         <location filename="../prefs.cpp" line="82"/>
         <source>Auto Save Settings on Exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Väljumisel selvesta seadistused automaatselt</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="83"/>
@@ -92,7 +92,7 @@
     <message>
         <location filename="../prefs.cpp" line="106"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Üldseadistused</translation>
     </message>
 </context>
 <context>
@@ -102,7 +102,9 @@
         <source>The command:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Käsu täitmisel:
+
+</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="212"/>
@@ -111,7 +113,11 @@
 failed with the error:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>
+
+tekkis viga:
+
+</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="215"/>
@@ -129,19 +135,24 @@ failed with the error:
 
 could not be executed because it was not found,
 or you did not have execute permission.</source>
-        <translation type="unfinished"></translation>
+        <translation>
+
+käivitamine ei õnnestunud, kuna teda ei leidunud,
+või polnud käivitamiseks õigusi.</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="233"/>
         <source>
 
 exited with status </source>
-        <translation type="unfinished"></translation>
+        <translation>
+
+lõpetas töö olekuteatega </translation>
     </message>
     <message>
         <location filename="../command.cpp" line="237"/>
         <source>Command Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Käsu käivitamine ei õnnestunud</translation>
     </message>
 </context>
 <context>
