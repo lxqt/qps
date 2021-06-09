@@ -39,7 +39,7 @@
     <message>
         <location filename="../prefs.cpp" line="59"/>
         <source>Exit on closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Išeiti užvėrus</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="60"/>
