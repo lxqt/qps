@@ -39,7 +39,7 @@
     <message>
         <location filename="../prefs.cpp" line="59"/>
         <source>Exit on closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Ukončiť pri zavretí</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="60"/>
@@ -187,11 +187,11 @@ skončilo so statusom </translation>
 %%	%
 
 </source>
-        <translation>Dosadzovanie: 
-%p	identif. procesu
-%c	príkaz
-%    Cpríkazový riadok
-%u	užívateľ
+        <translation>Dosadzovanie:
+%p	PID
+%c	COMMAND
+%C	CMDLINE
+%u	USER
 %%	%
 
 </translation>
@@ -233,7 +233,7 @@ skončilo so statusom </translation>
     <message>
         <location filename="../misc.cpp" line="829"/>
         <source>Thread</source>
-        <translation type="unfinished"></translation>
+        <translation>Vlákno</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="836"/>
@@ -327,7 +327,7 @@ skončilo so statusom </translation>
     <message>
         <location filename="../watchdog.ui" line="117"/>
         <source>Eventcat</source>
-        <translation>Eventcat</translation>
+        <translation>KatUdal</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="162"/>
@@ -921,7 +921,7 @@ skončilo so statusom </translation>
     <message>
         <location filename="../proc.cpp" line="2922"/>
         <source>Percentage average sleep time (-1 -&gt; N/A)</source>
-        <translation>Priemerné percento doby spánku  (-1 -&gt; N/A)</translation>
+        <translation>Priemerné percento doby spánku (-1 -&gt; N/A)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2924"/>
@@ -1468,7 +1468,7 @@ skončilo so statusom </translation>
     <message>
         <location filename="../qps.cpp" line="804"/>
         <source>Include Child Times</source>
-        <translation type="unfinished"></translation>
+        <translation>Zahrnúť časy podriadených procesov</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="998"/>
@@ -1503,7 +1503,7 @@ skončilo so statusom </translation>
     <message>
         <location filename="../qps.cpp" line="1368"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
-        <translation>Nemáte oprávnenie pre úpravu priority procesov  %1 (%2). To môže udeľovať iba vlastník procesu alebo správca systému.</translation>
+        <translation>Nemáte oprávnenie pre úpravu priority procesov %1 (%2). To môže udeľovať iba vlastník procesu alebo správca systému.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1375"/>
@@ -1543,7 +1543,7 @@ skončilo so statusom </translation>
     <message>
         <location filename="../qps.cpp" line="1525"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
-        <translation>Nemáte oprávnenie poslať signál procesu %1 (%2).  To môže urobiť iba vlastník procesu alebo správca systému.</translation>
+        <translation>Nemáte oprávnenie poslať signál procesu %1 (%2). To môže urobiť iba vlastník procesu alebo správca systému.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1910"/>
