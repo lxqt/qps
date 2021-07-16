@@ -31,7 +31,6 @@
 #include <QApplication>
 #include <QClipboard>
 #include <QToolTip>
-
 // When a subtree is folded away, selections inside it disappear to prevent
 // unexpected behaviour
 static void clear_subtree_selections(Procinfo *p)
@@ -111,7 +110,7 @@ void Pstable::overpaintCell(QPainter *p, int row, int col, int xpos)
         return; // LINUX
 
 #endif
-    w = p->fontMetrics().width(text(row, col));
+    w = p->fontMetrics().horizontalAdvance(text(row, col));
 
     QFont font = p->font();
     int size = font.pointSize(); // point size
