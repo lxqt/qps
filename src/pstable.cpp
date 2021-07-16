@@ -31,6 +31,7 @@
 #include <QApplication>
 #include <QClipboard>
 #include <QToolTip>
+
 // When a subtree is folded away, selections inside it disappear to prevent
 // unexpected behaviour
 static void clear_subtree_selections(Procinfo *p)
