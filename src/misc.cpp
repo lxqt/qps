@@ -492,7 +492,7 @@ void TFrame::draw(QPainter &p)
     //	if(!isVisible()) 	return;
     return;
     int h = fontMetrics().height() + 3;
-    int w = fontMetrics().width(text) + 9;
+    int w = fontMetrics().horizontalAdvance(text) + 9;
     setFixedSize(w, h);
     //	QFont font("Adobe Helvetica"); // helvetica & No-Antialias
     // 	font.setPixelSize(10);

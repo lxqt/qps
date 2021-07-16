@@ -411,10 +411,10 @@ Maps::Maps(QWidget *parent) : SimpleTable(parent, MAPSFIELDS, fields() )
     {
         /* see if the font is monospaced enough for our needs */
         QFontMetrics fm(f);
-        int zw = fm.width('0');
+        int zw = fm.horizontalAdvance('0');
         const char *test = "abcdef";
         for (const char *p = test; *p; p++)
-            if (fm.width(*p) != zw)
+            if (fm.horizontalAdvance(*p) != zw)
             {
                 mono = false;
                 break;

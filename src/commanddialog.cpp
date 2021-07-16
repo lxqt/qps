@@ -52,7 +52,7 @@ CommandDialog::CommandDialog()
     // item list
     listview = new QListView(this);
     listview->setModel(cmdModel);
-    listview->setFixedWidth(fontMetrics().width("0") * 16);
+    listview->setFixedWidth(fontMetrics().horizontalAdvance("0") * 16);
     hbox->addWidget(listview);
 
     QVBoxLayout *vbox = new QVBoxLayout; // TOP-> RIGHT
