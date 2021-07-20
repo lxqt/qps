@@ -359,7 +359,6 @@ char str_buff[512];
 class w_cpu : public gwidget
 {
   private:
-    int cpu_n;
     long total, user, system, idle, nice, wait;
 
   public:
@@ -1300,7 +1299,7 @@ void subcpuRack::paintEvent(QPaintEvent * /*e*/)
 
     // static QPaint *p=// QPainter *p=new QPainter(this);
     QPainter p(this);
-    int w;
+    // int w;
     // QRect cr = contentsRect();
     // QRect cr = p->viewport();
 //    QRect cr = p.window(); // rect.
@@ -1314,7 +1313,7 @@ void subcpuRack::paintEvent(QPaintEvent * /*e*/)
 
     // if(procview->num_cpus>=4) // temporaly...
     // else
-    w = 2 + pf_write(&p, 2, 2, "SUB CPU");
+    // w = 2 + pf_write(&p, 2, 2, "SUB CPU");
 }
 
 // GraphDisplay, miniDisplay
