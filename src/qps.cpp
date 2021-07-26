@@ -1008,8 +1008,7 @@ void Qps::make_command_menu()
         act = m_command->addAction(commands[i]->name);
     }
     connect(m_command, SIGNAL(triggered(QAction *)),
-            SLOT(run_command(QAction *)));
-
+            SLOT(run_command(QAction *)));	    
     //#ifdef SOLARIS
     /* Solaris CDE don't have a tray, so we need a method to terminate */
     m_command->addSeparator();

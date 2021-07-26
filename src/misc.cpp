@@ -159,7 +159,7 @@ int mini_sscanf(const char *s1, const char *fmt, ...)
             }
             else if (fmt[1] == 'u')
             {
-                k += sscanf(s, "%u%n", va_arg(va, int *), &n);
+                k += sscanf(s, "%u%n", va_arg(va, unsigned int *), &n);
                 s += n;
                 fmt += 2;
             }
@@ -171,7 +171,7 @@ int mini_sscanf(const char *s1, const char *fmt, ...)
             }
             else if (fmt[1] == 'l' && fmt[2] == 'u')
             {
-                k += sscanf(s, "%lu%n", va_arg(va, long *), &n);
+                k += sscanf(s, "%lu%n", va_arg(va, unsigned long *), &n);
                 s += n;
                 fmt += 3;
             }
@@ -271,10 +271,10 @@ int fsize(char *fname)
 void msleep(long msec)
 {
 #ifdef LINUX
-    timespec req;
+    // timespec req;
     timeval tv;
-    req.tv_sec = 0;
-    req.tv_nsec = msec * 1000000;
+    // req.tv_sec = 0;
+    // req.tv_nsec = msec * 1000000;
     // int  	nanosleep(const struct timespec *req, struct timespec
     // *remain)
     /*while (nanosleep(&req, &req))
@@ -353,7 +353,7 @@ TBloon::TBloon(QWidget *parent) : QLabel(parent)
     // Construct a 1-second timeline with a frame range of 0 - 100
     timeLine = new QTimeLine(100000, this);
     timeLine->setFrameRange(0, 20000);
-    timeLine->setCurveShape(QTimeLine::EaseOutCurve);
+    timeLine->easingCurve();
     //	timeLine->set(0, 20000);
     connect(timeLine, SIGNAL(frameChanged(int)), this, SLOT(update(int)));
 }
