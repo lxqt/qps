@@ -989,7 +989,7 @@ void Qps::menu_edit_cmd()
 void Qps::make_command_menu()
 {
     // should clear SIGNAL!!!
- /*   QAction *act;
+    //QAction *act; - commented out to reduce warnigs when compiled
     m_command->clear();
     m_command->disconnect();
 
@@ -1009,7 +1009,7 @@ void Qps::make_command_menu()
     }
     connect(m_command, SIGNAL(triggered(QAction *)),
             SLOT(run_command(QAction *)));
-*/
+	    
     //#ifdef SOLARIS
     /* Solaris CDE don't have a tray, so we need a method to terminate */
     m_command->addSeparator();
