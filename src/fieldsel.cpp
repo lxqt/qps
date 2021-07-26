@@ -68,12 +68,12 @@ FieldSelect::FieldSelect(Procview *pv)
             grid->addWidget(desc, i - half, 4);
         }
         buts[i] = but;
-        connect(but, SIGNAL(toggled(bool)), this, SLOT(field_toggled(bool)));
+        connect(but, &QAbstractButton::toggled, this, &FieldSelect::field_toggled);
     }
     update_boxes();
 
     QPushButton *closebut = new QPushButton( tr( "Close" ), this);
-    connect(closebut, SIGNAL(clicked()), SLOT(closed()));
+    connect(closebut, &QAbstractButton::clicked, this, &FieldSelect::closed);
     closebut->setFocus();
 
     v_layout->addWidget(closebut);

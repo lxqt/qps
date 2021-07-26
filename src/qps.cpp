@@ -196,7 +196,7 @@ Qps::Qps()
 
     // MOVETO Pstable !!
     m_headpopup = new QMenu( tr( "header_popup" ), this);
-    m_headpopup->addAction( tr( "Remove Field" ), this, SLOT(menu_remove_field()));
+    m_headpopup->addAction( tr( "Remove Field" ), this, &Qps::menu_remove_field);
     m_fields = new QMenu( tr( "Add Field" ), this);
     m_headpopup->addMenu(m_fields);
 
@@ -240,12 +240,12 @@ Qps::Qps()
     act = m_field->addAction( QIcon::fromTheme(QStringLiteral("edit-find-replace"))
                             , tr( "Select Custom Fields..." )
                             , this
-                            , SLOT(menu_custom()));
+                            , &Qps::menu_custom);
     act->setData(MENU_CUSTOM);
 
-    connect(m_field, SIGNAL(triggered(QAction *)), this,
-            SLOT(view_menu(QAction *)));
-    connect(m_field, SIGNAL(aboutToShow()), SLOT(update_menu_status()));
+    connect(m_field, &QMenu::triggered, this,
+            &Qps::view_menu);
+    connect(m_field, &QMenu::aboutToShow, this, &Qps::update_menu_status);
 
     /// connect(m_view, SIGNAL(triggered(QAction *)),this,
     /// SLOT(view_menu(QAction
@@ -253,34 +253,34 @@ Qps::Qps()
     /// connect(m_view, SIGNAL(aboutToShow ()), SLOT(update_menu_status()));
 
     m_options = new QMenu( tr( "Options" ), this);
-    m_options->addAction( tr( "Update Period..." ), this, SLOT(menu_update()));
+    m_options->addAction( tr( "Update Period..." ), this, &Qps::menu_update);
     m_options->addSeparator();
     act = m_options->addAction("", /* MENU_PATH */ this,
-                               SLOT(menu_toggle_path()));
+                               &Qps::menu_toggle_path);
     act->setData(QVariant(MENU_PATH));
-    act = m_options->addAction("", this, SLOT(menu_toggle_infobar()));
+    act = m_options->addAction("", this, &Qps::menu_toggle_infobar);
     act->setData(QVariant(MENU_INFOBAR));
-    act = m_options->addAction("", this, SLOT(menu_toggle_ctrlbar()));
+    act = m_options->addAction("", this, &Qps::menu_toggle_ctrlbar);
     act->setData(QVariant(MENU_CTRLBAR));
     act = m_options->addAction( tr( "Show Status bar" )
                               , this
-                              ,SLOT(menu_toggle_statusbar()));
+                              ,&Qps::menu_toggle_statusbar);
     act->setData(QVariant(MENU_STATUS));
-    act = m_options->addAction("", this, SLOT(menu_toggle_cumul()));
+    act = m_options->addAction("", this, &Qps::menu_toggle_cumul);
     act->setData(QVariant(MENU_CUMUL));
 
     m_options->addSeparator();
     m_options->addAction( QIcon::fromTheme(QStringLiteral("preferences-system"))
                         , tr( "Preferences..." )
                         , this
-                        , SLOT(menu_prefs())); // MENU_PREFS
+                        , &Qps::menu_prefs); // MENU_PREFS
 
-    connect(m_options, SIGNAL(aboutToShow()), SLOT(update_menu_status()));
+    connect(m_options, &QMenu::aboutToShow, this, &Qps::update_menu_status);
 
     QMenu *m_help = new QMenu( tr( "Help" ), this);
     // m_help->addAction("FAQ", this, SLOT(license()));
     m_help->addAction(QIcon::fromTheme("help-about"),  tr( "About" ), this,
-                      SLOT(about()));
+                      &Qps::about);
 
     // menu = new QMenuBar(this);
     menubar = new QMenuBar;
@@ -294,9 +294,9 @@ Qps::Qps()
     ctrlbar = new ControlBar(this);
     // controlbar=ctrlbar;
 
-    connect(ctrlbar, SIGNAL(need_refresh()), SLOT(refresh()));
-    connect(ctrlbar, SIGNAL(viewChange(QAction *)),
-            SLOT(view_menu(QAction *))); //?????
+    connect(ctrlbar, &ControlBar::need_refresh, this, &Qps::refresh);
+    connect(ctrlbar, &ControlBar::viewChange, this,
+            &Qps::view_menu); //?????
 
     context_col = -1;
 
@@ -334,11 +334,11 @@ Qps::Qps()
 
     // MOVETO : pstable better? hmmm...
     // where is leftClick?
-    connect(pstable, SIGNAL(doubleClicked(int)), SLOT(open_details(int)));
-    connect(pstable, SIGNAL(rightClicked(QPoint)), this,
-            SLOT(show_popup_menu(QPoint)));
-    connect(pstable->header(), SIGNAL(rightClicked(QPoint, int)), this,
-            SLOT(context_heading_menu(QPoint, int)));
+    connect(pstable, &HeadedTable::doubleClicked, this, &Qps::open_details );
+    connect(pstable, &HeadedTable::rightClicked, this,
+            &Qps::show_popup_menu);
+    connect(pstable->header(), &TableHead::rightClicked, this,
+            &Qps::context_heading_menu);
     //	connect(netable, SIGNAL(rightClicked(QPoint)), this,
     // SLOT(context_row_menu(QPoint)));
 
@@ -462,16 +462,16 @@ QMenu *Qps::make_signal_popup_menu()
     // move to pstable?
     QAction *act; // show_popup_menu() callback
     m_popup = new QMenu( tr( "context popup" ), this);
-    m_popup->addAction( tr( "Renice..." ), this, SLOT(menu_renice()));
-    m_popup->addAction( tr( "Scheduling..." ), this, SLOT(menu_sched()));
+    m_popup->addAction( tr( "Renice..." ), this, &Qps::menu_renice);
+    m_popup->addAction( tr( "Scheduling..." ), this, &Qps::menu_sched);
     m_popup->addSeparator();
-    m_popup->addAction( tr( "Terminate" ), this, SLOT(sig_term()),
+    m_popup->addAction( tr( "Terminate" ), this, &Qps::sig_term ,
                        Qt::Key_Delete); // better
-    m_popup->addAction( tr( "Hangup" ), this, SLOT(sig_hup()), Qt::ALT + Qt::Key_H);
-    m_popup->addAction( tr( "Kill" ), this, SLOT(sig_kill()), Qt::ALT + Qt::Key_K);
-    act = m_popup->addAction( tr( "Stop" ), this, SLOT(sig_stop()));
+    m_popup->addAction( tr( "Hangup" ), this, &Qps::sig_hup, Qt::ALT + Qt::Key_H);
+    m_popup->addAction( tr( "Kill" ), this, &Qps::sig_kill, Qt::ALT + Qt::Key_K);
+    act = m_popup->addAction( tr( "Stop" ), this, &Qps::sig_stop);
     act->setData(MENU_SIGSTOP);
-    act = m_popup->addAction( tr( "Continue" ), this, SLOT(sig_cont()));
+    act = m_popup->addAction( tr( "Continue" ), this, &Qps::sig_cont);
     act->setData(MENU_SIGCONT);
 
     QMenu *m = new QMenu("Other Signals");
@@ -508,11 +508,11 @@ QMenu *Qps::make_signal_popup_menu()
     act = m->addAction( tr( "SIGTTOU (tty output)" ) );
     act->setData(SIGTTOU);
 
-    connect(m, SIGNAL(triggered(QAction *)), SLOT(signal_menu(QAction *)));
+    connect(m, &QMenu::triggered, this, &Qps::signal_menu);
 
     m_popup->addMenu(m);
     m_popup->addSeparator();
-    m_popup->addAction( tr( "View Details" ), this, SLOT(Action_Detail()));
+    m_popup->addAction( tr( "View Details" ), this, &Qps::Action_Detail);
 
     return m;
 }
@@ -979,8 +979,8 @@ void Qps::menu_edit_cmd()
     {
         command_win = new CommandDialog();
         command_win->show();
-        connect(command_win, SIGNAL(command_change()),
-                SLOT(make_command_menu()));
+        connect(command_win, &CommandDialog::command_change, this,
+                &Qps::make_command_menu);
     }
 }
 
@@ -996,9 +996,9 @@ void Qps::make_command_menu()
     if (flag_devel)
     {
         m_command->addAction( tr( "WatchDog" ), watchdogDialog,
-                             SLOT(show()));
+                             &Qps::show);
         act = m_command->addAction( tr( "Edit Commands..." ), this,
-                                   SLOT(menu_edit_cmd()));
+                                   &Qps::menu_edit_cmd);
     }
 
     add_default_command();
@@ -1007,15 +1007,15 @@ void Qps::make_command_menu()
     {
         act = m_command->addAction(commands[i]->name);
     }
-    connect(m_command, SIGNAL(triggered(QAction *)),
-            SLOT(run_command(QAction *)));	    
+    connect(m_command, &QMenu::triggered, this, 
+            &Qps::run_command);	    
     //#ifdef SOLARIS
     /* Solaris CDE don't have a tray, so we need a method to terminate */
     m_command->addSeparator();
     m_command->addAction(QIcon::fromTheme(QStringLiteral("application-exit"))
                         , tr( "Quit" )
                         , this
-                        , SLOT(save_quit())
+                        , &Qps::save_quit
                         , Qt::ALT + Qt::Key_Q);
     //#endif
 }
@@ -1196,8 +1196,8 @@ void Qps::context_heading_menu(QPoint p, int col)
             QAction *act = m_fields->addAction(cat->name);
             act->setData(cat->id); // index==key
         }
-        connect(m_fields, SIGNAL(triggered(QAction *)), this,
-                SLOT(add_fields_menu(QAction *)));
+        connect(m_fields, &QMenu::triggered, this,
+                &Qps::add_fields_menu);
         init = 1;
     }
 
@@ -1297,7 +1297,7 @@ void Qps::menu_prefs()
         prefs_win->show();
         prefs_win->raise();
 
-        connect(prefs_win, SIGNAL(prefs_change()), this, SLOT(config_change()));
+        connect(prefs_win, &Preferences::prefs_change, this, &Qps::config_change);
     }
 }
 
@@ -1844,21 +1844,21 @@ int main(int argc, char **argv, char **envp)
     /// menu->addAction( UniString("About"), qps, SLOT(about()) );
     menu->addAction( QObject::tr( "Show" )
                    , qps
-                   , SLOT( showWindow() ) );
+                   , &Qps::showWindow);
     menu->addAction( QObject::tr( "Hide" )
                    , qps
-                   , SLOT( hide() ) );
+                   , &Qps::hide);
     menu->addSeparator();
     menu->addAction( QObject::tr( "Quit" )
                    , qps
-                   , SLOT(save_quit())
+                   , &Qps::save_quit
                    , Qt::ALT + Qt::Key_Q);
 
     trayicon = new TrayIcon(QPixmap((const char **)icon_xpm /* init icon */),
                             "qps", menu);
     QObject::connect(trayicon,
-                     SIGNAL(activated(QSystemTrayIcon::ActivationReason)), qps,
-                     SLOT(clicked_trayicon(QSystemTrayIcon::ActivationReason)));
+                     &QSystemTrayIcon::activated, qps,
+                     &Qps::clicked_trayicon);
 
     trayicon->sysInstall();
 
@@ -1900,8 +1900,8 @@ void Qps::about()
     browser->setOpenExternalLinks(false);
     browser->setOpenLinks(false);
 
-    connect(browser, SIGNAL(anchorClicked(const QUrl &)), this,
-            SLOT(test_popup(const QUrl &)));
+    connect(browser, &QTextBrowser::anchorClicked, this,
+            &Qps::test_popup);
 
     lay->addWidget(label);
     lay->addWidget(browser);
@@ -1946,7 +1946,7 @@ void Qps::about()
 
     lay->addWidget(bbox);
 
-    connect(bbox, SIGNAL(accepted()), diag, SLOT(accept()));
+    connect(bbox, &QDialogButtonBox::accepted, diag, &QDialog::accept);
 
     diag->exec();
 }

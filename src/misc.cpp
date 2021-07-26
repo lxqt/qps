@@ -449,7 +449,7 @@ TFrame::TFrame(QWidget *parent) : QLabel(parent)
 
     timeLine = new QTimeLine(2000, this);
     timeLine->setFrameRange(0, 100);
-    connect(timeLine, SIGNAL(frameChanged(int)), this, SLOT(setValue(int)));
+    connect(timeLine, &QTimeLine::frameChanged, this, &TFrame::setValue);
 }
 
 /*
@@ -816,14 +816,14 @@ ControlBar::ControlBar(QWidget *parent) : QFrame(parent)
     b_tree->setFocusPolicy(Qt::NoFocus);
 
     search_box = new SearchBox(this);
-    connect(b_linear, SIGNAL(clicked()), SLOT(linear_clicked()));
-    connect(b_tree, SIGNAL(clicked()), SLOT(tree_clicked()));
+    connect(b_linear, &QAbstractButton::clicked, this, &ControlBar::linear_clicked);
+    connect(b_tree, &QAbstractButton::clicked, this, &ControlBar::tree_clicked);
 
     if (flag_thread_ok)
     {
         check_thread = new QCheckBox( ( tr( "Thread" ) ), this);
         check_thread->setFocusPolicy(Qt::NoFocus);
-        connect(check_thread, SIGNAL(clicked()), SLOT(show_thread_clicked()));
+        connect(check_thread, &QAbstractButton::clicked, this, &ControlBar::show_thread_clicked);
         check_thread->setChecked(flag_show_thread);
     }
 
@@ -850,7 +850,7 @@ ControlBar::ControlBar(QWidget *parent) : QFrame(parent)
     pauseButton->setToolTip(tr("Pause (Ctrl+Space)"));
     pauseButton->setFocusPolicy(Qt::NoFocus);
     pauseButton->setAutoRaise(true);
-    connect(pauseButton, SIGNAL(clicked(bool)), SLOT(setPaused(bool)));
+    connect(pauseButton, &QAbstractButton::clicked, this, &ControlBar::setPaused);
 
     layout->addWidget(pauseButton);
 

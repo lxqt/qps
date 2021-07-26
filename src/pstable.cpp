@@ -374,12 +374,12 @@ Pstable::Pstable(QWidget *parent, Procview *pv) : HeadedTable(parent, 0)
 {
     procview = pv;
 
-    connect(this, SIGNAL(titleClicked(int)), SLOT(setSortColumn(int)));
-    connect(this, SIGNAL(foldSubTree(int)), SLOT(subtree_folded(int)));
+    connect(this, &HeadedTable::titleClicked, this, &Pstable::setSortColumn);
+    connect(this, &HeadedTable::foldSubTree, this, &Pstable::subtree_folded);
     connect(head, SIGNAL(toolTip(QPoint, int)), this,
             SLOT(showTip(QPoint, int)));
-    connect(this, SIGNAL(flyOnCell(int, int)), SLOT(mouseOnCell(int, int)));
-    connect(this, SIGNAL(outOfCell()), SLOT(mouseOutOfCell()));
+    connect(this, &HeadedTable::flyOnCell, this, &Pstable::mouseOnCell );
+    connect(this, &HeadedTable::outOfCell, this, &Pstable::mouseOutOfCell);
 }
 
 void Pstable::setReveseSort(bool reverse)

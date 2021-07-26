@@ -58,9 +58,9 @@ ExecWindow::ExecWindow(watchCond *wc, int pid, QString cmd)
         pr->start(args.takeFirst(), args); // thread run, if null then segfault occurs. ?
     }
 
-    connect(okButton, SIGNAL(clicked()), this, SLOT(cmd_ok()));
+    connect(okButton, &QAbstractButton::clicked, this, &ExecWindow::cmd_ok);
 
-    connect(pr, SIGNAL(started()), this, SLOT(cmd_started()));
+    connect(pr, &QProcess::started, this, &ExecWindow::cmd_started);
     connect(pr, SIGNAL(finished(int, QProcess::ExitStatus)), this,
             SLOT(cmd_finished(int, QProcess::ExitStatus)));
     connect(pr, SIGNAL(error(QProcess::ProcessError)), this,

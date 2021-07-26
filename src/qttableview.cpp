@@ -70,16 +70,16 @@ QtTableView::QtTableView(QWidget *parent, const char* /*name*/)
     QScrollBar *sb = verticalScrollBar();
     if (sb)
     {
-        connect(sb, SIGNAL(valueChanged(int)), SLOT(verSbValue(int)));
-        connect(sb, SIGNAL(sliderMoved(int)), SLOT(verSbSliding(int)));
-        connect(sb, SIGNAL(sliderReleased()), SLOT(verSbSlidingDone()));
+        connect(sb, &QAbstractSlider::valueChanged, this, &QtTableView::verSbValue);
+        connect(sb, &QAbstractSlider::sliderMoved, this, &QtTableView::verSbSliding);
+        connect(sb, &QAbstractSlider::sliderReleased, this, &QtTableView::verSbSlidingDone);
     }
     sb = horizontalScrollBar();
     if (sb)
     {
-        connect(sb, SIGNAL(valueChanged(int)), SLOT(horSbValue(int)));
-        connect(sb, SIGNAL(sliderMoved(int)), SLOT(horSbSliding(int)));
-        connect(sb, SIGNAL(sliderReleased()), SLOT(horSbSlidingDone()));
+        connect(sb, &QAbstractSlider::valueChanged, this, &QtTableView::horSbValue);
+        connect(sb, &QAbstractSlider::sliderMoved, this, &QtTableView::horSbSliding);
+        connect(sb, &QAbstractSlider::sliderReleased, this, &QtTableView::horSbSlidingDone);
     }
 }
 /*

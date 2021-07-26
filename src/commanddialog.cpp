@@ -115,16 +115,16 @@ CommandDialog::CommandDialog()
     button_ok = new QPushButton( tr( "Close" ), this);
     hl->addWidget(button_ok);
 
-    connect(listview, SIGNAL(clicked(const QModelIndex &)),
-            SLOT(set_select(const QModelIndex &)));
-    connect(new0, SIGNAL(clicked()), SLOT(new_cmd()));
-    connect(add, SIGNAL(clicked()), SLOT(add_new()));
-    connect(del, SIGNAL(clicked()), SLOT(del_current()));
-    connect(button_ok, SIGNAL(clicked()), SLOT(close()));
-    connect(name, SIGNAL(textChanged(const QString &)),
-            SLOT(event_name_midified(const QString &)));
-    connect(cmdline, SIGNAL(textChanged(const QString &)),
-            SLOT(event_cmd_modified()));
+    connect(listview, &QAbstractItemView::clicked, this,
+            &CommandDialog::set_select);
+    connect(new0, &QAbstractButton::clicked, this, &CommandDialog::new_cmd);
+    connect(add, &QAbstractButton::clicked, this, &CommandDialog::add_new);
+    connect(del, &QAbstractButton::clicked, this, &CommandDialog::del_current);
+    connect(button_ok, &QAbstractButton::clicked, this, &QWidget::close);
+    connect(name, &QLineEdit::textChanged, this,
+            &CommandDialog::event_name_midified);
+    connect(cmdline, &QLineEdit::textChanged, this,
+            &CommandDialog::event_cmd_modified);
     // connect(qcheck1, SIGNAL(toggled ( bool ) ),
     // SLOT(event_toolbar_checked(bool
     // )));

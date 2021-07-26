@@ -52,22 +52,22 @@ WatchdogDialog::WatchdogDialog()
     v->setSectionResizeMode(0, QHeaderView::Stretch);
     v->setSectionResizeMode(1, QHeaderView::ResizeToContents);
     //	v->setClickable (false);
-    connect(newButton, SIGNAL(clicked()), this, SLOT(_new()));
-    connect(closeButton, SIGNAL(clicked()), this, SLOT(apply()));
-    connect(addButton, SIGNAL(clicked()), this, SLOT(add()));
-    connect(delButton, SIGNAL(clicked()), this, SLOT(del()));
+    connect(newButton, &QAbstractButton::clicked, this, &WatchdogDialog::_new);
+    connect(closeButton, &QAbstractButton::clicked, this, &WatchdogDialog::apply );
+    connect(addButton, &QAbstractButton::clicked, this, &WatchdogDialog::add);
+    connect(delButton, &QAbstractButton::clicked, this, &WatchdogDialog::del);
     connect(comboBox, SIGNAL(activated(int)), SLOT(comboChanged(int)));
     connect(comboBox, SIGNAL(highlighted(const QString &)),
             SLOT(condChanged(const QString &)));
 
-    connect(tableView, SIGNAL(clicked(const QModelIndex &)),
-            SLOT(eventcat_slected(const QModelIndex &)));
-    connect(message, SIGNAL(textEdited(const QString &)),
-            SLOT(Changed(const QString &)));
-    connect(command, SIGNAL(textEdited(const QString &)),
-            SLOT(Changed(const QString &)));
-    connect(proc_name, SIGNAL(textEdited(const QString &)),
-            SLOT(Changed(const QString &)));
+    connect(tableView, &QAbstractItemView::clicked, this,
+            &WatchdogDialog::eventcat_slected);
+    connect(message, &QLineEdit::textEdited, this,
+            &WatchdogDialog::Changed);
+    connect(command, &QLineEdit::textEdited, this,
+            &WatchdogDialog::Changed);
+    connect(proc_name, &QLineEdit::textEdited, this,
+            &WatchdogDialog::Changed);
     connect(comboBox, SIGNAL(activated(const QString &)),
             SLOT(Changed(const QString &)));
 
