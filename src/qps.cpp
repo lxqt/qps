@@ -989,7 +989,7 @@ void Qps::menu_edit_cmd()
 void Qps::make_command_menu()
 {
     // should clear SIGNAL!!!
-    //QAction *act; - commented out to reduce warnigs when compiled
+    QAction *act;
     m_command->clear();
     m_command->disconnect();
 
