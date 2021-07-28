@@ -39,12 +39,12 @@
     <message>
         <location filename="../prefs.cpp" line="59"/>
         <source>Exit on closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Излез при затваряне</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="60"/>
         <source>Remember Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Запомни местоположението</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="68"/>
@@ -234,7 +234,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="829"/>
         <source>Thread</source>
-        <translation type="unfinished"></translation>
+        <translation>Нишка</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="836"/>
@@ -1248,7 +1248,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="214"/>
         <source>Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Полета</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="215"/>
@@ -1283,12 +1283,12 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="203"/>
         <source>Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Команда(Инструкция)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="255"/>
         <source>Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Опций</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="256"/>
@@ -1459,17 +1459,17 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="781"/>
         <source>Show File Path</source>
-        <translation type="unfinished"></translation>
+        <translation>Покажи местоположението на файла</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="787"/>
         <source>Show Graph</source>
-        <translation type="unfinished"></translation>
+        <translation>Покажи Графа(Графика)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>
         <source>Include Child Times</source>
-        <translation type="unfinished"></translation>
+        <translation>Включи времето на подпроцеси</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="998"/>
@@ -1524,7 +1524,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1491"/>
         <source>Do you really want to terminate the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation>Найстина ли желаете да спрете избрания(те) процес(и)?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1493"/>
@@ -1534,12 +1534,12 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1495"/>
         <source>Do you really want to kill the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation>Найстина ли желаете да спрете(терминирате) ибрания(те) процес(и)?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1504"/>
         <source>Question</source>
-        <translation type="unfinished"></translation>
+        <translation>Въпрос</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1525"/>
@@ -1549,12 +1549,12 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1910"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1912"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;h2&gt; Qps %1 - Визуален мениджър на процеси &lt;/h2&gt; %2 изпозващ Qt библиотека %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Източник: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Съгледвач на бъгове: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1932"/>
@@ -1625,12 +1625,12 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="765"/>
         <source>PID, COMMAND, USER...</source>
-        <translation type="unfinished"></translation>
+        <translation>ИДЕНТИФИКАЦИОНЕН НОМЕР НА ПРОЦЕС, КОМАНДА(Инструкция), ПОТРЕБИТЕЛ...</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="766"/>
         <source>Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Филтриране</translation>
     </message>
 </context>
 <context>
