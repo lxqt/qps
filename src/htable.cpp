@@ -888,7 +888,12 @@ int HeadedTable::tableWidth() const
 // update table Head !!
 void HeadedTable::setSortedCol(int col)
 {
+    int old_sorted_col = sorted_col;
     sorted_col = col;
+    // repaint the previously sorted header section to make sure that
+    // its sort indicator is removed (see QtTableView::repaintCell())
+    if (old_sorted_col != sorted_col && old_sorted_col > -1 && old_sorted_col < ncols)
+        head->repaintCell(0, old_sorted_col);
 }
 
 // should be virtual. why?
