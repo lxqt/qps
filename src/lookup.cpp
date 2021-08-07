@@ -41,7 +41,7 @@
 char *Lookup::argv0;
 int Lookup::maxtitlelen;
 
-UintQueue::UintQueue() { first = last = 0; };
+UintQueue::UintQueue() { first = last = 0; }
 
 void UintQueue::enqueue(unsigned x)
 {
