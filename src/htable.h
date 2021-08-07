@@ -266,7 +266,6 @@ class HeadedTable : public QWidget
     void updateCell(int row, int col, bool erase = false);
     void centerVertically(int row) { body->centerVertically(row); }
     void showRange(int from, int to) { body->showRange(from, to); }
-    void repaintColumns(int col0, int col1 = -1);
     void setTreeMode(bool tm);
     bool treeMode() { return treemode; }
     int tableWidth() const;

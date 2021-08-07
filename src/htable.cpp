@@ -840,34 +840,6 @@ inline int HeadedTable::colXPos(int col)
     return x;
 }
 
-// repaint columns from col0 to col1. If col1 is -1, repaint all
-// the way to the right edge of the table.
-// called by
-//          1.void Qps::update_table(int col)
-void HeadedTable::repaintColumns(int col0, int col1)
-{
-    QRect bvr = body->viewRect();
-    QRect hvr = head->viewRect();
-    int x0 = colOffset(col0) - body->xOffset();
-    if (x0 > hvr.width())
-        return;
-    if (x0 < 0)
-        x0 = 0;
-    bvr.setLeft(x0);
-    hvr.setLeft(x0);
-    if (col1 >= 0)
-    {
-        int x1 = colOffset(col1) + max_widths[col1] - body->xOffset();
-        if (x1 < hvr.width())
-        {
-            hvr.setRight(x1);
-            bvr.setRight(x1);
-        }
-    }
-    head->repaint(hvr);
-    body->repaint(bvr);
-}
-
 // DEL -> virtual
 // 	called by Pstable::setTreeMode(bool)
 void HeadedTable::setTreeMode(bool tm)
