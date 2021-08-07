@@ -817,8 +817,8 @@ QString doHistory(SysHistory *sysh)
     {
         if (p->pcpu == 0)
             continue;
-        sprintf(buf, " (%.01f%%)", p->pcpu);
-        str += "\n" + p->command + QString::fromLatin1(buf);
+        //sprintf(buf, " (%.01f%%)", p->pcpu);
+        //str += "\n" + p->command + QString::fromLatin1(buf);
     }
 
     return str;
@@ -892,7 +892,7 @@ QString IO_Graph::doHistoryTXT(SysHistory *sysh)
 {
     QString str;
 
-    char buf[64], mem_str[64];
+    char buf[64]/*, mem_str[64]*/;
     // sprintf(buf,"miniHistory /* %.02f%%",sysh->load_cpu*100);
     sprintf(buf, "miniHistory IO");
     str += QString::fromLatin1(buf);
@@ -901,7 +901,7 @@ QString IO_Graph::doHistoryTXT(SysHistory *sysh)
     {
         if (p->io_read_KBps == 0 and p->io_write_KBps == 0)
             continue;
-        buf[0] = 0;
+        /*buf[0] = 0;
 
         str += "\n" + p->command;
         // str+="\n"+ p->command + QString::fromLatin1(buf);
@@ -919,7 +919,7 @@ QString IO_Graph::doHistoryTXT(SysHistory *sysh)
             mem_string_k(p->io_write_KBps, mem_str);
             sprintf(buf, " %s/s write", mem_str);
             str += QString::fromLatin1(buf);
-        }
+        }*/
         str += ")";
     }
     return str;
