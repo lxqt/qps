@@ -996,7 +996,7 @@ void Qps::make_command_menu()
     if (flag_devel)
     {
         m_command->addAction( tr( "WatchDog" ), watchdogDialog,
-                             &Qps::show);
+                             &QWidget::show);
         act = m_command->addAction( tr( "Edit Commands..." ), this,
                                    &Qps::menu_edit_cmd);
     }
