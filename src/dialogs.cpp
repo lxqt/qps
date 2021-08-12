@@ -89,11 +89,11 @@ IntervalDialog::IntervalDialog(const char *ed_txt, bool enabled) : QDialog()
     h2->addWidget(ok);
     tl->addLayout(h2);
 
-    connect(ok, SIGNAL(clicked()), SLOT(done_dialog()));
-    connect(cancel, SIGNAL(clicked()), SLOT(reject()));
-    connect(lined, SIGNAL(returnPressed()), SLOT(done_dialog()));
-    connect(lined, SIGNAL(textChanged(const QString &)),
-            SLOT(event_label_changed()));
+    connect(ok ,&QAbstractButton::clicked, this, &IntervalDialog::done_dialog );
+    connect(cancel, &QAbstractButton::clicked, this, &QDialog::reject);
+    connect(lined, &QLineEdit::returnPressed, this, &IntervalDialog::done_dialog);
+    connect(lined, &QLineEdit::textChanged, this,
+            &IntervalDialog::event_label_changed);
     //    connect(toggle, SIGNAL(toggled(bool)), lined,
     //    SLOT(setEnabled(bool)));
 
@@ -230,11 +230,11 @@ SliderDialog::SliderDialog(int defaultval, int minval, int maxval) : QDialog()
     ok->setFixedSize(cancel->sizeHint());
     h3->addWidget(ok);
 
-    connect(ok, SIGNAL(clicked()), SLOT(done_dialog()));
+    connect(ok, &QAbstractButton::clicked, this, &SliderDialog::done_dialog);
     ok->setDefault(true);
-    connect(cancel, SIGNAL(clicked()), SLOT(reject()));
-    connect(lined, SIGNAL(returnPressed()), SLOT(done_dialog()));
-    connect(slider, SIGNAL(valueChanged(int)), this, SLOT(slider_change(int)));
+    connect(cancel, &QAbstractButton::clicked, this, &QDialog::reject);
+    connect(lined, &QLineEdit::returnPressed, this, &SliderDialog::done_dialog);
+    connect(slider, &QAbstractSlider::valueChanged, this, &SliderDialog::slider_change);
     // Q3Accel *acc = new Q3Accel(this);
     // acc->connectItem(acc->insertItem(Qt::Key_Escape), this,
     // SLOT(reject()));
@@ -283,8 +283,8 @@ PermissionDialog::PermissionDialog(QString msg, QString /*passwd*/) : QDialog()
     QPushButton *ok = new QPushButton( tr( "OK" ), this);
     hbox->addWidget(ok);
 
-    connect(ok, SIGNAL(clicked()), SLOT(accept()));
-    connect(cancel, SIGNAL(clicked()), SLOT(reject()));
+    connect(ok, &QAbstractButton::clicked, this, &QDialog::accept);
+    connect(cancel, &QAbstractButton::clicked, this, &QDialog::reject);
 }
 
 SchedDialog::SchedDialog(int policy, int prio) : QDialog()
@@ -305,9 +305,9 @@ SchedDialog::SchedDialog(int policy, int prio) : QDialog()
     vbox->addWidget(rb_rr);
     bgrp->setLayout(vbox);
 
-    connect(rb_other, SIGNAL(clicked(bool)), SLOT(button_clicked(bool)));
-    connect(rb_fifo, SIGNAL(clicked(bool)), SLOT(button_clicked(bool)));
-    connect(rb_rr, SIGNAL(clicked(bool)), SLOT(button_clicked(bool)));
+    connect(rb_other, &QAbstractButton::clicked, this, &SchedDialog::button_clicked);
+    connect(rb_fifo, &QAbstractButton::clicked, this, &SchedDialog::button_clicked);
+    connect(rb_rr, &QAbstractButton::clicked, this, &SchedDialog::button_clicked);
 
     QHBoxLayout *hbox1 = new QHBoxLayout;
     QPushButton *ok, *cancel;
@@ -318,8 +318,8 @@ SchedDialog::SchedDialog(int policy, int prio) : QDialog()
     hbox1->addWidget(cancel);
     vl->addLayout(hbox1);
 
-    connect(ok, SIGNAL(clicked()), SLOT(done_dialog()));
-    connect(cancel, SIGNAL(clicked()), SLOT(reject()));
+    connect(ok, &QAbstractButton::clicked, this, &SchedDialog::done_dialog);
+    connect(cancel, &QAbstractButton::clicked, this, &QDialog::reject);
 
     int active = 0;
     QRadioButton *rb;
@@ -359,7 +359,7 @@ SchedDialog::SchedDialog(int policy, int prio) : QDialog()
     button_clicked(active);
 
     // make sure return and escape work as accelerators
-    connect(lined, SIGNAL(returnPressed()), SLOT(done_dialog()));
+    connect(lined, &QLineEdit::returnPressed, this, &SchedDialog::done_dialog);
 }
 
 void SchedDialog::done_dialog()

@@ -175,7 +175,7 @@ Preferences::Preferences(QWidget *parent) : QDialog(parent)
             {
                 itB->cb = new QCheckBox( itB->text, grp );
                 vbox->addWidget( itB->cb );
-                connect( itB->cb, SIGNAL(clicked()), SLOT(update_reality()));
+                connect( itB->cb, &QAbstractButton::clicked, this, &Preferences::update_reality);
             }
         }
         grp->setLayout(vbox);
@@ -209,8 +209,8 @@ Preferences::Preferences(QWidget *parent) : QDialog(parent)
         grp_cpu->setLayout(vboxlayout);
         v_layout->addWidget(grp_cpu);
 
-        connect(rb_totalcpu, SIGNAL(clicked()), this, SLOT(update_config()));
-        connect(rb2, SIGNAL(clicked()), this, SLOT(update_config()));
+        connect(rb_totalcpu, &QAbstractButton::clicked, this, &Preferences::update_config);
+        connect(rb2, &QAbstractButton::clicked, this, &Preferences::update_config);
     }
 
     // Appearance ====================================
@@ -262,7 +262,7 @@ Preferences::Preferences(QWidget *parent) : QDialog(parent)
     v_layout->addWidget(saveButton);
     // v_layout->freeze();
 
-    connect(saveButton, SIGNAL(clicked()), SLOT(closed()));
+    connect(saveButton, &QAbstractButton::clicked, this, &Preferences::closed);
 }
 
 //

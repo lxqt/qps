@@ -160,8 +160,8 @@ Sockets::Sockets(QWidget *parent) : SimpleTable(parent, SOCKFIELDS, fields() )
 {
     if (!lookup)
         lookup = new Lookup();
-    connect(lookup, SIGNAL(resolved(unsigned)),
-            SLOT(update_hostname(unsigned)));
+    connect(lookup, &Lookup::resolved, this,
+            &Sockets::update_hostname);
     doing_lookup = Qps::hostname_lookup;
     refresh();
     // compute total width = window width

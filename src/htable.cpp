@@ -772,8 +772,8 @@ HeadedTable::HeadedTable(QWidget *parent, int /*opts*/) : QWidget(parent)
     setLayout(vlayout);
 
     // synchronize horizontal scrolling of head and body
-    connect(body->horizontalScrollBar(), SIGNAL(valueChanged(int)), head,
-            SLOT(scrollSideways(int)));
+    connect(body->horizontalScrollBar(), &QAbstractSlider::valueChanged, head,
+            &TableHead::scrollSideways);
 
     // NOTE: It isn't enough to consider the font here because it may change at startup.
     // Instead, it will be taken into account when QEvent::FontChange() is sent.
