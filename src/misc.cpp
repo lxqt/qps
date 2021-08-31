@@ -764,6 +764,8 @@ SearchBox::SearchBox(QWidget *parent) : QLineEdit(parent)
 
     setFocus(Qt::ActiveWindowFocusReason);
 
+    connect (this, &QLineEdit::textChanged, this, &SearchBox::onTextChanged);
+
     QList<QToolButton*> list = findChildren<QToolButton*>();
     if (!list.isEmpty())
     {
@@ -771,14 +773,6 @@ SearchBox::SearchBox(QWidget *parent) : QLineEdit(parent)
         if (clearButton)
             connect (clearButton, &QAbstractButton::clicked, this, &SearchBox::onClearButtonClicked);
     }
-}
-
-void SearchBox::event_cursor_moved(QMouseEvent *e) { move(e->x(), e->y()); }
-
-void SearchBox::event_xbutton_clicked()
-{
-    QKeyEvent ke(QEvent::KeyPress, Qt::Key_Escape, Qt::NoModifier); // temp..
-    keyPressEvent(&ke);
 }
 
 LogBox::LogBox(QWidget *p) : QLabel(p)

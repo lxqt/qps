@@ -179,11 +179,10 @@ class SearchBox : public QLineEdit
     Q_OBJECT
   public:
     SearchBox(QWidget *parent);
-    void event_cursor_moved(QMouseEvent *e);
     void keyPressEvent(QKeyEvent *e) override;
   protected slots:
     void onClearButtonClicked();
-    void event_xbutton_clicked();
+    void onTextChanged(const QString &txt);
 };
 
 class LogBox : public QLabel
