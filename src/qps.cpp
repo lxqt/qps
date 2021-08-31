@@ -1007,8 +1007,8 @@ void Qps::make_command_menu()
     {
         act = m_command->addAction(commands[i]->name);
     }
-    connect(m_command, &QMenu::triggered, this, 
-            &Qps::run_command);	    
+    connect(m_command, &QMenu::triggered, this,
+            &Qps::run_command);
     //#ifdef SOLARIS
     /* Solaris CDE don't have a tray, so we need a method to terminate */
     m_command->addSeparator();
@@ -2000,10 +2000,8 @@ void Qps::license() // -> help()
     diag->exec();
 }
 
-// MOVETO qps::keyPressEvent()
 void SearchBox::keyPressEvent(QKeyEvent *e)
 {
-    // signals
     if (e->key() == Qt::Key_Delete)
     {
         qps->sig_term();
@@ -2025,23 +2023,28 @@ void SearchBox::keyPressEvent(QKeyEvent *e)
 
     if (e->key() == Qt::Key_Escape)
     {
-        clear();
         qps->pstable->clearAllSelections();
+        clear();
+        return; // the rest is done at SearchBox::onTextChanged()
     }
-    else if (e->modifiers() == Qt::ControlModifier && e->key() == Qt::Key_A)
+
+    if (e->modifiers() == Qt::ControlModifier && e->key() == Qt::Key_A)
         qps->pstable->selectAll();
     else
         QLineEdit::keyPressEvent(e);
+}
 
-    qps->procview->filterstr = text();
-    qps->pstable->refresh(); /// qps->refresh(); // better ?
+// Covers pasting of selection clipboard too
+void SearchBox::onTextChanged(const QString &txt)
+{
+    qps->procview->filterstr = txt;
+    qps->pstable->refresh();
 }
 
 void SearchBox::onClearButtonClicked()
 {
     qps->pstable->clearAllSelections();
-    qps->procview->filterstr = text();
-    qps->pstable->refresh();
+    // the rest is done at SearchBox::onTextChanged()
 }
 
 void STATUSBAR_COUNT_UPDATE() {}
