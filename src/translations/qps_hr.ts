@@ -971,7 +971,7 @@ je prekinuta sa stanjem </translation>
     <message>
         <location filename="../proc.cpp" line="2933"/>
         <source>Resident set size</source>
-        <translation type="unfinished"></translation>
+        <translation>Veličina rezidentne memorije</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2935"/>
@@ -991,7 +991,7 @@ je prekinuta sa stanjem </translation>
     <message>
         <location filename="../proc.cpp" line="2937"/>
         <source>Text(code) resident set size</source>
-        <translation type="unfinished"></translation>
+        <translation>Veličina rezidentne memorije za tekst (kod)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2939"/>
@@ -1001,7 +1001,7 @@ je prekinuta sa stanjem </translation>
     <message>
         <location filename="../proc.cpp" line="2939"/>
         <source>Data resident set size(malloc+global variable)</source>
-        <translation type="unfinished"></translation>
+        <translation>Veličina rezidentne memorije za podatke (malloc+globalna varijabla)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2941"/>
@@ -1011,7 +1011,7 @@ je prekinuta sa stanjem </translation>
     <message>
         <location filename="../proc.cpp" line="2941"/>
         <source>Stack size</source>
-        <translation type="unfinished"></translation>
+        <translation>Stack veličina</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2943"/>
