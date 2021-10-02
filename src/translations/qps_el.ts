@@ -1199,7 +1199,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1846"/>
         <source>Show</source>
-        <translation type="unfinished">Εμφάνιση</translation>
+        <translation>Εμφάνιση</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1849"/>
@@ -1209,7 +1209,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1853"/>
         <source>Quit</source>
-        <translation type="unfinished">Έξοδος</translation>
+        <translation>Έξοδος</translation>
     </message>
 </context>
 <context>
@@ -1232,7 +1232,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="207"/>
         <source>View</source>
-        <translation type="unfinished">Προβολή</translation>
+        <translation>Προβολή</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="208"/>
@@ -1242,7 +1242,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="209"/>
         <source>Log</source>
-        <translation type="unfinished">Καταγραφή</translation>
+        <translation>Καταγραφή</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="214"/>
@@ -1307,28 +1307,28 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="280"/>
         <source>Help</source>
-        <translation type="unfinished">Βοήθεια</translation>
+        <translation>Βοήθεια</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="282"/>
         <location filename="../qps.cpp" line="1894"/>
         <source>About</source>
-        <translation type="unfinished">Σχετικά</translation>
+        <translation>Σχετικά</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="370"/>
         <source>Detail</source>
-        <translation type="unfinished">Détail</translation>
+        <translation>Λεπτομέρεια</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="411"/>
         <source>test</source>
-        <translation type="unfinished">&lt;emphasis role=&quot;bold&quot;&gt;Δοκιμή:&lt;/emphasis&gt;</translation>
+        <translation>Δοκιμή</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="412"/>
         <source>Copied to Clipboard</source>
-        <translation type="unfinished">Αντιγράφηκε στο πρόχειρο</translation>
+        <translation>Αντιγράφηκε στο πρόχειρο</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="464"/>
@@ -1363,12 +1363,12 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="472"/>
         <source>Stop</source>
-        <translation type="unfinished">Διακοπή</translation>
+        <translation>Διακοπή</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="474"/>
         <source>Continue</source>
-        <translation type="unfinished">Συνέχεια</translation>
+        <translation>Συνέχεια</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="478"/>
@@ -1483,7 +1483,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1017"/>
         <source>Quit</source>
-        <translation type="unfinished">Έξοδος</translation>
+        <translation>Έξοδος</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1336"/>
