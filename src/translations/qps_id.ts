@@ -39,12 +39,12 @@
     <message>
         <location filename="../prefs.cpp" line="59"/>
         <source>Exit on closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Keluar saat ditutup</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="60"/>
         <source>Remember Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingat posisi</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="68"/>
