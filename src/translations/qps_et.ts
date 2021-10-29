@@ -74,7 +74,7 @@
     <message>
         <location filename="../prefs.cpp" line="83"/>
         <source>Selection: Copy PIDs to Clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Valik: Kopeeri protsessi id&apos;d lõikelauale</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="85"/>
@@ -160,22 +160,22 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../commanddialog.cpp" line="47"/>
         <source>Edit Commands 0.1 alpha</source>
-        <translation type="unfinished"></translation>
+        <translation>Käskude muutmise versioon 0.1 alpha</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="63"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nimi:</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="79"/>
         <source>Popup</source>
-        <translation type="unfinished"></translation>
+        <translation>Hüpikaken</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="84"/>
         <source>Command Line:</source>
-        <translation type="unfinished"></translation>
+        <translation>Käsurida:</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="95"/>
@@ -187,7 +187,14 @@ lõpetas töö olekuteatega </translation>
 %%	%
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Asendused:
+%p	PID
+%c	COMMAND
+%C	CMDLINE
+%u	USER
+%%	%
+
+</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="109"/>
@@ -251,7 +258,7 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../misc.cpp" line="855"/>
         <source>Pause (Ctrl+Space)</source>
-        <translation type="unfinished"></translation>
+        <translation>Pane pausile (Ctrl+Space)</translation>
     </message>
 </context>
 <context>
@@ -259,7 +266,7 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../details.cpp" line="36"/>
         <source>Process %1 ( %2 ) - details</source>
-        <translation type="unfinished"></translation>
+        <translation>Protsess %1 ( %2 ) - detailne teave</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="45"/>
@@ -325,7 +332,7 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../watchdog.ui" line="162"/>
         <source>Select condition</source>
-        <translation type="unfinished"></translation>
+        <translation>Vali tingimus</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="170"/>
@@ -340,7 +347,7 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../watchdog.ui" line="219"/>
         <source>process name</source>
-        <translation type="unfinished"></translation>
+        <translation>protsessi nimi</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="229"/>
@@ -350,17 +357,17 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../watchdog.ui" line="248"/>
         <source>%</source>
-        <translation type="unfinished"></translation>
+        <translation>%</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="280"/>
         <source>include already running process</source>
-        <translation type="unfinished"></translation>
+        <translation>kaasa juba töötavad protsessid</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="309"/>
         <source>run command</source>
-        <translation type="unfinished"></translation>
+        <translation>käivita käsk</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="342"/>
@@ -370,7 +377,7 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../watchdog.ui" line="367"/>
         <source>Help (Not yet. just concept)</source>
-        <translation type="unfinished"></translation>
+        <translation>Abiteave (pole veel päris valmis)</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="394"/>
@@ -381,22 +388,22 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../watchdog.ui" line="425"/>
         <source>New</source>
-        <translation type="unfinished"></translation>
+        <translation>Uus</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="432"/>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>Lisa</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="439"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Kustuta</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="446"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Sulge</translation>
     </message>
 </context>
 <context>
@@ -404,12 +411,12 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../message.ui" line="13"/>
         <source>Qps</source>
-        <translation type="unfinished"></translation>
+        <translation>Qps</translation>
     </message>
     <message>
         <location filename="../message.ui" line="27"/>
         <source>Ok</source>
-        <translation type="unfinished"></translation>
+        <translation>Sobib</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="42"/>
@@ -424,22 +431,22 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../execwindow.cpp" line="96"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Sulge</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="102"/>
         <source>%1 [running]</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 [töötab]</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="103"/>
         <source>terminate command</source>
-        <translation type="unfinished"></translation>
+        <translation>lõpeta käsu töö</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="112"/>
         <source>Error %1 : [%2] Maybe command not found</source>
-        <translation type="unfinished"></translation>
+        <translation>Viga %1 : [%2] võib-olla sellist käsku ei leidu</translation>
     </message>
 </context>
 <context>
@@ -447,12 +454,12 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../fieldsel.cpp" line="34"/>
         <source>Select Custom Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>Vali kuvatavad väljad </translation>
     </message>
     <message>
         <location filename="../fieldsel.cpp" line="75"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Sulge</translation>
     </message>
 </context>
 <context>
@@ -485,7 +492,7 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../details.cpp" line="525"/>
         <source>File name (if available)</source>
-        <translation type="unfinished"></translation>
+        <translation>Faili nimi (kui on leitav)</translation>
     </message>
 </context>
 <context>
@@ -493,22 +500,22 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../dialogs.cpp" line="43"/>
         <source>Change Update Period</source>
-        <translation type="unfinished"></translation>
+        <translation>Muuda uuendamise välpa</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="49"/>
         <source>New Update Period</source>
-        <translation type="unfinished"></translation>
+        <translation>Uus andmete uuendamise ajavahemik</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="85"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Tühista</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="87"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>Valmis</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="121"/>
@@ -518,7 +525,7 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../dialogs.cpp" line="139"/>
         <source>Invalid value</source>
-        <translation type="unfinished"></translation>
+        <translation>Vigane väärtus</translation>
     </message>
 </context>
 <context>
@@ -539,12 +546,12 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../details.cpp" line="392"/>
         <source>Address Range</source>
-        <translation type="unfinished"></translation>
+        <translation>Aadressivahemik</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="392"/>
         <source>Mapped addresses (hex) )</source>
-        <translation type="unfinished"></translation>
+        <translation>Kasutusel aadressid (hex)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="393"/>
@@ -612,22 +619,22 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../dialogs.cpp" line="264"/>
         <source>Permission</source>
-        <translation type="unfinished"></translation>
+        <translation>Õigused</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="273"/>
         <source>Root password</source>
-        <translation type="unfinished"></translation>
+        <translation>Juurkasutaja salasõna</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="280"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Katkesta</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="283"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>Valmis</translation>
     </message>
 </context>
 <context>
@@ -635,42 +642,42 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../prefs.cpp" line="150"/>
         <source>Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Eelistused</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="157"/>
         <source>Setting</source>
-        <translation type="unfinished"></translation>
+        <translation>Seadistus</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="191"/>
         <source>%CPU divided by</source>
-        <translation type="unfinished"></translation>
+        <translation>Protsessori % on jagatud</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="198"/>
         <source>Total cpu: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Kõikide protsessoritega: %1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="199"/>
         <source>Single cpu: 1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ühe protsessoriga: 1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="205"/>
         <source>default</source>
-        <translation type="unfinished"></translation>
+        <translation>vaikimisi</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="206"/>
         <source>for developer</source>
-        <translation type="unfinished"></translation>
+        <translation>arendajale</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="240"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Välimus</translation>
     </message>
 </context>
 <context>
@@ -678,12 +685,12 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../proc.cpp" line="2876"/>
         <source>PID</source>
-        <translation type="unfinished"></translation>
+        <translation>PID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2876"/>
         <source>Process ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Protsessi ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2878"/>
@@ -698,202 +705,202 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../proc.cpp" line="2880"/>
         <source>PPID</source>
-        <translation type="unfinished"></translation>
+        <translation>PPID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2880"/>
         <source>Parent process ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Eelasprotsessi ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2882"/>
         <source>PGID</source>
-        <translation type="unfinished"></translation>
+        <translation>PGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2882"/>
         <source>Process group ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Protsessigrupi ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2884"/>
         <source>SID</source>
-        <translation type="unfinished"></translation>
+        <translation>SID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2884"/>
         <source>Session ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Sessiooni ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2886"/>
         <source>TTY</source>
-        <translation type="unfinished"></translation>
+        <translation>TTY</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2886"/>
         <source>Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminal</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2888"/>
         <source>TPGID</source>
-        <translation type="unfinished"></translation>
+        <translation>TPGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2888"/>
         <source>Process group ID of tty owner</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminali omaniku protsessigrupi ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2890"/>
         <source>USER</source>
-        <translation type="unfinished"></translation>
+        <translation>USER</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2890"/>
         <source>Owner (*=suid root, +=suid a user)</source>
-        <translation type="unfinished"></translation>
+        <translation>Omanik (*=suid juurkasutaja, +=suid kasutaja)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2892"/>
         <source>GROUP</source>
-        <translation type="unfinished"></translation>
+        <translation>GROUP</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2892"/>
         <source>Group name (*=sgid other)</source>
-        <translation type="unfinished"></translation>
+        <translation>Grupi nimi (*=sgid muu)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2894"/>
         <source>UID</source>
-        <translation type="unfinished"></translation>
+        <translation>UID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2894"/>
         <source>Real user ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Tegeliku kasutaja ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2896"/>
         <source>EUID</source>
-        <translation type="unfinished"></translation>
+        <translation>EUID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2896"/>
         <source>Effective user ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Jõustatud kasutaja ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2898"/>
         <source>SUID</source>
-        <translation type="unfinished"></translation>
+        <translation>SUID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2898"/>
         <source>Saved user ID (Posix)</source>
-        <translation type="unfinished"></translation>
+        <translation>Salvestatud kasutaja ID (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2900"/>
         <source>FSUID</source>
-        <translation type="unfinished"></translation>
+        <translation>FSUID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2900"/>
         <source>File system user ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Failisüsteemi kasutaja ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2902"/>
         <source>GID</source>
-        <translation type="unfinished"></translation>
+        <translation>GID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2902"/>
         <source>Real group ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Grupi tegelik ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2904"/>
         <source>EGID</source>
-        <translation type="unfinished"></translation>
+        <translation>EGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2904"/>
         <source>Effective group ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Jõustatud grupi ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2906"/>
         <source>SGID</source>
-        <translation type="unfinished"></translation>
+        <translation>SGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2906"/>
         <source>Saved group ID (Posix)</source>
-        <translation type="unfinished"></translation>
+        <translation>Salvestatud grupi ID (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2908"/>
         <source>FSGID</source>
-        <translation type="unfinished"></translation>
+        <translation>FSGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2908"/>
         <source>File system group ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Failisüsteemi grupi ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2910"/>
         <source>PRI</source>
-        <translation type="unfinished"></translation>
+        <translation>PRI</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2910"/>
         <source>Dynamic priority</source>
-        <translation type="unfinished"></translation>
+        <translation>Dünaamiline prioriteet</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2912"/>
         <source>NICE</source>
-        <translation type="unfinished"></translation>
+        <translation>NICE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2912"/>
         <source>Scheduling favour (higher -&gt; less cpu time)</source>
-        <translation type="unfinished"></translation>
+        <translation>Protsesside järjekorraeelistus (suurem number -&gt; vähem protsessoriaega)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2914"/>
         <source>NLWP</source>
-        <translation type="unfinished"></translation>
+        <translation>NLWP</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2914"/>
         <source>Number of tasks(threads) in task group</source>
-        <translation type="unfinished"></translation>
+        <translation>Ülesannete (lõimede) arv ülesannete grupis</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2916"/>
         <source>PLCY</source>
-        <translation type="unfinished"></translation>
+        <translation>PLCY</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2916"/>
         <source>Scheduling policy</source>
-        <translation type="unfinished"></translation>
+        <translation>Ressursijaotuse põhimõte</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2918"/>
         <source>RPRI</source>
-        <translation type="unfinished"></translation>
+        <translation>RPRI</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2918"/>
         <source>Realtime priority (0-99, more is better)</source>
-        <translation type="unfinished"></translation>
+        <translation>Prioriteet reaalajas (0-99, suurem on parem)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2920"/>
@@ -1018,12 +1025,12 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../proc.cpp" line="2945"/>
         <source>SWAP</source>
-        <translation type="unfinished"></translation>
+        <translation>SWAP</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2945"/>
         <source>Kbytes on swap device</source>
-        <translation type="unfinished"></translation>
+        <translation>Kilobaite saalealal</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2947"/>
@@ -1058,12 +1065,12 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../proc.cpp" line="2953"/>
         <source>STAT</source>
-        <translation type="unfinished"></translation>
+        <translation>STAT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2953"/>
         <source>State of the process </source>
-        <translation type="unfinished"></translation>
+        <translation>Protsessi olek </translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2955"/>
@@ -1148,42 +1155,42 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../proc.cpp" line="2971"/>
         <source>the process name</source>
-        <translation type="unfinished"></translation>
+        <translation>protsessi nimi</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2971"/>
         <source>Process Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Protsessi nimi</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2975"/>
         <source>CWD</source>
-        <translation type="unfinished"></translation>
+        <translation>CWD</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2975"/>
         <source>Current working directory</source>
-        <translation type="unfinished"></translation>
+        <translation>Praegune töökaust</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2976"/>
         <source>ROOT</source>
-        <translation type="unfinished"></translation>
+        <translation>ROOT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2976"/>
         <source>Root directory of process</source>
-        <translation type="unfinished"></translation>
+        <translation>Protsessi juurkaust</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2979"/>
         <source>COMMAND_LINE</source>
-        <translation type="unfinished"></translation>
+        <translation>COMMAND_LINE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2979"/>
         <source>Command line that started the process</source>
-        <translation type="unfinished"></translation>
+        <translation>Protsessi käivitanud käsk</translation>
     </message>
 </context>
 <context>
@@ -1191,17 +1198,17 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../qps.cpp" line="1846"/>
         <source>Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Näita</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1849"/>
         <source>Hide</source>
-        <translation type="unfinished"></translation>
+        <translation>Peida</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1853"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>Välju</translation>
     </message>
 </context>
 <context>
@@ -1214,98 +1221,98 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../qps.cpp" line="199"/>
         <source>Remove Field</source>
-        <translation type="unfinished"></translation>
+        <translation>Eemalda väli</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="200"/>
         <source>Add Field</source>
-        <translation type="unfinished"></translation>
+        <translation>Lisa väli</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="207"/>
         <source>View</source>
-        <translation type="unfinished"></translation>
+        <translation>Näita</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="208"/>
         <source>Process</source>
-        <translation type="unfinished"></translation>
+        <translation>Protsess</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="209"/>
         <source>Log</source>
-        <translation type="unfinished"></translation>
+        <translation>Logi</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="214"/>
         <source>Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Väljad</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="215"/>
         <source>Custom Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaade valitud väärtustega</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="217"/>
         <source>Basic Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>Vaade põhiliste väärtustega </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="219"/>
         <source>Jobs Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>Vaade töödega seotud väärtustega </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="221"/>
         <source>Memory Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>Vaade mälukasutuse väärtustega </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="224"/>
         <source>Scheduling Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>Vaade ressursijaotuse väärtustega </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="241"/>
         <source>Select Custom Fields...</source>
-        <translation type="unfinished"></translation>
+        <translation>Vali kohandatud väljad...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="203"/>
         <source>Command</source>
-        <translation type="unfinished"></translation>
+        <translation>Käsk</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="255"/>
         <source>Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Valikud</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="256"/>
         <source>Update Period...</source>
-        <translation type="unfinished"></translation>
+        <translation>Uuendamise välp...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="265"/>
         <source>Show Status bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Näita olekuriba</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="274"/>
         <source>Preferences...</source>
-        <translation type="unfinished"></translation>
+        <translation>Eelistused...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="280"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Abiteave</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="282"/>
         <location filename="../qps.cpp" line="1894"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Rakenduse teave</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="370"/>
@@ -1320,7 +1327,7 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../qps.cpp" line="412"/>
         <source>Copied to Clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopeerisin andmed lõikelauale</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="464"/>
@@ -1445,17 +1452,17 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../qps.cpp" line="515"/>
         <source>View Details</source>
-        <translation type="unfinished"></translation>
+        <translation>Detailne vaade</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="781"/>
         <source>Show File Path</source>
-        <translation type="unfinished"></translation>
+        <translation>Näita faili asukohta</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="787"/>
         <source>Show Graph</source>
-        <translation type="unfinished"></translation>
+        <translation>Kuva graafikut</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>
@@ -1470,12 +1477,12 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../qps.cpp" line="1000"/>
         <source>Edit Commands...</source>
-        <translation type="unfinished"></translation>
+        <translation>Muuda käske...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1017"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>Välju</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1336"/>
@@ -1485,7 +1492,7 @@ lõpetas töö olekuteatega </translation>
         <location filename="../qps.cpp" line="1429"/>
         <location filename="../qps.cpp" line="1524"/>
         <source>Permission denied</source>
-        <translation type="unfinished"></translation>
+        <translation>Õigused puuduvad</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1337"/>
@@ -1550,7 +1557,7 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../qps.cpp" line="1932"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Qps&apos;i algne autor&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Kaasautorid&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1970"/>
@@ -1588,27 +1595,27 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../dialogs.cpp" line="314"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>Valmis</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="316"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Katkesta</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="346"/>
         <source>Priority (1-99):</source>
-        <translation type="unfinished"></translation>
+        <translation>Prioriteet (1-99):</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="379"/>
         <source>Invalid Input</source>
-        <translation type="unfinished"></translation>
+        <translation>Vigane sisend</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="380"/>
         <source>The priority must be in the range 1..99</source>
-        <translation type="unfinished"></translation>
+        <translation>Prioriteet peab olema vahemikus 1...99</translation>
     </message>
 </context>
 <context>

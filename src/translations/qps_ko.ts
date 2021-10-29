@@ -59,7 +59,7 @@
     <message>
         <location filename="../prefs.cpp" line="75"/>
         <source>Disclosure Triangles</source>
-        <translation type="unfinished"></translation>
+        <translation>펼침 삼각형</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="76"/>
@@ -223,7 +223,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="817"/>
         <source>Linear</source>
-        <translation type="unfinished"></translation>
+        <translation>직선</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="820"/>
@@ -921,7 +921,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2922"/>
         <source>Percentage average sleep time (-1 -&gt; N/A)</source>
-        <translation type="unfinished"></translation>
+        <translation>평균 유휴 시간 비율 (-1 -&gt; 없음)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2924"/>
@@ -991,7 +991,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2937"/>
         <source>Text(code) resident set size</source>
-        <translation type="unfinished"></translation>
+        <translation>텍스트(코드) 상주 세트 크기</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2939"/>
@@ -1001,7 +1001,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2939"/>
         <source>Data resident set size(malloc+global variable)</source>
-        <translation type="unfinished"></translation>
+        <translation>데이터 상주 세트 크기(malloc+전역 변수)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2941"/>
@@ -1056,142 +1056,142 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2951"/>
         <source>DT</source>
-        <translation type="unfinished"></translation>
+        <translation>DT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2951"/>
         <source>Number of dirty (non-written) pages</source>
-        <translation type="unfinished"></translation>
+        <translation>더티(기록되지 않은) 페이지 수</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2953"/>
         <source>STAT</source>
-        <translation type="unfinished"></translation>
+        <translation>상태</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2953"/>
         <source>State of the process </source>
-        <translation type="unfinished"></translation>
+        <translation>프로세스 상태 </translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2955"/>
         <source>FLAGS</source>
-        <translation type="unfinished"></translation>
+        <translation>플래그</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2955"/>
         <source>Process flags (hex)</source>
-        <translation type="unfinished"></translation>
+        <translation>프로세스 플래그 (16진수)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2957"/>
         <source>WCHAN</source>
-        <translation type="unfinished"></translation>
+        <translation>WCHAN</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2957"/>
         <source>Kernel function where process is sleeping</source>
-        <translation type="unfinished"></translation>
+        <translation>프로세스가 유휴 상태인 커널 함수</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2959"/>
         <source>%WCPU</source>
-        <translation type="unfinished"></translation>
+        <translation>%WCPU</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2959"/>
         <source>Weighted percentage of CPU (30 s average)</source>
-        <translation type="unfinished"></translation>
+        <translation>CPU의 가중치 비율 (30초 평균)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2961"/>
         <source>%CPU</source>
-        <translation type="unfinished"></translation>
+        <translation>%CPU</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2961"/>
         <source>Percentage of CPU used since last update</source>
-        <translation type="unfinished"></translation>
+        <translation>마지막 업데이트 이후 사용된 CPU 비율</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2963"/>
         <source>%MEM</source>
-        <translation type="unfinished"></translation>
+        <translation>%MEM</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2963"/>
         <source>Percentage of memory used (RSS/total mem)</source>
-        <translation type="unfinished"></translation>
+        <translation>사용된 메모리 비율 (RSS/총 메모리)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2965"/>
         <source>START</source>
-        <translation type="unfinished"></translation>
+        <translation>시작</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2965"/>
         <source>Time process started</source>
-        <translation type="unfinished"></translation>
+        <translation>시간 프로세스가 시작되었습니다</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2967"/>
         <source>TIME</source>
-        <translation type="unfinished"></translation>
+        <translation>시간</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2967"/>
         <source>Total CPU time used since start</source>
-        <translation type="unfinished"></translation>
+        <translation>시작 이후 사용한 총 CPU 시간</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2969"/>
         <source>CPU</source>
-        <translation type="unfinished"></translation>
+        <translation>CPU</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2969"/>
         <source>CPU the process is executing on (SMP system)</source>
-        <translation type="unfinished"></translation>
+        <translation>프로세스가 실행 중인 CPU (SMP 시스템)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2971"/>
         <source>the process name</source>
-        <translation type="unfinished"></translation>
+        <translation>프로세스 이름</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2971"/>
         <source>Process Name</source>
-        <translation type="unfinished"></translation>
+        <translation>프로세스 이름</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2975"/>
         <source>CWD</source>
-        <translation type="unfinished"></translation>
+        <translation>CWD</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2975"/>
         <source>Current working directory</source>
-        <translation type="unfinished"></translation>
+        <translation>현재 작업 디렉터리</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2976"/>
         <source>ROOT</source>
-        <translation type="unfinished"></translation>
+        <translation>루트</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2976"/>
         <source>Root directory of process</source>
-        <translation type="unfinished"></translation>
+        <translation>프로세스의 루트 디렉토리</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2979"/>
         <source>COMMAND_LINE</source>
-        <translation type="unfinished"></translation>
+        <translation>명령_줄</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2979"/>
         <source>Command line that started the process</source>
-        <translation type="unfinished"></translation>
+        <translation>프로세스를 시작한 명령줄</translation>
     </message>
 </context>
 <context>
@@ -1199,17 +1199,17 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1846"/>
         <source>Show</source>
-        <translation type="unfinished"></translation>
+        <translation>표시</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1849"/>
         <source>Hide</source>
-        <translation type="unfinished"></translation>
+        <translation>숨김</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1853"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>종료</translation>
     </message>
 </context>
 <context>
@@ -1222,118 +1222,118 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="199"/>
         <source>Remove Field</source>
-        <translation type="unfinished"></translation>
+        <translation>필드 제거</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="200"/>
         <source>Add Field</source>
-        <translation type="unfinished"></translation>
+        <translation>필드 추가</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="207"/>
         <source>View</source>
-        <translation type="unfinished"></translation>
+        <translation>보기</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="208"/>
         <source>Process</source>
-        <translation type="unfinished"></translation>
+        <translation>프로세스</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="209"/>
         <source>Log</source>
-        <translation type="unfinished"></translation>
+        <translation>로그</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="214"/>
         <source>Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>필드</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="215"/>
         <source>Custom Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>사용자 지정 필드</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="217"/>
         <source>Basic Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>기본 필드 </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="219"/>
         <source>Jobs Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>작업 필드 </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="221"/>
         <source>Memory Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>메모리 필드 </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="224"/>
         <source>Scheduling Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>스케줄링 필드 </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="241"/>
         <source>Select Custom Fields...</source>
-        <translation type="unfinished"></translation>
+        <translation>사용자 지정 필드 선택...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="203"/>
         <source>Command</source>
-        <translation type="unfinished"></translation>
+        <translation>명령</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="255"/>
         <source>Options</source>
-        <translation type="unfinished"></translation>
+        <translation>옵션</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="256"/>
         <source>Update Period...</source>
-        <translation type="unfinished"></translation>
+        <translation>업데이트 기간...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="265"/>
         <source>Show Status bar</source>
-        <translation type="unfinished"></translation>
+        <translation>상태 표시줄 표시</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="274"/>
         <source>Preferences...</source>
-        <translation type="unfinished"></translation>
+        <translation>기본 설정...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="280"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>도움말</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="282"/>
         <location filename="../qps.cpp" line="1894"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>정보</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="370"/>
         <source>Detail</source>
-        <translation type="unfinished"></translation>
+        <translation>세부 사항</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="411"/>
         <source>test</source>
-        <translation type="unfinished"></translation>
+        <translation>테스트</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="412"/>
         <source>Copied to Clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>클립보드에 복사됨</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="464"/>
         <source>context popup</source>
-        <translation type="unfinished"></translation>
+        <translation>컨텍스트 팝업</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="465"/>
@@ -1343,12 +1343,12 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="466"/>
         <source>Scheduling...</source>
-        <translation type="unfinished"></translation>
+        <translation>스케줄링...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="468"/>
         <source>Terminate</source>
-        <translation type="unfinished"></translation>
+        <translation>종결</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="470"/>
@@ -1363,32 +1363,32 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="472"/>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>중지</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="474"/>
         <source>Continue</source>
-        <translation type="unfinished"></translation>
+        <translation>계속하기</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="478"/>
         <source>SIGINT (interrupt)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGINT (개입중단)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="480"/>
         <source>SIGCONT (continue)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGCONT (계속하기)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="482"/>
         <source>SIGSTOP (stop)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGSTOP (중지)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="484"/>
         <source>SIGQUIT (quit)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGQUIT (종료)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="486"/>
@@ -1398,77 +1398,77 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="488"/>
         <source>SIGABRT (abort)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGABRT (중단)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="490"/>
         <source>SIGFPE (floating point exception)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGFPE (부동 소수점 예외)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="492"/>
         <source>SIGSEGV (segmentation violation)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGSEGV (세분화 위반)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="494"/>
         <source>SIGPIPE (broken pipe)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGPIPE (깨진 파이프)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="496"/>
         <source>SIGALRM (timer signal)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGALRM (타이머 신호)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="498"/>
         <source>SIGUSR1 (user-defined 1)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGUSR1 (사용자정의됨 1)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="500"/>
         <source>SIGUSR2 (user-defined 2)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGUSR2 (사용자정의됨 2)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="502"/>
         <source>SIGCHLD (child death)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGCHLD (하위 죽음)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="504"/>
         <source>SIGTSTP (stop from tty)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGTSTP (tty에서 중지)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="506"/>
         <source>SIGTTIN (tty input)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGTTIN (tty 입력)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="508"/>
         <source>SIGTTOU (tty output)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGTTOU (tty 출력)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="515"/>
         <source>View Details</source>
-        <translation type="unfinished"></translation>
+        <translation>세부 사항 보기</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="781"/>
         <source>Show File Path</source>
-        <translation type="unfinished"></translation>
+        <translation>파일 경로 표시</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="787"/>
         <source>Show Graph</source>
-        <translation type="unfinished"></translation>
+        <translation>그래프 표시</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>
         <source>Include Child Times</source>
-        <translation type="unfinished"></translation>
+        <translation>하위 시간 포함</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="998"/>
@@ -1478,12 +1478,12 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1000"/>
         <source>Edit Commands...</source>
-        <translation type="unfinished"></translation>
+        <translation>명령 편집...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1017"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>종료</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1336"/>
@@ -1493,37 +1493,37 @@ exited with status </source>
         <location filename="../qps.cpp" line="1429"/>
         <location filename="../qps.cpp" line="1524"/>
         <source>Permission denied</source>
-        <translation type="unfinished"></translation>
+        <translation>사용 권한 거부됨</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1337"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
-        <translation type="unfinished"></translation>
+        <translation>선택한 프로세스를 다시 수행할 수 있는 권한이 없습니다. 프로세스 소유자와 슈퍼 유저만이 그렇게 할 수 있습니다.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1368"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 (%2) 프로세스를 다시 시작할 수 있는 권한이 없습니다.프로세스 소유자와 슈퍼 유저만이 그렇게 할 수 있습니다.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1375"/>
         <source>Only the super-user may lower the nice value of a process.</source>
-        <translation type="unfinished"></translation>
+        <translation>슈퍼 유저만이 프로세스의 nice 값을 낮출 수 있습니다.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1396"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
-        <translation type="unfinished"></translation>
+        <translation>슈퍼 유저만이 스케줄링 정책과 정적 우선순위를 변경할 수 있습니다.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1430"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 (%2) 프로세스의 스케줄링 및/또는 우선 순위를 변경할 권한이 없습니다. 그것은 슈퍼 유저만이 할 수 있습니다.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1491"/>
         <source>Do you really want to terminate the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation>선택한 프로세스를 종료하시겠습니까?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1493"/>
