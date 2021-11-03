@@ -417,7 +417,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../message.ui" line="27"/>
         <source>Ok</source>
-        <translation></translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="42"/>
@@ -630,7 +630,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../dialogs.cpp" line="280"/>
         <source>Cancel</source>
-        <translation>Zrušit</translation>
+        <translation>Storno</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="283"/>
@@ -1136,7 +1136,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../proc.cpp" line="2967"/>
         <source>TIME</source>
-        <translation></translation>
+        <translation>DOBA</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2967"/>
@@ -1601,7 +1601,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../dialogs.cpp" line="316"/>
         <source>Cancel</source>
-        <translation>Zrušit</translation>
+        <translation>Storno</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="346"/>
@@ -1647,7 +1647,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../dialogs.cpp" line="225"/>
         <source>Cancel</source>
-        <translation>Zrušit</translation>
+        <translation>Storno</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="229"/>
