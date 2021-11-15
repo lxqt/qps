@@ -277,7 +277,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="54"/>
         <source>Sockets</source>
-        <translation type="unfinished">Sockets</translation>
+        <translation>Гнезда</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="59"/>
@@ -1529,7 +1529,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1493"/>
         <source>Do you really want to hang up the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation>Наистина ли искате да затворите избрания(ите) процес(и)?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1495"/>
@@ -1582,17 +1582,17 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="298"/>
         <source>SCHED_OTHER (time-sharing)</source>
-        <translation>SCHED_OTHER (time-sharing)</translation>
+        <translation>SCHED_OTHER (споделяне на времето)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="299"/>
         <source>SCHED_FIFO (real-time)</source>
-        <translation>SCHED_FIFO (real-time)</translation>
+        <translation>SCHED_FIFO (в реално време)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="300"/>
         <source>SCHED_RR (real-time)</source>
-        <translation>SCHED_RR (real-time)</translation>
+        <translation>SCHED_RR (в реално време)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="314"/>
@@ -1643,7 +1643,7 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="185"/>
         <source>New nice value:</source>
-        <translation>New nice value:</translation>
+        <translation>Предпочитана нова стойност:</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="225"/>
