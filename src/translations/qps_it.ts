@@ -69,7 +69,7 @@
     <message>
         <location filename="../prefs.cpp" line="82"/>
         <source>Auto Save Settings on Exit</source>
-        <translation>Salvataggio Automatico Impostazioni alla Chiusura</translation>
+        <translation>Salva automaticamente le impostazioni alla chiusura</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="83"/>
@@ -891,7 +891,7 @@ uscito con stato </translation>
     <message>
         <location filename="../proc.cpp" line="2916"/>
         <source>Scheduling policy</source>
-        <translation type="unfinished"></translation>
+        <translation>Politica di scheduling</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2918"/>
