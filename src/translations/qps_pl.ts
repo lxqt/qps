@@ -39,12 +39,12 @@
     <message>
         <location filename="../prefs.cpp" line="59"/>
         <source>Exit on closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Wyłącz przy zamknięciu okna</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="60"/>
         <source>Remember Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Pamiętaj pozycję</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="68"/>
@@ -121,7 +121,7 @@ failed with the error:
     <message>
         <location filename="../command.cpp" line="218"/>
         <source>Unknown error</source>
-        <translation type="unfinished"></translation>
+        <translation>Nieznany błąd</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="228"/>
@@ -129,14 +129,18 @@ failed with the error:
 
 could not be executed because it was not found,
 or you did not have execute permission.</source>
-        <translation type="unfinished"></translation>
+        <translation>
+
+nie może być uruchomiony bo nie został znaleziony lub nie masz uprawnień do uruchomienia.</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="233"/>
         <source>
 
 exited with status </source>
-        <translation type="unfinished"></translation>
+        <translation>
+
+zakończony ze statusem </translation>
     </message>
     <message>
         <location filename="../command.cpp" line="237"/>
