@@ -74,7 +74,7 @@
     <message>
         <location filename="../prefs.cpp" line="83"/>
         <source>Selection: Copy PIDs to Clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Zaznaczenie: Skopiuj ID procesów do schowka</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="85"/>
@@ -102,7 +102,9 @@
         <source>The command:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Komenda:
+
+</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="212"/>
@@ -111,12 +113,16 @@
 failed with the error:
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>
+
+zakończono z błędem:
+
+</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="215"/>
         <source>Too many processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Zbyt wiele procesów</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="218"/>
@@ -153,17 +159,17 @@ zakończony ze statusem </translation>
     <message>
         <location filename="../commanddialog.cpp" line="47"/>
         <source>Edit Commands 0.1 alpha</source>
-        <translation type="unfinished"></translation>
+        <translation>Edytuj komendy 0.1 alpha</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="63"/>
         <source>Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nazwa:</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="79"/>
         <source>Popup</source>
-        <translation type="unfinished"></translation>
+        <translation>Powiadomienie</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="84"/>
@@ -185,18 +191,18 @@ zakończony ze statusem </translation>
     <message>
         <location filename="../commanddialog.cpp" line="109"/>
         <source>New...</source>
-        <translation type="unfinished"></translation>
+        <translation>Nowy...</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="111"/>
         <location filename="../commanddialog.cpp" line="229"/>
         <source>Add...</source>
-        <translation type="unfinished"></translation>
+        <translation>Dodaj...</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="113"/>
         <source>Delete</source>
-        <translation type="unfinished">Usuń</translation>
+        <translation>Usuń</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="115"/>
@@ -219,17 +225,17 @@ zakończony ze statusem </translation>
     <message>
         <location filename="../misc.cpp" line="829"/>
         <source>Thread</source>
-        <translation type="unfinished"></translation>
+        <translation>Wątek</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="836"/>
         <source>All Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Wszystkie procesy</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="837"/>
         <source>Your Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Twoje procesy</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="838"/>
@@ -239,7 +245,7 @@ zakończony ze statusem </translation>
     <message>
         <location filename="../misc.cpp" line="839"/>
         <source>Running Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Uruchomione procesy</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="855"/>
@@ -257,7 +263,7 @@ zakończony ze statusem </translation>
     <message>
         <location filename="../details.cpp" line="45"/>
         <source>Files</source>
-        <translation type="unfinished"></translation>
+        <translation>Pliki</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="54"/>
@@ -277,7 +283,7 @@ zakończony ze statusem </translation>
     <message>
         <location filename="../details.cpp" line="62"/>
         <source>All Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Wszystkie pola</translation>
     </message>
 </context>
 <context>
@@ -285,12 +291,12 @@ zakończony ze statusem </translation>
     <message>
         <location filename="../details.cpp" line="605"/>
         <source>Variable</source>
-        <translation type="unfinished"></translation>
+        <translation>Zmienna</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="605"/>
         <source>Variable name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nazwa zmiennej</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="606"/>
@@ -300,7 +306,7 @@ zakończony ze statusem </translation>
     <message>
         <location filename="../details.cpp" line="606"/>
         <source>Variable value</source>
-        <translation type="unfinished"></translation>
+        <translation>Wartość zmiennej</translation>
     </message>
 </context>
 <context>
