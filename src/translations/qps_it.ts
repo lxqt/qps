@@ -84,7 +84,7 @@
     <message>
         <location filename="../prefs.cpp" line="86"/>
         <source>Use pmap for Map Names</source>
-        <translation type="unfinished"></translation>
+        <translation>Usa pmap per il nome delle mappe</translation>
     </message>
 </context>
 <context>
@@ -233,7 +233,7 @@ uscito con stato </translation>
     <message>
         <location filename="../misc.cpp" line="829"/>
         <source>Thread</source>
-        <translation type="unfinished"></translation>
+        <translation>thread</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="836"/>
@@ -357,7 +357,7 @@ uscito con stato </translation>
     <message>
         <location filename="../watchdog.ui" line="248"/>
         <source>%</source>
-        <translation type="unfinished">%</translation>
+        <translation>%</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="280"/>
