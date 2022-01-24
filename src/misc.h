@@ -25,7 +25,6 @@
 #define MISC_H
 
 #include <QtCore/QObject>
-#include <QtDBus/QtDBus>
 #include <QAbstractButton>
 #include <QCheckBox>
 #include <QRadioButton>
@@ -237,33 +236,6 @@ class QTabWidgetX : public QTabWidget
   public:
     QTabWidgetX(QWidget *parent);
     void showTab(bool);
-};
-
-// class ServerAdaptor: public QDBusAbstractAdaptor
-class ServerAdaptor : public QObject
-{
-    Q_OBJECT
-    Q_CLASSINFO("D-Bus Interface", "com.trolltech.Examples.CarInterface")
-    Q_CLASSINFO("D-Bus Introspection",
-                ""
-                "  <interface name=\"com.trolltech.Examples.CarInterface\" >\n"
-                "    <method name=\"accelerate\" />\n"
-                "    <method name=\"decelerate\" />\n"
-                "    <method name=\"turnLeft\" />\n"
-                "    <method name=\"turnRight\" />\n"
-                "    <signal name=\"crashed\" />\n"
-                "  </interface>\n"
-                "")
-  public:
-    //    ServerAdaptor(QObject *parent);
-    ServerAdaptor(){};
-    ~ServerAdaptor() override{};
-
-  public:         // PROPERTIES
-  public Q_SLOTS: // METHODS
-    void accelerate();
-Q_SIGNALS: // SIGNALS
-    void crashed();
 };
 
 #endif // MISC_H

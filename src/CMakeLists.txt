@@ -97,8 +97,6 @@ add_executable(${PROJECT_NAME}
 target_link_libraries(${PROJECT_NAME}
     lxqt
     Qt5::Widgets
-    Qt5::X11Extras
-    Qt5::DBus
 )
 
 install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ${CMAKE_INSTALL_FULL_BINDIR})

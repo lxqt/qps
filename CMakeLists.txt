@@ -22,7 +22,7 @@ set(LXQT_MINIMUM_VERSION "1.0.0")
 set(QT_MINIMUM_VERSION "5.15.0")
 
 find_package(lxqt ${LXQT_MINIMUM_VERSION} REQUIRED)
-find_package(Qt5 ${QT_MINIMUM_VERSION} REQUIRED COMPONENTS Widgets X11Extras DBus LinguistTools)
+find_package(Qt5 ${QT_MINIMUM_VERSION} REQUIRED COMPONENTS Widgets LinguistTools)
 find_package(lxqt-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
 
 include(GNUInstallDirs)

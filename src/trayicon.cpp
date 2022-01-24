@@ -21,15 +21,6 @@
  *
  */
 
- /*
-         really sucking codes.. sorry..
-         from psi ,  modified and cleand by fasthyun@magicn.com
-         trayicon_x11.cpp - X11 trayicon (for use with KDE and GNOME)
-         Copyright (C) 2003  Justin Karneges
-         GNOME2 Notification Area support: Tomasz Sterna
-
-  */
-
 #include "global.h"     // Qps *qps;
 #include "trayicon.h"
 

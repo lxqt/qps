@@ -890,8 +890,6 @@ void ControlBar::show_thread_clicked()
     emit need_refresh();
 }
 
-void ServerAdaptor::accelerate() {}
-
 char *read_proc_file(const char *fname, int pid = -1, int tgid = -1); // Temp
 void init_misc(QWidget * /*main*/)
 {
