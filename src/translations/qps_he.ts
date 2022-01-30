@@ -221,42 +221,42 @@ exited with status </source>
 <context>
     <name>ControlBar</name>
     <message>
-        <location filename="../misc.cpp" line="817"/>
+        <location filename="../misc.cpp" line="806"/>
         <source>Linear</source>
         <translation>קווי</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="820"/>
+        <location filename="../misc.cpp" line="809"/>
         <source>Tree</source>
         <translation>עץ</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="829"/>
+        <location filename="../misc.cpp" line="818"/>
         <source>Thread</source>
         <translation>תהליכון</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="836"/>
+        <location filename="../misc.cpp" line="825"/>
         <source>All Processes</source>
         <translation>כל התהליכים</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="837"/>
+        <location filename="../misc.cpp" line="826"/>
         <source>Your Processes</source>
         <translation>התהליכים שלך</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="838"/>
+        <location filename="../misc.cpp" line="827"/>
         <source>Non-Root Processes</source>
         <translation>תהליכים שאינם של משתמש העל</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="839"/>
+        <location filename="../misc.cpp" line="828"/>
         <source>Running Processes</source>
         <translation>תהליכים פעילים</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="855"/>
+        <location filename="../misc.cpp" line="844"/>
         <source>Pause (Ctrl+Space)</source>
         <translation>עצירה (Ctrl+Space)</translation>
     </message>
@@ -425,27 +425,27 @@ exited with status </source>
         <translation>משגיח Qps</translation>
     </message>
     <message>
-        <location filename="../execwindow.cpp" line="94"/>
+        <location filename="../execwindow.cpp" line="95"/>
         <source>%1 exit with code %2</source>
         <translation>%1 יצא עם קוד %2</translation>
     </message>
     <message>
-        <location filename="../execwindow.cpp" line="96"/>
+        <location filename="../execwindow.cpp" line="97"/>
         <source>Close</source>
         <translation>סגירה</translation>
     </message>
     <message>
-        <location filename="../execwindow.cpp" line="102"/>
+        <location filename="../execwindow.cpp" line="103"/>
         <source>%1 [running]</source>
         <translation>%1 [פעיל]</translation>
     </message>
     <message>
-        <location filename="../execwindow.cpp" line="103"/>
+        <location filename="../execwindow.cpp" line="104"/>
         <source>terminate command</source>
         <translation>חיסול פקודה</translation>
     </message>
     <message>
-        <location filename="../execwindow.cpp" line="112"/>
+        <location filename="../execwindow.cpp" line="113"/>
         <source>Error %1 : [%2] Maybe command not found</source>
         <translation>שגיאה %1 ‏: [%2] אולי הפקודה לא נמצאה</translation>
     </message>
@@ -684,512 +684,512 @@ exited with status </source>
 <context>
     <name>Proc</name>
     <message>
-        <location filename="../proc.cpp" line="2876"/>
+        <location filename="../proc.cpp" line="2850"/>
         <source>PID</source>
         <translation>PID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2876"/>
+        <location filename="../proc.cpp" line="2850"/>
         <source>Process ID</source>
         <translation>מזהה תהליך</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2878"/>
+        <location filename="../proc.cpp" line="2852"/>
         <source>TGID</source>
         <translation>TGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2878"/>
+        <location filename="../proc.cpp" line="2852"/>
         <source>Task group ID ( parent of threads )</source>
         <translation>מזהה קבוצת משימות (הורה התהליכים)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2880"/>
+        <location filename="../proc.cpp" line="2854"/>
         <source>PPID</source>
         <translation>PPID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2880"/>
+        <location filename="../proc.cpp" line="2854"/>
         <source>Parent process ID</source>
         <translation>מזהה תהליך הורה</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2882"/>
+        <location filename="../proc.cpp" line="2856"/>
         <source>PGID</source>
         <translation>PGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2882"/>
+        <location filename="../proc.cpp" line="2856"/>
         <source>Process group ID</source>
         <translation>מזהה קבוצת תהליך</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2884"/>
+        <location filename="../proc.cpp" line="2858"/>
         <source>SID</source>
         <translation>SID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2884"/>
+        <location filename="../proc.cpp" line="2858"/>
         <source>Session ID</source>
         <translation>מזהה הפעלה</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2886"/>
+        <location filename="../proc.cpp" line="2860"/>
         <source>TTY</source>
         <translation>TTY</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2886"/>
+        <location filename="../proc.cpp" line="2860"/>
         <source>Terminal</source>
         <translation>מסוף</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2888"/>
+        <location filename="../proc.cpp" line="2862"/>
         <source>TPGID</source>
         <translation>TPGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2888"/>
+        <location filename="../proc.cpp" line="2862"/>
         <source>Process group ID of tty owner</source>
         <translation>מזהה קבוצת תהליכים של בעלי מסוף (tty)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2890"/>
+        <location filename="../proc.cpp" line="2864"/>
         <source>USER</source>
         <translation>USER</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2890"/>
+        <location filename="../proc.cpp" line="2864"/>
         <source>Owner (*=suid root, +=suid a user)</source>
         <translation>בעלות (‎*=suid משתמש על,‏ ‎+=suid משתמש)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2892"/>
+        <location filename="../proc.cpp" line="2866"/>
         <source>GROUP</source>
         <translation>GROUP</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2892"/>
+        <location filename="../proc.cpp" line="2866"/>
         <source>Group name (*=sgid other)</source>
         <translation>שם קבוצה ‎(‎*=sgid אחר)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2894"/>
+        <location filename="../proc.cpp" line="2868"/>
         <source>UID</source>
         <translation>UID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2894"/>
+        <location filename="../proc.cpp" line="2868"/>
         <source>Real user ID</source>
         <translation>מזהה משתמש אמתי</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2896"/>
+        <location filename="../proc.cpp" line="2870"/>
         <source>EUID</source>
         <translation>EUID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2896"/>
+        <location filename="../proc.cpp" line="2870"/>
         <source>Effective user ID</source>
         <translation>מזהה משתמש בפועל</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2898"/>
+        <location filename="../proc.cpp" line="2872"/>
         <source>SUID</source>
         <translation>SUID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2898"/>
+        <location filename="../proc.cpp" line="2872"/>
         <source>Saved user ID (Posix)</source>
         <translation>מזהה משתמש שמור (Posix)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2900"/>
+        <location filename="../proc.cpp" line="2874"/>
         <source>FSUID</source>
         <translation>FSUID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2900"/>
+        <location filename="../proc.cpp" line="2874"/>
         <source>File system user ID</source>
         <translation>מזהה משתמש במערכת הקבצים</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2902"/>
+        <location filename="../proc.cpp" line="2876"/>
         <source>GID</source>
         <translation>GID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2902"/>
+        <location filename="../proc.cpp" line="2876"/>
         <source>Real group ID</source>
         <translation>מזהה קבוצה אמתי</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2904"/>
+        <location filename="../proc.cpp" line="2878"/>
         <source>EGID</source>
         <translation>EGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2904"/>
+        <location filename="../proc.cpp" line="2878"/>
         <source>Effective group ID</source>
         <translation>מזהה משתמש בפועל</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2906"/>
+        <location filename="../proc.cpp" line="2880"/>
         <source>SGID</source>
         <translation>SGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2906"/>
+        <location filename="../proc.cpp" line="2880"/>
         <source>Saved group ID (Posix)</source>
         <translation>מזהה משתמש שמור (Posix)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2908"/>
+        <location filename="../proc.cpp" line="2882"/>
         <source>FSGID</source>
         <translation>FSGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2908"/>
+        <location filename="../proc.cpp" line="2882"/>
         <source>File system group ID</source>
         <translation>מזהה קבוצה במערכת הקבצים</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2910"/>
+        <location filename="../proc.cpp" line="2884"/>
         <source>PRI</source>
         <translation>PRI</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2910"/>
+        <location filename="../proc.cpp" line="2884"/>
         <source>Dynamic priority</source>
         <translation>עדיפות דינמית</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2912"/>
+        <location filename="../proc.cpp" line="2886"/>
         <source>NICE</source>
         <translation>NICE</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2912"/>
+        <location filename="../proc.cpp" line="2886"/>
         <source>Scheduling favour (higher -&gt; less cpu time)</source>
         <translation>העדפת תזמון (יותר -&gt; פחות זמן מעבד)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2914"/>
+        <location filename="../proc.cpp" line="2888"/>
         <source>NLWP</source>
         <translation>NLWP</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2914"/>
+        <location filename="../proc.cpp" line="2888"/>
         <source>Number of tasks(threads) in task group</source>
         <translation>מספר המשימות (בתהליכי משנה) בקבוצת משימות</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2916"/>
+        <location filename="../proc.cpp" line="2890"/>
         <source>PLCY</source>
         <translation>PLCY</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2916"/>
+        <location filename="../proc.cpp" line="2890"/>
         <source>Scheduling policy</source>
         <translation>מדיניות תזמון</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2918"/>
+        <location filename="../proc.cpp" line="2892"/>
         <source>RPRI</source>
         <translation>RPRI</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2918"/>
+        <location filename="../proc.cpp" line="2892"/>
         <source>Realtime priority (0-99, more is better)</source>
         <translation>עדיפות זמן אמת (0‏-99, יותר גדול זה יותר טוב)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2920"/>
+        <location filename="../proc.cpp" line="2894"/>
         <source>TMS</source>
         <translation>TMS</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2920"/>
+        <location filename="../proc.cpp" line="2894"/>
         <source>Time slice in milliseconds</source>
         <translation>פיסת זמן במילישניות</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2922"/>
+        <location filename="../proc.cpp" line="2896"/>
         <source>%SAVG</source>
         <translation>‎%SAVG</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2922"/>
+        <location filename="../proc.cpp" line="2896"/>
         <source>Percentage average sleep time (-1 -&gt; N/A)</source>
         <translation>זמן שינה ממוצע באחוזים (‎-1 -&gt; לא זמין)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2924"/>
+        <location filename="../proc.cpp" line="2898"/>
         <source>CPUSET</source>
         <translation>CPUSET</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2924"/>
+        <location filename="../proc.cpp" line="2898"/>
         <source>Affinity CPU mask (0 -&gt; API not supported)</source>
         <translation>מסכת קרבה למעבד (0 -&gt; אין תמיכה ב־API)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2926"/>
+        <location filename="../proc.cpp" line="2900"/>
         <source>MAJFLT</source>
         <translation>MAJFLT</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2926"/>
+        <location filename="../proc.cpp" line="2900"/>
         <source>Number of major faults (disk access)</source>
         <translation>מספר הכשלונות העיקריים (גישה לכונן)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2928"/>
+        <location filename="../proc.cpp" line="2902"/>
         <source>MINFLT</source>
         <translation>MINFLT</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2928"/>
+        <location filename="../proc.cpp" line="2902"/>
         <source>Number of minor faults (no disk access)</source>
         <translation>מספר הכשלונות המשניים (אין גישה לכונן)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2931"/>
+        <location filename="../proc.cpp" line="2905"/>
         <source>VSIZE</source>
         <translation>VSIZE</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2931"/>
+        <location filename="../proc.cpp" line="2905"/>
         <source>Virtual image size of process</source>
         <translation>גודל התמונה הווירטואלית של תהליך</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2933"/>
+        <location filename="../proc.cpp" line="2907"/>
         <source>RSS</source>
         <translation>RSS</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2933"/>
+        <location filename="../proc.cpp" line="2907"/>
         <source>Resident set size</source>
         <translation>גודל ערכת התיישבות</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2935"/>
+        <location filename="../proc.cpp" line="2909"/>
         <source>MEM</source>
         <translation>MEM</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2935"/>
+        <location filename="../proc.cpp" line="2909"/>
         <source>memory usage (RSS-SHARE)</source>
         <translation>שימוש בזיכרון (RSS-SHARE)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2937"/>
+        <location filename="../proc.cpp" line="2911"/>
         <source>TRS</source>
         <translation>TRS</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2937"/>
+        <location filename="../proc.cpp" line="2911"/>
         <source>Text(code) resident set size</source>
         <translation>גודל ערכת התיישבות טקסט (קוד)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2939"/>
+        <location filename="../proc.cpp" line="2913"/>
         <source>DRS</source>
         <translation>DRS</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2939"/>
+        <location filename="../proc.cpp" line="2913"/>
         <source>Data resident set size(malloc+global variable)</source>
         <translation>גודל ערכת התיישבות נתונים (malloc + משתנים גלובליים)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2941"/>
+        <location filename="../proc.cpp" line="2915"/>
         <source>STACK</source>
         <translation>STACK</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2941"/>
+        <location filename="../proc.cpp" line="2915"/>
         <source>Stack size</source>
         <translation>גודל מחסנית</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2943"/>
+        <location filename="../proc.cpp" line="2917"/>
         <source>SHARE</source>
         <translation>SHARE</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2943"/>
+        <location filename="../proc.cpp" line="2917"/>
         <source>Shared memory with other libs</source>
         <translation>זיכרון משותף עם ספריות אחרות</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2945"/>
+        <location filename="../proc.cpp" line="2919"/>
         <source>SWAP</source>
         <translation>SWAP</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2945"/>
+        <location filename="../proc.cpp" line="2919"/>
         <source>Kbytes on swap device</source>
         <translation>קילובתים על התקן זיכרון ההחלפה</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2947"/>
+        <location filename="../proc.cpp" line="2921"/>
         <source>IO_R</source>
         <translation>IO_R</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2947"/>
+        <location filename="../proc.cpp" line="2921"/>
         <source>io read (file)</source>
         <translation>קריאת קלט/פלט (קובץ)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2949"/>
+        <location filename="../proc.cpp" line="2923"/>
         <source>IO_W</source>
         <translation>IO_W</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2949"/>
+        <location filename="../proc.cpp" line="2923"/>
         <source>io write (file)</source>
         <translation>כתיבת קלט/פלט (קובץ)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2951"/>
+        <location filename="../proc.cpp" line="2925"/>
         <source>DT</source>
         <translation>DT</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2951"/>
+        <location filename="../proc.cpp" line="2925"/>
         <source>Number of dirty (non-written) pages</source>
         <translation>מספר הדפים המלוכלכים (שלא נכתבו)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2953"/>
+        <location filename="../proc.cpp" line="2927"/>
         <source>STAT</source>
         <translation>STAT</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2953"/>
+        <location filename="../proc.cpp" line="2927"/>
         <source>State of the process </source>
         <translation>מצב התהליך </translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2955"/>
+        <location filename="../proc.cpp" line="2929"/>
         <source>FLAGS</source>
         <translation>FLAGS</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2955"/>
+        <location filename="../proc.cpp" line="2929"/>
         <source>Process flags (hex)</source>
         <translation>דגלוני התהליך (הקסדצימלי)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2957"/>
+        <location filename="../proc.cpp" line="2931"/>
         <source>WCHAN</source>
         <translation>WCHAN</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2957"/>
+        <location filename="../proc.cpp" line="2931"/>
         <source>Kernel function where process is sleeping</source>
         <translation>פונקציית ליבה שבה התהליך ישן</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2959"/>
+        <location filename="../proc.cpp" line="2933"/>
         <source>%WCPU</source>
         <translation>‎%WCPU</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2959"/>
+        <location filename="../proc.cpp" line="2933"/>
         <source>Weighted percentage of CPU (30 s average)</source>
         <translation>אחוז שקול ממעבד (30 שנ׳ בממוצא)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2961"/>
+        <location filename="../proc.cpp" line="2935"/>
         <source>%CPU</source>
         <translation>‎%CPU</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2961"/>
+        <location filename="../proc.cpp" line="2935"/>
         <source>Percentage of CPU used since last update</source>
         <translation>אחוז מהמעבד מאז העדכון האחרון</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2963"/>
+        <location filename="../proc.cpp" line="2937"/>
         <source>%MEM</source>
         <translation>‎%MEM</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2963"/>
+        <location filename="../proc.cpp" line="2937"/>
         <source>Percentage of memory used (RSS/total mem)</source>
         <translation>אחוז הזיכרון בשימוש (RSS/סך כל הזיכרון)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2965"/>
+        <location filename="../proc.cpp" line="2939"/>
         <source>START</source>
         <translation>START</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2965"/>
+        <location filename="../proc.cpp" line="2939"/>
         <source>Time process started</source>
         <translation>מועד התחלת התהליך</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2967"/>
+        <location filename="../proc.cpp" line="2941"/>
         <source>TIME</source>
         <translation>TIME</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2967"/>
+        <location filename="../proc.cpp" line="2941"/>
         <source>Total CPU time used since start</source>
         <translation>זמן המעבד הכולל מאז ההתחלה</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2969"/>
+        <location filename="../proc.cpp" line="2943"/>
         <source>CPU</source>
         <translation>CPU</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2969"/>
+        <location filename="../proc.cpp" line="2943"/>
         <source>CPU the process is executing on (SMP system)</source>
         <translation>המעבד עליו פועל התהליך (מערכת SMP)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2971"/>
+        <location filename="../proc.cpp" line="2945"/>
         <source>the process name</source>
         <translation>שם התהליך</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2971"/>
+        <location filename="../proc.cpp" line="2945"/>
         <source>Process Name</source>
         <translation>שם התהליך</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2975"/>
+        <location filename="../proc.cpp" line="2949"/>
         <source>CWD</source>
         <translation>CWD</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2975"/>
+        <location filename="../proc.cpp" line="2949"/>
         <source>Current working directory</source>
         <translation>תיקיית העבודה הנוכחית</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2976"/>
+        <location filename="../proc.cpp" line="2950"/>
         <source>ROOT</source>
         <translation>ROOT</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2976"/>
+        <location filename="../proc.cpp" line="2950"/>
         <source>Root directory of process</source>
         <translation>תיקיית הבסיס של התהליך</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2979"/>
+        <location filename="../proc.cpp" line="2953"/>
         <source>COMMAND_LINE</source>
         <translation>COMMAND_LINE</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2979"/>
+        <location filename="../proc.cpp" line="2953"/>
         <source>Command line that started the process</source>
         <translation>שורת הפקודה שהפעילה את התהליך</translation>
     </message>
@@ -1197,17 +1197,17 @@ exited with status </source>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../qps.cpp" line="1846"/>
+        <location filename="../qps.cpp" line="1845"/>
         <source>Show</source>
         <translation>הצגה</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1849"/>
+        <location filename="../qps.cpp" line="1848"/>
         <source>Hide</source>
         <translation>הסתרה</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1853"/>
+        <location filename="../qps.cpp" line="1852"/>
         <source>Quit</source>
         <translation>יציאה</translation>
     </message>
@@ -1311,7 +1311,7 @@ exited with status </source>
     </message>
     <message>
         <location filename="../qps.cpp" line="282"/>
-        <location filename="../qps.cpp" line="1894"/>
+        <location filename="../qps.cpp" line="1893"/>
         <source>About</source>
         <translation>על אודות</translation>
     </message>
@@ -1466,6 +1466,11 @@ exited with status </source>
         <translation>הצגת תרשים</translation>
     </message>
     <message>
+        <location filename="../qps.cpp" line="793"/>
+        <source>Show Control Bar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qps.cpp" line="804"/>
         <source>Include Child Times</source>
         <translation>לכלול את זמני הצאצאים</translation>
@@ -1481,87 +1486,87 @@ exited with status </source>
         <translation>עריכת פקודות…</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1017"/>
+        <location filename="../qps.cpp" line="1016"/>
         <source>Quit</source>
         <translation>יציאה</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1336"/>
-        <location filename="../qps.cpp" line="1367"/>
-        <location filename="../qps.cpp" line="1374"/>
-        <location filename="../qps.cpp" line="1395"/>
-        <location filename="../qps.cpp" line="1429"/>
-        <location filename="../qps.cpp" line="1524"/>
+        <location filename="../qps.cpp" line="1335"/>
+        <location filename="../qps.cpp" line="1366"/>
+        <location filename="../qps.cpp" line="1373"/>
+        <location filename="../qps.cpp" line="1394"/>
+        <location filename="../qps.cpp" line="1428"/>
+        <location filename="../qps.cpp" line="1523"/>
         <source>Permission denied</source>
         <translation>ההרשאה נדחתה</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1337"/>
+        <location filename="../qps.cpp" line="1336"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
         <translation>אין לך אפשרות לשנות nice של התהליכים הנבחרים. רק הבעלים ומשתמש העל מורשים לעשות זאת.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1368"/>
+        <location filename="../qps.cpp" line="1367"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
         <translation>אין לך אפשרות לשנות nice לתהליך %1 (%2). רק הבעלים של התהליך ומשתמש העל מורשים לעשות זאת.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1375"/>
+        <location filename="../qps.cpp" line="1374"/>
         <source>Only the super-user may lower the nice value of a process.</source>
         <translation>רק משתמש העל יכול להוריד את ערך ה־nice של תהליך.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1396"/>
+        <location filename="../qps.cpp" line="1395"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
         <translation>רק משתמש העל יכול לשנות את מדיניות התזמון ואת העדיפות הסטטית.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1430"/>
+        <location filename="../qps.cpp" line="1429"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
         <translation>אין לך הרשאות לשנות את התזמון ו/או העדיפות של התהליך %1 (%2). רק משתמש העל יכול לעשות זאת.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1491"/>
+        <location filename="../qps.cpp" line="1490"/>
         <source>Do you really want to terminate the selected process(es)?</source>
         <translation>לחסל את התהליך או התהליכים הנוכחיים?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1493"/>
+        <location filename="../qps.cpp" line="1492"/>
         <source>Do you really want to hang up the selected process(es)?</source>
         <translation>לנתק את התהליך או התהליכים הנבחרים?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1495"/>
+        <location filename="../qps.cpp" line="1494"/>
         <source>Do you really want to kill the selected process(es)?</source>
         <translation>להשמיד את התהליך או התהליכים הנוכחיים?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1504"/>
+        <location filename="../qps.cpp" line="1503"/>
         <source>Question</source>
         <translation>שאלה</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1525"/>
+        <location filename="../qps.cpp" line="1524"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
         <translation>אין לך הרשאות לשלוח אות לתהליך %1 (%2). רק משתמש העל והבעלים של התהליך יכולים לשלוח אליו אותות.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1910"/>
+        <location filename="../qps.cpp" line="1909"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
         <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1912"/>
+        <location filename="../qps.cpp" line="1911"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
         <translation>&lt;h2&gt; Qps %1 - מנהל תהליכים חזותי &lt;/h2&gt; %2 משתמש בספריית Qt %3&lt;br&gt;&lt;br&gt;&lt;b&gt;מקור: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;מערכת התקלות: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1932"/>
+        <location filename="../qps.cpp" line="1931"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
         <translation>&lt;b&gt;ה־Qps המקורי נוצר על ידי&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;תורמים&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1970"/>
+        <location filename="../qps.cpp" line="1969"/>
         <source>&lt;H1&gt;QPS Help&lt;/H1&gt;Updated: May 24 2005&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Quit      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Update      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Space , Enter       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Terminate &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Kill &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</source>
         <translation>&lt;H1&gt;העזרה שלQPS&lt;/H1&gt;מועד העדכון: 24 במאי 2005&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;יציאה      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;עדכון      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Space , Enter       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; חיסול תהליך &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; הריגת תהליך &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</translation>
     </message>
@@ -1622,12 +1627,12 @@ exited with status </source>
 <context>
     <name>SearchBox</name>
     <message>
-        <location filename="../misc.cpp" line="765"/>
+        <location filename="../misc.cpp" line="760"/>
         <source>PID, COMMAND, USER...</source>
         <translation>PID, COMMAND, USER…</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="766"/>
+        <location filename="../misc.cpp" line="761"/>
         <source>Filter</source>
         <translation>מסנן</translation>
     </message>
@@ -1747,7 +1752,7 @@ exited with status </source>
 <context>
     <name>StatusBar</name>
     <message>
-        <location filename="../misc.cpp" line="807"/>
+        <location filename="../misc.cpp" line="796"/>
         <source>Process count: %1</source>
         <translation>כמות תהליכים: %1</translation>
     </message>
@@ -1773,7 +1778,7 @@ exited with status </source>
 <context>
     <name>UFrame</name>
     <message>
-        <location filename="../misc.cpp" line="615"/>
+        <location filename="../misc.cpp" line="610"/>
         <source>title</source>
         <translation>כותרת</translation>
     </message>
@@ -1781,17 +1786,17 @@ exited with status </source>
 <context>
     <name>WatchdogDialog</name>
     <message>
-        <location filename="../watchdogdialog.cpp" line="193"/>
+        <location filename="../watchdogdialog.cpp" line="191"/>
         <source>if process start</source>
         <translation>אם תהליך מתחיל</translation>
     </message>
     <message>
-        <location filename="../watchdogdialog.cpp" line="194"/>
+        <location filename="../watchdogdialog.cpp" line="192"/>
         <source>if process finish</source>
         <translation>אם תהליך מסתיים</translation>
     </message>
     <message>
-        <location filename="../watchdogdialog.cpp" line="217"/>
+        <location filename="../watchdogdialog.cpp" line="215"/>
         <source>select condition</source>
         <translation>בחירת תנאי</translation>
     </message>
