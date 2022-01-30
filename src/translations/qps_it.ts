@@ -1468,7 +1468,7 @@ uscito con stato </translation>
     <message>
         <location filename="../qps.cpp" line="804"/>
         <source>Include Child Times</source>
-        <translation type="unfinished"></translation>
+        <translation>Includi tempi dei processi figli</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="998"/>
