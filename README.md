@@ -1,8 +1,13 @@
 ## Qt Process Manager
 
+![Qps](qps.png)
+
 ### Building
 
-* Requires Qt 5
+Requirements:
+* Qt 5.15 or above
+* [lxqt-build-tools](https://github.com/lxqt/lxqt-build-tools)
+* [liblxqt](https://github.com/lxqt/liblxqt)
 
 ### License
 
@@ -11,7 +16,7 @@ Qps is licensed under the terms of the
 
 ### Binary packages
 
-Official binary packages are provided by most major Linux and BSD distributions. 
+Official binary packages are provided by most major Linux and BSD distributions.
 Just use your package manager to search for string `qps`.
 
 ### Translation
