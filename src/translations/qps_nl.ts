@@ -1468,7 +1468,7 @@ afgesloten met status </translation>
     <message>
         <location filename="../qps.cpp" line="793"/>
         <source>Show Control Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Weergavebalk tonen</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>

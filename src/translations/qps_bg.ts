@@ -1469,7 +1469,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="793"/>
         <source>Show Control Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Показване на контролната лента</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>

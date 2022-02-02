@@ -1468,12 +1468,12 @@ saiu com status </translation>
     <message>
         <location filename="../qps.cpp" line="793"/>
         <source>Show Control Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar Barra de Controle</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>
         <source>Include Child Times</source>
-        <translation>Incluir tempos infantis</translation>
+        <translation>Incluir Tempos Infantis</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="998"/>
@@ -1764,7 +1764,7 @@ saiu com status </translation>
         <source> This is unstable Alpha feature
  You maybe see a SEGFAULT...</source>
         <translation> Este é o recurso Alpha instável
-&#xa0;Você talvez veja um SEGFAULT...</translation>
+ Você talvez veja um SEGFAULT...</translation>
     </message>
 </context>
 <context>

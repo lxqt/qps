@@ -611,7 +611,7 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>File name (if available)</source>
-        <translation type="unfinished">Faili nimi (kui on leitav)</translation>
+        <translation>Faili nimi (kui on leitav)</translation>
     </message>
 </context>
 <context>
@@ -1467,7 +1467,7 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../qps.cpp" line="793"/>
         <source>Show Control Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Näita kontrollriba</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>
@@ -1656,7 +1656,7 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../dialogs.cpp" line="229"/>
         <source>OK</source>
-        <translation type="unfinished">Valmis</translation>
+        <translation>Valmis</translation>
     </message>
 </context>
 <context>
@@ -1786,17 +1786,17 @@ lõpetas töö olekuteatega </translation>
     <message>
         <location filename="../watchdogdialog.cpp" line="191"/>
         <source>if process start</source>
-        <translation type="unfinished"></translation>
+        <translation>kui protsess alustab tööd</translation>
     </message>
     <message>
         <location filename="../watchdogdialog.cpp" line="192"/>
         <source>if process finish</source>
-        <translation type="unfinished"></translation>
+        <translation>kui protsess lõpetab töö</translation>
     </message>
     <message>
         <location filename="../watchdogdialog.cpp" line="215"/>
         <source>select condition</source>
-        <translation type="unfinished"></translation>
+        <translation>vali tingimus</translation>
     </message>
 </context>
 </TS>
