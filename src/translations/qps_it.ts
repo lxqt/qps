@@ -1468,7 +1468,7 @@ uscito con stato </translation>
     <message>
         <location filename="../qps.cpp" line="793"/>
         <source>Show Control Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra barra di controllo</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>
@@ -1528,12 +1528,12 @@ uscito con stato </translation>
     <message>
         <location filename="../qps.cpp" line="1490"/>
         <source>Do you really want to terminate the selected process(es)?</source>
-        <translation type="unfinished">Si è sicuro di voler terminare il/i iprocesso/i selezionati?</translation>
+        <translation>Si è sicuro di voler terminare il/i processo/i selezionati?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1492"/>
         <source>Do you really want to hang up the selected process(es)?</source>
-        <translation type="unfinished">Si è sicuro di voler sospendere il/i iprocesso/i selezionati?</translation>
+        <translation>Si è sicuro di voler sospendere il/i iprocesso/i selezionati?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1494"/>
@@ -1596,12 +1596,12 @@ uscito con stato </translation>
     <message>
         <location filename="../dialogs.cpp" line="300"/>
         <source>SCHED_RR (real-time)</source>
-        <translation type="unfinished"></translation>
+        <translation>SCHED_RR (tempo reale)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="314"/>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="316"/>
@@ -1647,12 +1647,12 @@ uscito con stato </translation>
     <message>
         <location filename="../dialogs.cpp" line="185"/>
         <source>New nice value:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nuovo valore nice:</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="225"/>
         <source>Cancel</source>
-        <translation type="unfinished">Cancella</translation>
+        <translation>Annulla</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="229"/>
@@ -1680,12 +1680,12 @@ uscito con stato </translation>
     <message>
         <location filename="../details.cpp" line="148"/>
         <source>Protocol (TCP or UDP)</source>
-        <translation type="unfinished"></translation>
+        <translation>Protocollo (TCP o UDP)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="149"/>
         <source>Recv-Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Recv-Q</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="149"/>
@@ -1695,7 +1695,7 @@ uscito con stato </translation>
     <message>
         <location filename="../details.cpp" line="150"/>
         <source>Send-Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Send-Q</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="150"/>
@@ -1705,12 +1705,12 @@ uscito con stato </translation>
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>Local Addr</source>
-        <translation type="unfinished"></translation>
+        <translation>Addr locale</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>Local IP address</source>
-        <translation type="unfinished"></translation>
+        <translation>Indirizzo IP locale</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
@@ -1726,17 +1726,17 @@ uscito con stato </translation>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Remote Addr</source>
-        <translation type="unfinished"></translation>
+        <translation>Addr remoto</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Remote IP address</source>
-        <translation type="unfinished"></translation>
+        <translation>Indirizzo IP remoto</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="154"/>
         <source>Remote port</source>
-        <translation type="unfinished"></translation>
+        <translation>Porta remota</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
@@ -1746,7 +1746,7 @@ uscito con stato </translation>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>Connection state</source>
-        <translation type="unfinished"></translation>
+        <translation>Stato connessione</translation>
     </message>
 </context>
 <context>
@@ -1792,12 +1792,12 @@ uscito con stato </translation>
     <message>
         <location filename="../watchdogdialog.cpp" line="192"/>
         <source>if process finish</source>
-        <translation type="unfinished"></translation>
+        <translation>se il processo finisce</translation>
     </message>
     <message>
         <location filename="../watchdogdialog.cpp" line="215"/>
         <source>select condition</source>
-        <translation type="unfinished"></translation>
+        <translation>seleziona conditione</translation>
     </message>
 </context>
 </TS>
