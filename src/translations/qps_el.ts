@@ -921,7 +921,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2896"/>
         <source>Percentage average sleep time (-1 -&gt; N/A)</source>
-        <translation>Μέσο ποσοστό χρόνου κοιμήσεως (-1 -&gt; Μ/Δ) </translation>
+        <translation>Μέσο ποσοστό χρόνου κοιμήσεως (-1 -&gt; Μ/Δ)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2898"/>
@@ -961,7 +961,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2905"/>
         <source>Virtual image size of process</source>
-        <translation></translation>
+        <translation>Μέγεθος της εικονικής εικόνας της διεργασίας</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2907"/>
@@ -971,7 +971,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2907"/>
         <source>Resident set size</source>
-        <translation></translation>
+        <translation type="unfinished">Resident set size</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2909"/>
@@ -981,7 +981,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2909"/>
         <source>memory usage (RSS-SHARE)</source>
-        <translation></translation>
+        <translation type="unfinished">memory usage (RSS-SHARE)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2911"/>
@@ -991,7 +991,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2911"/>
         <source>Text(code) resident set size</source>
-        <translation></translation>
+        <translation type="unfinished">Text(code) resident set size</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2913"/>
@@ -1001,7 +1001,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2913"/>
         <source>Data resident set size(malloc+global variable)</source>
-        <translation></translation>
+        <translation type="unfinished">Data resident set size(malloc+global variable)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2915"/>
@@ -1011,7 +1011,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2915"/>
         <source>Stack size</source>
-        <translation></translation>
+        <translation type="unfinished">Stack size</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2917"/>
@@ -1021,7 +1021,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2917"/>
         <source>Shared memory with other libs</source>
-        <translation></translation>
+        <translation type="unfinished">Shared memory with other libs</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2919"/>
@@ -1041,7 +1041,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2921"/>
         <source>io read (file)</source>
-        <translation></translation>
+        <translation type="unfinished">io read (file)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2923"/>
@@ -1051,7 +1051,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2923"/>
         <source>io write (file)</source>
-        <translation></translation>
+        <translation type="unfinished">io write (file)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2925"/>
@@ -1061,7 +1061,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2925"/>
         <source>Number of dirty (non-written) pages</source>
-        <translation></translation>
+        <translation type="unfinished">Number of dirty (non-written) pages</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2927"/>
@@ -1468,7 +1468,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="793"/>
         <source>Show Control Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Προβολή της γραμμής ελέγχου</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>

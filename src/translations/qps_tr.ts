@@ -1468,7 +1468,7 @@ durumdan çıkıldı </translation>
     <message>
         <location filename="../qps.cpp" line="793"/>
         <source>Show Control Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Kontrol Çubuğunu Göster</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>
