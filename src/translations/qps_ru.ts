@@ -1468,7 +1468,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="793"/>
         <source>Show Control Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Показывать панель управления</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>

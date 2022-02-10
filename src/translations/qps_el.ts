@@ -971,7 +971,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2907"/>
         <source>Resident set size</source>
-        <translation type="unfinished">Resident set size</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2909"/>
@@ -981,7 +981,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2909"/>
         <source>memory usage (RSS-SHARE)</source>
-        <translation type="unfinished">memory usage (RSS-SHARE)</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2911"/>
@@ -991,7 +991,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2911"/>
         <source>Text(code) resident set size</source>
-        <translation type="unfinished">Text(code) resident set size</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2913"/>
@@ -1001,7 +1001,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2913"/>
         <source>Data resident set size(malloc+global variable)</source>
-        <translation type="unfinished">Data resident set size(malloc+global variable)</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2915"/>
@@ -1011,7 +1011,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2915"/>
         <source>Stack size</source>
-        <translation type="unfinished">Stack size</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2917"/>
@@ -1021,7 +1021,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2917"/>
         <source>Shared memory with other libs</source>
-        <translation type="unfinished">Shared memory with other libs</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2919"/>
@@ -1041,7 +1041,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2921"/>
         <source>io read (file)</source>
-        <translation type="unfinished">io read (file)</translation>
+        <translation>io ανάγνωσης (αρχείο)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2923"/>
@@ -1051,7 +1051,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2923"/>
         <source>io write (file)</source>
-        <translation type="unfinished">io write (file)</translation>
+        <translation>io εγγραφής (αρχείο)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2925"/>
@@ -1061,7 +1061,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2925"/>
         <source>Number of dirty (non-written) pages</source>
-        <translation type="unfinished">Number of dirty (non-written) pages</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2927"/>
