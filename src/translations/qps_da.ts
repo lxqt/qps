@@ -1468,7 +1468,7 @@ afsluttede med status </translation>
     <message>
         <location filename="../qps.cpp" line="793"/>
         <source>Show Control Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis kontrol panel</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>
