@@ -1601,12 +1601,12 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="314"/>
         <source>OK</source>
-        <translation type="unfinished">확인</translation>
+        <translation>확인</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="316"/>
         <source>Cancel</source>
-        <translation type="unfinished">취소</translation>
+        <translation>취소</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="346"/>
@@ -1652,12 +1652,12 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="225"/>
         <source>Cancel</source>
-        <translation type="unfinished">취소</translation>
+        <translation>취소</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="229"/>
         <source>OK</source>
-        <translation type="unfinished">확인</translation>
+        <translation>확인</translation>
     </message>
 </context>
 <context>
@@ -1665,12 +1665,12 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="147"/>
         <source>Fd</source>
-        <translation type="unfinished">Fd</translation>
+        <translation>Fd</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="147"/>
         <source>File descriptor</source>
-        <translation type="unfinished">파일 설명자</translation>
+        <translation>파일 설명자</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="148"/>
