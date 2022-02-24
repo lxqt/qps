@@ -442,7 +442,7 @@ exited with status </source>
     <message>
         <location filename="../execwindow.cpp" line="104"/>
         <source>terminate command</source>
-        <translation>명령 종료</translation>
+        <translation>끝내기 명령</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="113"/>
@@ -567,7 +567,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="394"/>
         <source>Perm</source>
-        <translation type="unfinished"></translation>
+        <translation>권한</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="394"/>
@@ -1217,7 +1217,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="198"/>
         <source>header_popup</source>
-        <translation type="unfinished"></translation>
+        <translation>팝업 _창제목</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="199"/>
@@ -1338,7 +1338,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="465"/>
         <source>Renice...</source>
-        <translation type="unfinished"></translation>
+        <translation>갱신...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="466"/>
@@ -1348,17 +1348,17 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="468"/>
         <source>Terminate</source>
-        <translation>종결</translation>
+        <translation>끝내기</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="470"/>
         <source>Hangup</source>
-        <translation type="unfinished"></translation>
+        <translation>끊기</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="471"/>
         <source>Kill</source>
-        <translation type="unfinished"></translation>
+        <translation>죽이기</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="472"/>
@@ -1393,7 +1393,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="486"/>
         <source>SIGILL (illegal instruction)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGILL (불법 지시)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="488"/>
@@ -1468,7 +1468,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="793"/>
         <source>Show Control Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>제어 막대 표시</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>
@@ -1478,7 +1478,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="998"/>
         <source>WatchDog</source>
-        <translation type="unfinished"></translation>
+        <translation>워치독</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1000"/>
@@ -1503,12 +1503,12 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1336"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
-        <translation>선택한 프로세스를 다시 수행할 수 있는 권한이 없습니다. 프로세스 소유자와 슈퍼 유저만이 그렇게 할 수 있습니다.</translation>
+        <translation>선택한 프로세스를 갱신할 수 있는 권한이 없습니다. 프로세스 소유자와 슈퍼 유저만이 그렇게 할 수 있습니다.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1367"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
-        <translation>%1 (%2) 프로세스를 다시 시작할 수 있는 권한이 없습니다.프로세스 소유자와 슈퍼 유저만이 그렇게 할 수 있습니다.</translation>
+        <translation>%1 (%2) 프로세스를 갱신할 수 있는 권한이 없습니다.프로세스 소유자와 슈퍼 유저만이 그렇게 할 수 있습니다.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1374"/>
@@ -1528,47 +1528,47 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1490"/>
         <source>Do you really want to terminate the selected process(es)?</source>
-        <translation>선택한 프로세스를 종료하시겠습니까?</translation>
+        <translation>선택한 프로세스를 끝내시겠습니까?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1492"/>
         <source>Do you really want to hang up the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation>선택한 프로세스를 취소하시겠습니까?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1494"/>
         <source>Do you really want to kill the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation>선택한 프로세스를 죽이시겠습니까?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1503"/>
         <source>Question</source>
-        <translation type="unfinished"></translation>
+        <translation>질문</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1524"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
-        <translation type="unfinished"></translation>
+        <translation>%1(%2) 처리에 신호를 보낼 수 있는 권한이 없습니다. 수퍼유저와 프로세스 소유자만이 신호를 보낼 수 있습니다.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1909"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1911"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;h2&gt; Qps %1 - 시각적 프로세스 관리자 &lt;/h2&gt; Qt 라이브러리 %3를 사용하는 %2&lt;br&gt;&lt;br&gt;&lt;b&gt;소스: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;버그추적기: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1931"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;원형의 Qps 작성자:&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1969"/>
         <source>&lt;H1&gt;QPS Help&lt;/H1&gt;Updated: May 24 2005&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Quit      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Update      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Space , Enter       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Terminate &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Kill &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;H1&gt;QPS 도움말&lt;/H1&gt;업데이트됨: 2005년 5월 24일&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;종료      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;업데이트      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Space , Enter       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; 프로세스 끝내기 &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; 프로세스 죽이기&lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</translation>
     </message>
 </context>
 <context>
@@ -1576,27 +1576,27 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="292"/>
         <source>Change scheduling</source>
-        <translation type="unfinished"></translation>
+        <translation>일정 변경</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="296"/>
         <source>Scheduling Policy</source>
-        <translation type="unfinished"></translation>
+        <translation>일정 코스</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="298"/>
         <source>SCHED_OTHER (time-sharing)</source>
-        <translation type="unfinished"></translation>
+        <translation>SCHED_OTHER (시분할)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="299"/>
         <source>SCHED_FIFO (real-time)</source>
-        <translation type="unfinished"></translation>
+        <translation>SCHED_FIFO (실시간)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="300"/>
         <source>SCHED_RR (real-time)</source>
-        <translation type="unfinished"></translation>
+        <translation>SCHED_RR (실시간)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="314"/>
@@ -1611,17 +1611,17 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="346"/>
         <source>Priority (1-99):</source>
-        <translation type="unfinished"></translation>
+        <translation>우선 순위 (1-99):</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="379"/>
         <source>Invalid Input</source>
-        <translation type="unfinished"></translation>
+        <translation>잘못된 입력</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="380"/>
         <source>The priority must be in the range 1..99</source>
-        <translation type="unfinished"></translation>
+        <translation>우선 순위는 1..99 범위에 있어야 합니다</translation>
     </message>
 </context>
 <context>
@@ -1629,12 +1629,12 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="760"/>
         <source>PID, COMMAND, USER...</source>
-        <translation type="unfinished"></translation>
+        <translation>PID, 명령, 사용자...</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="761"/>
         <source>Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>필터</translation>
     </message>
 </context>
 <context>
@@ -1642,12 +1642,12 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="179"/>
         <source>Renice Process</source>
-        <translation type="unfinished"></translation>
+        <translation>갱신 프로세스</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="185"/>
         <source>New nice value:</source>
-        <translation type="unfinished"></translation>
+        <translation>새 수행 값:</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="225"/>
@@ -1675,78 +1675,78 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="148"/>
         <source>Proto</source>
-        <translation type="unfinished"></translation>
+        <translation>프로토콜</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="148"/>
         <source>Protocol (TCP or UDP)</source>
-        <translation type="unfinished"></translation>
+        <translation>프로토콜 (TCP 또는 UDP)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="149"/>
         <source>Recv-Q</source>
-        <translation type="unfinished"></translation>
+        <translation>수신 대기열</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="149"/>
         <source>Bytes in receive queue</source>
-        <translation type="unfinished"></translation>
+        <translation>수신 대기열의 바이트</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="150"/>
         <source>Send-Q</source>
-        <translation type="unfinished"></translation>
+        <translation>전송 대기열</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="150"/>
         <source>Bytes in send queue</source>
-        <translation type="unfinished"></translation>
+        <translation>전송 대기열의 바이트</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>Local Addr</source>
-        <translation type="unfinished"></translation>
+        <translation>로컬 주소</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>Local IP address</source>
-        <translation type="unfinished"></translation>
+        <translation>로컬 IP 주소</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
         <location filename="../details.cpp" line="154"/>
         <source>Port</source>
-        <translation type="unfinished"></translation>
+        <translation>포트</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
         <source>Local port</source>
-        <translation type="unfinished"></translation>
+        <translation>로컬 포트</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Remote Addr</source>
-        <translation type="unfinished"></translation>
+        <translation>원격 주소</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Remote IP address</source>
-        <translation type="unfinished"></translation>
+        <translation>원격 IP 주소</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="154"/>
         <source>Remote port</source>
-        <translation type="unfinished"></translation>
+        <translation>원격 포트</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>State</source>
-        <translation type="unfinished"></translation>
+        <translation>상태</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>Connection state</source>
-        <translation type="unfinished"></translation>
+        <translation>연결 상태</translation>
     </message>
 </context>
 <context>
@@ -1754,7 +1754,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="796"/>
         <source>Process count: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>프로세스 수: %1</translation>
     </message>
 </context>
 <context>
@@ -1763,7 +1763,8 @@ exited with status </source>
         <location filename="../misc.cpp" line="347"/>
         <source> This is unstable Alpha feature
  You maybe see a SEGFAULT...</source>
-        <translation type="unfinished"></translation>
+        <translation> 불안정한 알파 기능입니다.
+ SEGFAULT를 볼 수 있습니다...</translation>
     </message>
 </context>
 <context>
@@ -1771,7 +1772,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="426"/>
         <source>this is Tframe widget</source>
-        <translation type="unfinished"></translation>
+        <translation>이것은 Tframe 위젯입니다</translation>
     </message>
 </context>
 <context>
@@ -1779,7 +1780,7 @@ exited with status </source>
     <message>
         <location filename="../misc.cpp" line="610"/>
         <source>title</source>
-        <translation type="unfinished"></translation>
+        <translation>제목</translation>
     </message>
 </context>
 <context>
@@ -1787,7 +1788,7 @@ exited with status </source>
     <message>
         <location filename="../watchdogdialog.cpp" line="191"/>
         <source>if process start</source>
-        <translation type="unfinished"></translation>
+        <translation>프로세스가 시작되면</translation>
     </message>
     <message>
         <location filename="../watchdogdialog.cpp" line="192"/>
