@@ -1706,7 +1706,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>Local Addr</source>
-        <translation>Local Addr</translation>
+        <translation>Локален адрес</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
@@ -1727,7 +1727,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Remote Addr</source>
-        <translation>Remote Addr</translation>
+        <translation>Отдалечен адрес</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
