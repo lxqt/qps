@@ -6,7 +6,7 @@
     <message>
         <location filename="../details.cpp" line="653"/>
         <source>Field</source>
-        <translation>Полета</translation>
+        <translation>Поле</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="653"/>
