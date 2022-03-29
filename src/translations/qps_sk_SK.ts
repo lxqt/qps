@@ -1468,7 +1468,7 @@ skončilo so statusom </translation>
     <message>
         <location filename="../qps.cpp" line="793"/>
         <source>Show Control Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Zobraziť lištu na ovládanie</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>
