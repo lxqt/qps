@@ -59,12 +59,12 @@
     <message>
         <location filename="../prefs.cpp" line="75"/>
         <source>Disclosure Triangles</source>
-        <translation type="unfinished"></translation>
+        <translation>Triangoli di rivelazione</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="76"/>
         <source>Branch Lines</source>
-        <translation type="unfinished"></translation>
+        <translation>Diramazioni</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="82"/>
@@ -322,12 +322,12 @@ uscito con stato </translation>
     <message>
         <location filename="../watchdog.ui" line="23"/>
         <source>Watchdog 0.1 alpha</source>
-        <translation type="unfinished"></translation>
+        <translation>Watchdog 0.1 alfa</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="117"/>
         <source>Eventcat</source>
-        <translation type="unfinished"></translation>
+        <translation>Eventcat</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="162"/>
