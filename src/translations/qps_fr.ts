@@ -187,7 +187,7 @@ arrêt avec le statut. </translation>
 %%	%
 
 </source>
-        <translation>Substitutions :
+        <translation>Substitutions&#x202f;:
 %p	PID
 %c	COMMANDE
 %C	LIGNE DE COMMANDE

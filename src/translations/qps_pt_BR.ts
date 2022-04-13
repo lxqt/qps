@@ -1764,7 +1764,7 @@ saiu com status </translation>
         <source> This is unstable Alpha feature
  You maybe see a SEGFAULT...</source>
         <translation> Este é o recurso Alpha instável
- Você talvez veja um SEGFAULT...</translation>
+&#xa0;Você talvez veja um SEGFAULT...</translation>
     </message>
 </context>
 <context>
