@@ -871,7 +871,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2886"/>
         <source>Scheduling favour (higher -&gt; less cpu time)</source>
-        <translation>Εύνοια χρονοπρογραμματισμός (υψηλότερη -&gt; λιγότερος χρόνος επεξεργασίας) </translation>
+        <translation>Εύνοια χρονοπρογραμματισμού (υψηλότερη -&gt; λιγότερος χρόνος επεξεργασίας)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2888"/>
@@ -1071,7 +1071,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2927"/>
         <source>State of the process </source>
-        <translation></translation>
+        <translation>Κατάσταση της διεργασίες </translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2929"/>
@@ -1081,7 +1081,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2929"/>
         <source>Process flags (hex)</source>
-        <translation></translation>
+        <translation>Σημαίες διεργασίας (δεκαεξαδικό)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2931"/>
@@ -1111,7 +1111,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2935"/>
         <source>Percentage of CPU used since last update</source>
-        <translation></translation>
+        <translation>Ποσοστό της CPU που χρησιμοποιήθηκε από την προηγούμενη ενημέρωση</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2937"/>
