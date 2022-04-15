@@ -147,7 +147,7 @@ or you did not have execute permission.</source>
 exited with status </source>
         <translation>
 
-завершилась с кодом возврата </translation>
+завершилась с кодом </translation>
     </message>
     <message>
         <location filename="../command.cpp" line="237"/>
