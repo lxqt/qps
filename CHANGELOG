@@ -1,3 +1,8 @@
+2.5.0 / 2022-04-15
+==================
+ * Updated `README.md`.
+ * Removed qtdbus and qtx11extra from cmake files.
+
 2.4.0 / 2021-11-04
 ==================
  * Bumped minimum required Qt version to 5.15.
