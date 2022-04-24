@@ -1468,7 +1468,7 @@ endete mit Status </translation>
     <message>
         <location filename="../qps.cpp" line="793"/>
         <source>Show Control Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Kontrollleiste anzeigen</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>
