@@ -79,12 +79,12 @@
     <message>
         <location filename="../prefs.cpp" line="85"/>
         <source>Normalize NICE</source>
-        <translation type="unfinished"></translation>
+        <translation>Normalizacja NICE</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="86"/>
         <source>Use pmap for Map Names</source>
-        <translation type="unfinished"></translation>
+        <translation>Użyj pmap dla nazw map</translation>
     </message>
 </context>
 <context>
@@ -151,7 +151,7 @@ zakończony ze statusem </translation>
     <message>
         <location filename="../command.cpp" line="237"/>
         <source>Command Failed</source>
-        <translation type="unfinished"></translation>
+        <translation>Polecenie Nieudane</translation>
     </message>
 </context>
 <context>
@@ -174,7 +174,7 @@ zakończony ze statusem </translation>
     <message>
         <location filename="../commanddialog.cpp" line="84"/>
         <source>Command Line:</source>
-        <translation type="unfinished"></translation>
+        <translation>Polecenie:</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="95"/>
@@ -186,7 +186,13 @@ zakończony ze statusem </translation>
 %%	%
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Zastąpienia:
+%p	PID
+%c	COMMAND
+%C	CMDLINE
+%u	USER
+%%	%
+</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="109"/>
@@ -207,7 +213,7 @@ zakończony ze statusem </translation>
     <message>
         <location filename="../commanddialog.cpp" line="115"/>
         <source>Close</source>
-        <translation type="unfinished">Zamknij</translation>
+        <translation>Zamknij</translation>
     </message>
 </context>
 <context>
@@ -215,12 +221,12 @@ zakończony ze statusem </translation>
     <message>
         <location filename="../misc.cpp" line="806"/>
         <source>Linear</source>
-        <translation type="unfinished"></translation>
+        <translation>Liniowy</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="809"/>
         <source>Tree</source>
-        <translation type="unfinished"></translation>
+        <translation>Drzewo</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="818"/>
@@ -240,7 +246,7 @@ zakończony ze statusem </translation>
     <message>
         <location filename="../misc.cpp" line="827"/>
         <source>Non-Root Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Procesy nie-administratora</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="828"/>
@@ -258,7 +264,7 @@ zakończony ze statusem </translation>
     <message>
         <location filename="../details.cpp" line="36"/>
         <source>Process %1 ( %2 ) - details</source>
-        <translation type="unfinished"></translation>
+        <translation>Proces %1 ( %2 ) - szczegóły</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="45"/>
@@ -268,17 +274,17 @@ zakończony ze statusem </translation>
     <message>
         <location filename="../details.cpp" line="54"/>
         <source>Sockets</source>
-        <translation type="unfinished"></translation>
+        <translation>Sockety</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="59"/>
         <source>Memory Maps</source>
-        <translation type="unfinished"></translation>
+        <translation>Mapowanie pamięci</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="61"/>
         <source>Environment</source>
-        <translation type="unfinished"></translation>
+        <translation>Środowisko</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="62"/>
@@ -319,7 +325,7 @@ zakończony ze statusem </translation>
     <message>
         <location filename="../watchdog.ui" line="117"/>
         <source>Eventcat</source>
-        <translation type="unfinished"></translation>
+        <translation>Eventcat</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="162"/>
@@ -329,7 +335,7 @@ zakończony ze statusem </translation>
     <message>
         <location filename="../watchdog.ui" line="170"/>
         <source>labelDescrition</source>
-        <translation type="unfinished"></translation>
+        <translation>Opis</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="193"/>
