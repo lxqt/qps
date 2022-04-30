@@ -845,16 +845,9 @@ QString GraphBase::doHistoryTXT(SysHistory *sysh)
 
 void GraphBase::mouseMoveEvent(QMouseEvent *e)
 {
-    int half_height = height() / 2;
-    int dy;
-
     px = e->pos().x(); // x in Infobar
     py = e->pos().y(); // y in Infobar
 
-    dy = py - half_height; //
-    dy /= 2;
-
-    // printf("px=%d py=%d  y=%d h=%d , dy=%d\n",px,py,y,height(),dy);
     // gap=infobox->width() + px  - width();
 
     // printf("procview npoints=%d  px=%d\n",npoints,px);
@@ -1129,17 +1122,11 @@ void Infobar::mousePressEvent(QMouseEvent *e)
 // only works if mouse cursor in this area
 void Infobar::mouseMoveEvent(QMouseEvent *e)
 {
-    int half_height = height() / 2;
-    int dy;
     // int gap;
 
     px = e->pos().x(); // x in Infobar
     py = e->pos().y(); // y in Infobar
 
-    dy = py - half_height; //
-    dy /= 2;
-
-    // printf("px=%d py=%d  y=%d h=%d , dy=%d\n",px,py,y,height(),dy);
     // gap=infobox->width() + px  - width();
 
     int i;
