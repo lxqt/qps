@@ -642,54 +642,6 @@ void init_xpm()
     pf_width = 6;
 }
 
-#ifdef LINUX
-#include <sys/prctl.h>
-#include <QThread>
-char strong_buff[128];
-class MyThread : public QThread
-{
-  public:
-    void run() override
-    {
-        prctl(PR_SET_NAME, "thread_test123456789");
-
-        while (true)
-        {
-            for (int i = 0; i < 20000; i++)
-            {
-                int p = rand() % 120;
-                strong_buff[p] = p;
-            }
-            msleep(40);
-        }
-        exec();
-    }
-};
-class MyThread2 : public QThread
-{
-  public:
-    void run() override
-    {
-        prctl(PR_SET_NAME, "thread_test987654321");
-
-        while (true)
-        {
-            int m = 0;
-            int i;
-            for (i = 0; i < 100000; i++)
-            {
-                int p = rand() % 120;
-                // strong_buff[p]=p;
-                m = i * p;
-            }
-            m += i;
-            msleep(60);
-        }
-        exec();
-    }
-};
-#endif
-
 int pf_str_width(char *str)
 {
     int len;
@@ -895,20 +847,6 @@ void init_misc(QWidget * /*main*/)
 {
 
     init_xpm(); // xpm image file load
-
-    if (true) // TESTING
-    {
-    }
-
-#ifdef LINUX
-    if (false or flag_devel) // thread's Name Change test
-    {
-        QThread *task = new MyThread();
-        task->start();
-        task = new MyThread2();
-        task->start();
-    }
-#endif
 
     if (false) // test mini_sscanf()
     {
