@@ -442,7 +442,7 @@ exited with status </source>
     <message>
         <location filename="../execwindow.cpp" line="104"/>
         <source>terminate command</source>
-        <translation type="unfinished"></translation>
+        <translation>コマンドを終了</translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="113"/>
@@ -534,7 +534,7 @@ exited with status </source>
     <message>
         <location filename="../listmodel.cpp" line="66"/>
         <source>Event Category</source>
-        <translation type="unfinished"></translation>
+        <translation>イベントカテゴリ</translation>
     </message>
     <message>
         <location filename="../listmodel.cpp" line="68"/>
@@ -572,7 +572,7 @@ exited with status </source>
     <message>
         <location filename="../details.cpp" line="394"/>
         <source>Permission flags</source>
-        <translation type="unfinished"></translation>
+        <translation>パーミッションフラグ</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="395"/>
