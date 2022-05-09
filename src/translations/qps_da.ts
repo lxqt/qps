@@ -221,42 +221,42 @@ afsluttede med status </translation>
 <context>
     <name>ControlBar</name>
     <message>
-        <location filename="../misc.cpp" line="806"/>
+        <location filename="../misc.cpp" line="758"/>
         <source>Linear</source>
         <translation>Lineær</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="809"/>
+        <location filename="../misc.cpp" line="761"/>
         <source>Tree</source>
         <translation>Træ</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="818"/>
+        <location filename="../misc.cpp" line="770"/>
         <source>Thread</source>
         <translation>Tråd</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="825"/>
+        <location filename="../misc.cpp" line="777"/>
         <source>All Processes</source>
         <translation>Alle processer</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="826"/>
+        <location filename="../misc.cpp" line="778"/>
         <source>Your Processes</source>
         <translation>Dine processer</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="827"/>
+        <location filename="../misc.cpp" line="779"/>
         <source>Non-Root Processes</source>
         <translation>Ikke-root processer</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="828"/>
+        <location filename="../misc.cpp" line="780"/>
         <source>Running Processes</source>
         <translation>Kørende processer</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="844"/>
+        <location filename="../misc.cpp" line="796"/>
         <source>Pause (Ctrl+Space)</source>
         <translation>Pause (Ctrl+Mellemrum)</translation>
     </message>
@@ -1627,12 +1627,12 @@ afsluttede med status </translation>
 <context>
     <name>SearchBox</name>
     <message>
-        <location filename="../misc.cpp" line="760"/>
+        <location filename="../misc.cpp" line="712"/>
         <source>PID, COMMAND, USER...</source>
         <translation>PID, KOMMANDO, BRUGER...</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="761"/>
+        <location filename="../misc.cpp" line="713"/>
         <source>Filter</source>
         <translation>Filtrér</translation>
     </message>
@@ -1752,7 +1752,7 @@ afsluttede med status </translation>
 <context>
     <name>StatusBar</name>
     <message>
-        <location filename="../misc.cpp" line="796"/>
+        <location filename="../misc.cpp" line="748"/>
         <source>Process count: %1</source>
         <translation>Procestælling: %1</translation>
     </message>
