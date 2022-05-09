@@ -221,42 +221,42 @@ lõpetas töö olekuteatega </translation>
 <context>
     <name>ControlBar</name>
     <message>
-        <location filename="../misc.cpp" line="806"/>
+        <location filename="../misc.cpp" line="758"/>
         <source>Linear</source>
         <translation>Lineaarne</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="809"/>
+        <location filename="../misc.cpp" line="761"/>
         <source>Tree</source>
         <translation>Protsesside puu</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="818"/>
+        <location filename="../misc.cpp" line="770"/>
         <source>Thread</source>
         <translation>Lõimed</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="825"/>
+        <location filename="../misc.cpp" line="777"/>
         <source>All Processes</source>
         <translation>Kõik protsessid</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="826"/>
+        <location filename="../misc.cpp" line="778"/>
         <source>Your Processes</source>
         <translation>Sinu protsessid</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="827"/>
+        <location filename="../misc.cpp" line="779"/>
         <source>Non-Root Processes</source>
         <translation>Mitte-juurkasutaja protsessid</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="828"/>
+        <location filename="../misc.cpp" line="780"/>
         <source>Running Processes</source>
         <translation>Töötavad protsessid</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="844"/>
+        <location filename="../misc.cpp" line="796"/>
         <source>Pause (Ctrl+Space)</source>
         <translation>Pane pausile (Ctrl+Space)</translation>
     </message>
@@ -1626,12 +1626,12 @@ lõpetas töö olekuteatega </translation>
 <context>
     <name>SearchBox</name>
     <message>
-        <location filename="../misc.cpp" line="760"/>
+        <location filename="../misc.cpp" line="712"/>
         <source>PID, COMMAND, USER...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="761"/>
+        <location filename="../misc.cpp" line="713"/>
         <source>Filter</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1751,7 +1751,7 @@ lõpetas töö olekuteatega </translation>
 <context>
     <name>StatusBar</name>
     <message>
-        <location filename="../misc.cpp" line="796"/>
+        <location filename="../misc.cpp" line="748"/>
         <source>Process count: %1</source>
         <translation type="unfinished"></translation>
     </message>

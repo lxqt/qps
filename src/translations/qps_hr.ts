@@ -221,42 +221,42 @@ je prekinuta sa stanjem </translation>
 <context>
     <name>ControlBar</name>
     <message>
-        <location filename="../misc.cpp" line="806"/>
+        <location filename="../misc.cpp" line="758"/>
         <source>Linear</source>
         <translation>Linearno</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="809"/>
+        <location filename="../misc.cpp" line="761"/>
         <source>Tree</source>
         <translation>Stablo</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="818"/>
+        <location filename="../misc.cpp" line="770"/>
         <source>Thread</source>
         <translation>Niz</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="825"/>
+        <location filename="../misc.cpp" line="777"/>
         <source>All Processes</source>
         <translation>Svi procesi</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="826"/>
+        <location filename="../misc.cpp" line="778"/>
         <source>Your Processes</source>
         <translation>Tvoji procesi</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="827"/>
+        <location filename="../misc.cpp" line="779"/>
         <source>Non-Root Processes</source>
         <translation>Ne-administratorski procesi</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="828"/>
+        <location filename="../misc.cpp" line="780"/>
         <source>Running Processes</source>
         <translation>Procesi u tijeku</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="844"/>
+        <location filename="../misc.cpp" line="796"/>
         <source>Pause (Ctrl+Space)</source>
         <translation>Pauza (Ctrl+razmaknica)</translation>
     </message>
@@ -1627,12 +1627,12 @@ je prekinuta sa stanjem </translation>
 <context>
     <name>SearchBox</name>
     <message>
-        <location filename="../misc.cpp" line="760"/>
+        <location filename="../misc.cpp" line="712"/>
         <source>PID, COMMAND, USER...</source>
         <translation>PID, COMMAND, USER...</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="761"/>
+        <location filename="../misc.cpp" line="713"/>
         <source>Filter</source>
         <translation>Filtar</translation>
     </message>
@@ -1752,7 +1752,7 @@ je prekinuta sa stanjem </translation>
 <context>
     <name>StatusBar</name>
     <message>
-        <location filename="../misc.cpp" line="796"/>
+        <location filename="../misc.cpp" line="748"/>
         <source>Process count: %1</source>
         <translation>Broj procesa: %1</translation>
     </message>
