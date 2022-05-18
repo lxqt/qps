@@ -1353,7 +1353,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="470"/>
         <source>Hangup</source>
-        <translation>Отправить SIGHUP</translation>
+        <translation>Разорвать</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="471"/>
