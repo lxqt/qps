@@ -122,7 +122,7 @@ failed with the error:
     <message>
         <location filename="../command.cpp" line="215"/>
         <source>Too many processes</source>
-        <translation>Πολυάριθμες διεργασίες</translation>
+        <translation>Υπεράριθμες διεργασίες</translation>
     </message>
     <message>
         <location filename="../command.cpp" line="218"/>
@@ -1071,7 +1071,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2927"/>
         <source>State of the process </source>
-        <translation>Κατάσταση της διεργασίες </translation>
+        <translation>Κατάσταση των διεργασιών </translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2929"/>
