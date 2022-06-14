@@ -69,12 +69,12 @@
     <message>
         <location filename="../prefs.cpp" line="82"/>
         <source>Auto Save Settings on Exit</source>
-        <translation>종료 시 설정 자동 저장</translation>
+        <translation>종료 시 설정 자동 저장하기</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="83"/>
         <source>Selection: Copy PIDs to Clipboard</source>
-        <translation>선택: 클립보드에 PID 복사</translation>
+        <translation>선택: 클립보드에 PID 복사하기</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="85"/>
@@ -160,7 +160,7 @@ exited with status </source>
     <message>
         <location filename="../commanddialog.cpp" line="47"/>
         <source>Edit Commands 0.1 alpha</source>
-        <translation>명령 0.1 알파 편집</translation>
+        <translation>명령 0.1 알파 편집하기</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="63"/>
@@ -205,12 +205,12 @@ exited with status </source>
         <location filename="../commanddialog.cpp" line="111"/>
         <location filename="../commanddialog.cpp" line="229"/>
         <source>Add...</source>
-        <translation>추가...</translation>
+        <translation>추가하기...</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="113"/>
         <source>Delete</source>
-        <translation>삭제</translation>
+        <translation>삭제하기</translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="115"/>
@@ -372,7 +372,7 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="342"/>
         <source>show Message</source>
-        <translation>메시지 표시</translation>
+        <translation>메시지 표시하기</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="367"/>
@@ -394,12 +394,12 @@ exited with status </source>
     <message>
         <location filename="../watchdog.ui" line="432"/>
         <source>Add</source>
-        <translation>추가</translation>
+        <translation>추가하기</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="439"/>
         <source>Delete</source>
-        <translation>삭제</translation>
+        <translation>삭제하기</translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="446"/>
@@ -1181,7 +1181,7 @@ exited with status </source>
     <message>
         <location filename="../proc.cpp" line="2950"/>
         <source>Root directory of process</source>
-        <translation>프로세스의 루트 디렉토리</translation>
+        <translation>프로세스의 루트 디렉터리</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2953"/>
@@ -1199,7 +1199,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1845"/>
         <source>Show</source>
-        <translation>표시</translation>
+        <translation>표시하기</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1848"/>
@@ -1222,12 +1222,12 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="199"/>
         <source>Remove Field</source>
-        <translation>필드 제거</translation>
+        <translation>필드 제거하기</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="200"/>
         <source>Add Field</source>
-        <translation>필드 추가</translation>
+        <translation>필드 추가하기</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="207"/>
@@ -1297,7 +1297,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="265"/>
         <source>Show Status bar</source>
-        <translation>상태 표시줄 표시</translation>
+        <translation>상태 표시줄 표시하기</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="274"/>
@@ -1458,17 +1458,17 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="781"/>
         <source>Show File Path</source>
-        <translation>파일 경로 표시</translation>
+        <translation>파일 경로 표시하기</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="787"/>
         <source>Show Graph</source>
-        <translation>그래프 표시</translation>
+        <translation>그래프 표시하기</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="793"/>
         <source>Show Control Bar</source>
-        <translation>제어 막대 표시</translation>
+        <translation>제어 막대 표시하기</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>
