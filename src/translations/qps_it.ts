@@ -572,12 +572,12 @@ uscito con stato </translation>
     <message>
         <location filename="../details.cpp" line="394"/>
         <source>Permission flags</source>
-        <translation type="unfinished"></translation>
+        <translation>Flag di autorizzazione</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="395"/>
         <source>Offset</source>
-        <translation type="unfinished"></translation>
+        <translation>Scostamento</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="395"/>
