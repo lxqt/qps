@@ -1371,6 +1371,11 @@ durumdan çıkıldı </translation>
         <translation>Devam et</translation>
     </message>
     <message>
+        <location filename="../qps.cpp" line="477"/>
+        <source>Other Signals</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qps.cpp" line="478"/>
         <source>SIGINT (interrupt)</source>
         <translation>SIGINT (kesme)</translation>

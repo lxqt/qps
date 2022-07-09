@@ -1371,6 +1371,11 @@ exited with status </source>
         <translation>계속하기</translation>
     </message>
     <message>
+        <location filename="../qps.cpp" line="477"/>
+        <source>Other Signals</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qps.cpp" line="478"/>
         <source>SIGINT (interrupt)</source>
         <translation>SIGINT (개입중단)</translation>
