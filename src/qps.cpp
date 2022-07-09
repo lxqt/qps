@@ -474,7 +474,7 @@ QMenu *Qps::make_signal_popup_menu()
     act = m_popup->addAction( tr( "Continue" ), this, &Qps::sig_cont);
     act->setData(MENU_SIGCONT);
 
-    QMenu *m = new QMenu("Other Signals");
+    QMenu *m = new QMenu( tr( "Other Signals" ) );
     act = m->addAction( tr( "SIGINT (interrupt)" ) );
     act->setData(SIGINT);
     act = m->addAction( tr( "SIGCONT (continue)" ) );
