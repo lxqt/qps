@@ -1373,7 +1373,7 @@ afgesloten met status </translation>
     <message>
         <location filename="../qps.cpp" line="477"/>
         <source>Other Signals</source>
-        <translation type="unfinished"></translation>
+        <translation>Overige signalen</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="478"/>

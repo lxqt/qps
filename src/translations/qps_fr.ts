@@ -187,7 +187,7 @@ arrêt avec le statut. </translation>
 %%	%
 
 </source>
-        <translation>Substitutions&#x202f;:
+        <translation>Substitutions :
 %p	PID
 %c	COMMANDE
 %C	LIGNE DE COMMANDE
@@ -1373,7 +1373,7 @@ arrêt avec le statut. </translation>
     <message>
         <location filename="../qps.cpp" line="477"/>
         <source>Other Signals</source>
-        <translation type="unfinished"></translation>
+        <translation>Autres signaux</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="478"/>

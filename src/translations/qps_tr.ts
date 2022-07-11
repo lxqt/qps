@@ -1373,7 +1373,7 @@ durumdan çıkıldı </translation>
     <message>
         <location filename="../qps.cpp" line="477"/>
         <source>Other Signals</source>
-        <translation type="unfinished"></translation>
+        <translation>Diğer Sinyaller</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="478"/>
