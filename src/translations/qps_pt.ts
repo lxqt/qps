@@ -1373,7 +1373,7 @@ terminou com o estado </translation>
     <message>
         <location filename="../qps.cpp" line="477"/>
         <source>Other Signals</source>
-        <translation type="unfinished"></translation>
+        <translation>Outros sinais</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="478"/>

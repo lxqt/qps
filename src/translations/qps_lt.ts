@@ -1373,7 +1373,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../qps.cpp" line="477"/>
         <source>Other Signals</source>
-        <translation type="unfinished"></translation>
+        <translation>Kiti signalai</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="478"/>
@@ -1473,7 +1473,7 @@ išėjo su būsena </translation>
     <message>
         <location filename="../qps.cpp" line="793"/>
         <source>Show Control Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Rodyti valdymo juostą</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>
