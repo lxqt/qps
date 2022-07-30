@@ -1473,7 +1473,7 @@ afsluttede med status </translation>
     <message>
         <location filename="../qps.cpp" line="793"/>
         <source>Show Control Bar</source>
-        <translation>Vis kontrol panel</translation>
+        <translation>Vis kontrolpanel</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>
