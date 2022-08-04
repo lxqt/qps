@@ -1373,7 +1373,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="477"/>
         <source>Other Signals</source>
-        <translation type="unfinished"></translation>
+        <translation>Άλλα σήματα</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="478"/>
@@ -1553,7 +1553,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="1524"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
-        <translation></translation>
+        <translation>Δεν έχετε δικαίωμα αποστολής ενός σήματος στην διεργασία %1 (%2). Μόνον ο ο υπερχρήστης και ο ιδιοκτήτης της διεργασίας μπορούν αν στέλνουν σήματα σε αυτήν.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1909"/>
