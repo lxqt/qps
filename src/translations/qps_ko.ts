@@ -1373,7 +1373,7 @@ exited with status </source>
     <message>
         <location filename="../qps.cpp" line="477"/>
         <source>Other Signals</source>
-        <translation type="unfinished"></translation>
+        <translation>기타 신호</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="478"/>
