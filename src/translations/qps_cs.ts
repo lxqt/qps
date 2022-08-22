@@ -1373,7 +1373,7 @@ skončilo se stavem </translation>
     <message>
         <location filename="../qps.cpp" line="477"/>
         <source>Other Signals</source>
-        <translation type="unfinished"></translation>
+        <translation>Ostatní signály</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="478"/>
