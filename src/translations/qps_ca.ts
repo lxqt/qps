@@ -1348,7 +1348,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../qps.cpp" line="468"/>
         <source>Terminate</source>
-        <translation></translation>
+        <translation>Termina</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="470"/>
@@ -1373,7 +1373,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../qps.cpp" line="477"/>
         <source>Other Signals</source>
-        <translation type="unfinished"></translation>
+        <translation>Altres senyals</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="478"/>
