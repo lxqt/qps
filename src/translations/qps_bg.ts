@@ -1648,7 +1648,7 @@ exited with status </source>
     <message>
         <location filename="../dialogs.cpp" line="179"/>
         <source>Renice Process</source>
-        <translation>Renice Process</translation>
+        <translation>Renice процес</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="185"/>
