@@ -1478,7 +1478,7 @@ ha sortit amb l&apos;estat </translation>
     <message>
         <location filename="../qps.cpp" line="804"/>
         <source>Include Child Times</source>
-        <translation type="unfinished">Inclou el temps d&apos;execució dels processos fills</translation>
+        <translation>Inclou els temps dels processos fills</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="998"/>
