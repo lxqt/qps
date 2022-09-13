@@ -1373,7 +1373,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../qps.cpp" line="477"/>
         <source>Other Signals</source>
-        <translation type="unfinished"></translation>
+        <translation>Otras señales</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="478"/>
@@ -1473,7 +1473,7 @@ ha terminado con el código de salida </translation>
     <message>
         <location filename="../qps.cpp" line="793"/>
         <source>Show Control Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar la barra de control</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>
