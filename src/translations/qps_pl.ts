@@ -471,12 +471,12 @@ zakończony ze statusem </translation>
     <message>
         <location filename="../details.cpp" line="521"/>
         <source>File descriptor</source>
-        <translation type="unfinished"></translation>
+        <translation>Deskryptor pliku</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="523"/>
         <source>Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Tryb</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="523"/>
@@ -509,12 +509,12 @@ zakończony ze statusem </translation>
     <message>
         <location filename="../dialogs.cpp" line="85"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Anuluj</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="87"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="121"/>
@@ -524,7 +524,7 @@ zakończony ze statusem </translation>
     <message>
         <location filename="../dialogs.cpp" line="139"/>
         <source>Invalid value</source>
-        <translation type="unfinished"></translation>
+        <translation>Nieprawidłowa wartość</translation>
     </message>
 </context>
 <context>
@@ -532,7 +532,7 @@ zakończony ze statusem </translation>
     <message>
         <location filename="../listmodel.cpp" line="66"/>
         <source>Event Category</source>
-        <translation type="unfinished"></translation>
+        <translation>Kategoria zdarzenia</translation>
     </message>
     <message>
         <location filename="../listmodel.cpp" line="68"/>
@@ -555,7 +555,7 @@ zakończony ze statusem </translation>
     <message>
         <location filename="../details.cpp" line="393"/>
         <source>Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozmiar</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="393"/>
@@ -585,7 +585,7 @@ zakończony ze statusem </translation>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Device</source>
-        <translation type="unfinished"></translation>
+        <translation>Urządzenie</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
@@ -628,12 +628,12 @@ zakończony ze statusem </translation>
     <message>
         <location filename="../dialogs.cpp" line="280"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Anuluj</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="283"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
