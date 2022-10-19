@@ -1373,7 +1373,7 @@ je prekinuta sa stanjem </translation>
     <message>
         <location filename="../qps.cpp" line="477"/>
         <source>Other Signals</source>
-        <translation type="unfinished"></translation>
+        <translation>Drugi signali</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="478"/>
@@ -1473,7 +1473,7 @@ je prekinuta sa stanjem </translation>
     <message>
         <location filename="../qps.cpp" line="793"/>
         <source>Show Control Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Prikaži traku kontrola</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>
