@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="it">
+<TS version="2.1" language="hi">
 <context>
     <name>AllFields</name>
     <message>
         <location filename="../details.cpp" line="653"/>
         <source>Field</source>
-        <translation>Campo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="653"/>
         <source>Field name</source>
-        <translation>Nome campo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="654"/>
         <source>Description</source>
-        <translation>Descrizione</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="654"/>
         <source>Field description</source>
-        <translation>Descrizione campo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="655"/>
         <source>Value</source>
-        <translation>Valore</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="655"/>
         <source>Field value</source>
-        <translation>Campo valore</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -39,52 +39,52 @@
     <message>
         <location filename="../prefs.cpp" line="59"/>
         <source>Exit on closing</source>
-        <translation>Esci alla chiusura</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="60"/>
         <source>Remember Position</source>
-        <translation>Ricorda posizione</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="68"/>
         <source>Host Name Lookup</source>
-        <translation>Ricerca del nome host</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="69"/>
         <source>Service Name Lookup</source>
-        <translation>Ricerca del nome del servizio</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="75"/>
         <source>Disclosure Triangles</source>
-        <translation>Triangoli di rivelazione</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="76"/>
         <source>Branch Lines</source>
-        <translation>Diramazioni</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="82"/>
         <source>Auto Save Settings on Exit</source>
-        <translation>Salva automaticamente le impostazioni alla chiusura</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="83"/>
         <source>Selection: Copy PIDs to Clipboard</source>
-        <translation>Selezione: Copia PID negli Appunti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="85"/>
         <source>Normalize NICE</source>
-        <translation>Normalizza NICE</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="86"/>
         <source>Use pmap for Map Names</source>
-        <translation>Usa pmap per il nome delle mappe</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -92,7 +92,7 @@
     <message>
         <location filename="../prefs.cpp" line="106"/>
         <source>General</source>
-        <translation>Generale</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -102,9 +102,7 @@
         <source>The command:
 
 </source>
-        <translation>Il comando:
-
-</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../command.cpp" line="212"/>
@@ -113,21 +111,17 @@
 failed with the error:
 
 </source>
-        <translation>
-
-fallito con errore:
-
-</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../command.cpp" line="215"/>
         <source>Too many processes</source>
-        <translation>Troppi processi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../command.cpp" line="218"/>
         <source>Unknown error</source>
-        <translation>Errore sconosciuto</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../command.cpp" line="228"/>
@@ -135,24 +129,19 @@ fallito con errore:
 
 could not be executed because it was not found,
 or you did not have execute permission.</source>
-        <translation>
-
-non è stato eseguito perché non è stato trovato,
-o perché non hai i permessi di esecuzione.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../command.cpp" line="233"/>
         <source>
 
 exited with status </source>
-        <translation>
-
-uscito con stato </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../command.cpp" line="237"/>
         <source>Command Failed</source>
-        <translation>Comando Fallito</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -160,22 +149,22 @@ uscito con stato </translation>
     <message>
         <location filename="../commanddialog.cpp" line="47"/>
         <source>Edit Commands 0.1 alpha</source>
-        <translation>Modifica Comandi 0.1 alpha</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="63"/>
         <source>Name:</source>
-        <translation>Nome:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="79"/>
         <source>Popup</source>
-        <translation>Finestra a comparsa</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="84"/>
         <source>Command Line:</source>
-        <translation>Riga di comando:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="95"/>
@@ -187,35 +176,28 @@ uscito con stato </translation>
 %%	%
 
 </source>
-        <translation>Substitutions:
-%p	PID
-%c	COMANDO
-%C	RIGACOMANDO
-%u	UTENTE
-%%	%
-
-</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="109"/>
         <source>New...</source>
-        <translation>Nuovo...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="111"/>
         <location filename="../commanddialog.cpp" line="229"/>
         <source>Add...</source>
-        <translation>Aggiungi...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="113"/>
         <source>Delete</source>
-        <translation>Elimina</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../commanddialog.cpp" line="115"/>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -223,42 +205,42 @@ uscito con stato </translation>
     <message>
         <location filename="../misc.cpp" line="758"/>
         <source>Linear</source>
-        <translation>Lineare</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="761"/>
         <source>Tree</source>
-        <translation>Albero</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="770"/>
         <source>Thread</source>
-        <translation>thread</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="777"/>
         <source>All Processes</source>
-        <translation>Tutti processi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="778"/>
         <source>Your Processes</source>
-        <translation>Processi propri</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="779"/>
         <source>Non-Root Processes</source>
-        <translation>Processi non-amministratore</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="780"/>
         <source>Running Processes</source>
-        <translation>Processi in esecuzione</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="796"/>
         <source>Pause (Ctrl+Space)</source>
-        <translation>Pausa (Ctrl+Spazio)</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -266,32 +248,32 @@ uscito con stato </translation>
     <message>
         <location filename="../details.cpp" line="36"/>
         <source>Process %1 ( %2 ) - details</source>
-        <translation>Processo %1 (%2) - dettagli</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="45"/>
         <source>Files</source>
-        <translation>File</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="54"/>
         <source>Sockets</source>
-        <translation>Socket</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="59"/>
         <source>Memory Maps</source>
-        <translation>Mappa memoria</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="61"/>
         <source>Environment</source>
-        <translation>Ambiente</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="62"/>
         <source>All Fields</source>
-        <translation>Tutti i campi</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -299,22 +281,22 @@ uscito con stato </translation>
     <message>
         <location filename="../details.cpp" line="605"/>
         <source>Variable</source>
-        <translation>Variabile</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="605"/>
         <source>Variable name</source>
-        <translation>Nome variabile</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="606"/>
         <source>Value</source>
-        <translation>Valore</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="606"/>
         <source>Variable value</source>
-        <translation>Valore variabile</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -322,89 +304,88 @@ uscito con stato </translation>
     <message>
         <location filename="../watchdog.ui" line="23"/>
         <source>Watchdog 0.1 alpha</source>
-        <translation>Watchdog 0.1 alfa</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="117"/>
         <source>Eventcat</source>
-        <translation>Eventcat</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="162"/>
         <source>Select condition</source>
-        <translation>Seleziona condizione</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="170"/>
         <source>labelDescrition</source>
-        <translation>descrizioneEtichetta</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="193"/>
         <source>Enable</source>
-        <translation>Abilita</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="219"/>
         <source>process name</source>
-        <translation>nome processo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="229"/>
         <source>cpu</source>
-        <translation>cpu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="248"/>
         <source>%</source>
-        <translation>%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="280"/>
         <source>include already running process</source>
-        <translation>includi processi già in esecuzione</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="309"/>
         <source>run command</source>
-        <translation>esegui comando</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="342"/>
         <source>show Message</source>
-        <translation>mostra Messaggio</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="367"/>
         <source>Help (Not yet. just concept)</source>
-        <translation>Aiuto (Non esiste ancora)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="394"/>
         <source>%p : pid
 %c : command</source>
-        <translation>%p: pid
-%c: comando</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="425"/>
         <source>New</source>
-        <translation>Nuovo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="432"/>
         <source>Add</source>
-        <translation>Aggiungi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="439"/>
         <source>Delete</source>
-        <translation>Elimina</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdog.ui" line="446"/>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -412,42 +393,42 @@ uscito con stato </translation>
     <message>
         <location filename="../message.ui" line="13"/>
         <source>Qps</source>
-        <translation>Qps</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../message.ui" line="27"/>
         <source>Ok</source>
-        <translation>Ok</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="42"/>
         <source>Qps Watchdog</source>
-        <translation type="unfinished">Qps Watchdog</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="95"/>
         <source>%1 exit with code %2</source>
-        <translation>%1 uscito con codice %2</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="97"/>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="103"/>
         <source>%1 [running]</source>
-        <translation>%1 [in esecuzione]</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="104"/>
         <source>terminate command</source>
-        <translation>termina comando</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../execwindow.cpp" line="113"/>
         <source>Error %1 : [%2] Maybe command not found</source>
-        <translation>Errore %1 : [%2] Forse il comando non è stato trovato</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -455,12 +436,12 @@ uscito con stato </translation>
     <message>
         <location filename="../fieldsel.cpp" line="34"/>
         <source>Select Custom Fields </source>
-        <translation>Seleziona campi personalizzati </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../fieldsel.cpp" line="75"/>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -468,32 +449,32 @@ uscito con stato </translation>
     <message>
         <location filename="../details.cpp" line="521"/>
         <source>Fd</source>
-        <translation type="unfinished">Fd</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="521"/>
         <source>File descriptor</source>
-        <translation>Descrittore file</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="523"/>
         <source>Mode</source>
-        <translation>Modalità</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="523"/>
         <source>Open mode</source>
-        <translation>Modalità apertura</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="525"/>
         <source>Name</source>
-        <translation>Nome</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="525"/>
         <source>File name (if available)</source>
-        <translation>Nome file (se disponibile)</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -501,32 +482,32 @@ uscito con stato </translation>
     <message>
         <location filename="../dialogs.cpp" line="43"/>
         <source>Change Update Period</source>
-        <translation>Periodo aggiornamento cambiamenti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="49"/>
         <source>New Update Period</source>
-        <translation>Nuovo periodo di aggiornamento</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="85"/>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="87"/>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="121"/>
         <source>No UPDATE</source>
-        <translation>Nessun AGGIORNAMENTO</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="139"/>
         <source>Invalid value</source>
-        <translation>Valore invalido</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -534,12 +515,12 @@ uscito con stato </translation>
     <message>
         <location filename="../listmodel.cpp" line="66"/>
         <source>Event Category</source>
-        <translation>Categoria Evento</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../listmodel.cpp" line="68"/>
         <source>Enable</source>
-        <translation>Abilita</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -547,47 +528,47 @@ uscito con stato </translation>
     <message>
         <location filename="../details.cpp" line="392"/>
         <source>Address Range</source>
-        <translation>Intervallo Indirizzi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="392"/>
         <source>Mapped addresses (hex) )</source>
-        <translation>Indirizzi mappati (hex) )</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="393"/>
         <source>Size</source>
-        <translation>Dimensione</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="393"/>
         <source>Kbytes mapped (dec)</source>
-        <translation>Kbytes mappati (dec)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="394"/>
         <source>Perm</source>
-        <translation>Permessi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="394"/>
         <source>Permission flags</source>
-        <translation>Flag di autorizzazione</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="395"/>
         <source>Offset</source>
-        <translation>Scostamento</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="395"/>
         <source>File offset at start of mapping (hex)</source>
-        <translation>Indirizzo del file all&apos;inizio della mappa (esadecimale)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Device</source>
-        <translation>Dispositivo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
@@ -597,22 +578,22 @@ uscito con stato </translation>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Inode</source>
-        <translation>Inode</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Inode number (dec)</source>
-        <translation>Numero inode</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>File</source>
-        <translation type="unfinished">File</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>File name (if available)</source>
-        <translation>Nome file (se disponibile)</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -620,22 +601,22 @@ uscito con stato </translation>
     <message>
         <location filename="../dialogs.cpp" line="264"/>
         <source>Permission</source>
-        <translation>Permesso</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="273"/>
         <source>Root password</source>
-        <translation>Password amministratore</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="280"/>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="283"/>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -643,42 +624,42 @@ uscito con stato </translation>
     <message>
         <location filename="../prefs.cpp" line="150"/>
         <source>Preferences</source>
-        <translation>Preferenze</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="157"/>
         <source>Setting</source>
-        <translation>Impostazione</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="191"/>
         <source>%CPU divided by</source>
-        <translation>%CPU divisa da</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="198"/>
         <source>Total cpu: %1</source>
-        <translation>Totale cpu: %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="199"/>
         <source>Single cpu: 1</source>
-        <translation>Cpu singola: 1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="205"/>
         <source>default</source>
-        <translation>predefinito</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="206"/>
         <source>for developer</source>
-        <translation>per sviluppatori</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="240"/>
         <source>Appearance</source>
-        <translation>Aspetto</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -686,187 +667,187 @@ uscito con stato </translation>
     <message>
         <location filename="../proc.cpp" line="2850"/>
         <source>PID</source>
-        <translation>PID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2850"/>
         <source>Process ID</source>
-        <translation>ID Processo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2852"/>
         <source>TGID</source>
-        <translation type="unfinished">TGID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2852"/>
         <source>Task group ID ( parent of threads )</source>
-        <translation>ID gruppo processi ( genitore dei thread )</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2854"/>
         <source>PPID</source>
-        <translation>PPID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2854"/>
         <source>Parent process ID</source>
-        <translation>ID processo genitore</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2856"/>
         <source>PGID</source>
-        <translation>PGID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2856"/>
         <source>Process group ID</source>
-        <translation>ID gruppo processo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2858"/>
         <source>SID</source>
-        <translation>SID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2858"/>
         <source>Session ID</source>
-        <translation>ID sessione</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2860"/>
         <source>TTY</source>
-        <translation>TTY</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2860"/>
         <source>Terminal</source>
-        <translation>Terminale</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2862"/>
         <source>TPGID</source>
-        <translation>TPGID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2862"/>
         <source>Process group ID of tty owner</source>
-        <translation>ID processo di gruppo del proprietario del tty</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2864"/>
         <source>USER</source>
-        <translation>UTENTE</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2864"/>
         <source>Owner (*=suid root, +=suid a user)</source>
-        <translation>Proprietario (*=suid root, +=suid a user)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2866"/>
         <source>GROUP</source>
-        <translation>GRUPPO</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2866"/>
         <source>Group name (*=sgid other)</source>
-        <translation>Nome gruppo (*=sgid altri)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2868"/>
         <source>UID</source>
-        <translation>UID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2868"/>
         <source>Real user ID</source>
-        <translation>ID utente reale</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2870"/>
         <source>EUID</source>
-        <translation>EUID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2870"/>
         <source>Effective user ID</source>
-        <translation>ID utente effettivo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2872"/>
         <source>SUID</source>
-        <translation>SUID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2872"/>
         <source>Saved user ID (Posix)</source>
-        <translation>ID utente salvato (Posix)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2874"/>
         <source>FSUID</source>
-        <translation>FSUID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2874"/>
         <source>File system user ID</source>
-        <translation>ID utente filesystem</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2876"/>
         <source>GID</source>
-        <translation>GID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2876"/>
         <source>Real group ID</source>
-        <translation>ID gruppo reale</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2878"/>
         <source>EGID</source>
-        <translation>EGID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2878"/>
         <source>Effective group ID</source>
-        <translation>ID gruppo effettivo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2880"/>
         <source>SGID</source>
-        <translation>SGID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2880"/>
         <source>Saved group ID (Posix)</source>
-        <translation>ID gruppo salvato (Posix)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2882"/>
         <source>FSGID</source>
-        <translation>FSGID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2882"/>
         <source>File system group ID</source>
-        <translation>ID gruppo filesystem</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2884"/>
         <source>PRI</source>
-        <translation>PRI</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2884"/>
         <source>Dynamic priority</source>
-        <translation>Proprietà dinamica</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2886"/>
         <source>NICE</source>
-        <translation>NICE</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2886"/>
@@ -876,97 +857,97 @@ uscito con stato </translation>
     <message>
         <location filename="../proc.cpp" line="2888"/>
         <source>NLWP</source>
-        <translation>NLWP</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2888"/>
         <source>Number of tasks(threads) in task group</source>
-        <translation>Numero di task (thread) nel gruppo di task</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2890"/>
         <source>PLCY</source>
-        <translation>PLCY</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2890"/>
         <source>Scheduling policy</source>
-        <translation>Politica di scheduling</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2892"/>
         <source>RPRI</source>
-        <translation>RPRI</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2892"/>
         <source>Realtime priority (0-99, more is better)</source>
-        <translation>Priorità realtime (0-99, più è meglio)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2894"/>
         <source>TMS</source>
-        <translation>TMS</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2894"/>
         <source>Time slice in milliseconds</source>
-        <translation>Frazione di tempo in millisecondi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2896"/>
         <source>%SAVG</source>
-        <translation>%SAVG</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2896"/>
         <source>Percentage average sleep time (-1 -&gt; N/A)</source>
-        <translation>Percentuale media tempo di riposo (-1 -&gt; N/A)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2898"/>
         <source>CPUSET</source>
-        <translation>CPUSET</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2898"/>
         <source>Affinity CPU mask (0 -&gt; API not supported)</source>
-        <translation>Maschera affinità CPU (0 -&gt; API not supported)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2900"/>
         <source>MAJFLT</source>
-        <translation>MAJFLT</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2900"/>
         <source>Number of major faults (disk access)</source>
-        <translation>Numero di errori gravi (accesso al disco)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2902"/>
         <source>MINFLT</source>
-        <translation>MINFLT</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2902"/>
         <source>Number of minor faults (no disk access)</source>
-        <translation>Numero di errori lievi (nessun accesso al disco)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2905"/>
         <source>VSIZE</source>
-        <translation>VSIZE</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2905"/>
         <source>Virtual image size of process</source>
-        <translation>Immagine virtuale della dimensione del processo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2907"/>
         <source>RSS</source>
-        <translation>RSS</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2907"/>
@@ -976,17 +957,17 @@ uscito con stato </translation>
     <message>
         <location filename="../proc.cpp" line="2909"/>
         <source>MEM</source>
-        <translation>MEM</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2909"/>
         <source>memory usage (RSS-SHARE)</source>
-        <translation>Utilizzo memoria (RSS-CONDIVISA)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2911"/>
         <source>TRS</source>
-        <translation>TRS</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2911"/>
@@ -996,7 +977,7 @@ uscito con stato </translation>
     <message>
         <location filename="../proc.cpp" line="2913"/>
         <source>DRS</source>
-        <translation>DRS</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2913"/>
@@ -1016,182 +997,182 @@ uscito con stato </translation>
     <message>
         <location filename="../proc.cpp" line="2917"/>
         <source>SHARE</source>
-        <translation type="unfinished">SHARE</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2917"/>
         <source>Shared memory with other libs</source>
-        <translation>Memoria condivisa con altre librerie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2919"/>
         <source>SWAP</source>
-        <translation>SWAP</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2919"/>
         <source>Kbytes on swap device</source>
-        <translation>Kbyte sul dispositivo di swap</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2921"/>
         <source>IO_R</source>
-        <translation>IO_R</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2921"/>
         <source>io read (file)</source>
-        <translation>io lettura (file)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2923"/>
         <source>IO_W</source>
-        <translation>IO_W</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2923"/>
         <source>io write (file)</source>
-        <translation>io scrittura (file)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2925"/>
         <source>DT</source>
-        <translation>DT</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2925"/>
         <source>Number of dirty (non-written) pages</source>
-        <translation>Numero di pagine sporche (non scritte)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2927"/>
         <source>STAT</source>
-        <translation>STAT</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2927"/>
         <source>State of the process </source>
-        <translation>Stato del processo </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2929"/>
         <source>FLAGS</source>
-        <translation>FLAG</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2929"/>
         <source>Process flags (hex)</source>
-        <translation>Flag processo (hex)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2931"/>
         <source>WCHAN</source>
-        <translation>WCHAN</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2931"/>
         <source>Kernel function where process is sleeping</source>
-        <translation>Funzione kernel su cui il processo è in pausa</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2933"/>
         <source>%WCPU</source>
-        <translation>%WCPU</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2933"/>
         <source>Weighted percentage of CPU (30 s average)</source>
-        <translation>Percentuale pesata di CPU (media di 30 s)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2935"/>
         <source>%CPU</source>
-        <translation>%CPU</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2935"/>
         <source>Percentage of CPU used since last update</source>
-        <translation>Percentuale della CPU usata dall&apos;ultimo aggiornamento</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2937"/>
         <source>%MEM</source>
-        <translation>%MEM</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2937"/>
         <source>Percentage of memory used (RSS/total mem)</source>
-        <translation>Percentuale di memoria usata (RSS/memoria totale)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2939"/>
         <source>START</source>
-        <translation>AVVIO</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2939"/>
         <source>Time process started</source>
-        <translation>Momento di avvio del processo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2941"/>
         <source>TIME</source>
-        <translation>TEMPO</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2941"/>
         <source>Total CPU time used since start</source>
-        <translation>Totale del tempo CPU usato dall&apos;avvio</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2943"/>
         <source>CPU</source>
-        <translation>CPU</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2943"/>
         <source>CPU the process is executing on (SMP system)</source>
-        <translation>CPU sulla quale il processo è in esecuzione (sistema SMP)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2945"/>
         <source>the process name</source>
-        <translation>Il nome del processo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2945"/>
         <source>Process Name</source>
-        <translation>Nome processo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2949"/>
         <source>CWD</source>
-        <translation>CWD</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2949"/>
         <source>Current working directory</source>
-        <translation>Cartella di lavoro corrente</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2950"/>
         <source>ROOT</source>
-        <translation>ROOT</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2950"/>
         <source>Root directory of process</source>
-        <translation>Cartella principale del processo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2953"/>
         <source>COMMAND_LINE</source>
-        <translation>RIGA_DI_COMANDO</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2953"/>
         <source>Command line that started the process</source>
-        <translation>Riga di comando che ha avviato il processo</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1199,17 +1180,17 @@ uscito con stato </translation>
     <message>
         <location filename="../qps.cpp" line="1845"/>
         <source>Show</source>
-        <translation>Mostra</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1848"/>
         <source>Hide</source>
-        <translation>Nascondi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1852"/>
         <source>Quit</source>
-        <translation>Esci</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1217,283 +1198,283 @@ uscito con stato </translation>
     <message>
         <location filename="../qps.cpp" line="198"/>
         <source>header_popup</source>
-        <translation>Pop-up testata</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="199"/>
         <source>Remove Field</source>
-        <translation>Rimuovi campo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="200"/>
         <source>Add Field</source>
-        <translation>Aggiungi campo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="207"/>
         <source>View</source>
-        <translation>Mostra</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="208"/>
         <source>Process</source>
-        <translation>Processo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="209"/>
         <source>Log</source>
-        <translation type="unfinished">Log</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="214"/>
         <source>Fields</source>
-        <translation>Campi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="215"/>
         <source>Custom Fields</source>
-        <translation>Campi personalizzati</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="217"/>
         <source>Basic Fields </source>
-        <translation>Campi di base </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="219"/>
         <source>Jobs Fields </source>
-        <translation>Campi processi </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="221"/>
         <source>Memory Fields </source>
-        <translation>Campi memoria </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="224"/>
         <source>Scheduling Fields </source>
-        <translation>Campi pianificazione </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="241"/>
         <source>Select Custom Fields...</source>
-        <translation>Seleziona campi personalizzati...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="203"/>
         <source>Command</source>
-        <translation>Comando</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="255"/>
         <source>Options</source>
-        <translation>Opzioni</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="256"/>
         <source>Update Period...</source>
-        <translation>Periodo aggiornamento...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="265"/>
         <source>Show Status bar</source>
-        <translation>Mostra barra di stato</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="274"/>
         <source>Preferences...</source>
-        <translation>Preferenze...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="280"/>
         <source>Help</source>
-        <translation>Aiuto</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="282"/>
         <location filename="../qps.cpp" line="1893"/>
         <source>About</source>
-        <translation>Informazioni</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="370"/>
         <source>Detail</source>
-        <translation>Dettagli</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="411"/>
         <source>test</source>
-        <translation>test</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="412"/>
         <source>Copied to Clipboard</source>
-        <translation>Copiato negli Appunti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="464"/>
         <source>context popup</source>
-        <translation>popup contestuale</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="465"/>
         <source>Renice...</source>
-        <translation>Cambia nice...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="466"/>
         <source>Scheduling...</source>
-        <translation>Pianificazione...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="468"/>
         <source>Terminate</source>
-        <translation>Termina</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="470"/>
         <source>Hangup</source>
-        <translation>Blocca</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="471"/>
         <source>Kill</source>
-        <translation>Uccidi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="472"/>
         <source>Stop</source>
-        <translation>Interrompi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="474"/>
         <source>Continue</source>
-        <translation>Continua</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="477"/>
         <source>Other Signals</source>
-        <translation>Altri segnali</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="478"/>
         <source>SIGINT (interrupt)</source>
-        <translation>SIGINT (interrompi)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="480"/>
         <source>SIGCONT (continue)</source>
-        <translation>SIGCONT (continua)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="482"/>
         <source>SIGSTOP (stop)</source>
-        <translation>SIGSTOP (stop)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="484"/>
         <source>SIGQUIT (quit)</source>
-        <translation>SIGQUIT (esci)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="486"/>
         <source>SIGILL (illegal instruction)</source>
-        <translation>SIGILL (istruzione illegale)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="488"/>
         <source>SIGABRT (abort)</source>
-        <translation>SIGABRT (abortisci)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="490"/>
         <source>SIGFPE (floating point exception)</source>
-        <translation>SIGFPE (errore virgola mobile)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="492"/>
         <source>SIGSEGV (segmentation violation)</source>
-        <translation>SIGSEGV (violazione segmentazione)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="494"/>
         <source>SIGPIPE (broken pipe)</source>
-        <translation>SIGPIPE (pipe rotto)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="496"/>
         <source>SIGALRM (timer signal)</source>
-        <translation>SIGALRM (segnale timer)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="498"/>
         <source>SIGUSR1 (user-defined 1)</source>
-        <translation>SIGUSR1 (definito dall&apos;utente 1)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="500"/>
         <source>SIGUSR2 (user-defined 2)</source>
-        <translation>SIGUSR2 (definito dall&apos;utente 2)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="502"/>
         <source>SIGCHLD (child death)</source>
-        <translation>SIGCHLD (figlio morto)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="504"/>
         <source>SIGTSTP (stop from tty)</source>
-        <translation>SIGTSTP (interrompi dal tty)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="506"/>
         <source>SIGTTIN (tty input)</source>
-        <translation>SIGTTIN (input tty)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="508"/>
         <source>SIGTTOU (tty output)</source>
-        <translation>SIGTTOU (output tty)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="515"/>
         <source>View Details</source>
-        <translation>Mostra dettagli</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="781"/>
         <source>Show File Path</source>
-        <translation>Mostra percorso file</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="787"/>
         <source>Show Graph</source>
-        <translation>Mostra grafico</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="793"/>
         <source>Show Control Bar</source>
-        <translation>Mostra barra di controllo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="804"/>
         <source>Include Child Times</source>
-        <translation>Includi tempi dei processi figli</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="998"/>
         <source>WatchDog</source>
-        <translation type="unfinished">WatchDog</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1000"/>
         <source>Edit Commands...</source>
-        <translation>Modifica Comandi...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1016"/>
         <source>Quit</source>
-        <translation>Esci</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1335"/>
@@ -1503,77 +1484,77 @@ uscito con stato </translation>
         <location filename="../qps.cpp" line="1428"/>
         <location filename="../qps.cpp" line="1523"/>
         <source>Permission denied</source>
-        <translation>Permesso negato</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1336"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
-        <translation>Non hai i permessi di cambiare il nice dei processi selezionati. Solo il proprietario del processo e l&apos;amministratore hanno il permesso di farlo.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1367"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
-        <translation>Non hai i permessi di cambiare il nice al processo %1 (%2). Solo il proprietario e l&apos;amministratore hanno il permesso di farlo.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1374"/>
         <source>Only the super-user may lower the nice value of a process.</source>
-        <translation>Solo l&apos;amministratore può abbassare il nice di un processo.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1395"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
-        <translation>Solo l&apos;utente root può modificare la politica di pianificazione e la priorità statica.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1429"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
-        <translation>Non disponi dell&apos;autorizzazione per modificare la pianificazione e / o la priorità del processo% 1 (% 2). Solo root può farlo.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1490"/>
         <source>Do you really want to terminate the selected process(es)?</source>
-        <translation>Si è sicuro di voler terminare il/i processo/i selezionati?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1492"/>
         <source>Do you really want to hang up the selected process(es)?</source>
-        <translation>Si è sicuro di voler sospendere il/i iprocesso/i selezionati?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1494"/>
         <source>Do you really want to kill the selected process(es)?</source>
-        <translation>Si è sicuro di voler uccidere il/i iprocesso/i selezionati?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1503"/>
         <source>Question</source>
-        <translation>Domanda</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1524"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
-        <translation>Non hai l&apos;autorizzazione per inviare un segnale per elaborare% 1 (% 2). Solo root e il proprietario del processo possono inviargli dei segnali.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1909"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
-        <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1911"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
-        <translation>&lt;h2&gt; Qps %1 - Un gestore processi visuale &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Sorgenti: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1931"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
-        <translation>&lt;b&gt;Qps originale da&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Collaboratori&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1969"/>
         <source>&lt;H1&gt;QPS Help&lt;/H1&gt;Updated: May 24 2005&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Quit      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Update      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Space , Enter       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Terminate &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Kill &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</source>
-        <translation type="unfinished">&lt;H1&gt;QPS Help&lt;/H1&gt;Updated: May 24 2005&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Quit      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Update      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Space , Enter       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Terminate &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Kill &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1581,7 +1562,7 @@ uscito con stato </translation>
     <message>
         <location filename="../dialogs.cpp" line="292"/>
         <source>Change scheduling</source>
-        <translation>Modifica la pianificazione</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="296"/>
@@ -1601,32 +1582,32 @@ uscito con stato </translation>
     <message>
         <location filename="../dialogs.cpp" line="300"/>
         <source>SCHED_RR (real-time)</source>
-        <translation>SCHED_RR (tempo reale)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="314"/>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="316"/>
         <source>Cancel</source>
-        <translation>Cancella</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="346"/>
         <source>Priority (1-99):</source>
-        <translation>Priorità (1-99):</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="379"/>
         <source>Invalid Input</source>
-        <translation>Inserimento non valido</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="380"/>
         <source>The priority must be in the range 1..99</source>
-        <translation>La priorità deve essere tra 1 e 99</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1634,12 +1615,12 @@ uscito con stato </translation>
     <message>
         <location filename="../misc.cpp" line="712"/>
         <source>PID, COMMAND, USER...</source>
-        <translation>PID, COMANDO,UTENTE...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="713"/>
         <source>Filter</source>
-        <translation>Filtro</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1652,17 +1633,17 @@ uscito con stato </translation>
     <message>
         <location filename="../dialogs.cpp" line="185"/>
         <source>New nice value:</source>
-        <translation>Nuovo valore nice:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="225"/>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="229"/>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1670,12 +1651,12 @@ uscito con stato </translation>
     <message>
         <location filename="../details.cpp" line="147"/>
         <source>Fd</source>
-        <translation>Fd</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="147"/>
         <source>File descriptor</source>
-        <translation type="unfinished">Descrittore file</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="148"/>
@@ -1685,12 +1666,12 @@ uscito con stato </translation>
     <message>
         <location filename="../details.cpp" line="148"/>
         <source>Protocol (TCP or UDP)</source>
-        <translation>Protocollo (TCP o UDP)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="149"/>
         <source>Recv-Q</source>
-        <translation>Recv-Q</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="149"/>
@@ -1700,7 +1681,7 @@ uscito con stato </translation>
     <message>
         <location filename="../details.cpp" line="150"/>
         <source>Send-Q</source>
-        <translation>Send-Q</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="150"/>
@@ -1710,48 +1691,48 @@ uscito con stato </translation>
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>Local Addr</source>
-        <translation>Addr locale</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>Local IP address</source>
-        <translation>Indirizzo IP locale</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
         <location filename="../details.cpp" line="154"/>
         <source>Port</source>
-        <translation>Porta</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
         <source>Local port</source>
-        <translation>Porta locale</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Remote Addr</source>
-        <translation>Addr remoto</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Remote IP address</source>
-        <translation>Indirizzo IP remoto</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="154"/>
         <source>Remote port</source>
-        <translation>Porta remota</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>State</source>
-        <translation>Stato</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>Connection state</source>
-        <translation>Stato connessione</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1759,7 +1740,7 @@ uscito con stato </translation>
     <message>
         <location filename="../misc.cpp" line="748"/>
         <source>Process count: %1</source>
-        <translation>Numero processi: %1</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1784,7 +1765,7 @@ uscito con stato </translation>
     <message>
         <location filename="../misc.cpp" line="610"/>
         <source>title</source>
-        <translation>Titolo</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1792,17 +1773,17 @@ uscito con stato </translation>
     <message>
         <location filename="../watchdogdialog.cpp" line="191"/>
         <source>if process start</source>
-        <translation type="unfinished">se il processo si avvia</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdogdialog.cpp" line="192"/>
         <source>if process finish</source>
-        <translation>se il processo finisce</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../watchdogdialog.cpp" line="215"/>
         <source>select condition</source>
-        <translation>seleziona conditione</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
