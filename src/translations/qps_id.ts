@@ -233,7 +233,7 @@ keluar dengan status </translation>
     <message>
         <location filename="../misc.cpp" line="770"/>
         <source>Thread</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Topik</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="777"/>
@@ -711,7 +711,7 @@ keluar dengan status </translation>
     <message>
         <location filename="../proc.cpp" line="2854"/>
         <source>Parent process ID</source>
-        <translation type="unfinished">Parent process ID</translation>
+        <translation type="unfinished">Proses Utama</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2856"/>
@@ -751,12 +751,12 @@ keluar dengan status </translation>
     <message>
         <location filename="../proc.cpp" line="2862"/>
         <source>Process group ID of tty owner</source>
-        <translation type="unfinished">Process group ID of tty owner</translation>
+        <translation type="unfinished">Proses Grup Dari Pemilik</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2864"/>
         <source>USER</source>
-        <translation type="unfinished">USER</translation>
+        <translation>PENGGUNA</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2864"/>
@@ -901,7 +901,7 @@ keluar dengan status </translation>
     <message>
         <location filename="../proc.cpp" line="2892"/>
         <source>Realtime priority (0-99, more is better)</source>
-        <translation type="unfinished"></translation>
+        <translation>Waktu Prioritas</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2894"/>
@@ -911,7 +911,7 @@ keluar dengan status </translation>
     <message>
         <location filename="../proc.cpp" line="2894"/>
         <source>Time slice in milliseconds</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Waktu Terkuras Dalam Detik</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2896"/>
@@ -921,7 +921,7 @@ keluar dengan status </translation>
     <message>
         <location filename="../proc.cpp" line="2896"/>
         <source>Percentage average sleep time (-1 -&gt; N/A)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Persentase Tidur Rata-Rata</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2898"/>
@@ -941,7 +941,7 @@ keluar dengan status </translation>
     <message>
         <location filename="../proc.cpp" line="2900"/>
         <source>Number of major faults (disk access)</source>
-        <translation type="unfinished"></translation>
+        <translation>Jumlah Kesalahan Paling Utama (Akses Penyimpanan)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2902"/>
@@ -951,7 +951,7 @@ keluar dengan status </translation>
     <message>
         <location filename="../proc.cpp" line="2902"/>
         <source>Number of minor faults (no disk access)</source>
-        <translation type="unfinished"></translation>
+        <translation>Jumlah Kesalahan Kecil (Tidak Ada Akses Penyimpanan)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2905"/>
@@ -961,7 +961,7 @@ keluar dengan status </translation>
     <message>
         <location filename="../proc.cpp" line="2905"/>
         <source>Virtual image size of process</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ukuran Gambar Dari Proses</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2907"/>
@@ -971,7 +971,7 @@ keluar dengan status </translation>
     <message>
         <location filename="../proc.cpp" line="2907"/>
         <source>Resident set size</source>
-        <translation type="unfinished"></translation>
+        <translation>Mengatur Besaran Ukuran</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2909"/>
@@ -981,7 +981,7 @@ keluar dengan status </translation>
     <message>
         <location filename="../proc.cpp" line="2909"/>
         <source>memory usage (RSS-SHARE)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Penggunaan Penyimpanan (RSS-SHARE)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2911"/>
@@ -991,7 +991,7 @@ keluar dengan status </translation>
     <message>
         <location filename="../proc.cpp" line="2911"/>
         <source>Text(code) resident set size</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Teks(Kode) Ukuran</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2913"/>
@@ -1006,32 +1006,32 @@ keluar dengan status </translation>
     <message>
         <location filename="../proc.cpp" line="2915"/>
         <source>STACK</source>
-        <translation type="unfinished"></translation>
+        <translation>TUMPUKAN</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2915"/>
         <source>Stack size</source>
-        <translation type="unfinished"></translation>
+        <translation>Tumpukan Ukuran</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2917"/>
         <source>SHARE</source>
-        <translation type="unfinished"></translation>
+        <translation>DIBAGIKAN</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2917"/>
         <source>Shared memory with other libs</source>
-        <translation type="unfinished"></translation>
+        <translation>Membagikan Ukuran Penyimpanan Dengan Libs Lain</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2919"/>
         <source>SWAP</source>
-        <translation type="unfinished"></translation>
+        <translation>TUKARKAN</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2919"/>
         <source>Kbytes on swap device</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Penukarkan Perangkat Dalam Kb</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2921"/>
@@ -1802,7 +1802,7 @@ keluar dengan status </translation>
     <message>
         <location filename="../watchdogdialog.cpp" line="215"/>
         <source>select condition</source>
-        <translation type="unfinished"></translation>
+        <translation>Pilih Kondisi</translation>
     </message>
 </context>
 </TS>
