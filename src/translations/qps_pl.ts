@@ -1604,12 +1604,12 @@ zakończony ze statusem </translation>
     <message>
         <location filename="../dialogs.cpp" line="314"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">OK</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="316"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Anuluj</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="346"/>
@@ -1655,12 +1655,12 @@ zakończony ze statusem </translation>
     <message>
         <location filename="../dialogs.cpp" line="225"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Anuluj</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="229"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">OK</translation>
     </message>
 </context>
 <context>
@@ -1673,7 +1673,7 @@ zakończony ze statusem </translation>
     <message>
         <location filename="../details.cpp" line="147"/>
         <source>File descriptor</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Deskryptor pliku</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="148"/>
