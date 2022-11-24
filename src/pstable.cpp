@@ -244,7 +244,7 @@ QString Pstable::tipText(int col)
 
 void Pstable::showTip(QPoint p, int idx)
 {
-    QToolTip::showText(p, tipText(idx));
+    QToolTip::showText(p, tipText(idx), this);
 }
 
 extern TFrame *infobox; // testing

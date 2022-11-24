@@ -170,7 +170,7 @@ void TableHead::mouseMoveEvent(QMouseEvent *e)
         QString s = htable->tipText(col);
 
         if (!s.isEmpty())
-            QToolTip::showText(e->globalPos(), s);
+            QToolTip::showText(e->globalPos(), s, this);
     }
 }
 
