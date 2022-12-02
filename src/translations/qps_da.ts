@@ -1373,7 +1373,7 @@ afsluttede med status </translation>
     <message>
         <location filename="../qps.cpp" line="477"/>
         <source>Other Signals</source>
-        <translation type="unfinished"></translation>
+        <translation>Andre signaler</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="478"/>
