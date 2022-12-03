@@ -116,8 +116,6 @@ TFrame *infobox = nullptr; // testing
 QFontComboBox *font_cb = nullptr;
 WatchdogDialog *watchdogDialog = nullptr;
 
-/// PDisplay *pdisplay;
-
 QList<Procview *> proclist;
 
 #include "trayicon.h"
@@ -186,12 +184,6 @@ Qps::Qps()
             << QApplication::instance()->thread() << std::endl;
     }
 
-    // watchdogDialog = new WatchdogDialog; //Memory Leak
-
-    //	font_cb=new QFontComboBox(this); // preload
-    //	font_cb->setWritingSystem ( QFontDatabase::Latin );
-    // font_cb->hide();
-
     make_signal_popup_menu();
 
     // MOVETO Pstable !!
@@ -247,11 +239,6 @@ Qps::Qps()
             &Qps::view_menu);
     connect(m_field, &QMenu::aboutToShow, this, &Qps::update_menu_status);
 
-    /// connect(m_view, SIGNAL(triggered(QAction *)),this,
-    /// SLOT(view_menu(QAction
-    /// *)));
-    /// connect(m_view, SIGNAL(aboutToShow ()), SLOT(update_menu_status()));
-
     m_options = new QMenu( tr( "Options" ), this);
     m_options->addAction( tr( "Update Period..." ), this, &Qps::menu_update);
     m_options->addSeparator();
@@ -278,21 +265,17 @@ Qps::Qps()
     connect(m_options, &QMenu::aboutToShow, this, &Qps::update_menu_status);
 
     QMenu *m_help = new QMenu( tr( "Help" ), this);
-    // m_help->addAction("FAQ", this, SLOT(license()));
     m_help->addAction(QIcon::fromTheme("help-about"),  tr( "About" ), this,
                       &Qps::about);
 
-    // menu = new QMenuBar(this);
     menubar = new QMenuBar;
     menubar->addMenu(m_command);
-    // am_view=menubar->addMenu(m_view);
     menubar->addMenu(m_field);
     menubar->addMenu(m_options);
     menubar->addSeparator();
     menubar->addMenu(m_help);
 
     ctrlbar = new ControlBar(this);
-    // controlbar=ctrlbar;
 
     connect(ctrlbar, &ControlBar::need_refresh, this, &Qps::refresh);
     connect(ctrlbar, &ControlBar::viewChange, this,
@@ -301,16 +284,10 @@ Qps::Qps()
     context_col = -1;
 
     procview = new Procview(); // refresh() only not rebuild()
-/// procview = new Procview("localhost"); // refresh() only not rebuild()
-/// procview->refresh(); // TODO
-/// proclist.append(procview);
-/// procview->start(); // thread start
 
     pstable = new Pstable(this, procview); // no refresh()
     PDisplay *display = new PDisplay(this);
     infobar = display->addSystem(procview);
-    //.	infobar = new Infobar(this,procview); // graph_bar
-    //	infobar = new Infobar(procview); // graph_bar
     statusBar = new StatusBar(this);
 
     if (!read_settings())
@@ -332,19 +309,14 @@ Qps::Qps()
                                   ctrlbar->pauseButton, SLOT(click()));
     (void) new QShortcut(Qt::CTRL + Qt::Key_L, pstable, SLOT(repaintAll()));
 
-    // MOVETO : pstable better? hmmm...
-    // where is leftClick?
     connect(pstable, &HeadedTable::doubleClicked, this, &Qps::open_details );
     connect(pstable, &HeadedTable::rightClicked, this,
             &Qps::show_popup_menu);
     connect(pstable->header(), &TableHead::rightClicked, this,
             &Qps::context_heading_menu);
-    //	connect(netable, SIGNAL(rightClicked(QPoint)), this,
-    // SLOT(context_row_menu(QPoint)));
 
     selection_items_enabled = true; // ????
     update_load_time = 0;
-    //// update_menu_status();
 
     QVBoxLayout *vlayout = new QVBoxLayout;
     vlayout->setMargin(0);
@@ -353,57 +325,23 @@ Qps::Qps()
     else
         vlayout->setSpacing(1);
 
-    // vlayout->addWidget(menu);
     vlayout->setMenuBar(menubar);
     vlayout->addWidget(display);
-    // vlayout->addWidget( infobar);
     vlayout->addWidget(ctrlbar);
-
-    /// vlayout->addSpacing(5);
-
-    // if(flag_devel){
-    if (false)
-    {
-        if (false)
-        {
-            QSplitter *splitter = new QSplitter(Qt::Vertical);
-            QDockWidget *dock = new QDockWidget(tr("Detail"), this);
-            dock->setFeatures(QDockWidget::DockWidgetClosable);
-            // dock->setWidget();
-            // dock->setAllowedAreas(Qt::LeftDockWidgetArea |
-            // Qt::RightDockWidgetArea);
-            // customerList = new QListWidget(dock);
-            // vlayout->addStretch();
-            splitter->addWidget(pstable);
-            splitter->addWidget(dock);
-            vlayout->addWidget(splitter);
-            vlayout->addWidget(statusBar);
-            setLayout(vlayout);
-        }
-    }
 
     logbox = new QTextEdit(this);
     logbox->setReadOnly(true);
 
-    if (false) // if(flag_smallscreen==false)
-    {
-        //
-    }
-    else
-    {
-        vlayout->addWidget(pstable);
-        vlayout->addWidget(logbox);
-        logbox->hide();
-    }
+    vlayout->addWidget(pstable);
+    vlayout->addWidget(logbox);
+    logbox->hide();
 
     vlayout->addWidget(statusBar);
     setLayout(vlayout);
 
     infobox = new TFrame(this);
-    //	setAttribute(Qt::WA_ShowWithoutActivating);
     if (update_period != eternity)
         Qps::update_timer(); // startTimer(update_period);
-    ///	setFocusPolicy (Qt::WheelFocus);
 
     bar_visibility(); // need
 
@@ -566,7 +504,7 @@ void Qps::bar_visibility()
 }
 
 void Qps::timerEvent(QTimerEvent */*e*/) { Qps::refresh(); }
-//
+
 // dialogs.cpp:    qps->update_timer();
 void Qps::update_timer()
 {
@@ -900,10 +838,6 @@ void Qps::menu_custom()
     }
 }
 
-// MOVE TO PSTABlE ? hmmm wait...
-// Interface for  reading_setting()
-// SLOT:
-//
 // called by
 // 	1.click Tree_checkbox
 //	2.void Qps::view_menu(int id)
@@ -988,7 +922,6 @@ void Qps::menu_edit_cmd()
 // callback by CommandDialog::add_new()
 void Qps::make_command_menu()
 {
-    // should clear SIGNAL!!!
     QAction *act;
     m_command->clear();
     m_command->disconnect();
@@ -1009,15 +942,13 @@ void Qps::make_command_menu()
     }
     connect(m_command, &QMenu::triggered, this,
             &Qps::run_command);
-    //#ifdef SOLARIS
-    /* Solaris CDE don't have a tray, so we need a method to terminate */
+
     m_command->addSeparator();
     m_command->addAction(QIcon::fromTheme(QStringLiteral("application-exit"))
                         , tr( "Quit" )
                         , this
                         , &Qps::save_quit
-                        , Qt::ALT + Qt::Key_Q);
-    //#endif
+                        , Qt::ALT | Qt::Key_Q);
 }
 
 // run by MENU_ID ? qt slot?
@@ -1821,7 +1752,6 @@ int main(int argc, char **argv, char **envp)
             flag_start_mini = true;
         }
     }
-    //	codec = QTextCodec::codecForLocale(); // for Local locale
     check_system_requirement(); // check kernel version.. etc in proc.cpp
 
     QpsApp app(argc, argv);
@@ -1841,7 +1771,6 @@ int main(int argc, char **argv, char **envp)
 
     // MOVETO  Systray
     QMenu *menu = new QMenu(qps);
-    /// menu->addAction( UniString("About"), qps, SLOT(about()) );
     menu->addAction( QObject::tr( "Show" )
                    , qps
                    , &Qps::showWindow);
@@ -1948,55 +1877,6 @@ void Qps::about()
 
     connect(bbox, &QDialogButtonBox::accepted, diag, &QDialog::accept);
 
-    diag->exec();
-}
-
-void Qps::license() // -> help()
-{
-
-    QDialog *diag = new QDialog(this);
-    diag->setWindowTitle("Quick Help");
-    // diag->setSizeGripEnabled(true) ;
-    QHBoxLayout *lay = new QHBoxLayout(diag);
-
-    QTextBrowser *browser = new QTextBrowser(diag);
-    browser->setMinimumSize(400, 200);
-
-    lay->addWidget(browser);
-
-    browser->setOpenExternalLinks(true);
-    browser->setOpenLinks(true);
-    browser->setText( tr( "<H1>QPS Help</H1>"
-                          "Updated: May 24 2005<BR>"
-                          "<A "
-                          "HREF=\"http://kldp.net/projects/qps\">http://kldp.net/projects/"
-                          "qps</"
-                          "A><HR>"
-
-                          "<table style=\"text-align: center; width: 100%;\" border=\"1\""
-                          " cellpadding=\"1\" cellspacing=\"0\">"
-                          "  <tbody>"
-                          "    <tr>"
-                          "      <td"
-                          " style=\"vertical-align: top; background-color: rgb(204, 204, "
-                          "204);\">Quit"
-                          "      </td>"
-                          "      <td >&nbsp; CTRL + q , CTRL + x"
-                          "      </td>"
-                          "    </tr>"
-                          "    <tr>"
-                          "      <td"
-                          " style=\"vertical-align: top; background-color: rgb(204, 204, "
-                          "204);\">Update"
-                          "      </td>"
-                          "      <td>&nbsp;Space , Enter "
-                          "      </td>"
-                          "    </tr>"
-                          "    <tr><td> process Terminate </td>  <td> ALT + T , DELETE </td> "
-                          "</tr>"
-                          "    <tr><td> process Kill </td>  <td> ALT + K  </td> </tr>"
-                          "  </tbody>"
-                          "</table>" ) );
     diag->exec();
 }
 

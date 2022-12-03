@@ -184,7 +184,6 @@ class Qps : public QWidget
     void signal_menu(QAction *);
     void run_command(QAction *);
     void about();
-    void license();
     void menu_update();
     void menu_toggle_path();
     void menu_toggle_infobar();

@@ -369,7 +369,7 @@ class w_cpu : public gwidget
         int cpu_id;
         int cpu_n;
         int gheight = 10;
-        int mw;
+        int mw = 0;
 
         user = 0, system = 0, idle = 0, nice = 0, wait = 0;
 
@@ -377,25 +377,20 @@ class w_cpu : public gwidget
 
         width = 0;
 
-        // if(cpubar->isVisible() and cpu_n>3)
-        if (true)
-        {
-            // show Total CPU
-            cpu_id = cpu_n;
-            user = TIMEDIFF(CPUTIME_USER);
+        // show Total CPU
+        cpu_id = cpu_n;
+        user = TIMEDIFF(CPUTIME_USER);
 #ifdef LINUX
-            nice = TIMEDIFF(CPUTIME_NICE);
+        nice = TIMEDIFF(CPUTIME_NICE);
 #endif
-            system = TIMEDIFF(CPUTIME_SYSTEM);
+        system = TIMEDIFF(CPUTIME_SYSTEM);
 #ifdef SOLARIS
-            wait = TIMEDIFF(CPUTIME_WAIT);
+        wait = TIMEDIFF(CPUTIME_WAIT);
 #endif
-            idle = TIMEDIFF(CPUTIME_IDLE);
-            total = user + system + wait + nice + idle;
-            width = drawSPECTRUM(p, 0, 0, "CPU", total, user, system, nice,
+        idle = TIMEDIFF(CPUTIME_IDLE);
+        total = user + system + wait + nice + idle;
+        width = drawSPECTRUM(p, 0, 0, "CPU", total, user, system, nice,
                                  gheight - 1);
-            //	width+=5;
-        }
 
         for (cpu_id = 0; cpu_id < cpu_n; cpu_id++)
         {
@@ -418,7 +413,7 @@ class w_cpu : public gwidget
             total = user + system + wait + idle;
 #endif
 
-            if (cpu_n > 1 and cpu_n < 129) // 9~16
+            if (cpu_n > 1 && cpu_n < 129)
             {
                 int bar_w = 0;
                 if (cpu_n <= 2)
@@ -460,18 +455,20 @@ class w_cpu : public gwidget
 #endif
             }
         }
-        p->fillRect(0, gheight + 2, 50 + mw + 100, gheight * 4,
-                    QColor(0, 0, 0, 130));
+        if (cpu_n > 1 && cpu_n < 129)
+        { // make CPU core graphs paler
+            p->fillRect(0, gheight + 2, 50 + mw + 100, gheight * 4,
+                        QColor(0, 0, 0, 130));
+        }
         height = gheight * 1;
     }
 
     char *info() override
     {
-        float f_user, f_nice, f_system, f_wait;
+        float f_user, f_nice, f_system;
 
         f_user = (float)user / total * 100;
         f_nice = (float)nice / total * 100;
-        f_wait = (float)wait / total * 100;
         f_system = (float)system / total * 100;
 #ifdef LINUX
         sprintf(str_buff, "user: %1.1f%%  system:%1.1f%%  nice:%1.1f%% ",
@@ -479,6 +476,7 @@ class w_cpu : public gwidget
 #endif
 
 #ifdef SOLARIS
+        float f_wait = (float)wait / total * 100;
         sprintf(str_buff, "user: %1.1f%%  system:%1.1f%%  nice:%1.1f%% ",
                 f_user, f_system, f_wait);
 #endif

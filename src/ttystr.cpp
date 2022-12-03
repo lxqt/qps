@@ -132,7 +132,7 @@ QString Ttystr::name(dev_t devnr)
             else
                 strcpy(name, "?");
         }
-
+    /* Falls through. */
     default:
         if (dmaj >= 136 && dmaj < 144)
         {

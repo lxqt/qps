@@ -333,7 +333,7 @@ SchedDialog::SchedDialog(int policy, int prio) : QDialog()
         active = 1;
         rb = rb_fifo;
         break;
-    case SCHED_RR:
+    default: // SCHED_RR:
         active = 2;
         rb = rb_rr;
         break;
