@@ -27,8 +27,7 @@
 
 extern SearchBox *search_box;
 extern bool flag_show_thread;
-extern int flag_thread_ok;
-extern bool flag_devel;
+extern bool flag_thread_ok;
 
 #include "../icon/x1.xpm"
 #include "../icon/x2.xpm"
@@ -206,10 +205,6 @@ int mini_sscanf(const char *s1, const char *fmt, ...)
                 p = strstr(s, sstr);
                 if (p == nullptr)
                 {
-                    if (false and flag_devel)
-                        printf("%s : can't found [%s] "
-                               "in %s\n",
-                               __FUNCTION__, sstr, s);
                     break;
                 }
                 s = p + n;
