@@ -60,10 +60,7 @@
 #include "qps.h"
 #include "qpsapp.h"
 #include "dialogs.h"
-#include "commanddialog.h"
-#include "commandutils.h"
 #include "watchcond.h"
-#include "watchdogdialog.h"
 #include "lookup.h"
 #include "misc.h"
 
@@ -96,17 +93,12 @@
 #include <iostream>
 
 /* --------------------- Global Variable START ---------------------- */
-QList<Command *> commands;
-
 bool previous_flag_show_thread_prev = false; // previous state
 bool flag_show_thread = false; // to see informations at the thread level
-int flag_thread_ok = true;     // we presume a kernel 2.6.x using NPTL
+bool flag_thread_ok = true;     // we presume a kernel 2.6.x using NPTL
 bool flag_start_mini = false; // Need for Xorg.Session
 bool flag_refresh = true;     // DEL
-bool flag_xcompmgr = false;   // DEL test.compiz..
-bool flag_devel = false;
 bool flag_schedstat = false;
-bool flag_smallscreen = false;
 bool flag_firstRun = true; // test
 
 Qps *qps;
@@ -114,7 +106,6 @@ Qps *qps;
 SearchBox *search_box = nullptr;
 TFrame *infobox = nullptr; // testing
 QFontComboBox *font_cb = nullptr;
-WatchdogDialog *watchdogDialog = nullptr;
 
 QList<Procview *> proclist;
 
@@ -170,19 +161,12 @@ Qps::Qps()
     timer_id = 0;
     field_win = nullptr;
     prefs_win = nullptr;
-    command_win = nullptr;
     default_icon = nullptr;
     default_icon_set = false;
+    explicit_quit = false;
 
     setIconSize(24, 24); // Important!!
                          //	setMouseTracking(true); // no need?
-
-    if (flag_devel)
-    {
-        thread_main = thread(); // Test
-        std::cout << "qps thread = " << thread() << " qApp thread = "
-            << QApplication::instance()->thread() << std::endl;
-    }
 
     make_signal_popup_menu();
 
@@ -192,7 +176,7 @@ Qps::Qps()
     m_fields = new QMenu( tr( "Add Field" ), this);
     m_headpopup->addMenu(m_fields);
 
-    m_command = new QMenu( tr( "Command" ), this); // filled in later
+    m_session = new QMenu( tr( "Session" ), this);
 
     QAction *act;
 
@@ -269,7 +253,7 @@ Qps::Qps()
                       &Qps::about);
 
     menubar = new QMenuBar;
-    menubar->addMenu(m_command);
+    menubar->addMenu(m_session);
     menubar->addMenu(m_field);
     menubar->addMenu(m_options);
     menubar->addSeparator();
@@ -301,7 +285,12 @@ Qps::Qps()
     pstable->setReveseSort(procview->reversed);
 
     set_table_mode(procview->treeview); //  Pstable::refresh() occur
-    make_command_menu();                // after qpsrc reading
+
+    m_session->addAction(QIcon::fromTheme(QStringLiteral("application-exit"))
+                        , tr( "Quit" )
+                        , this
+                        , &Qps::save_quit
+                        , Qt::ALT | Qt::Key_Q);
 
     // misc. accelerators
     (void) new QShortcut(Qt::CTRL + Qt::Key_Q, this, SLOT(save_quit()));
@@ -576,18 +565,6 @@ void Qps::resizeEvent(QResizeEvent *e)
     {
         search_box->hide();
     }
-
-    return;
-    if (e->size().width() < 639)
-    {
-        flag_smallscreen = true;
-        statusBar->hide();
-    }
-    else
-    {
-        flag_smallscreen = false;
-        statusBar->show();
-    }
 }
 
 /*
@@ -602,28 +579,27 @@ void Qps::closeEvent(QCloseEvent *e)
     winPos.setX(geometry().x());
     winPos.setY(geometry().y());
 
-    if ((Qps::flag_exit == false) && trayicon->hasSysTray)
+    if (!explicit_quit && !Qps::flag_exit && trayicon->hasSysTray)
     {
         e->ignore(); // dont close window!
         hide();
         return;
     }
     e->accept();
-    save_quit();
+    if (!explicit_quit) // call save_quit() only if not called by it
+        save_quit();
 }
 
-// call by void Qps::make_command_menu()
-//			void signal_handler(int sig)
-void Qps::save_quit() // will be removed !
+void Qps::save_quit()
 {
-    close(); // if another window exists, then no exit. // occurs
-             // QCoseEvent!
+    explicit_quit = true;
+    close();
     save_settings();
-    qApp->quit(); // MACRO
+    qApp->quit();
 }
 
 // NEW Version !
-// : write geometry, visible fields and other settings to $HOME/.qpsrc
+// : write geometry, visible fields and other settings
 void Qps::save_settings()
 {
     if (Qps::auto_save_options)
@@ -901,87 +877,6 @@ void Qps::field_removed(int index)
     context_col = -1;
 }
 
-// moveto command?
-void Qps::menu_edit_cmd()
-{
-    if (command_win)
-    {
-        command_win->show();
-        command_win->raise();
-    }
-    else
-    {
-        command_win = new CommandDialog();
-        command_win->show();
-        connect(command_win, &CommandDialog::command_change, this,
-                &Qps::make_command_menu);
-    }
-}
-
-// init command menu
-// callback by CommandDialog::add_new()
-void Qps::make_command_menu()
-{
-    QAction *act;
-    m_command->clear();
-    m_command->disconnect();
-
-    if (flag_devel)
-    {
-        m_command->addAction( tr( "WatchDog" ), watchdogDialog,
-                             &QWidget::show);
-        act = m_command->addAction( tr( "Edit Commands..." ), this,
-                                   &Qps::menu_edit_cmd);
-    }
-
-    add_default_command();
-
-    for (int i = 0; i < commands.size(); i++)
-    {
-        act = m_command->addAction(commands[i]->name);
-    }
-    connect(m_command, &QMenu::triggered, this,
-            &Qps::run_command);
-
-    m_command->addSeparator();
-    m_command->addAction(QIcon::fromTheme(QStringLiteral("application-exit"))
-                        , tr( "Quit" )
-                        , this
-                        , &Qps::save_quit
-                        , Qt::ALT | Qt::Key_Q);
-}
-
-// run by MENU_ID ? qt slot?
-// void Qps::run_command(int command_id)
-void Qps::run_command(QAction *act)
-{
-    int i, idx = -1;
-    // FUNC_START
-
-    AddLog(act->text());
-
-    // find_command
-    for (i = 0; i < commands.size(); i++)
-    {
-        if (commands[i]->name == act->text())
-        {
-            if (commands[idx]->IsNeedProc() == false)
-            {
-                commands[idx]->call(nullptr);
-                return;
-            }
-
-            for (int i = 0; i < procview->linear_procs.size(); i++)
-            {
-                Procinfo *p = procview->linear_procs[i];
-                if (p->selected)
-                    commands[idx]->call(p);
-            }
-            break;
-        }
-    }
-}
-
 // detail
 void Qps::Action_Detail()
 {
@@ -1182,7 +1077,6 @@ void Qps::menu_update()
         txt = QString::asprintf("%d ms", update_period);
     IntervalDialog id(txt.toUtf8().data(), update_period != eternity);
     id.exec();
-    /// save_settings();
     return;
 }
 
@@ -1480,12 +1374,11 @@ static Sflagvar flagvars[] = {{"ExitOnClose", &Qps::flag_exit},
                               {"SavePos", &Qps::save_pos},
                               {"TabView", &Qps::flag_useTabView},
                               {"SingleCPU", &Procview::flag_pcpu_single},
-                              {"devel", &flag_devel},
                               {"cmdpath", &Procview::flag_show_file_path},
                               {"infobar", &Qps::show_infobar},
                               {"ctrlbar", &Qps::show_ctrlbar},
                               {"statbar", &Qps::show_statusbar},
-                              {"autosave", &Qps::auto_save_options},
+                              //{"autosave", &Qps::auto_save_options}, // Always ave settings
                               {"cpubar", &Qps::show_cpu_bar},
                               {"loadgraph", &Qps::show_load_graph},
                               {"loadicon", &Qps::load_in_icon},
@@ -1583,25 +1476,6 @@ bool Qps::read_settings()
     procview->viewproc = i;
     ctrlbar->view->setCurrentIndex(i); // procview->viewproc=set.value("viewproc").toInt();
 
-    int size = set.beginReadArray("watchdog");
-    for (int i = 0; i < size; i++)
-    {
-        set.setArrayIndex(i);
-        watchCond *w = new watchCond;
-        w->putstring(set.value("cat").toString());
-        watchlist.append(w);
-    }
-    set.endArray();
-    size = set.beginReadArray("commands");
-    for (int i = 0; i < size; i++)
-    {
-        set.setArrayIndex(i);
-        Command *c = new Command;
-        c->putString(set.value("cmd").toString());
-        commands.append(c);
-    }
-    set.endArray();
-
     return true;
 }
 
@@ -1654,22 +1528,6 @@ void Qps::write_settings() // save setting
     set.setValue("font", QApplication::font().toString());
 
     set.setValue("interval", update_period);
-
-    set.beginWriteArray("watchdog");
-    for (int i = 0; i < watchlist.size(); i++)
-    {
-        set.setArrayIndex(i);
-        set.setValue("cat", watchlist[i]->getstring());
-    }
-    set.endArray();
-
-    set.beginWriteArray("commands");
-    for (int i = 0; i < commands.size(); i++)
-    {
-        set.setArrayIndex(i);
-        set.setValue("cmd", commands[i]->getString());
-    }
-    set.endArray();
 }
 
 // return host name with domain stripped
@@ -1778,10 +1636,10 @@ int main(int argc, char **argv, char **envp)
                    , qps
                    , &Qps::hide);
     menu->addSeparator();
-    menu->addAction( QObject::tr( "Quit" )
+    menu->addAction( QIcon::fromTheme(QStringLiteral("application-exit"))
+                   , QObject::tr( "Quit" )
                    , qps
-                   , &Qps::save_quit
-                   , Qt::ALT + Qt::Key_Q);
+                   , &Qps::save_quit);
 
     trayicon = new TrayIcon(QPixmap((const char **)icon_xpm /* init icon */),
                             "qps", menu);

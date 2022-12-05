@@ -27,7 +27,6 @@
 #include "qps.h"
 #include "misc.h"
 
-extern QList<Command *> commands;
 extern ControlBar *controlbar;
 extern int default_font_height;
 extern bool flag_show_thread;

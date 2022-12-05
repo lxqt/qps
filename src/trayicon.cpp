@@ -24,8 +24,6 @@
 #include "global.h"     // Qps *qps;
 #include "trayicon.h"
 
-extern bool flag_xcompmgr;
-
 TrayIcon::TrayIcon(const QPixmap &icon, const QString &tooltip, QMenu *popup,
                    QWidget *parent)
     : QSystemTrayIcon(parent),

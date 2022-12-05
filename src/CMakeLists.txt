@@ -12,15 +12,8 @@ set(SOURCES
     prefs.cpp
     lookup.cpp
     details.cpp
-    command.cpp
-    commandutils.cpp
-    commandmodel.cpp
-    commanddialog.cpp
     checkboxdelegate.cpp
-    execwindow.cpp
     watchcond.cpp
-    listmodel.cpp
-    watchdogdialog.cpp
     misc.cpp
     trayicon.cpp
     htable.cpp
@@ -38,25 +31,13 @@ SET(HEADERS
     lookup.h
     details.h
     tablefield.h
-    command.h
-    commandutils.h
-    commandmodel.h
-    commanddialog.h
     checkboxdelegate.h
-    execwindow.h
     watchcond.h
-    listmodel.h
-    watchdogdialog.h
     misc.h
     trayicon.h
     htable.h
     qttableview.h
     svec.h
-)
-
-set(UIS
-    watchdog.ui
-    message.ui
 )
 
 set(RESOURCES "../qps.qrc")
@@ -65,7 +46,7 @@ set(RESOURCES "../qps.qrc")
 #-----------------------------------------------------------------------------
 lxqt_translate_ts(QM_FILES
     UPDATE_TRANSLATIONS ${UPDATE_TRANSLATIONS}
-    SOURCES ${SOURCES} ${HEADERS} ${UIS}
+    SOURCES ${SOURCES} ${HEADERS}
     INSTALL_DIR "${QPS_TRANSLATIONS_DIR}"
 )
 
@@ -87,7 +68,6 @@ lxqt_translate_desktop(DESKTOP_FILES
 add_executable(${PROJECT_NAME}
     ${SOURCES}
     ${HEADERS}
-    ${UIS}
     ${QM_FILES}
     ${QM_LOADER}
     ${DESKTOP_FILES}
