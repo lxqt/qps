@@ -90,27 +90,8 @@ class TFrame : public QLabel
   public:
     TFrame(QWidget *parent);
     void setText(QString str);
-    void draw(QPainter &p);
-    void showText(QPoint pos, QString str);
     void setPos(int x, int y);
     void setPos();
-
-  protected slots:
-    //    		void refresh();
-    //  		void update(int n);
-    //		QToolButton *button,*button2,*button3;
-    //		void event_cursor_moved(QMouseEvent *e);
-    void setValue(int val);
-
-  protected:
-    void paintEvent(QPaintEvent *event) override;
-    void moveEvent(QMoveEvent *event) override;
-    void showEvent(QShowEvent *event) override;
-
-  private:
-    QString text;
-    QTimeLine *timeLine;
-    float opacity;
 };
 
 class TBloon : public QLabel
