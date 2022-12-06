@@ -64,6 +64,7 @@ void init_misc(QWidget *main);
 int pf_write(QPainter *p, int x, int y, const char *str);
 int pf_str_width(char *str);
 int pf_char_height();
+int pf_char_width();
 void check_qps_running();
 
 int QPS_PROCVIEW_CPU_NUM();

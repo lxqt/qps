@@ -228,15 +228,12 @@ int drawSPECTRUM(QPainter *p, int x, int y, const char *name, int total,
     return total_width;
 }
 
-int drawSPECTRUM2(QPainter *p, int x, int y, char *name, int total, int part1,
-                  int part2 = 0, int part3 = 0, int bar_h = 9,
-                  int bar_w = TOTAL_BAR)
+// CPU core graph
+int drawSPECTRUM2(QPainter *p, int x, int y, char *name, int total,
+                  int part1, int part2 = 0, int part3 = 0,
+                  int bar_h = 9, int bar_w = TOTAL_BAR)
 {
-    // Notice:
-    // 		total=1, part1=1 occurs
-
     int total_width;
-    // bluelay  0,180,255
     // Move to Infor::Inforbar()
     total_color.setRgb(0, 67, 75); // dark
     part1_color.setRgb(0, 255, 210);
@@ -323,7 +320,6 @@ int drawSPECTRUM2(QPainter *p, int x, int y, char *name, int total, int part1,
     return total_width;
 }
 
-char str_buff[512];
 #define TIMEDIFF(kind)                                                         \
     procview->cpu_times(cpu_id, Proc::kind) -                                  \
         procview->old_cpu_times(cpu_id, Proc::kind)
@@ -339,7 +335,7 @@ class w_cpu : public gwidget
         char buff[32];
         int cpu_id;
         int cpu_n;
-        int gheight = 10;
+        int gheight = pf_char_height() + 1;
         int mw = 0;
 
         user = 0, system = 0, idle = 0, nice = 0, wait = 0;
@@ -401,24 +397,17 @@ class w_cpu : public gwidget
                     mw -= 6;
                 if (c >= 2)
                     mw -= 6;
-
-                if (false)
-                {
-                    printf("cpuid %d , user %d , %d \n", 1,
-                           procview->cpu_times(1, Proc::CPUTIME_USER),
-                           procview->old_cpu_times(0, Proc::CPUTIME_USER));
-                }
-
 #ifdef LINUX
+                // CPU core graphs
                 (void) drawSPECTRUM2(p, mw, gheight + 1 + r * (gheight - 1),
-                                      buff, total, user, system, nice,
-                                      gheight - 2, bar_w);
+                                     buff, total, user, system, nice,
+                                     gheight - 2, bar_w);
 #endif
 
 #ifdef SOLARIS
                 (void) drawSPECTRUM2(p, mw, gheight + 1 + r * (gheight - 1),
-                                      buff, total, user, system, wait,
-                                      gheight - 2, bar_w);
+                                     buff, total, user, system, wait,
+                                     gheight - 2, bar_w);
 #endif
             }
         }
@@ -430,7 +419,7 @@ class w_cpu : public gwidget
         height = gheight * 1;
     }
 
-    const char *info() override
+    QString info() override
     {
         float f_user, f_nice, f_system;
 
@@ -438,16 +427,17 @@ class w_cpu : public gwidget
         f_nice = (float)nice / total * 100;
         f_system = (float)system / total * 100;
 #ifdef LINUX
-        sprintf(str_buff, "user: %1.1f%%  system:%1.1f%%  nice:%1.1f%% ",
-                f_user, f_system, f_nice);
+        return QObject::tr("User: ") + QString::number(f_user, 'f', 1) + QObject::tr("%, ")
+               + QObject::tr("System: ") + QString::number(f_system, 'f', 1) + QObject::tr("%, ")
+               + QObject::tr("Nice: ") + QString::number(f_nice, 'f', 1) + QObject::tr("%");
 #endif
 
 #ifdef SOLARIS
         float f_wait = (float)wait / total * 100;
-        sprintf(str_buff, "user: %1.1f%%  system:%1.1f%%  nice:%1.1f%% ",
-                f_user, f_system, f_wait);
+        return QObject::tr("User: ") + QString::number(f_user, 'f', 1) + QObject::tr("%, ")
+               + QObject::tr("System: ") + QString::number(f_system, 'f', 1) + QObject::tr("%, ")
+               + QObject::tr("Nice: ") + QString::number(f_wait, 'f', 1) + QObject::tr("%");
 #endif
-        return str_buff;
     };
 };
 
@@ -473,28 +463,25 @@ class w_mem : public gwidget
         width = drawSPECTRUM(p, x, 0, "MEM", procview->mem_total, used);
 #endif
     }
-    const char *info() override
+    QString info() override
     {
         char str[80];
 
-        strcpy(str_buff, "Total: ");
         mem_string(procview->mem_total, str);
-        strcat(str_buff, str);
+        QString res = QObject::tr("Total: ") + QString::fromLatin1(str);
 
-        strcat(str_buff, "  used: ");
         mem_string(used, str);
-        strcat(str_buff, str);
+        res += QObject::tr(", ") + QObject::tr("Used: ") + QString::fromLatin1(str);
 
 #ifdef LINUX
-        strcat(str_buff, "  cached: ");
         mem_string(procview->mem_cached, str);
-        strcat(str_buff, str);
-        strcat(str_buff, "  buffer: ");
+        res +=  QObject::tr(", ") + QObject::tr("Cached: ") + QString::fromLatin1(str);
+
         mem_string(procview->mem_buffers, str);
-        strcat(str_buff, str);
+        res += QObject::tr(", ") + QObject::tr("Buffer: ") + QString::fromLatin1(str);
 #endif
 
-        return str_buff;
+        return res;
     };
 };
 
@@ -511,21 +498,20 @@ class w_swap : public gwidget
         width = drawSPECTRUM(p, x, 0, "SWAP", procview->swap_total, used);
         height = pf_char_height() + 4;
     }
-    const char *info() override
+    QString info() override
     {
         char str[80];
 
-        strcpy(str_buff, "Total: ");
         mem_string(procview->swap_total, str);
-        strcat(str_buff, str);
-        strcat(str_buff, "  Free: ");
-        mem_string(procview->swap_free, str);
-        strcat(str_buff, str);
-        strcat(str_buff, "  Used: ");
-        mem_string(used, str);
-        strcat(str_buff, str);
+        QString res = QObject::tr("Total: ") + QString::fromLatin1(str);
 
-        return str_buff;
+        mem_string(procview->swap_free, str);
+        res += QObject::tr(", ") + QObject::tr("Free: ") + QString::fromLatin1(str);
+
+        mem_string(used, str);
+        res += QObject::tr(", ") + QObject::tr("Used: ") + QString::fromLatin1(str);
+
+        return res;
     };
 };
 
@@ -562,7 +548,7 @@ class w_utime : public gwidget
         x = x_swap->xpluswidth() + 10;
         width = drawUTIME(p, x, 2, procview->boot_time);
     }
-    const char *info() override { return "passed time after system booting"; };
+    QString info() override { return QObject::tr("Time passed after system boot"); };
 };
 
 class w_load_avg : public gwidget
@@ -572,7 +558,7 @@ class w_load_avg : public gwidget
         height = pf_char_height() + 4;
 
         char buff[64];
-        sprintf(buff, " 1m:%1.02f 5m:%1.02f 15m:%1.02f", procview->loadavg[0],
+        sprintf(buff, "1m:%1.02f, 5m:%1.02f, 15m:%1.02f", procview->loadavg[0],
                 procview->loadavg[1], procview->loadavg[2]);
         width = pf_str_width(buff);
         x = parent->width() - width - 6;
@@ -582,15 +568,15 @@ class w_load_avg : public gwidget
         pf_write(p, x, 2, buff);
 
         // rotating slash
-        int x1 = parent->width() - 8;
-        int y1 = parent->height() - 9;
+        int x1 = parent->width() - pf_char_width();
+        int y1 = parent->height() - pf_char_height();
         char str[2] = {0, 0};
         str[0] = rotate_char;
         pf_write(p, x1, y1, str);
     }
-    const char *info() override
+    QString info() override
     {
-        return "Average CPU%% each 1, 5 ,15 minutes";
+        return QObject::tr("Average CPU load each 1, 5 ,15 minutes");
     };
 };
 
@@ -598,19 +584,19 @@ GraphBase::GraphBase(QWidget * /*parent*/, Procview *pv)
 {
     procview = pv;
     npoints = 0, peak = 0, h_index = 0, dirty = true;
-    official_height = 39;
+    official_height = 2 * pf_char_height();
 
     hist_size = 1280;
     history = new float[hist_size];
 
-    setMinimumHeight(24);
+    setMinimumHeight(official_height);
 
     setMouseTracking(true);
 }
 
 IO_Graph::IO_Graph(QWidget *parent, Procview *pv) : GraphBase(parent, pv)
 {
-    setMinimumHeight(22);
+    setMinimumHeight(2 * pf_char_height() + 2);
 }
 
 void GraphBase::make_graph(int w, int h, QPainter *p)
@@ -735,7 +721,7 @@ QString doHistory(SysHistory *sysh)
     }
     if (l.isEmpty())
         return QString();
-    l.prepend(QObject::tr("CPU Usage Summary") + "\n");
+    l.prepend(QObject::tr("CPU Usage Summary:") + "\n");
     return l.join("\n");
 }
 
@@ -793,7 +779,7 @@ void GraphBase::mouseMoveEvent(QMouseEvent *e)
 // TODO: 1.sort 2. time
 QString IO_Graph::doHistoryTXT(SysHistory *sysh)
 {
-    QString str = QObject::tr("I/O Summary") + "\n";
+    QString str = QObject::tr("I/O Summary:") + "\n";
 
     char buf[73], mem_str[64];
     for (const auto *p : qAsConst(sysh->procs))
@@ -830,7 +816,7 @@ void GraphBase::mousePressEvent(QMouseEvent * /*e*/) {}
 Infobar::Infobar(QWidget *parent, Procview *pv) : QFrame(parent)
 {
     procview = pv;
-    official_height = 32;
+    official_height = 3 * (pf_char_height() + 2);
 
     npoints = 0, peak = 0, h_index = 0, dirty = true;
 
