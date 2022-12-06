@@ -416,61 +416,18 @@ void TBloon::paintEvent(  QPaintEvent * event )
 } */
 
 TFrame::TFrame(QWidget *parent) : QLabel(parent)
-// TFrame::TFrame(QWidget *parent):QFrame(parent)
 {
-    text = tr( "this is Tframe widget" );
-    // setAutoFillBackground(false);
-    // setGeometry(50,50,100,100);
-    // setAttribute(Qt::WA_OpaquePaintEvent);
-    // setFrameShape(QFrame::StyledPanel);
-    // setFrameShadow(QFrame::Sunken);
-    // setSizePolicy(QSizePolicy::Preferred,QSizePolicy::Preferred);
-    // setSizePolicy(QSizePolicy::Minimum,QSizePolicy::Minimum);
-    // setSizePolicy(QSizePolicy::Maximum,QSizePolicy::Maximum);
-    // setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
-
-    //"border-width: 1px; border-style: solid;  border-color:
-    // rgb(150,45,100);
-    // border-radius: 5px ;"
     setStyleSheet("QLabel { "
                   "border-width: 1px; border-style: solid;  border-color: "
                   "rgb(210,50,130); border-radius: 5px ;"
                   "background-color : rgba(0,0,0,69%); padding: 3px; color: "
                   "rgb(0,255,150); }");
-    // 	setStyleSheet(  "QLabel { " "border-width: 1px; border-style:
-    // solid;
-    // border-radius: 5px ; padding: 3px; }");
     hide();
-
-    timeLine = new QTimeLine(2000, this);
-    timeLine->setFrameRange(0, 100);
-    connect(timeLine, &QTimeLine::frameChanged, this, &TFrame::setValue);
 }
-
-/*
-void TFrame::showText(QPoint glob_pos,QString str)
-{
-
-
-}
-
-
-void TFrame::move(int x,int y)
-{
-
-
-} */
-
-// QToolTip::showText(e->globalPos(), s);
-void TFrame::showText(QPoint /*glob_pos*/, QString /*str*/) {}
 
 void TFrame::setText(QString str)
 {
-    text = str;
-
     QLabel::setText(str);
-
-    // resize(minimumSizeHint());
     resize(sizeHint()); // **** before show !!  *****
 
     if (str.size() == 0)
@@ -481,105 +438,27 @@ void TFrame::setText(QString str)
     show();
 }
 
-// to avoid ~
-void TFrame::draw(QPainter &p)
-{
-    //	if(!isVisible()) 	return;
-    return;
-    int h = fontMetrics().height() + 3;
-    int w = fontMetrics().horizontalAdvance(text) + 9;
-    setFixedSize(w, h);
-    //	QFont font("Adobe Helvetica"); // helvetica & No-Antialias
-    // 	font.setPixelSize(10);
-    //	setFont(font);
-    //	p.drawRoundRect(rect(),10,10);
-    //	p.fillRect ( cr,QColor(0,0,0));
-    QColor bg = QColor(0, 0, 0, 120);
-    // p.fillRect(rect(),QColor(0,0,0,90));
-
-    //	p.setPen(QColor(0,255,155)); // less visually obtrusive than
-    // black
-    //	p.setBrush(QBrush(bg));
-    //	p.drawRoundedRect(0,0,w,h, 4, 4);
-    p.fillRect(rect(), bg);
-
-    p.setPen(QColor(0, 255, 155)); // less visually obtrusive than black
-    p.drawText(0, 0, w, h, Qt::AlignVCenter | Qt::AlignHCenter, text);
-}
-
 void TFrame::setPos()
 {
-    QWidget *parent = QWidget::parentWidget();
-
-    QPoint p = parent->mapFromGlobal(QCursor::pos());
-
-    setPos(p.x(), p.y());
+    if (QWidget *parent = parentWidget())
+    {
+        QPoint p = parent->mapFromGlobal(QCursor::pos());
+        setPos(p.x(), p.y());
+    }
 }
 
 void TFrame::setPos(int x, int y)
 {
-    QWidget *parent = QWidget::parentWidget();
-    int pwidth = parent->width();
-
-    if (width() + x > pwidth)
+    if (QWidget *parent = parentWidget())
     {
-        x = pwidth - width();
+        x += 16;
+        int pwidth = parent->width();
+        if (width() + x > pwidth)
+        {
+            x = pwidth - width();
+        }
+        move(x, y + 4);
     }
-    move(x + 16, y + 4);
-}
-
-void TFrame::moveEvent(QMoveEvent * /*e*/)
-{
-    // int x=e->pos().x();
-    // printf("pos (%d %d) \n",e->pos().x(),e->pos().y());
-    // event->oldPos();
-}
-
-void TFrame::setValue(int val)
-{
-    opacity += ((float)val / 100);
-    update();
-}
-
-void TFrame::showEvent(QShowEvent * /*event*/)
-{
-    opacity = 0.2;
-    //	timeLine->start();
-}
-
-// Maybe SEGFAULT
-void setPaletteBlend(QPalette &p)
-{
-    for (int i = 0; i < (QPalette::NoRole); i++)
-    {
-        QColor c = p.color(QPalette::ColorRole(i));
-        c.alpha();
-    }
-}
-
-void TFrame::paintEvent(QPaintEvent *event)
-{
-    QLabel::paintEvent(event);
-    return;
-
-    QCursor::pos();
-    //	if(x()+width() >  ) ;
-    QPalette np = palette();
-    setPaletteBlend(np);
-
-    QPainter p(this); // why?
-
-    //	if(opacity>1) timeLine->stop(); //
-    //	p.setOpacity(opacity);
-    //	p.setOpacity(0.01);
-    //	setWindowOpacity (0.1 );
-    //	QFrame::paintEvent(event);
-    //    p.scale(0.5,0.5);
-
-    // draw(p);
-    // p.setBackgroundMode (Qt::TransparentMode);
-    // p.setRenderHint(QPainter::Antialiasing);
-    // painter.translate(width() / 2, height() / 2);
 }
 
 UFrame::UFrame(QWidget *parent) : QFrame(parent)

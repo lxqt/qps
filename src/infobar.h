@@ -65,21 +65,23 @@ class gwidget
     {
         parent = p;
         procview = procv;
-    };
+    }
     void resize(int x_, int y_, int w, int h)
     {
         x = x_;
         y = y_;
         width = w;
         height = h;
-    };
+    }
     bool intersect(int cx, int cy)
     {
         cx = cx - x;
         cy = cy - y;
-        if (cx > 0 and cx < width)
-            if (cy > 0 and cy < height)
-                return true;
+        if (cx > 0 && cx < width
+            && cy > 0 && cy < height)
+        {
+            return true;
+        }
         return false;
     }
 
@@ -124,7 +126,6 @@ signals:
     void mouseMoveEvent(QMouseEvent *) override;
     void leaveEvent(QEvent *) override;
     void enterEvent(QEvent *event) override;
-    void hideEvent(QHideEvent *event) override;
     void resizeEvent(QResizeEvent *e) override;
 
     void add_history_point(unsigned value);

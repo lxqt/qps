@@ -40,7 +40,7 @@ float cpu_total = 0;
 float cpu_idle = 0;
 float cpu_used = 0;
 
-QMenu *m_popup;
+//QMenu *m_popup;
 subcpuRack *cpubar = nullptr; // DEL extra CPU_window
 
 // ============================
@@ -60,27 +60,9 @@ class VCursor
 };
 VCursor vcursor;
 
-// DEL
-void Infobar::hideEvent(QHideEvent * /*event*/)
-{
-    // printf("Infobar::hideEvent()\n");
-    // cpubar->hide();
-}
-
 // return true if the swap meter is redlined
 bool Infobar::swaplim_exceeded()
 {
-    /*
-    if(Qps::swaplim_percent) {
-            if(procview->swap_total > 0) {
-                    int free_p = 100 * procview->swap_free /
-    procview->swap_total;
-                    return free_p < Qps::swaplimit;
-            } else
-                    return false;
-    } else {
-            return procview->swap_free < Qps::swaplimit;
-    } */
     return false;
 }
 
@@ -109,21 +91,18 @@ void Infobar::update_load()
     // NEED SOLUTION!!!!!!!! draw graph before exposed
     if (isVisible())
         drawGraphOnPixmap();
-    // MouseCurosrCheck
 }
 
 void Infobar::drawGraphOnPixmap()
 {
-    //	if(isVisible()==false) return;
     if (size() != pixmap.size())
     {
-        /// printf("icon_pm changed!!\n");
         pixmap = QPixmap(size());  // resize(w, h);
         pixmap.setMask(QBitmap()); // clear the mask for drawing
     }
 
     QPainter p(&pixmap);
-    p.fillRect(rect(), QBrush(Qt::black)); // p.fill(Qt::black);
+    p.fillRect(rect(), QBrush(Qt::black));
 
     for (int i = 0; i < wlist.size(); i++)
         wlist[i]->draw(&p);
@@ -272,7 +251,6 @@ int drawSPECTRUM2(QPainter *p, int x, int y, char *name, int total, int part1,
 
     if (total == 0)
     {
-        // printf("total=0\n") ; //occur
         name = strcat(buff, name);
     }
 
@@ -283,7 +261,7 @@ int drawSPECTRUM2(QPainter *p, int x, int y, char *name, int total, int part1,
         return w; //**
 
     // draw total_dark_null line
-    bar_h = bar_h - 1; // if(h==0)  h=pf_char_height(); //9
+    bar_h = bar_h - 1;
 
     ty = y + 2;
     tx = 0;
@@ -309,7 +287,6 @@ int drawSPECTRUM2(QPainter *p, int x, int y, char *name, int total, int part1,
     {
         p->drawLine(bar_xoffset + tx, ty, bar_xoffset + tx, ty + bar_h);
         tx += 2;
-        // tx++;
     }
 
     if (part2 >= 0)
@@ -322,7 +299,6 @@ int drawSPECTRUM2(QPainter *p, int x, int y, char *name, int total, int part1,
         {
             p->drawLine(bar_xoffset + tx, ty, bar_xoffset + tx, ty + bar_h);
             tx += 2;
-            // tx++;
         }
     }
     if (part3 >= 0)
@@ -344,11 +320,6 @@ int drawSPECTRUM2(QPainter *p, int x, int y, char *name, int total, int part1,
                TOTAL_BAR * 2, name, total, part1, part2, part3);
         return -1;
     }
-    //	if(part1<0){ printf("total=%d part1=%d
-    // part2=%d\n",total,part1,part2);
-    // return -1;}
-    // printf("%s total =%d, part1=%d, part2=%d
-    // part3=%d\n",name,total,part1,part2,part3);
     return total_width;
 }
 
@@ -394,8 +365,6 @@ class w_cpu : public gwidget
 
         for (cpu_id = 0; cpu_id < cpu_n; cpu_id++)
         {
-
-            //	if(procview->num_cpus == procview->old_num_cpus)
             user = TIMEDIFF(CPUTIME_USER);
             idle = TIMEDIFF(CPUTIME_IDLE);
             system = TIMEDIFF(CPUTIME_SYSTEM);
@@ -422,7 +391,6 @@ class w_cpu : public gwidget
                     bar_w = TOTAL_BAR / 2;
                 else // if(cpu_n<17)
                     bar_w = TOTAL_BAR / 3;
-                // else bar_w=13;
 
                 int r, c;
                 c = cpu_id / 2;
@@ -451,7 +419,6 @@ class w_cpu : public gwidget
                 (void) drawSPECTRUM2(p, mw, gheight + 1 + r * (gheight - 1),
                                       buff, total, user, system, wait,
                                       gheight - 2, bar_w);
-// drawSPECTRUM(p,0,cpu_id*10,buff,total,user,system,wait);
 #endif
             }
         }
@@ -463,7 +430,7 @@ class w_cpu : public gwidget
         height = gheight * 1;
     }
 
-    char *info() override
+    const char *info() override
     {
         float f_user, f_nice, f_system;
 
@@ -506,7 +473,7 @@ class w_mem : public gwidget
         width = drawSPECTRUM(p, x, 0, "MEM", procview->mem_total, used);
 #endif
     }
-    char *info() override
+    const char *info() override
     {
         char str[80];
 
@@ -527,9 +494,6 @@ class w_mem : public gwidget
         strcat(str_buff, str);
 #endif
 
-        //	sprintf(str_buff,"Total: %dKb , cache: %dKb , buffer:
-        //%dKb",
-        //		procview->mem_total,procview->mem_cached,procview->mem_buffers);
         return str_buff;
     };
 };
@@ -547,7 +511,7 @@ class w_swap : public gwidget
         width = drawSPECTRUM(p, x, 0, "SWAP", procview->swap_total, used);
         height = pf_char_height() + 4;
     }
-    char *info() override
+    const char *info() override
     {
         char str[80];
 
@@ -561,8 +525,6 @@ class w_swap : public gwidget
         mem_string(used, str);
         strcat(str_buff, str);
 
-        // sprintf(str_buff,"Total: %d Kbyte , used %d Kbyte",
-        //		procview->swap_total,procview->swap_free);
         return str_buff;
     };
 };
@@ -571,8 +533,6 @@ class w_swap : public gwidget
 int drawUTIME(QPainter *p, int x, int y, long boot_time)
 {
     char buff[1024];
-    // printf("size of long=%d, size of time_t=%d
-    // \n",sizeof(long),sizeof(time_t));
     long u = (long)time(nullptr) - (long)boot_time;
     int up_days = u / (3600 * 24);
     u %= (3600 * 24);
@@ -609,29 +569,24 @@ class w_load_avg : public gwidget
 {
     void draw(QPainter *p) override
     {
+        height = pf_char_height() + 4;
+
         char buff[64];
-        // printf("w_load_avg\n");
-        // sprintf(buff,"QPS %3.02f%%", Procinfo::loadQps);
         sprintf(buff, " 1m:%1.02f 5m:%1.02f 15m:%1.02f", procview->loadavg[0],
                 procview->loadavg[1], procview->loadavg[2]);
-
         width = pf_str_width(buff);
-
         x = parent->width() - width - 6;
-
         int w = x_utime->xpluswidth() + 15;
         if (x < w)
             x = w;
-
         pf_write(p, x, 2, buff);
 
-        //
-        x = parent->width() - 8;
-        y = parent->height() - 9;
-
+        // rotating slash
+        int x1 = parent->width() - 8;
+        int y1 = parent->height() - 9;
         char str[2] = {0, 0};
         str[0] = rotate_char;
-        pf_write(p, x, y, str);
+        pf_write(p, x1, y1, str);
     }
     const char *info() override
     {
@@ -642,7 +597,6 @@ class w_load_avg : public gwidget
 GraphBase::GraphBase(QWidget * /*parent*/, Procview *pv)
 {
     procview = pv;
-    // setCursor ( QCursor(Qt::CrossCursor) ) ;
     npoints = 0, peak = 0, h_index = 0, dirty = true;
     official_height = 39;
 
@@ -651,7 +605,7 @@ GraphBase::GraphBase(QWidget * /*parent*/, Procview *pv)
 
     setMinimumHeight(24);
 
-    QWidget::setMouseTracking(true);
+    setMouseTracking(true);
 }
 
 IO_Graph::IO_Graph(QWidget *parent, Procview *pv) : GraphBase(parent, pv)
@@ -675,18 +629,17 @@ void GraphBase::make_graph(int w, int h, QPainter *p)
     for (int i = start; i < procview->history.size(); i++, idx++)
     {
         SysHistory *hist = procview->history[i];
-        // printf("[%d] hist =%f\n",i,hist->load_cpu);
         pa[idx] = QPoint(idx, h - 1 - (int)(hist->load_cpu * ratio));
     }
 
     if (h == official_height)
     {
         history_start_idx = start; // for MousePointer!!
-        npoints = idx;             // printf("x npoints=%d \n",npoints);
+        npoints = idx;
     }
 
     // draw scale lines
-    p->setPen(QColor(0, 210, 100)); // p.setPen(QColor(0,70,54));
+    p->setPen(QColor(0, 210, 100));
     p->drawPolyline(pa);
 
     dirty = false;
@@ -694,8 +647,6 @@ void GraphBase::make_graph(int w, int h, QPainter *p)
 
 void IO_Graph::make_graph(int w, int h, QPainter *p)
 {
-    // p->fillRect(0,0,w,h,QBrush(Qt::black));
-    // p->fill(Qt::black);
     float ratio = 1.3; // test
 
     int hsize = procview->history.size();
@@ -710,28 +661,23 @@ void IO_Graph::make_graph(int w, int h, QPainter *p)
     for (int i = start; i < procview->history.size(); i++, idx++)
     {
         SysHistory *hist = procview->history[i];
-        // printf("[%d] hist =%f\n",i,hist->load_cpu);
         p->drawLine(idx, h - 1, idx, h - 1 - (int)(hist->load_io * ratio));
     }
 
-    // if(h==official_height)  // jump not init!!!
     {
         history_start_idx = start; // for MousePointer!!
-        npoints = idx;             // printf("x npoints=%d \n",npoints);
+        npoints = idx;
     }
 }
 
 void GraphBase::drawGraphOnPixmap()
 {
-    //
     if (rotate_str[++rotate_idx] == 0)
         rotate_idx = 0;
     rotate_char = rotate_str[rotate_idx];
 
-    //	if(isVisible()==false) return;
     if (size() != pixmap.size())
     {
-        /// printf("icon_pm changed!!\n");
         pixmap = QPixmap(size());  // resize(w, h);
         pixmap.setMask(QBitmap()); // clear the mask for drawing
     }
@@ -745,26 +691,9 @@ void GraphBase::drawGraphOnPixmap()
 // DRAFT CODE  !!!
 void Infobar::paintEvent(QPaintEvent *e)
 {
-    // printf("Infobar()::paintEvent\n");
     QRect ur = e->rect(); // update rectangle
     QPainter p(this);
-
-    // full re-draw! by update(); ???
-    // if( ur.width()==width() and ur.height()==height() )
-    {
-        ///	drawGraphOnPixmap();
-    }
-
     p.drawPixmap(ur, pixmap, ur);
-
-    return;
-    // drww VCursor
-    if (vcursor.enable)
-    {
-        /// int px = vcursor.px;
-        ///	p.setPen(QColor(80,195,80));
-        ///	p.drawLine (px,0,px,height());
-    }
 }
 
 void GraphBase::paintEvent(QPaintEvent *e)
@@ -782,44 +711,32 @@ void GraphBase::paintEvent(QPaintEvent *e)
 
     return;
 
-    // if(vcursor.enable);
     // ------- Cursor testing ---------
     p.setPen(QColor(250, 159, 5));
     int rel_x = x();
     p.drawLine(vcursor.px - rel_x, 0, vcursor.px - rel_x, height());
 }
 
-/* DEL
-void IO_Graph::paintEvent ( QPaintEvent *e )
-{
-        GraphBase::paintEvent (e);
-} */
-
 // TODO: 1.sort 2. time(?)
 QString doHistory(SysHistory *sysh)
 {
-    QString str;
+    // first sort Procinfos by their CPU usages
+    auto infos = (sysh->procs).values();
+    std::sort(infos.begin(), infos.end(), [](Procinfo *a, Procinfo *b) {
+        return a->pcpu > b->pcpu;
+    });
 
-    char buf[128];
-    // sprintf(buf,"miniHistory /* %.02f%%",sysh->load_cpu*100);
-    sprintf(buf, "miniHistory CPU");
-    str += QString::fromLatin1(buf);
-
-    // void linearize_tree(QVector<Procinfo *> *ps, int level, int prow,
-    // bool
-    // hide)
-    // qsort(ps->data(), ps->size(), sizeof(Procinfo *),(compare_func)
-    // compare_backwards);
-
-    for (const auto *p : qAsConst(sysh->procs))
+    QStringList l;
+    for (const auto *p : qAsConst(infos))
     {
-        if (p->pcpu == 0)
+        if (p->pcpu < 0.05) // it will be rounded to 1 decimal place
             continue;
-        sprintf(buf, " (%.01f%%)", p->pcpu);
-        str += "\n" + p->command + QString::fromLatin1(buf);
+        l << p->command + " (" + QString::number(p->pcpu, 'f', 1) + "%)";
     }
-
-    return str;
+    if (l.isEmpty())
+        return QString();
+    l.prepend(QObject::tr("CPU Usage Summary") + "\n");
+    return l.join("\n");
 }
 
 // TODO: name change!
@@ -828,7 +745,6 @@ QString GraphBase::doHistoryTXT(SysHistory *sysh)
     QString str;
 
     char buf[128];
-    // sprintf(buf,"miniHistory /* %.02f%%",sysh->load_cpu*100);
     sprintf(buf, "%%CPU miniHistory test");
     str += QString::fromLatin1(buf);
     for (const auto *p : qAsConst(sysh->procs))
@@ -846,28 +762,24 @@ void GraphBase::mouseMoveEvent(QMouseEvent *e)
     px = e->pos().x(); // x in Infobar
     py = e->pos().y(); // y in Infobar
 
-    // gap=infobox->width() + px  - width();
-
-    // printf("procview npoints=%d  px=%d\n",npoints,px);
+    // NOTE: We don't keep a real history because it would take
+    // a great amount of memory over time. So, we show the last
+    // history item, regardless of the cursor position.
     QString text;
-    int idx = px + history_start_idx;
-    // if(px<npoints) //h_index, npoints
+    /*int idx = px + history_start_idx;
     if (idx < procview->history.size() and idx >= 0)
     {
-        //	printf("procview idx=%d px=%d\n",idx,px);
         text += doHistoryTXT(procview->history[idx]);
-    }
-    else
+    }*/
+    if (!procview->history.isEmpty())
     {
-        // text ="xxx";
+        text = doHistoryTXT(procview->history.last());
     }
 
     infobox->setText(text);
 
     QPoint p = mapTo(qps, e->pos()); //??
 
-    // infobox->move(a.x()+16,a.y()+4);
-    // infobox->setPos(p.x()+16,p.y()+4);
     infobox->setPos();
 
     // PROBLEM : leaving old vcursor ...
@@ -881,21 +793,16 @@ void GraphBase::mouseMoveEvent(QMouseEvent *e)
 // TODO: 1.sort 2. time
 QString IO_Graph::doHistoryTXT(SysHistory *sysh)
 {
-    QString str;
+    QString str = QObject::tr("I/O Summary") + "\n";
 
-    char buf[64], mem_str[64];
-    // sprintf(buf,"miniHistory /* %.02f%%",sysh->load_cpu*100);
-    sprintf(buf, "miniHistory IO");
-    str += QString::fromLatin1(buf);
-
+    char buf[73], mem_str[64];
     for (const auto *p : qAsConst(sysh->procs))
     {
-        if (p->io_read_KBps == 0 and p->io_write_KBps == 0)
+        if (p->io_read_KBps == 0 && p->io_write_KBps == 0)
             continue;
         buf[0] = 0;
 
         str += "\n" + p->command;
-        // str+="\n"+ p->command + QString::fromLatin1(buf);
         str += " (";
 
         if (p->io_read_KBps)
@@ -918,11 +825,6 @@ QString IO_Graph::doHistoryTXT(SysHistory *sysh)
 
 void GraphBase::leaveEvent(QEvent *) { infobox->hide(); }
 
-/*
-void IO_Graph::mouseMoveEvent ( QMouseEvent *e ) {
-        GraphBase::mouseMoveEvent(e);
-} */
-
 void GraphBase::mousePressEvent(QMouseEvent * /*e*/) {}
 
 Infobar::Infobar(QWidget *parent, Procview *pv) : QFrame(parent)
@@ -930,50 +832,32 @@ Infobar::Infobar(QWidget *parent, Procview *pv) : QFrame(parent)
     procview = pv;
     official_height = 32;
 
-    // setCursor ( QCursor(Qt::CrossCursor) ) ;
-    {
-        npoints = 0, peak = 0, h_index = 0, dirty = true; //
+    npoints = 0, peak = 0, h_index = 0, dirty = true;
 
-        hist_size = 1280;
-        history = new float[hist_size];
+    hist_size = 1280;
+    history = new float[hist_size];
 
-        // setBackgroundRole (QPalette::WindowText);
-        setAutoFillBackground(false);
-        ////check setAttribute(Qt::WA_OpaquePaintEvent);
-        // setFrameShape(QFrame::Panel);
-        setFrameShadow(QFrame::Sunken);
-        setMinimumHeight(official_height);
-        // setSizePolicy ( QSizePolicy::Expanding, QSizePolicy::Fixed);
-        // setStyleSheet("QFrame { background-color: yellow }");
-        x_cpu = new w_cpu();
-        x_cpu->setParent(this, pv);
-        x_mem = new w_mem();
-        x_mem->setParent(this, pv);
-        x_swap = new w_swap();
-        x_swap->setParent(this, pv);
-        x_utime = new w_utime();
-        x_utime->setParent(this, pv);
-        x_load_avg = new w_load_avg();
-        x_load_avg->setParent(this, pv);
+    setAutoFillBackground(false);
+    setFrameShadow(QFrame::Sunken);
+    setMinimumHeight(official_height);
+    x_cpu = new w_cpu();
+    x_cpu->setParent(this, pv);
+    x_mem = new w_mem();
+    x_mem->setParent(this, pv);
+    x_swap = new w_swap();
+    x_swap->setParent(this, pv);
+    x_utime = new w_utime();
+    x_utime->setParent(this, pv);
+    x_load_avg = new w_load_avg();
+    x_load_avg->setParent(this, pv);
 
-        wlist.append(x_cpu);
-        wlist.append(x_mem);
-        wlist.append(x_swap);
-        wlist.append(x_utime);
-        wlist.append(x_load_avg);
+    wlist.append(x_cpu);
+    wlist.append(x_mem);
+    wlist.append(x_swap);
+    wlist.append(x_utime);
+    wlist.append(x_load_avg);
 
-        QWidget::setMouseTracking(true);
-    } //
-
-    // is_vertical = Qps::vertical_cpu_bar; //DEL
-
-    //	cpubar=new subcpuRack(parent,pv);
-
-    /*	m_popup = new QMenu("popup",this);
-            QAction *act=new QAction("Under Development",this);
-            act->setDisabled(true);
-            m_popup->addAction(act);
-    */
+    setMouseTracking(true);
 }
 
 Infobar::~Infobar() { delete[] history; }
@@ -981,49 +865,33 @@ Infobar::~Infobar() { delete[] history; }
 // a System's Info bar
 Infobar2::Infobar2(QWidget * /*parent*/, Procview *pv)
 {
-    // procview=pv; //***
     official_height = 35;
-    // setAutoFillBackground ( false );
-    // setAttribute(Qt::WA_OpaquePaintEvent);
-    // setFrameShape(QFrame::Panel);
     setFrameShadow(QFrame::Sunken);
-    // setMinimumHeight(official_height);
     setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
 
-    //	if(layout()) delete layout();
-
     QBoxLayout *layout = new QHBoxLayout();
-
     setLayout(layout);
 
     layout->setSpacing(1); // betweeen gap
     layout->setMargin(0);
-
-    // BasicInfo *basic=new BasicInfo(this,pv);
-    //	layout->addWidget(basic);
 
     QVBoxLayout *vlayout = new QVBoxLayout();
     vlayout->setSpacing(1); // betweeen gap
     vlayout->setMargin(0);
 
     layout->addLayout(vlayout);
-    // layout->setContentsMargins (1,1,1,1);
-    // layout->setContentsMargins ( int left, int top, int right, int bottom
-    // );
 
-    // GraphBase *gp=new GraphBase(this,pv);  // %CPU
     basic = new Infobar(this, pv);
     vlayout->addWidget(basic);
 
     // IO_Graph
     io_graph = new IO_Graph(this, pv); // %IO
     vlayout->addWidget(io_graph);
-    // basic-hide();
-    // io_graph->hide();
-    m_popup = new QMenu("popup", this);
+
+    /*m_popup = new QMenu("popup", this);
     QAction *act = new QAction("Under Development", this);
     act->setDisabled(true);
-    m_popup->addAction(act);
+    m_popup->addAction(act);*/
 }
 
 void Infobar2::updatePixmap()
@@ -1056,9 +924,6 @@ void Infobar::add_history_point2(float value)
 
     float f;
     f = last_val - value;
-    // if (f > 0)
-    //	value+=f/1.15;  // slow up ,slow down
-    // else
     value += f / 1.5; // slow up ,slow down
     history[h_index++] = value;
     if (h_index >= hist_size)
@@ -1074,7 +939,6 @@ void Infobar::add_history_point2(float value)
             if (history[i] > peak)
                 peak = history[i];
     }
-    // printf("hist_size=%d h_index=%d  val=%f\n",hist_size,h_index,value);
 
     last_val = value;
 }
@@ -1084,21 +948,11 @@ QPixmap *Infobar::make_icon(int w, int h)
 {
     if (w != icon_pm.width() or h != icon_pm.height())
     {
-        /// printf("icon_pm changed!!!!!!!!!!!!!!!!!!11\n");
-        icon_pm = QPixmap(w, h);    // pm.resize(w, h);
+        icon_pm = QPixmap(w, h);
         icon_pm.setMask(QBitmap()); // remove the mask for drawing
     }
     QPainter pt(&icon_pm);
     pt.fillRect(0, 0, w, h, QBrush(Qt::black));
-
-    if (false)
-    {
-        /*	int thick=h/10;
-                int bottom=h/4;
-
-                pt.setClipRect();
-                pt.translate(); */
-    }
 
     make_graph(w, h, &pt, true);
     return &icon_pm;
@@ -1113,55 +967,45 @@ void Infobar::mousePressEvent(QMouseEvent *e)
         return;
     }
 
-    if (e->button() == Qt::RightButton)
-        m_popup->popup(e->globalPos());
+    //if (e->button() == Qt::RightButton)
+        //m_popup->popup(e->globalPos());
 }
 
 // only works if mouse cursor in this area
 void Infobar::mouseMoveEvent(QMouseEvent *e)
 {
-    // int gap;
-
     px = e->pos().x(); // x in Infobar
     py = e->pos().y(); // y in Infobar
 
-    // gap=infobox->width() + px  - width();
-
-    int i;
-    int setinfo = 0;
-    for (i = 0; i < wlist.size(); i++)
+    QString text;
+    for (int i = 0; i < wlist.size(); i++)
+    {
         if (wlist[i]->intersect(px, py))
         {
-            setinfo = 1;
-            infobox->setText(wlist[i]->info());
+            text = wlist[i]->info();
             break;
         }
-
-    // printf("procview npoints=%d  px=%d\n",npoints,px);
-    QString text;
-    int idx = px + history_start_idx;
-    // if(px<npoints) //h_index, npoints
-    if (idx < procview->history.size() and idx >= 0)
-    {
-        //	printf("procview idx=%d px=%d\n",idx,px);
-        text += doHistory(procview->history[idx]);
-    }
-    else
-    {
-        text = "";
     }
 
-    if (setinfo == 0)
-        infobox->setText(text);
+    if (text.isEmpty()
+        && py > pf_char_height() + 4) // below the first row
+    {
+        // NOTE: We don't keep a real history because it would take
+        // a great amount of memory over time. So, we show the last
+        // history item, regardless of the cursor position.
+        /*int idx = px + history_start_idx;
+        if (idx < procview->history.size() and idx >= 0)
+        {
+            text += doHistory(procview->history[idx]);
+        }*/
+        if (!procview->history.isEmpty())
+        {
+            text = doHistory(procview->history.last());
+        }
+    }
 
-    // QPoint p = mapTo(qps, e->pos()); //??
-
-    // infobox->move(a.x()+16,a.y()+4);
-    // infobox->setPos(p.x()+16,p.y()+4);
+    infobox->setText(text);
     infobox->setPos();
-
-    //	vcursor.px=p.x();
-    //	update(p.x()-5,0,p.x()+5,height());
 }
 
 void Infobar::enterEvent(QEvent *)
@@ -1171,16 +1015,7 @@ void Infobar::enterEvent(QEvent *)
 
 void Infobar::leaveEvent(QEvent *)
 {
-
     infobox->hide();
-
-    return;
-    /*
-    if(controlbar and controlbar->isHidden())
-    {
-            // controlbar->show();
-            setMinimumHeight(official_height);
-    } */
 }
 
 // DRAFT CODE
@@ -1191,11 +1026,6 @@ void Infobar::leaveEvent(QEvent *)
 // 		3.update_load()
 void Infobar::make_graph(int w, int h, QPainter *p, bool test)
 {
-    // QPainter p(this);
-    // p.setBackgroundMode (Qt::OpaqueMode);
-    // p.setBackground(QBrush(Qt::black));
-    // p->fillRect(0,0,w,h,QBrush(Qt::black));
-    // p->fill(Qt::black);
     float ratio = h;
     int idx = 0;
 
@@ -1209,27 +1039,18 @@ void Infobar::make_graph(int w, int h, QPainter *p, bool test)
 
     if (start < 0)
         start = 0;
-    p->setPen(QColor(0, 210, 100)); // p.setPen(QColor(0,70,54));
+    p->setPen(QColor(0, 210, 100));
 
     if (test == false)
     {
         QPolygon pa(hsize - start); // QVector pa(npts);
-        //	QPolygon point_array_io(hsize-start);
 
         for (int i = start; i < procview->history.size(); i++, idx++)
         {
             SysHistory *hist = procview->history[i];
-            // printf("[%d] hist =%f\n",i,hist->load_cpu);
             pa[idx] = QPoint(idx, h - 1 - (int)(hist->load_cpu * ratio));
-            ///	point_array_io[idx] = QPoint(idx, h - 1 -
-            ///(int)(hist->load_io *
-            /// ratio));
         }
-        //	p->setPen(QColor(100,100,250));
-        ////p.setPen(QColor(0,70,54));
-        //	p->drawPolyline(point_array_io);
 
-        // draw scale lines
         p->drawPolyline(pa);
     }
     else
@@ -1242,10 +1063,9 @@ void Infobar::make_graph(int w, int h, QPainter *p, bool test)
         }
     }
 
-    //		if(h==official_height)
     {
         history_start_idx = start; // for MousePointer!!
-        npoints = idx;             // printf("x npoints=%d \n",npoints);
+        npoints = idx;
     }
 
     dirty = false;
@@ -1253,52 +1073,36 @@ void Infobar::make_graph(int w, int h, QPainter *p, bool test)
 
 void Infobar::resizeEvent(QResizeEvent * /*e*/)
 {
-    // static int first=0; if(first==0){	drawPixmap(); first=1;}
     drawGraphOnPixmap();
 }
 subcpuRack::subcpuRack(QWidget *p, Procview *pv) : QWidget(p)
 {
     parent = p;
     procview = pv;
-    // setWindowFlags(Qt::FramelessWindowHint | Qt::ToolTip);
-    // setWindowFlags(Qt::FramelessWindowHint |Qt::Tool );
     setAttribute(Qt::WA_OpaquePaintEvent);
     QPalette pal;
     pal.setColor(QPalette::Window, QColor(0, 0, 0));
     setPalette(pal);
-    QWidget::setMouseTracking(true);
+    setMouseTracking(true);
     setMinimumHeight(12);
 }
 
 void subcpuRack::refresh() {}
 
-void subcpuRack::mousePressEvent(QMouseEvent *e)
+void subcpuRack::mousePressEvent(QMouseEvent */*e*/)
 {
-    m_popup->popup(e->globalPos());
-    // hide();
+    //m_popup->popup(e->globalPos());
 }
 
 // DRAFT CODE  !!!
 void subcpuRack::paintEvent(QPaintEvent * /*e*/)
 {
 
-    // static QPaint *p=// QPainter *p=new QPainter(this);
     QPainter p(this);
-    // int w;
-    // QRect cr = contentsRect();
-    // QRect cr = p->viewport();
-//    QRect cr = p.window(); // rect.
 
     p.fillRect(rect(), QBrush(Qt::black));
-
-    // p->setPen(lineColor);
     p.setPen(QColor(50, 50, 50));
-    p.drawLine(0, 0, QWidget::width(), 0);
-    // p.fillRect(cr,QBrush(QColor(255,255,255,50)));
-
-    // if(procview->num_cpus>=4) // temporaly...
-    // else
-    // w = 2 + pf_write(&p, 2, 2, "SUB CPU");
+    p.drawLine(0, 0, width(), 0);
 }
 
 // GraphDisplay, miniDisplay
@@ -1310,14 +1114,11 @@ PDisplay::PDisplay(QWidget *parent) : QWidget(parent)
     vlayout->setSpacing(1);
     setLayout(vlayout);
 
-    // return;
     // ** setBackgroundColor(color); **
     QPalette pal;
     pal = palette();
     setAutoFillBackground(true);
-    // setBackgroundRole (QPalette::WindowText);
     pal.setColor(backgroundRole(), QColor(80, 80, 80));
-    // palette.setColor(QPalette::Window, QColor(0,0,100));
     setPalette(pal);
 }
 // a BAR in a RACK
@@ -1325,11 +1126,8 @@ PDisplay::PDisplay(QWidget *parent) : QWidget(parent)
 
 Infobar2 *PDisplay::addSystem(Procview *pv)
 {
-    //	Infobar* bar= new Infobar(this,pv);
     Infobar2 *bar2 = new Infobar2(this, pv);
     layout()->addWidget(bar2);
-
-    /// pv->read_system(); //
 
     if (false and pv->num_cpus > 9)
     {
