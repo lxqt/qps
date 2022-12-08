@@ -1234,6 +1234,9 @@ Procinfo::Procinfo(Proc *system_proc, int process_id, int thread_id) : refcnt(1)
     io_read = 0;  // **
     io_write = 0; // **
 
+    io_read_KBps = 0;
+    io_write_KBps = 0;
+
     // tgid=0;
     pcpu = 0;
     pmem = 0;

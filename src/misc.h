@@ -57,7 +57,7 @@ void setQpsTheme();
 int fsize(char *fname);
 void msleep(long msec);
 void mem_string(int kbytes, char *buf);
-void mem_string_k(int kbytes, char *buf);
+void mem_string_k(unsigned long kbytes, char *buf);
 
 void init_xpm();
 void init_misc(QWidget *main);

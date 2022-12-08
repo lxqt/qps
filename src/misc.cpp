@@ -285,19 +285,20 @@ void msleep(long msec)
 #endif
 }
 
-void mem_string_k(int kbytes, char *buf)
+void mem_string_k(unsigned long kbytes, char *buf)
 {
     if (kbytes >= 1024)
     {
-        int mb = kbytes >> 10;
+        auto mb = kbytes >> 10;
         if (mb >= 1024 * 100)
-            sprintf(buf, "%uGB", mb >> 10);
+            sprintf(buf, "%luGB", mb >> 10);
         else
-            sprintf(buf, "%uMB", mb);
+            sprintf(buf, "%luMB", mb);
     }
     else
-        sprintf(buf, "%uKB", kbytes);
+        sprintf(buf, "%luKB", kbytes);
 }
+
 void mem_string(int kbytes, char *buf)
 {
     if (kbytes >= 1024)

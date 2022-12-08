@@ -779,33 +779,41 @@ void GraphBase::mouseMoveEvent(QMouseEvent *e)
 // TODO: 1.sort 2. time
 QString IO_Graph::doHistoryTXT(SysHistory *sysh)
 {
-    QString str = QObject::tr("I/O Summary:") + "\n";
+    QString str = tr("I/O Summary:") + "\n";
 
+    // first sort Procinfos by their commands
+    auto infos = (sysh->procs).values();
+    std::sort(infos.begin(), infos.end(), [](Procinfo *a, Procinfo *b) {
+        return a->command < b->command;
+    });
+
+    bool noIO = true;
     char buf[73], mem_str[64];
-    for (const auto *p : qAsConst(sysh->procs))
+    for (const auto *p : qAsConst(infos))
     {
         if (p->io_read_KBps == 0 && p->io_write_KBps == 0)
             continue;
-        buf[0] = 0;
-
+        noIO = false;
         str += "\n" + p->command;
         str += " (";
 
-        if (p->io_read_KBps)
+        if (p->io_read_KBps > 0)
         {
             mem_string_k(p->io_read_KBps, mem_str);
             sprintf(buf, "%s/s read", mem_str);
             str += QString::fromLatin1(buf);
         }
 
-        if (p->io_write_KBps)
+        if (p->io_write_KBps > 0)
         {
             mem_string_k(p->io_write_KBps, mem_str);
-            sprintf(buf, " %s/s write", mem_str);
+            sprintf(buf, p->io_read_KBps > 0 ? ", %s/s write" : "%s/s write", mem_str);
             str += QString::fromLatin1(buf);
         }
         str += ")";
     }
+    if (noIO)
+        str += "\n" + tr("No input or output");
     return str;
 }
 
