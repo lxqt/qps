@@ -96,167 +96,44 @@
     </message>
 </context>
 <context>
-    <name>Command</name>
-    <message>
-        <location filename="../command.cpp" line="208"/>
-        <source>The command:
-
-</source>
-        <translation>La commande :
-
-</translation>
-    </message>
-    <message>
-        <location filename="../command.cpp" line="212"/>
-        <source>
-
-failed with the error:
-
-</source>
-        <translation>
-
-Échec sur l&apos;erreur :
-
-</translation>
-    </message>
-    <message>
-        <location filename="../command.cpp" line="215"/>
-        <source>Too many processes</source>
-        <translation>Processus trop nombreux</translation>
-    </message>
-    <message>
-        <location filename="../command.cpp" line="218"/>
-        <source>Unknown error</source>
-        <translation>Erreur inconnue</translation>
-    </message>
-    <message>
-        <location filename="../command.cpp" line="228"/>
-        <source>
-
-could not be executed because it was not found,
-or you did not have execute permission.</source>
-        <translation>
-
-N&apos;a pu être exécuté car n&apos;a pas été trouvé,
-ou bien vous n&apos;avez pas la permission d&apos;exécuter.</translation>
-    </message>
-    <message>
-        <location filename="../command.cpp" line="233"/>
-        <source>
-
-exited with status </source>
-        <translation>
-
-arrêt avec le statut. </translation>
-    </message>
-    <message>
-        <location filename="../command.cpp" line="237"/>
-        <source>Command Failed</source>
-        <translation>Échec de la commande</translation>
-    </message>
-</context>
-<context>
-    <name>CommandDialog</name>
-    <message>
-        <location filename="../commanddialog.cpp" line="47"/>
-        <source>Edit Commands 0.1 alpha</source>
-        <translation>Éditer commandes 0.1 alpha</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="63"/>
-        <source>Name:</source>
-        <translation>Nom :</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="79"/>
-        <source>Popup</source>
-        <translation>Notification</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="84"/>
-        <source>Command Line:</source>
-        <translation>Ligne de commande :</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="95"/>
-        <source>Substitutions:
-%p	PID
-%c	COMMAND
-%C	CMDLINE
-%u	USER
-%%	%
-
-</source>
-        <translation>Substitutions&#x202f;:
-%p	PID
-%c	COMMANDE
-%C	LIGNE DE COMMANDE
-%u	UTILISATEUR
-%%	%
-
-</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="109"/>
-        <source>New...</source>
-        <translation>Nouveau...</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="111"/>
-        <location filename="../commanddialog.cpp" line="229"/>
-        <source>Add...</source>
-        <translation>Ajouter...</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="113"/>
-        <source>Delete</source>
-        <translation>Effacer</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="115"/>
-        <source>Close</source>
-        <translation>Fermer</translation>
-    </message>
-</context>
-<context>
     <name>ControlBar</name>
     <message>
-        <location filename="../misc.cpp" line="758"/>
+        <location filename="../misc.cpp" line="634"/>
         <source>Linear</source>
         <translation>Linéaire</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="761"/>
+        <location filename="../misc.cpp" line="637"/>
         <source>Tree</source>
         <translation>Arborescence</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="770"/>
+        <location filename="../misc.cpp" line="646"/>
         <source>Thread</source>
         <translation>Thread</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="777"/>
+        <location filename="../misc.cpp" line="653"/>
         <source>All Processes</source>
         <translation>Tous les processus</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="778"/>
+        <location filename="../misc.cpp" line="654"/>
         <source>Your Processes</source>
         <translation>Vos processus</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="779"/>
+        <location filename="../misc.cpp" line="655"/>
         <source>Non-Root Processes</source>
         <translation>Processus non root</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="780"/>
+        <location filename="../misc.cpp" line="656"/>
         <source>Running Processes</source>
         <translation>Processus en cours d&apos;exécution</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="796"/>
+        <location filename="../misc.cpp" line="672"/>
         <source>Pause (Ctrl+Space)</source>
         <translation>Pause (Ctrl+Espace)</translation>
     </message>
@@ -318,139 +195,6 @@ arrêt avec le statut. </translation>
     </message>
 </context>
 <context>
-    <name>EventDialog</name>
-    <message>
-        <location filename="../watchdog.ui" line="23"/>
-        <source>Watchdog 0.1 alpha</source>
-        <translation>Chien de garde 0.1 alpha</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="117"/>
-        <source>Eventcat</source>
-        <translation>Chat de l&apos;événement</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="162"/>
-        <source>Select condition</source>
-        <translation>Condition de sélection</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="170"/>
-        <source>labelDescrition</source>
-        <translation>Étiquette Description</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="193"/>
-        <source>Enable</source>
-        <translation>Activer</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="219"/>
-        <source>process name</source>
-        <translation>nom du processus</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="229"/>
-        <source>cpu</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="248"/>
-        <source>%</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="280"/>
-        <source>include already running process</source>
-        <translation>inclure les processus en cours</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="309"/>
-        <source>run command</source>
-        <translation>commande d&apos;exécution</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="342"/>
-        <source>show Message</source>
-        <translation>afficher le message</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="367"/>
-        <source>Help (Not yet. just concept)</source>
-        <translation>Aide (pas encore. juste le concept)</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="394"/>
-        <source>%p : pid
-%c : command</source>
-        <translation>%p : pid
-%c : commande</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="425"/>
-        <source>New</source>
-        <translation>Nouveau</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="432"/>
-        <source>Add</source>
-        <translation>Ajouter</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="439"/>
-        <source>Delete</source>
-        <translation>Effacer</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="446"/>
-        <source>Close</source>
-        <translation>Fermer</translation>
-    </message>
-</context>
-<context>
-    <name>ExecWindow</name>
-    <message>
-        <location filename="../message.ui" line="13"/>
-        <source>Qps</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../message.ui" line="27"/>
-        <source>Ok</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../execwindow.cpp" line="42"/>
-        <source>Qps Watchdog</source>
-        <translation>Chien de garde Qps</translation>
-    </message>
-    <message>
-        <location filename="../execwindow.cpp" line="95"/>
-        <source>%1 exit with code %2</source>
-        <translation>%1 s&apos;arrête avec le code %2</translation>
-    </message>
-    <message>
-        <location filename="../execwindow.cpp" line="97"/>
-        <source>Close</source>
-        <translation>Fermer</translation>
-    </message>
-    <message>
-        <location filename="../execwindow.cpp" line="103"/>
-        <source>%1 [running]</source>
-        <translation>%1 [en cours]</translation>
-    </message>
-    <message>
-        <location filename="../execwindow.cpp" line="104"/>
-        <source>terminate command</source>
-        <translation>arrêter la commande</translation>
-    </message>
-    <message>
-        <location filename="../execwindow.cpp" line="113"/>
-        <source>Error %1 : [%2] Maybe command not found</source>
-        <translation>Erreur %1 : [%2] Peut-être la commande n&apos;a-t-elle pas été trouvée</translation>
-    </message>
-</context>
-<context>
     <name>FieldSelect</name>
     <message>
         <location filename="../fieldsel.cpp" line="34"/>
@@ -497,6 +241,19 @@ arrêt avec le statut. </translation>
     </message>
 </context>
 <context>
+    <name>IO_Graph</name>
+    <message>
+        <location filename="../infobar.cpp" line="782"/>
+        <source>I/O Summary:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="816"/>
+        <source>No input or output</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>IntervalDialog</name>
     <message>
         <location filename="../dialogs.cpp" line="43"/>
@@ -527,19 +284,6 @@ arrêt avec le statut. </translation>
         <location filename="../dialogs.cpp" line="139"/>
         <source>Invalid value</source>
         <translation>Valeur invalide</translation>
-    </message>
-</context>
-<context>
-    <name>ListModel</name>
-    <message>
-        <location filename="../listmodel.cpp" line="66"/>
-        <source>Event Category</source>
-        <translation>Catégorie d&apos;événement</translation>
-    </message>
-    <message>
-        <location filename="../listmodel.cpp" line="68"/>
-        <source>Enable</source>
-        <translation>Activer</translation>
     </message>
 </context>
 <context>
@@ -684,512 +428,512 @@ arrêt avec le statut. </translation>
 <context>
     <name>Proc</name>
     <message>
-        <location filename="../proc.cpp" line="2850"/>
+        <location filename="../proc.cpp" line="2639"/>
         <source>PID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2850"/>
+        <location filename="../proc.cpp" line="2639"/>
         <source>Process ID</source>
         <translation>ID de processus</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2852"/>
+        <location filename="../proc.cpp" line="2641"/>
         <source>TGID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2852"/>
+        <location filename="../proc.cpp" line="2641"/>
         <source>Task group ID ( parent of threads )</source>
         <translation>ID de groupe de tâches ( parent de threads )</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2854"/>
+        <location filename="../proc.cpp" line="2643"/>
         <source>PPID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2854"/>
+        <location filename="../proc.cpp" line="2643"/>
         <source>Parent process ID</source>
         <translation>ID du processus parent</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2856"/>
+        <location filename="../proc.cpp" line="2645"/>
         <source>PGID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2856"/>
+        <location filename="../proc.cpp" line="2645"/>
         <source>Process group ID</source>
         <translation>ID de groupe de processus</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2858"/>
+        <location filename="../proc.cpp" line="2647"/>
         <source>SID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2858"/>
+        <location filename="../proc.cpp" line="2647"/>
         <source>Session ID</source>
         <translation>ID de session</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2860"/>
+        <location filename="../proc.cpp" line="2649"/>
         <source>TTY</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2860"/>
+        <location filename="../proc.cpp" line="2649"/>
         <source>Terminal</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2862"/>
+        <location filename="../proc.cpp" line="2651"/>
         <source>TPGID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2862"/>
+        <location filename="../proc.cpp" line="2651"/>
         <source>Process group ID of tty owner</source>
         <translation>ID du groupe de processus du propriétaire tty</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2864"/>
+        <location filename="../proc.cpp" line="2653"/>
         <source>USER</source>
         <translation>UTILISATEUR</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2864"/>
+        <location filename="../proc.cpp" line="2653"/>
         <source>Owner (*=suid root, +=suid a user)</source>
         <translation>Propriétaire (*=suid root, +=suid utilisateur)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2866"/>
+        <location filename="../proc.cpp" line="2655"/>
         <source>GROUP</source>
         <translation>GROUPE</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2866"/>
+        <location filename="../proc.cpp" line="2655"/>
         <source>Group name (*=sgid other)</source>
         <translation>Nom de groupe (*=sgid autre)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2868"/>
+        <location filename="../proc.cpp" line="2657"/>
         <source>UID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2868"/>
+        <location filename="../proc.cpp" line="2657"/>
         <source>Real user ID</source>
         <translation>ID d&apos;utilisateur réel</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2870"/>
+        <location filename="../proc.cpp" line="2659"/>
         <source>EUID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2870"/>
+        <location filename="../proc.cpp" line="2659"/>
         <source>Effective user ID</source>
         <translation>ID d&apos;utilisateur effectif</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2872"/>
+        <location filename="../proc.cpp" line="2661"/>
         <source>SUID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2872"/>
+        <location filename="../proc.cpp" line="2661"/>
         <source>Saved user ID (Posix)</source>
         <translation>ID d&apos;utilisateur sauvegardé (Posix)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2874"/>
+        <location filename="../proc.cpp" line="2663"/>
         <source>FSUID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2874"/>
+        <location filename="../proc.cpp" line="2663"/>
         <source>File system user ID</source>
         <translation>ID utilisateur du système de fichiers</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2876"/>
+        <location filename="../proc.cpp" line="2665"/>
         <source>GID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2876"/>
+        <location filename="../proc.cpp" line="2665"/>
         <source>Real group ID</source>
         <translation>ID de groupe réel</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2878"/>
+        <location filename="../proc.cpp" line="2667"/>
         <source>EGID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2878"/>
+        <location filename="../proc.cpp" line="2667"/>
         <source>Effective group ID</source>
         <translation>ID de groupe effectif</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2880"/>
+        <location filename="../proc.cpp" line="2669"/>
         <source>SGID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2880"/>
+        <location filename="../proc.cpp" line="2669"/>
         <source>Saved group ID (Posix)</source>
         <translation>ID de groupe sauvegardé (Posix)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2882"/>
+        <location filename="../proc.cpp" line="2671"/>
         <source>FSGID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2882"/>
+        <location filename="../proc.cpp" line="2671"/>
         <source>File system group ID</source>
         <translation>ID de groupe de système de fichiers</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2884"/>
+        <location filename="../proc.cpp" line="2673"/>
         <source>PRI</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2884"/>
+        <location filename="../proc.cpp" line="2673"/>
         <source>Dynamic priority</source>
         <translation>Priorité dynamique</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2886"/>
+        <location filename="../proc.cpp" line="2675"/>
         <source>NICE</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2886"/>
+        <location filename="../proc.cpp" line="2675"/>
         <source>Scheduling favour (higher -&gt; less cpu time)</source>
         <translation>Faveur de planification (temps élevé -&gt; moins de temps CPU)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2888"/>
+        <location filename="../proc.cpp" line="2677"/>
         <source>NLWP</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2888"/>
+        <location filename="../proc.cpp" line="2677"/>
         <source>Number of tasks(threads) in task group</source>
         <translation>Nombre de tâches (threads) dans le groupe de tâches</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2890"/>
+        <location filename="../proc.cpp" line="2679"/>
         <source>PLCY</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2890"/>
+        <location filename="../proc.cpp" line="2679"/>
         <source>Scheduling policy</source>
         <translation>Type d&apos;ordonnancement</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2892"/>
+        <location filename="../proc.cpp" line="2681"/>
         <source>RPRI</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2892"/>
+        <location filename="../proc.cpp" line="2681"/>
         <source>Realtime priority (0-99, more is better)</source>
         <translation>Priorité temps réel (0-99, avantage au plus élevé)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2894"/>
+        <location filename="../proc.cpp" line="2683"/>
         <source>TMS</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2894"/>
+        <location filename="../proc.cpp" line="2683"/>
         <source>Time slice in milliseconds</source>
         <translation>Tranche de temps en millisecondes</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2896"/>
+        <location filename="../proc.cpp" line="2685"/>
         <source>%SAVG</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2896"/>
+        <location filename="../proc.cpp" line="2685"/>
         <source>Percentage average sleep time (-1 -&gt; N/A)</source>
         <translation>Pourcentage de temps moyen de sommeil (-1 -&gt; N/A)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2898"/>
+        <location filename="../proc.cpp" line="2687"/>
         <source>CPUSET</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2898"/>
+        <location filename="../proc.cpp" line="2687"/>
         <source>Affinity CPU mask (0 -&gt; API not supported)</source>
         <translation>Masque d&apos;affinité de CPU (0 -&gt; API non supportée)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2900"/>
+        <location filename="../proc.cpp" line="2689"/>
         <source>MAJFLT</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2900"/>
+        <location filename="../proc.cpp" line="2689"/>
         <source>Number of major faults (disk access)</source>
         <translation>Nombre d&apos;échecs majeurs (accès disque)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2902"/>
+        <location filename="../proc.cpp" line="2691"/>
         <source>MINFLT</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2902"/>
+        <location filename="../proc.cpp" line="2691"/>
         <source>Number of minor faults (no disk access)</source>
         <translation>Nombre de défauts mineurs (pas d&apos;accès au disque)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2905"/>
+        <location filename="../proc.cpp" line="2694"/>
         <source>VSIZE</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2905"/>
+        <location filename="../proc.cpp" line="2694"/>
         <source>Virtual image size of process</source>
         <translation>Taille de l&apos;image virtuelle du processus</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2907"/>
+        <location filename="../proc.cpp" line="2696"/>
         <source>RSS</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2907"/>
+        <location filename="../proc.cpp" line="2696"/>
         <source>Resident set size</source>
         <translation>Taille de l&apos;ensemble résident</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2909"/>
+        <location filename="../proc.cpp" line="2698"/>
         <source>MEM</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2909"/>
+        <location filename="../proc.cpp" line="2698"/>
         <source>memory usage (RSS-SHARE)</source>
         <translation>Utilisation mémoire (RSS-SHARE)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2911"/>
+        <location filename="../proc.cpp" line="2700"/>
         <source>TRS</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2911"/>
+        <location filename="../proc.cpp" line="2700"/>
         <source>Text(code) resident set size</source>
         <translation>Texte (code) taille du groupe de résidents</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2913"/>
+        <location filename="../proc.cpp" line="2702"/>
         <source>DRS</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2913"/>
+        <location filename="../proc.cpp" line="2702"/>
         <source>Data resident set size(malloc+global variable)</source>
         <translation>Taille de l&apos;ensemble de données résidant (malloc+variable globale)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2915"/>
+        <location filename="../proc.cpp" line="2704"/>
         <source>STACK</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2915"/>
+        <location filename="../proc.cpp" line="2704"/>
         <source>Stack size</source>
         <translation>Taille de la pile</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2917"/>
+        <location filename="../proc.cpp" line="2706"/>
         <source>SHARE</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2917"/>
+        <location filename="../proc.cpp" line="2706"/>
         <source>Shared memory with other libs</source>
         <translation>Mémoire partagée avec d&apos;autres bibliothèques</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2919"/>
+        <location filename="../proc.cpp" line="2708"/>
         <source>SWAP</source>
         <translation>ÉCHANGE</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2919"/>
+        <location filename="../proc.cpp" line="2708"/>
         <source>Kbytes on swap device</source>
         <translation>Koctets sur le périphérique d&apos;échange</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2921"/>
+        <location filename="../proc.cpp" line="2710"/>
         <source>IO_R</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2921"/>
+        <location filename="../proc.cpp" line="2710"/>
         <source>io read (file)</source>
         <translation>io en lecture (fichier)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2923"/>
+        <location filename="../proc.cpp" line="2712"/>
         <source>IO_W</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2923"/>
+        <location filename="../proc.cpp" line="2712"/>
         <source>io write (file)</source>
         <translation>io en écriture (fichier)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2925"/>
+        <location filename="../proc.cpp" line="2714"/>
         <source>DT</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2925"/>
+        <location filename="../proc.cpp" line="2714"/>
         <source>Number of dirty (non-written) pages</source>
         <translation>Nombre de pages &quot;sales&quot; (non écrites)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2927"/>
+        <location filename="../proc.cpp" line="2716"/>
         <source>STAT</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2927"/>
+        <location filename="../proc.cpp" line="2716"/>
         <source>State of the process </source>
         <translation>État du processus </translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2929"/>
+        <location filename="../proc.cpp" line="2718"/>
         <source>FLAGS</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2929"/>
+        <location filename="../proc.cpp" line="2718"/>
         <source>Process flags (hex)</source>
         <translation>Flags de processus (hex)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2931"/>
+        <location filename="../proc.cpp" line="2720"/>
         <source>WCHAN</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2931"/>
+        <location filename="../proc.cpp" line="2720"/>
         <source>Kernel function where process is sleeping</source>
         <translation>Fonction du noyau où le processus est en sommeil</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2933"/>
+        <location filename="../proc.cpp" line="2722"/>
         <source>%WCPU</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2933"/>
+        <location filename="../proc.cpp" line="2722"/>
         <source>Weighted percentage of CPU (30 s average)</source>
         <translation>Pourcentage pondéré de CPU (30 s en moyenne)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2935"/>
+        <location filename="../proc.cpp" line="2724"/>
         <source>%CPU</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2935"/>
+        <location filename="../proc.cpp" line="2724"/>
         <source>Percentage of CPU used since last update</source>
         <translation>Pourcentage du CPU utilisé depuis la dernière mise à jour</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2937"/>
+        <location filename="../proc.cpp" line="2726"/>
         <source>%MEM</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2937"/>
+        <location filename="../proc.cpp" line="2726"/>
         <source>Percentage of memory used (RSS/total mem)</source>
         <translation>Pourcentage de mémoire utilisé (RSS/total mem)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2939"/>
+        <location filename="../proc.cpp" line="2728"/>
         <source>START</source>
         <translation>DÉBUT</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2939"/>
+        <location filename="../proc.cpp" line="2728"/>
         <source>Time process started</source>
         <translation>Moment de démarrage du processus</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2941"/>
+        <location filename="../proc.cpp" line="2730"/>
         <source>TIME</source>
         <translation>TEMPS</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2941"/>
+        <location filename="../proc.cpp" line="2730"/>
         <source>Total CPU time used since start</source>
         <translation>Temps total de CPU utilisé depuis le démarrage</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2943"/>
+        <location filename="../proc.cpp" line="2732"/>
         <source>CPU</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2943"/>
+        <location filename="../proc.cpp" line="2732"/>
         <source>CPU the process is executing on (SMP system)</source>
         <translation>CPU sur laquelle le processus s&apos;exécute (système SMP)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2945"/>
+        <location filename="../proc.cpp" line="2734"/>
         <source>the process name</source>
         <translation>le nom du processus</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2945"/>
+        <location filename="../proc.cpp" line="2734"/>
         <source>Process Name</source>
         <translation>Nom du processus</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2949"/>
+        <location filename="../proc.cpp" line="2738"/>
         <source>CWD</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2949"/>
+        <location filename="../proc.cpp" line="2738"/>
         <source>Current working directory</source>
         <translation>Répertoire courant</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2950"/>
+        <location filename="../proc.cpp" line="2739"/>
         <source>ROOT</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2950"/>
+        <location filename="../proc.cpp" line="2739"/>
         <source>Root directory of process</source>
         <translation>Répertoire racine du processus</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2953"/>
+        <location filename="../proc.cpp" line="2742"/>
         <source>COMMAND_LINE</source>
         <translation>LIGNE_DE_COMMANDE</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2953"/>
+        <location filename="../proc.cpp" line="2742"/>
         <source>Command line that started the process</source>
         <translation>Ligne de commande qui a lancé le processus</translation>
     </message>
@@ -1197,383 +941,446 @@ arrêt avec le statut. </translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../qps.cpp" line="1845"/>
+        <location filename="../qps.cpp" line="1632"/>
         <source>Show</source>
         <translation>Afficher</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1848"/>
+        <location filename="../qps.cpp" line="1635"/>
         <source>Hide</source>
         <translation>Cacher</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1852"/>
+        <location filename="../qps.cpp" line="1640"/>
         <source>Quit</source>
         <translation>Quitter</translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="430"/>
+        <location filename="../infobar.cpp" line="437"/>
+        <source>User: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="430"/>
+        <location filename="../infobar.cpp" line="431"/>
+        <location filename="../infobar.cpp" line="437"/>
+        <location filename="../infobar.cpp" line="438"/>
+        <source>%, </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="431"/>
+        <location filename="../infobar.cpp" line="438"/>
+        <source>System: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="432"/>
+        <location filename="../infobar.cpp" line="439"/>
+        <source>Nice: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="432"/>
+        <location filename="../infobar.cpp" line="439"/>
+        <source>%</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="471"/>
+        <location filename="../infobar.cpp" line="506"/>
+        <source>Total: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="474"/>
+        <location filename="../infobar.cpp" line="478"/>
+        <location filename="../infobar.cpp" line="481"/>
+        <location filename="../infobar.cpp" line="509"/>
+        <location filename="../infobar.cpp" line="512"/>
+        <source>, </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="474"/>
+        <location filename="../infobar.cpp" line="512"/>
+        <source>Used: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="478"/>
+        <source>Cached: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="481"/>
+        <source>Buffer: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="509"/>
+        <source>Free: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="551"/>
+        <source>Time passed after system boot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="579"/>
+        <source>Average CPU load each 1, 5 ,15 minutes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="724"/>
+        <source>CPU Usage Summary:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Qps</name>
     <message>
-        <location filename="../qps.cpp" line="198"/>
+        <location filename="../qps.cpp" line="174"/>
         <source>header_popup</source>
         <translation>en-tête_notification</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="199"/>
+        <location filename="../qps.cpp" line="175"/>
         <source>Remove Field</source>
         <translation>Retirer le champ</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="200"/>
+        <location filename="../qps.cpp" line="176"/>
         <source>Add Field</source>
         <translation>Ajouter un champ</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="207"/>
+        <location filename="../qps.cpp" line="179"/>
+        <source>Session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="183"/>
         <source>View</source>
         <translation>Vue</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="208"/>
+        <location filename="../qps.cpp" line="184"/>
         <source>Process</source>
         <translation>Processus</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="209"/>
+        <location filename="../qps.cpp" line="185"/>
         <source>Log</source>
         <translation>Registre</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="214"/>
+        <location filename="../qps.cpp" line="190"/>
         <source>Fields</source>
         <translation>Champ</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="215"/>
+        <location filename="../qps.cpp" line="191"/>
         <source>Custom Fields</source>
         <translation>Champs personnalisés</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="217"/>
+        <location filename="../qps.cpp" line="193"/>
         <source>Basic Fields </source>
         <translation>Champs de base </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="219"/>
+        <location filename="../qps.cpp" line="195"/>
         <source>Jobs Fields </source>
         <translation>Champs d&apos;emplois </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="221"/>
+        <location filename="../qps.cpp" line="197"/>
         <source>Memory Fields </source>
         <translation>Champs de mémoire </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="224"/>
+        <location filename="../qps.cpp" line="200"/>
         <source>Scheduling Fields </source>
         <translation>Champs ordonnancement </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="241"/>
+        <location filename="../qps.cpp" line="217"/>
         <source>Select Custom Fields...</source>
         <translation>Choisir des champs personnalisés...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="203"/>
-        <source>Command</source>
-        <translation>Commande</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="255"/>
+        <location filename="../qps.cpp" line="226"/>
         <source>Options</source>
         <translation>Options</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="256"/>
+        <location filename="../qps.cpp" line="227"/>
         <source>Update Period...</source>
         <translation>Fréquence de mise à jour...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="265"/>
+        <location filename="../qps.cpp" line="236"/>
         <source>Show Status bar</source>
         <translation>Afficher la barre de statut</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="274"/>
+        <location filename="../qps.cpp" line="245"/>
         <source>Preferences...</source>
         <translation>Préférences...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="280"/>
+        <location filename="../qps.cpp" line="251"/>
         <source>Help</source>
         <translation>Aide</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="282"/>
-        <location filename="../qps.cpp" line="1893"/>
+        <location filename="../qps.cpp" line="252"/>
+        <location filename="../qps.cpp" line="1680"/>
         <source>About</source>
         <translation>À propos</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="370"/>
-        <source>Detail</source>
-        <translation>Détail</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="411"/>
+        <location filename="../qps.cpp" line="338"/>
         <source>test</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="412"/>
+        <location filename="../qps.cpp" line="339"/>
         <source>Copied to Clipboard</source>
         <translation>Copié dans le presse-papier</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="464"/>
+        <location filename="../qps.cpp" line="391"/>
         <source>context popup</source>
         <translation>contextuel</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="465"/>
+        <location filename="../qps.cpp" line="392"/>
         <source>Renice...</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="466"/>
+        <location filename="../qps.cpp" line="393"/>
         <source>Scheduling...</source>
         <translation>Ordonnancement...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="468"/>
+        <location filename="../qps.cpp" line="395"/>
         <source>Terminate</source>
         <translation>Arrêter</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="470"/>
+        <location filename="../qps.cpp" line="397"/>
         <source>Hangup</source>
         <translation>Suspendre</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="471"/>
+        <location filename="../qps.cpp" line="398"/>
         <source>Kill</source>
         <translation>Tuer</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="472"/>
+        <location filename="../qps.cpp" line="399"/>
         <source>Stop</source>
         <translation>Arrêter</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="474"/>
+        <location filename="../qps.cpp" line="401"/>
         <source>Continue</source>
         <translation>Continuer</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="477"/>
+        <location filename="../qps.cpp" line="404"/>
         <source>Other Signals</source>
         <translation>Autres signaux</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="478"/>
+        <location filename="../qps.cpp" line="405"/>
         <source>SIGINT (interrupt)</source>
         <translation>SIGINT (interruption)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="480"/>
+        <location filename="../qps.cpp" line="407"/>
         <source>SIGCONT (continue)</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="482"/>
+        <location filename="../qps.cpp" line="409"/>
         <source>SIGSTOP (stop)</source>
         <translation>SIGSTOP (arrêt)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="484"/>
+        <location filename="../qps.cpp" line="411"/>
         <source>SIGQUIT (quit)</source>
         <translation>SIGQUIT (quitter)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="486"/>
+        <location filename="../qps.cpp" line="413"/>
         <source>SIGILL (illegal instruction)</source>
         <translation>SIGILL (instruction illégale)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="488"/>
+        <location filename="../qps.cpp" line="415"/>
         <source>SIGABRT (abort)</source>
         <translation>SIGABRT (avorter)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="490"/>
+        <location filename="../qps.cpp" line="417"/>
         <source>SIGFPE (floating point exception)</source>
         <translation>SIGFPE (Erreur sur un nombre flottant)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="492"/>
+        <location filename="../qps.cpp" line="419"/>
         <source>SIGSEGV (segmentation violation)</source>
         <translation>SIGSEGV (violation de segmentation)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="494"/>
+        <location filename="../qps.cpp" line="421"/>
         <source>SIGPIPE (broken pipe)</source>
         <translation>SIGPIPE (Erreur de tube)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="496"/>
+        <location filename="../qps.cpp" line="423"/>
         <source>SIGALRM (timer signal)</source>
         <translation>SIGALRM (signal d&apos;alarme)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="498"/>
+        <location filename="../qps.cpp" line="425"/>
         <source>SIGUSR1 (user-defined 1)</source>
         <translation>SIGUSR1 (défini par l&apos;utilisateur 1)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="500"/>
+        <location filename="../qps.cpp" line="427"/>
         <source>SIGUSR2 (user-defined 2)</source>
         <translation>SIGUSR2 (défini par l&apos;utilisateur 2)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="502"/>
+        <location filename="../qps.cpp" line="429"/>
         <source>SIGCHLD (child death)</source>
         <translation>SIGCHLD (Processus enfant terminé ou stoppé )</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="504"/>
+        <location filename="../qps.cpp" line="431"/>
         <source>SIGTSTP (stop from tty)</source>
         <translation>SIGTSTP (arrêt de tty)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="506"/>
+        <location filename="../qps.cpp" line="433"/>
         <source>SIGTTIN (tty input)</source>
         <translation>SIGTTIN (entrée tty)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="508"/>
+        <location filename="../qps.cpp" line="435"/>
         <source>SIGTTOU (tty output)</source>
         <translation>SIGTTOU (sortie tty)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="515"/>
+        <location filename="../qps.cpp" line="442"/>
         <source>View Details</source>
         <translation>Voir les détails</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="781"/>
+        <location filename="../qps.cpp" line="695"/>
         <source>Show File Path</source>
         <translation>Afficher le chemin du fichier</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="787"/>
+        <location filename="../qps.cpp" line="701"/>
         <source>Show Graph</source>
         <translation>Afficher le Graphique</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="793"/>
+        <location filename="../qps.cpp" line="707"/>
         <source>Show Control Bar</source>
         <translation>Afficher la barre de contrôle</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="804"/>
+        <location filename="../qps.cpp" line="718"/>
         <source>Include Child Times</source>
         <translation>Inclure le temps des enfants</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="998"/>
-        <source>WatchDog</source>
-        <translation>Chien de garde</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="1000"/>
-        <source>Edit Commands...</source>
-        <translation>Modifier les commandes...</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="1016"/>
+        <location filename="../qps.cpp" line="290"/>
         <source>Quit</source>
         <translation>Quitter</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1335"/>
-        <location filename="../qps.cpp" line="1366"/>
-        <location filename="../qps.cpp" line="1373"/>
-        <location filename="../qps.cpp" line="1394"/>
-        <location filename="../qps.cpp" line="1428"/>
-        <location filename="../qps.cpp" line="1523"/>
+        <location filename="../qps.cpp" line="1160"/>
+        <location filename="../qps.cpp" line="1191"/>
+        <location filename="../qps.cpp" line="1198"/>
+        <location filename="../qps.cpp" line="1219"/>
+        <location filename="../qps.cpp" line="1253"/>
+        <location filename="../qps.cpp" line="1348"/>
         <source>Permission denied</source>
         <translation>Permission refusée</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1336"/>
+        <location filename="../qps.cpp" line="1161"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
         <translation>Vous n&apos;avez pas la permission de recommencer les processus sélectionnés. Seuls le propriétaire du processus et le super-utilisateur sont autorisés à le faire.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1367"/>
+        <location filename="../qps.cpp" line="1192"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
         <translation>Vous n&apos;êtes pas autorisé à exécuter le processus %1 (%2). Seuls le propriétaire du processus et le super-utilisateur sont autorisés à le faire.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1374"/>
+        <location filename="../qps.cpp" line="1199"/>
         <source>Only the super-user may lower the nice value of a process.</source>
         <translation>Seul le super-utilisateur peut réduire la valeur de transaction d&apos;un processus.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1395"/>
+        <location filename="../qps.cpp" line="1220"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
         <translation>Seul le super-utilisateur peut modifier la stratégie d&apos;ordonnancement et la priorité statique.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1429"/>
+        <location filename="../qps.cpp" line="1254"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
         <translation>Vous n&apos;avez pas la permission de changer l&apos;ordonnancement et/ou la priorité du processus %1 (%2). Seul le super-utilisateur en a le droit.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1490"/>
+        <location filename="../qps.cpp" line="1315"/>
         <source>Do you really want to terminate the selected process(es)?</source>
         <translation>Voulez-vous vraiment mettre fin au(x) processus sélectionné(s) ?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1492"/>
+        <location filename="../qps.cpp" line="1317"/>
         <source>Do you really want to hang up the selected process(es)?</source>
         <translation>Voulez-vous vraiment suspendre le ou les processus sélectionnés ?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1494"/>
+        <location filename="../qps.cpp" line="1319"/>
         <source>Do you really want to kill the selected process(es)?</source>
         <translation>Voulez-vous vraiment tuer le(s) processus sélectionné(s) ?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1503"/>
+        <location filename="../qps.cpp" line="1328"/>
         <source>Question</source>
         <translation>Question</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1524"/>
+        <location filename="../qps.cpp" line="1349"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
         <translation>Vous n&apos;êtes pas autorisé à envoyer un signal pour traiter %1 (%2). Seuls le super-utilisateur et le propriétaire du processus peuvent lui envoyer des signaux.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1909"/>
+        <location filename="../qps.cpp" line="1696"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
         <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1911"/>
+        <location filename="../qps.cpp" line="1698"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
         <translation>&lt;h2&gt; Qps %1 - Un gestionnaire de processus visuel &lt;/h2&gt; %2 utilisant les bibliothèqhes Qt %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker : &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1931"/>
+        <location filename="../qps.cpp" line="1718"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
         <translation>&lt;b&gt;Origine de Qps par&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributeurs&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="1969"/>
-        <source>&lt;H1&gt;QPS Help&lt;/H1&gt;Updated: May 24 2005&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Quit      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Update      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Space , Enter       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Terminate &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Kill &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</source>
-        <translation>&lt;H1&gt;Aide QPS&lt;/H1&gt;Mise à jour :24 Mai 2005&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Quitter     &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Mise à jour       &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Espace , Entrer       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt;Terminer le processus &lt;/td&gt;  &lt;td&gt; ALT + T , SUPPR &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; Tuer le processus &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</translation>
     </message>
 </context>
 <context>
@@ -1632,12 +1439,12 @@ arrêt avec le statut. </translation>
 <context>
     <name>SearchBox</name>
     <message>
-        <location filename="../misc.cpp" line="712"/>
+        <location filename="../misc.cpp" line="588"/>
         <source>PID, COMMAND, USER...</source>
         <translation>PID, COMMANDE, UTILISATEUR ...</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="713"/>
+        <location filename="../misc.cpp" line="589"/>
         <source>Filter</source>
         <translation>Filtre</translation>
     </message>
@@ -1757,7 +1564,7 @@ arrêt avec le statut. </translation>
 <context>
     <name>StatusBar</name>
     <message>
-        <location filename="../misc.cpp" line="748"/>
+        <location filename="../misc.cpp" line="624"/>
         <source>Process count: %1</source>
         <translation>Nombre de processus : %1</translation>
     </message>
@@ -1765,7 +1572,7 @@ arrêt avec le statut. </translation>
 <context>
     <name>TBloon</name>
     <message>
-        <location filename="../misc.cpp" line="347"/>
+        <location filename="../misc.cpp" line="343"/>
         <source> This is unstable Alpha feature
  You maybe see a SEGFAULT...</source>
         <translation> C&apos;est une fonctionnalité alpha instable
@@ -1773,37 +1580,11 @@ arrêt avec le statut. </translation>
     </message>
 </context>
 <context>
-    <name>TFrame</name>
-    <message>
-        <location filename="../misc.cpp" line="426"/>
-        <source>this is Tframe widget</source>
-        <translation>c&apos;est le widget Tframe</translation>
-    </message>
-</context>
-<context>
     <name>UFrame</name>
     <message>
-        <location filename="../misc.cpp" line="610"/>
+        <location filename="../misc.cpp" line="485"/>
         <source>title</source>
         <translation>titre</translation>
-    </message>
-</context>
-<context>
-    <name>WatchdogDialog</name>
-    <message>
-        <location filename="../watchdogdialog.cpp" line="191"/>
-        <source>if process start</source>
-        <translation>si le processus commence</translation>
-    </message>
-    <message>
-        <location filename="../watchdogdialog.cpp" line="192"/>
-        <source>if process finish</source>
-        <translation>si le processus se termine</translation>
-    </message>
-    <message>
-        <location filename="../watchdogdialog.cpp" line="215"/>
-        <source>select condition</source>
-        <translation>condition de sélection</translation>
     </message>
 </context>
 </TS>
