@@ -96,167 +96,44 @@
     </message>
 </context>
 <context>
-    <name>Command</name>
-    <message>
-        <location filename="../command.cpp" line="208"/>
-        <source>The command:
-
-</source>
-        <translation>Naredba:
-
-</translation>
-    </message>
-    <message>
-        <location filename="../command.cpp" line="212"/>
-        <source>
-
-failed with the error:
-
-</source>
-        <translation>
-
-nije obavljena. Greška:
-
-</translation>
-    </message>
-    <message>
-        <location filename="../command.cpp" line="215"/>
-        <source>Too many processes</source>
-        <translation>Previše procesa</translation>
-    </message>
-    <message>
-        <location filename="../command.cpp" line="218"/>
-        <source>Unknown error</source>
-        <translation>Nepoznata greška</translation>
-    </message>
-    <message>
-        <location filename="../command.cpp" line="228"/>
-        <source>
-
-could not be executed because it was not found,
-or you did not have execute permission.</source>
-        <translation>
-
-se nije mogla obaviti, jer nije pronađena,
-ili nemaš dozvolu za izvršavanje naredbe.</translation>
-    </message>
-    <message>
-        <location filename="../command.cpp" line="233"/>
-        <source>
-
-exited with status </source>
-        <translation>
-
-je prekinuta sa stanjem </translation>
-    </message>
-    <message>
-        <location filename="../command.cpp" line="237"/>
-        <source>Command Failed</source>
-        <translation>Neuspjela naredba</translation>
-    </message>
-</context>
-<context>
-    <name>CommandDialog</name>
-    <message>
-        <location filename="../commanddialog.cpp" line="47"/>
-        <source>Edit Commands 0.1 alpha</source>
-        <translation>Uredi naredbe 0.1 alfa</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="63"/>
-        <source>Name:</source>
-        <translation>Ime:</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="79"/>
-        <source>Popup</source>
-        <translation>Skočni prozor</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="84"/>
-        <source>Command Line:</source>
-        <translation>Naredbeni redak:</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="95"/>
-        <source>Substitutions:
-%p	PID
-%c	COMMAND
-%C	CMDLINE
-%u	USER
-%%	%
-
-</source>
-        <translation>Zamjene:
-%p	ID-PROCESA
-%c	NAREDBA
-%C	NAREDBENI-REDAK
-%u	KORISNIK
-%%	%
-
-</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="109"/>
-        <source>New...</source>
-        <translation>Novi …</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="111"/>
-        <location filename="../commanddialog.cpp" line="229"/>
-        <source>Add...</source>
-        <translation>Dodaj …</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="113"/>
-        <source>Delete</source>
-        <translation>Ukloni</translation>
-    </message>
-    <message>
-        <location filename="../commanddialog.cpp" line="115"/>
-        <source>Close</source>
-        <translation>Zatvori</translation>
-    </message>
-</context>
-<context>
     <name>ControlBar</name>
     <message>
-        <location filename="../misc.cpp" line="758"/>
+        <location filename="../misc.cpp" line="634"/>
         <source>Linear</source>
         <translation>Linearno</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="761"/>
+        <location filename="../misc.cpp" line="637"/>
         <source>Tree</source>
         <translation>Stablo</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="770"/>
+        <location filename="../misc.cpp" line="646"/>
         <source>Thread</source>
         <translation>Niz</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="777"/>
+        <location filename="../misc.cpp" line="653"/>
         <source>All Processes</source>
         <translation>Svi procesi</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="778"/>
+        <location filename="../misc.cpp" line="654"/>
         <source>Your Processes</source>
         <translation>Tvoji procesi</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="779"/>
+        <location filename="../misc.cpp" line="655"/>
         <source>Non-Root Processes</source>
         <translation>Ne-administratorski procesi</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="780"/>
+        <location filename="../misc.cpp" line="656"/>
         <source>Running Processes</source>
         <translation>Procesi u tijeku</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="796"/>
+        <location filename="../misc.cpp" line="672"/>
         <source>Pause (Ctrl+Space)</source>
         <translation>Pauza (Ctrl+razmaknica)</translation>
     </message>
@@ -318,139 +195,6 @@ je prekinuta sa stanjem </translation>
     </message>
 </context>
 <context>
-    <name>EventDialog</name>
-    <message>
-        <location filename="../watchdog.ui" line="23"/>
-        <source>Watchdog 0.1 alpha</source>
-        <translation>Watchdog 0.1 alfa</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="117"/>
-        <source>Eventcat</source>
-        <translation>Kategorija događaja</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="162"/>
-        <source>Select condition</source>
-        <translation>Odaberi uvjet</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="170"/>
-        <source>labelDescrition</source>
-        <translation>Oznaka za opis</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="193"/>
-        <source>Enable</source>
-        <translation>Aktiviraj</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="219"/>
-        <source>process name</source>
-        <translation>ime procesa</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="229"/>
-        <source>cpu</source>
-        <translation>procesor</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="248"/>
-        <source>%</source>
-        <translation> %</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="280"/>
-        <source>include already running process</source>
-        <translation>uključi već pokrenute procese</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="309"/>
-        <source>run command</source>
-        <translation>pokreni naredbu</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="342"/>
-        <source>show Message</source>
-        <translation>prikaži poruku</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="367"/>
-        <source>Help (Not yet. just concept)</source>
-        <translation>Pomoć (Još je nema, ovo je samo koncept)</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="394"/>
-        <source>%p : pid
-%c : command</source>
-        <translation>%p : id procesa
-%c : naredba</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="425"/>
-        <source>New</source>
-        <translation>Nova</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="432"/>
-        <source>Add</source>
-        <translation>Dodaj</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="439"/>
-        <source>Delete</source>
-        <translation>Ukloni</translation>
-    </message>
-    <message>
-        <location filename="../watchdog.ui" line="446"/>
-        <source>Close</source>
-        <translation>Zatvori</translation>
-    </message>
-</context>
-<context>
-    <name>ExecWindow</name>
-    <message>
-        <location filename="../message.ui" line="13"/>
-        <source>Qps</source>
-        <translation>Qps</translation>
-    </message>
-    <message>
-        <location filename="../message.ui" line="27"/>
-        <source>Ok</source>
-        <translation>U redu</translation>
-    </message>
-    <message>
-        <location filename="../execwindow.cpp" line="42"/>
-        <source>Qps Watchdog</source>
-        <translation>Qps Watchdog</translation>
-    </message>
-    <message>
-        <location filename="../execwindow.cpp" line="95"/>
-        <source>%1 exit with code %2</source>
-        <translation>%1 se zatvara s kodom %2</translation>
-    </message>
-    <message>
-        <location filename="../execwindow.cpp" line="97"/>
-        <source>Close</source>
-        <translation>Zatvori</translation>
-    </message>
-    <message>
-        <location filename="../execwindow.cpp" line="103"/>
-        <source>%1 [running]</source>
-        <translation>%1 [u tijeku]</translation>
-    </message>
-    <message>
-        <location filename="../execwindow.cpp" line="104"/>
-        <source>terminate command</source>
-        <translation>ukini naredbu</translation>
-    </message>
-    <message>
-        <location filename="../execwindow.cpp" line="113"/>
-        <source>Error %1 : [%2] Maybe command not found</source>
-        <translation>Greška %1 : [%2] Možda naredba nije pronađena</translation>
-    </message>
-</context>
-<context>
     <name>FieldSelect</name>
     <message>
         <location filename="../fieldsel.cpp" line="34"/>
@@ -497,6 +241,19 @@ je prekinuta sa stanjem </translation>
     </message>
 </context>
 <context>
+    <name>IO_Graph</name>
+    <message>
+        <location filename="../infobar.cpp" line="782"/>
+        <source>I/O Summary:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="816"/>
+        <source>No input or output</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>IntervalDialog</name>
     <message>
         <location filename="../dialogs.cpp" line="43"/>
@@ -527,19 +284,6 @@ je prekinuta sa stanjem </translation>
         <location filename="../dialogs.cpp" line="139"/>
         <source>Invalid value</source>
         <translation>Neispravna vrijednost</translation>
-    </message>
-</context>
-<context>
-    <name>ListModel</name>
-    <message>
-        <location filename="../listmodel.cpp" line="66"/>
-        <source>Event Category</source>
-        <translation>Kategorija događaja</translation>
-    </message>
-    <message>
-        <location filename="../listmodel.cpp" line="68"/>
-        <source>Enable</source>
-        <translation>Aktiviraj</translation>
     </message>
 </context>
 <context>
@@ -684,512 +428,512 @@ je prekinuta sa stanjem </translation>
 <context>
     <name>Proc</name>
     <message>
-        <location filename="../proc.cpp" line="2850"/>
+        <location filename="../proc.cpp" line="2639"/>
         <source>PID</source>
         <translation>PID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2850"/>
+        <location filename="../proc.cpp" line="2639"/>
         <source>Process ID</source>
         <translation>ID procesa</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2852"/>
+        <location filename="../proc.cpp" line="2641"/>
         <source>TGID</source>
         <translation>TGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2852"/>
+        <location filename="../proc.cpp" line="2641"/>
         <source>Task group ID ( parent of threads )</source>
         <translation>ID grupe zadataka( nedređeni )</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2854"/>
+        <location filename="../proc.cpp" line="2643"/>
         <source>PPID</source>
         <translation>PPID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2854"/>
+        <location filename="../proc.cpp" line="2643"/>
         <source>Parent process ID</source>
         <translation>ID nadređenog procesa</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2856"/>
+        <location filename="../proc.cpp" line="2645"/>
         <source>PGID</source>
         <translation>PGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2856"/>
+        <location filename="../proc.cpp" line="2645"/>
         <source>Process group ID</source>
         <translation>ID grupe procesa</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2858"/>
+        <location filename="../proc.cpp" line="2647"/>
         <source>SID</source>
         <translation>SID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2858"/>
+        <location filename="../proc.cpp" line="2647"/>
         <source>Session ID</source>
         <translation>ID sesije</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2860"/>
+        <location filename="../proc.cpp" line="2649"/>
         <source>TTY</source>
         <translation>TTY</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2860"/>
+        <location filename="../proc.cpp" line="2649"/>
         <source>Terminal</source>
         <translation>Terminal</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2862"/>
+        <location filename="../proc.cpp" line="2651"/>
         <source>TPGID</source>
         <translation>TPGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2862"/>
+        <location filename="../proc.cpp" line="2651"/>
         <source>Process group ID of tty owner</source>
         <translation>ID grupe procesa ili vlasnik terminala</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2864"/>
+        <location filename="../proc.cpp" line="2653"/>
         <source>USER</source>
         <translation>USER</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2864"/>
+        <location filename="../proc.cpp" line="2653"/>
         <source>Owner (*=suid root, +=suid a user)</source>
         <translation>Vlasnik (*=suid aministratora, +=suid korisnika)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2866"/>
+        <location filename="../proc.cpp" line="2655"/>
         <source>GROUP</source>
         <translation>GROUP</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2866"/>
+        <location filename="../proc.cpp" line="2655"/>
         <source>Group name (*=sgid other)</source>
         <translation>Ime grupe (*=sgid ostalih)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2868"/>
+        <location filename="../proc.cpp" line="2657"/>
         <source>UID</source>
         <translation>UID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2868"/>
+        <location filename="../proc.cpp" line="2657"/>
         <source>Real user ID</source>
         <translation>ID stvarnog korisnika</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2870"/>
+        <location filename="../proc.cpp" line="2659"/>
         <source>EUID</source>
         <translation>EUID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2870"/>
+        <location filename="../proc.cpp" line="2659"/>
         <source>Effective user ID</source>
         <translation>ID efektivnog korisnika</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2872"/>
+        <location filename="../proc.cpp" line="2661"/>
         <source>SUID</source>
         <translation>SUID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2872"/>
+        <location filename="../proc.cpp" line="2661"/>
         <source>Saved user ID (Posix)</source>
         <translation>Spremljen ID korisnika (Posix)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2874"/>
+        <location filename="../proc.cpp" line="2663"/>
         <source>FSUID</source>
         <translation>FSUID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2874"/>
+        <location filename="../proc.cpp" line="2663"/>
         <source>File system user ID</source>
         <translation>ID korisnika datotečnog sustava</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2876"/>
+        <location filename="../proc.cpp" line="2665"/>
         <source>GID</source>
         <translation>GID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2876"/>
+        <location filename="../proc.cpp" line="2665"/>
         <source>Real group ID</source>
         <translation>ID stvarne grupe</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2878"/>
+        <location filename="../proc.cpp" line="2667"/>
         <source>EGID</source>
         <translation>EGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2878"/>
+        <location filename="../proc.cpp" line="2667"/>
         <source>Effective group ID</source>
         <translation>ID efektivne grupe</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2880"/>
+        <location filename="../proc.cpp" line="2669"/>
         <source>SGID</source>
         <translation>SGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2880"/>
+        <location filename="../proc.cpp" line="2669"/>
         <source>Saved group ID (Posix)</source>
         <translation>Spremljen ID grupe (Posix)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2882"/>
+        <location filename="../proc.cpp" line="2671"/>
         <source>FSGID</source>
         <translation>FSGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2882"/>
+        <location filename="../proc.cpp" line="2671"/>
         <source>File system group ID</source>
         <translation>ID grupe datotečnog sustava</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2884"/>
+        <location filename="../proc.cpp" line="2673"/>
         <source>PRI</source>
         <translation>PRI</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2884"/>
+        <location filename="../proc.cpp" line="2673"/>
         <source>Dynamic priority</source>
         <translation>Dinamičan prioritet</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2886"/>
+        <location filename="../proc.cpp" line="2675"/>
         <source>NICE</source>
         <translation>NICE</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2886"/>
+        <location filename="../proc.cpp" line="2675"/>
         <source>Scheduling favour (higher -&gt; less cpu time)</source>
         <translation>Prioriziranje planiranja (veće -&gt; manje vrijeme procesora)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2888"/>
+        <location filename="../proc.cpp" line="2677"/>
         <source>NLWP</source>
         <translation>NLWP</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2888"/>
+        <location filename="../proc.cpp" line="2677"/>
         <source>Number of tasks(threads) in task group</source>
         <translation>Broj zadataka (niti) u grupi zadataka</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2890"/>
+        <location filename="../proc.cpp" line="2679"/>
         <source>PLCY</source>
         <translation>PLCY</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2890"/>
+        <location filename="../proc.cpp" line="2679"/>
         <source>Scheduling policy</source>
         <translation>Politika planiranja</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2892"/>
+        <location filename="../proc.cpp" line="2681"/>
         <source>RPRI</source>
         <translation>RPRI</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2892"/>
+        <location filename="../proc.cpp" line="2681"/>
         <source>Realtime priority (0-99, more is better)</source>
         <translation>Prioritet u stvarnom vremenu (0 do 99, više je bolje)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2894"/>
+        <location filename="../proc.cpp" line="2683"/>
         <source>TMS</source>
         <translation>TMS</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2894"/>
+        <location filename="../proc.cpp" line="2683"/>
         <source>Time slice in milliseconds</source>
         <translation>Isječci vremena u milisekundama</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2896"/>
+        <location filename="../proc.cpp" line="2685"/>
         <source>%SAVG</source>
         <translation>%SAVG</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2896"/>
+        <location filename="../proc.cpp" line="2685"/>
         <source>Percentage average sleep time (-1 -&gt; N/A)</source>
         <translation>Postotak prosječnog mirovanja (−1 -&gt; --)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2898"/>
+        <location filename="../proc.cpp" line="2687"/>
         <source>CPUSET</source>
         <translation>CPUSET</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2898"/>
+        <location filename="../proc.cpp" line="2687"/>
         <source>Affinity CPU mask (0 -&gt; API not supported)</source>
         <translation>Maska dodjele procesora (0 -&gt; sučelje nije podržano)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2900"/>
+        <location filename="../proc.cpp" line="2689"/>
         <source>MAJFLT</source>
         <translation>MAJFLT</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2900"/>
+        <location filename="../proc.cpp" line="2689"/>
         <source>Number of major faults (disk access)</source>
         <translation>Broj važnih pogrešaka (pristup disku)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2902"/>
+        <location filename="../proc.cpp" line="2691"/>
         <source>MINFLT</source>
         <translation>MINFLT</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2902"/>
+        <location filename="../proc.cpp" line="2691"/>
         <source>Number of minor faults (no disk access)</source>
         <translation>Broj manje važnih pogrešaka (bez pristupa disku)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2905"/>
+        <location filename="../proc.cpp" line="2694"/>
         <source>VSIZE</source>
         <translation>VSIZE</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2905"/>
+        <location filename="../proc.cpp" line="2694"/>
         <source>Virtual image size of process</source>
         <translation>Virtualna veličina slike procesa</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2907"/>
+        <location filename="../proc.cpp" line="2696"/>
         <source>RSS</source>
         <translation>RSS</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2907"/>
+        <location filename="../proc.cpp" line="2696"/>
         <source>Resident set size</source>
         <translation>Veličina rezidentne memorije</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2909"/>
+        <location filename="../proc.cpp" line="2698"/>
         <source>MEM</source>
         <translation>MEM</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2909"/>
+        <location filename="../proc.cpp" line="2698"/>
         <source>memory usage (RSS-SHARE)</source>
         <translation>upotreba memorije (RSS-SHARE)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2911"/>
+        <location filename="../proc.cpp" line="2700"/>
         <source>TRS</source>
         <translation>TRS</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2911"/>
+        <location filename="../proc.cpp" line="2700"/>
         <source>Text(code) resident set size</source>
         <translation>Veličina rezidentne memorije za tekst (kod)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2913"/>
+        <location filename="../proc.cpp" line="2702"/>
         <source>DRS</source>
         <translation>DRS</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2913"/>
+        <location filename="../proc.cpp" line="2702"/>
         <source>Data resident set size(malloc+global variable)</source>
         <translation>Veličina rezidentne memorije za podatke (malloc+globalna varijabla)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2915"/>
+        <location filename="../proc.cpp" line="2704"/>
         <source>STACK</source>
         <translation>STACK</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2915"/>
+        <location filename="../proc.cpp" line="2704"/>
         <source>Stack size</source>
         <translation>Stack veličina</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2917"/>
+        <location filename="../proc.cpp" line="2706"/>
         <source>SHARE</source>
         <translation>SHARE</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2917"/>
+        <location filename="../proc.cpp" line="2706"/>
         <source>Shared memory with other libs</source>
         <translation>Dijeljena memorija s drugim bibliotekama</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2919"/>
+        <location filename="../proc.cpp" line="2708"/>
         <source>SWAP</source>
         <translation>SWAP</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2919"/>
+        <location filename="../proc.cpp" line="2708"/>
         <source>Kbytes on swap device</source>
         <translation>Kilobajta na virtualnom uređaju</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2921"/>
+        <location filename="../proc.cpp" line="2710"/>
         <source>IO_R</source>
         <translation>IO_R</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2921"/>
+        <location filename="../proc.cpp" line="2710"/>
         <source>io read (file)</source>
         <translation>ulaz/izlaz čitanje (datoteka)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2923"/>
+        <location filename="../proc.cpp" line="2712"/>
         <source>IO_W</source>
         <translation>IO_W</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2923"/>
+        <location filename="../proc.cpp" line="2712"/>
         <source>io write (file)</source>
         <translation>ulaz/izlaz pisanje (datoteka)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2925"/>
+        <location filename="../proc.cpp" line="2714"/>
         <source>DT</source>
         <translation>DT</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2925"/>
+        <location filename="../proc.cpp" line="2714"/>
         <source>Number of dirty (non-written) pages</source>
         <translation>Broj zmazanih (ne zapisanih) stranica</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2927"/>
+        <location filename="../proc.cpp" line="2716"/>
         <source>STAT</source>
         <translation>STAT</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2927"/>
+        <location filename="../proc.cpp" line="2716"/>
         <source>State of the process </source>
         <translation>Stanje procesa </translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2929"/>
+        <location filename="../proc.cpp" line="2718"/>
         <source>FLAGS</source>
         <translation>FLAGS</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2929"/>
+        <location filename="../proc.cpp" line="2718"/>
         <source>Process flags (hex)</source>
         <translation>Oznake procesa (hex)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2931"/>
+        <location filename="../proc.cpp" line="2720"/>
         <source>WCHAN</source>
         <translation>WCHAN</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2931"/>
+        <location filename="../proc.cpp" line="2720"/>
         <source>Kernel function where process is sleeping</source>
         <translation>Funkcija kernela, gdje proces spava</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2933"/>
+        <location filename="../proc.cpp" line="2722"/>
         <source>%WCPU</source>
         <translation>%WCPU</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2933"/>
+        <location filename="../proc.cpp" line="2722"/>
         <source>Weighted percentage of CPU (30 s average)</source>
         <translation>Ponderiran postatak procesora (30 s prosječno)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2935"/>
+        <location filename="../proc.cpp" line="2724"/>
         <source>%CPU</source>
         <translation>%CPU</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2935"/>
+        <location filename="../proc.cpp" line="2724"/>
         <source>Percentage of CPU used since last update</source>
         <translation>Postotak procesora koji je korišten od zadnjeg aktualiziranja</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2937"/>
+        <location filename="../proc.cpp" line="2726"/>
         <source>%MEM</source>
         <translation>%MEM</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2937"/>
+        <location filename="../proc.cpp" line="2726"/>
         <source>Percentage of memory used (RSS/total mem)</source>
         <translation>Postotak korištene memorije (RSS/ukupna memorija)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2939"/>
+        <location filename="../proc.cpp" line="2728"/>
         <source>START</source>
         <translation>START</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2939"/>
+        <location filename="../proc.cpp" line="2728"/>
         <source>Time process started</source>
         <translation>Vrijeme pokretanja procesa</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2941"/>
+        <location filename="../proc.cpp" line="2730"/>
         <source>TIME</source>
         <translation>TIME</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2941"/>
+        <location filename="../proc.cpp" line="2730"/>
         <source>Total CPU time used since start</source>
         <translation>Ukupno vrijeme procesora od pokretanja sve do sada</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2943"/>
+        <location filename="../proc.cpp" line="2732"/>
         <source>CPU</source>
         <translation>CPU</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2943"/>
+        <location filename="../proc.cpp" line="2732"/>
         <source>CPU the process is executing on (SMP system)</source>
         <translation>Procesor na kojem se izvršava proces (SMP sustav)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2945"/>
+        <location filename="../proc.cpp" line="2734"/>
         <source>the process name</source>
         <translation>ime procesa</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2945"/>
+        <location filename="../proc.cpp" line="2734"/>
         <source>Process Name</source>
         <translation>Ime procesa</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2949"/>
+        <location filename="../proc.cpp" line="2738"/>
         <source>CWD</source>
         <translation>CWD</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2949"/>
+        <location filename="../proc.cpp" line="2738"/>
         <source>Current working directory</source>
         <translation>Trenutačna radna mapa</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2950"/>
+        <location filename="../proc.cpp" line="2739"/>
         <source>ROOT</source>
         <translation>ROOT</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2950"/>
+        <location filename="../proc.cpp" line="2739"/>
         <source>Root directory of process</source>
         <translation>Administrativna mapa procesa</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2953"/>
+        <location filename="../proc.cpp" line="2742"/>
         <source>COMMAND_LINE</source>
         <translation>COMMAND_LINE</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2953"/>
+        <location filename="../proc.cpp" line="2742"/>
         <source>Command line that started the process</source>
         <translation>Naredbeni redak koji je pokrenuo proces</translation>
     </message>
@@ -1197,383 +941,446 @@ je prekinuta sa stanjem </translation>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../qps.cpp" line="1845"/>
+        <location filename="../qps.cpp" line="1632"/>
         <source>Show</source>
         <translation>Prikaži</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1848"/>
+        <location filename="../qps.cpp" line="1635"/>
         <source>Hide</source>
         <translation>Sakrij</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1852"/>
+        <location filename="../qps.cpp" line="1640"/>
         <source>Quit</source>
         <translation>Zatvori</translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="430"/>
+        <location filename="../infobar.cpp" line="437"/>
+        <source>User: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="430"/>
+        <location filename="../infobar.cpp" line="431"/>
+        <location filename="../infobar.cpp" line="437"/>
+        <location filename="../infobar.cpp" line="438"/>
+        <source>%, </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="431"/>
+        <location filename="../infobar.cpp" line="438"/>
+        <source>System: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="432"/>
+        <location filename="../infobar.cpp" line="439"/>
+        <source>Nice: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="432"/>
+        <location filename="../infobar.cpp" line="439"/>
+        <source>%</source>
+        <translation type="unfinished"> %</translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="471"/>
+        <location filename="../infobar.cpp" line="506"/>
+        <source>Total: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="474"/>
+        <location filename="../infobar.cpp" line="478"/>
+        <location filename="../infobar.cpp" line="481"/>
+        <location filename="../infobar.cpp" line="509"/>
+        <location filename="../infobar.cpp" line="512"/>
+        <source>, </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="474"/>
+        <location filename="../infobar.cpp" line="512"/>
+        <source>Used: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="478"/>
+        <source>Cached: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="481"/>
+        <source>Buffer: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="509"/>
+        <source>Free: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="551"/>
+        <source>Time passed after system boot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="579"/>
+        <source>Average CPU load each 1, 5 ,15 minutes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../infobar.cpp" line="724"/>
+        <source>CPU Usage Summary:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Qps</name>
     <message>
-        <location filename="../qps.cpp" line="198"/>
+        <location filename="../qps.cpp" line="174"/>
         <source>header_popup</source>
         <translation>skočno_zaglavlje</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="199"/>
+        <location filename="../qps.cpp" line="175"/>
         <source>Remove Field</source>
         <translation>Ukloni polje</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="200"/>
+        <location filename="../qps.cpp" line="176"/>
         <source>Add Field</source>
         <translation>Dodaj polje</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="207"/>
+        <location filename="../qps.cpp" line="179"/>
+        <source>Session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qps.cpp" line="183"/>
         <source>View</source>
         <translation>Prikaz</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="208"/>
+        <location filename="../qps.cpp" line="184"/>
         <source>Process</source>
         <translation>Proces</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="209"/>
+        <location filename="../qps.cpp" line="185"/>
         <source>Log</source>
         <translation>Log-zapis</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="214"/>
+        <location filename="../qps.cpp" line="190"/>
         <source>Fields</source>
         <translation>Polja</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="215"/>
+        <location filename="../qps.cpp" line="191"/>
         <source>Custom Fields</source>
         <translation>Prilagođena polja</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="217"/>
+        <location filename="../qps.cpp" line="193"/>
         <source>Basic Fields </source>
         <translation>Osnovna polja </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="219"/>
+        <location filename="../qps.cpp" line="195"/>
         <source>Jobs Fields </source>
         <translation>Polja poslova </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="221"/>
+        <location filename="../qps.cpp" line="197"/>
         <source>Memory Fields </source>
         <translation>Polja memorije </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="224"/>
+        <location filename="../qps.cpp" line="200"/>
         <source>Scheduling Fields </source>
         <translation>Polja planiranja </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="241"/>
+        <location filename="../qps.cpp" line="217"/>
         <source>Select Custom Fields...</source>
         <translation>Odaberi prilagođena polja …</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="203"/>
-        <source>Command</source>
-        <translation>Naredba</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="255"/>
+        <location filename="../qps.cpp" line="226"/>
         <source>Options</source>
         <translation>Opcije</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="256"/>
+        <location filename="../qps.cpp" line="227"/>
         <source>Update Period...</source>
         <translation>Vrijeme aktualiziranja …</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="265"/>
+        <location filename="../qps.cpp" line="236"/>
         <source>Show Status bar</source>
         <translation>Prikaži traku stanja</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="274"/>
+        <location filename="../qps.cpp" line="245"/>
         <source>Preferences...</source>
         <translation>Postavke …</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="280"/>
+        <location filename="../qps.cpp" line="251"/>
         <source>Help</source>
         <translation>Pomoć</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="282"/>
-        <location filename="../qps.cpp" line="1893"/>
+        <location filename="../qps.cpp" line="252"/>
+        <location filename="../qps.cpp" line="1680"/>
         <source>About</source>
         <translation>Informacije</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="370"/>
-        <source>Detail</source>
-        <translation>Detalj</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="411"/>
+        <location filename="../qps.cpp" line="338"/>
         <source>test</source>
         <translation>test</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="412"/>
+        <location filename="../qps.cpp" line="339"/>
         <source>Copied to Clipboard</source>
         <translation>Kopirano u međuspremnik</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="464"/>
+        <location filename="../qps.cpp" line="391"/>
         <source>context popup</source>
         <translation>kontekstualni skočni izbornik</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="465"/>
+        <location filename="../qps.cpp" line="392"/>
         <source>Renice...</source>
         <translation>Ponovo upotrijebi nice …</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="466"/>
+        <location filename="../qps.cpp" line="393"/>
         <source>Scheduling...</source>
         <translation>Planiranje …</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="468"/>
+        <location filename="../qps.cpp" line="395"/>
         <source>Terminate</source>
         <translation>Ukini</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="470"/>
+        <location filename="../qps.cpp" line="397"/>
         <source>Hangup</source>
         <translation>Prekini</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="471"/>
+        <location filename="../qps.cpp" line="398"/>
         <source>Kill</source>
         <translation>Ubij</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="472"/>
+        <location filename="../qps.cpp" line="399"/>
         <source>Stop</source>
         <translation>Zaustavi</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="474"/>
+        <location filename="../qps.cpp" line="401"/>
         <source>Continue</source>
         <translation>Nastavi</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="477"/>
+        <location filename="../qps.cpp" line="404"/>
         <source>Other Signals</source>
         <translation>Drugi signali</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="478"/>
+        <location filename="../qps.cpp" line="405"/>
         <source>SIGINT (interrupt)</source>
         <translation>SIGINT (privremeno prekini)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="480"/>
+        <location filename="../qps.cpp" line="407"/>
         <source>SIGCONT (continue)</source>
         <translation>SIGCONT (nastavi)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="482"/>
+        <location filename="../qps.cpp" line="409"/>
         <source>SIGSTOP (stop)</source>
         <translation>SIGSTOP (zaustavi)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="484"/>
+        <location filename="../qps.cpp" line="411"/>
         <source>SIGQUIT (quit)</source>
         <translation>SIGQUIT (zatvori)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="486"/>
+        <location filename="../qps.cpp" line="413"/>
         <source>SIGILL (illegal instruction)</source>
         <translation>SIGILL (nedozvoljena instrukcija)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="488"/>
+        <location filename="../qps.cpp" line="415"/>
         <source>SIGABRT (abort)</source>
         <translation>SIGABRT (prekini)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="490"/>
+        <location filename="../qps.cpp" line="417"/>
         <source>SIGFPE (floating point exception)</source>
         <translation>SIGFPE (iznimka s pomičnim zarezom)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="492"/>
+        <location filename="../qps.cpp" line="419"/>
         <source>SIGSEGV (segmentation violation)</source>
         <translation>SIGSEGV (povreda segmentacije)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="494"/>
+        <location filename="../qps.cpp" line="421"/>
         <source>SIGPIPE (broken pipe)</source>
         <translation>SIGPIPE (pokvareni pipe)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="496"/>
+        <location filename="../qps.cpp" line="423"/>
         <source>SIGALRM (timer signal)</source>
         <translation>SIGALRM (signal tajmera)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="498"/>
+        <location filename="../qps.cpp" line="425"/>
         <source>SIGUSR1 (user-defined 1)</source>
         <translation>SIGUSR1 (korisnički definirano 1)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="500"/>
+        <location filename="../qps.cpp" line="427"/>
         <source>SIGUSR2 (user-defined 2)</source>
         <translation>SIGUSR2 (korisnički definirano 2)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="502"/>
+        <location filename="../qps.cpp" line="429"/>
         <source>SIGCHLD (child death)</source>
         <translation>SIGCHLD (smrt podređenog)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="504"/>
+        <location filename="../qps.cpp" line="431"/>
         <source>SIGTSTP (stop from tty)</source>
         <translation>SIGTSTP (zaustavi iz terminala)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="506"/>
+        <location filename="../qps.cpp" line="433"/>
         <source>SIGTTIN (tty input)</source>
         <translation>SIGTTIN (unos terminala)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="508"/>
+        <location filename="../qps.cpp" line="435"/>
         <source>SIGTTOU (tty output)</source>
         <translation>SIGTTOU (rezultat terminala)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="515"/>
+        <location filename="../qps.cpp" line="442"/>
         <source>View Details</source>
         <translation>Prikaži detalje</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="781"/>
+        <location filename="../qps.cpp" line="695"/>
         <source>Show File Path</source>
         <translation>Pokaži stazu datoteke</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="787"/>
+        <location filename="../qps.cpp" line="701"/>
         <source>Show Graph</source>
         <translation>Pokaži grafikon</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="793"/>
+        <location filename="../qps.cpp" line="707"/>
         <source>Show Control Bar</source>
         <translation>Prikaži traku kontrola</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="804"/>
+        <location filename="../qps.cpp" line="718"/>
         <source>Include Child Times</source>
         <translation>Uključi vremena podređenog</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="998"/>
-        <source>WatchDog</source>
-        <translation>WatchDog</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="1000"/>
-        <source>Edit Commands...</source>
-        <translation>Uredi naredbe …</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="1016"/>
+        <location filename="../qps.cpp" line="290"/>
         <source>Quit</source>
         <translation>Zatvori</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1335"/>
-        <location filename="../qps.cpp" line="1366"/>
-        <location filename="../qps.cpp" line="1373"/>
-        <location filename="../qps.cpp" line="1394"/>
-        <location filename="../qps.cpp" line="1428"/>
-        <location filename="../qps.cpp" line="1523"/>
+        <location filename="../qps.cpp" line="1160"/>
+        <location filename="../qps.cpp" line="1191"/>
+        <location filename="../qps.cpp" line="1198"/>
+        <location filename="../qps.cpp" line="1219"/>
+        <location filename="../qps.cpp" line="1253"/>
+        <location filename="../qps.cpp" line="1348"/>
         <source>Permission denied</source>
         <translation>Nedozvoljeno</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1336"/>
+        <location filename="../qps.cpp" line="1161"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
         <translation>Nemaš dozvolu za upotrebu naredbe renice za odabrane procese. To smiju samo vlasnik procesa i super korisnik.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1367"/>
+        <location filename="../qps.cpp" line="1192"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
         <translation>Nemaš dozvolu za upotrebu naredbe renice za proces %1 (%2). To smiju samo vlasnik procesa i super korisnik.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1374"/>
+        <location filename="../qps.cpp" line="1199"/>
         <source>Only the super-user may lower the nice value of a process.</source>
         <translation>Samo super korisnik smije smanjiti nice-vrijednost procesa..</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1395"/>
+        <location filename="../qps.cpp" line="1220"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
         <translation>Samo super korisnik smije promijeniti politiku planiranja i prioritet.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1429"/>
+        <location filename="../qps.cpp" line="1254"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
         <translation>Nemaš dozvolu za mijenjanje planiranja i/ili prioriteta procesa %1 (%2). To smije samo super korisnik.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1490"/>
+        <location filename="../qps.cpp" line="1315"/>
         <source>Do you really want to terminate the selected process(es)?</source>
         <translation>Stvarno želiš prekinuti odabrane procese?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1492"/>
+        <location filename="../qps.cpp" line="1317"/>
         <source>Do you really want to hang up the selected process(es)?</source>
         <translation>Stvarno želiš završiti odabrane procese?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1494"/>
+        <location filename="../qps.cpp" line="1319"/>
         <source>Do you really want to kill the selected process(es)?</source>
         <translation>Stvarno želiš okončati odabrane procese?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1503"/>
+        <location filename="../qps.cpp" line="1328"/>
         <source>Question</source>
         <translation>Pitanje</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1524"/>
+        <location filename="../qps.cpp" line="1349"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
         <translation>Nemaš dozvolu za slanje signala procesu %1 (%2). To smiju samo super korisnik i vlasnik procesa.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1909"/>
+        <location filename="../qps.cpp" line="1696"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
         <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1911"/>
+        <location filename="../qps.cpp" line="1698"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
         <translation>&lt;h2&gt; Qps %1 – Vizualan upravljač procesa &lt;/h2&gt; %2 koristeći Qt biblioteku %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Izvor: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Sustav za praćenje grešaka: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1931"/>
+        <location filename="../qps.cpp" line="1718"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
         <translation>&lt;b&gt;Izvorni Qps od&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Doprinositelji&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
-    </message>
-    <message>
-        <location filename="../qps.cpp" line="1969"/>
-        <source>&lt;H1&gt;QPS Help&lt;/H1&gt;Updated: May 24 2005&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Quit      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Update      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Space , Enter       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Terminate &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; process Kill &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</source>
-        <translation>&lt;H1&gt;QPS pomoć&lt;/H1&gt;Aktualizirano: 24. 05. 2005.&lt;BR&gt;&lt;A HREF=&quot;http://kldp.net/projects/qps&quot;&gt;http://kldp.net/projects/qps&lt;/A&gt;&lt;HR&gt;&lt;table style=&quot;text-align: center; width: 100%;&quot; border=&quot;1&quot; cellpadding=&quot;1&quot; cellspacing=&quot;0&quot;&gt;  &lt;tbody&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Zatvori program      &lt;/td&gt;      &lt;td &gt;&amp;nbsp; CTRL + q , CTRL + x      &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;      &lt;td style=&quot;vertical-align: top; background-color: rgb(204, 204, 204);&quot;&gt;Aktualiziranje      &lt;/td&gt;      &lt;td&gt;&amp;nbsp;Razmaknica , Enter       &lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; ukini proces &lt;/td&gt;  &lt;td&gt; ALT + T , DELETE &lt;/td&gt; &lt;/tr&gt;    &lt;tr&gt;&lt;td&gt; ubij proces &lt;/td&gt;  &lt;td&gt; ALT + K  &lt;/td&gt; &lt;/tr&gt;  &lt;/tbody&gt;&lt;/table&gt;</translation>
     </message>
 </context>
 <context>
@@ -1632,12 +1439,12 @@ je prekinuta sa stanjem </translation>
 <context>
     <name>SearchBox</name>
     <message>
-        <location filename="../misc.cpp" line="712"/>
+        <location filename="../misc.cpp" line="588"/>
         <source>PID, COMMAND, USER...</source>
         <translation>PID, COMMAND, USER...</translation>
     </message>
     <message>
-        <location filename="../misc.cpp" line="713"/>
+        <location filename="../misc.cpp" line="589"/>
         <source>Filter</source>
         <translation>Filtar</translation>
     </message>
@@ -1757,7 +1564,7 @@ je prekinuta sa stanjem </translation>
 <context>
     <name>StatusBar</name>
     <message>
-        <location filename="../misc.cpp" line="748"/>
+        <location filename="../misc.cpp" line="624"/>
         <source>Process count: %1</source>
         <translation>Broj procesa: %1</translation>
     </message>
@@ -1765,7 +1572,7 @@ je prekinuta sa stanjem </translation>
 <context>
     <name>TBloon</name>
     <message>
-        <location filename="../misc.cpp" line="347"/>
+        <location filename="../misc.cpp" line="343"/>
         <source> This is unstable Alpha feature
  You maybe see a SEGFAULT...</source>
         <translation> Ovo je nestabilna Alpha funkcija
@@ -1773,37 +1580,11 @@ je prekinuta sa stanjem </translation>
     </message>
 </context>
 <context>
-    <name>TFrame</name>
-    <message>
-        <location filename="../misc.cpp" line="426"/>
-        <source>this is Tframe widget</source>
-        <translation>ovo je Tframe programčić</translation>
-    </message>
-</context>
-<context>
     <name>UFrame</name>
     <message>
-        <location filename="../misc.cpp" line="610"/>
+        <location filename="../misc.cpp" line="485"/>
         <source>title</source>
         <translation>naslov</translation>
-    </message>
-</context>
-<context>
-    <name>WatchdogDialog</name>
-    <message>
-        <location filename="../watchdogdialog.cpp" line="191"/>
-        <source>if process start</source>
-        <translation>ako je proces započinjanja</translation>
-    </message>
-    <message>
-        <location filename="../watchdogdialog.cpp" line="192"/>
-        <source>if process finish</source>
-        <translation>ako je proces dovršavanja</translation>
-    </message>
-    <message>
-        <location filename="../watchdogdialog.cpp" line="215"/>
-        <source>select condition</source>
-        <translation>odaberi uvjet</translation>
     </message>
 </context>
 </TS>
