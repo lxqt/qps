@@ -427,15 +427,15 @@ class w_cpu : public gwidget
         f_nice = (float)nice / total * 100;
         f_system = (float)system / total * 100;
 #ifdef LINUX
-        return QObject::tr("User: ") + QString::number(f_user, 'f', 1) + QObject::tr("%, ")
-               + QObject::tr("System: ") + QString::number(f_system, 'f', 1) + QObject::tr("%, ")
+        return QObject::tr("User: ") + QString::number(f_user, 'f', 1) + QObject::tr("%") + "\n"
+               + QObject::tr("System: ") + QString::number(f_system, 'f', 1) + QObject::tr("%") + "\n"
                + QObject::tr("Nice: ") + QString::number(f_nice, 'f', 1) + QObject::tr("%");
 #endif
 
 #ifdef SOLARIS
         float f_wait = (float)wait / total * 100;
-        return QObject::tr("User: ") + QString::number(f_user, 'f', 1) + QObject::tr("%, ")
-               + QObject::tr("System: ") + QString::number(f_system, 'f', 1) + QObject::tr("%, ")
+        return QObject::tr("User: ") + QString::number(f_user, 'f', 1) + QObject::tr("%") + "\n"
+               + QObject::tr("System: ") + QString::number(f_system, 'f', 1) + QObject::tr("%") + "\n"
                + QObject::tr("Nice: ") + QString::number(f_wait, 'f', 1) + QObject::tr("%");
 #endif
     };
@@ -471,14 +471,14 @@ class w_mem : public gwidget
         QString res = QObject::tr("Total: ") + QString::fromLatin1(str);
 
         mem_string(used, str);
-        res += QObject::tr(", ") + QObject::tr("Used: ") + QString::fromLatin1(str);
+        res += "\n" + QObject::tr("Used: ") + QString::fromLatin1(str);
 
 #ifdef LINUX
         mem_string(procview->mem_cached, str);
-        res +=  QObject::tr(", ") + QObject::tr("Cached: ") + QString::fromLatin1(str);
+        res +=  "\n" + QObject::tr("Cached: ") + QString::fromLatin1(str);
 
         mem_string(procview->mem_buffers, str);
-        res += QObject::tr(", ") + QObject::tr("Buffer: ") + QString::fromLatin1(str);
+        res += "\n" + QObject::tr("Buffer: ") + QString::fromLatin1(str);
 #endif
 
         return res;
@@ -506,10 +506,10 @@ class w_swap : public gwidget
         QString res = QObject::tr("Total: ") + QString::fromLatin1(str);
 
         mem_string(procview->swap_free, str);
-        res += QObject::tr(", ") + QObject::tr("Free: ") + QString::fromLatin1(str);
+        res += "\n" + QObject::tr("Free: ") + QString::fromLatin1(str);
 
         mem_string(used, str);
-        res += QObject::tr(", ") + QObject::tr("Used: ") + QString::fromLatin1(str);
+        res += "\n" + QObject::tr("Used: ") + QString::fromLatin1(str);
 
         return res;
     };
