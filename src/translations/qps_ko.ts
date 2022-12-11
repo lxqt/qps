@@ -245,12 +245,12 @@
     <message>
         <location filename="../infobar.cpp" line="782"/>
         <source>I/O Summary:</source>
-        <translation type="unfinished"></translation>
+        <translation>I/O 개요:</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="816"/>
         <source>No input or output</source>
-        <translation type="unfinished"></translation>
+        <translation>입력 또는 출력 없음</translation>
     </message>
 </context>
 <context>
@@ -930,7 +930,7 @@
     <message>
         <location filename="../proc.cpp" line="2742"/>
         <source>COMMAND_LINE</source>
-        <translation>명령_줄</translation>
+        <translation>명령줄</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2742"/>
@@ -959,7 +959,7 @@
         <location filename="../infobar.cpp" line="430"/>
         <location filename="../infobar.cpp" line="437"/>
         <source>User: </source>
-        <translation type="unfinished"></translation>
+        <translation>사용자: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="430"/>
@@ -967,13 +967,13 @@
         <location filename="../infobar.cpp" line="437"/>
         <location filename="../infobar.cpp" line="438"/>
         <source>%, </source>
-        <translation type="unfinished"></translation>
+        <translation>%, </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="431"/>
         <location filename="../infobar.cpp" line="438"/>
         <source>System: </source>
-        <translation type="unfinished"></translation>
+        <translation>시스템: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="432"/>
@@ -985,13 +985,13 @@
         <location filename="../infobar.cpp" line="432"/>
         <location filename="../infobar.cpp" line="439"/>
         <source>%</source>
-        <translation type="unfinished">%</translation>
+        <translation>%</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="471"/>
         <location filename="../infobar.cpp" line="506"/>
         <source>Total: </source>
-        <translation type="unfinished"></translation>
+        <translation>전체: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="474"/>
@@ -1000,43 +1000,43 @@
         <location filename="../infobar.cpp" line="509"/>
         <location filename="../infobar.cpp" line="512"/>
         <source>, </source>
-        <translation type="unfinished"></translation>
+        <translation>, </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="474"/>
         <location filename="../infobar.cpp" line="512"/>
         <source>Used: </source>
-        <translation type="unfinished"></translation>
+        <translation>사용됨: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="478"/>
         <source>Cached: </source>
-        <translation type="unfinished"></translation>
+        <translation>캐시됨: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="481"/>
         <source>Buffer: </source>
-        <translation type="unfinished"></translation>
+        <translation>버퍼: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="509"/>
         <source>Free: </source>
-        <translation type="unfinished"></translation>
+        <translation>여유 공간: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="551"/>
         <source>Time passed after system boot</source>
-        <translation type="unfinished"></translation>
+        <translation>시스템 부팅 후 경과된 시간</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="579"/>
         <source>Average CPU load each 1, 5 ,15 minutes</source>
-        <translation type="unfinished"></translation>
+        <translation>평균 CPU 부하 각 1, 5, 15분</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="724"/>
         <source>CPU Usage Summary:</source>
-        <translation type="unfinished"></translation>
+        <translation>CPU 사용량 개요:</translation>
     </message>
 </context>
 <context>
@@ -1044,7 +1044,7 @@
     <message>
         <location filename="../qps.cpp" line="174"/>
         <source>header_popup</source>
-        <translation>팝업 _창제목</translation>
+        <translation>창제목_팝업</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="175"/>
@@ -1059,7 +1059,7 @@
     <message>
         <location filename="../qps.cpp" line="179"/>
         <source>Session</source>
-        <translation type="unfinished"></translation>
+        <translation>세션</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="183"/>

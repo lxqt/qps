@@ -245,12 +245,12 @@
     <message>
         <location filename="../infobar.cpp" line="782"/>
         <source>I/O Summary:</source>
-        <translation type="unfinished"></translation>
+        <translation>Підсумок вводу-виводу:</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="816"/>
         <source>No input or output</source>
-        <translation type="unfinished"></translation>
+        <translation>Немає ні вводу, ні виводу</translation>
     </message>
 </context>
 <context>
@@ -959,7 +959,7 @@
         <location filename="../infobar.cpp" line="430"/>
         <location filename="../infobar.cpp" line="437"/>
         <source>User: </source>
-        <translation type="unfinished"></translation>
+        <translation>Користувач: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="430"/>
@@ -967,31 +967,31 @@
         <location filename="../infobar.cpp" line="437"/>
         <location filename="../infobar.cpp" line="438"/>
         <source>%, </source>
-        <translation type="unfinished"></translation>
+        <translation>%, </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="431"/>
         <location filename="../infobar.cpp" line="438"/>
         <source>System: </source>
-        <translation type="unfinished"></translation>
+        <translation>Система: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="432"/>
         <location filename="../infobar.cpp" line="439"/>
         <source>Nice: </source>
-        <translation type="unfinished"></translation>
+        <translation>Добре: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="432"/>
         <location filename="../infobar.cpp" line="439"/>
         <source>%</source>
-        <translation type="unfinished">%</translation>
+        <translation>%</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="471"/>
         <location filename="../infobar.cpp" line="506"/>
         <source>Total: </source>
-        <translation type="unfinished"></translation>
+        <translation>Підсумок: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="474"/>
@@ -1000,43 +1000,43 @@
         <location filename="../infobar.cpp" line="509"/>
         <location filename="../infobar.cpp" line="512"/>
         <source>, </source>
-        <translation type="unfinished"></translation>
+        <translation>, </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="474"/>
         <location filename="../infobar.cpp" line="512"/>
         <source>Used: </source>
-        <translation type="unfinished"></translation>
+        <translation>Використано: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="478"/>
         <source>Cached: </source>
-        <translation type="unfinished"></translation>
+        <translation>Кешовано: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="481"/>
         <source>Buffer: </source>
-        <translation type="unfinished"></translation>
+        <translation>Буфер: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="509"/>
         <source>Free: </source>
-        <translation type="unfinished"></translation>
+        <translation>Вільно: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="551"/>
         <source>Time passed after system boot</source>
-        <translation type="unfinished"></translation>
+        <translation>Минуло часу після завантаження системи</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="579"/>
         <source>Average CPU load each 1, 5 ,15 minutes</source>
-        <translation type="unfinished"></translation>
+        <translation>Середнє завантаження процесора кожні 1, 5, 15 хвилин</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="724"/>
         <source>CPU Usage Summary:</source>
-        <translation type="unfinished"></translation>
+        <translation>Зведення про використання процесора:</translation>
     </message>
 </context>
 <context>
@@ -1059,7 +1059,7 @@
     <message>
         <location filename="../qps.cpp" line="179"/>
         <source>Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Сеанс</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="183"/>
