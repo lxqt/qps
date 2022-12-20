@@ -245,12 +245,12 @@
     <message>
         <location filename="../infobar.cpp" line="782"/>
         <source>I/O Summary:</source>
-        <translation type="unfinished"></translation>
+        <translation>I/O Resumo:</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="816"/>
         <source>No input or output</source>
-        <translation type="unfinished"></translation>
+        <translation>Sem entrada ou saída</translation>
     </message>
 </context>
 <context>
@@ -959,7 +959,7 @@
         <location filename="../infobar.cpp" line="430"/>
         <location filename="../infobar.cpp" line="437"/>
         <source>User: </source>
-        <translation type="unfinished"></translation>
+        <translation>Usuário: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="430"/>
@@ -967,31 +967,31 @@
         <location filename="../infobar.cpp" line="437"/>
         <location filename="../infobar.cpp" line="438"/>
         <source>%, </source>
-        <translation type="unfinished"></translation>
+        <translation>% </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="431"/>
         <location filename="../infobar.cpp" line="438"/>
         <source>System: </source>
-        <translation type="unfinished"></translation>
+        <translation>Sistema: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="432"/>
         <location filename="../infobar.cpp" line="439"/>
         <source>Nice: </source>
-        <translation type="unfinished"></translation>
+        <translation>Semelhante: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="432"/>
         <location filename="../infobar.cpp" line="439"/>
         <source>%</source>
-        <translation type="unfinished"></translation>
+        <translation>%</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="471"/>
         <location filename="../infobar.cpp" line="506"/>
         <source>Total: </source>
-        <translation type="unfinished"></translation>
+        <translation>Total: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="474"/>
@@ -1000,43 +1000,43 @@
         <location filename="../infobar.cpp" line="509"/>
         <location filename="../infobar.cpp" line="512"/>
         <source>, </source>
-        <translation type="unfinished"></translation>
+        <translation>, </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="474"/>
         <location filename="../infobar.cpp" line="512"/>
         <source>Used: </source>
-        <translation type="unfinished"></translation>
+        <translation>Usado: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="478"/>
         <source>Cached: </source>
-        <translation type="unfinished"></translation>
+        <translation>Gravado: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="481"/>
         <source>Buffer: </source>
-        <translation type="unfinished"></translation>
+        <translation>Buffer: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="509"/>
         <source>Free: </source>
-        <translation type="unfinished"></translation>
+        <translation>Livre: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="551"/>
         <source>Time passed after system boot</source>
-        <translation type="unfinished"></translation>
+        <translation>Tempo depois do boot</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="579"/>
         <source>Average CPU load each 1, 5 ,15 minutes</source>
-        <translation type="unfinished"></translation>
+        <translation>Carga média da CPU a cada 1, 5,15 minutos</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="724"/>
         <source>CPU Usage Summary:</source>
-        <translation type="unfinished"></translation>
+        <translation>Resumo do uso da CPU:</translation>
     </message>
 </context>
 <context>
@@ -1059,7 +1059,7 @@
     <message>
         <location filename="../qps.cpp" line="179"/>
         <source>Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Sessão</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="183"/>
@@ -1160,7 +1160,7 @@
     <message>
         <location filename="../qps.cpp" line="392"/>
         <source>Renice...</source>
-        <translation>Alterar Prioridade...</translation>
+        <translation>Editar Prioridade...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="393"/>
@@ -1195,7 +1195,7 @@
     <message>
         <location filename="../qps.cpp" line="404"/>
         <source>Other Signals</source>
-        <translation type="unfinished"></translation>
+        <translation>Outros Sinais</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="405"/>
@@ -1320,12 +1320,12 @@
     <message>
         <location filename="../qps.cpp" line="1161"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
-        <translation>Você não tem permissão para alterar a prioridade dos processos selecionados. Somente o proprietário do processo e o super-usuário são permitidos fazer isso.</translation>
+        <translation>Você não tem permissão para editar a prioridade dos processos selecionados. Somente o proprietário do processo e o super-usuário são permitidos fazer isso.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1192"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
-        <translation>Você não tem permissão para alterar a prioridade do processo %1 (%2).Somente o proprietário do processo e o super-usuário são permitidos fazer isso.</translation>
+        <translation>Você não tem permissão para editar a prioridade do processo %1 (%2).Somente o proprietário do processo e o super-usuário são permitidos fazer isso.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1199"/>
@@ -1340,7 +1340,7 @@
     <message>
         <location filename="../qps.cpp" line="1254"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
-        <translation>Você não tem permissão para alterar o agendamento e/ou a prioridade do processo %1 (%2). Somente o super-usuário pode fazer isso.</translation>
+        <translation>Você não tem permissão para editar o agendamento e/ou a prioridade do processo %1 (%2). Somente o super-usuário pode fazer isso.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1315"/>
@@ -1576,7 +1576,7 @@
         <source> This is unstable Alpha feature
  You maybe see a SEGFAULT...</source>
         <translation> Este é o recurso Alpha instável
-&#xa0;Você talvez veja um SEGFAULT...</translation>
+ Você talvez veja um SEGFAULT...</translation>
     </message>
 </context>
 <context>
