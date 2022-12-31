@@ -245,12 +245,12 @@
     <message>
         <location filename="../infobar.cpp" line="782"/>
         <source>I/O Summary:</source>
-        <translation type="unfinished"></translation>
+        <translation>Resum d&apos;E/S:</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="816"/>
         <source>No input or output</source>
-        <translation type="unfinished"></translation>
+        <translation>Sense entrada ni sortida</translation>
     </message>
 </context>
 <context>
@@ -959,7 +959,7 @@
         <location filename="../infobar.cpp" line="430"/>
         <location filename="../infobar.cpp" line="437"/>
         <source>User: </source>
-        <translation type="unfinished"></translation>
+        <translation>Usuari: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="430"/>
@@ -967,31 +967,31 @@
         <location filename="../infobar.cpp" line="437"/>
         <location filename="../infobar.cpp" line="438"/>
         <source>%, </source>
-        <translation type="unfinished"></translation>
+        <translation>%, </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="431"/>
         <location filename="../infobar.cpp" line="438"/>
         <source>System: </source>
-        <translation type="unfinished"></translation>
+        <translation>Sistema: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="432"/>
         <location filename="../infobar.cpp" line="439"/>
         <source>Nice: </source>
-        <translation type="unfinished"></translation>
+        <translation>Genial: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="432"/>
         <location filename="../infobar.cpp" line="439"/>
         <source>%</source>
-        <translation type="unfinished"></translation>
+        <translation>%</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="471"/>
         <location filename="../infobar.cpp" line="506"/>
         <source>Total: </source>
-        <translation type="unfinished"></translation>
+        <translation>Total: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="474"/>
@@ -1000,43 +1000,43 @@
         <location filename="../infobar.cpp" line="509"/>
         <location filename="../infobar.cpp" line="512"/>
         <source>, </source>
-        <translation type="unfinished"></translation>
+        <translation>, </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="474"/>
         <location filename="../infobar.cpp" line="512"/>
         <source>Used: </source>
-        <translation type="unfinished"></translation>
+        <translation>Utilitzat: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="478"/>
         <source>Cached: </source>
-        <translation type="unfinished"></translation>
+        <translation>Memòria cau: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="481"/>
         <source>Buffer: </source>
-        <translation type="unfinished"></translation>
+        <translation>Memòria intermèdia: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="509"/>
         <source>Free: </source>
-        <translation type="unfinished"></translation>
+        <translation>Lliure: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="551"/>
         <source>Time passed after system boot</source>
-        <translation type="unfinished"></translation>
+        <translation>Temps usat després de l&apos;arrencada del sistema</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="579"/>
         <source>Average CPU load each 1, 5 ,15 minutes</source>
-        <translation type="unfinished"></translation>
+        <translation>Càrrega mitjana de la CPU cada 1, 5 ,15 minuts</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="724"/>
         <source>CPU Usage Summary:</source>
-        <translation type="unfinished"></translation>
+        <translation>Resum de l&apos;ús de la CPU:</translation>
     </message>
 </context>
 <context>
@@ -1059,7 +1059,7 @@
     <message>
         <location filename="../qps.cpp" line="179"/>
         <source>Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Sessió</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="183"/>
@@ -1155,12 +1155,12 @@
     <message>
         <location filename="../qps.cpp" line="391"/>
         <source>context popup</source>
-        <translation></translation>
+        <translation>menú contextual</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="392"/>
         <source>Renice...</source>
-        <translation></translation>
+        <translation>Canvia&apos;n la prioritat</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="393"/>
@@ -1295,7 +1295,7 @@
     <message>
         <location filename="../qps.cpp" line="707"/>
         <source>Show Control Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra la barra de control</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="718"/>
