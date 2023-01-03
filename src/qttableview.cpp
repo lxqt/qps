@@ -873,7 +873,7 @@ void QtTableView::repaintCell(int row, int col, bool /*usecache*/) // false
         return;
 
     QRect uR = QRect(xPos, yPos, cellWidth(col), cellHeight(row));
-    view->repaint(uR.intersected(viewRect())); // slow
+    view->update(uR.intersected(viewRect()));
 }
 
 // using
@@ -1038,13 +1038,13 @@ void QtTableView::repaintChanged() // only fullpainting
         QRect r = viewR;
         r.setLeft(xPos);
         r.setBottom(yPos < maxY ? yPos : maxY);
-        view->repaint(r.intersected(updateR));
+        view->update(r.intersected(updateR));
     }
     if (yPos <= maxY)
     {
         QRect r = viewR;
         r.setTop(yPos);
-        view->repaint(r.intersected(updateR)); // why? CPU +2~3% -> rect.unite()
+        view->update(r.intersected(updateR)); // why? CPU +2~3% -> rect.unite()
     }
 }
 
