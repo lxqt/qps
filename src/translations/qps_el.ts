@@ -715,7 +715,7 @@
     <message>
         <location filename="../proc.cpp" line="2696"/>
         <source>Resident set size</source>
-        <translation></translation>
+        <translation>Παραμένον συνολικό μέγεθος</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2698"/>
@@ -725,7 +725,7 @@
     <message>
         <location filename="../proc.cpp" line="2698"/>
         <source>memory usage (RSS-SHARE)</source>
-        <translation></translation>
+        <translation>χρήση μνήμης (RSS-SHARE)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2700"/>
@@ -735,7 +735,7 @@
     <message>
         <location filename="../proc.cpp" line="2700"/>
         <source>Text(code) resident set size</source>
-        <translation></translation>
+        <translation>Κείμενο (κώδικας) παραμένοντος συνολικού μεγέθους</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2702"/>
@@ -745,7 +745,7 @@
     <message>
         <location filename="../proc.cpp" line="2702"/>
         <source>Data resident set size(malloc+global variable)</source>
-        <translation></translation>
+        <translation>Συνολικό παραμένον μέγεθος δεδομένων (malloc+καθολική μεταβλητή)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2704"/>
@@ -755,17 +755,17 @@
     <message>
         <location filename="../proc.cpp" line="2704"/>
         <source>Stack size</source>
-        <translation></translation>
+        <translation>Μέγεθος στοίβας</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2706"/>
         <source>SHARE</source>
-        <translation>Κοινοποίηση</translation>
+        <translation>SHARE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2706"/>
         <source>Shared memory with other libs</source>
-        <translation></translation>
+        <translation>Μνήμη κοινόχρηστη με άλλες βιβλιοθήκες</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2708"/>
@@ -775,7 +775,7 @@
     <message>
         <location filename="../proc.cpp" line="2708"/>
         <source>Kbytes on swap device</source>
-        <translation></translation>
+        <translation>Kbyte στην συσκευή swap</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2710"/>
@@ -805,7 +805,7 @@
     <message>
         <location filename="../proc.cpp" line="2714"/>
         <source>Number of dirty (non-written) pages</source>
-        <translation></translation>
+        <translation>Αριθμός «ακάθαρτων» (μη εγγεγραμμένων) σελίδων</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2716"/>
@@ -835,7 +835,7 @@
     <message>
         <location filename="../proc.cpp" line="2720"/>
         <source>Kernel function where process is sleeping</source>
-        <translation></translation>
+        <translation>Λειτουργία πυρήνα όπου η διεργασία είναι σε κοίμηση</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2722"/>
@@ -845,7 +845,7 @@
     <message>
         <location filename="../proc.cpp" line="2722"/>
         <source>Weighted percentage of CPU (30 s average)</source>
-        <translation></translation>
+        <translation>Σταθμισμένο ποσοστό CPU (30 δευτ μέσο όρο)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2724"/>
@@ -865,7 +865,7 @@
     <message>
         <location filename="../proc.cpp" line="2726"/>
         <source>Percentage of memory used (RSS/total mem)</source>
-        <translation></translation>
+        <translation>Ποσοστό της χρησιμοποιούμενης μνήμης (RSS/συνολική μνήμ)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2728"/>
@@ -875,7 +875,7 @@
     <message>
         <location filename="../proc.cpp" line="2728"/>
         <source>Time process started</source>
-        <translation></translation>
+        <translation>Χρόνος έναρξης της διεργασίας</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2730"/>
@@ -885,7 +885,7 @@
     <message>
         <location filename="../proc.cpp" line="2730"/>
         <source>Total CPU time used since start</source>
-        <translation></translation>
+        <translation>Συνολικός χρόνος χρήσης της CPU από την εκκίνηση</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2732"/>
@@ -895,7 +895,7 @@
     <message>
         <location filename="../proc.cpp" line="2732"/>
         <source>CPU the process is executing on (SMP system)</source>
-        <translation></translation>
+        <translation>Η CPU στην οποία εκτελείται η διεργασία (σύστημα SMP)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2734"/>
@@ -915,7 +915,7 @@
     <message>
         <location filename="../proc.cpp" line="2738"/>
         <source>Current working directory</source>
-        <translation></translation>
+        <translation>Τρέχων κατάλογος εργασίας</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2739"/>
@@ -925,7 +925,7 @@
     <message>
         <location filename="../proc.cpp" line="2739"/>
         <source>Root directory of process</source>
-        <translation></translation>
+        <translation>Ριζικός κατάλογος της διεργασίας</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2742"/>
@@ -935,7 +935,7 @@
     <message>
         <location filename="../proc.cpp" line="2742"/>
         <source>Command line that started the process</source>
-        <translation></translation>
+        <translation>Γραμμή εντολής που ξεκίνησε την διεργασία</translation>
     </message>
 </context>
 <context>
@@ -1044,12 +1044,12 @@
     <message>
         <location filename="../qps.cpp" line="174"/>
         <source>header_popup</source>
-        <translation></translation>
+        <translation>αναδυόμενο_επικεφαλίδας</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="175"/>
         <source>Remove Field</source>
-        <translation></translation>
+        <translation>Αφαίρεση πεδίου</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="176"/>
@@ -1089,27 +1089,27 @@
     <message>
         <location filename="../qps.cpp" line="193"/>
         <source>Basic Fields </source>
-        <translation></translation>
+        <translation>Βασικά πεδία </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="195"/>
         <source>Jobs Fields </source>
-        <translation></translation>
+        <translation>Πεδία εργασιών </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="197"/>
         <source>Memory Fields </source>
-        <translation></translation>
+        <translation>Πεδία μνήμης </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="200"/>
         <source>Scheduling Fields </source>
-        <translation></translation>
+        <translation>Πεδία προγραμματισμού </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="217"/>
         <source>Select Custom Fields...</source>
-        <translation></translation>
+        <translation>Επιλογή προσαρμοσμένων πεδίων...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="226"/>
@@ -1119,12 +1119,12 @@
     <message>
         <location filename="../qps.cpp" line="227"/>
         <source>Update Period...</source>
-        <translation></translation>
+        <translation>Περίοδος ενημέρωσης...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="236"/>
         <source>Show Status bar</source>
-        <translation></translation>
+        <translation>Εμφάνιση γραμμής κατάστασης</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="245"/>
@@ -1155,7 +1155,7 @@
     <message>
         <location filename="../qps.cpp" line="391"/>
         <source>context popup</source>
-        <translation></translation>
+        <translation>αναδυόμενο σχετικού περιεχομένου</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="392"/>
@@ -1165,7 +1165,7 @@
     <message>
         <location filename="../qps.cpp" line="393"/>
         <source>Scheduling...</source>
-        <translation>Προγραμματισμός</translation>
+        <translation>Προγραμματισμός...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="395"/>
@@ -1200,87 +1200,87 @@
     <message>
         <location filename="../qps.cpp" line="405"/>
         <source>SIGINT (interrupt)</source>
-        <translation></translation>
+        <translation>SIGINT (διακοπή)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="407"/>
         <source>SIGCONT (continue)</source>
-        <translation></translation>
+        <translation>SIGCONT (συνέχιση)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="409"/>
         <source>SIGSTOP (stop)</source>
-        <translation></translation>
+        <translation>SIGSTOP (τερματισμός)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="411"/>
         <source>SIGQUIT (quit)</source>
-        <translation></translation>
+        <translation>SIGQUIT (έξοδος)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="413"/>
         <source>SIGILL (illegal instruction)</source>
-        <translation></translation>
+        <translation>SIGILL (παράνομη εντολή)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="415"/>
         <source>SIGABRT (abort)</source>
-        <translation></translation>
+        <translation>SIGABRT (εγκατάλειψη)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="417"/>
         <source>SIGFPE (floating point exception)</source>
-        <translation></translation>
+        <translation>SIGFPE (σφάλμα αριθμού κινητής υποδιαστολής)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="419"/>
         <source>SIGSEGV (segmentation violation)</source>
-        <translation></translation>
+        <translation type="unfinished">SIGSEGV (segmentation violation)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="421"/>
         <source>SIGPIPE (broken pipe)</source>
-        <translation></translation>
+        <translation type="unfinished">SIGPIPE (broken pipe)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="423"/>
         <source>SIGALRM (timer signal)</source>
-        <translation></translation>
+        <translation type="unfinished">SIGALRM (timer signal)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="425"/>
         <source>SIGUSR1 (user-defined 1)</source>
-        <translation></translation>
+        <translation>SIGUSR1 (καθορισμένη από τον χρήστη 1)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="427"/>
         <source>SIGUSR2 (user-defined 2)</source>
-        <translation></translation>
+        <translation>SIGUSR2 (καθορισμένη από τον χρήστη 2)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="429"/>
         <source>SIGCHLD (child death)</source>
-        <translation></translation>
+        <translation type="unfinished">SIGCHLD (child death)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="431"/>
         <source>SIGTSTP (stop from tty)</source>
-        <translation></translation>
+        <translation type="unfinished">SIGTSTP (stop from tty)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="433"/>
         <source>SIGTTIN (tty input)</source>
-        <translation></translation>
+        <translation type="unfinished">SIGTTIN (tty input)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="435"/>
         <source>SIGTTOU (tty output)</source>
-        <translation></translation>
+        <translation>SIGTTOU (έξοδος tty)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="442"/>
         <source>View Details</source>
-        <translation></translation>
+        <translation>Προβολή λεπτομερειών</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="695"/>
@@ -1320,27 +1320,27 @@
     <message>
         <location filename="../qps.cpp" line="1161"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
-        <translation></translation>
+        <translation type="unfinished">You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1192"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
-        <translation></translation>
+        <translation type="unfinished">You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1199"/>
         <source>Only the super-user may lower the nice value of a process.</source>
-        <translation></translation>
+        <translation type="unfinished">Only the super-user may lower the nice value of a process.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1220"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
-        <translation></translation>
+        <translation type="unfinished">Only the super-user may change the scheduling policy and static priority.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1254"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
-        <translation></translation>
+        <translation type="unfinished">You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1315"/>
@@ -1380,7 +1380,7 @@
     <message>
         <location filename="../qps.cpp" line="1718"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Αρχική δημιουργία του Qps από&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Συνεισφέροντες&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
     </message>
 </context>
 <context>
@@ -1388,27 +1388,27 @@
     <message>
         <location filename="../dialogs.cpp" line="292"/>
         <source>Change scheduling</source>
-        <translation></translation>
+        <translation>Αλλαγή προγραμματισμού</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="296"/>
         <source>Scheduling Policy</source>
-        <translation></translation>
+        <translation>Πολιτική προγραμματισμού</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="298"/>
         <source>SCHED_OTHER (time-sharing)</source>
-        <translation></translation>
+        <translation type="unfinished">SCHED_OTHER (time-sharing)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="299"/>
         <source>SCHED_FIFO (real-time)</source>
-        <translation></translation>
+        <translation>SCHED_FIFO (πραγματικού χρόνου)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="300"/>
         <source>SCHED_RR (real-time)</source>
-        <translation></translation>
+        <translation>SCHED_RR (πραγματικού χρόνου)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="314"/>
@@ -1423,7 +1423,7 @@
     <message>
         <location filename="../dialogs.cpp" line="346"/>
         <source>Priority (1-99):</source>
-        <translation>Προτεραιότητα</translation>
+        <translation>Προτεραιότητα (1-99):</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="379"/>
@@ -1433,7 +1433,7 @@
     <message>
         <location filename="../dialogs.cpp" line="380"/>
         <source>The priority must be in the range 1..99</source>
-        <translation></translation>
+        <translation type="unfinished">The priority must be in the range 1..99</translation>
     </message>
 </context>
 <context>
@@ -1454,12 +1454,12 @@
     <message>
         <location filename="../dialogs.cpp" line="179"/>
         <source>Renice Process</source>
-        <translation></translation>
+        <translation type="unfinished">Renice Process</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="185"/>
         <source>New nice value:</source>
-        <translation></translation>
+        <translation type="unfinished">New nice value:</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="225"/>
@@ -1492,7 +1492,7 @@
     <message>
         <location filename="../details.cpp" line="148"/>
         <source>Protocol (TCP or UDP)</source>
-        <translation></translation>
+        <translation>Πρωτόκολλο (TCP ή UDP)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="149"/>
@@ -1502,7 +1502,7 @@
     <message>
         <location filename="../details.cpp" line="149"/>
         <source>Bytes in receive queue</source>
-        <translation></translation>
+        <translation>Byte στην ουρά αναμονής</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="150"/>
@@ -1512,12 +1512,12 @@
     <message>
         <location filename="../details.cpp" line="150"/>
         <source>Bytes in send queue</source>
-        <translation></translation>
+        <translation>Byte στην ουρά αποστολής</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>Local Addr</source>
-        <translation></translation>
+        <translation>Τοπική διεύθυνση</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
@@ -1538,7 +1538,7 @@
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Remote Addr</source>
-        <translation></translation>
+        <translation>Απομακρυσμένη διεύθυνση</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
@@ -1566,7 +1566,7 @@
     <message>
         <location filename="../misc.cpp" line="624"/>
         <source>Process count: %1</source>
-        <translation></translation>
+        <translation>Πλήθος διεργασιών: %1</translation>
     </message>
 </context>
 <context>
@@ -1575,7 +1575,8 @@
         <location filename="../misc.cpp" line="343"/>
         <source> This is unstable Alpha feature
  You maybe see a SEGFAULT...</source>
-        <translation></translation>
+        <translation type="unfinished"> This is unstable Alpha feature
+ You maybe see a SEGFAULT...</translation>
     </message>
 </context>
 <context>

@@ -311,7 +311,7 @@
     <message>
         <location filename="../details.cpp" line="394"/>
         <source>Perm</source>
-        <translation></translation>
+        <translation>Permisos (perm)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="394"/>
@@ -745,7 +745,7 @@
     <message>
         <location filename="../proc.cpp" line="2702"/>
         <source>Data resident set size(malloc+global variable)</source>
-        <translation></translation>
+        <translation>Mida del conjunt resident de dades (malloc+variable global)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2704"/>
@@ -1044,7 +1044,7 @@
     <message>
         <location filename="../qps.cpp" line="174"/>
         <source>header_popup</source>
-        <translation></translation>
+        <translation>capçalera_emergent</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="175"/>
@@ -1160,7 +1160,7 @@
     <message>
         <location filename="../qps.cpp" line="392"/>
         <source>Renice...</source>
-        <translation>Canvia&apos;n la prioritat</translation>
+        <translation>Canvia la prioritat (renice)...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="393"/>
@@ -1175,7 +1175,7 @@
     <message>
         <location filename="../qps.cpp" line="397"/>
         <source>Hangup</source>
-        <translation></translation>
+        <translation>Suspendre</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="398"/>
@@ -1295,12 +1295,12 @@
     <message>
         <location filename="../qps.cpp" line="707"/>
         <source>Show Control Bar</source>
-        <translation>Mostra la barra de control</translation>
+        <translation>Mostra la barra de controls</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="718"/>
         <source>Include Child Times</source>
-        <translation>Inclou els temps dels processos fills</translation>
+        <translation>Inclou el temps d&apos;execució dels processos fills</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="290"/>
@@ -1320,27 +1320,27 @@
     <message>
         <location filename="../qps.cpp" line="1161"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
-        <translation></translation>
+        <translation>No teniu permís per a reactivar els processos seleccionats. Només el propietari del procés i el superusuari poden fer això.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1192"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
-        <translation></translation>
+        <translation>No teniu permís per reiniciar el procés %1 (%2). Només el propietari del procés i el superusuari poden fer això.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1199"/>
         <source>Only the super-user may lower the nice value of a process.</source>
-        <translation></translation>
+        <translation>Només el superusuari pot reduir el valor de prioritat d&apos;un procés (nice).</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1220"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
-        <translation></translation>
+        <translation>Només el superusuari pot canviar la política de programació i la prioritat estàtica.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1254"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
-        <translation></translation>
+        <translation>No teniu permís per a canviar la planificació i/o la prioritat del procés %1 (%2). Només el superusuari pot fer-ho.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1315"/>
@@ -1365,7 +1365,7 @@
     <message>
         <location filename="../qps.cpp" line="1349"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
-        <translation></translation>
+        <translation>No teniu permís per enviar un senyal al procés %1 (%2). Només el superusuari i el propietari del procés poden enviar-li senyals.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1696"/>
@@ -1380,7 +1380,7 @@
     <message>
         <location filename="../qps.cpp" line="1718"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
-        <translation></translation>
+        <translation>&lt;b&gt;Qps originals per&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Col·laboradors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
     </message>
 </context>
 <context>
@@ -1441,7 +1441,7 @@
     <message>
         <location filename="../misc.cpp" line="588"/>
         <source>PID, COMMAND, USER...</source>
-        <translation type="unfinished">IDENTIFICADOR DE PROCÉS, ORDRE, USUARI...</translation>
+        <translation>IDENTIFICADOR DE PROCÉS, ORDRE, USUARI...</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="589"/>
@@ -1454,12 +1454,12 @@
     <message>
         <location filename="../dialogs.cpp" line="179"/>
         <source>Renice Process</source>
-        <translation></translation>
+        <translation>Canviar la prioritat d&apos;un procés executant-se (renice)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="185"/>
         <source>New nice value:</source>
-        <translation></translation>
+        <translation>Nou valor de prioritat (nice):</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="225"/>
@@ -1487,7 +1487,7 @@
     <message>
         <location filename="../details.cpp" line="148"/>
         <source>Proto</source>
-        <translation></translation>
+        <translation>Protocol</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="148"/>
@@ -1575,7 +1575,8 @@
         <location filename="../misc.cpp" line="343"/>
         <source> This is unstable Alpha feature
  You maybe see a SEGFAULT...</source>
-        <translation></translation>
+        <translation> Aquesta característica alfa és inestable
+És possible que veieu un SEGFAULT...</translation>
     </message>
 </context>
 <context>
