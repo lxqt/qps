@@ -1235,17 +1235,17 @@
     <message>
         <location filename="../qps.cpp" line="419"/>
         <source>SIGSEGV (segmentation violation)</source>
-        <translation type="unfinished">SIGSEGV (segmentation violation)</translation>
+        <translation>SIGSEGV (παραβίαση τμηματοποίησης)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="421"/>
         <source>SIGPIPE (broken pipe)</source>
-        <translation type="unfinished">SIGPIPE (broken pipe)</translation>
+        <translation>SIGPIPE (σφάλμα διασωλήνωσης)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="423"/>
         <source>SIGALRM (timer signal)</source>
-        <translation type="unfinished">SIGALRM (timer signal)</translation>
+        <translation>SIGALRM (σήμα χρονοδιακόπτη)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="425"/>
