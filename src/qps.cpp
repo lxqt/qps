@@ -164,6 +164,7 @@ Qps::Qps()
     default_icon = nullptr;
     default_icon_set = false;
     explicit_quit = false;
+    under_wayland = QGuiApplication::platformName() == "wayland";
 
     setIconSize(24, 24); // Important!!
                          //	setMouseTracking(true); // no need?
@@ -801,7 +802,8 @@ void Qps::menu_custom()
     if (field_win)
     {
         field_win->show();
-        field_win->raise();
+        if (!under_wayland)
+            field_win->raise();
     }
     else
     {
@@ -1114,13 +1116,15 @@ void Qps::menu_prefs()
     if (prefs_win)
     {
         prefs_win->show();
-        prefs_win->raise();
+        if (!under_wayland)
+            prefs_win->raise();
     }
     else
     {
         prefs_win = new Preferences(this);
         prefs_win->show();
-        prefs_win->raise();
+        if (!under_wayland)
+            prefs_win->raise();
 
         connect(prefs_win, &Preferences::prefs_change, this, &Qps::config_change);
     }
@@ -1490,15 +1494,18 @@ void Qps::write_settings() // save setting
     set.beginGroup("geometry");
     set.setValue("width", geometry().width());
     set.setValue("height", geometry().height());
-    if (isVisible())
+    if (!under_wayland)
     {
-        set.setValue("x", geometry().x());
-        set.setValue("y", geometry().y());
-    }
-    else
-    {
-        set.setValue("x", winPos.x());
-        set.setValue("y", winPos.y());
+        if (isVisible())
+        {
+            set.setValue("x", geometry().x());
+            set.setValue("y", geometry().y());
+        }
+        else
+        {
+            set.setValue("x", winPos.x());
+            set.setValue("y", winPos.y());
+        }
     }
     set.endGroup();
 

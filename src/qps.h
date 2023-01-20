@@ -292,6 +292,8 @@ class Qps : public QWidget
 
     QPoint winPos;
     bool explicit_quit;
+
+    bool under_wayland;
 };
 
 #endif // QPS_H
