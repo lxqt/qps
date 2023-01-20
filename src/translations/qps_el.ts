@@ -1265,7 +1265,7 @@
     <message>
         <location filename="../qps.cpp" line="431"/>
         <source>SIGTSTP (stop from tty)</source>
-        <translation type="unfinished">SIGTSTP (stop from tty)</translation>
+        <translation>SIGTSTP (διακοπή από tty)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="433"/>
@@ -1320,12 +1320,12 @@
     <message>
         <location filename="../qps.cpp" line="1161"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
-        <translation type="unfinished">You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</translation>
+        <translation>Δεν έχετε δικαίωμα αλλαγής της προτεραιότητας των επιλεγμένων διεργασιών. Μόνο ο ιδιοκτήτης της διεργασίας και ο υπερχρήστης επιτρέπεται να το κάνουν.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1192"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
-        <translation type="unfinished">You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</translation>
+        <translation>Δεν έχετε δικαίωμα αλλαγής της προτεραιότητας για την διεργασία %1 (%2). Μόνο ο ιδιοκτήτης της διεργασίας και ο υπερχρήστης επιτρέπεται να το κάνουν.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1199"/>
