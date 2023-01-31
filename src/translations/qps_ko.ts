@@ -979,7 +979,7 @@
         <location filename="../infobar.cpp" line="432"/>
         <location filename="../infobar.cpp" line="439"/>
         <source>Nice: </source>
-        <translation type="unfinished"></translation>
+        <translation>우선순위: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="432"/>
