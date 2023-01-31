@@ -186,7 +186,7 @@
     <message>
         <location filename="../details.cpp" line="606"/>
         <source>Value</source>
-        <translation type="unfinished">Wartość</translation>
+        <translation>Wartość</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="606"/>
@@ -204,7 +204,7 @@
     <message>
         <location filename="../fieldsel.cpp" line="75"/>
         <source>Close</source>
-        <translation type="unfinished">Zamknij</translation>
+        <translation>Zamknij</translation>
     </message>
 </context>
 <context>
@@ -212,7 +212,7 @@
     <message>
         <location filename="../details.cpp" line="521"/>
         <source>Fd</source>
-        <translation type="unfinished"></translation>
+        <translation>Fd</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="521"/>
@@ -232,7 +232,7 @@
     <message>
         <location filename="../details.cpp" line="525"/>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nazwa</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="525"/>
@@ -311,7 +311,7 @@
     <message>
         <location filename="../details.cpp" line="394"/>
         <source>Perm</source>
-        <translation type="unfinished"></translation>
+        <translation>Uprawnienia</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="394"/>
@@ -321,7 +321,7 @@
     <message>
         <location filename="../details.cpp" line="395"/>
         <source>Offset</source>
-        <translation type="unfinished"></translation>
+        <translation>Przesunięcie</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="395"/>
@@ -351,7 +351,7 @@
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>File</source>
-        <translation type="unfinished"></translation>
+        <translation>Plik</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
@@ -364,7 +364,7 @@
     <message>
         <location filename="../dialogs.cpp" line="264"/>
         <source>Permission</source>
-        <translation type="unfinished"></translation>
+        <translation>Uprawnienie</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="273"/>
@@ -387,12 +387,12 @@
     <message>
         <location filename="../prefs.cpp" line="150"/>
         <source>Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Preferencje</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="157"/>
         <source>Setting</source>
-        <translation type="unfinished"></translation>
+        <translation>Ustawienie</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="191"/>
@@ -412,7 +412,7 @@
     <message>
         <location filename="../prefs.cpp" line="205"/>
         <source>default</source>
-        <translation type="unfinished"></translation>
+        <translation>domyślne</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="206"/>
@@ -422,7 +422,7 @@
     <message>
         <location filename="../prefs.cpp" line="240"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Wygląd</translation>
     </message>
 </context>
 <context>
@@ -430,7 +430,7 @@
     <message>
         <location filename="../proc.cpp" line="2639"/>
         <source>PID</source>
-        <translation type="unfinished"></translation>
+        <translation>PID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2639"/>
@@ -440,7 +440,7 @@
     <message>
         <location filename="../proc.cpp" line="2641"/>
         <source>TGID</source>
-        <translation type="unfinished"></translation>
+        <translation>TGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2641"/>
@@ -450,7 +450,7 @@
     <message>
         <location filename="../proc.cpp" line="2643"/>
         <source>PPID</source>
-        <translation type="unfinished"></translation>
+        <translation>PPID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2643"/>
@@ -460,7 +460,7 @@
     <message>
         <location filename="../proc.cpp" line="2645"/>
         <source>PGID</source>
-        <translation type="unfinished"></translation>
+        <translation>PGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2645"/>
@@ -470,7 +470,7 @@
     <message>
         <location filename="../proc.cpp" line="2647"/>
         <source>SID</source>
-        <translation type="unfinished"></translation>
+        <translation>SID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2647"/>
@@ -480,17 +480,17 @@
     <message>
         <location filename="../proc.cpp" line="2649"/>
         <source>TTY</source>
-        <translation type="unfinished"></translation>
+        <translation>TTY</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2649"/>
         <source>Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminal</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2651"/>
         <source>TPGID</source>
-        <translation type="unfinished"></translation>
+        <translation>TPGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2651"/>
@@ -500,7 +500,7 @@
     <message>
         <location filename="../proc.cpp" line="2653"/>
         <source>USER</source>
-        <translation type="unfinished"></translation>
+        <translation>UŻYTKOWNIK</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2653"/>
@@ -510,7 +510,7 @@
     <message>
         <location filename="../proc.cpp" line="2655"/>
         <source>GROUP</source>
-        <translation type="unfinished"></translation>
+        <translation>GRUPA</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2655"/>
@@ -520,7 +520,7 @@
     <message>
         <location filename="../proc.cpp" line="2657"/>
         <source>UID</source>
-        <translation type="unfinished"></translation>
+        <translation>UID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2657"/>
@@ -530,7 +530,7 @@
     <message>
         <location filename="../proc.cpp" line="2659"/>
         <source>EUID</source>
-        <translation type="unfinished"></translation>
+        <translation>EUID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2659"/>
@@ -540,7 +540,7 @@
     <message>
         <location filename="../proc.cpp" line="2661"/>
         <source>SUID</source>
-        <translation type="unfinished"></translation>
+        <translation>SUID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2661"/>
@@ -550,7 +550,7 @@
     <message>
         <location filename="../proc.cpp" line="2663"/>
         <source>FSUID</source>
-        <translation type="unfinished"></translation>
+        <translation>FSUID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2663"/>
@@ -953,7 +953,7 @@
     <message>
         <location filename="../qps.cpp" line="1640"/>
         <source>Quit</source>
-        <translation type="unfinished">Wyjdź</translation>
+        <translation>Wyjdź</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="430"/>
@@ -985,7 +985,7 @@
         <location filename="../infobar.cpp" line="432"/>
         <location filename="../infobar.cpp" line="439"/>
         <source>%</source>
-        <translation type="unfinished">%</translation>
+        <translation>%</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="471"/>
@@ -1185,12 +1185,12 @@
     <message>
         <location filename="../qps.cpp" line="399"/>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Zatrzymaj</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="401"/>
         <source>Continue</source>
-        <translation type="unfinished"></translation>
+        <translation>Kontynuuj</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="404"/>
@@ -1305,7 +1305,7 @@
     <message>
         <location filename="../qps.cpp" line="290"/>
         <source>Quit</source>
-        <translation type="unfinished">Wyjdź</translation>
+        <translation>Wyjdź</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1160"/>
@@ -1413,12 +1413,12 @@
     <message>
         <location filename="../dialogs.cpp" line="314"/>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="316"/>
         <source>Cancel</source>
-        <translation type="unfinished">Anuluj</translation>
+        <translation>Anuluj</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="346"/>
@@ -1464,12 +1464,12 @@
     <message>
         <location filename="../dialogs.cpp" line="225"/>
         <source>Cancel</source>
-        <translation type="unfinished">Anuluj</translation>
+        <translation>Anuluj</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="229"/>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -1482,7 +1482,7 @@
     <message>
         <location filename="../details.cpp" line="147"/>
         <source>File descriptor</source>
-        <translation type="unfinished">Deskryptor pliku</translation>
+        <translation>Deskryptor pliku</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="148"/>

@@ -1260,7 +1260,7 @@
     <message>
         <location filename="../qps.cpp" line="429"/>
         <source>SIGCHLD (child death)</source>
-        <translation type="unfinished">SIGCHLD (child death)</translation>
+        <translation>SIGCHLD (νεκρός απόγονος)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="431"/>
@@ -1270,7 +1270,7 @@
     <message>
         <location filename="../qps.cpp" line="433"/>
         <source>SIGTTIN (tty input)</source>
-        <translation type="unfinished">SIGTTIN (tty input)</translation>
+        <translation>SIGTTIN (εισαγωγή tty)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="435"/>
@@ -1330,17 +1330,17 @@
     <message>
         <location filename="../qps.cpp" line="1199"/>
         <source>Only the super-user may lower the nice value of a process.</source>
-        <translation type="unfinished">Only the super-user may lower the nice value of a process.</translation>
+        <translation>Μόνο ο υπερχρήστης μπορεί να χαμηλώσει την προτεραιότητα μιας διεργασίας.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1220"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
-        <translation type="unfinished">Only the super-user may change the scheduling policy and static priority.</translation>
+        <translation>Μόνο ο υπερχρήστης μπορεί να αλλάξει την πολιτική προγραμματισμού και την στατική προτεραιότητα.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1254"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
-        <translation type="unfinished">You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</translation>
+        <translation>Δεν έχετε δικαιώματα αλλαγής του προγραμματισμού και/ή της προτεραιότητας της διεργασίας %1 (%2). Μόνο ο υπερχρήστης μπορεί να πραγματοποιήσει την ενέργεια αυτή.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1315"/>
@@ -1398,7 +1398,7 @@
     <message>
         <location filename="../dialogs.cpp" line="298"/>
         <source>SCHED_OTHER (time-sharing)</source>
-        <translation type="unfinished">SCHED_OTHER (time-sharing)</translation>
+        <translation>SCHED_OTHER (κοινού χρόνου)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="299"/>
@@ -1433,7 +1433,7 @@
     <message>
         <location filename="../dialogs.cpp" line="380"/>
         <source>The priority must be in the range 1..99</source>
-        <translation type="unfinished">The priority must be in the range 1..99</translation>
+        <translation>Η προτεραιότητα πρέπει να είναι στο εύρος 1..99</translation>
     </message>
 </context>
 <context>
@@ -1454,12 +1454,12 @@
     <message>
         <location filename="../dialogs.cpp" line="179"/>
         <source>Renice Process</source>
-        <translation type="unfinished">Renice Process</translation>
+        <translation>Προτεραιότητα διεργασίας</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="185"/>
         <source>New nice value:</source>
-        <translation type="unfinished">New nice value:</translation>
+        <translation>Νέα τιμή nice:</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="225"/>
@@ -1575,8 +1575,8 @@
         <location filename="../misc.cpp" line="343"/>
         <source> This is unstable Alpha feature
  You maybe see a SEGFAULT...</source>
-        <translation type="unfinished"> This is unstable Alpha feature
- You maybe see a SEGFAULT...</translation>
+        <translation> Πρόκειται για ένα μη σταθερό χαρακτηριστικό alpha
+Μπορεί να δείτε ένα SEGFAULT...</translation>
     </message>
 </context>
 <context>
