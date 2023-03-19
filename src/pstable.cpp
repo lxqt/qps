@@ -376,8 +376,7 @@ Pstable::Pstable(QWidget *parent, Procview *pv) : HeadedTable(parent, 0)
 
     connect(this, &HeadedTable::titleClicked, this, &Pstable::setSortColumn);
     connect(this, &HeadedTable::foldSubTree, this, &Pstable::subtree_folded);
-    connect(head, SIGNAL(toolTip(QPoint, int)), this,
-            SLOT(showTip(QPoint, int)));
+    connect(head, &TableHead::toolTip, this, &Pstable::showTip);
     connect(this, &HeadedTable::flyOnCell, this, &Pstable::mouseOnCell );
     connect(this, &HeadedTable::outOfCell, this, &Pstable::mouseOutOfCell);
 }
