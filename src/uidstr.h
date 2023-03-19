@@ -33,8 +33,8 @@ class Uidstr
     static QString groupName(int gid);
 
   private:
-    static QHash<int, char *> udict;
-    static QHash<int, char *> gdict;
+    static QHash<int, QString> udict;
+    static QHash<int, QString> gdict;
 };
 
 #endif // UIDSTR_H
