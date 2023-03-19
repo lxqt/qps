@@ -481,8 +481,6 @@ void TableBody::paintCell(QPainter *p, int row, int col)
 
     p->drawText(gap, 0, w, h, align, htable->text(row, col));
 
-    //htable->overpaintCell(p, row, col, gap); // senseless; Pstable::overpaintCell() should be removed
-
     // cache write!
     attr->text = htable->text(row, col);
     attr->xpos = htable->colXPos(col);

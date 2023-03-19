@@ -315,7 +315,6 @@ signals:
     virtual bool lastChild(int /*row*/) { return false; }
     virtual bool columnMovable(int /*col*/) { return true; }
     // virtual bool modified(int row){return true;};
-    virtual void overpaintCell(QPainter */*p*/, int /*row*/, int /*col*/, int /*xpos*/){}
 
     void resizeEvent(QResizeEvent *) override;
 
