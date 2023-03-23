@@ -91,53 +91,7 @@ QString Pstable::dragTitle(int col)
     return procview->cats[col]->name;
 }
 
-// TESTING
-void Pstable::overpaintCell(QPainter *p, int row, int col, int xpos)
-{
-    if (col != 0)
-        return;
-    if (procview->cats[col]->id != F_CMD)
-        return;
 
-    int w;
-
-    Procinfo *pi = procview->linear_procs[row];
-
-    int n = pi->nthreads;
-    if (n == 1)
-        return;
-#ifdef LINUX
-    if (pi->pid != pi->tgid)
-        return; // LINUX
-
-#endif
-    w = p->fontMetrics().horizontalAdvance(text(row, col));
-
-    QFont font = p->font();
-    int size = font.pointSize(); // point size
-
-    if (size <= 0)
-        return; // saver!
-
-    int h = body->cellHeight();
-    h = p->fontMetrics().height(); // return pixel
-
-    int msize = h * 3.0 / 8.0;
-    // printf("DEBUG: height=%d, msize=%d\n",h,msize);
-
-    if (h <= 11)
-        return; // saver!
-
-    if (msize < 6)
-        msize = 6;
-
-    // font.setPointSize(msize); // not pixel!
-    font.setPixelSize(msize); // not pixel!
-    p->setFont(font);
-    p->drawText(xpos + w + 2, msize + msize / 3, QString::number(n));
-    font.setPointSize(size);
-    p->setFont(font);
-}
 //
 QString Pstable::text(int row, int col)
 {

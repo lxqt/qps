@@ -69,7 +69,6 @@ class Pstable : public HeadedTable
     char *total_selectedRow(int col) override;
     bool columnMovable(int col) override;
 
-    void overpaintCell(QPainter *p, int row, int col, int xpos) override;
     //	virtual bool hasChildren(int row);
 
     void leaveEvent(QEvent *) override;
