@@ -625,7 +625,7 @@
     <message>
         <location filename="../proc.cpp" line="2677"/>
         <source>Number of tasks(threads) in task group</source>
-        <translation type="unfinished"></translation>
+        <translation>タスクグループ内のタスク数 (スレッド数)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2679"/>
@@ -645,7 +645,7 @@
     <message>
         <location filename="../proc.cpp" line="2681"/>
         <source>Realtime priority (0-99, more is better)</source>
-        <translation type="unfinished"></translation>
+        <translation>リアルタイム優先度 (0～99、多いほど良い)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2683"/>
@@ -705,7 +705,7 @@
     <message>
         <location filename="../proc.cpp" line="2694"/>
         <source>Virtual image size of process</source>
-        <translation type="unfinished"></translation>
+        <translation>プロセスの仮想イメージサイズ</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2696"/>
@@ -765,7 +765,7 @@
     <message>
         <location filename="../proc.cpp" line="2706"/>
         <source>Shared memory with other libs</source>
-        <translation type="unfinished"></translation>
+        <translation>他のライブラリとの共有メモリ</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2708"/>
@@ -835,7 +835,7 @@
     <message>
         <location filename="../proc.cpp" line="2720"/>
         <source>Kernel function where process is sleeping</source>
-        <translation type="unfinished"></translation>
+        <translation>プロセスがスリープしているカーネル関数</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2722"/>
@@ -855,7 +855,7 @@
     <message>
         <location filename="../proc.cpp" line="2724"/>
         <source>Percentage of CPU used since last update</source>
-        <translation type="unfinished"></translation>
+        <translation>前回更新時からの CPU 使用率</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2726"/>
@@ -875,7 +875,7 @@
     <message>
         <location filename="../proc.cpp" line="2728"/>
         <source>Time process started</source>
-        <translation type="unfinished"></translation>
+        <translation>プロセス開始時刻</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2730"/>
@@ -885,7 +885,7 @@
     <message>
         <location filename="../proc.cpp" line="2730"/>
         <source>Total CPU time used since start</source>
-        <translation type="unfinished"></translation>
+        <translation>起動時からの CPU 使用時間の合計</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2732"/>
