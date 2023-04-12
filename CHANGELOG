@@ -1,3 +1,15 @@
+2.7.0 / 2023-04-15
+==================
+ * Specify the widget when showing its tooltip (on Wayland).
+ * Corrected info-bar tooltips.
+ * Made the (PNG) font of info-bar a little larger.
+ * Don't try to save position or raise window under Wayland.
+ * Got rid of c-style string functions.
+ * Removed the redundant method `overpaintCell`.
+ * Removed all codes related to the nonexistent "command menu".
+ * Avoided `QWidget::repaint()`.
+ * Code cleanup.
+
 2.6.0 / 2022-11-05
 ==================
  * Removed some redundant variables and classes.
