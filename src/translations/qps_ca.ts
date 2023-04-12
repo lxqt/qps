@@ -941,17 +941,17 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../qps.cpp" line="1632"/>
+        <location filename="../qps.cpp" line="1639"/>
         <source>Show</source>
         <translation>Mostra</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1635"/>
+        <location filename="../qps.cpp" line="1642"/>
         <source>Hide</source>
         <translation>Oculta</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1640"/>
+        <location filename="../qps.cpp" line="1647"/>
         <source>Quit</source>
         <translation>Surt</translation>
     </message>
@@ -960,14 +960,6 @@
         <location filename="../infobar.cpp" line="437"/>
         <source>User: </source>
         <translation>Usuari: </translation>
-    </message>
-    <message>
-        <location filename="../infobar.cpp" line="430"/>
-        <location filename="../infobar.cpp" line="431"/>
-        <location filename="../infobar.cpp" line="437"/>
-        <location filename="../infobar.cpp" line="438"/>
-        <source>%, </source>
-        <translation>%, </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="431"/>
@@ -982,7 +974,11 @@
         <translation>Genial: </translation>
     </message>
     <message>
+        <location filename="../infobar.cpp" line="430"/>
+        <location filename="../infobar.cpp" line="431"/>
         <location filename="../infobar.cpp" line="432"/>
+        <location filename="../infobar.cpp" line="437"/>
+        <location filename="../infobar.cpp" line="438"/>
         <location filename="../infobar.cpp" line="439"/>
         <source>%</source>
         <translation>%</translation>
@@ -992,15 +988,6 @@
         <location filename="../infobar.cpp" line="506"/>
         <source>Total: </source>
         <translation>Total: </translation>
-    </message>
-    <message>
-        <location filename="../infobar.cpp" line="474"/>
-        <location filename="../infobar.cpp" line="478"/>
-        <location filename="../infobar.cpp" line="481"/>
-        <location filename="../infobar.cpp" line="509"/>
-        <location filename="../infobar.cpp" line="512"/>
-        <source>, </source>
-        <translation>, </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="474"/>
@@ -1042,343 +1029,343 @@
 <context>
     <name>Qps</name>
     <message>
-        <location filename="../qps.cpp" line="174"/>
+        <location filename="../qps.cpp" line="175"/>
         <source>header_popup</source>
         <translation>capçalera_emergent</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="175"/>
+        <location filename="../qps.cpp" line="176"/>
         <source>Remove Field</source>
         <translation>Suprimeix el camp</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="176"/>
+        <location filename="../qps.cpp" line="177"/>
         <source>Add Field</source>
         <translation>Afegeix un camp</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="179"/>
+        <location filename="../qps.cpp" line="180"/>
         <source>Session</source>
         <translation>Sessió</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="183"/>
+        <location filename="../qps.cpp" line="184"/>
         <source>View</source>
         <translation>Visualitza</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="184"/>
+        <location filename="../qps.cpp" line="185"/>
         <source>Process</source>
         <translation>Procés</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="185"/>
+        <location filename="../qps.cpp" line="186"/>
         <source>Log</source>
         <translation>Registre</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="190"/>
+        <location filename="../qps.cpp" line="191"/>
         <source>Fields</source>
         <translation>Camps</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="191"/>
+        <location filename="../qps.cpp" line="192"/>
         <source>Custom Fields</source>
         <translation>Camps personalitzats</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="193"/>
+        <location filename="../qps.cpp" line="194"/>
         <source>Basic Fields </source>
         <translation>Camps bàsics </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="195"/>
+        <location filename="../qps.cpp" line="196"/>
         <source>Jobs Fields </source>
         <translation>Camps dels treballs </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="197"/>
+        <location filename="../qps.cpp" line="198"/>
         <source>Memory Fields </source>
         <translation>Camps de la memòria </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="200"/>
+        <location filename="../qps.cpp" line="201"/>
         <source>Scheduling Fields </source>
         <translation>Camps de la planificació </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="217"/>
+        <location filename="../qps.cpp" line="218"/>
         <source>Select Custom Fields...</source>
         <translation>Selecciona els camps personalitzats...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="226"/>
+        <location filename="../qps.cpp" line="227"/>
         <source>Options</source>
         <translation>Opcions</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="227"/>
+        <location filename="../qps.cpp" line="228"/>
         <source>Update Period...</source>
         <translation>Període d&apos;actualització...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="236"/>
+        <location filename="../qps.cpp" line="237"/>
         <source>Show Status bar</source>
         <translation>Mostra la barra d&apos;estat</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="245"/>
+        <location filename="../qps.cpp" line="246"/>
         <source>Preferences...</source>
         <translation>Preferències...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="251"/>
+        <location filename="../qps.cpp" line="252"/>
         <source>Help</source>
         <translation>Ajuda</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="252"/>
-        <location filename="../qps.cpp" line="1680"/>
+        <location filename="../qps.cpp" line="253"/>
+        <location filename="../qps.cpp" line="1687"/>
         <source>About</source>
         <translation>Quant a</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="338"/>
+        <location filename="../qps.cpp" line="339"/>
         <source>test</source>
         <translation>prova</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="339"/>
+        <location filename="../qps.cpp" line="340"/>
         <source>Copied to Clipboard</source>
         <translation>S&apos;ha copiat al porta-retalls</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="391"/>
+        <location filename="../qps.cpp" line="392"/>
         <source>context popup</source>
         <translation>menú contextual</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="392"/>
+        <location filename="../qps.cpp" line="393"/>
         <source>Renice...</source>
         <translation>Canvia la prioritat (renice)...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="393"/>
+        <location filename="../qps.cpp" line="394"/>
         <source>Scheduling...</source>
         <translation>Planificació...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="395"/>
+        <location filename="../qps.cpp" line="396"/>
         <source>Terminate</source>
         <translation>Termina</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="397"/>
+        <location filename="../qps.cpp" line="398"/>
         <source>Hangup</source>
         <translation>Suspendre</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="398"/>
+        <location filename="../qps.cpp" line="399"/>
         <source>Kill</source>
         <translation>Mata</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="399"/>
+        <location filename="../qps.cpp" line="400"/>
         <source>Stop</source>
         <translation>Atura</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="401"/>
+        <location filename="../qps.cpp" line="402"/>
         <source>Continue</source>
         <translation>Continua</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="404"/>
+        <location filename="../qps.cpp" line="405"/>
         <source>Other Signals</source>
         <translation>Altres senyals</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="405"/>
+        <location filename="../qps.cpp" line="406"/>
         <source>SIGINT (interrupt)</source>
         <translation>SIGINT (interromp)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="407"/>
+        <location filename="../qps.cpp" line="408"/>
         <source>SIGCONT (continue)</source>
         <translation>SIGCONT (continua)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="409"/>
+        <location filename="../qps.cpp" line="410"/>
         <source>SIGSTOP (stop)</source>
         <translation>SIGSTOP (atura)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="411"/>
+        <location filename="../qps.cpp" line="412"/>
         <source>SIGQUIT (quit)</source>
         <translation>SIGQUIT (surt)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="413"/>
+        <location filename="../qps.cpp" line="414"/>
         <source>SIGILL (illegal instruction)</source>
         <translation>SIGILL (instrucció il·legal)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="415"/>
+        <location filename="../qps.cpp" line="416"/>
         <source>SIGABRT (abort)</source>
         <translation>SIGABRT (avorta)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="417"/>
+        <location filename="../qps.cpp" line="418"/>
         <source>SIGFPE (floating point exception)</source>
         <translation>SIGFPE (excepció de punt flotant)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="419"/>
+        <location filename="../qps.cpp" line="420"/>
         <source>SIGSEGV (segmentation violation)</source>
         <translation>SIGSEGV (violació de la segmentació)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="421"/>
+        <location filename="../qps.cpp" line="422"/>
         <source>SIGPIPE (broken pipe)</source>
         <translation>SIGPIPE (canonada trencada)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="423"/>
+        <location filename="../qps.cpp" line="424"/>
         <source>SIGALRM (timer signal)</source>
         <translation>SIGALRM (senyal del temporitzador)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="425"/>
+        <location filename="../qps.cpp" line="426"/>
         <source>SIGUSR1 (user-defined 1)</source>
         <translation>SIGUSR1 (definida de l&apos;usuari 1)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="427"/>
+        <location filename="../qps.cpp" line="428"/>
         <source>SIGUSR2 (user-defined 2)</source>
         <translation>SIGUSR2 (definida de l&apos;usuari 2)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="429"/>
+        <location filename="../qps.cpp" line="430"/>
         <source>SIGCHLD (child death)</source>
         <translation>SIGCHLD (mort del fill)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="431"/>
+        <location filename="../qps.cpp" line="432"/>
         <source>SIGTSTP (stop from tty)</source>
         <translation>SIGTSTP (aturada des del tty)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="433"/>
+        <location filename="../qps.cpp" line="434"/>
         <source>SIGTTIN (tty input)</source>
         <translation>SIGTTIN (entrada tty)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="435"/>
+        <location filename="../qps.cpp" line="436"/>
         <source>SIGTTOU (tty output)</source>
         <translation>SIGTTOU (sortida tty)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="442"/>
+        <location filename="../qps.cpp" line="443"/>
         <source>View Details</source>
         <translation>Mostra els detalls</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="695"/>
+        <location filename="../qps.cpp" line="696"/>
         <source>Show File Path</source>
         <translation>Mostra el camí del fitxer</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="701"/>
+        <location filename="../qps.cpp" line="702"/>
         <source>Show Graph</source>
         <translation>Mostra el gràfic</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="707"/>
+        <location filename="../qps.cpp" line="708"/>
         <source>Show Control Bar</source>
         <translation>Mostra la barra de controls</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="718"/>
+        <location filename="../qps.cpp" line="719"/>
         <source>Include Child Times</source>
         <translation>Inclou el temps d&apos;execució dels processos fills</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="290"/>
+        <location filename="../qps.cpp" line="291"/>
         <source>Quit</source>
         <translation>Surt</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1160"/>
-        <location filename="../qps.cpp" line="1191"/>
-        <location filename="../qps.cpp" line="1198"/>
-        <location filename="../qps.cpp" line="1219"/>
-        <location filename="../qps.cpp" line="1253"/>
-        <location filename="../qps.cpp" line="1348"/>
+        <location filename="../qps.cpp" line="1164"/>
+        <location filename="../qps.cpp" line="1195"/>
+        <location filename="../qps.cpp" line="1202"/>
+        <location filename="../qps.cpp" line="1223"/>
+        <location filename="../qps.cpp" line="1257"/>
+        <location filename="../qps.cpp" line="1352"/>
         <source>Permission denied</source>
         <translation>Permís denegat</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1161"/>
+        <location filename="../qps.cpp" line="1165"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
         <translation>No teniu permís per a reactivar els processos seleccionats. Només el propietari del procés i el superusuari poden fer això.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1192"/>
+        <location filename="../qps.cpp" line="1196"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
         <translation>No teniu permís per reiniciar el procés %1 (%2). Només el propietari del procés i el superusuari poden fer això.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1199"/>
+        <location filename="../qps.cpp" line="1203"/>
         <source>Only the super-user may lower the nice value of a process.</source>
         <translation>Només el superusuari pot reduir el valor de prioritat d&apos;un procés (nice).</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1220"/>
+        <location filename="../qps.cpp" line="1224"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
         <translation>Només el superusuari pot canviar la política de programació i la prioritat estàtica.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1254"/>
+        <location filename="../qps.cpp" line="1258"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
         <translation>No teniu permís per a canviar la planificació i/o la prioritat del procés %1 (%2). Només el superusuari pot fer-ho.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1315"/>
+        <location filename="../qps.cpp" line="1319"/>
         <source>Do you really want to terminate the selected process(es)?</source>
         <translation>Realment voleu finalitzar els processos seleccionats?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1317"/>
+        <location filename="../qps.cpp" line="1321"/>
         <source>Do you really want to hang up the selected process(es)?</source>
         <translation>Realment voleu penjar els processos seleccionats?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1319"/>
+        <location filename="../qps.cpp" line="1323"/>
         <source>Do you really want to kill the selected process(es)?</source>
         <translation>Realment voleu matar els processos seleccionats?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1328"/>
+        <location filename="../qps.cpp" line="1332"/>
         <source>Question</source>
         <translation>Pregunta</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1349"/>
+        <location filename="../qps.cpp" line="1353"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
         <translation>No teniu permís per enviar un senyal al procés %1 (%2). Només el superusuari i el propietari del procés poden enviar-li senyals.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1696"/>
+        <location filename="../qps.cpp" line="1703"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
         <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1698"/>
+        <location filename="../qps.cpp" line="1705"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
         <translation>&lt;h2&gt; Qps %1 - Un gestor de processos visuals &lt;/h2&gt; %2 que utilitza la font %3&lt;br&gt;&lt;br&gt;&lt;b&gt;de la biblioteca Qt: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Seguidor d&apos;errors: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1718"/>
+        <location filename="../qps.cpp" line="1725"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
         <translation>&lt;b&gt;Qps originals per&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Col·laboradors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
     </message>

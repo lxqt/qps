@@ -941,17 +941,17 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../qps.cpp" line="1632"/>
+        <location filename="../qps.cpp" line="1639"/>
         <source>Show</source>
         <translation>Показати</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1635"/>
+        <location filename="../qps.cpp" line="1642"/>
         <source>Hide</source>
         <translation>Сховати</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1640"/>
+        <location filename="../qps.cpp" line="1647"/>
         <source>Quit</source>
         <translation>Вийти</translation>
     </message>
@@ -960,14 +960,6 @@
         <location filename="../infobar.cpp" line="437"/>
         <source>User: </source>
         <translation>Користувач: </translation>
-    </message>
-    <message>
-        <location filename="../infobar.cpp" line="430"/>
-        <location filename="../infobar.cpp" line="431"/>
-        <location filename="../infobar.cpp" line="437"/>
-        <location filename="../infobar.cpp" line="438"/>
-        <source>%, </source>
-        <translation>%, </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="431"/>
@@ -982,7 +974,11 @@
         <translation>Добре: </translation>
     </message>
     <message>
+        <location filename="../infobar.cpp" line="430"/>
+        <location filename="../infobar.cpp" line="431"/>
         <location filename="../infobar.cpp" line="432"/>
+        <location filename="../infobar.cpp" line="437"/>
+        <location filename="../infobar.cpp" line="438"/>
         <location filename="../infobar.cpp" line="439"/>
         <source>%</source>
         <translation>%</translation>
@@ -992,15 +988,6 @@
         <location filename="../infobar.cpp" line="506"/>
         <source>Total: </source>
         <translation>Підсумок: </translation>
-    </message>
-    <message>
-        <location filename="../infobar.cpp" line="474"/>
-        <location filename="../infobar.cpp" line="478"/>
-        <location filename="../infobar.cpp" line="481"/>
-        <location filename="../infobar.cpp" line="509"/>
-        <location filename="../infobar.cpp" line="512"/>
-        <source>, </source>
-        <translation>, </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="474"/>
@@ -1042,343 +1029,343 @@
 <context>
     <name>Qps</name>
     <message>
-        <location filename="../qps.cpp" line="174"/>
+        <location filename="../qps.cpp" line="175"/>
         <source>header_popup</source>
         <translation>header_popup</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="175"/>
+        <location filename="../qps.cpp" line="176"/>
         <source>Remove Field</source>
         <translation>Вилучити поле</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="176"/>
+        <location filename="../qps.cpp" line="177"/>
         <source>Add Field</source>
         <translation>Додати поле</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="179"/>
+        <location filename="../qps.cpp" line="180"/>
         <source>Session</source>
         <translation>Сеанс</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="183"/>
+        <location filename="../qps.cpp" line="184"/>
         <source>View</source>
         <translation>Перегляд</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="184"/>
+        <location filename="../qps.cpp" line="185"/>
         <source>Process</source>
         <translation>Процес</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="185"/>
+        <location filename="../qps.cpp" line="186"/>
         <source>Log</source>
         <translation>Журнал</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="190"/>
+        <location filename="../qps.cpp" line="191"/>
         <source>Fields</source>
         <translation>Поля</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="191"/>
+        <location filename="../qps.cpp" line="192"/>
         <source>Custom Fields</source>
         <translation>Користувацькі поля</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="193"/>
+        <location filename="../qps.cpp" line="194"/>
         <source>Basic Fields </source>
         <translation>Основні поля </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="195"/>
+        <location filename="../qps.cpp" line="196"/>
         <source>Jobs Fields </source>
         <translation>Поля завдань </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="197"/>
+        <location filename="../qps.cpp" line="198"/>
         <source>Memory Fields </source>
         <translation>Поля пам&apos;яті </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="200"/>
+        <location filename="../qps.cpp" line="201"/>
         <source>Scheduling Fields </source>
         <translation>Поля черги </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="217"/>
+        <location filename="../qps.cpp" line="218"/>
         <source>Select Custom Fields...</source>
         <translation>Вибрати власні поля...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="226"/>
+        <location filename="../qps.cpp" line="227"/>
         <source>Options</source>
         <translation>Опції</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="227"/>
+        <location filename="../qps.cpp" line="228"/>
         <source>Update Period...</source>
         <translation>Повторюваність оновлення...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="236"/>
+        <location filename="../qps.cpp" line="237"/>
         <source>Show Status bar</source>
         <translation>Показати панель стану</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="245"/>
+        <location filename="../qps.cpp" line="246"/>
         <source>Preferences...</source>
         <translation>Параметри...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="251"/>
+        <location filename="../qps.cpp" line="252"/>
         <source>Help</source>
         <translation>Довідка</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="252"/>
-        <location filename="../qps.cpp" line="1680"/>
+        <location filename="../qps.cpp" line="253"/>
+        <location filename="../qps.cpp" line="1687"/>
         <source>About</source>
         <translation>Про застосунок</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="338"/>
+        <location filename="../qps.cpp" line="339"/>
         <source>test</source>
         <translation>тест</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="339"/>
+        <location filename="../qps.cpp" line="340"/>
         <source>Copied to Clipboard</source>
         <translation>Скопійовано до буфера обміну</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="391"/>
+        <location filename="../qps.cpp" line="392"/>
         <source>context popup</source>
         <translation>контекстне спливне вікно</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="392"/>
+        <location filename="../qps.cpp" line="393"/>
         <source>Renice...</source>
         <translation>Зміна пріоритету процесу...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="393"/>
+        <location filename="../qps.cpp" line="394"/>
         <source>Scheduling...</source>
         <translation>Планування...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="395"/>
+        <location filename="../qps.cpp" line="396"/>
         <source>Terminate</source>
         <translation>Перервати</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="397"/>
+        <location filename="../qps.cpp" line="398"/>
         <source>Hangup</source>
         <translation>Розірвати</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="398"/>
+        <location filename="../qps.cpp" line="399"/>
         <source>Kill</source>
         <translation>Знищити</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="399"/>
+        <location filename="../qps.cpp" line="400"/>
         <source>Stop</source>
         <translation>Зупинити</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="401"/>
+        <location filename="../qps.cpp" line="402"/>
         <source>Continue</source>
         <translation>Продовжити</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="404"/>
+        <location filename="../qps.cpp" line="405"/>
         <source>Other Signals</source>
         <translation>Інші сигнали</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="405"/>
+        <location filename="../qps.cpp" line="406"/>
         <source>SIGINT (interrupt)</source>
         <translation>SIGINT (припинити)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="407"/>
+        <location filename="../qps.cpp" line="408"/>
         <source>SIGCONT (continue)</source>
         <translation>SIGCONT (продовжити)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="409"/>
+        <location filename="../qps.cpp" line="410"/>
         <source>SIGSTOP (stop)</source>
         <translation>SIGSTOP (зупинити)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="411"/>
+        <location filename="../qps.cpp" line="412"/>
         <source>SIGQUIT (quit)</source>
         <translation>SIGQUIT (вийти)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="413"/>
+        <location filename="../qps.cpp" line="414"/>
         <source>SIGILL (illegal instruction)</source>
         <translation>SIGILL (заборонена інструкція)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="415"/>
+        <location filename="../qps.cpp" line="416"/>
         <source>SIGABRT (abort)</source>
         <translation>SIGABRT (перервати)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="417"/>
+        <location filename="../qps.cpp" line="418"/>
         <source>SIGFPE (floating point exception)</source>
         <translation>SIGFPE (вилучення через рухому кому)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="419"/>
+        <location filename="../qps.cpp" line="420"/>
         <source>SIGSEGV (segmentation violation)</source>
         <translation>SIGSEGV (порушення сегментації)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="421"/>
+        <location filename="../qps.cpp" line="422"/>
         <source>SIGPIPE (broken pipe)</source>
         <translation>SIGPIPE (розірваний канал)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="423"/>
+        <location filename="../qps.cpp" line="424"/>
         <source>SIGALRM (timer signal)</source>
         <translation>SIGALRM (сигнал таймера)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="425"/>
+        <location filename="../qps.cpp" line="426"/>
         <source>SIGUSR1 (user-defined 1)</source>
         <translation>SIGUSR1 (користувацький сигнал 1)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="427"/>
+        <location filename="../qps.cpp" line="428"/>
         <source>SIGUSR2 (user-defined 2)</source>
         <translation>SIGUSR2 (користувацький сигнал 2)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="429"/>
+        <location filename="../qps.cpp" line="430"/>
         <source>SIGCHLD (child death)</source>
         <translation>SIGCHLD (завершення дочірнього процесу)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="431"/>
+        <location filename="../qps.cpp" line="432"/>
         <source>SIGTSTP (stop from tty)</source>
         <translation>SIGTSTP (зупинення з терміналу)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="433"/>
+        <location filename="../qps.cpp" line="434"/>
         <source>SIGTTIN (tty input)</source>
         <translation>SIGTTIN (читання з терміналу)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="435"/>
+        <location filename="../qps.cpp" line="436"/>
         <source>SIGTTOU (tty output)</source>
         <translation>SIGTTOU (запис на термінал)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="442"/>
+        <location filename="../qps.cpp" line="443"/>
         <source>View Details</source>
         <translation>Перегляд подробиць</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="695"/>
+        <location filename="../qps.cpp" line="696"/>
         <source>Show File Path</source>
         <translation>Показати шлях файлу</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="701"/>
+        <location filename="../qps.cpp" line="702"/>
         <source>Show Graph</source>
         <translation>Показати графік</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="707"/>
+        <location filename="../qps.cpp" line="708"/>
         <source>Show Control Bar</source>
         <translation>Показати панель керування</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="718"/>
+        <location filename="../qps.cpp" line="719"/>
         <source>Include Child Times</source>
         <translation>Врахувати час дочірніх процесів</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="290"/>
+        <location filename="../qps.cpp" line="291"/>
         <source>Quit</source>
         <translation>Вийти</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1160"/>
-        <location filename="../qps.cpp" line="1191"/>
-        <location filename="../qps.cpp" line="1198"/>
-        <location filename="../qps.cpp" line="1219"/>
-        <location filename="../qps.cpp" line="1253"/>
-        <location filename="../qps.cpp" line="1348"/>
+        <location filename="../qps.cpp" line="1164"/>
+        <location filename="../qps.cpp" line="1195"/>
+        <location filename="../qps.cpp" line="1202"/>
+        <location filename="../qps.cpp" line="1223"/>
+        <location filename="../qps.cpp" line="1257"/>
+        <location filename="../qps.cpp" line="1352"/>
         <source>Permission denied</source>
         <translation>У доступі відмовлено</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1161"/>
+        <location filename="../qps.cpp" line="1165"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
         <translation>Ви не маєте дозволу змінювати пріоритет обраних процесів. Це можуть робити лише власник процесу та суперкористувач.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1192"/>
+        <location filename="../qps.cpp" line="1196"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
         <translation>Ви не маєте дозволу змінювати пріоритет процесу %1 ( %2). Це дозволено лише власнику процесу та суперкористувачу.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1199"/>
+        <location filename="../qps.cpp" line="1203"/>
         <source>Only the super-user may lower the nice value of a process.</source>
         <translation>Тільки суперкористувач може знизити значення пріоритету процесу.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1220"/>
+        <location filename="../qps.cpp" line="1224"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
         <translation>Тільки суперкористувач може змінювати політику планування та статичний пріоритет.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1254"/>
+        <location filename="../qps.cpp" line="1258"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
         <translation>Ви не маєте дозволу на зміну планування та/або пріоритету процесу %1 ( %2). Це може робити тільки суперкористувач.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1315"/>
+        <location filename="../qps.cpp" line="1319"/>
         <source>Do you really want to terminate the selected process(es)?</source>
         <translation>Ви дійсно бажаєте припинити обраний(і) процес(и)?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1317"/>
+        <location filename="../qps.cpp" line="1321"/>
         <source>Do you really want to hang up the selected process(es)?</source>
         <translation>Ви дійсно бажаєте розірвати обраний(і) процес(и)?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1319"/>
+        <location filename="../qps.cpp" line="1323"/>
         <source>Do you really want to kill the selected process(es)?</source>
         <translation>Ви дійсно бажаєте знищити обраний(і) процес(и)?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1328"/>
+        <location filename="../qps.cpp" line="1332"/>
         <source>Question</source>
         <translation>Запитання</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1349"/>
+        <location filename="../qps.cpp" line="1353"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
         <translation>Ви не маєте дозволу надсилати сигнал до процесу %1 (%2). Лише суперкористувач та власник можуть надсилати йому сигнали.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1696"/>
+        <location filename="../qps.cpp" line="1703"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
         <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1698"/>
+        <location filename="../qps.cpp" line="1705"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
         <translation>&lt;h2&gt; Qps %1 - наочний менеджер процесів &lt;/h2&gt; %2 використовує бібліотеку Qt %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Джерельний код: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Відстеження помилок: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1718"/>
+        <location filename="../qps.cpp" line="1725"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
         <translation>&lt;b&gt;Первісний Qps написаний&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Учасники проєкту&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
     </message>

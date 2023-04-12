@@ -941,17 +941,17 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../qps.cpp" line="1632"/>
+        <location filename="../qps.cpp" line="1639"/>
         <source>Show</source>
         <translation>Prikaži</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1635"/>
+        <location filename="../qps.cpp" line="1642"/>
         <source>Hide</source>
         <translation>Sakrij</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1640"/>
+        <location filename="../qps.cpp" line="1647"/>
         <source>Quit</source>
         <translation>Zatvori</translation>
     </message>
@@ -959,14 +959,6 @@
         <location filename="../infobar.cpp" line="430"/>
         <location filename="../infobar.cpp" line="437"/>
         <source>User: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../infobar.cpp" line="430"/>
-        <location filename="../infobar.cpp" line="431"/>
-        <location filename="../infobar.cpp" line="437"/>
-        <location filename="../infobar.cpp" line="438"/>
-        <source>%, </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -982,7 +974,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../infobar.cpp" line="430"/>
+        <location filename="../infobar.cpp" line="431"/>
         <location filename="../infobar.cpp" line="432"/>
+        <location filename="../infobar.cpp" line="437"/>
+        <location filename="../infobar.cpp" line="438"/>
         <location filename="../infobar.cpp" line="439"/>
         <source>%</source>
         <translation type="unfinished"> %</translation>
@@ -991,15 +987,6 @@
         <location filename="../infobar.cpp" line="471"/>
         <location filename="../infobar.cpp" line="506"/>
         <source>Total: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../infobar.cpp" line="474"/>
-        <location filename="../infobar.cpp" line="478"/>
-        <location filename="../infobar.cpp" line="481"/>
-        <location filename="../infobar.cpp" line="509"/>
-        <location filename="../infobar.cpp" line="512"/>
-        <source>, </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1042,343 +1029,343 @@
 <context>
     <name>Qps</name>
     <message>
-        <location filename="../qps.cpp" line="174"/>
+        <location filename="../qps.cpp" line="175"/>
         <source>header_popup</source>
         <translation>skočno_zaglavlje</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="175"/>
+        <location filename="../qps.cpp" line="176"/>
         <source>Remove Field</source>
         <translation>Ukloni polje</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="176"/>
+        <location filename="../qps.cpp" line="177"/>
         <source>Add Field</source>
         <translation>Dodaj polje</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="179"/>
+        <location filename="../qps.cpp" line="180"/>
         <source>Session</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="183"/>
+        <location filename="../qps.cpp" line="184"/>
         <source>View</source>
         <translation>Prikaz</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="184"/>
+        <location filename="../qps.cpp" line="185"/>
         <source>Process</source>
         <translation>Proces</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="185"/>
+        <location filename="../qps.cpp" line="186"/>
         <source>Log</source>
         <translation>Log-zapis</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="190"/>
+        <location filename="../qps.cpp" line="191"/>
         <source>Fields</source>
         <translation>Polja</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="191"/>
+        <location filename="../qps.cpp" line="192"/>
         <source>Custom Fields</source>
         <translation>Prilagođena polja</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="193"/>
+        <location filename="../qps.cpp" line="194"/>
         <source>Basic Fields </source>
         <translation>Osnovna polja </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="195"/>
+        <location filename="../qps.cpp" line="196"/>
         <source>Jobs Fields </source>
         <translation>Polja poslova </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="197"/>
+        <location filename="../qps.cpp" line="198"/>
         <source>Memory Fields </source>
         <translation>Polja memorije </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="200"/>
+        <location filename="../qps.cpp" line="201"/>
         <source>Scheduling Fields </source>
         <translation>Polja planiranja </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="217"/>
+        <location filename="../qps.cpp" line="218"/>
         <source>Select Custom Fields...</source>
         <translation>Odaberi prilagođena polja …</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="226"/>
+        <location filename="../qps.cpp" line="227"/>
         <source>Options</source>
         <translation>Opcije</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="227"/>
+        <location filename="../qps.cpp" line="228"/>
         <source>Update Period...</source>
         <translation>Vrijeme aktualiziranja …</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="236"/>
+        <location filename="../qps.cpp" line="237"/>
         <source>Show Status bar</source>
         <translation>Prikaži traku stanja</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="245"/>
+        <location filename="../qps.cpp" line="246"/>
         <source>Preferences...</source>
         <translation>Postavke …</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="251"/>
+        <location filename="../qps.cpp" line="252"/>
         <source>Help</source>
         <translation>Pomoć</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="252"/>
-        <location filename="../qps.cpp" line="1680"/>
+        <location filename="../qps.cpp" line="253"/>
+        <location filename="../qps.cpp" line="1687"/>
         <source>About</source>
         <translation>Informacije</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="338"/>
+        <location filename="../qps.cpp" line="339"/>
         <source>test</source>
         <translation>test</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="339"/>
+        <location filename="../qps.cpp" line="340"/>
         <source>Copied to Clipboard</source>
         <translation>Kopirano u međuspremnik</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="391"/>
+        <location filename="../qps.cpp" line="392"/>
         <source>context popup</source>
         <translation>kontekstualni skočni izbornik</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="392"/>
+        <location filename="../qps.cpp" line="393"/>
         <source>Renice...</source>
         <translation>Ponovo upotrijebi nice …</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="393"/>
+        <location filename="../qps.cpp" line="394"/>
         <source>Scheduling...</source>
         <translation>Planiranje …</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="395"/>
+        <location filename="../qps.cpp" line="396"/>
         <source>Terminate</source>
         <translation>Ukini</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="397"/>
+        <location filename="../qps.cpp" line="398"/>
         <source>Hangup</source>
         <translation>Prekini</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="398"/>
+        <location filename="../qps.cpp" line="399"/>
         <source>Kill</source>
         <translation>Ubij</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="399"/>
+        <location filename="../qps.cpp" line="400"/>
         <source>Stop</source>
         <translation>Zaustavi</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="401"/>
+        <location filename="../qps.cpp" line="402"/>
         <source>Continue</source>
         <translation>Nastavi</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="404"/>
+        <location filename="../qps.cpp" line="405"/>
         <source>Other Signals</source>
         <translation>Drugi signali</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="405"/>
+        <location filename="../qps.cpp" line="406"/>
         <source>SIGINT (interrupt)</source>
         <translation>SIGINT (privremeno prekini)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="407"/>
+        <location filename="../qps.cpp" line="408"/>
         <source>SIGCONT (continue)</source>
         <translation>SIGCONT (nastavi)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="409"/>
+        <location filename="../qps.cpp" line="410"/>
         <source>SIGSTOP (stop)</source>
         <translation>SIGSTOP (zaustavi)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="411"/>
+        <location filename="../qps.cpp" line="412"/>
         <source>SIGQUIT (quit)</source>
         <translation>SIGQUIT (zatvori)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="413"/>
+        <location filename="../qps.cpp" line="414"/>
         <source>SIGILL (illegal instruction)</source>
         <translation>SIGILL (nedozvoljena instrukcija)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="415"/>
+        <location filename="../qps.cpp" line="416"/>
         <source>SIGABRT (abort)</source>
         <translation>SIGABRT (prekini)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="417"/>
+        <location filename="../qps.cpp" line="418"/>
         <source>SIGFPE (floating point exception)</source>
         <translation>SIGFPE (iznimka s pomičnim zarezom)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="419"/>
+        <location filename="../qps.cpp" line="420"/>
         <source>SIGSEGV (segmentation violation)</source>
         <translation>SIGSEGV (povreda segmentacije)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="421"/>
+        <location filename="../qps.cpp" line="422"/>
         <source>SIGPIPE (broken pipe)</source>
         <translation>SIGPIPE (pokvareni pipe)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="423"/>
+        <location filename="../qps.cpp" line="424"/>
         <source>SIGALRM (timer signal)</source>
         <translation>SIGALRM (signal tajmera)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="425"/>
+        <location filename="../qps.cpp" line="426"/>
         <source>SIGUSR1 (user-defined 1)</source>
         <translation>SIGUSR1 (korisnički definirano 1)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="427"/>
+        <location filename="../qps.cpp" line="428"/>
         <source>SIGUSR2 (user-defined 2)</source>
         <translation>SIGUSR2 (korisnički definirano 2)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="429"/>
+        <location filename="../qps.cpp" line="430"/>
         <source>SIGCHLD (child death)</source>
         <translation>SIGCHLD (smrt podređenog)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="431"/>
+        <location filename="../qps.cpp" line="432"/>
         <source>SIGTSTP (stop from tty)</source>
         <translation>SIGTSTP (zaustavi iz terminala)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="433"/>
+        <location filename="../qps.cpp" line="434"/>
         <source>SIGTTIN (tty input)</source>
         <translation>SIGTTIN (unos terminala)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="435"/>
+        <location filename="../qps.cpp" line="436"/>
         <source>SIGTTOU (tty output)</source>
         <translation>SIGTTOU (rezultat terminala)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="442"/>
+        <location filename="../qps.cpp" line="443"/>
         <source>View Details</source>
         <translation>Prikaži detalje</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="695"/>
+        <location filename="../qps.cpp" line="696"/>
         <source>Show File Path</source>
         <translation>Pokaži stazu datoteke</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="701"/>
+        <location filename="../qps.cpp" line="702"/>
         <source>Show Graph</source>
         <translation>Pokaži grafikon</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="707"/>
+        <location filename="../qps.cpp" line="708"/>
         <source>Show Control Bar</source>
         <translation>Prikaži traku kontrola</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="718"/>
+        <location filename="../qps.cpp" line="719"/>
         <source>Include Child Times</source>
         <translation>Uključi vremena podređenog</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="290"/>
+        <location filename="../qps.cpp" line="291"/>
         <source>Quit</source>
         <translation>Zatvori</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1160"/>
-        <location filename="../qps.cpp" line="1191"/>
-        <location filename="../qps.cpp" line="1198"/>
-        <location filename="../qps.cpp" line="1219"/>
-        <location filename="../qps.cpp" line="1253"/>
-        <location filename="../qps.cpp" line="1348"/>
+        <location filename="../qps.cpp" line="1164"/>
+        <location filename="../qps.cpp" line="1195"/>
+        <location filename="../qps.cpp" line="1202"/>
+        <location filename="../qps.cpp" line="1223"/>
+        <location filename="../qps.cpp" line="1257"/>
+        <location filename="../qps.cpp" line="1352"/>
         <source>Permission denied</source>
         <translation>Nedozvoljeno</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1161"/>
+        <location filename="../qps.cpp" line="1165"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
         <translation>Nemaš dozvolu za upotrebu naredbe renice za odabrane procese. To smiju samo vlasnik procesa i super korisnik.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1192"/>
+        <location filename="../qps.cpp" line="1196"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
         <translation>Nemaš dozvolu za upotrebu naredbe renice za proces %1 (%2). To smiju samo vlasnik procesa i super korisnik.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1199"/>
+        <location filename="../qps.cpp" line="1203"/>
         <source>Only the super-user may lower the nice value of a process.</source>
         <translation>Samo super korisnik smije smanjiti nice-vrijednost procesa..</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1220"/>
+        <location filename="../qps.cpp" line="1224"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
         <translation>Samo super korisnik smije promijeniti politiku planiranja i prioritet.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1254"/>
+        <location filename="../qps.cpp" line="1258"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
         <translation>Nemaš dozvolu za mijenjanje planiranja i/ili prioriteta procesa %1 (%2). To smije samo super korisnik.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1315"/>
+        <location filename="../qps.cpp" line="1319"/>
         <source>Do you really want to terminate the selected process(es)?</source>
         <translation>Stvarno želiš prekinuti odabrane procese?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1317"/>
+        <location filename="../qps.cpp" line="1321"/>
         <source>Do you really want to hang up the selected process(es)?</source>
         <translation>Stvarno želiš završiti odabrane procese?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1319"/>
+        <location filename="../qps.cpp" line="1323"/>
         <source>Do you really want to kill the selected process(es)?</source>
         <translation>Stvarno želiš okončati odabrane procese?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1328"/>
+        <location filename="../qps.cpp" line="1332"/>
         <source>Question</source>
         <translation>Pitanje</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1349"/>
+        <location filename="../qps.cpp" line="1353"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
         <translation>Nemaš dozvolu za slanje signala procesu %1 (%2). To smiju samo super korisnik i vlasnik procesa.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1696"/>
+        <location filename="../qps.cpp" line="1703"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
         <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1698"/>
+        <location filename="../qps.cpp" line="1705"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
         <translation>&lt;h2&gt; Qps %1 – Vizualan upravljač procesa &lt;/h2&gt; %2 koristeći Qt biblioteku %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Izvor: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Sustav za praćenje grešaka: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1718"/>
+        <location filename="../qps.cpp" line="1725"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
         <translation>&lt;b&gt;Izvorni Qps od&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Doprinositelji&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
     </message>
