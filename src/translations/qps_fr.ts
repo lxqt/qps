@@ -49,7 +49,7 @@
     <message>
         <location filename="../prefs.cpp" line="68"/>
         <source>Host Name Lookup</source>
-        <translation>Recherche du nom d&apos;hôte</translation>
+        <translation>Recherche du nom d’hôte</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="69"/>
@@ -130,7 +130,7 @@
     <message>
         <location filename="../misc.cpp" line="656"/>
         <source>Running Processes</source>
-        <translation>Processus en cours d&apos;exécution</translation>
+        <translation>Processus en cours d’exécution</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="672"/>
@@ -245,7 +245,7 @@
     <message>
         <location filename="../infobar.cpp" line="782"/>
         <source>I/O Summary:</source>
-        <translation>Résumé des I/O&#xa0;:</translation>
+        <translation>Résumé des I/O :</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="816"/>
@@ -291,7 +291,7 @@
     <message>
         <location filename="../details.cpp" line="392"/>
         <source>Address Range</source>
-        <translation>Plage d&apos;adresses</translation>
+        <translation>Plage d’adresses</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="392"/>
@@ -341,12 +341,12 @@
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Inode</source>
-        <translation>Nœud d&apos;index</translation>
+        <translation>Nœud d’index</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Inode number (dec)</source>
-        <translation>Numéro du nœud d&apos;index (dec)</translation>
+        <translation>Numéro du nœud d’index (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
@@ -525,7 +525,7 @@
     <message>
         <location filename="../proc.cpp" line="2657"/>
         <source>Real user ID</source>
-        <translation>ID d&apos;utilisateur réel</translation>
+        <translation>ID d’utilisateur réel</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2659"/>
@@ -535,7 +535,7 @@
     <message>
         <location filename="../proc.cpp" line="2659"/>
         <source>Effective user ID</source>
-        <translation>ID d&apos;utilisateur effectif</translation>
+        <translation>ID d’utilisateur effectif</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2661"/>
@@ -545,7 +545,7 @@
     <message>
         <location filename="../proc.cpp" line="2661"/>
         <source>Saved user ID (Posix)</source>
-        <translation>ID d&apos;utilisateur sauvegardé (Posix)</translation>
+        <translation>ID d’utilisateur sauvegardé (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2663"/>
@@ -635,7 +635,7 @@
     <message>
         <location filename="../proc.cpp" line="2679"/>
         <source>Scheduling policy</source>
-        <translation>Type d&apos;ordonnancement</translation>
+        <translation>Type d’ordonnancement</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2681"/>
@@ -675,7 +675,7 @@
     <message>
         <location filename="../proc.cpp" line="2687"/>
         <source>Affinity CPU mask (0 -&gt; API not supported)</source>
-        <translation>Masque d&apos;affinité de CPU (0 -&gt; API non supportée)</translation>
+        <translation>Masque d’affinité de CPU (0 -&gt; API non supportée)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2689"/>
@@ -685,7 +685,7 @@
     <message>
         <location filename="../proc.cpp" line="2689"/>
         <source>Number of major faults (disk access)</source>
-        <translation>Nombre d&apos;échecs majeurs (accès disque)</translation>
+        <translation>Nombre d’échecs majeurs (accès disque)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2691"/>
@@ -695,7 +695,7 @@
     <message>
         <location filename="../proc.cpp" line="2691"/>
         <source>Number of minor faults (no disk access)</source>
-        <translation>Nombre de défauts mineurs (pas d&apos;accès au disque)</translation>
+        <translation>Nombre de défauts mineurs (pas d’accès au disque)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2694"/>
@@ -705,7 +705,7 @@
     <message>
         <location filename="../proc.cpp" line="2694"/>
         <source>Virtual image size of process</source>
-        <translation>Taille de l&apos;image virtuelle du processus</translation>
+        <translation>Taille de l’image virtuelle du processus</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2696"/>
@@ -715,7 +715,7 @@
     <message>
         <location filename="../proc.cpp" line="2696"/>
         <source>Resident set size</source>
-        <translation>Taille de l&apos;ensemble résident</translation>
+        <translation>Taille de l’ensemble résident</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2698"/>
@@ -745,7 +745,7 @@
     <message>
         <location filename="../proc.cpp" line="2702"/>
         <source>Data resident set size(malloc+global variable)</source>
-        <translation>Taille de l&apos;ensemble de données résidant (malloc+variable globale)</translation>
+        <translation>Taille de l’ensemble de données résidant (malloc+variable globale)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2704"/>
@@ -765,7 +765,7 @@
     <message>
         <location filename="../proc.cpp" line="2706"/>
         <source>Shared memory with other libs</source>
-        <translation>Mémoire partagée avec d&apos;autres bibliothèques</translation>
+        <translation>Mémoire partagée avec d’autres bibliothèques</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2708"/>
@@ -775,7 +775,7 @@
     <message>
         <location filename="../proc.cpp" line="2708"/>
         <source>Kbytes on swap device</source>
-        <translation>Koctets sur le périphérique d&apos;échange</translation>
+        <translation>Koctets sur le périphérique d’échange</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2710"/>
@@ -805,7 +805,7 @@
     <message>
         <location filename="../proc.cpp" line="2714"/>
         <source>Number of dirty (non-written) pages</source>
-        <translation>Nombre de pages &quot;sales&quot; (non écrites)</translation>
+        <translation>Nombre de pages « sales » (non écrites)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2716"/>
@@ -895,7 +895,7 @@
     <message>
         <location filename="../proc.cpp" line="2732"/>
         <source>CPU the process is executing on (SMP system)</source>
-        <translation>CPU sur laquelle le processus s&apos;exécute (système SMP)</translation>
+        <translation>CPU sur laquelle le processus s’exécute (système SMP)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2734"/>
@@ -959,13 +959,13 @@
         <location filename="../infobar.cpp" line="430"/>
         <location filename="../infobar.cpp" line="437"/>
         <source>User: </source>
-        <translation>Utilisateur&#xa0;: </translation>
+        <translation>Utilisateur : </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="431"/>
         <location filename="../infobar.cpp" line="438"/>
         <source>System: </source>
-        <translation>Système&#xa0;: </translation>
+        <translation>Système : </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="432"/>
@@ -993,12 +993,12 @@
         <location filename="../infobar.cpp" line="474"/>
         <location filename="../infobar.cpp" line="512"/>
         <source>Used: </source>
-        <translation>Utilisé&#xa0;: </translation>
+        <translation>Utilisé : </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="478"/>
         <source>Cached: </source>
-        <translation>Caché&#xa0;: </translation>
+        <translation>Caché : </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="481"/>
@@ -1008,7 +1008,7 @@
     <message>
         <location filename="../infobar.cpp" line="509"/>
         <source>Free: </source>
-        <translation>Libre&#xa0;: </translation>
+        <translation>Libre : </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="551"/>
@@ -1023,7 +1023,7 @@
     <message>
         <location filename="../infobar.cpp" line="724"/>
         <source>CPU Usage Summary:</source>
-        <translation>Résumé de l&apos;utilisation du CPU :</translation>
+        <translation>Résumé de l’utilisation du CPU :</translation>
     </message>
 </context>
 <context>
@@ -1081,7 +1081,7 @@
     <message>
         <location filename="../qps.cpp" line="196"/>
         <source>Jobs Fields </source>
-        <translation>Champs d&apos;emplois </translation>
+        <translation>Champs d’emplois </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="198"/>
@@ -1232,17 +1232,17 @@
     <message>
         <location filename="../qps.cpp" line="424"/>
         <source>SIGALRM (timer signal)</source>
-        <translation>SIGALRM (signal d&apos;alarme)</translation>
+        <translation>SIGALRM (signal d’alarme)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="426"/>
         <source>SIGUSR1 (user-defined 1)</source>
-        <translation>SIGUSR1 (défini par l&apos;utilisateur 1)</translation>
+        <translation>SIGUSR1 (défini par l’utilisateur 1)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="428"/>
         <source>SIGUSR2 (user-defined 2)</source>
-        <translation>SIGUSR2 (défini par l&apos;utilisateur 2)</translation>
+        <translation>SIGUSR2 (défini par l’utilisateur 2)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="430"/>
@@ -1307,27 +1307,27 @@
     <message>
         <location filename="../qps.cpp" line="1165"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
-        <translation>Vous n&apos;avez pas la permission de recommencer les processus sélectionnés. Seuls le propriétaire du processus et le super-utilisateur sont autorisés à le faire.</translation>
+        <translation>Vous n’avez pas la permission de recommencer les processus sélectionnés. Seuls le propriétaire du processus et le super-utilisateur sont autorisés à le faire.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1196"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
-        <translation>Vous n&apos;êtes pas autorisé à exécuter le processus %1 (%2). Seuls le propriétaire du processus et le super-utilisateur sont autorisés à le faire.</translation>
+        <translation>Vous n’êtes pas autorisé à exécuter le processus %1 (%2). Seuls le propriétaire du processus et le super-utilisateur sont autorisés à le faire.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1203"/>
         <source>Only the super-user may lower the nice value of a process.</source>
-        <translation>Seul le super-utilisateur peut réduire la valeur de transaction d&apos;un processus.</translation>
+        <translation>Seul le super-utilisateur peut réduire la valeur de transaction d’un processus.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1224"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
-        <translation>Seul le super-utilisateur peut modifier la stratégie d&apos;ordonnancement et la priorité statique.</translation>
+        <translation>Seul le super-utilisateur peut modifier la stratégie d’ordonnancement et la priorité statique.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1258"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
-        <translation>Vous n&apos;avez pas la permission de changer l&apos;ordonnancement et/ou la priorité du processus %1 (%2). Seul le super-utilisateur en a le droit.</translation>
+        <translation>Vous n’avez pas la permission de changer l’ordonnancement et/ou la priorité du processus %1 (%2). Seul le super-utilisateur en a le droit.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1319"/>
@@ -1352,7 +1352,7 @@
     <message>
         <location filename="../qps.cpp" line="1353"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
-        <translation>Vous n&apos;êtes pas autorisé à envoyer un signal pour traiter %1 (%2). Seuls le super-utilisateur et le propriétaire du processus peuvent lui envoyer des signaux.</translation>
+        <translation>Vous n’êtes pas autorisé à envoyer un signal pour traiter %1 (%2). Seuls le super-utilisateur et le propriétaire du processus peuvent lui envoyer des signaux.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1703"/>
@@ -1375,12 +1375,12 @@
     <message>
         <location filename="../dialogs.cpp" line="292"/>
         <source>Change scheduling</source>
-        <translation>Changer l&apos;ordonnancement</translation>
+        <translation>Changer l’ordonnancement</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="296"/>
         <source>Scheduling Policy</source>
-        <translation>Politique d&apos;ordonnancement</translation>
+        <translation>Politique d’ordonnancement</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="298"/>
@@ -1499,7 +1499,7 @@
     <message>
         <location filename="../details.cpp" line="150"/>
         <source>Bytes in send queue</source>
-        <translation>Octets dans la file d&apos;émission</translation>
+        <translation>Octets dans la file d’émission</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
@@ -1562,7 +1562,7 @@
         <location filename="../misc.cpp" line="343"/>
         <source> This is unstable Alpha feature
  You maybe see a SEGFAULT...</source>
-        <translation> C&apos;est une fonctionnalité alpha instable
+        <translation> C’est une fonctionnalité alpha instable
  Vous voyez peut-être un SEGFAULT...</translation>
     </message>
 </context>
