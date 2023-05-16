@@ -6,32 +6,32 @@
     <message>
         <location filename="../details.cpp" line="653"/>
         <source>Field</source>
-        <translation type="unfinished"></translation>
+        <translation>Kenttä</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="653"/>
         <source>Field name</source>
-        <translation type="unfinished"></translation>
+        <translation>Kentän nimi</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="654"/>
         <source>Description</source>
-        <translation type="unfinished"></translation>
+        <translation>Kuvaus</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="654"/>
         <source>Field description</source>
-        <translation type="unfinished"></translation>
+        <translation>Kentän kuvaus</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="655"/>
         <source>Value</source>
-        <translation type="unfinished"></translation>
+        <translation>Arvo</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="655"/>
         <source>Field value</source>
-        <translation type="unfinished"></translation>
+        <translation>Kentän arvo</translation>
     </message>
 </context>
 <context>
@@ -39,22 +39,22 @@
     <message>
         <location filename="../prefs.cpp" line="59"/>
         <source>Exit on closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Poistu suljettaessa</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="60"/>
         <source>Remember Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Muista sijainti</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="68"/>
         <source>Host Name Lookup</source>
-        <translation type="unfinished"></translation>
+        <translation>Palvelinnimihaku</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="69"/>
         <source>Service Name Lookup</source>
-        <translation type="unfinished"></translation>
+        <translation>Palvelunimihaku</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="75"/>
@@ -69,22 +69,22 @@
     <message>
         <location filename="../prefs.cpp" line="82"/>
         <source>Auto Save Settings on Exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Tallenna asetukset poistuessa</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="83"/>
         <source>Selection: Copy PIDs to Clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Valinta: Kopioi PID leikepöydälle</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="85"/>
         <source>Normalize NICE</source>
-        <translation type="unfinished"></translation>
+        <translation>Normalisoi prioriteetti</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="86"/>
         <source>Use pmap for Map Names</source>
-        <translation type="unfinished"></translation>
+        <translation>Nimeä kartat käyttämällä pmap</translation>
     </message>
 </context>
 <context>
@@ -273,7 +273,7 @@
     <message>
         <location filename="../dialogs.cpp" line="87"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="121"/>
@@ -379,7 +379,7 @@
     <message>
         <location filename="../dialogs.cpp" line="283"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>Ok</translation>
     </message>
 </context>
 <context>
@@ -1400,7 +1400,7 @@
     <message>
         <location filename="../dialogs.cpp" line="314"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>Ok</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="316"/>
