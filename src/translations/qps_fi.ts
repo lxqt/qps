@@ -92,7 +92,7 @@
     <message>
         <location filename="../prefs.cpp" line="106"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Yleiset</translation>
     </message>
 </context>
 <context>
@@ -100,42 +100,42 @@
     <message>
         <location filename="../misc.cpp" line="634"/>
         <source>Linear</source>
-        <translation type="unfinished"></translation>
+        <translation>Lista</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="637"/>
         <source>Tree</source>
-        <translation type="unfinished"></translation>
+        <translation>Puu</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="646"/>
         <source>Thread</source>
-        <translation type="unfinished"></translation>
+        <translation>Säikeet</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="653"/>
         <source>All Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaikki prosessit</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="654"/>
         <source>Your Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Omat prosessit</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="655"/>
         <source>Non-Root Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Ei pääkäyttäjän prosesseja</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="656"/>
         <source>Running Processes</source>
-        <translation type="unfinished"></translation>
+        <translation>Käynnissä olevat prosessit</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="672"/>
         <source>Pause (Ctrl+Space)</source>
-        <translation type="unfinished"></translation>
+        <translation>Tauko (Ctrl+Välilyönti)</translation>
     </message>
 </context>
 <context>
