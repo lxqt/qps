@@ -204,7 +204,7 @@
     <message>
         <location filename="../fieldsel.cpp" line="75"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Sulje</translation>
     </message>
 </context>
 <context>
@@ -212,7 +212,7 @@
     <message>
         <location filename="../details.cpp" line="521"/>
         <source>Fd</source>
-        <translation type="unfinished"></translation>
+        <translation>Fd</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="521"/>
@@ -1111,7 +1111,7 @@
     <message>
         <location filename="../qps.cpp" line="237"/>
         <source>Show Status bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Näytä tilarivi</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="246"/>

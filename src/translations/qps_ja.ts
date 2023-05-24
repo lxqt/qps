@@ -245,7 +245,7 @@
     <message>
         <location filename="../infobar.cpp" line="782"/>
         <source>I/O Summary:</source>
-        <translation type="unfinished"></translation>
+        <translation>I/O の概要:</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="816"/>
@@ -296,7 +296,7 @@
     <message>
         <location filename="../details.cpp" line="392"/>
         <source>Mapped addresses (hex) )</source>
-        <translation type="unfinished"></translation>
+        <translation>マップされたアドレス (16進数) )</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="393"/>
@@ -326,7 +326,7 @@
     <message>
         <location filename="../details.cpp" line="395"/>
         <source>File offset at start of mapping (hex)</source>
-        <translation type="unfinished"></translation>
+        <translation>マッピング開始時のファイルオフセット (16進数)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
@@ -535,7 +535,7 @@
     <message>
         <location filename="../proc.cpp" line="2659"/>
         <source>Effective user ID</source>
-        <translation type="unfinished"></translation>
+        <translation>有効なユーザー ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2661"/>
@@ -605,7 +605,7 @@
     <message>
         <location filename="../proc.cpp" line="2673"/>
         <source>Dynamic priority</source>
-        <translation type="unfinished"></translation>
+        <translation>動的優先順位</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2675"/>
@@ -655,7 +655,7 @@
     <message>
         <location filename="../proc.cpp" line="2683"/>
         <source>Time slice in milliseconds</source>
-        <translation type="unfinished"></translation>
+        <translation>ミリ秒単位の時間分割</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2685"/>
@@ -775,7 +775,7 @@
     <message>
         <location filename="../proc.cpp" line="2708"/>
         <source>Kbytes on swap device</source>
-        <translation type="unfinished"></translation>
+        <translation>スワップデバイスのキロバイト</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2710"/>
@@ -1375,12 +1375,12 @@
     <message>
         <location filename="../dialogs.cpp" line="292"/>
         <source>Change scheduling</source>
-        <translation type="unfinished"></translation>
+        <translation>スケジューリングの変更</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="296"/>
         <source>Scheduling Policy</source>
-        <translation type="unfinished"></translation>
+        <translation>スケジューリングの方針</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="298"/>
