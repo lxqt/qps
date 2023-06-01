@@ -765,7 +765,7 @@
     <message>
         <location filename="../proc.cpp" line="2706"/>
         <source>Shared memory with other libs</source>
-        <translation>Μνήμη κοινόχρηστη με άλλες βιβλιοθήκες</translation>
+        <translation>Κοινόχρηστη μνήμη με άλλες βιβλιοθήκες</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2708"/>
@@ -835,7 +835,7 @@
     <message>
         <location filename="../proc.cpp" line="2720"/>
         <source>Kernel function where process is sleeping</source>
-        <translation>Λειτουργία πυρήνα όπου η διεργασία είναι σε κοίμηση</translation>
+        <translation>Λειτουργία πυρήνα με διεργασία σε αναστολή</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2722"/>
@@ -865,7 +865,7 @@
     <message>
         <location filename="../proc.cpp" line="2726"/>
         <source>Percentage of memory used (RSS/total mem)</source>
-        <translation>Ποσοστό της χρησιμοποιούμενης μνήμης (RSS/συνολική μνήμ)</translation>
+        <translation>Ποσοστό μνήμης σε χρήση (RSS/συνολική μνήμη)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2728"/>
@@ -885,7 +885,7 @@
     <message>
         <location filename="../proc.cpp" line="2730"/>
         <source>Total CPU time used since start</source>
-        <translation>Συνολικός χρόνος χρήσης της CPU από την εκκίνηση</translation>
+        <translation>Συνολικός χρόνος χρήσης CPU από την έναρξη</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2732"/>
@@ -925,7 +925,7 @@
     <message>
         <location filename="../proc.cpp" line="2739"/>
         <source>Root directory of process</source>
-        <translation>Ριζικός κατάλογος της διεργασίας</translation>
+        <translation>Αρχικός κατάλογος διεργασίας</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2742"/>
@@ -935,7 +935,7 @@
     <message>
         <location filename="../proc.cpp" line="2742"/>
         <source>Command line that started the process</source>
-        <translation>Γραμμή εντολής που ξεκίνησε την διεργασία</translation>
+        <translation>Γραμμή εντολής έναρξης της διεργασίας</translation>
     </message>
 </context>
 <context>
@@ -1036,7 +1036,7 @@
     <message>
         <location filename="../qps.cpp" line="176"/>
         <source>Remove Field</source>
-        <translation>Αφαίρεση πεδίου</translation>
+        <translation>Αφαίρεση Πεδίου</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="177"/>
@@ -1076,17 +1076,17 @@
     <message>
         <location filename="../qps.cpp" line="194"/>
         <source>Basic Fields </source>
-        <translation>Βασικά πεδία </translation>
+        <translation>Βασικά πεδία</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="196"/>
         <source>Jobs Fields </source>
-        <translation>Πεδία εργασιών </translation>
+        <translation>Πεδία εργασιών</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="198"/>
         <source>Memory Fields </source>
-        <translation>Πεδία μνήμης </translation>
+        <translation>Πεδία μνήμης</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="201"/>
@@ -1307,27 +1307,28 @@
     <message>
         <location filename="../qps.cpp" line="1165"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
-        <translation>Δεν έχετε δικαίωμα αλλαγής της προτεραιότητας των επιλεγμένων διεργασιών. Μόνο ο ιδιοκτήτης της διεργασίας και ο υπερχρήστης επιτρέπεται να το κάνουν.</translation>
+        <translation>Δεν έχετε άδεια για την αλλαγή προτεραιότητας της επιλεγμένης διεργασίας. Μόνο ο κάτοχος κι ο διαχειριστής έχουν.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1196"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
-        <translation>Δεν έχετε δικαίωμα αλλαγής της προτεραιότητας για την διεργασία %1 (%2). Μόνο ο ιδιοκτήτης της διεργασίας και ο υπερχρήστης επιτρέπεται να το κάνουν.</translation>
+        <translation>Δεν έχετε άδεια για αλλαγή προτεραιότητας της διεργασίας %1 (%2).
+Μόνο ο κάτοχος κι ο διαχειριστής έχουν.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1203"/>
         <source>Only the super-user may lower the nice value of a process.</source>
-        <translation>Μόνο ο υπερχρήστης μπορεί να χαμηλώσει την προτεραιότητα μιας διεργασίας.</translation>
+        <translation>Μόνο ο διαχειριστής μπορεί να μειώσει την τιμή προτεραιότητας μιας διεργασίας.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1224"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
-        <translation>Μόνο ο υπερχρήστης μπορεί να αλλάξει την πολιτική προγραμματισμού και την στατική προτεραιότητα.</translation>
+        <translation>Μόνο ο διαχειριστής μπορεί να αλλάξει την πολιτική προγραμματισμού και τη στατική προτεραιότητα.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1258"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
-        <translation>Δεν έχετε δικαιώματα αλλαγής του προγραμματισμού και/ή της προτεραιότητας της διεργασίας %1 (%2). Μόνο ο υπερχρήστης μπορεί να πραγματοποιήσει την ενέργεια αυτή.</translation>
+        <translation>Μόνον ο διαχειριστής μπορεί να αλλάξει τον προγραμματισμό και/ή την προτεραιότητα της διεργασίας %1 (%2).</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1319"/>
@@ -1420,7 +1421,7 @@
     <message>
         <location filename="../dialogs.cpp" line="380"/>
         <source>The priority must be in the range 1..99</source>
-        <translation>Η προτεραιότητα πρέπει να είναι στο εύρος 1..99</translation>
+        <translation>Η προτεραιότητα πρέπει να είναι από 1 έως 99</translation>
     </message>
 </context>
 <context>
@@ -1446,7 +1447,7 @@
     <message>
         <location filename="../dialogs.cpp" line="185"/>
         <source>New nice value:</source>
-        <translation>Νέα τιμή nice:</translation>
+        <translation>Νέα τιμή προτεραιότητας:</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="225"/>
@@ -1562,8 +1563,8 @@
         <location filename="../misc.cpp" line="343"/>
         <source> This is unstable Alpha feature
  You maybe see a SEGFAULT...</source>
-        <translation> Πρόκειται για ένα μη σταθερό χαρακτηριστικό alpha
-Μπορεί να δείτε ένα SEGFAULT...</translation>
+        <translation> Αυτή είναι ασταθής λειτουργία Alpha 
+ Μπορεί να εμφανιστεί σφάλμα κατάτμησης…</translation>
     </message>
 </context>
 <context>
