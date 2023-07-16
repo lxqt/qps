@@ -311,12 +311,12 @@
     <message>
         <location filename="../details.cpp" line="394"/>
         <source>Perm</source>
-        <translation type="unfinished"></translation>
+        <translation>Õigused</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="394"/>
         <source>Permission flags</source>
-        <translation type="unfinished"></translation>
+        <translation>Õiguste tunnused</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="395"/>
@@ -331,27 +331,27 @@
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Device</source>
-        <translation type="unfinished"></translation>
+        <translation>Seade</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Major,Minor device numbers (dec)</source>
-        <translation type="unfinished"></translation>
+        <translation>Seadme numbrid (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Inode</source>
-        <translation type="unfinished"></translation>
+        <translation>Inode</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Inode number (dec)</source>
-        <translation type="unfinished"></translation>
+        <translation>Inode number (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>File</source>
-        <translation type="unfinished"></translation>
+        <translation>Fail</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
