@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+   <id>org.lxqt.qps</id>
+   <metadata_license>CC-BY-4.0</metadata_license>
+   <project_license>QPL-1.0</project_license>
+   <name>Qps</name>
+   <summary>Process viewer and manager</summary>
+   <description>
+ <p>
+    Process manager written in Qt. Among
+    its features are:
+    </p>
+    <ul>
+      <li>History graph for CPU and RAM usage</li>
+      <li>Filter processes</li>
+      <li>Custom fields</li>
+      <li>CPU and IO summaries displayed in tooltips </li>
+      <li>Send signals to processes</li>
+    </ul>
+   </description>
+   <launchable type="desktop-id">qps.desktop</launchable>
+   <url type="homepage">https://github.com/lxqt/qps/</url>
+   <screenshots>
+      <screenshot type="default">
+         <image>https://github.com/lxqt/qps/blob/master/qps.png</image>
+      </screenshot>
+   </screenshots>
+</component>

@@ -2,6 +2,8 @@
 
 ![Qps](qps.png)
 
+![Custom fields](fields.png)
+
 ### Building
 
 Requirements:

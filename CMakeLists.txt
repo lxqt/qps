@@ -61,3 +61,6 @@ install(FILES
     icon/qps.png
     DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/icons/hicolor/48x48/apps"
 )
+# install the
+install(FILES org.lxqt.Qps.appdata.xml
+    DESTINATION "${CMAKE_INSTALL_DATADIR}/metainfo")
