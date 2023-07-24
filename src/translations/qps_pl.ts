@@ -59,12 +59,12 @@
     <message>
         <location filename="../prefs.cpp" line="75"/>
         <source>Disclosure Triangles</source>
-        <translation type="unfinished"></translation>
+        <translation>Wyświetl strzałki</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="76"/>
         <source>Branch Lines</source>
-        <translation type="unfinished"></translation>
+        <translation>Linie oddziałów</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="82"/>
@@ -199,7 +199,7 @@
     <message>
         <location filename="../fieldsel.cpp" line="34"/>
         <source>Select Custom Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>Wybierz pola niestandardowe </translation>
     </message>
     <message>
         <location filename="../fieldsel.cpp" line="75"/>
@@ -227,7 +227,7 @@
     <message>
         <location filename="../details.cpp" line="523"/>
         <source>Open mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Tryb otwarty</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="525"/>
@@ -237,7 +237,7 @@
     <message>
         <location filename="../details.cpp" line="525"/>
         <source>File name (if available)</source>
-        <translation type="unfinished"></translation>
+        <translation>Nazwa pliku (jeśli jest dostępna)</translation>
     </message>
 </context>
 <context>
@@ -245,12 +245,12 @@
     <message>
         <location filename="../infobar.cpp" line="782"/>
         <source>I/O Summary:</source>
-        <translation type="unfinished"></translation>
+        <translation>Podsumowanie wejść/wyjść:</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="816"/>
         <source>No input or output</source>
-        <translation type="unfinished"></translation>
+        <translation>Brak wejścia lub wyjścia</translation>
     </message>
 </context>
 <context>
@@ -258,12 +258,12 @@
     <message>
         <location filename="../dialogs.cpp" line="43"/>
         <source>Change Update Period</source>
-        <translation type="unfinished"></translation>
+        <translation>Zmień okres aktualizacji</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="49"/>
         <source>New Update Period</source>
-        <translation type="unfinished"></translation>
+        <translation>Nowy okres aktualizacji</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="85"/>
@@ -278,7 +278,7 @@
     <message>
         <location filename="../dialogs.cpp" line="121"/>
         <source>No UPDATE</source>
-        <translation type="unfinished"></translation>
+        <translation>Bez AKTUALIZACJI</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="139"/>
@@ -291,12 +291,12 @@
     <message>
         <location filename="../details.cpp" line="392"/>
         <source>Address Range</source>
-        <translation type="unfinished"></translation>
+        <translation>Zakres adresów</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="392"/>
         <source>Mapped addresses (hex) )</source>
-        <translation type="unfinished"></translation>
+        <translation>Mapowane adresy (szesnastkowo) )</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="393"/>
@@ -306,7 +306,7 @@
     <message>
         <location filename="../details.cpp" line="393"/>
         <source>Kbytes mapped (dec)</source>
-        <translation type="unfinished"></translation>
+        <translation>Zmapowane kilobajty (dziesiątkowo)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="394"/>
@@ -316,7 +316,7 @@
     <message>
         <location filename="../details.cpp" line="394"/>
         <source>Permission flags</source>
-        <translation type="unfinished"></translation>
+        <translation>Flagi uprawnień</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="395"/>
@@ -326,7 +326,7 @@
     <message>
         <location filename="../details.cpp" line="395"/>
         <source>File offset at start of mapping (hex)</source>
-        <translation type="unfinished"></translation>
+        <translation>Przesunięcie pliku na początku mapowania (szesnastkowo)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
@@ -336,17 +336,17 @@
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Major,Minor device numbers (dec)</source>
-        <translation type="unfinished"></translation>
+        <translation>Główne, drugorzędne numery urządzeń (dziesiątkowo)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Inode</source>
-        <translation type="unfinished"></translation>
+        <translation>I-węzeł</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Inode number (dec)</source>
-        <translation type="unfinished"></translation>
+        <translation>Numer i-węzła (dziesiątkowo)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
@@ -356,7 +356,7 @@
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>File name (if available)</source>
-        <translation type="unfinished"></translation>
+        <translation>Nazwa pliku (jeśli jest dostępna)</translation>
     </message>
 </context>
 <context>
@@ -369,7 +369,7 @@
     <message>
         <location filename="../dialogs.cpp" line="273"/>
         <source>Root password</source>
-        <translation type="unfinished"></translation>
+        <translation>Hasło roota</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="280"/>
@@ -397,17 +397,17 @@
     <message>
         <location filename="../prefs.cpp" line="191"/>
         <source>%CPU divided by</source>
-        <translation type="unfinished"></translation>
+        <translation>%CPU podzielony przez</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="198"/>
         <source>Total cpu: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Całkowita liczba CPU: %1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="199"/>
         <source>Single cpu: 1</source>
-        <translation type="unfinished"></translation>
+        <translation>Pojedynczy CPU: 1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="205"/>
@@ -417,7 +417,7 @@
     <message>
         <location filename="../prefs.cpp" line="206"/>
         <source>for developer</source>
-        <translation type="unfinished"></translation>
+        <translation>dla dewelopera</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="240"/>
@@ -435,7 +435,7 @@
     <message>
         <location filename="../proc.cpp" line="2639"/>
         <source>Process ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Identyfikator procesu</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2641"/>
@@ -445,7 +445,7 @@
     <message>
         <location filename="../proc.cpp" line="2641"/>
         <source>Task group ID ( parent of threads )</source>
-        <translation type="unfinished"></translation>
+        <translation>Identyfikator grupy zadań ( nadrzędny wątków )</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2643"/>
@@ -455,7 +455,7 @@
     <message>
         <location filename="../proc.cpp" line="2643"/>
         <source>Parent process ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Identyfikator procesu nadrzędnego</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2645"/>
@@ -465,7 +465,7 @@
     <message>
         <location filename="../proc.cpp" line="2645"/>
         <source>Process group ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Identyfikator grupy procesów</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2647"/>
