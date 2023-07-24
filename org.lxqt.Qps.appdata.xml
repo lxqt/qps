@@ -2,7 +2,7 @@
 <component type="desktop-application">
    <id>org.lxqt.qps</id>
    <metadata_license>CC-BY-4.0</metadata_license>
-   <project_license>QPL-1.0</project_license>
+   <project_license>GPLv2</project_license>
    <name>Qps</name>
    <summary>Process viewer and manager</summary>
    <description>
