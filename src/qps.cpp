@@ -98,7 +98,6 @@ bool flag_show_thread = false; // to see informations at the thread level
 bool flag_thread_ok = true;     // we presume a kernel 2.6.x using NPTL
 bool flag_start_mini = false; // Need for Xorg.Session
 bool flag_refresh = true;     // DEL
-bool flag_schedstat = false;
 bool flag_firstRun = true; // test
 
 Qps *qps;
