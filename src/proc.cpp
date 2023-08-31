@@ -1215,7 +1215,7 @@ Procinfo::Procinfo(Proc *system_proc, int process_id, int thread_id) : refcnt(1)
     child_seq_prev = -1;
 
     lastchild = false;
-    generation = -1;
+    generation = 0;
     detail = nullptr;
 
     /// per_cpu_times = 0; not yet

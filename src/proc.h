@@ -646,7 +646,6 @@ class SysHistory
   public:
     int idx;
     time_t time; // saved time, epoch...
-    int current_gen;
     float load_cpu; // %CPU total ; green
     float load_mem; // %mem 	; yellow?
     float load_io;  // %SYS_IO 	; BLUE
