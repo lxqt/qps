@@ -64,7 +64,6 @@
 #define PROCDIR "/proc" // hmmm
 
 extern bool flag_thread_ok;
-extern bool flag_schedstat;
 extern bool flag_show_thread;
 
 int flag_24_ok; // we presume a kernel 2.4.x
@@ -1510,26 +1509,12 @@ int Procinfo::readproc()
         first_run = false;
     }
 
-    if (flag_schedstat == true)
-    {
-        // if no change then return.    twice faster !
-        // MAX_256 bytes check...?
-        // 2.6.9 upper only and some system no has
-        if ((sbuf = read_proc_file2(path, "schedstat")) == nullptr)
-            return -1;
-
-        if (hashcmp(sbuf))
-            return 1; // no change
-    }
     // read /proc/PID/stat
     if ((sbuf = read_proc_file2(path, "stat")) == nullptr)
         return -1;
 
-    if (flag_schedstat == false) // if no change then return.    twice faster !
-    {
-        if (hashcmp(sbuf))
-            return 1;
-    }
+    if (hashcmp(sbuf))
+        return 1;
 
     /*
             Not all values from /proc/#/stat are interesting; the ones left
@@ -1805,13 +1790,6 @@ int Proc::read_system() //
             flag_thread_ok = true;
         else
             flag_thread_ok = false;
-
-        /* check schedstat  */
-        strcpy(path, "/proc/1/schedstat"); // some system doesn't have
-        if (!stat(path, (struct stat *)buf))
-            flag_schedstat = true;
-        else
-            flag_schedstat = false;
 
         strcpy(path, "/proc/stat");
         if ((n = read_file(path, buf, sizeof(buf) - 1)) <= 0)
