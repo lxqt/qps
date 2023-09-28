@@ -212,7 +212,7 @@
     <message>
         <location filename="../details.cpp" line="521"/>
         <source>Fd</source>
-        <translation type="unfinished"></translation>
+        <translation>Fd</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="521"/>
@@ -232,7 +232,7 @@
     <message>
         <location filename="../details.cpp" line="525"/>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nimi</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="525"/>
@@ -278,7 +278,7 @@
     <message>
         <location filename="../dialogs.cpp" line="121"/>
         <source>No UPDATE</source>
-        <translation type="unfinished"></translation>
+        <translation>Ära uuenda andmeid</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="139"/>
@@ -301,7 +301,7 @@
     <message>
         <location filename="../details.cpp" line="393"/>
         <source>Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Suurus</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="393"/>
@@ -440,7 +440,7 @@
     <message>
         <location filename="../proc.cpp" line="2641"/>
         <source>TGID</source>
-        <translation type="unfinished"></translation>
+        <translation>TGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2641"/>
@@ -959,19 +959,19 @@
         <location filename="../infobar.cpp" line="430"/>
         <location filename="../infobar.cpp" line="437"/>
         <source>User: </source>
-        <translation type="unfinished"></translation>
+        <translation>Kasutaja: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="431"/>
         <location filename="../infobar.cpp" line="438"/>
         <source>System: </source>
-        <translation type="unfinished"></translation>
+        <translation>Süsteem: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="432"/>
         <location filename="../infobar.cpp" line="439"/>
         <source>Nice: </source>
-        <translation type="unfinished"></translation>
+        <translation>Prioriteet: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="430"/>
@@ -987,23 +987,23 @@
         <location filename="../infobar.cpp" line="471"/>
         <location filename="../infobar.cpp" line="506"/>
         <source>Total: </source>
-        <translation type="unfinished"></translation>
+        <translation>Kokku: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="474"/>
         <location filename="../infobar.cpp" line="512"/>
         <source>Used: </source>
-        <translation type="unfinished"></translation>
+        <translation>Kasutusel: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="478"/>
         <source>Cached: </source>
-        <translation type="unfinished"></translation>
+        <translation>Puhverdatud: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="481"/>
         <source>Buffer: </source>
-        <translation type="unfinished"></translation>
+        <translation>Puhver: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="509"/>
@@ -1147,7 +1147,7 @@
     <message>
         <location filename="../qps.cpp" line="393"/>
         <source>Renice...</source>
-        <translation type="unfinished"></translation>
+        <translation>Muuda prioriteeti...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="394"/>
@@ -1157,57 +1157,57 @@
     <message>
         <location filename="../qps.cpp" line="396"/>
         <source>Terminate</source>
-        <translation type="unfinished"></translation>
+        <translation>Lõpeta</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="398"/>
         <source>Hangup</source>
-        <translation type="unfinished"></translation>
+        <translation>Katkesta</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="399"/>
         <source>Kill</source>
-        <translation type="unfinished"></translation>
+        <translation>Tapa</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="400"/>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Peata</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="402"/>
         <source>Continue</source>
-        <translation type="unfinished"></translation>
+        <translation>Jätka</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="405"/>
         <source>Other Signals</source>
-        <translation type="unfinished"></translation>
+        <translation>Muud signaalid</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="406"/>
         <source>SIGINT (interrupt)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGINT (katkesta)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="408"/>
         <source>SIGCONT (continue)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGCONT (jätka)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="410"/>
         <source>SIGSTOP (stop)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGSTOP (peata)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="412"/>
         <source>SIGQUIT (quit)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGQUIT (lõpeta)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="414"/>
         <source>SIGILL (illegal instruction)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGILL (lubamatu käsk)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="416"/>
@@ -1217,32 +1217,32 @@
     <message>
         <location filename="../qps.cpp" line="418"/>
         <source>SIGFPE (floating point exception)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGFPE (ujukoma erand)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="420"/>
         <source>SIGSEGV (segmentation violation)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGSEGV (segmenteerimisviga)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="422"/>
         <source>SIGPIPE (broken pipe)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGPIPE (katkenud unixitoru)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="424"/>
         <source>SIGALRM (timer signal)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGALRM (taimeri signaal)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="426"/>
         <source>SIGUSR1 (user-defined 1)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGUSR1 (kasutaja määratud 1)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="428"/>
         <source>SIGUSR2 (user-defined 2)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGUSR2 (kasutaja määratud 2)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="430"/>
@@ -1252,17 +1252,17 @@
     <message>
         <location filename="../qps.cpp" line="432"/>
         <source>SIGTSTP (stop from tty)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGTSTP (stopsignaal terminalist)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="434"/>
         <source>SIGTTIN (tty input)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGTTIN (sisend terminalist)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="436"/>
         <source>SIGTTOU (tty output)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGTTOU (väljund terminalist)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="443"/>
@@ -1317,12 +1317,12 @@
     <message>
         <location filename="../qps.cpp" line="1203"/>
         <source>Only the super-user may lower the nice value of a process.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ainult juurkasutaja võib protsessi prioriteeti vähendada.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1224"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ainult juurkasutaja võib ressursijaotuse ja staatilise prioriteedi reegleid muuta.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1258"/>
@@ -1347,7 +1347,7 @@
     <message>
         <location filename="../qps.cpp" line="1332"/>
         <source>Question</source>
-        <translation type="unfinished"></translation>
+        <translation>Küsimus</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1353"/>
@@ -1357,7 +1357,7 @@
     <message>
         <location filename="../qps.cpp" line="1703"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1705"/>
@@ -1375,12 +1375,12 @@
     <message>
         <location filename="../dialogs.cpp" line="292"/>
         <source>Change scheduling</source>
-        <translation type="unfinished"></translation>
+        <translation>Muuda ressursijaotust</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="296"/>
         <source>Scheduling Policy</source>
-        <translation type="unfinished"></translation>
+        <translation>Ressursijaotuse reeglid</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="298"/>
@@ -1428,7 +1428,7 @@
     <message>
         <location filename="../misc.cpp" line="588"/>
         <source>PID, COMMAND, USER...</source>
-        <translation type="unfinished"></translation>
+        <translation>PID, KÄSK, KASUTAJA...</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="589"/>
@@ -1441,17 +1441,17 @@
     <message>
         <location filename="../dialogs.cpp" line="179"/>
         <source>Renice Process</source>
-        <translation type="unfinished"></translation>
+        <translation>Muuda protsessi prioriteeti</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="185"/>
         <source>New nice value:</source>
-        <translation type="unfinished"></translation>
+        <translation>Uus prioriteet:</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="225"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Katkesta</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="229"/>
@@ -1464,7 +1464,7 @@
     <message>
         <location filename="../details.cpp" line="147"/>
         <source>Fd</source>
-        <translation type="unfinished"></translation>
+        <translation>Fd</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="147"/>
@@ -1474,12 +1474,12 @@
     <message>
         <location filename="../details.cpp" line="148"/>
         <source>Proto</source>
-        <translation type="unfinished"></translation>
+        <translation>Protokoll</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="148"/>
         <source>Protocol (TCP or UDP)</source>
-        <translation type="unfinished"></translation>
+        <translation>Protokoll (TCP või UDP)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="149"/>
@@ -1504,23 +1504,23 @@
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>Local Addr</source>
-        <translation type="unfinished"></translation>
+        <translation>Kohalik aadress</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>Local IP address</source>
-        <translation type="unfinished"></translation>
+        <translation>Kohalik IP-aadress</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
         <location filename="../details.cpp" line="154"/>
         <source>Port</source>
-        <translation type="unfinished"></translation>
+        <translation>Port</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
         <source>Local port</source>
-        <translation type="unfinished"></translation>
+        <translation>Kohalik port</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
@@ -1540,12 +1540,12 @@
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>State</source>
-        <translation type="unfinished"></translation>
+        <translation>Olek</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>Connection state</source>
-        <translation type="unfinished"></translation>
+        <translation>Ühenduse olek</translation>
     </message>
 </context>
 <context>
@@ -1553,7 +1553,7 @@
     <message>
         <location filename="../misc.cpp" line="624"/>
         <source>Process count: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Protsesside arv: %1</translation>
     </message>
 </context>
 <context>
@@ -1562,7 +1562,8 @@
         <location filename="../misc.cpp" line="343"/>
         <source> This is unstable Alpha feature
  You maybe see a SEGFAULT...</source>
-        <translation type="unfinished"></translation>
+        <translation> See on üsna ebastabiilne alfa-funktsionaalsus
+ Pole ime, kui näed SEGFAULT-viga...</translation>
     </message>
 </context>
 <context>
@@ -1570,7 +1571,7 @@
     <message>
         <location filename="../misc.cpp" line="485"/>
         <source>title</source>
-        <translation type="unfinished"></translation>
+        <translation>pealkiri</translation>
     </message>
 </context>
 </TS>
