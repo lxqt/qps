@@ -110,7 +110,7 @@
     <message>
         <location filename="../misc.cpp" line="646"/>
         <source>Thread</source>
-        <translation>Ausführungsstrang</translation>
+        <translation>Thread</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="653"/>
@@ -245,12 +245,12 @@
     <message>
         <location filename="../infobar.cpp" line="782"/>
         <source>I/O Summary:</source>
-        <translation type="unfinished"></translation>
+        <translation>I/O-Zusammenfassung:</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="816"/>
         <source>No input or output</source>
-        <translation type="unfinished"></translation>
+        <translation>Keine Eingabe oder Ausgabe</translation>
     </message>
 </context>
 <context>
@@ -959,19 +959,19 @@
         <location filename="../infobar.cpp" line="430"/>
         <location filename="../infobar.cpp" line="437"/>
         <source>User: </source>
-        <translation type="unfinished"></translation>
+        <translation>Nutzer: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="431"/>
         <location filename="../infobar.cpp" line="438"/>
         <source>System: </source>
-        <translation type="unfinished"></translation>
+        <translation>System: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="432"/>
         <location filename="../infobar.cpp" line="439"/>
         <source>Nice: </source>
-        <translation type="unfinished"></translation>
+        <translation>Hübsch: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="430"/>
@@ -981,49 +981,49 @@
         <location filename="../infobar.cpp" line="438"/>
         <location filename="../infobar.cpp" line="439"/>
         <source>%</source>
-        <translation type="unfinished"></translation>
+        <translation>%</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="471"/>
         <location filename="../infobar.cpp" line="506"/>
         <source>Total: </source>
-        <translation type="unfinished"></translation>
+        <translation>Insgesamt: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="474"/>
         <location filename="../infobar.cpp" line="512"/>
         <source>Used: </source>
-        <translation type="unfinished"></translation>
+        <translation>Verwendet: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="478"/>
         <source>Cached: </source>
-        <translation type="unfinished"></translation>
+        <translation>Zwischengespeichert: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="481"/>
         <source>Buffer: </source>
-        <translation type="unfinished"></translation>
+        <translation>Puffer: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="509"/>
         <source>Free: </source>
-        <translation type="unfinished"></translation>
+        <translation>Frei: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="551"/>
         <source>Time passed after system boot</source>
-        <translation type="unfinished"></translation>
+        <translation>Vergangene Zeit seit Systemstart</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="579"/>
         <source>Average CPU load each 1, 5 ,15 minutes</source>
-        <translation type="unfinished"></translation>
+        <translation>Durchschnittliche CPU-Last, jeweils 1, 5, 15 Minuten</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="724"/>
         <source>CPU Usage Summary:</source>
-        <translation type="unfinished"></translation>
+        <translation>CPU-Verbrauch-Zusammenfassung:</translation>
     </message>
 </context>
 <context>
@@ -1046,7 +1046,7 @@
     <message>
         <location filename="../qps.cpp" line="180"/>
         <source>Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Sitzung</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="184"/>
