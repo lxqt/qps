@@ -79,7 +79,7 @@
     <message>
         <location filename="../prefs.cpp" line="85"/>
         <source>Normalize NICE</source>
-        <translation>Normalizuoti &quot;NICE&quot;</translation>
+        <translation>Normalizuoti „NICE“</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="86"/>
@@ -1147,7 +1147,7 @@
     <message>
         <location filename="../qps.cpp" line="393"/>
         <source>Renice...</source>
-        <translation>Iš naujo nustatyti &quot;nice&quot;...</translation>
+        <translation>Iš naujo nustatyti „nice“...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="394"/>
@@ -1307,17 +1307,17 @@
     <message>
         <location filename="../qps.cpp" line="1165"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
-        <translation>Jūs neturite leidimo iš naujo nustatyti pažymėtų procesų &quot;nice&quot; reikšmę. Tai leidžiama daryti tik proceso savininkui ir supernaudotojui.</translation>
+        <translation>Jūs neturite leidimo iš naujo nustatyti pažymėtų procesų „nice“ reikšmės. Tai leidžiama daryti tik proceso savininkui ir supernaudotojui.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1196"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
-        <translation>Jūs neturite leidimo iš naujo nustatyti proceso %1 (%2) &quot;nice&quot; reikšmę. Tai leidžiama daryti tik proceso savininkui ir supernaudotojui.</translation>
+        <translation>Jūs neturite leidimo iš naujo nustatyti proceso %1 (%2) „nice“ reikšmės. Tai leidžiama daryti tik proceso savininkui ir supernaudotojui.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1203"/>
         <source>Only the super-user may lower the nice value of a process.</source>
-        <translation>Tik supernaudotojas gali mažinti proceso &quot;nice&quot; reikšmę.</translation>
+        <translation>Tik supernaudotojas gali mažinti proceso „nice“ reikšmę.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1224"/>
@@ -1441,7 +1441,7 @@
     <message>
         <location filename="../dialogs.cpp" line="179"/>
         <source>Renice Process</source>
-        <translation>Iš naujo nustatyti procesui &quot;nice&quot; reikšmę</translation>
+        <translation>Iš naujo nustatyti procesui „nice“ reikšmę</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="185"/>

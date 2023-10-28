@@ -212,7 +212,7 @@
     <message>
         <location filename="../details.cpp" line="521"/>
         <source>Fd</source>
-        <translation type="unfinished">Fd</translation>
+        <translation>Fd</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="521"/>
