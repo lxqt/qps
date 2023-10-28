@@ -39,12 +39,12 @@
     <message>
         <location filename="../prefs.cpp" line="59"/>
         <source>Exit on closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Saída ao pechar</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="60"/>
         <source>Remember Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Lembrar a posición</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="68"/>
@@ -110,7 +110,7 @@
     <message>
         <location filename="../misc.cpp" line="646"/>
         <source>Thread</source>
-        <translation type="unfinished"></translation>
+        <translation>Fío</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="653"/>
@@ -245,12 +245,12 @@
     <message>
         <location filename="../infobar.cpp" line="782"/>
         <source>I/O Summary:</source>
-        <translation type="unfinished"></translation>
+        <translation>Resumo de E/S:</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="816"/>
         <source>No input or output</source>
-        <translation type="unfinished"></translation>
+        <translation>Sen entrada nin saída</translation>
     </message>
 </context>
 <context>
@@ -959,13 +959,13 @@
         <location filename="../infobar.cpp" line="430"/>
         <location filename="../infobar.cpp" line="437"/>
         <source>User: </source>
-        <translation type="unfinished"></translation>
+        <translation>Usuario: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="431"/>
         <location filename="../infobar.cpp" line="438"/>
         <source>System: </source>
-        <translation type="unfinished"></translation>
+        <translation>Sistema: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="432"/>
@@ -981,49 +981,49 @@
         <location filename="../infobar.cpp" line="438"/>
         <location filename="../infobar.cpp" line="439"/>
         <source>%</source>
-        <translation type="unfinished"></translation>
+        <translation>%</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="471"/>
         <location filename="../infobar.cpp" line="506"/>
         <source>Total: </source>
-        <translation type="unfinished"></translation>
+        <translation>Total: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="474"/>
         <location filename="../infobar.cpp" line="512"/>
         <source>Used: </source>
-        <translation type="unfinished"></translation>
+        <translation>Usado: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="478"/>
         <source>Cached: </source>
-        <translation type="unfinished"></translation>
+        <translation>En caché: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="481"/>
         <source>Buffer: </source>
-        <translation type="unfinished"></translation>
+        <translation>Buffer: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="509"/>
         <source>Free: </source>
-        <translation type="unfinished"></translation>
+        <translation>Libre: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="551"/>
         <source>Time passed after system boot</source>
-        <translation type="unfinished"></translation>
+        <translation>O tempo que pasou despois do inicio do sistema</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="579"/>
         <source>Average CPU load each 1, 5 ,15 minutes</source>
-        <translation type="unfinished"></translation>
+        <translation>Carga media da CPU cada 1, 5, 15 minutos</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="724"/>
         <source>CPU Usage Summary:</source>
-        <translation type="unfinished"></translation>
+        <translation>Resumo do uso da CPU:</translation>
     </message>
 </context>
 <context>
@@ -1046,7 +1046,7 @@
     <message>
         <location filename="../qps.cpp" line="180"/>
         <source>Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Sesión</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="184"/>
@@ -1066,7 +1066,7 @@
     <message>
         <location filename="../qps.cpp" line="191"/>
         <source>Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Campos</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="192"/>
@@ -1101,7 +1101,7 @@
     <message>
         <location filename="../qps.cpp" line="227"/>
         <source>Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Opcións</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="228"/>
@@ -1182,7 +1182,7 @@
     <message>
         <location filename="../qps.cpp" line="405"/>
         <source>Other Signals</source>
-        <translation type="unfinished"></translation>
+        <translation>Outros sinais</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="406"/>
@@ -1272,17 +1272,17 @@
     <message>
         <location filename="../qps.cpp" line="696"/>
         <source>Show File Path</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar a ruta do ficheiro</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="702"/>
         <source>Show Graph</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar gráfica</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="708"/>
         <source>Show Control Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar barra de control</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="719"/>
@@ -1332,22 +1332,22 @@
     <message>
         <location filename="../qps.cpp" line="1319"/>
         <source>Do you really want to terminate the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation>Realmente queres finalizar o(s) proceso(s) seleccionado(s)?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1321"/>
         <source>Do you really want to hang up the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation>Realmente queres colgar o(s) proceso(s) seleccionado(s)?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1323"/>
         <source>Do you really want to kill the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation>Realmente queres matar o(s) proceso(s) seleccionado(s)?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1332"/>
         <source>Question</source>
-        <translation type="unfinished"></translation>
+        <translation>Pregunta</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1353"/>
@@ -1357,12 +1357,12 @@
     <message>
         <location filename="../qps.cpp" line="1703"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1705"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;h2&gt; Qps %1 - Un xestor visual de procesos &lt;/h2&gt; %2 usando la libreria Qt %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Fonte: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;rastreador de erros: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1725"/>
@@ -1428,12 +1428,12 @@
     <message>
         <location filename="../misc.cpp" line="588"/>
         <source>PID, COMMAND, USER...</source>
-        <translation type="unfinished"></translation>
+        <translation>PID, COMANDO, USUARIO...</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="589"/>
         <source>Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtro</translation>
     </message>
 </context>
 <context>

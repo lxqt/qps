@@ -44,7 +44,7 @@
     <message>
         <location filename="../prefs.cpp" line="60"/>
         <source>Remember Position</source>
-        <translation>Pamiętaj pozycję</translation>
+        <translation>Zapamiętaj Pozycję</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="68"/>
@@ -199,7 +199,7 @@
     <message>
         <location filename="../fieldsel.cpp" line="34"/>
         <source>Select Custom Fields </source>
-        <translation>Wybierz pola niestandardowe </translation>
+        <translation>Wybierz Pola Niestandardowe </translation>
     </message>
     <message>
         <location filename="../fieldsel.cpp" line="75"/>
@@ -227,7 +227,7 @@
     <message>
         <location filename="../details.cpp" line="523"/>
         <source>Open mode</source>
-        <translation>Tryb otwarty</translation>
+        <translation>Tryb otwarcia</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="525"/>
@@ -237,7 +237,7 @@
     <message>
         <location filename="../details.cpp" line="525"/>
         <source>File name (if available)</source>
-        <translation>Nazwa pliku (jeśli jest dostępna)</translation>
+        <translation>Nazwa pliku (jeżeli dostępna)</translation>
     </message>
 </context>
 <context>
@@ -278,7 +278,7 @@
     <message>
         <location filename="../dialogs.cpp" line="121"/>
         <source>No UPDATE</source>
-        <translation>Bez AKTUALIZACJI</translation>
+        <translation>Brak AKTUALIZACJI</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="139"/>
@@ -296,7 +296,7 @@
     <message>
         <location filename="../details.cpp" line="392"/>
         <source>Mapped addresses (hex) )</source>
-        <translation>Mapowane adresy (szesnastkowo) )</translation>
+        <translation>Mapowany adres (hex) )</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="393"/>
@@ -326,7 +326,7 @@
     <message>
         <location filename="../details.cpp" line="395"/>
         <source>File offset at start of mapping (hex)</source>
-        <translation>Przesunięcie pliku na początku mapowania (szesnastkowo)</translation>
+        <translation>Offset pliku od początku mapowania (hex)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
