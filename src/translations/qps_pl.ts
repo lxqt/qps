@@ -44,7 +44,7 @@
     <message>
         <location filename="../prefs.cpp" line="60"/>
         <source>Remember Position</source>
-        <translation>Zapamiętaj Pozycję</translation>
+        <translation>Zapamiętaj pozycję</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="68"/>
@@ -291,7 +291,7 @@
     <message>
         <location filename="../details.cpp" line="392"/>
         <source>Address Range</source>
-        <translation>Zakres adresów</translation>
+        <translation>Zasięg adresu</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="392"/>
@@ -356,7 +356,7 @@
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>File name (if available)</source>
-        <translation>Nazwa pliku (jeśli jest dostępna)</translation>
+        <translation>Nazwa pliku (jeżeli dostępna)</translation>
     </message>
 </context>
 <context>
@@ -475,7 +475,7 @@
     <message>
         <location filename="../proc.cpp" line="2647"/>
         <source>Session ID</source>
-        <translation type="unfinished"></translation>
+        <translation>ID Sesji</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2649"/>
@@ -495,7 +495,7 @@
     <message>
         <location filename="../proc.cpp" line="2651"/>
         <source>Process group ID of tty owner</source>
-        <translation type="unfinished"></translation>
+        <translation>ID grupy procesów właściciela tty</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2653"/>
@@ -515,7 +515,7 @@
     <message>
         <location filename="../proc.cpp" line="2655"/>
         <source>Group name (*=sgid other)</source>
-        <translation type="unfinished"></translation>
+        <translation>Nazwa grupy (*=sgid other)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2657"/>
@@ -525,7 +525,7 @@
     <message>
         <location filename="../proc.cpp" line="2657"/>
         <source>Real user ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Prawdziwe ID użytkownika</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2659"/>
@@ -535,7 +535,7 @@
     <message>
         <location filename="../proc.cpp" line="2659"/>
         <source>Effective user ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Skuteczne ID użytkownika</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2661"/>
@@ -545,7 +545,7 @@
     <message>
         <location filename="../proc.cpp" line="2661"/>
         <source>Saved user ID (Posix)</source>
-        <translation type="unfinished"></translation>
+        <translation>Zapisane ID użytkownika (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2663"/>
@@ -555,12 +555,12 @@
     <message>
         <location filename="../proc.cpp" line="2663"/>
         <source>File system user ID</source>
-        <translation type="unfinished"></translation>
+        <translation>ID użytkownika systemu plików</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2665"/>
         <source>GID</source>
-        <translation type="unfinished"></translation>
+        <translation>GID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2665"/>
@@ -570,7 +570,7 @@
     <message>
         <location filename="../proc.cpp" line="2667"/>
         <source>EGID</source>
-        <translation type="unfinished"></translation>
+        <translation>EGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2667"/>
@@ -580,27 +580,27 @@
     <message>
         <location filename="../proc.cpp" line="2669"/>
         <source>SGID</source>
-        <translation type="unfinished"></translation>
+        <translation>SGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2669"/>
         <source>Saved group ID (Posix)</source>
-        <translation type="unfinished"></translation>
+        <translation>ID zapisanej grupy (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2671"/>
         <source>FSGID</source>
-        <translation type="unfinished"></translation>
+        <translation>FSGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2671"/>
         <source>File system group ID</source>
-        <translation type="unfinished"></translation>
+        <translation>ID grupy systemu plików</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2673"/>
         <source>PRI</source>
-        <translation type="unfinished"></translation>
+        <translation>PRI</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2673"/>
@@ -615,32 +615,32 @@
     <message>
         <location filename="../proc.cpp" line="2675"/>
         <source>Scheduling favour (higher -&gt; less cpu time)</source>
-        <translation type="unfinished"></translation>
+        <translation>Faworyzowanie planowania (wyższe -&gt; mniej czasu procesora)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2677"/>
         <source>NLWP</source>
-        <translation type="unfinished"></translation>
+        <translation>NLWP</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2677"/>
         <source>Number of tasks(threads) in task group</source>
-        <translation type="unfinished"></translation>
+        <translation>Liczba zadań (wątków) w grupie zadań</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2679"/>
         <source>PLCY</source>
-        <translation type="unfinished"></translation>
+        <translation>PLCY</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2679"/>
         <source>Scheduling policy</source>
-        <translation type="unfinished"></translation>
+        <translation>Polityka planowania</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2681"/>
         <source>RPRI</source>
-        <translation type="unfinished"></translation>
+        <translation>RPRI</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2681"/>
@@ -650,22 +650,22 @@
     <message>
         <location filename="../proc.cpp" line="2683"/>
         <source>TMS</source>
-        <translation type="unfinished"></translation>
+        <translation>TMS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2683"/>
         <source>Time slice in milliseconds</source>
-        <translation type="unfinished"></translation>
+        <translation>Wycinek czasu w milisekundach</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2685"/>
         <source>%SAVG</source>
-        <translation type="unfinished"></translation>
+        <translation>%SAVG</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2685"/>
         <source>Percentage average sleep time (-1 -&gt; N/A)</source>
-        <translation type="unfinished"></translation>
+        <translation>Procentowy średni czas snu (-1 -&gt; nd.)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2687"/>
@@ -680,22 +680,22 @@
     <message>
         <location filename="../proc.cpp" line="2689"/>
         <source>MAJFLT</source>
-        <translation type="unfinished"></translation>
+        <translation>MAJFLT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2689"/>
         <source>Number of major faults (disk access)</source>
-        <translation type="unfinished"></translation>
+        <translation>Liczba poważnych błędów (dostęp do dysku)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2691"/>
         <source>MINFLT</source>
-        <translation type="unfinished"></translation>
+        <translation>MINFLT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2691"/>
         <source>Number of minor faults (no disk access)</source>
-        <translation type="unfinished"></translation>
+        <translation>Liczba drobnych błędów (brak dostępu do dysku)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2694"/>
@@ -710,7 +710,7 @@
     <message>
         <location filename="../proc.cpp" line="2696"/>
         <source>RSS</source>
-        <translation type="unfinished"></translation>
+        <translation>RSS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2696"/>
@@ -720,17 +720,17 @@
     <message>
         <location filename="../proc.cpp" line="2698"/>
         <source>MEM</source>
-        <translation type="unfinished"></translation>
+        <translation>MEM</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2698"/>
         <source>memory usage (RSS-SHARE)</source>
-        <translation type="unfinished"></translation>
+        <translation>wykorzystanie pamięci (RSS-SHARE)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2700"/>
         <source>TRS</source>
-        <translation type="unfinished"></translation>
+        <translation>TRS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2700"/>
@@ -740,7 +740,7 @@
     <message>
         <location filename="../proc.cpp" line="2702"/>
         <source>DRS</source>
-        <translation type="unfinished"></translation>
+        <translation>DRS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2702"/>
@@ -750,12 +750,12 @@
     <message>
         <location filename="../proc.cpp" line="2704"/>
         <source>STACK</source>
-        <translation type="unfinished"></translation>
+        <translation>STOS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2704"/>
         <source>Stack size</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozmiar stosu</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2706"/>
@@ -765,7 +765,7 @@
     <message>
         <location filename="../proc.cpp" line="2706"/>
         <source>Shared memory with other libs</source>
-        <translation type="unfinished"></translation>
+        <translation>Wspólna pamięć z innymi bibliotekami</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2708"/>
@@ -800,12 +800,12 @@
     <message>
         <location filename="../proc.cpp" line="2714"/>
         <source>DT</source>
-        <translation type="unfinished"></translation>
+        <translation>DT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2714"/>
         <source>Number of dirty (non-written) pages</source>
-        <translation type="unfinished"></translation>
+        <translation>Liczba brudnych (niezapisanych) stron</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2716"/>
@@ -815,17 +815,17 @@
     <message>
         <location filename="../proc.cpp" line="2716"/>
         <source>State of the process </source>
-        <translation type="unfinished"></translation>
+        <translation>Stan procesu</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2718"/>
         <source>FLAGS</source>
-        <translation type="unfinished"></translation>
+        <translation>FLAGI</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2718"/>
         <source>Process flags (hex)</source>
-        <translation type="unfinished"></translation>
+        <translation>Flagi procesu (hex)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2720"/>
@@ -1464,7 +1464,7 @@
     <message>
         <location filename="../details.cpp" line="147"/>
         <source>Fd</source>
-        <translation type="unfinished">Fd</translation>
+        <translation>Fd</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="147"/>

@@ -845,7 +845,7 @@
     <message>
         <location filename="../proc.cpp" line="2722"/>
         <source>Weighted percentage of CPU (30 s average)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">CPU:n painotettu prosenttiosuus (keskimäärin 30s)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2724"/>
@@ -1484,7 +1484,7 @@
     <message>
         <location filename="../details.cpp" line="149"/>
         <source>Recv-Q</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Recv-Q</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="149"/>
@@ -1494,7 +1494,7 @@
     <message>
         <location filename="../details.cpp" line="150"/>
         <source>Send-Q</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Send-Q</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="150"/>
