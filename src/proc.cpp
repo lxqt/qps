@@ -154,6 +154,7 @@ char *read_proc_file(const char *fname, int pid = -1, int tgid = -1,
     if (fd < 0)
         return nullptr;
     r = read(fd, buffer_proc, sizeof(buffer_proc) - 1); // return 0 , -1 ,
+    close(fd);
     if (r < 0)
         return nullptr;
 
@@ -195,6 +196,7 @@ char *read_proc_file2(char *r_path, const char *fname, int *size = nullptr)
         return nullptr;
     r = read(fd, buffer_proc,
              sizeof(buffer_proc) - 1); // return 0 , -1 , read_count
+    close(fd);
     if (r < 0)
         return nullptr;
 
@@ -205,7 +207,6 @@ char *read_proc_file2(char *r_path, const char *fname, int *size = nullptr)
         *size = r;
 
     buffer_proc[r] = 0; // safer
-    close(fd);
 
     return buffer_proc;
     // note: not work  fgets(sbuf, sizeof(64), fp) why???
