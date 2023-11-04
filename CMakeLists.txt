@@ -18,7 +18,7 @@ add_definitions(
 
 # Minimum Versions
 set(LXQTBT_MINIMUM_VERSION "0.13.0")
-set(LXQT_MINIMUM_VERSION "1.2.0")
+set(LXQT_MINIMUM_VERSION "1.4.0")
 set(QT_MINIMUM_VERSION "5.15.0")
 
 find_package(lxqt ${LXQT_MINIMUM_VERSION} REQUIRED)
