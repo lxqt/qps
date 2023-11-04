@@ -1,3 +1,9 @@
+2.8.0 / 2023-11-05
+==================
+ * Updated screenshots and added metadata file.
+ * Fixed an instance of assigning of -1 to unsigned int.
+ * Fixed all instances of non-closed file descriptors (to fix an issue that caused a blank list for some users).
+
 2.7.0 / 2023-04-15
 ==================
  * Specify the widget when showing its tooltip (on Wayland).

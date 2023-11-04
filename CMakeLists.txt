@@ -9,7 +9,7 @@ Project(qps)
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
 
 set(MAJOR_VERSION 2)
-set(MINOR_VERSION 7)
+set(MINOR_VERSION 8)
 set(PATCH_VERSION 0)
 set(QPS_VERSION_STRING ${MAJOR_VERSION}.${MINOR_VERSION}.${PATCH_VERSION})
 add_definitions(
