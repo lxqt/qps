@@ -9,7 +9,7 @@ Project(qps)
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
 
 set(MAJOR_VERSION 2)
-set(MINOR_VERSION 7)
+set(MINOR_VERSION 8)
 set(PATCH_VERSION 0)
 set(QPS_VERSION_STRING ${MAJOR_VERSION}.${MINOR_VERSION}.${PATCH_VERSION})
 add_definitions(
@@ -18,7 +18,7 @@ add_definitions(
 
 # Minimum Versions
 set(LXQTBT_MINIMUM_VERSION "0.13.0")
-set(LXQT_MINIMUM_VERSION "1.2.0")
+set(LXQT_MINIMUM_VERSION "1.4.0")
 set(QT_MINIMUM_VERSION "5.15.0")
 
 find_package(lxqt ${LXQT_MINIMUM_VERSION} REQUIRED)
