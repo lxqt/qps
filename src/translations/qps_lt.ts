@@ -805,7 +805,7 @@
     <message>
         <location filename="../proc.cpp" line="2693"/>
         <source>Number of dirty (non-written) pages</source>
-        <translation>&quot;Nešvarių&quot; (neįrašytų) puslapių skaičius</translation>
+        <translation>„Nešvarių“ (neįrašytų) puslapių skaičius</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2695"/>
@@ -1446,7 +1446,7 @@
     <message>
         <location filename="../dialogs.cpp" line="185"/>
         <source>New nice value:</source>
-        <translation>Nauja &quot;nice&quot; reikšmė:</translation>
+        <translation>Nauja „nice“ reikšmė:</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="225"/>

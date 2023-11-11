@@ -74,7 +74,7 @@
     <message>
         <location filename="../prefs.cpp" line="83"/>
         <source>Selection: Copy PIDs to Clipboard</source>
-        <translation>Zaznaczenie: Skopiuj ID procesów do schowka</translation>
+        <translation>Zaznaczenie: skopiuj identyfikatory do schowka</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="85"/>
@@ -125,7 +125,7 @@
     <message>
         <location filename="../misc.cpp" line="655"/>
         <source>Non-Root Processes</source>
-        <translation>Procesy nie-administratora</translation>
+        <translation>Procesy inne niż roota</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="656"/>
@@ -135,7 +135,7 @@
     <message>
         <location filename="../misc.cpp" line="672"/>
         <source>Pause (Ctrl+Space)</source>
-        <translation>Pauzuj (Ctrl+Spacja)</translation>
+        <translation>Wstrzymaj (Ctrl+Spacja)</translation>
     </message>
 </context>
 <context>
@@ -153,7 +153,7 @@
     <message>
         <location filename="../details.cpp" line="54"/>
         <source>Sockets</source>
-        <translation>Sockety</translation>
+        <translation>Gniazda</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="59"/>
@@ -199,7 +199,7 @@
     <message>
         <location filename="../fieldsel.cpp" line="34"/>
         <source>Select Custom Fields </source>
-        <translation>Wybierz Pola Niestandardowe </translation>
+        <translation>Wybierz pola niestandardowe </translation>
     </message>
     <message>
         <location filename="../fieldsel.cpp" line="75"/>
@@ -475,7 +475,7 @@
     <message>
         <location filename="../proc.cpp" line="2626"/>
         <source>Session ID</source>
-        <translation>ID Sesji</translation>
+        <translation>Identyfikator sesji</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2628"/>
@@ -495,7 +495,7 @@
     <message>
         <location filename="../proc.cpp" line="2630"/>
         <source>Process group ID of tty owner</source>
-        <translation>ID grupy procesów właściciela tty</translation>
+        <translation>Identyfikator grupy procesów właściciela tty</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2632"/>
@@ -505,7 +505,7 @@
     <message>
         <location filename="../proc.cpp" line="2632"/>
         <source>Owner (*=suid root, +=suid a user)</source>
-        <translation type="unfinished"></translation>
+        <translation>Właściciel (*= suid roota, += suid użytkownika)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2634"/>
@@ -515,7 +515,7 @@
     <message>
         <location filename="../proc.cpp" line="2634"/>
         <source>Group name (*=sgid other)</source>
-        <translation>Nazwa grupy (*=sgid other)</translation>
+        <translation>Nazwa grupy (*=sgid inny)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2636"/>
@@ -525,7 +525,7 @@
     <message>
         <location filename="../proc.cpp" line="2636"/>
         <source>Real user ID</source>
-        <translation>Prawdziwe ID użytkownika</translation>
+        <translation>Prawdziwy identyfikator użytkownika</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2638"/>
@@ -535,7 +535,7 @@
     <message>
         <location filename="../proc.cpp" line="2638"/>
         <source>Effective user ID</source>
-        <translation>Skuteczne ID użytkownika</translation>
+        <translation>Efektywny identyfikator użytkownika</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2640"/>
@@ -545,7 +545,7 @@
     <message>
         <location filename="../proc.cpp" line="2640"/>
         <source>Saved user ID (Posix)</source>
-        <translation>Zapisane ID użytkownika (Posix)</translation>
+        <translation>Zapisany identyfikator użytkownika (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2642"/>
@@ -555,7 +555,7 @@
     <message>
         <location filename="../proc.cpp" line="2642"/>
         <source>File system user ID</source>
-        <translation>ID użytkownika systemu plików</translation>
+        <translation>Identyfikator użytkownika systemu plików</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2644"/>
@@ -565,7 +565,7 @@
     <message>
         <location filename="../proc.cpp" line="2644"/>
         <source>Real group ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Prawdziwy identyfikator grupy</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2646"/>
@@ -575,7 +575,7 @@
     <message>
         <location filename="../proc.cpp" line="2646"/>
         <source>Effective group ID</source>
-        <translation type="unfinished"></translation>
+        <translation>Efektywny identyfikator grupy</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2648"/>
@@ -585,7 +585,7 @@
     <message>
         <location filename="../proc.cpp" line="2648"/>
         <source>Saved group ID (Posix)</source>
-        <translation>ID zapisanej grupy (Posix)</translation>
+        <translation>Zapisany identyfikator grupy (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2650"/>
@@ -595,7 +595,7 @@
     <message>
         <location filename="../proc.cpp" line="2650"/>
         <source>File system group ID</source>
-        <translation>ID grupy systemu plików</translation>
+        <translation>Identyfikator grupy systemu plików</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2652"/>
@@ -670,7 +670,7 @@
     <message>
         <location filename="../proc.cpp" line="2666"/>
         <source>CPUSET</source>
-        <translation type="unfinished"></translation>
+        <translation>CPUSET</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2666"/>
@@ -700,7 +700,7 @@
     <message>
         <location filename="../proc.cpp" line="2673"/>
         <source>VSIZE</source>
-        <translation type="unfinished"></translation>
+        <translation>VSIZE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2673"/>
@@ -720,7 +720,7 @@
     <message>
         <location filename="../proc.cpp" line="2677"/>
         <source>MEM</source>
-        <translation>MEM</translation>
+        <translation>PAMIĘĆ</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2677"/>
@@ -760,7 +760,7 @@
     <message>
         <location filename="../proc.cpp" line="2685"/>
         <source>SHARE</source>
-        <translation type="unfinished"></translation>
+        <translation>WYMIANA</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2685"/>
@@ -810,7 +810,7 @@
     <message>
         <location filename="../proc.cpp" line="2695"/>
         <source>STAT</source>
-        <translation>STAT</translation>
+        <translation>STAN</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2695"/>
@@ -835,7 +835,7 @@
     <message>
         <location filename="../proc.cpp" line="2699"/>
         <source>Kernel function where process is sleeping</source>
-        <translation>Funkcja kernela, w której proces jest uśpiony</translation>
+        <translation>Funkcja jądra, w której proces jest uśpiony</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2701"/>
@@ -860,7 +860,7 @@
     <message>
         <location filename="../proc.cpp" line="2705"/>
         <source>%MEM</source>
-        <translation>%MEM</translation>
+        <translation>%PAMIĘCI</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2705"/>
@@ -870,7 +870,7 @@
     <message>
         <location filename="../proc.cpp" line="2707"/>
         <source>START</source>
-        <translation>START</translation>
+        <translation>ROZPOCZĘCIE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2707"/>
@@ -880,7 +880,7 @@
     <message>
         <location filename="../proc.cpp" line="2709"/>
         <source>TIME</source>
-        <translation>TIME</translation>
+        <translation>CZAS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2709"/>
@@ -920,7 +920,7 @@
     <message>
         <location filename="../proc.cpp" line="2718"/>
         <source>ROOT</source>
-        <translation>ROOT</translation>
+        <translation>GŁÓWNY</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2718"/>
@@ -971,7 +971,7 @@
         <location filename="../infobar.cpp" line="432"/>
         <location filename="../infobar.cpp" line="439"/>
         <source>Nice: </source>
-        <translation>Nice: </translation>
+        <translation>Priorytet (nice): </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="430"/>
@@ -1031,7 +1031,7 @@
     <message>
         <location filename="../qps.cpp" line="174"/>
         <source>header_popup</source>
-        <translation type="unfinished"></translation>
+        <translation>nagłówek wyskakującego okienka</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="175"/>
@@ -1142,7 +1142,7 @@
     <message>
         <location filename="../qps.cpp" line="391"/>
         <source>context popup</source>
-        <translation type="unfinished"></translation>
+        <translation>kontekstowe menu podręczne</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="392"/>
@@ -1187,82 +1187,82 @@
     <message>
         <location filename="../qps.cpp" line="405"/>
         <source>SIGINT (interrupt)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGINT (przerwanie)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="407"/>
         <source>SIGCONT (continue)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGCONT (kontynuacja)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="409"/>
         <source>SIGSTOP (stop)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGSTOP (zatrzymanie)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="411"/>
         <source>SIGQUIT (quit)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGQUIT (zakończenie)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="413"/>
         <source>SIGILL (illegal instruction)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGILL (nielegalna instrukcja)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="415"/>
         <source>SIGABRT (abort)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGABRT (przerwanie)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="417"/>
         <source>SIGFPE (floating point exception)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGFPE (wyjątek zmiennoprzecinkowy)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="419"/>
         <source>SIGSEGV (segmentation violation)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGSEGV (naruszenie segmentacji)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="421"/>
         <source>SIGPIPE (broken pipe)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGPIPE (przerwanie łącza)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="423"/>
         <source>SIGALRM (timer signal)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGALRM (sygnał licznika czasu)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="425"/>
         <source>SIGUSR1 (user-defined 1)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGUSR1 (użytkownika 1)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="427"/>
         <source>SIGUSR2 (user-defined 2)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGUSR2 (użytkownika 2)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="429"/>
         <source>SIGCHLD (child death)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGCHLD (usunięcie procesu potomnego)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="431"/>
         <source>SIGTSTP (stop from tty)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGTSTP (zatrzymanie z terminala)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="433"/>
         <source>SIGTTIN (tty input)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGTTIN (dane wejściowe z terminala)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="435"/>
         <source>SIGTTOU (tty output)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGTTOU (dane wejściowe z terminala)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="442"/>
@@ -1385,17 +1385,17 @@
     <message>
         <location filename="../dialogs.cpp" line="298"/>
         <source>SCHED_OTHER (time-sharing)</source>
-        <translation type="unfinished"></translation>
+        <translation>SCHED_OTHER (dzielenie czasu)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="299"/>
         <source>SCHED_FIFO (real-time)</source>
-        <translation type="unfinished"></translation>
+        <translation>SCHED_FIFO (czas rzeczywisty)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="300"/>
         <source>SCHED_RR (real-time)</source>
-        <translation type="unfinished"></translation>
+        <translation>SCHED_RR (czas rzeczywisty)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="314"/>
@@ -1428,7 +1428,7 @@
     <message>
         <location filename="../misc.cpp" line="588"/>
         <source>PID, COMMAND, USER...</source>
-        <translation>PID, POLECENIE, UŻYTKOWNIK...</translation>
+        <translation>IDENTYFIKATOR, POLECENIE, UŻYTKOWNIK...</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="589"/>
