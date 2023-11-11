@@ -6,7 +6,7 @@
     <message>
         <location filename="../details.cpp" line="653"/>
         <source>Field</source>
-        <translation>Andmeväli</translation>
+        <translation>Väli</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="653"/>
@@ -39,7 +39,7 @@
     <message>
         <location filename="../prefs.cpp" line="59"/>
         <source>Exit on closing</source>
-        <translation>Sulgemisnupu vajutamisel lõpeta rakenduse töö</translation>
+        <translation>Sulgemisnupu vajutamisel lõpetatakse rakenduse töö</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="60"/>
@@ -49,27 +49,27 @@
     <message>
         <location filename="../prefs.cpp" line="68"/>
         <source>Host Name Lookup</source>
-        <translation type="unfinished"></translation>
+        <translation>Hosti nime otsing</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="69"/>
         <source>Service Name Lookup</source>
-        <translation type="unfinished"></translation>
+        <translation>Teenuse nime otsing</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="75"/>
         <source>Disclosure Triangles</source>
-        <translation type="unfinished"></translation>
+        <translation>Avalikustamise kolmnurgad</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="76"/>
         <source>Branch Lines</source>
-        <translation type="unfinished"></translation>
+        <translation>Protsessipuu harud</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="82"/>
         <source>Auto Save Settings on Exit</source>
-        <translation>Väljumisel selvesta seadistused automaatselt</translation>
+        <translation>Väljumisel salvesta seadistused automaatselt</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="83"/>
@@ -79,12 +79,12 @@
     <message>
         <location filename="../prefs.cpp" line="85"/>
         <source>Normalize NICE</source>
-        <translation type="unfinished"></translation>
+        <translation>NICE normaliseerimine</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="86"/>
         <source>Use pmap for Map Names</source>
-        <translation type="unfinished"></translation>
+        <translation>Kasuta nimede vastendamise jaoks pmap-i</translation>
     </message>
 </context>
 <context>
@@ -92,7 +92,7 @@
     <message>
         <location filename="../prefs.cpp" line="106"/>
         <source>General</source>
-        <translation>Üldseadistused</translation>
+        <translation>Üldine</translation>
     </message>
 </context>
 <context>
@@ -110,7 +110,7 @@
     <message>
         <location filename="../misc.cpp" line="646"/>
         <source>Thread</source>
-        <translation>Lõimed</translation>
+        <translation>Lõim</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="653"/>
@@ -153,12 +153,12 @@
     <message>
         <location filename="../details.cpp" line="54"/>
         <source>Sockets</source>
-        <translation>Soklid</translation>
+        <translation>Pesad</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="59"/>
         <source>Memory Maps</source>
-        <translation>Mälu jaotumine</translation>
+        <translation>Mäluplaan</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="61"/>
@@ -199,7 +199,7 @@
     <message>
         <location filename="../fieldsel.cpp" line="34"/>
         <source>Select Custom Fields </source>
-        <translation>Vali kuvatavad väljad </translation>
+        <translation>Vali kohandatud väljad </translation>
     </message>
     <message>
         <location filename="../fieldsel.cpp" line="75"/>
@@ -217,17 +217,17 @@
     <message>
         <location filename="../details.cpp" line="521"/>
         <source>File descriptor</source>
-        <translation type="unfinished"></translation>
+        <translation>Faili deskriptor</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="523"/>
         <source>Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Režiim</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="523"/>
         <source>Open mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Ava režiim</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="525"/>
@@ -237,7 +237,7 @@
     <message>
         <location filename="../details.cpp" line="525"/>
         <source>File name (if available)</source>
-        <translation>Faili nimi (kui on leitav)</translation>
+        <translation>Faili nimi (kui on saadaval)</translation>
     </message>
 </context>
 <context>
@@ -245,12 +245,12 @@
     <message>
         <location filename="../infobar.cpp" line="782"/>
         <source>I/O Summary:</source>
-        <translation type="unfinished"></translation>
+        <translation>I/O kokkuvõte:</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="816"/>
         <source>No input or output</source>
-        <translation type="unfinished"></translation>
+        <translation>Sisend või väljund puudub</translation>
     </message>
 </context>
 <context>
@@ -258,17 +258,17 @@
     <message>
         <location filename="../dialogs.cpp" line="43"/>
         <source>Change Update Period</source>
-        <translation>Muuda uuendamise välpa</translation>
+        <translation>Muuda värskendusperioodi</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="49"/>
         <source>New Update Period</source>
-        <translation>Uus andmete uuendamise ajavahemik</translation>
+        <translation>Uus värskendusperiood</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="85"/>
         <source>Cancel</source>
-        <translation>Tühista</translation>
+        <translation>Loobu</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="87"/>
@@ -306,7 +306,7 @@
     <message>
         <location filename="../details.cpp" line="393"/>
         <source>Kbytes mapped (dec)</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaardistatud kilobaidid (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="394"/>
@@ -321,12 +321,12 @@
     <message>
         <location filename="../details.cpp" line="395"/>
         <source>Offset</source>
-        <translation type="unfinished"></translation>
+        <translation>Nihe</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="395"/>
         <source>File offset at start of mapping (hex)</source>
-        <translation type="unfinished"></translation>
+        <translation>Faili nihe mappingu alguses (hex)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
@@ -336,7 +336,7 @@
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Major,Minor device numbers (dec)</source>
-        <translation>Seadme numbrid (dec)</translation>
+        <translation>Ülem,alamseadme numbrid (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
@@ -346,7 +346,7 @@
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Inode number (dec)</source>
-        <translation>Inode number (dec)</translation>
+        <translation>Inode-i number (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
@@ -356,7 +356,7 @@
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>File name (if available)</source>
-        <translation>Faili nimi (kui on leitav)</translation>
+        <translation>Faili nimi (kui on saadaval)</translation>
     </message>
 </context>
 <context>
@@ -374,7 +374,7 @@
     <message>
         <location filename="../dialogs.cpp" line="280"/>
         <source>Cancel</source>
-        <translation>Katkesta</translation>
+        <translation>Loobu</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="283"/>
@@ -397,17 +397,17 @@
     <message>
         <location filename="../prefs.cpp" line="191"/>
         <source>%CPU divided by</source>
-        <translation>Protsessori % on jagatud</translation>
+        <translation>%CPU on jagatud</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="198"/>
         <source>Total cpu: %1</source>
-        <translation>Kõikide protsessoritega: %1</translation>
+        <translation>Kõik protsessorid: %1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="199"/>
         <source>Single cpu: 1</source>
-        <translation>Ühe protsessoriga: 1</translation>
+        <translation>Üks protsessor: 1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="205"/>
@@ -445,7 +445,7 @@
     <message>
         <location filename="../proc.cpp" line="2620"/>
         <source>Task group ID ( parent of threads )</source>
-        <translation type="unfinished"></translation>
+        <translation>Tegumirühma ID (lõimede eellane)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2622"/>
@@ -525,7 +525,7 @@
     <message>
         <location filename="../proc.cpp" line="2636"/>
         <source>Real user ID</source>
-        <translation>Tegeliku kasutaja ID</translation>
+        <translation>Kasutaja tegelik ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2638"/>
@@ -635,7 +635,7 @@
     <message>
         <location filename="../proc.cpp" line="2658"/>
         <source>Scheduling policy</source>
-        <translation>Ressursijaotuse põhimõte</translation>
+        <translation>Ressursijaotuse poliitika</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2660"/>
@@ -645,127 +645,127 @@
     <message>
         <location filename="../proc.cpp" line="2660"/>
         <source>Realtime priority (0-99, more is better)</source>
-        <translation>Prioriteet reaalajas (0-99, suurem on parem)</translation>
+        <translation>Reaalaja prioriteet (0–99, rohkem on parem)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2662"/>
         <source>TMS</source>
-        <translation type="unfinished"></translation>
+        <translation>TMS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2662"/>
         <source>Time slice in milliseconds</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajalõik millisekundites</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2664"/>
         <source>%SAVG</source>
-        <translation type="unfinished"></translation>
+        <translation>%SAVG</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2664"/>
         <source>Percentage average sleep time (-1 -&gt; N/A)</source>
-        <translation type="unfinished"></translation>
+        <translation>Keskmine uneaeg protsentuaalselt (-1 -&gt; ei kehti)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2666"/>
         <source>CPUSET</source>
-        <translation type="unfinished"></translation>
+        <translation>CPUSET</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2666"/>
         <source>Affinity CPU mask (0 -&gt; API not supported)</source>
-        <translation type="unfinished"></translation>
+        <translation>Affinity CPU mask (0 -&gt; API pole toetatud)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2668"/>
         <source>MAJFLT</source>
-        <translation type="unfinished"></translation>
+        <translation>MAJFLT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2668"/>
         <source>Number of major faults (disk access)</source>
-        <translation type="unfinished"></translation>
+        <translation>Lehe vigade arv (juurdepääs kettale)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2670"/>
         <source>MINFLT</source>
-        <translation type="unfinished"></translation>
+        <translation>MINFLT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2670"/>
         <source>Number of minor faults (no disk access)</source>
-        <translation type="unfinished"></translation>
+        <translation>Lehe vigade arv (kettale ligipääsuta)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2673"/>
         <source>VSIZE</source>
-        <translation type="unfinished"></translation>
+        <translation>VSIZE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2673"/>
         <source>Virtual image size of process</source>
-        <translation type="unfinished"></translation>
+        <translation>Protsessi virtuaalse pildi suurus</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2675"/>
         <source>RSS</source>
-        <translation type="unfinished"></translation>
+        <translation>RSS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2675"/>
         <source>Resident set size</source>
-        <translation type="unfinished"></translation>
+        <translation>Residendi komplekti suurus</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2677"/>
         <source>MEM</source>
-        <translation type="unfinished"></translation>
+        <translation>MÄLU</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2677"/>
         <source>memory usage (RSS-SHARE)</source>
-        <translation type="unfinished"></translation>
+        <translation>mälukasutus (RSS-SHARE)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2679"/>
         <source>TRS</source>
-        <translation type="unfinished"></translation>
+        <translation>TRS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2679"/>
         <source>Text(code) resident set size</source>
-        <translation type="unfinished"></translation>
+        <translation>Teksti (koodi) residendi komplekti suurus</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2681"/>
         <source>DRS</source>
-        <translation type="unfinished"></translation>
+        <translation>DRS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2681"/>
         <source>Data resident set size(malloc+global variable)</source>
-        <translation type="unfinished"></translation>
+        <translation>Andmeresidentide komplekti suurus (malloc+globaalne muutuja)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2683"/>
         <source>STACK</source>
-        <translation type="unfinished"></translation>
+        <translation>PINU</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2683"/>
         <source>Stack size</source>
-        <translation type="unfinished"></translation>
+        <translation>Pinu suurus</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2685"/>
         <source>SHARE</source>
-        <translation type="unfinished"></translation>
+        <translation>SHARE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2685"/>
         <source>Shared memory with other libs</source>
-        <translation type="unfinished"></translation>
+        <translation>Teiste teekidega jagatud mälu</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2687"/>
@@ -780,32 +780,32 @@
     <message>
         <location filename="../proc.cpp" line="2689"/>
         <source>IO_R</source>
-        <translation type="unfinished"></translation>
+        <translation>IO_R</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2689"/>
         <source>io read (file)</source>
-        <translation type="unfinished"></translation>
+        <translation>io lugemine (fail)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2691"/>
         <source>IO_W</source>
-        <translation type="unfinished"></translation>
+        <translation>IO_W</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2691"/>
         <source>io write (file)</source>
-        <translation type="unfinished"></translation>
+        <translation>io kirjutamine (fail)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2693"/>
         <source>DT</source>
-        <translation type="unfinished"></translation>
+        <translation>DT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2693"/>
         <source>Number of dirty (non-written) pages</source>
-        <translation type="unfinished"></translation>
+        <translation>Määrdunud (kirjutamata) lehtede arv</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2695"/>
@@ -820,82 +820,82 @@
     <message>
         <location filename="../proc.cpp" line="2697"/>
         <source>FLAGS</source>
-        <translation type="unfinished"></translation>
+        <translation>LIPUD</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2697"/>
         <source>Process flags (hex)</source>
-        <translation type="unfinished"></translation>
+        <translation>Protsessi lipud (hex)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2699"/>
         <source>WCHAN</source>
-        <translation type="unfinished"></translation>
+        <translation>WCHAN</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2699"/>
         <source>Kernel function where process is sleeping</source>
-        <translation type="unfinished"></translation>
+        <translation>Kerneli funktsioon, kus protsess on magama jäänud</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2701"/>
         <source>%WCPU</source>
-        <translation type="unfinished"></translation>
+        <translation>%WCPU</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2701"/>
         <source>Weighted percentage of CPU (30 s average)</source>
-        <translation type="unfinished"></translation>
+        <translation>Protsessori kaalutud protsent (30 s keskmine)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2703"/>
         <source>%CPU</source>
-        <translation type="unfinished"></translation>
+        <translation>%CPU</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2703"/>
         <source>Percentage of CPU used since last update</source>
-        <translation type="unfinished"></translation>
+        <translation>Pärast viimast värskendust kasutatud protsessori protsent</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2705"/>
         <source>%MEM</source>
-        <translation type="unfinished"></translation>
+        <translation>%MEM</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2705"/>
         <source>Percentage of memory used (RSS/total mem)</source>
-        <translation type="unfinished"></translation>
+        <translation>Kasutatud mälu protsent (RSS/kogu mälu)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2707"/>
         <source>START</source>
-        <translation type="unfinished"></translation>
+        <translation>START</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2707"/>
         <source>Time process started</source>
-        <translation type="unfinished"></translation>
+        <translation>Protsessi algusaeg</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2709"/>
         <source>TIME</source>
-        <translation type="unfinished"></translation>
+        <translation>AEG</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2709"/>
         <source>Total CPU time used since start</source>
-        <translation type="unfinished"></translation>
+        <translation>Protsessori koguaeg alates käivitamisest</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2711"/>
         <source>CPU</source>
-        <translation type="unfinished"></translation>
+        <translation>Protsessor</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2711"/>
         <source>CPU the process is executing on (SMP system)</source>
-        <translation type="unfinished"></translation>
+        <translation>Protsessor, milles protsess töötab (SMP-süsteem)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2713"/>
@@ -943,7 +943,7 @@
     <message>
         <location filename="../qps.cpp" line="1638"/>
         <source>Show</source>
-        <translation>Näita</translation>
+        <translation>Kuva</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1641"/>
@@ -1023,7 +1023,7 @@
     <message>
         <location filename="../infobar.cpp" line="724"/>
         <source>CPU Usage Summary:</source>
-        <translation>Protsessorikasutuse kokkuvõte:</translation>
+        <translation>Protsessori kasutuse kokkuvõte:</translation>
     </message>
 </context>
 <context>
@@ -1031,7 +1031,7 @@
     <message>
         <location filename="../qps.cpp" line="174"/>
         <source>header_popup</source>
-        <translation type="unfinished"></translation>
+        <translation>header_popup</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="175"/>
@@ -1051,7 +1051,7 @@
     <message>
         <location filename="../qps.cpp" line="183"/>
         <source>View</source>
-        <translation>Näita</translation>
+        <translation>Vaade</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="184"/>
@@ -1071,27 +1071,27 @@
     <message>
         <location filename="../qps.cpp" line="191"/>
         <source>Custom Fields</source>
-        <translation>Vaade valitud väärtustega</translation>
+        <translation>Kohandatud väljad</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="193"/>
         <source>Basic Fields </source>
-        <translation>Vaade põhiliste väärtustega </translation>
+        <translation>Põhilised väljad </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="195"/>
         <source>Jobs Fields </source>
-        <translation>Vaade töödega seotud väärtustega </translation>
+        <translation>Töödega seotud väljad </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="197"/>
         <source>Memory Fields </source>
-        <translation>Vaade mälukasutuse väärtustega </translation>
+        <translation>Vaade mälukasutuse väljadega </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="200"/>
         <source>Scheduling Fields </source>
-        <translation>Vaade ressursijaotuse väärtustega </translation>
+        <translation>Ressursijaotuse väljad </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="217"/>
@@ -1106,12 +1106,12 @@
     <message>
         <location filename="../qps.cpp" line="227"/>
         <source>Update Period...</source>
-        <translation>Uuendamise välp...</translation>
+        <translation>Värskendusperiood...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="236"/>
         <source>Show Status bar</source>
-        <translation>Näita olekuriba</translation>
+        <translation>Kuva olekuriba</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="245"/>
@@ -1132,17 +1132,17 @@
     <message>
         <location filename="../qps.cpp" line="338"/>
         <source>test</source>
-        <translation type="unfinished"></translation>
+        <translation>test</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="339"/>
         <source>Copied to Clipboard</source>
-        <translation>Kopeerisin andmed lõikelauale</translation>
+        <translation>Andmed kopeeritud lõikelauale</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="391"/>
         <source>context popup</source>
-        <translation type="unfinished"></translation>
+        <translation>konteksti hüpikaken</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="392"/>
@@ -1152,7 +1152,7 @@
     <message>
         <location filename="../qps.cpp" line="393"/>
         <source>Scheduling...</source>
-        <translation type="unfinished"></translation>
+        <translation>Ressursijaotus...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="395"/>
@@ -1212,7 +1212,7 @@
     <message>
         <location filename="../qps.cpp" line="415"/>
         <source>SIGABRT (abort)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGABRT (katkesta)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="417"/>
@@ -1247,7 +1247,7 @@
     <message>
         <location filename="../qps.cpp" line="429"/>
         <source>SIGCHLD (child death)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGCHLD (alama surm)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="431"/>
@@ -1272,7 +1272,7 @@
     <message>
         <location filename="../qps.cpp" line="695"/>
         <source>Show File Path</source>
-        <translation>Näita faili asukohta</translation>
+        <translation>Kuva faili asukohta</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="701"/>
@@ -1282,12 +1282,12 @@
     <message>
         <location filename="../qps.cpp" line="707"/>
         <source>Show Control Bar</source>
-        <translation>Näita kontrollriba</translation>
+        <translation>Kuva kontrollriba</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="718"/>
         <source>Include Child Times</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaasa alamate ajad</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="290"/>
@@ -1307,12 +1307,12 @@
     <message>
         <location filename="../qps.cpp" line="1164"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
-        <translation type="unfinished"></translation>
+        <translation>Teil pole luba valitud protsesse muuta. Seda saavad teha ainult protsessi omanik ja superkasutaja.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1195"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
-        <translation type="unfinished"></translation>
+        <translation>Teil pole õigust protsessi %1 (%2) muuta. Seda saavad teha ainult protsessi omanik ja superkasutaja.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1202"/>
@@ -1327,22 +1327,22 @@
     <message>
         <location filename="../qps.cpp" line="1257"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
-        <translation type="unfinished"></translation>
+        <translation>Teil pole luba protsessi %1 (%2) ajakava ja/või prioriteeti muuta. Seda võib teha ainult superkasutaja.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1318"/>
         <source>Do you really want to terminate the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation>Kas soovid tõesti valitud protsessi(d) lõpetada?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1320"/>
         <source>Do you really want to hang up the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation>Kas soovid tõesti valitud protsessi(d) katkestada?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1322"/>
         <source>Do you really want to kill the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation>Kas soovid tõesti valitud protsessi(d) tappa?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1331"/>
@@ -1352,7 +1352,7 @@
     <message>
         <location filename="../qps.cpp" line="1352"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
-        <translation type="unfinished"></translation>
+        <translation>Teil pole luba saata signaali protsessile %1 (%2). Ainult protsessi superkasutaja ja omanik võivad sellele signaale saata.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1702"/>
@@ -1362,7 +1362,7 @@
     <message>
         <location filename="../qps.cpp" line="1704"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;h2&gt; Qps %1 – visuaalne protsessihaldur &lt;/h2&gt; %2, mis kasutab Qt teeki %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Allikas: &lt;/b&gt;&lt;a href=&quot;https://github.com/ lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Veajälgija: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/ issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1724"/>
@@ -1385,17 +1385,17 @@
     <message>
         <location filename="../dialogs.cpp" line="298"/>
         <source>SCHED_OTHER (time-sharing)</source>
-        <translation type="unfinished"></translation>
+        <translation>SCHED_OTHER (ajajagamine)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="299"/>
         <source>SCHED_FIFO (real-time)</source>
-        <translation type="unfinished"></translation>
+        <translation>SCHED_FIFO (reaalajas)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="300"/>
         <source>SCHED_RR (real-time)</source>
-        <translation type="unfinished"></translation>
+        <translation>SCHED_RR (reaalajas)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="314"/>
@@ -1405,7 +1405,7 @@
     <message>
         <location filename="../dialogs.cpp" line="316"/>
         <source>Cancel</source>
-        <translation>Katkesta</translation>
+        <translation>Loobu</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="346"/>
@@ -1433,7 +1433,7 @@
     <message>
         <location filename="../misc.cpp" line="589"/>
         <source>Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Filter</translation>
     </message>
 </context>
 <context>
@@ -1451,7 +1451,7 @@
     <message>
         <location filename="../dialogs.cpp" line="225"/>
         <source>Cancel</source>
-        <translation>Katkesta</translation>
+        <translation>Loobu</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="229"/>
@@ -1469,7 +1469,7 @@
     <message>
         <location filename="../details.cpp" line="147"/>
         <source>File descriptor</source>
-        <translation type="unfinished"></translation>
+        <translation>Faili deskriptor</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="148"/>
@@ -1484,22 +1484,22 @@
     <message>
         <location filename="../details.cpp" line="149"/>
         <source>Recv-Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Recv-Q</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="149"/>
         <source>Bytes in receive queue</source>
-        <translation type="unfinished"></translation>
+        <translation>Baite vastuvõtujärjekorras</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="150"/>
         <source>Send-Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Send-Q</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="150"/>
         <source>Bytes in send queue</source>
-        <translation type="unfinished"></translation>
+        <translation>Baite saatmisjärjekorras</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
@@ -1525,17 +1525,17 @@
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Remote Addr</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaug-aadress</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Remote IP address</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaug-IP-aadress</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="154"/>
         <source>Remote port</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaugport</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
@@ -1562,8 +1562,8 @@
         <location filename="../misc.cpp" line="343"/>
         <source> This is unstable Alpha feature
  You maybe see a SEGFAULT...</source>
-        <translation> See on üsna ebastabiilne alfa-funktsionaalsus
- Pole ime, kui näed SEGFAULT-viga...</translation>
+        <translation> See on ebastabiilne alfa-funktsioon
+ Võib-olla näete SEGFAULT-i...</translation>
     </message>
 </context>
 <context>
