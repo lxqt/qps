@@ -1046,7 +1046,7 @@
     <message>
         <location filename="../qps.cpp" line="179"/>
         <source>Session</source>
-        <translation>Сессия</translation>
+        <translation>Сеанс</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="183"/>
