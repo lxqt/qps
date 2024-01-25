@@ -1287,7 +1287,7 @@
     <message>
         <location filename="../qps.cpp" line="718"/>
         <source>Include Child Times</source>
-        <translation type="unfinished"></translation>
+        <translation>Inclúe Child Times</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="290"/>
