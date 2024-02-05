@@ -1207,92 +1207,92 @@
     <message>
         <location filename="../qps.cpp" line="413"/>
         <source>SIGILL (illegal instruction)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGILL (ekiragiro tekikkirizibwa)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="415"/>
         <source>SIGABRT (abort)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGABRT (omulimu guleke)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="417"/>
         <source>SIGFPE (floating point exception)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGFPE (ensobi mu kubala)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="419"/>
         <source>SIGSEGV (segmentation violation)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGSEGV (endagiriro enoonyezebwa mu ggwanika zzibizi teriwo)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="421"/>
         <source>SIGPIPE (broken pipe)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGPIPE (ogumu ku mirimu omukutu gwe gwandiyunze teguliwo)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="423"/>
         <source>SIGALRM (timer signal)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGALRM (okulabula nti ekiseera ekitegeke kiweddeko)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="425"/>
         <source>SIGUSR1 (user-defined 1)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGUSR1 (sigino esindikibwa lwa nsonga omuwandisi wa puloguramu gyayagadde 1)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="427"/>
         <source>SIGUSR2 (user-defined 2)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGUSR2 (sigino esindikibwa lwa nsonga omuwandisi wa puloguramu gyayagadde 2)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="429"/>
         <source>SIGCHLD (child death)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGCHLD (omulimu omulala ogwatandikibwa guno gukomye)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="431"/>
         <source>SIGTSTP (stop from tty)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGTSTP (ekiwandikiro ekifuga omulimu kiguyimirizemu)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="433"/>
         <source>SIGTTIN (tty input)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGTTIN (omulimu ogwetengeredde ekiwandiikiro gwagala okusoma ebiva gye kiri)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="435"/>
         <source>SIGTTOU (tty output)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGTTOU (omulimu ogwetengeredde ekiwandikiro gwagala okukisindikira ebiguvuddemu)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="442"/>
         <source>View Details</source>
-        <translation type="unfinished"></translation>
+        <translation>Laba ebifa ku mulimu</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="695"/>
         <source>Show File Path</source>
-        <translation type="unfinished"></translation>
+        <translation>Laga mu bujjuvu ekkubo erigguka ku fayiro</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="701"/>
         <source>Show Graph</source>
-        <translation type="unfinished"></translation>
+        <translation>Laga ekifaananyi eky&apos;okubala</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="707"/>
         <source>Show Control Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Laga olubaawo olw&apos;ebifuga endaga y&apos;ebirabirizibwa</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="718"/>
         <source>Include Child Times</source>
-        <translation type="unfinished"></translation>
+        <translation>Baliramu n&apos;obudde bw&apos;emirimu egitandikibwa ginnaagy</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="290"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>Mala</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1163"/>
@@ -1302,22 +1302,22 @@
         <location filename="../qps.cpp" line="1256"/>
         <location filename="../qps.cpp" line="1351"/>
         <source>Permission denied</source>
-        <translation type="unfinished"></translation>
+        <translation>Tokkirizidwa</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1164"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tolina ndukusa zimala kukyusa ensoosawaza z&apos;emirimu egitangaazidwa. Nnyini gyo n&apos;omuteesiteesi wa sisitemu bokka be bakkirizibwa.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1195"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tolina ndukusa zimala kukyusa ensoosawaza y&apos;omirimu %1 (%2). Nnyini gwo n&apos;omuteesiteesi wa sisitemu bokka be bakkirizibwa.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1202"/>
         <source>Only the super-user may lower the nice value of a process.</source>
-        <translation type="unfinished"></translation>
+        <translation>Muteesiteesi wa sisitemu yekka yayinza okukendeeza ennamba ya nice ey&apos;omulimu.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1223"/>
