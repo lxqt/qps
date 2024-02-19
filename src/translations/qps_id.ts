@@ -105,7 +105,7 @@
     <message>
         <location filename="../misc.cpp" line="637"/>
         <source>Tree</source>
-        <translation>Tree</translation>
+        <translation type="unfinished">Pohon</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="646"/>
@@ -245,12 +245,12 @@
     <message>
         <location filename="../infobar.cpp" line="782"/>
         <source>I/O Summary:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ringkasan I/O:</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="816"/>
         <source>No input or output</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak ada masukan dan keluaran</translation>
     </message>
 </context>
 <context>
@@ -445,7 +445,7 @@
     <message>
         <location filename="../proc.cpp" line="2620"/>
         <source>Task group ID ( parent of threads )</source>
-        <translation type="unfinished">Task group ID ( parent of threads )</translation>
+        <translation>ID grup tugas (induk thread)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2622"/>
@@ -455,7 +455,7 @@
     <message>
         <location filename="../proc.cpp" line="2622"/>
         <source>Parent process ID</source>
-        <translation type="unfinished">Proses Utama</translation>
+        <translation>ID Proses Utama</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2624"/>

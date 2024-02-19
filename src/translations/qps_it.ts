@@ -336,7 +336,7 @@
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Major,Minor device numbers (dec)</source>
-        <translation type="unfinished"></translation>
+        <translation>Numeri di dispositivo maggiore e minore (decimale)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
@@ -615,7 +615,7 @@
     <message>
         <location filename="../proc.cpp" line="2654"/>
         <source>Scheduling favour (higher -&gt; less cpu time)</source>
-        <translation type="unfinished"></translation>
+        <translation>Pianificazione risorse (maggiore -&gt; meno tempo CPU)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2656"/>
@@ -715,7 +715,7 @@
     <message>
         <location filename="../proc.cpp" line="2675"/>
         <source>Resident set size</source>
-        <translation type="unfinished"></translation>
+        <translation>Dimensione del set residente</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2677"/>
@@ -750,12 +750,12 @@
     <message>
         <location filename="../proc.cpp" line="2683"/>
         <source>STACK</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">STACK</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2683"/>
         <source>Stack size</source>
-        <translation type="unfinished"></translation>
+        <translation>Dimensione stack</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2685"/>
@@ -1380,7 +1380,7 @@
     <message>
         <location filename="../dialogs.cpp" line="296"/>
         <source>Scheduling Policy</source>
-        <translation type="unfinished"></translation>
+        <translation>Politica di pianificazione</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="298"/>
@@ -1441,7 +1441,7 @@
     <message>
         <location filename="../dialogs.cpp" line="179"/>
         <source>Renice Process</source>
-        <translation type="unfinished"></translation>
+        <translation>Procedura di allocazione delle risorse</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="185"/>
@@ -1474,7 +1474,7 @@
     <message>
         <location filename="../details.cpp" line="148"/>
         <source>Proto</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Proto</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="148"/>
@@ -1489,7 +1489,7 @@
     <message>
         <location filename="../details.cpp" line="149"/>
         <source>Bytes in receive queue</source>
-        <translation type="unfinished"></translation>
+        <translation>Byte nella coda di ricezione</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="150"/>
@@ -1499,7 +1499,7 @@
     <message>
         <location filename="../details.cpp" line="150"/>
         <source>Bytes in send queue</source>
-        <translation type="unfinished"></translation>
+        <translation>Byte nella coda di invio</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
@@ -1562,7 +1562,8 @@
         <location filename="../misc.cpp" line="343"/>
         <source> This is unstable Alpha feature
  You maybe see a SEGFAULT...</source>
-        <translation type="unfinished"></translation>
+        <translation>Questa è una feature alpha instabile
+Forse vedrete un SEGFAULT...</translation>
     </message>
 </context>
 <context>
