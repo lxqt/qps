@@ -49,27 +49,27 @@
     <message>
         <location filename="../prefs.cpp" line="68"/>
         <source>Host Name Lookup</source>
-        <translation type="unfinished"></translation>
+        <translation>Noonya linnya lya ku kayungirizi</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="69"/>
         <source>Service Name Lookup</source>
-        <translation type="unfinished"></translation>
+        <translation>Noonya linnya lya kiweerezebwa</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="75"/>
         <source>Disclosure Triangles</source>
-        <translation type="unfinished"></translation>
+        <translation>Nsondassatu enyanjululuzi</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="76"/>
         <source>Branch Lines</source>
-        <translation type="unfinished"></translation>
+        <translation>Enkoloboze ez&apos;okukwatagana</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="82"/>
         <source>Auto Save Settings on Exit</source>
-        <translation type="unfinished"></translation>
+        <translation>Bw&apos;omala wano kireetere by&apos;okyusizza okukazibwa</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="83"/>
@@ -79,7 +79,7 @@
     <message>
         <location filename="../prefs.cpp" line="85"/>
         <source>Normalize NICE</source>
-        <translation type="unfinished"></translation>
+        <translation>Enkanankanawaza NICE</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="86"/>
@@ -278,12 +278,12 @@
     <message>
         <location filename="../dialogs.cpp" line="121"/>
         <source>No UPDATE</source>
-        <translation type="unfinished"></translation>
+        <translation>Ereme okukeberanga bipya</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="139"/>
         <source>Invalid value</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekiyingizidwa tekikkirizibwa</translation>
     </message>
 </context>
 <context>
@@ -392,7 +392,7 @@
     <message>
         <location filename="../prefs.cpp" line="157"/>
         <source>Setting</source>
-        <translation type="unfinished"></translation>
+        <translation>Nteekateeka</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="191"/>
@@ -412,12 +412,12 @@
     <message>
         <location filename="../prefs.cpp" line="205"/>
         <source>default</source>
-        <translation type="unfinished"></translation>
+        <translation>ekya bulijjo</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="206"/>
         <source>for developer</source>
-        <translation type="unfinished"></translation>
+        <translation>eby&apos;abaagala kukola ku buwandike obw&apos;ennono</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="240"/>
@@ -725,7 +725,7 @@
     <message>
         <location filename="../proc.cpp" line="2677"/>
         <source>memory usage (RSS-SHARE)</source>
-        <translation>Omugatte gw&apos;ebifo mu mawanika omulimu kye gukozesa (RSS-SHARE)</translation>
+        <translation>Omugatte gw&apos;ebifo mu mawanika omulimu bye gukozesa (RSS-SHARE)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2679"/>
@@ -775,7 +775,7 @@
     <message>
         <location filename="../proc.cpp" line="2687"/>
         <source>Kbytes on swap device</source>
-        <translation>Obunene mu Kbayiti bw&apos;ekifo ekyekwatidwa mu ggwanika ery&apos;eyongeza ery&apos;ekiseera</translation>
+        <translation>Obunene mu Kbayiti bw&apos;ekifo ekyekwatidwa mu ggwanika ery&apos;enyongeza ery&apos;ekiseera</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2689"/>
@@ -845,7 +845,7 @@
     <message>
         <location filename="../proc.cpp" line="2701"/>
         <source>Weighted percentage of CPU (30 s average)</source>
-        <translation>Obusobozi bw&apos;ekitundu ekibazi obukozesebwa mu kikumi (kibalibwa buli sikonda 30)</translation>
+        <translation>Obusobozi bw&apos;ekitundu ekibazi obukozesebwa ku kikumi (kibalibwa buli sikonda 30)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2703"/>
@@ -855,7 +855,7 @@
     <message>
         <location filename="../proc.cpp" line="2703"/>
         <source>Percentage of CPU used since last update</source>
-        <translation>Obusobozi bw&apos;ekitundu ekibazi obukozesebwa mu kikumi okuva lwe kyasemba okukeberwa</translation>
+        <translation>Obusobozi bw&apos;ekitundu ekibazi obukozesebwa ku kikumi okuva lwe kyasemba okukeberwa</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2705"/>
@@ -875,7 +875,7 @@
     <message>
         <location filename="../proc.cpp" line="2707"/>
         <source>Time process started</source>
-        <translation>Essaawa omlimu kwe gwatandikibwa</translation>
+        <translation>Essaawa omulimu kwe gwatandikibwa</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2709"/>
@@ -885,7 +885,7 @@
     <message>
         <location filename="../proc.cpp" line="2709"/>
         <source>Total CPU time used since start</source>
-        <translation>Obudda bw&apos;ekitundu ekibazi omulimu bwe gwakatwala okuva lwe gwatandikibwa</translation>
+        <translation>Obudde bw&apos;ekitundu ekibazi omulimu bwe gwakatwala okuva lwe gwatandikibwa</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2711"/>
@@ -1031,7 +1031,7 @@
     <message>
         <location filename="../qps.cpp" line="174"/>
         <source>header_popup</source>
-        <translation type="unfinished"></translation>
+        <translation>akatutunuka_akomutwe</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="175"/>
@@ -1061,7 +1061,7 @@
     <message>
         <location filename="../qps.cpp" line="185"/>
         <source>Log</source>
-        <translation type="unfinished"></translation>
+        <translation>Olukalala lw&apos;ebifudeyo</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="190"/>
@@ -1132,7 +1132,7 @@
     <message>
         <location filename="../qps.cpp" line="338"/>
         <source>test</source>
-        <translation type="unfinished"></translation>
+        <translation>gezesa</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="339"/>
@@ -1142,7 +1142,7 @@
     <message>
         <location filename="../qps.cpp" line="391"/>
         <source>context popup</source>
-        <translation type="unfinished"></translation>
+        <translation>akaboneka okusinzira ku kikolebwa</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="392"/>
@@ -1197,7 +1197,7 @@
     <message>
         <location filename="../qps.cpp" line="409"/>
         <source>SIGSTOP (stop)</source>
-        <translation>SIGSTOP (gusibe era gugye ku bwanjo)</translation>
+        <translation>SIGSTOP (gusibe era gulekerawo okwefuga ekiwandikiro)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="411"/>
@@ -1287,7 +1287,7 @@
     <message>
         <location filename="../qps.cpp" line="718"/>
         <source>Include Child Times</source>
-        <translation>Baliramu n&apos;obudde bw&apos;emirimu egitandikibwa ginnaagy</translation>
+        <translation>Baliramu n&apos;obudde bw&apos;emirimu egitandikibwa ginnaagyo</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="290"/>
@@ -1322,52 +1322,52 @@
     <message>
         <location filename="../qps.cpp" line="1223"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
-        <translation type="unfinished"></translation>
+        <translation>Omuteesiteesi wa sisitemu ye yekka ayinza okukyusa amateeka agafuga okusoosawaza n&apos;obusoosawaze obw&apos;ennono.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1257"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tolina ndukusa zimala okukyusa amateeka agafuga okusoosawaza n&apos;obusoosawaze obw&apos;ennono eby&apos;omulimu %1 (%2). Muteesiteesi wa sisitemu yekka y&apos;akkirizibwa.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1318"/>
         <source>Do you really want to terminate the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ddala oyagala okukomya emirimu egitangaazidwa?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1320"/>
         <source>Do you really want to hang up the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ddala oyagala okukomya emirimu egitangaazidwa egitakyalina kiwandikiro kigifuga?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1322"/>
         <source>Do you really want to kill the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ddala oyagala okukomya emirimu egitangaazidwa mbagirawo?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1331"/>
         <source>Question</source>
-        <translation type="unfinished"></translation>
+        <translation>Kibuuzo</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1352"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tolina ndukusa zimala okusindikira omulimu %1 (%2) sigino. Muteesiteesi wa sisitemu ne nyini gwo bokka be bakkirizibwa.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1702"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1704"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;h2&gt; Qps %1 - Puloguramu ey&apos;okuteekateeka entambula y&apos;emirimu &lt;/h2&gt; %2 ekozesa obusobozi obweyazike obwa Qt %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Obuwandike obw&apos;ennono: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Abalondoola bisobu: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1724"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Eyatandika Qps ye&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Abaayamba be ba&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
     </message>
 </context>
 <context>
@@ -1375,52 +1375,52 @@
     <message>
         <location filename="../dialogs.cpp" line="292"/>
         <source>Change scheduling</source>
-        <translation type="unfinished"></translation>
+        <translation>Kyuusa amateeka agafuga okuoosawaza</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="296"/>
         <source>Scheduling Policy</source>
-        <translation type="unfinished"></translation>
+        <translation>Amateeka agafuga okusoosawaza</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="298"/>
         <source>SCHED_OTHER (time-sharing)</source>
-        <translation type="unfinished"></translation>
+        <translation>SCHED_OTHER (kugabana budde)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="299"/>
         <source>SCHED_FIFO (real-time)</source>
-        <translation type="unfinished"></translation>
+        <translation>SCHED_FIFO (awatali kulindisibwa)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="300"/>
         <source>SCHED_RR (real-time)</source>
-        <translation type="unfinished"></translation>
+        <translation>SCHED_RR (awatali kulindisibwa)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="314"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>Kale</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="316"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Sazamu</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="346"/>
         <source>Priority (1-99):</source>
-        <translation type="unfinished"></translation>
+        <translation>Obusoosawaze (1-99):</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="379"/>
         <source>Invalid Input</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekiyingizidwa tekikkirizibwa</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="380"/>
         <source>The priority must be in the range 1..99</source>
-        <translation type="unfinished"></translation>
+        <translation>Obusoosawaze bulina okubeera mu lubu 1..99</translation>
     </message>
 </context>
 <context>
@@ -1428,12 +1428,12 @@
     <message>
         <location filename="../misc.cpp" line="588"/>
         <source>PID, COMMAND, USER...</source>
-        <translation type="unfinished"></translation>
+        <translation>PID, KIRAGIRO, MUKOZESA...</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="589"/>
         <source>Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekisunsuzibwa</translation>
     </message>
 </context>
 <context>
@@ -1441,22 +1441,22 @@
     <message>
         <location filename="../dialogs.cpp" line="179"/>
         <source>Renice Process</source>
-        <translation type="unfinished"></translation>
+        <translation>Kyusa obusoosawaze obwa nice obw&apos;omulimu</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="185"/>
         <source>New nice value:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ennamba ya nice empya:</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="225"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Sazamu</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="229"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>Kale</translation>
     </message>
 </context>
 <context>
@@ -1464,88 +1464,88 @@
     <message>
         <location filename="../details.cpp" line="147"/>
         <source>Fd</source>
-        <translation type="unfinished"></translation>
+        <translation>Fd</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="147"/>
         <source>File descriptor</source>
-        <translation type="unfinished"></translation>
+        <translation>Ndagiriro ekutuusa ku fayiro embikkule</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="148"/>
         <source>Proto</source>
-        <translation type="unfinished"></translation>
+        <translation>Mateeka</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="148"/>
         <source>Protocol (TCP or UDP)</source>
-        <translation type="unfinished"></translation>
+        <translation>Mateeka agafuga okuwulizgana (TCP oba UDP)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="149"/>
         <source>Recv-Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Recv-Q</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="149"/>
         <source>Bytes in receive queue</source>
-        <translation type="unfinished"></translation>
+        <translation>Bayiti eziri mu ggwanika ly&apos;ebyakatuuka</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="150"/>
         <source>Send-Q</source>
-        <translation type="unfinished"></translation>
+        <translation>Send-Q</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="150"/>
         <source>Bytes in send queue</source>
-        <translation type="unfinished"></translation>
+        <translation>Bayiti eziri mu ggwanika ly&apos;ebisindikibwa</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>Local Addr</source>
-        <translation type="unfinished"></translation>
+        <translation>Endagiriro ku kayungirizi ento</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>Local IP address</source>
-        <translation type="unfinished"></translation>
+        <translation>Endagiriro eya IP eya ku kayungirizi ento</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
         <location filename="../details.cpp" line="154"/>
         <source>Port</source>
-        <translation type="unfinished"></translation>
+        <translation>Pooti</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
         <source>Local port</source>
-        <translation type="unfinished"></translation>
+        <translation>Pooti ey&apos;omu kitundu</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Remote Addr</source>
-        <translation type="unfinished"></translation>
+        <translation>Endagiriro ey&apos;ebunaayira</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Remote IP address</source>
-        <translation type="unfinished"></translation>
+        <translation>Endagiriro eya IP ey&apos;ebunaayira</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="154"/>
         <source>Remote port</source>
-        <translation type="unfinished"></translation>
+        <translation>Pooti ey&apos;ebunaayira</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>State</source>
-        <translation type="unfinished"></translation>
+        <translation>Embeera</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>Connection state</source>
-        <translation type="unfinished"></translation>
+        <translation>Embeera y&apos;empulizigana</translation>
     </message>
 </context>
 <context>
@@ -1553,7 +1553,7 @@
     <message>
         <location filename="../misc.cpp" line="624"/>
         <source>Process count: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Obungi bw&apos;emirimu: %1</translation>
     </message>
 </context>
 <context>
@@ -1562,7 +1562,8 @@
         <location filename="../misc.cpp" line="343"/>
         <source> This is unstable Alpha feature
  You maybe see a SEGFAULT...</source>
-        <translation type="unfinished"></translation>
+        <translation> Buno busobozi bupya obukyakulaakulanizibwa
+Oyinza okufuna SEGFAULT...</translation>
     </message>
 </context>
 <context>
@@ -1570,7 +1571,7 @@
     <message>
         <location filename="../misc.cpp" line="485"/>
         <source>title</source>
-        <translation type="unfinished"></translation>
+        <translation>mutwe</translation>
     </message>
 </context>
 </TS>
