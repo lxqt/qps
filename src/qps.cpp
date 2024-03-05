@@ -88,7 +88,6 @@
 #include <QDialogButtonBox>
 #include <QClipboard>
 #include <QSettings>
-#include <QTextCodec>
 
 #include <iostream>
 
@@ -111,8 +110,6 @@ QList<Procview *> proclist;
 #include "trayicon.h"
 TrayIcon *trayicon = nullptr;
 
-// for Non-ASCII Languages (CJK:chinese,japanese,korean, arabic ...)
-QTextCodec *codec = nullptr;
 #define UniString(str) str // codec->toUnicode(str)
 /* ------------------------ END global variables -------------------------- */
 
@@ -288,15 +285,15 @@ Qps::Qps()
 
     m_session->addAction(QIcon::fromTheme(QStringLiteral("application-exit"))
                         , tr( "Quit" )
+                        , Qt::ALT | Qt::Key_Q
                         , this
-                        , &Qps::save_quit
-                        , Qt::ALT | Qt::Key_Q);
+                        , &Qps::save_quit);
 
     // misc. accelerators
-    (void) new QShortcut(Qt::CTRL + Qt::Key_Q, this, SLOT(save_quit()));
-    (void) new QShortcut(Qt::CTRL + Qt::Key_Space,
+    (void) new QShortcut(Qt::CTRL | Qt::Key_Q, this, SLOT(save_quit()));
+    (void) new QShortcut(Qt::CTRL | Qt::Key_Space,
                                   ctrlbar->pauseButton, SLOT(click()));
-    (void) new QShortcut(Qt::CTRL + Qt::Key_L, pstable, SLOT(repaintAll()));
+    (void) new QShortcut(Qt::CTRL | Qt::Key_L, pstable, SLOT(repaintAll()));
 
     connect(pstable, &HeadedTable::doubleClicked, this, &Qps::open_details );
     connect(pstable, &HeadedTable::rightClicked, this,
@@ -308,7 +305,7 @@ Qps::Qps()
     update_load_time = 0;
 
     QVBoxLayout *vlayout = new QVBoxLayout;
-    vlayout->setMargin(0);
+    vlayout->setContentsMargins(0, 0, 0, 0);
     if (flag_useTabView)
         vlayout->setSpacing(0);
     else
@@ -392,10 +389,9 @@ QMenu *Qps::make_signal_popup_menu()
     m_popup->addAction( tr( "Renice..." ), this, &Qps::menu_renice);
     m_popup->addAction( tr( "Scheduling..." ), this, &Qps::menu_sched);
     m_popup->addSeparator();
-    m_popup->addAction( tr( "Terminate" ), this, &Qps::sig_term ,
-                       Qt::Key_Delete); // better
-    m_popup->addAction( tr( "Hangup" ), this, &Qps::sig_hup, Qt::ALT + Qt::Key_H);
-    m_popup->addAction( tr( "Kill" ), this, &Qps::sig_kill, Qt::ALT + Qt::Key_K);
+    m_popup->addAction( tr( "Terminate" ), Qt::Key_Delete, this, &Qps::sig_term);
+    m_popup->addAction( tr( "Hangup" ), Qt::ALT | Qt::Key_H, this, &Qps::sig_hup);
+    m_popup->addAction( tr( "Kill" ), Qt::ALT | Qt::Key_K, this, &Qps::sig_kill);
     act = m_popup->addAction( tr( "Stop" ), this, &Qps::sig_stop);
     act->setData(MENU_SIGSTOP);
     act = m_popup->addAction( tr( "Continue" ), this, &Qps::sig_cont);
@@ -1619,7 +1615,6 @@ int main(int argc, char **argv, char **envp)
     check_system_requirement(); // check kernel version.. etc in proc.cpp
 
     QpsApp app(argc, argv);
-    app.setAttribute(Qt::AA_UseHighDpiPixmaps, true);
 
     init_misc(nullptr); // init misc, some test code runs ...
     qps = new Qps();

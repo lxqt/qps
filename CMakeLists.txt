@@ -9,7 +9,7 @@ Project(qps)
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
 
 set(MAJOR_VERSION 2)
-set(MINOR_VERSION 8)
+set(MINOR_VERSION 9)
 set(PATCH_VERSION 0)
 set(QPS_VERSION_STRING ${MAJOR_VERSION}.${MINOR_VERSION}.${PATCH_VERSION})
 add_definitions(
@@ -17,20 +17,20 @@ add_definitions(
 )
 
 # Minimum Versions
-set(LXQTBT_MINIMUM_VERSION "0.13.0")
-set(LXQT_MINIMUM_VERSION "1.4.0")
-set(QT_MINIMUM_VERSION "5.15.0")
+set(LXQTBT_MINIMUM_VERSION "2.0.0")
+set(LXQT_MINIMUM_VERSION "2.0.0")
+set(QT_MINIMUM_VERSION "6.6.0")
 
 find_package(lxqt ${LXQT_MINIMUM_VERSION} REQUIRED)
-find_package(Qt5 ${QT_MINIMUM_VERSION} REQUIRED COMPONENTS Widgets LinguistTools)
-find_package(lxqt-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
+find_package(Qt6 ${QT_MINIMUM_VERSION} REQUIRED COMPONENTS Widgets LinguistTools)
+find_package(lxqt2-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
 
 include(GNUInstallDirs)
 include(LXQtPreventInSourceBuilds)
 include(LXQtCompilerSettings NO_POLICY_SCOPE)
 include(LXQtTranslateTs)
 include(LXQtTranslateDesktop)
-include(Qt5TranslationLoader)
+include(Qt6TranslationLoader)
 
 # LXQtCompilerSettings adds them but qps still uses implicit string casts
 remove_definitions(

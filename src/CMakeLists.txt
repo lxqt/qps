@@ -50,7 +50,7 @@ lxqt_translate_ts(QM_FILES
     INSTALL_DIR "${QPS_TRANSLATIONS_DIR}"
 )
 
-qt5_translation_loader(
+qt6_translation_loader(
     QM_LOADER
     "${QPS_TRANSLATIONS_DIR}"
     ${PROJECT_NAME}
@@ -76,7 +76,7 @@ add_executable(${PROJECT_NAME}
 
 target_link_libraries(${PROJECT_NAME}
     lxqt
-    Qt5::Widgets
+    Qt6::Widgets
 )
 
 install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ${CMAKE_INSTALL_FULL_BINDIR})

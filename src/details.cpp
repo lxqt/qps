@@ -405,32 +405,6 @@ Maps::Maps(QWidget *parent) : SimpleTable(parent, MAPSFIELDS, fields() )
     // monospaced font looks best in the table body since it contains
     // hex numerals and flag fields. Pick Courier (why not)
     body->setFont(QFont("Courier", font().pointSize()));
-    bool mono = true;
-    QFont f = font();
-    if (f.rawMode())
-    {
-        /* see if the font is monospaced enough for our needs */
-        QFontMetrics fm(f);
-        int zw = fm.horizontalAdvance('0');
-        const char *test = "abcdef";
-        for (const char *p = test; *p; p++)
-            if (fm.horizontalAdvance(*p) != zw)
-            {
-                mono = false;
-                break;
-            }
-    }
-    else
-        mono = f.fixedPitch();
-    if (mono)
-    {
-        ////setBodyFont(f);
-    }
-    else
-    {
-        /// int ps = f.pointSize();
-        /// setBodyFont(QFont("Courier", ps ? ps : 10));
-    }
 
     refresh();
     // compute total width = window width

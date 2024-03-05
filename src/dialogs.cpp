@@ -122,10 +122,10 @@ void IntervalDialog::event_label_changed()
         return;
     }
 
-    while ((s[i] >= '0' && s[i] <= '9') || s[i] == '.')
+    while (i < s.size() && ((s[i] >= '0' && s[i] <= '9') || s[i] == '.'))
         i++;
 
-    float period = (i > 0) ? s.leftRef(i).toFloat() : -1;
+    float period = (i > 0) ? s.first(i).toFloat() : -1;
 
     s = s.mid(i, 3).simplified();
     if (s.length() == 0 || s == "s")
@@ -153,10 +153,10 @@ void IntervalDialog::done_dialog()
 
     // if(toggle->isChecked())
     QString s = ed_result;
-    while ((s[i] >= '0' && s[i] <= '9') || s[i] == '.')
+    while (i < s.size() && ((s[i] >= '0' && s[i] <= '9') || s[i] == '.'))
         i++;
 
-    float period = (i > 0) ? s.leftRef(i).toFloat() : -1;
+    float period = (i > 0) ? s.first(i).toFloat() : -1;
 
     s = s.mid(i, 3).simplified();
     if (s.length() == 0 || s == "s")
