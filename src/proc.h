@@ -31,7 +31,7 @@
 #endif
 
 #include <QHash>
-#include <QVector>
+#include <QList>
 #include <QString>
 #include <QStringList>
 #include <QDir>
@@ -494,7 +494,7 @@ class Procinfo // Process Infomation
     double get_tms();
     unsigned long get_affcpu();
 
-    QVector<SockInode *> sock_inodes; // socket inodes or NULL if not read
+    QList<SockInode *> sock_inodes; // socket inodes or NULL if not read
 #endif
     int pid;
     bool clone;
@@ -596,9 +596,9 @@ class Procinfo // Process Infomation
     float pcpu;           // %CPU: percent cpu after last update
     float pmem;           // %MEM
 
-    QVector<Fileinfo *> fd_files; // file names list
-    QVector<Mapsinfo *> maps;     // maps list
-    QVector<NameValue> environ;   // environment
+    QList<Fileinfo *> fd_files; // file names list
+    QList<Mapsinfo *> maps;     // maps list
+    QList<NameValue> environ;   // environment
     char *envblock;               // malloc()ed environment data block
 
 #ifdef SOLARIS
@@ -614,13 +614,13 @@ class Procinfo // Process Infomation
     bool lastchild : 1; // true if last (visible) child in tree view
 
     short level;                  // distance from process root
-    QVector<Procinfo *> children; // real child processes
+    QList<Procinfo *> children; // real child processes
     static const int MAX_CMD_LEN = 512;
 
     char refcnt;
 
     // virtual child for Table_Tree
-    QVector<Procinfo *> table_children;
+    QList<Procinfo *> table_children;
     int table_child_seq;
     int clear_gen;
     int child_seq_prev;
@@ -796,7 +796,7 @@ class Procview : public Proc
     static int compare_backwards(Procinfo *const *a, Procinfo *const *b);
     void refresh();
     bool accept_proc(Procinfo *p); // COMMON
-    void linearize_tree(QVector<Procinfo *> *ps, int level, int prow,
+    void linearize_tree(QList<Procinfo *> *ps, int level, int prow,
                         bool flag_hide = false);
     void build_tree(Proclist &);
     void rebuild();
@@ -817,10 +817,10 @@ class Procview : public Proc
 
     Procinfo *getProcinfoByPID(int pid) { return procs.value(pid, NULL); };
 
-    QVector<Procinfo *> linear_procs; // this is linear_proc_list for viewer
+    QList<Procinfo *> linear_procs; // this is linear_proc_list for viewer
 
 #ifdef LINUX
-    QVector<Sockinfo *> linear_socks; // Linux Testing
+    QList<Sockinfo *> linear_socks; // Linux Testing
 #endif
 
     // QList<> tags_kernel;
@@ -829,8 +829,8 @@ class Procview : public Proc
     // we cannot rely on this (Solaris has several parentless processes).
     // Also, if the view is restricted, all processes whose parent isn't in
     // the table.
-    QVector<Procinfo *> root_procs; // table_root_procs; for viewer
-    QVector<Category *> cats;       // for table
+    QList<Procinfo *> root_procs; // table_root_procs; for viewer
+    QList<Category *> cats;       // for table
 
     Category *sortcat;
     Category *sortcat_linear; // testing

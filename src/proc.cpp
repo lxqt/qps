@@ -647,7 +647,7 @@ typedef int (*compare_func)(const void *, const void *);
 }
 
 // table view - sort
-void Procview::linearize_tree(QVector<Procinfo *> *ps, int level, int prow,
+void Procview::linearize_tree(QList<Procinfo *> *ps, int level, int prow,
                               bool hide)
 {
     static_sortcat = sortcat;

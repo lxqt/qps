@@ -609,7 +609,7 @@ void GraphBase::make_graph(int w, int h, QPainter *p)
     if (start < 0)
         start = 0;
 
-    QPolygon pa(hsize - start); // QVector pa(npts);
+    QPolygon pa(hsize - start);
 
     int idx = 0;
     for (int i = start; i < procview->history.size(); i++, idx++)
@@ -1032,7 +1032,7 @@ void Infobar::make_graph(int w, int h, QPainter *p, bool test)
 
     if (test == false)
     {
-        QPolygon pa(hsize - start); // QVector pa(npts);
+        QPolygon pa(hsize - start);
 
         for (int i = start; i < procview->history.size(); i++, idx++)
         {
