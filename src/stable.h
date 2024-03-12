@@ -33,7 +33,6 @@
 #include <QBitArray>
 #include <QHash>
 #include <QList>
-#include <QList>
 #include <QRect>
 #include <QString>
 #include <QStringList>
