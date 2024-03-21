@@ -144,15 +144,15 @@ Lookup *Sockets::lookup = nullptr;
 
 TableField *Sockets::fields()
 {
-    static QVector< TableField > fields( { { tr( "Fd" ), 5, 8, Qt::AlignRight, tr( "File descriptor" ) }
-                                         , { tr( "Proto" ), 4, 8, Qt::AlignLeft, tr( "Protocol (TCP or UDP)" ) }
-                                         , { tr( "Recv-Q" ), 9, 8, Qt::AlignRight, tr( "Bytes in receive queue" ) }
-                                         , { tr( "Send-Q" ), 9, 8, Qt::AlignRight, tr( "Bytes in send queue" ) }
-                                         , { tr( "Local Addr" ), -1, 8, Qt::AlignLeft, tr( "Local IP address" ) }
-                                         , { tr( "Port" ), 6, 8, Qt::AlignLeft, tr( "Local port" ) }
-                                         , { tr( "Remote Addr" ), -1, 8, Qt::AlignLeft, tr( "Remote IP address" ) }
-                                         , { tr( "Port" ), 6, 8, Qt::AlignLeft, tr( "Remote port" ) }
-                                         , { tr( "State" ), 18, 8, Qt::AlignLeft, tr( "Connection state" ) } } );
+    static QList< TableField > fields( { { tr( "Fd" ), 5, 8, Qt::AlignRight, tr( "File descriptor" ) }
+                                       , { tr( "Proto" ), 4, 8, Qt::AlignLeft, tr( "Protocol (TCP or UDP)" ) }
+                                       , { tr( "Recv-Q" ), 9, 8, Qt::AlignRight, tr( "Bytes in receive queue" ) }
+                                       , { tr( "Send-Q" ), 9, 8, Qt::AlignRight, tr( "Bytes in send queue" ) }
+                                       , { tr( "Local Addr" ), -1, 8, Qt::AlignLeft, tr( "Local IP address" ) }
+                                       , { tr( "Port" ), 6, 8, Qt::AlignLeft, tr( "Local port" ) }
+                                       , { tr( "Remote Addr" ), -1, 8, Qt::AlignLeft, tr( "Remote IP address" ) }
+                                       , { tr( "Port" ), 6, 8, Qt::AlignLeft, tr( "Remote port" ) }
+                                       , { tr( "State" ), 18, 8, Qt::AlignLeft, tr( "Connection state" ) } } );
     return fields.data();
 }
 
@@ -389,13 +389,13 @@ void Sockets::update_hostname(unsigned int) {}
 #endif
 TableField *Maps::fields()
 {
-    static QVector< TableField > fields( { { tr( "Address Range" ), -1, 8, Qt::AlignLeft, tr( "Mapped addresses (hex) )" ) }
-                                         , { tr( "Size" ), 8, 8, Qt::AlignRight, tr( "Kbytes mapped (dec)" ) }
-                                         , { tr( "Perm" ), 5, 8, Qt::AlignLeft, tr( "Permission flags" ) }
-                                         , { tr( "Offset" ), -1, 8, Qt::AlignRight, tr( "File offset at start of mapping (hex)" ) }
-                                         , { tr( "Device" ), 8, 8, Qt::AlignLeft, tr( "Major,Minor device numbers (dec)" ) }
-                                         , { tr( "Inode" ), 10, 8, Qt::AlignRight, tr( "Inode number (dec)" ) }
-                                         , { tr( "File" ), -9, 8, Qt::AlignLeft, tr( "File name (if available)" ) } } );
+    static QList< TableField > fields( { { tr( "Address Range" ), -1, 8, Qt::AlignLeft, tr( "Mapped addresses (hex) )" ) }
+                                       , { tr( "Size" ), 8, 8, Qt::AlignRight, tr( "Kbytes mapped (dec)" ) }
+                                       , { tr( "Perm" ), 5, 8, Qt::AlignLeft, tr( "Permission flags" ) }
+                                       , { tr( "Offset" ), -1, 8, Qt::AlignRight, tr( "File offset at start of mapping (hex)" ) }
+                                       , { tr( "Device" ), 8, 8, Qt::AlignLeft, tr( "Major,Minor device numbers (dec)" ) }
+                                       , { tr( "Inode" ), 10, 8, Qt::AlignRight, tr( "Inode number (dec)" ) }
+                                       , { tr( "File" ), -9, 8, Qt::AlignLeft, tr( "File name (if available)" ) } } );
     return fields.data();
 }
 
@@ -405,32 +405,6 @@ Maps::Maps(QWidget *parent) : SimpleTable(parent, MAPSFIELDS, fields() )
     // monospaced font looks best in the table body since it contains
     // hex numerals and flag fields. Pick Courier (why not)
     body->setFont(QFont("Courier", font().pointSize()));
-    bool mono = true;
-    QFont f = font();
-    if (f.rawMode())
-    {
-        /* see if the font is monospaced enough for our needs */
-        QFontMetrics fm(f);
-        int zw = fm.horizontalAdvance('0');
-        const char *test = "abcdef";
-        for (const char *p = test; *p; p++)
-            if (fm.horizontalAdvance(*p) != zw)
-            {
-                mono = false;
-                break;
-            }
-    }
-    else
-        mono = f.fixedPitch();
-    if (mono)
-    {
-        ////setBodyFont(f);
-    }
-    else
-    {
-        /// int ps = f.pointSize();
-        /// setBodyFont(QFont("Courier", ps ? ps : 10));
-    }
 
     refresh();
     // compute total width = window width
@@ -518,11 +492,11 @@ bool Maps::refresh_maps() { return procinfo()->read_maps(); }
 
 TableField *Files::fields()
 {
-    static QVector< TableField > fields( { { tr( "Fd" ), 5, 8, Qt::AlignRight, tr( "File descriptor" ) }
+    static QList< TableField > fields( { { tr( "Fd" ), 5, 8, Qt::AlignRight, tr( "File descriptor" ) }
 #ifdef LINUX
-                                         , { tr( "Mode" ), 3, 8, Qt::AlignLeft, tr( "Open mode" ) }
+                                       , { tr( "Mode" ), 3, 8, Qt::AlignLeft, tr( "Open mode" ) }
 #endif
-                                         , { tr( "Name" ), -1, 8, Qt::AlignLeft, tr( "File name (if available)" )} } );
+                                       , { tr( "Name" ), -1, 8, Qt::AlignLeft, tr( "File name (if available)" )} } );
     return fields.data();
 }
 
@@ -602,8 +576,8 @@ QString Files::text(int row, int col)
 
 TableField *Environ::fields()
 {
-    static QVector< TableField > fields( { { tr( "Variable" ), -1, 8, Qt::AlignLeft, tr( "Variable name" ) }
-                                       , { tr( "Value" ), -1, 8, Qt::AlignLeft, tr( "Variable value" ) } } );
+    static QList< TableField > fields( { { tr( "Variable" ), -1, 8, Qt::AlignLeft, tr( "Variable name" ) }
+                                     , { tr( "Value" ), -1, 8, Qt::AlignLeft, tr( "Variable value" ) } } );
     return fields.data();
 }
 
@@ -650,9 +624,9 @@ void Environ::refresh()
 
 TableField *AllFields::fields()
 {
-    static QVector< TableField > fields( { { tr( "Field" ), -1, 8, Qt::AlignLeft, tr( "Field name" ) }
-                                         , { tr( "Description" ), -1, 8, Qt::AlignLeft, tr( "Field description" ) }
-                                         , { tr( "Value" ), -1, 8, Qt::AlignLeft, tr( "Field value" ) } } );
+    static QList< TableField > fields( { { tr( "Field" ), -1, 8, Qt::AlignLeft, tr( "Field name" ) }
+                                       , { tr( "Description" ), -1, 8, Qt::AlignLeft, tr( "Field description" ) }
+                                       , { tr( "Value" ), -1, 8, Qt::AlignLeft, tr( "Field value" ) } } );
     return fields.data();
 }
 

@@ -609,7 +609,7 @@ void GraphBase::make_graph(int w, int h, QPainter *p)
     if (start < 0)
         start = 0;
 
-    QPolygon pa(hsize - start); // QVector pa(npts);
+    QPolygon pa(hsize - start);
 
     int idx = 0;
     for (int i = start; i < procview->history.size(); i++, idx++)
@@ -713,7 +713,7 @@ QString doHistory(SysHistory *sysh)
     });
 
     QStringList l;
-    for (const auto *p : qAsConst(infos))
+    for (const auto *p : std::as_const(infos))
     {
         if (p->pcpu < 0.05) // it will be rounded to 1 decimal place
             continue;
@@ -733,7 +733,7 @@ QString GraphBase::doHistoryTXT(SysHistory *sysh)
     char buf[128];
     sprintf(buf, "%%CPU miniHistory test");
     str += QString::fromLatin1(buf);
-    for (const auto *p : qAsConst(sysh->procs))
+    for (const auto *p : std::as_const(sysh->procs))
     {
         if (p->pcpu == 0)
             continue;
@@ -789,7 +789,7 @@ QString IO_Graph::doHistoryTXT(SysHistory *sysh)
 
     bool noIO = true;
     char buf[73], mem_str[64];
-    for (const auto *p : qAsConst(infos))
+    for (const auto *p : std::as_const(infos))
     {
         if (p->io_read_KBps == 0 && p->io_write_KBps == 0)
             continue;
@@ -867,11 +867,11 @@ Infobar2::Infobar2(QWidget * /*parent*/, Procview *pv)
     setLayout(layout);
 
     layout->setSpacing(1); // betweeen gap
-    layout->setMargin(0);
+    layout->setContentsMargins(0, 0, 0, 0);
 
     QVBoxLayout *vlayout = new QVBoxLayout();
     vlayout->setSpacing(1); // betweeen gap
-    vlayout->setMargin(0);
+    vlayout->setContentsMargins(0, 0, 0, 0);
 
     layout->addLayout(vlayout);
 
@@ -1002,11 +1002,6 @@ void Infobar::mouseMoveEvent(QMouseEvent *e)
     infobox->setPos();
 }
 
-void Infobar::enterEvent(QEvent *)
-{
-    //	infobox->hide();
-}
-
 void Infobar::leaveEvent(QEvent *)
 {
     infobox->hide();
@@ -1037,7 +1032,7 @@ void Infobar::make_graph(int w, int h, QPainter *p, bool test)
 
     if (test == false)
     {
-        QPolygon pa(hsize - start); // QVector pa(npts);
+        QPolygon pa(hsize - start);
 
         for (int i = start; i < procview->history.size(); i++, idx++)
         {
@@ -1104,7 +1099,7 @@ void subcpuRack::paintEvent(QPaintEvent * /*e*/)
 PDisplay::PDisplay(QWidget *parent) : QWidget(parent)
 {
     QVBoxLayout *vlayout = new QVBoxLayout;
-    vlayout->setMargin(0);
+    vlayout->setContentsMargins(0, 0, 0, 0);
     vlayout->setSpacing(1);
     setLayout(vlayout);
 

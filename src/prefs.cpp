@@ -54,38 +54,38 @@ public:
     Boxvar() : text( QString() ), variable( static_cast<  bool * >( nullptr ) ), cb( static_cast< QCheckBox *>( nullptr ) ) {}
     Boxvar( const QString t, bool *v, QCheckBox *c ) : text( t ), variable( v ), cb( c ) {}
 
-    static QVector< Boxvar > *general_boxes()
+    static QList< Boxvar > *general_boxes()
     {
-        static QVector< Boxvar > boxes( { { tr( "Exit on closing" ), &Qps::flag_exit, nullptr}
-                                        , { tr( "Remember Position" ), &Qps::save_pos, nullptr}
-                                        } );
+        static QList< Boxvar > boxes( { { tr( "Exit on closing" ), &Qps::flag_exit, nullptr}
+                                      , { tr( "Remember Position" ), &Qps::save_pos, nullptr}
+                                      } );
         return &boxes;
     }
 
 //#ifdef LINUX
-    static QVector< Boxvar > *sockinfo_boxes()
+    static QList< Boxvar > *sockinfo_boxes()
     {
-        static QVector< Boxvar > boxes( { { tr( "Host Name Lookup" ), &Qps::hostname_lookup, nullptr}
-                                        , { tr( "Service Name Lookup" ), &Qps::service_lookup, nullptr} } );
+        static QList< Boxvar > boxes( { { tr( "Host Name Lookup" ), &Qps::hostname_lookup, nullptr}
+                                      , { tr( "Service Name Lookup" ), &Qps::service_lookup, nullptr} } );
         return &boxes;
     }
 //#endif
-    static QVector< Boxvar > *tree_boxes()
+    static QList< Boxvar > *tree_boxes()
     {
-        static QVector< Boxvar > boxes( { { tr( "Disclosure Triangles" ), &Qps::tree_gadgets, nullptr}
-                                        , { tr( "Branch Lines" ), &Qps::tree_lines, nullptr} } );
+        static QList< Boxvar > boxes( { { tr( "Disclosure Triangles" ), &Qps::tree_gadgets, nullptr}
+                                      , { tr( "Branch Lines" ), &Qps::tree_lines, nullptr} } );
         return &boxes;
     }
 
-    static QVector< Boxvar > *misc_boxes()
+    static QList< Boxvar > *misc_boxes()
     {
-        static QVector< Boxvar > boxes( { { tr( "Auto Save Settings on Exit" ), &Qps::auto_save_options, nullptr}
-                                        , { tr( "Selection: Copy PIDs to Clipboard" ), &Qps::pids_to_selection, nullptr}
+        static QList< Boxvar > boxes( { { tr( "Auto Save Settings on Exit" ), &Qps::auto_save_options, nullptr}
+                                      , { tr( "Selection: Copy PIDs to Clipboard" ), &Qps::pids_to_selection, nullptr}
 #ifdef SOLARIS
-                                        , { tr( "Normalize NICE" ), &Qps::normalize_nice, 0}
-                                        , { tr( "Use pmap for Map Names" ), &Qps::use_pmap, 0}
+                                      , { tr( "Normalize NICE" ), &Qps::normalize_nice, 0}
+                                      , { tr( "Use pmap for Map Names" ), &Qps::use_pmap, 0}
 #endif
-                                        } );
+                                      } );
         return &boxes;
     }
 
@@ -96,15 +96,15 @@ struct Cbgroup
 Q_DECLARE_TR_FUNCTIONS(Cbgroup)
 public:
     const QString caption;
-    QVector< Boxvar > *boxvar;
+    QList< Boxvar > *boxvar;
 
-    Cbgroup() : caption( QString() ), boxvar( static_cast< QVector< Boxvar > * >( nullptr ) ) {}
-    Cbgroup( const QString c, QVector< Boxvar > *b ) : caption( c ), boxvar( b ) {}
+    Cbgroup() : caption( QString() ), boxvar( static_cast< QList< Boxvar > * >( nullptr ) ) {}
+    Cbgroup( const QString c, QList< Boxvar > *b ) : caption( c ), boxvar( b ) {}
 
-    static QVector< Cbgroup > &groups()
+    static QList< Cbgroup > &groups()
     {
-        static QVector< Cbgroup > groups( { { tr( "General" ), Boxvar::general_boxes() }
-                                          } );
+        static QList< Cbgroup > groups( { { tr( "General" ), Boxvar::general_boxes() }
+                                        } );
         return groups;
     }
 
@@ -163,15 +163,15 @@ Preferences::Preferences(QWidget *parent) : QDialog(parent)
     v_layout->setSpacing(1);
     // v_layout->setSpacing(1);
 
-    QVector< Cbgroup >::iterator endItG = Cbgroup::groups().end();
-    for( QVector< Cbgroup >::iterator itG = Cbgroup::groups().begin(); itG != endItG; ++ itG )
+    QList< Cbgroup >::iterator endItG = Cbgroup::groups().end();
+    for( QList< Cbgroup >::iterator itG = Cbgroup::groups().begin(); itG != endItG; ++ itG )
     {
         QGroupBox *grp = new QGroupBox( itG->caption, this );
         QVBoxLayout *vbox = new QVBoxLayout;
         if ( itG->boxvar )
         {
-            QVector< Boxvar >::iterator endItB = itG->boxvar->end();
-            for( QVector< Boxvar >::iterator itB = itG->boxvar->begin(); itB != endItB; ++ itB )
+            QList< Boxvar >::iterator endItB = itG->boxvar->end();
+            for( QList< Boxvar >::iterator itB = itG->boxvar->begin(); itB != endItB; ++ itB )
             {
                 itB->cb = new QCheckBox( itB->text, grp );
                 vbox->addWidget( itB->cb );
@@ -290,15 +290,15 @@ void Preferences::init_font_size()
 // slot: update check boxes to reflect current status
 void Preferences::update_boxes()
 {
-    QVector< Cbgroup >::iterator endItG = Cbgroup::groups().end();
-    for( QVector< Cbgroup >::iterator itG = Cbgroup::groups().begin(); itG != endItG; ++ itG )
+    QList< Cbgroup >::iterator endItG = Cbgroup::groups().end();
+    for( QList< Cbgroup >::iterator itG = Cbgroup::groups().begin(); itG != endItG; ++ itG )
     {
         if ( ! itG->boxvar )
         {
             continue;
         }
-        QVector< Boxvar >::iterator endItB = itG->boxvar->end();
-        for( QVector< Boxvar >::iterator itB = itG->boxvar->begin(); itB != endItB; ++ itB )
+        QList< Boxvar >::iterator endItB = itG->boxvar->end();
+        for( QList< Boxvar >::iterator itB = itG->boxvar->begin(); itB != endItB; ++ itB )
         {
             itB->cb->setChecked( *( itB->variable ) );
         }
@@ -308,15 +308,15 @@ void Preferences::update_boxes()
 // slot: update flags and repaint to reflect state of check boxes
 void Preferences::update_reality()
 {
-    QVector< Cbgroup >::iterator endItG = Cbgroup::groups().end();
-    for( QVector< Cbgroup >::iterator itG = Cbgroup::groups().begin(); itG != endItG; ++ itG )
+    QList< Cbgroup >::iterator endItG = Cbgroup::groups().end();
+    for( QList< Cbgroup >::iterator itG = Cbgroup::groups().begin(); itG != endItG; ++ itG )
     {
         if ( ! itG->boxvar )
         {
             continue;
         }
-        QVector< Boxvar >::iterator endItB = itG->boxvar->end();
-        for( QVector< Boxvar >::iterator itB = itG->boxvar->begin(); itB != endItB; ++ itB )
+        QList< Boxvar >::iterator endItB = itG->boxvar->end();
+        for( QList< Boxvar >::iterator itB = itG->boxvar->begin(); itB != endItB; ++ itB )
         {
             *( itB->variable ) = itB->cb->isChecked();
         }

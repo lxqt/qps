@@ -121,14 +121,14 @@ void TableHead::scrollSideways(int val) { setXOffset(val); }
 
 void TableHead::mousePressEvent(QMouseEvent *e)
 {
-    int col = findCol(e->x());
+    int col = findCol(e->position().x());
     if (col == -1)
         return;
 
     if (e->button() == Qt::RightButton)
     {
         right_click_col = col;
-        emit rightClicked(e->globalPos(), col);
+        emit rightClicked(e->globalPosition().toPoint(), col);
     }
     else if (e->button() == Qt::LeftButton)
     {
@@ -139,14 +139,14 @@ void TableHead::mousePressEvent(QMouseEvent *e)
 
 void TableHead::mouseMoveEvent(QMouseEvent *e)
 {
-    int col = findCol(e->x());
+    int col = findCol(e->position().x());
     if (col < 0)
         return;
 
     if (e->buttons() == Qt::LeftButton
         && (htable->options & HTBL_REORDER_COLS))
     {
-        if (!dragging && abs(press.x() - e->x()) > QApplication::startDragDistance())
+        if (!dragging && abs(press.x() - e->position().x()) > QApplication::startDragDistance())
         {
             QString title = htable->dragTitle(click_col);
             if (!title.isEmpty())
@@ -160,7 +160,7 @@ void TableHead::mouseMoveEvent(QMouseEvent *e)
 
         if (dragging)
         {
-            floatHead->move(e->x() - drag_offset, 0);
+            floatHead->move(e->position().x() - drag_offset, 0);
             return;
         }
     }
@@ -170,7 +170,7 @@ void TableHead::mouseMoveEvent(QMouseEvent *e)
         QString s = htable->tipText(col);
 
         if (!s.isEmpty())
-            QToolTip::showText(e->globalPos(), s, this);
+            QToolTip::showText(e->globalPosition().toPoint(), s, this);
     }
 }
 
@@ -178,9 +178,9 @@ void TableHead::mouseReleaseEvent(QMouseEvent *e)
 {
     if (e->button() == Qt::LeftButton)
     {
-        int col = findCol(e->x());
+        int col = findCol(e->position().x());
         if (col < 0)
-            col = (e->x() < 0) ? 0 : htable->ncols - 1; // good!
+            col = (e->position().x() < 0) ? 0 : htable->ncols - 1; // good!
 
         if (!dragging) // just a click; no DND
         {
@@ -195,7 +195,7 @@ void TableHead::mouseReleaseEvent(QMouseEvent *e)
         }
         else if (click_col > -1) // dropping
         {
-            int vcol = findColNoMinus(e->x());
+            int vcol = findColNoMinus(e->position().x());
             htable->moveCol(click_col, vcol); // -> Pstable::moveCol -> Procview::moveColumn
         }
         click_col = -1;
@@ -530,12 +530,12 @@ void TableBody::mousePressEvent(QMouseEvent *e)
     // printf("mousePressEvent() 1\n");
     static int last_row = -1;
 
-    int row = findRow(e->y());
+    int row = findRow(e->position().y());
     if (row == -1)
     {
         //	printf("mousePressEvent\n");
         htable->clearAllSelections();
-        if (e->y() >= 0)
+        if (e->position().y() >= 0)
             row = numRows(); // if SHIFT+click outside ~
         first_drag_row = prev_drag_row = row;
         return;
@@ -548,7 +548,7 @@ void TableBody::mousePressEvent(QMouseEvent *e)
     {
         // folding
         if (htable->treemode && htable->folding &&
-            e->x() < htable->gadget_space +
+            e->position().x() < htable->gadget_space +
                          htable->treestep * htable->rowDepth(row) &&
             htable->folded(row) != HeadedTable::Leaf)
         {
@@ -590,7 +590,7 @@ void TableBody::mousePressEvent(QMouseEvent *e)
         if (!htable->isSelected(row))
             htable->selectOnlyOne(row);
         emit htable->selectionChanged();
-        // better? 	emit htable->rightClicked(e->globalPos());
+        // better? 	emit htable->rightClicked(e->globalPosition().toPoint());
     }
     last_row = row;
     //	htable->repaint_changed();
@@ -614,7 +614,7 @@ void TableBody::mouseReleaseEvent(QMouseEvent *e)
     else if (e->button() == Qt::RightButton)
     {
         QPoint p(6, 3);
-        p += e->globalPos();
+        p += e->globalPosition().toPoint();
         emit htable->rightClicked(p);
     }
 }
@@ -623,7 +623,7 @@ void TableBody::mouseDoubleClickEvent(QMouseEvent *e)
 {
     if (e->button() == Qt::LeftButton)
     {
-        int row = findRow(e->y());
+        int row = findRow(e->position().y());
         if (row != -1)
         {
             if (htable->options & HTBL_ROW_SELECTION &&
@@ -647,8 +647,8 @@ void TableBody::mouseMoveEvent(QMouseEvent *e)
 
     // DRAFT CODE !
     // Signal : find row, col(field name) emit flyOnEvent Signal
-    int row = findRow(e->y());
-    int col = findCol(e->x());
+    int row = findRow(e->position().y());
+    int col = findCol(e->position().x());
 
     if (row < 0 or col < 0)
     {
@@ -673,7 +673,7 @@ void TableBody::mouseMoveEvent(QMouseEvent *e)
             if (!autoscrolling)
             {
                 // dragging outside table, cause scrolling
-                scrolldir = (e->y() < 0) ? UP : DOWN;
+                scrolldir = (e->position().y() < 0) ? UP : DOWN;
                 //	killTimers();
                 //	startTimer(scroll_delay);
                 autoscrolling = true;

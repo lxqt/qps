@@ -58,6 +58,7 @@
 #include "wchan.h"
 
 #include <QString>
+#include <QRegularExpression>
 
 #include "details.h"
 
@@ -646,7 +647,7 @@ typedef int (*compare_func)(const void *, const void *);
 }
 
 // table view - sort
-void Procview::linearize_tree(QVector<Procinfo *> *ps, int level, int prow,
+void Procview::linearize_tree(QList<Procinfo *> *ps, int level, int prow,
                               bool hide)
 {
     static_sortcat = sortcat;
@@ -929,7 +930,7 @@ Category *Proc::cat_by_name( const QString &s )
         {
             i.next();
             const QString &p = i.value()->name;
-            int index = p.indexOf( QRegExp( "\\S" ) );
+            int index = p.indexOf( QRegularExpression( "\\S" ) );
             if ( p.indexOf( s, index ) == index )
                 return i.value();
         }
@@ -1180,7 +1181,7 @@ void Procview::refresh()
 
 SysHistory::~SysHistory()
 {
-    for (const auto *p : qAsConst(procs))
+    for (const auto *p : std::as_const(procs))
     {
         delete p;
     }

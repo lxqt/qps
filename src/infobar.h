@@ -125,7 +125,6 @@ signals:
     void mousePressEvent(QMouseEvent *) override;
     void mouseMoveEvent(QMouseEvent *) override;
     void leaveEvent(QEvent *) override;
-    void enterEvent(QEvent *event) override;
     void resizeEvent(QResizeEvent *e) override;
 
     void add_history_point(unsigned value);

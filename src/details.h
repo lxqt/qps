@@ -204,7 +204,7 @@ class Environ : public SimpleTable
         ENVFIELDS
     };
     static TableField *fields();
-    QVector<NameValue> sorted_environs;
+    QList<NameValue> sorted_environs;
 };
 
 class AllFields : public SimpleTable

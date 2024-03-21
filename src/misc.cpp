@@ -629,7 +629,7 @@ ControlBar::ControlBar(QWidget *parent) : QFrame(parent)
     setFrameStyle(QFrame::NoFrame);
     layout = new QHBoxLayout(this);
     layout->addSpacing(4); // left gap
-    layout->setMargin(0);
+    layout->setContentsMargins(0, 0, 0, 0);
 
     b_linear = new QRadioButton(tr( "Linear" ), this);
     b_linear->setFocusPolicy(Qt::NoFocus);
