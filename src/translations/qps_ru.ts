@@ -455,7 +455,7 @@
     <message>
         <location filename="../proc.cpp" line="2622"/>
         <source>Parent process ID</source>
-        <translation>ID родительского процесса</translation>
+        <translation>ИД родительского процесса</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2624"/>
@@ -465,7 +465,7 @@
     <message>
         <location filename="../proc.cpp" line="2624"/>
         <source>Process group ID</source>
-        <translation>ID группы процессов</translation>
+        <translation>ИД группы процессов</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2626"/>
@@ -475,7 +475,7 @@
     <message>
         <location filename="../proc.cpp" line="2626"/>
         <source>Session ID</source>
-        <translation>ID сеанса</translation>
+        <translation>ИД сеанса</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2628"/>
@@ -495,7 +495,7 @@
     <message>
         <location filename="../proc.cpp" line="2630"/>
         <source>Process group ID of tty owner</source>
-        <translation>ID группы процесса владельца терминала</translation>
+        <translation>ИД группы процесса владельца терминала</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2632"/>
@@ -525,7 +525,7 @@
     <message>
         <location filename="../proc.cpp" line="2636"/>
         <source>Real user ID</source>
-        <translation>Настоящий ID пользователя</translation>
+        <translation>Настоящий ИД пользователя</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2638"/>
@@ -535,7 +535,7 @@
     <message>
         <location filename="../proc.cpp" line="2638"/>
         <source>Effective user ID</source>
-        <translation>Эффективный ID пользователя</translation>
+        <translation>Эффективный ИД пользователя</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2640"/>
@@ -545,7 +545,7 @@
     <message>
         <location filename="../proc.cpp" line="2640"/>
         <source>Saved user ID (Posix)</source>
-        <translation>Сохраненный ID пользователя (Posix)</translation>
+        <translation>Сохранённый ИД пользователя (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2642"/>
@@ -555,7 +555,7 @@
     <message>
         <location filename="../proc.cpp" line="2642"/>
         <source>File system user ID</source>
-        <translation>ID пользователя для контроля доступа к ФС</translation>
+        <translation>ИД пользователя для контроля доступа к ФС</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2644"/>
@@ -565,7 +565,7 @@
     <message>
         <location filename="../proc.cpp" line="2644"/>
         <source>Real group ID</source>
-        <translation>Настоящий ID группы</translation>
+        <translation>Настоящий ИД группы</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2646"/>
@@ -575,7 +575,7 @@
     <message>
         <location filename="../proc.cpp" line="2646"/>
         <source>Effective group ID</source>
-        <translation>Эффективный ID группы</translation>
+        <translation>Эффективный ИД группы</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2648"/>
@@ -585,7 +585,7 @@
     <message>
         <location filename="../proc.cpp" line="2648"/>
         <source>Saved group ID (Posix)</source>
-        <translation>Сохраненный ID группы (Posix)</translation>
+        <translation>Сохранённый ИД группы (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2650"/>
@@ -595,7 +595,7 @@
     <message>
         <location filename="../proc.cpp" line="2650"/>
         <source>File system group ID</source>
-        <translation>ID группы для контроля доступа к ФС</translation>
+        <translation>ИД группы для контроля доступа к ФС</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2652"/>
@@ -1455,7 +1455,7 @@ daehyun.yang@gmail.com&lt;br&gt;
     <message>
         <location filename="../dialogs.cpp" line="179"/>
         <source>Renice Process</source>
-        <translation>Изменить nice</translation>
+        <translation>Сменить приоритет</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="185"/>
@@ -1470,7 +1470,7 @@ daehyun.yang@gmail.com&lt;br&gt;
     <message>
         <location filename="../dialogs.cpp" line="229"/>
         <source>OK</source>
-        <translation></translation>
+        <translation>Хорошо</translation>
     </message>
 </context>
 <context>
