@@ -74,7 +74,7 @@
     <message>
         <location filename="../prefs.cpp" line="83"/>
         <source>Selection: Copy PIDs to Clipboard</source>
-        <translation>Выделение: копировать PID&apos;ы в Буфер обмена</translation>
+        <translation>Выделение: копировать PID&apos;ы в буфер обмена</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="85"/>
