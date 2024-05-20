@@ -341,12 +341,12 @@
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Inode</source>
-        <translation>Inode</translation>
+        <translation>Инод</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Inode number (dec)</source>
-        <translation>Inode номер (dec)</translation>
+        <translation>Инод номер (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
@@ -1101,7 +1101,7 @@
     <message>
         <location filename="../qps.cpp" line="226"/>
         <source>Options</source>
-        <translation>Опций</translation>
+        <translation>Опции</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="227"/>
@@ -1332,7 +1332,7 @@
     <message>
         <location filename="../qps.cpp" line="1318"/>
         <source>Do you really want to terminate the selected process(es)?</source>
-        <translation>Найстина ли желаете да спрете избрания(те) процес(и)?</translation>
+        <translation>Настина ли желаете да спрете избрания(те) процес(и)?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1320"/>
@@ -1342,7 +1342,7 @@
     <message>
         <location filename="../qps.cpp" line="1322"/>
         <source>Do you really want to kill the selected process(es)?</source>
-        <translation>Найстина ли желаете да спрете(терминирате) ибрания(те) процес(и)?</translation>
+        <translation>Настина ли желаете да прекратите избрания(те) процес(и)?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1331"/>
@@ -1362,7 +1362,7 @@
     <message>
         <location filename="../qps.cpp" line="1704"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
-        <translation>&lt;h2&gt; Qps %1 - Визуален мениджър на процеси &lt;/h2&gt; %2 изпозващ Qt библиотека %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Източник: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Съгледвач на бъгове: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
+        <translation>&lt;h2&gt; Qps %1 - Визуален мениджър на процеси &lt;/h2&gt; %2, използващ Qt библиотека %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Изходен код: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Следене на грешки: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1724"/>
@@ -1489,7 +1489,7 @@
     <message>
         <location filename="../details.cpp" line="149"/>
         <source>Bytes in receive queue</source>
-        <translation>Байтове в опашка на получване</translation>
+        <translation>Байтове в опашка на получаване</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="150"/>

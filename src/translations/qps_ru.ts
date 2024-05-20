@@ -710,7 +710,7 @@
     <message>
         <location filename="../proc.cpp" line="2675"/>
         <source>RSS</source>
-        <translation></translation>
+        <translation>Резид. память</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2675"/>
@@ -725,7 +725,7 @@
     <message>
         <location filename="../proc.cpp" line="2677"/>
         <source>memory usage (RSS-SHARE)</source>
-        <translation>Использование памяти (RSS-SHARE)</translation>
+        <translation>использование памяти (RSS-SHARE)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2679"/>
@@ -865,7 +865,7 @@
     <message>
         <location filename="../proc.cpp" line="2705"/>
         <source>Percentage of memory used (RSS/total mem)</source>
-        <translation>Процент использования памяти (RSS/всего)</translation>
+        <translation>Процент использования памяти (резидентной/всего)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2707"/>
@@ -890,7 +890,7 @@
     <message>
         <location filename="../proc.cpp" line="2711"/>
         <source>CPU</source>
-        <translation></translation>
+        <translation>ЦП</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2711"/>
