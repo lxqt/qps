@@ -1635,8 +1635,7 @@ int Procinfo::readproc()
     //	drs		;	// data: wrong in kernel 2.6
     //	dt		;	// zero : in Kernel 2.6
     mem = resident - share;
-    // pmem = 100.0 * resident / proc->mem_total;
-    pmem = 100.0 * mem / proc->mem_total;
+    pmem = 100.0 * resident / proc->mem_total;
 
     // read /proc/PID/status check !!
     if ((buf = read_proc_file2(path, "status")) == nullptr)
