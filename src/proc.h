@@ -738,7 +738,7 @@ Q_DECLARE_TR_FUNCTIONS(Proc)
     int mem_total, mem_free;   // (Kb)
     int swap_total, swap_free; // in kB
 
-    int mem_shared, mem_buffers, mem_cached; // Linux
+    int mem_available, mem_shared, mem_buffers, mem_cached; // Linux
 
     // the following are pointers to matrices indexed by kind (above) and
     // cpu

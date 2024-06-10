@@ -983,6 +983,7 @@ void Proc::commonPostInit()
     Proc::mem_total = 0;
     Proc::mem_free = 0;
 
+    Proc::mem_available = -1;
     Proc::mem_buffers = 0;
     Proc::mem_cached = 0;
 
@@ -1966,6 +1967,8 @@ int Proc::read_system() //
         sscanf(p, "MemTotal: %d kB\n", &mem_total);
     if ((p = strstr(buf, "MemFree:")) != nullptr)
         sscanf(p, "MemFree: %d kB\n", &mem_free);
+    if ((p = strstr(buf, "MemAvailable:")) != nullptr)
+        sscanf(p, "MemAvailable: %d kB\n", &mem_available);
     if ((p = strstr(buf, "Buffers:")) != nullptr)
         sscanf(p, "Buffers: %d kB\n", &mem_buffers);
     if ((p = strstr(buf, "Cached:")) != nullptr)

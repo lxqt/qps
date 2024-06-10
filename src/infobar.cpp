@@ -452,8 +452,11 @@ class w_mem : public gwidget
         height = pf_char_height() + 4;
         x = x_cpu->xpluswidth() + 10;
 #ifdef LINUX
-        used = procview->mem_total - procview->mem_free -
-               procview->mem_buffers - procview->mem_cached;
+        if (procview->mem_available != -1) // kernel 3.14+
+            used = procview->mem_total - procview->mem_available;
+        else
+            used = procview->mem_total - procview->mem_free -
+                   procview->mem_buffers - procview->mem_cached;
         width = drawSPECTRUM(p, x, 0, "MEM", procview->mem_total, used,
                              procview->mem_cached, procview->mem_buffers);
 #endif
