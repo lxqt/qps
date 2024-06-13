@@ -305,12 +305,12 @@ void mem_string(int kbytes, char *buf)
     {
         int meg = kbytes >> 10;
         if (meg >= 1024 * 100)
-            sprintf(buf, "%uGb", meg >> 10);
+            sprintf(buf, "%uGiB", meg >> 10);
         else
-            sprintf(buf, "%uMb", meg);
+            sprintf(buf, "%uMiB", meg);
     }
     else
-        sprintf(buf, "%uKb", kbytes);
+        sprintf(buf, "%uKiB", kbytes);
 }
 
 // DEL
