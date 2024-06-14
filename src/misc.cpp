@@ -303,14 +303,14 @@ void mem_string(int kbytes, char *buf)
 {
     if (kbytes >= 1024)
     {
-        int meg = kbytes >> 10;
-        if (meg >= 1024 * 100)
-            sprintf(buf, "%uGb", meg >> 10);
+        auto meg = kbytes / 1024.0;
+        if (meg >= 1024.0)
+            sprintf(buf, "%.2f GiB", meg / 1024.0);
         else
-            sprintf(buf, "%uMb", meg);
+            sprintf(buf, "%.0f MiB", meg);
     }
     else
-        sprintf(buf, "%uKb", kbytes);
+        sprintf(buf, "%u KiB", kbytes);
 }
 
 // DEL
