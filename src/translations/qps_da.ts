@@ -49,7 +49,7 @@
     <message>
         <location filename="../prefs.cpp" line="68"/>
         <source>Host Name Lookup</source>
-        <translation>Opslag af host navn</translation>
+        <translation>Opslag af værtsnavn</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="69"/>
