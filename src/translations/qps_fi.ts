@@ -245,7 +245,7 @@
     <message>
         <location filename="../infobar.cpp" line="782"/>
         <source>I/O Summary:</source>
-        <translation type="unfinished">I/O-tilasto:</translation>
+        <translation>I/O-yhteenveto:</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="816"/>
