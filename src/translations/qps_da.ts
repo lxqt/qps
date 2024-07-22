@@ -49,7 +49,7 @@
     <message>
         <location filename="../prefs.cpp" line="68"/>
         <source>Host Name Lookup</source>
-        <translation>Opslag af host navn</translation>
+        <translation>Opslag af værtsnavn</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="69"/>
@@ -971,7 +971,7 @@
         <location filename="../infobar.cpp" line="432"/>
         <location filename="../infobar.cpp" line="439"/>
         <source>Nice: </source>
-        <translation type="unfinished"></translation>
+        <translation>Nice: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="430"/>
@@ -1046,7 +1046,7 @@
     <message>
         <location filename="../qps.cpp" line="179"/>
         <source>Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Session</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="183"/>

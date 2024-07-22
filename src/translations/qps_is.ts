@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ja">
+<TS version="2.1" language="is">
 <context>
     <name>AllFields</name>
     <message>
         <location filename="../details.cpp" line="653"/>
         <source>Field</source>
-        <translation>フィールド</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="653"/>
         <source>Field name</source>
-        <translation>フィールド名</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="654"/>
         <source>Description</source>
-        <translation>説明</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="654"/>
         <source>Field description</source>
-        <translation>フィールドの説明</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="655"/>
         <source>Value</source>
-        <translation>値</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="655"/>
         <source>Field value</source>
-        <translation>フィールドの値</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -39,52 +39,52 @@
     <message>
         <location filename="../prefs.cpp" line="59"/>
         <source>Exit on closing</source>
-        <translation>[閉じる] で終了する</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="60"/>
         <source>Remember Position</source>
-        <translation>位置を記憶する</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="68"/>
         <source>Host Name Lookup</source>
-        <translation>ホスト名参照</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="69"/>
         <source>Service Name Lookup</source>
-        <translation>サービス名参照</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="75"/>
         <source>Disclosure Triangles</source>
-        <translation>展開三角形</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="76"/>
         <source>Branch Lines</source>
-        <translation>ブランチライン</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="82"/>
         <source>Auto Save Settings on Exit</source>
-        <translation>終了時に自動保存</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="83"/>
         <source>Selection: Copy PIDs to Clipboard</source>
-        <translation>選択: PIDをクリップボードにコピー</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="85"/>
         <source>Normalize NICE</source>
-        <translation>NICE正規化</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="86"/>
         <source>Use pmap for Map Names</source>
-        <translation>マップ名としてpmapを使用</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -92,7 +92,7 @@
     <message>
         <location filename="../prefs.cpp" line="106"/>
         <source>General</source>
-        <translation>全般</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -100,42 +100,42 @@
     <message>
         <location filename="../misc.cpp" line="634"/>
         <source>Linear</source>
-        <translation>リニア</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="637"/>
         <source>Tree</source>
-        <translation>ツリー</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="646"/>
         <source>Thread</source>
-        <translation>スレッド</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="653"/>
         <source>All Processes</source>
-        <translation>すべてのプロセス</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="654"/>
         <source>Your Processes</source>
-        <translation>自分のプロセス</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="655"/>
         <source>Non-Root Processes</source>
-        <translation>Root 以外のプロセス</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="656"/>
         <source>Running Processes</source>
-        <translation>実行中のプロセス</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="672"/>
         <source>Pause (Ctrl+Space)</source>
-        <translation>一時停止 (Ctrl+Space)</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -143,32 +143,32 @@
     <message>
         <location filename="../details.cpp" line="36"/>
         <source>Process %1 ( %2 ) - details</source>
-        <translation>Process %1 ( %2 ) - 詳細</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="45"/>
         <source>Files</source>
-        <translation>ファイル</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="54"/>
         <source>Sockets</source>
-        <translation>ソケット</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="59"/>
         <source>Memory Maps</source>
-        <translation>メモリ マップ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="61"/>
         <source>Environment</source>
-        <translation>環境</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="62"/>
         <source>All Fields</source>
-        <translation>すべてのフィールド</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -176,22 +176,22 @@
     <message>
         <location filename="../details.cpp" line="605"/>
         <source>Variable</source>
-        <translation>変数</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="605"/>
         <source>Variable name</source>
-        <translation>変数名</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="606"/>
         <source>Value</source>
-        <translation>値</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="606"/>
         <source>Variable value</source>
-        <translation>変数の値</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -199,12 +199,12 @@
     <message>
         <location filename="../fieldsel.cpp" line="34"/>
         <source>Select Custom Fields </source>
-        <translation>カスタム・フィールドの選択 </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../fieldsel.cpp" line="75"/>
         <source>Close</source>
-        <translation>閉じる</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -212,32 +212,32 @@
     <message>
         <location filename="../details.cpp" line="521"/>
         <source>Fd</source>
-        <translation>FD</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="521"/>
         <source>File descriptor</source>
-        <translation>ファイル 記述子</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="523"/>
         <source>Mode</source>
-        <translation>Mode</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="523"/>
         <source>Open mode</source>
-        <translation>オープン モード</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="525"/>
         <source>Name</source>
-        <translation>Name</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="525"/>
         <source>File name (if available)</source>
-        <translation>ファイル名 (取得可能の場合)</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -245,12 +245,12 @@
     <message>
         <location filename="../infobar.cpp" line="782"/>
         <source>I/O Summary:</source>
-        <translation>I/O の概要:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="816"/>
         <source>No input or output</source>
-        <translation>入出力無し</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -258,32 +258,32 @@
     <message>
         <location filename="../dialogs.cpp" line="43"/>
         <source>Change Update Period</source>
-        <translation>更新間隔の変更</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="49"/>
         <source>New Update Period</source>
-        <translation>新しい更新間隔</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="85"/>
         <source>Cancel</source>
-        <translation>キャンセル</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="87"/>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="121"/>
         <source>No UPDATE</source>
-        <translation>値を入れて下さい</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="139"/>
         <source>Invalid value</source>
-        <translation>無効な値です</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -291,17 +291,17 @@
     <message>
         <location filename="../details.cpp" line="392"/>
         <source>Address Range</source>
-        <translation>アドレス範囲</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="392"/>
         <source>Mapped addresses (hex) )</source>
-        <translation>マップされたアドレス (16進数) )</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="393"/>
         <source>Size</source>
-        <translation>サイズ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="393"/>
@@ -316,22 +316,22 @@
     <message>
         <location filename="../details.cpp" line="394"/>
         <source>Permission flags</source>
-        <translation>パーミッションフラグ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="395"/>
         <source>Offset</source>
-        <translation>オフセット</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="395"/>
         <source>File offset at start of mapping (hex)</source>
-        <translation>マッピング開始時のファイルオフセット (16進数)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Device</source>
-        <translation>デバイス</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
@@ -346,17 +346,17 @@
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Inode number (dec)</source>
-        <translation type="unfinished">Iode番号（dec）</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>File</source>
-        <translation>ファイル</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>File name (if available)</source>
-        <translation>ファイル名 (取得可能の場合)</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -364,22 +364,22 @@
     <message>
         <location filename="../dialogs.cpp" line="264"/>
         <source>Permission</source>
-        <translation>パーミッション</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="273"/>
         <source>Root password</source>
-        <translation>Root のパスワード</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="280"/>
         <source>Cancel</source>
-        <translation>キャンセル</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="283"/>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -387,12 +387,12 @@
     <message>
         <location filename="../prefs.cpp" line="150"/>
         <source>Preferences</source>
-        <translation>環境設定</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="157"/>
         <source>Setting</source>
-        <translation>設定</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="191"/>
@@ -402,7 +402,7 @@
     <message>
         <location filename="../prefs.cpp" line="198"/>
         <source>Total cpu: %1</source>
-        <translation>合計CPU: %1</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="199"/>
@@ -412,17 +412,17 @@
     <message>
         <location filename="../prefs.cpp" line="205"/>
         <source>default</source>
-        <translation>既定</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="206"/>
         <source>for developer</source>
-        <translation>開発者用</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="240"/>
         <source>Appearance</source>
-        <translation>外観</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -430,17 +430,17 @@
     <message>
         <location filename="../proc.cpp" line="2618"/>
         <source>PID</source>
-        <translation>PID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2618"/>
         <source>Process ID</source>
-        <translation>プロセス ID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2620"/>
         <source>TGID</source>
-        <translation>TGID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2620"/>
@@ -450,47 +450,47 @@
     <message>
         <location filename="../proc.cpp" line="2622"/>
         <source>PPID</source>
-        <translation>PPID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2622"/>
         <source>Parent process ID</source>
-        <translation>親プロセス ID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2624"/>
         <source>PGID</source>
-        <translation>PGID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2624"/>
         <source>Process group ID</source>
-        <translation>プロセス グループ ID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2626"/>
         <source>SID</source>
-        <translation>SID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2626"/>
         <source>Session ID</source>
-        <translation>セッション ID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2628"/>
         <source>TTY</source>
-        <translation>TTY</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2628"/>
         <source>Terminal</source>
-        <translation>ターミナル</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2630"/>
         <source>TPGID</source>
-        <translation>TPGID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2630"/>
@@ -500,27 +500,27 @@
     <message>
         <location filename="../proc.cpp" line="2632"/>
         <source>USER</source>
-        <translation>USER</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2632"/>
         <source>Owner (*=suid root, +=suid a user)</source>
-        <translation>所有者 (*=suid root, +=suid a user)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2634"/>
         <source>GROUP</source>
-        <translation>GROUP</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2634"/>
         <source>Group name (*=sgid other)</source>
-        <translation>グループ名 (*=sgid other)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2636"/>
         <source>UID</source>
-        <translation>UID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2636"/>
@@ -530,17 +530,17 @@
     <message>
         <location filename="../proc.cpp" line="2638"/>
         <source>EUID</source>
-        <translation>EUID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2638"/>
         <source>Effective user ID</source>
-        <translation>有効なユーザー ID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2640"/>
         <source>SUID</source>
-        <translation>SUID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2640"/>
@@ -550,17 +550,17 @@
     <message>
         <location filename="../proc.cpp" line="2642"/>
         <source>FSUID</source>
-        <translation>FSUID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2642"/>
         <source>File system user ID</source>
-        <translation>ファイルシステムのユーザー ID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2644"/>
         <source>GID</source>
-        <translation>GID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2644"/>
@@ -570,7 +570,7 @@
     <message>
         <location filename="../proc.cpp" line="2646"/>
         <source>EGID</source>
-        <translation>EGID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2646"/>
@@ -580,7 +580,7 @@
     <message>
         <location filename="../proc.cpp" line="2648"/>
         <source>SGID</source>
-        <translation>SGID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2648"/>
@@ -590,7 +590,7 @@
     <message>
         <location filename="../proc.cpp" line="2650"/>
         <source>FSGID</source>
-        <translation>FSGID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2650"/>
@@ -600,17 +600,17 @@
     <message>
         <location filename="../proc.cpp" line="2652"/>
         <source>PRI</source>
-        <translation>PRI</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2652"/>
         <source>Dynamic priority</source>
-        <translation>動的優先順位</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2654"/>
         <source>NICE</source>
-        <translation>NICE</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2654"/>
@@ -620,17 +620,17 @@
     <message>
         <location filename="../proc.cpp" line="2656"/>
         <source>NLWP</source>
-        <translation>NLWP</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2656"/>
         <source>Number of tasks(threads) in task group</source>
-        <translation>タスクグループ内のタスク数 (スレッド数)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2658"/>
         <source>PLCY</source>
-        <translation>PLCY</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2658"/>
@@ -640,27 +640,27 @@
     <message>
         <location filename="../proc.cpp" line="2660"/>
         <source>RPRI</source>
-        <translation>RPRI</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2660"/>
         <source>Realtime priority (0-99, more is better)</source>
-        <translation>リアルタイム優先度 (0～99、多いほど良い)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2662"/>
         <source>TMS</source>
-        <translation>TMS</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2662"/>
         <source>Time slice in milliseconds</source>
-        <translation>ミリ秒単位の時間分割</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2664"/>
         <source>%SAVG</source>
-        <translation>%SAVG</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2664"/>
@@ -670,7 +670,7 @@
     <message>
         <location filename="../proc.cpp" line="2666"/>
         <source>CPUSET</source>
-        <translation>CPUSET</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2666"/>
@@ -680,7 +680,7 @@
     <message>
         <location filename="../proc.cpp" line="2668"/>
         <source>MAJFLT</source>
-        <translation>MAJFLT</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2668"/>
@@ -690,7 +690,7 @@
     <message>
         <location filename="../proc.cpp" line="2670"/>
         <source>MINFLT</source>
-        <translation>MINFLT</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2670"/>
@@ -700,17 +700,17 @@
     <message>
         <location filename="../proc.cpp" line="2673"/>
         <source>VSIZE</source>
-        <translation>VSIZE</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2673"/>
         <source>Virtual image size of process</source>
-        <translation>プロセスの仮想イメージサイズ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2675"/>
         <source>RSS</source>
-        <translation>RSS</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2675"/>
@@ -720,17 +720,17 @@
     <message>
         <location filename="../proc.cpp" line="2677"/>
         <source>MEM</source>
-        <translation>MEM</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2677"/>
         <source>memory usage (RSS-SHARE)</source>
-        <translation>メモリ使用量 (RSS-SHARE)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2679"/>
         <source>TRS</source>
-        <translation>TRS</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2679"/>
@@ -740,7 +740,7 @@
     <message>
         <location filename="../proc.cpp" line="2681"/>
         <source>DRS</source>
-        <translation>DRS</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2681"/>
@@ -750,37 +750,37 @@
     <message>
         <location filename="../proc.cpp" line="2683"/>
         <source>STACK</source>
-        <translation>STACK</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2683"/>
         <source>Stack size</source>
-        <translation>スタックサイズ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2685"/>
         <source>SHARE</source>
-        <translation>SHARE</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2685"/>
         <source>Shared memory with other libs</source>
-        <translation>他のライブラリとの共有メモリ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2687"/>
         <source>SWAP</source>
-        <translation>SWAP</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2687"/>
         <source>Kbytes on swap device</source>
-        <translation>スワップデバイスのキロバイト</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2689"/>
         <source>IO_R</source>
-        <translation>IO_R</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2689"/>
@@ -790,7 +790,7 @@
     <message>
         <location filename="../proc.cpp" line="2691"/>
         <source>IO_W</source>
-        <translation>IO_W</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2691"/>
@@ -800,7 +800,7 @@
     <message>
         <location filename="../proc.cpp" line="2693"/>
         <source>DT</source>
-        <translation>DT</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2693"/>
@@ -810,17 +810,17 @@
     <message>
         <location filename="../proc.cpp" line="2695"/>
         <source>STAT</source>
-        <translation>STAT</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2695"/>
         <source>State of the process </source>
-        <translation>プロセスの状態 </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2697"/>
         <source>FLAGS</source>
-        <translation>FLAGS</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2697"/>
@@ -830,17 +830,17 @@
     <message>
         <location filename="../proc.cpp" line="2699"/>
         <source>WCHAN</source>
-        <translation>WCHAN</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2699"/>
         <source>Kernel function where process is sleeping</source>
-        <translation>プロセスがスリープしているカーネル関数</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2701"/>
         <source>%WCPU</source>
-        <translation>%WCPU</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2701"/>
@@ -850,17 +850,17 @@
     <message>
         <location filename="../proc.cpp" line="2703"/>
         <source>%CPU</source>
-        <translation>%CPU</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2703"/>
         <source>Percentage of CPU used since last update</source>
-        <translation>前回更新時からの CPU 使用率</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2705"/>
         <source>%MEM</source>
-        <translation>%MEM</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2705"/>
@@ -870,27 +870,27 @@
     <message>
         <location filename="../proc.cpp" line="2707"/>
         <source>START</source>
-        <translation>START</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2707"/>
         <source>Time process started</source>
-        <translation>プロセス開始時刻</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2709"/>
         <source>TIME</source>
-        <translation>TIME</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2709"/>
         <source>Total CPU time used since start</source>
-        <translation>起動時からの CPU 使用時間の合計</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2711"/>
         <source>CPU</source>
-        <translation>CPU</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2711"/>
@@ -900,42 +900,42 @@
     <message>
         <location filename="../proc.cpp" line="2713"/>
         <source>the process name</source>
-        <translation>プロセスの名前</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2713"/>
         <source>Process Name</source>
-        <translation>Process Name</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2717"/>
         <source>CWD</source>
-        <translation>CWD</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2717"/>
         <source>Current working directory</source>
-        <translation>現在の作業ディレクトリ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2718"/>
         <source>ROOT</source>
-        <translation>ROOT</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2718"/>
         <source>Root directory of process</source>
-        <translation>プロセスのルートディレクトリ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2721"/>
         <source>COMMAND_LINE</source>
-        <translation>COMMAND_LINE</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2721"/>
         <source>Command line that started the process</source>
-        <translation>プロセスを開始したコマンドライン</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -943,17 +943,17 @@
     <message>
         <location filename="../qps.cpp" line="1638"/>
         <source>Show</source>
-        <translation>表示</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1641"/>
         <source>Hide</source>
-        <translation>非表示</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1646"/>
         <source>Quit</source>
-        <translation>終了</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="430"/>
@@ -981,7 +981,7 @@
         <location filename="../infobar.cpp" line="438"/>
         <location filename="../infobar.cpp" line="439"/>
         <source>%</source>
-        <translation type="unfinished">%</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="471"/>
@@ -1036,12 +1036,12 @@
     <message>
         <location filename="../qps.cpp" line="175"/>
         <source>Remove Field</source>
-        <translation>フィールドの削除</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="176"/>
         <source>Add Field</source>
-        <translation>フィールドの追加</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="179"/>
@@ -1056,88 +1056,88 @@
     <message>
         <location filename="../qps.cpp" line="184"/>
         <source>Process</source>
-        <translation>プロセス</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="185"/>
         <source>Log</source>
-        <translation>ログ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="190"/>
         <source>Fields</source>
-        <translation>フィールド</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="191"/>
         <source>Custom Fields</source>
-        <translation>カスタム・フィールド</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="193"/>
         <source>Basic Fields </source>
-        <translation>ベーシック・フィールド </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="195"/>
         <source>Jobs Fields </source>
-        <translation>ジョブ・フィールド </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="197"/>
         <source>Memory Fields </source>
-        <translation>メモリ・フィールド </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="200"/>
         <source>Scheduling Fields </source>
-        <translation>スケジュール・フィールド </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="217"/>
         <source>Select Custom Fields...</source>
-        <translation>カスタム・フィールドの選択...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="226"/>
         <source>Options</source>
-        <translation>オプション</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="227"/>
         <source>Update Period...</source>
-        <translation>更新間隔...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="236"/>
         <source>Show Status bar</source>
-        <translation>ステータスバーの表示</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="245"/>
         <source>Preferences...</source>
-        <translation>設定...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="251"/>
         <source>Help</source>
-        <translation>ヘルプ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="252"/>
         <location filename="../qps.cpp" line="1686"/>
         <source>About</source>
-        <translation>このアプリケーションについて</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="338"/>
         <source>test</source>
-        <translation>テスト</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="339"/>
         <source>Copied to Clipboard</source>
-        <translation>クリップボードにコピーしました</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="391"/>
@@ -1272,12 +1272,12 @@
     <message>
         <location filename="../qps.cpp" line="695"/>
         <source>Show File Path</source>
-        <translation>ファイルのパスを表示</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="701"/>
         <source>Show Graph</source>
-        <translation>グラフの表示</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="707"/>
@@ -1292,7 +1292,7 @@
     <message>
         <location filename="../qps.cpp" line="290"/>
         <source>Quit</source>
-        <translation>終了</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1163"/>
@@ -1302,32 +1302,32 @@
         <location filename="../qps.cpp" line="1256"/>
         <location filename="../qps.cpp" line="1351"/>
         <source>Permission denied</source>
-        <translation>アクセスが拒否されました</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1164"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
-        <translation>選択したプロセスの優先度を変更する権限がありません。プロセスの所有者とスーパー・ユーザーのみが許可されています。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1195"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
-        <translation>プロセス %1 (%2) の優先順位を変更する権限がありません。プロセスの所有者とスーパー・ユーザーのみが許可されています。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1202"/>
         <source>Only the super-user may lower the nice value of a process.</source>
-        <translation>スーパー・ユーザーだけが、プロセスの nice 値を下げることができます。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1223"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
-        <translation>スーパー・ユーザーだけが、スケジューリング・ポリシーと静的優先度を変更することできます。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1257"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
-        <translation>プロセス %1 (%2) の優先順位とスケジュールの両方またはいずれかを変更するアクセス許可がありません。スーパーユーザーだけはそれを行うことができます。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1318"/>
@@ -1347,17 +1347,17 @@
     <message>
         <location filename="../qps.cpp" line="1331"/>
         <source>Question</source>
-        <translation>質問</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1352"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
-        <translation>プロセス %1 (%2) に信号を送信するアクセス許可がありません。プロセスの所有者とスーパーユーザーのみが信号を送信できます。</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1702"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
-        <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1704"/>
@@ -1375,12 +1375,12 @@
     <message>
         <location filename="../dialogs.cpp" line="292"/>
         <source>Change scheduling</source>
-        <translation>スケジューリングの変更</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="296"/>
         <source>Scheduling Policy</source>
-        <translation>スケジューリングの方針</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="298"/>
@@ -1400,12 +1400,12 @@
     <message>
         <location filename="../dialogs.cpp" line="314"/>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="316"/>
         <source>Cancel</source>
-        <translation>キャンセル</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="346"/>
@@ -1420,7 +1420,7 @@
     <message>
         <location filename="../dialogs.cpp" line="380"/>
         <source>The priority must be in the range 1..99</source>
-        <translation>優先順位は 1..99 の範囲である必要があります</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1433,7 +1433,7 @@
     <message>
         <location filename="../misc.cpp" line="589"/>
         <source>Filter</source>
-        <translation>フィルター</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1446,17 +1446,17 @@
     <message>
         <location filename="../dialogs.cpp" line="185"/>
         <source>New nice value:</source>
-        <translation>新しい nice 値:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="225"/>
         <source>Cancel</source>
-        <translation>キャンセル</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="229"/>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1464,12 +1464,12 @@
     <message>
         <location filename="../details.cpp" line="147"/>
         <source>Fd</source>
-        <translation type="unfinished">FD</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="147"/>
         <source>File descriptor</source>
-        <translation type="unfinished">ファイル 記述子</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="148"/>
@@ -1479,73 +1479,73 @@
     <message>
         <location filename="../details.cpp" line="148"/>
         <source>Protocol (TCP or UDP)</source>
-        <translation>プロトコル (TCP または UDP)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="149"/>
         <source>Recv-Q</source>
-        <translation>Recv-Q</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="149"/>
         <source>Bytes in receive queue</source>
-        <translation>受信キューのバイト数</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="150"/>
         <source>Send-Q</source>
-        <translation type="unfinished">Send-Q</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="150"/>
         <source>Bytes in send queue</source>
-        <translation>送信キューのバイト数</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>Local Addr</source>
-        <translation>ローカル アド</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>Local IP address</source>
-        <translation>ローカル IP アドレス</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
         <location filename="../details.cpp" line="154"/>
         <source>Port</source>
-        <translation>ポート</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
         <source>Local port</source>
-        <translation>ローカル ポート</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Remote Addr</source>
-        <translation>リモート アド</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Remote IP address</source>
-        <translation>リモート IP アドレス</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="154"/>
         <source>Remote port</source>
-        <translation>リモート ポート</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>State</source>
-        <translation>状態</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>Connection state</source>
-        <translation>接続の状態</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1553,7 +1553,7 @@
     <message>
         <location filename="../misc.cpp" line="624"/>
         <source>Process count: %1</source>
-        <translation>プロセス数: %1</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1562,8 +1562,7 @@
         <location filename="../misc.cpp" line="343"/>
         <source> This is unstable Alpha feature
  You maybe see a SEGFAULT...</source>
-        <translation> これは不安定なアルファの機能です
- SEGFAULT を参照して下さい...</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1571,7 +1570,7 @@
     <message>
         <location filename="../misc.cpp" line="485"/>
         <source>title</source>
-        <translation>タイトル</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
