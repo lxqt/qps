@@ -971,7 +971,7 @@
         <location filename="../infobar.cpp" line="432"/>
         <location filename="../infobar.cpp" line="439"/>
         <source>Nice: </source>
-        <translation>Nice: </translation>
+        <translation>Προτεραιότητα: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="430"/>
@@ -1076,17 +1076,17 @@
     <message>
         <location filename="../qps.cpp" line="193"/>
         <source>Basic Fields </source>
-        <translation>Βασικά πεδία</translation>
+        <translation>Βασικά πεδία </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="195"/>
         <source>Jobs Fields </source>
-        <translation>Πεδία εργασιών</translation>
+        <translation>Πεδία εργασιών </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="197"/>
         <source>Memory Fields </source>
-        <translation>Πεδία μνήμης</translation>
+        <translation>Πεδία μνήμης </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="200"/>
@@ -1142,12 +1142,12 @@
     <message>
         <location filename="../qps.cpp" line="391"/>
         <source>context popup</source>
-        <translation>αναδυόμενο σχετικού περιεχομένου</translation>
+        <translation>ανάδυση πλαισίου</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="392"/>
         <source>Renice...</source>
-        <translation></translation>
+        <translation>Αλλαγμένη προτεραιότητα...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="393"/>
@@ -1442,7 +1442,7 @@
     <message>
         <location filename="../dialogs.cpp" line="179"/>
         <source>Renice Process</source>
-        <translation>Προτεραιότητα διεργασίας</translation>
+        <translation>Διεργασία αλλαγμένης προτεραιότητας</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="185"/>
@@ -1490,7 +1490,7 @@
     <message>
         <location filename="../details.cpp" line="149"/>
         <source>Bytes in receive queue</source>
-        <translation>Byte στην ουρά αναμονής</translation>
+        <translation>Bytes στην ουρά παραλαβής</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="150"/>
@@ -1500,7 +1500,7 @@
     <message>
         <location filename="../details.cpp" line="150"/>
         <source>Bytes in send queue</source>
-        <translation>Byte στην ουρά αποστολής</translation>
+        <translation>Bytes στην ουρά αποστολής</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
