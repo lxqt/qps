@@ -158,7 +158,7 @@
     <message>
         <location filename="../details.cpp" line="59"/>
         <source>Memory Maps</source>
-        <translation>Hukommelseskart</translation>
+        <translation>Minnekart</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="61"/>
@@ -191,7 +191,7 @@
     <message>
         <location filename="../details.cpp" line="606"/>
         <source>Variable value</source>
-        <translation>Variabelnavn</translation>
+        <translation>Variabelverdi</translation>
     </message>
 </context>
 <context>
@@ -379,7 +379,7 @@
     <message>
         <location filename="../dialogs.cpp" line="283"/>
         <source>OK</source>
-        <translation>Okei</translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -387,7 +387,7 @@
     <message>
         <location filename="../prefs.cpp" line="150"/>
         <source>Preferences</source>
-        <translation>Valg</translation>
+        <translation>Innstillinger</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="157"/>
@@ -440,22 +440,22 @@
     <message>
         <location filename="../proc.cpp" line="2620"/>
         <source>TGID</source>
-        <translation>OGID</translation>
+        <translation>TGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2620"/>
         <source>Task group ID ( parent of threads )</source>
-        <translation>Oppgavens gruppe ID ( foreldre til tråder )</translation>
+        <translation>Oppgavegruppe-ID (overordnet til tråder)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2622"/>
         <source>PPID</source>
-        <translation>FPID</translation>
+        <translation>PPID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2622"/>
         <source>Parent process ID</source>
-        <translation>Forelderens prosess-ID</translation>
+        <translation>ID for overordnet prosess</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2624"/>
@@ -520,7 +520,7 @@
     <message>
         <location filename="../proc.cpp" line="2636"/>
         <source>UID</source>
-        <translation>BID</translation>
+        <translation>UID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2636"/>
@@ -530,7 +530,7 @@
     <message>
         <location filename="../proc.cpp" line="2638"/>
         <source>EUID</source>
-        <translation>EBID</translation>
+        <translation>EUID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2638"/>
@@ -540,7 +540,7 @@
     <message>
         <location filename="../proc.cpp" line="2640"/>
         <source>SUID</source>
-        <translation>LBID</translation>
+        <translation>SUID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2640"/>
@@ -550,7 +550,7 @@
     <message>
         <location filename="../proc.cpp" line="2642"/>
         <source>FSUID</source>
-        <translation>FSBID</translation>
+        <translation>FSUID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2642"/>
@@ -580,7 +580,7 @@
     <message>
         <location filename="../proc.cpp" line="2648"/>
         <source>SGID</source>
-        <translation>LGID</translation>
+        <translation>SGID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2648"/>
@@ -630,12 +630,12 @@
     <message>
         <location filename="../proc.cpp" line="2658"/>
         <source>PLCY</source>
-        <translation>PLTK</translation>
+        <translation>PLCY</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2658"/>
         <source>Scheduling policy</source>
-        <translation>Planleggingspolitikk</translation>
+        <translation>Planleggingspraksis</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2660"/>
@@ -660,7 +660,7 @@
     <message>
         <location filename="../proc.cpp" line="2664"/>
         <source>%SAVG</source>
-        <translation>%GST</translation>
+        <translation>%SAVG</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2664"/>
@@ -680,7 +680,7 @@
     <message>
         <location filename="../proc.cpp" line="2668"/>
         <source>MAJFLT</source>
-        <translation>STØFIL</translation>
+        <translation>MAJFLT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2668"/>
@@ -690,7 +690,7 @@
     <message>
         <location filename="../proc.cpp" line="2670"/>
         <source>MINFLT</source>
-        <translation>MINFIL</translation>
+        <translation>MINFLT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2670"/>
@@ -700,7 +700,7 @@
     <message>
         <location filename="../proc.cpp" line="2673"/>
         <source>VSIZE</source>
-        <translation>VSTØR</translation>
+        <translation>VSIZE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2673"/>
@@ -720,12 +720,12 @@
     <message>
         <location filename="../proc.cpp" line="2677"/>
         <source>MEM</source>
-        <translation>HUK</translation>
+        <translation>MINNE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2677"/>
         <source>memory usage (RSS-SHARE)</source>
-        <translation>hukommelsesbruk (RSS-DELING)</translation>
+        <translation>minnebruk (RSS-SHARE)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2679"/>
@@ -750,12 +750,12 @@
     <message>
         <location filename="../proc.cpp" line="2683"/>
         <source>STACK</source>
-        <translation>STAK</translation>
+        <translation>STAKK</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2683"/>
         <source>Stack size</source>
-        <translation>Stakstørrelse</translation>
+        <translation>Stakkstørrelse</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2685"/>
@@ -765,7 +765,7 @@
     <message>
         <location filename="../proc.cpp" line="2685"/>
         <source>Shared memory with other libs</source>
-        <translation>Delt hukommelse med andre bibliotek</translation>
+        <translation>Delt minne med andre bibliotek</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2687"/>
@@ -780,7 +780,7 @@
     <message>
         <location filename="../proc.cpp" line="2689"/>
         <source>IO_R</source>
-        <translation>IO_L</translation>
+        <translation>IO_R</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2689"/>
@@ -790,7 +790,7 @@
     <message>
         <location filename="../proc.cpp" line="2691"/>
         <source>IO_W</source>
-        <translation>IO_S</translation>
+        <translation>IO_W</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2691"/>
@@ -800,7 +800,7 @@
     <message>
         <location filename="../proc.cpp" line="2693"/>
         <source>DT</source>
-        <translation>SS</translation>
+        <translation>DT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2693"/>
@@ -815,7 +815,7 @@
     <message>
         <location filename="../proc.cpp" line="2695"/>
         <source>State of the process </source>
-        <translation>Prosessens tilstand </translation>
+        <translation>Prosesstatus </translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2697"/>
@@ -830,7 +830,7 @@
     <message>
         <location filename="../proc.cpp" line="2699"/>
         <source>WCHAN</source>
-        <translation>WKAN</translation>
+        <translation>WCHAN</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2699"/>
@@ -840,7 +840,7 @@
     <message>
         <location filename="../proc.cpp" line="2701"/>
         <source>%WCPU</source>
-        <translation>%VCPU</translation>
+        <translation>%WCPU</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2701"/>
@@ -860,12 +860,12 @@
     <message>
         <location filename="../proc.cpp" line="2705"/>
         <source>%MEM</source>
-        <translation>%HUK</translation>
+        <translation>%MINNE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2705"/>
         <source>Percentage of memory used (RSS/total mem)</source>
-        <translation>Prosent av hukommelsen brukt (RSS/total hukommelse)</translation>
+        <translation>Prosent av minne brukt (RSS/totale minne)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2707"/>
@@ -910,7 +910,7 @@
     <message>
         <location filename="../proc.cpp" line="2717"/>
         <source>CWD</source>
-        <translation>NAM</translation>
+        <translation>CWD</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2717"/>
@@ -1086,12 +1086,12 @@
     <message>
         <location filename="../qps.cpp" line="197"/>
         <source>Memory Fields </source>
-        <translation>Hukommelsesfelt </translation>
+        <translation>Minnefelter </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="200"/>
         <source>Scheduling Fields </source>
-        <translation>Planleggingsfelt </translation>
+        <translation>Planleggingsfelter </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="217"/>
@@ -1247,7 +1247,7 @@
     <message>
         <location filename="../qps.cpp" line="429"/>
         <source>SIGCHLD (child death)</source>
-        <translation>SIGCHLD (barnedød)</translation>
+        <translation>SIGCHLD (underordnet prosess avbrutt)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="431"/>
@@ -1282,12 +1282,12 @@
     <message>
         <location filename="../qps.cpp" line="707"/>
         <source>Show Control Bar</source>
-        <translation type="unfinished">Vis kontrollpanel</translation>
+        <translation>Vis kontrollinje</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="718"/>
         <source>Include Child Times</source>
-        <translation>Inkluder barnetider</translation>
+        <translation>Inkluder underordnede prosessers tider</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="290"/>
@@ -1322,7 +1322,7 @@
     <message>
         <location filename="../qps.cpp" line="1223"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
-        <translation>Bare superbrukeren kan forandre planlegginspolitikken og statisk prioritering.</translation>
+        <translation>Bare superbrukeren kan forandre planleggingspraksisen og statisk prioritet.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1257"/>
@@ -1380,7 +1380,7 @@
     <message>
         <location filename="../dialogs.cpp" line="296"/>
         <source>Scheduling Policy</source>
-        <translation>Planleggingspolitikk</translation>
+        <translation>Planleggingspraksis</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="298"/>
