@@ -74,7 +74,7 @@
     <message>
         <location filename="../prefs.cpp" line="83"/>
         <source>Selection: Copy PIDs to Clipboard</source>
-        <translation>选择：复制PID剪贴板</translation>
+        <translation>选择：复制PID到剪贴板</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="85"/>
@@ -510,12 +510,12 @@
     <message>
         <location filename="../proc.cpp" line="2634"/>
         <source>GROUP</source>
-        <translation>组</translation>
+        <translation>GROUP</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2634"/>
         <source>Group name (*=sgid other)</source>
-        <translation>组名</translation>
+        <translation>组名（*=sgid 等）</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2636"/>
@@ -750,7 +750,7 @@
     <message>
         <location filename="../proc.cpp" line="2683"/>
         <source>STACK</source>
-        <translation>堆栈</translation>
+        <translation>STACK</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2683"/>
@@ -760,7 +760,7 @@
     <message>
         <location filename="../proc.cpp" line="2685"/>
         <source>SHARE</source>
-        <translation>共享</translation>
+        <translation>SHARE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2685"/>
@@ -770,7 +770,7 @@
     <message>
         <location filename="../proc.cpp" line="2687"/>
         <source>SWAP</source>
-        <translation>交换</translation>
+        <translation>SWAP</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2687"/>
@@ -905,7 +905,7 @@
     <message>
         <location filename="../proc.cpp" line="2713"/>
         <source>Process Name</source>
-        <translation>进程名</translation>
+        <translation>Process Name</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2717"/>
@@ -935,7 +935,7 @@
     <message>
         <location filename="../proc.cpp" line="2721"/>
         <source>Command line that started the process</source>
-        <translation>进程命令名</translation>
+        <translation>从命令行启动这个程序的命令名</translation>
     </message>
 </context>
 <context>
@@ -1031,7 +1031,7 @@
     <message>
         <location filename="../qps.cpp" line="174"/>
         <source>header_popup</source>
-        <translation>header_popup</translation>
+        <translation>弹出式页首</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="175"/>
@@ -1051,7 +1051,7 @@
     <message>
         <location filename="../qps.cpp" line="183"/>
         <source>View</source>
-        <translation>查看</translation>
+        <translation>视图</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="184"/>
@@ -1367,7 +1367,7 @@
     <message>
         <location filename="../qps.cpp" line="1724"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
-        <translation>&lt;b&gt;初版 Qps 出自&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
+        <translation>&lt;b&gt;初版 Qps 出自&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;贡献者&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
     </message>
 </context>
 <context>
@@ -1446,7 +1446,7 @@
     <message>
         <location filename="../dialogs.cpp" line="185"/>
         <source>New nice value:</source>
-        <translation>新优先级值</translation>
+        <translation>新优先级值：</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="225"/>
