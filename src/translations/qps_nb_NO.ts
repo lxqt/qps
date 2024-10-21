@@ -273,7 +273,7 @@
     <message>
         <location filename="../dialogs.cpp" line="87"/>
         <source>OK</source>
-        <translation>Okei</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="121"/>
@@ -1162,7 +1162,7 @@
     <message>
         <location filename="../qps.cpp" line="397"/>
         <source>Hangup</source>
-        <translation>Legg på</translation>
+        <translation>Suspender</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="398"/>
@@ -1337,7 +1337,7 @@
     <message>
         <location filename="../qps.cpp" line="1320"/>
         <source>Do you really want to hang up the selected process(es)?</source>
-        <translation>Legg på røret for valg(e) prosess(er)?</translation>
+        <translation>Vil du suspendere de(n) valgte prosessen(e)?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1322"/>
@@ -1400,7 +1400,7 @@
     <message>
         <location filename="../dialogs.cpp" line="314"/>
         <source>OK</source>
-        <translation>Okei</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="316"/>
@@ -1456,7 +1456,7 @@
     <message>
         <location filename="../dialogs.cpp" line="229"/>
         <source>OK</source>
-        <translation>Okei</translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
