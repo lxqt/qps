@@ -1,4 +1,4 @@
-qps/*
+/*
  * pstable.cpp
  * This file is part of qps -- Qt-based visual process status monitor
  *
@@ -182,15 +182,15 @@ QString Pstable::tipText(int col)
     QString s(cat->help);
     // trick
     if (cat->index == F_STAT)
-        s.append(tr("\n(R =Running, S =Sleeping, T =sTopped, Z=Zombie)"));
+        s.append("\n(R =Running, S =Sleeping, T =sTopped, Z=Zombie)");
     if (cat->index == F_PLCY)
-        s.append(tr("\n(TS =Time Sharing)"));
+        s.append("\n(TS =Time Sharing)");
     // if(cat->index == F_RSS);
     // s.append("\nRSS = CODE + DATA + SHARE\n"
     //	   "RSS = TRS  + DRS  + SHARE\n");
     /// s.append("\n(RSS = TRS + DRS)");
     if (cat == procview->sortcat)
-        s.append(procview->reversed ? tr("\n(sorted backwards)") : tr("\n(sorted)"));
+        s.append(procview->reversed ? "\n(sorted backwards)" : "\n(sorted)");
 
     //	printf("size=%d\n",s.capacity());
     return s;
