@@ -4,32 +4,32 @@
 <context>
     <name>AllFields</name>
     <message>
-        <location filename="../details.cpp" line="653"/>
+        <location filename="../details.cpp" line="627"/>
         <source>Field</source>
         <translation>域</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="653"/>
+        <location filename="../details.cpp" line="627"/>
         <source>Field name</source>
         <translation>域名</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="654"/>
+        <location filename="../details.cpp" line="628"/>
         <source>Description</source>
         <translation>描述</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="654"/>
+        <location filename="../details.cpp" line="628"/>
         <source>Field description</source>
         <translation>域描述</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="655"/>
+        <location filename="../details.cpp" line="629"/>
         <source>Value</source>
         <translation>值</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="655"/>
+        <location filename="../details.cpp" line="629"/>
         <source>Field value</source>
         <translation>域值</translation>
     </message>
@@ -174,22 +174,22 @@
 <context>
     <name>Environ</name>
     <message>
-        <location filename="../details.cpp" line="605"/>
+        <location filename="../details.cpp" line="579"/>
         <source>Variable</source>
         <translation>变量</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="605"/>
+        <location filename="../details.cpp" line="579"/>
         <source>Variable name</source>
         <translation>变量名</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="606"/>
+        <location filename="../details.cpp" line="580"/>
         <source>Value</source>
         <translation>值</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="606"/>
+        <location filename="../details.cpp" line="580"/>
         <source>Variable value</source>
         <translation>变量值</translation>
     </message>
@@ -210,32 +210,32 @@
 <context>
     <name>Files</name>
     <message>
-        <location filename="../details.cpp" line="521"/>
+        <location filename="../details.cpp" line="495"/>
         <source>Fd</source>
         <translation>Fd</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="521"/>
+        <location filename="../details.cpp" line="495"/>
         <source>File descriptor</source>
         <translation>文件描述符</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="523"/>
+        <location filename="../details.cpp" line="497"/>
         <source>Mode</source>
         <translation>模式</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="523"/>
+        <location filename="../details.cpp" line="497"/>
         <source>Open mode</source>
         <translation>打开模式</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="525"/>
+        <location filename="../details.cpp" line="499"/>
         <source>Name</source>
         <translation>名称</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="525"/>
+        <location filename="../details.cpp" line="499"/>
         <source>File name (if available)</source>
         <translation>文件名（如果可用）</translation>
     </message>
@@ -243,12 +243,12 @@
 <context>
     <name>IO_Graph</name>
     <message>
-        <location filename="../infobar.cpp" line="782"/>
+        <location filename="../infobar.cpp" line="785"/>
         <source>I/O Summary:</source>
         <translation>I/O统计：</translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="816"/>
+        <location filename="../infobar.cpp" line="819"/>
         <source>No input or output</source>
         <translation>无输入或输出</translation>
     </message>
@@ -428,512 +428,512 @@
 <context>
     <name>Proc</name>
     <message>
-        <location filename="../proc.cpp" line="2618"/>
+        <location filename="../proc.cpp" line="2621"/>
         <source>PID</source>
         <translation>PID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2618"/>
+        <location filename="../proc.cpp" line="2621"/>
         <source>Process ID</source>
         <translation>进程ID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2620"/>
+        <location filename="../proc.cpp" line="2623"/>
         <source>TGID</source>
         <translation>TGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2620"/>
+        <location filename="../proc.cpp" line="2623"/>
         <source>Task group ID ( parent of threads )</source>
         <translation>任务组ID（线程的父节点）</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2622"/>
+        <location filename="../proc.cpp" line="2625"/>
         <source>PPID</source>
         <translation>PPID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2622"/>
+        <location filename="../proc.cpp" line="2625"/>
         <source>Parent process ID</source>
         <translation>父进程ID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2624"/>
+        <location filename="../proc.cpp" line="2627"/>
         <source>PGID</source>
         <translation>PGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2624"/>
+        <location filename="../proc.cpp" line="2627"/>
         <source>Process group ID</source>
         <translation>进程组ID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2626"/>
+        <location filename="../proc.cpp" line="2629"/>
         <source>SID</source>
         <translation>SID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2626"/>
+        <location filename="../proc.cpp" line="2629"/>
         <source>Session ID</source>
         <translation>会话ID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2628"/>
+        <location filename="../proc.cpp" line="2631"/>
         <source>TTY</source>
         <translation>TTY</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2628"/>
+        <location filename="../proc.cpp" line="2631"/>
         <source>Terminal</source>
         <translation>终端</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2630"/>
+        <location filename="../proc.cpp" line="2633"/>
         <source>TPGID</source>
         <translation>TPGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2630"/>
+        <location filename="../proc.cpp" line="2633"/>
         <source>Process group ID of tty owner</source>
         <translation>tty所有者的进程组ID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2632"/>
+        <location filename="../proc.cpp" line="2635"/>
         <source>USER</source>
         <translation>用户</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2632"/>
+        <location filename="../proc.cpp" line="2635"/>
         <source>Owner (*=suid root, +=suid a user)</source>
         <translation>所有者（*=suid root，+=suid 用户）</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2634"/>
+        <location filename="../proc.cpp" line="2637"/>
         <source>GROUP</source>
         <translation>GROUP</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2634"/>
+        <location filename="../proc.cpp" line="2637"/>
         <source>Group name (*=sgid other)</source>
         <translation>组名（*=sgid 等）</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2636"/>
+        <location filename="../proc.cpp" line="2639"/>
         <source>UID</source>
         <translation>UID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2636"/>
+        <location filename="../proc.cpp" line="2639"/>
         <source>Real user ID</source>
         <translation>真实用户ID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2638"/>
+        <location filename="../proc.cpp" line="2641"/>
         <source>EUID</source>
         <translation>EUID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2638"/>
+        <location filename="../proc.cpp" line="2641"/>
         <source>Effective user ID</source>
         <translation>有效用户ID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2640"/>
+        <location filename="../proc.cpp" line="2643"/>
         <source>SUID</source>
         <translation>SUID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2640"/>
+        <location filename="../proc.cpp" line="2643"/>
         <source>Saved user ID (Posix)</source>
         <translation>已保存用户ID(Posix)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2642"/>
+        <location filename="../proc.cpp" line="2645"/>
         <source>FSUID</source>
         <translation>FSUID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2642"/>
+        <location filename="../proc.cpp" line="2645"/>
         <source>File system user ID</source>
         <translation>文件糸统用户ID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2644"/>
+        <location filename="../proc.cpp" line="2647"/>
         <source>GID</source>
         <translation>GID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2644"/>
+        <location filename="../proc.cpp" line="2647"/>
         <source>Real group ID</source>
         <translation>真实组ID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2646"/>
+        <location filename="../proc.cpp" line="2649"/>
         <source>EGID</source>
         <translation>EGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2646"/>
+        <location filename="../proc.cpp" line="2649"/>
         <source>Effective group ID</source>
         <translation>有效组ID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2648"/>
+        <location filename="../proc.cpp" line="2651"/>
         <source>SGID</source>
         <translation>SGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2648"/>
+        <location filename="../proc.cpp" line="2651"/>
         <source>Saved group ID (Posix)</source>
         <translation>已保存组ID(Posix)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2650"/>
+        <location filename="../proc.cpp" line="2653"/>
         <source>FSGID</source>
         <translation>FSGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2650"/>
+        <location filename="../proc.cpp" line="2653"/>
         <source>File system group ID</source>
         <translation>文件糸统组ID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2652"/>
+        <location filename="../proc.cpp" line="2655"/>
         <source>PRI</source>
         <translation>PRI</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2652"/>
+        <location filename="../proc.cpp" line="2655"/>
         <source>Dynamic priority</source>
         <translation>动态优先级</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2654"/>
+        <location filename="../proc.cpp" line="2657"/>
         <source>NICE</source>
         <translation>进程NICE值</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2654"/>
+        <location filename="../proc.cpp" line="2657"/>
         <source>Scheduling favour (higher -&gt; less cpu time)</source>
         <translation>调度偏好（更高 -&gt; 更少的 CPU 时间）</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2656"/>
+        <location filename="../proc.cpp" line="2659"/>
         <source>NLWP</source>
         <translation>NLWP</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2656"/>
+        <location filename="../proc.cpp" line="2659"/>
         <source>Number of tasks(threads) in task group</source>
         <translation>任务组中的任务（线程）数</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2658"/>
+        <location filename="../proc.cpp" line="2661"/>
         <source>PLCY</source>
         <translation>PLCY</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2658"/>
+        <location filename="../proc.cpp" line="2661"/>
         <source>Scheduling policy</source>
         <translation>调度规则</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2660"/>
+        <location filename="../proc.cpp" line="2663"/>
         <source>RPRI</source>
         <translation>RPRI</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2660"/>
+        <location filename="../proc.cpp" line="2663"/>
         <source>Realtime priority (0-99, more is better)</source>
         <translation>实时优先级（0-99，越高越好）</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2662"/>
+        <location filename="../proc.cpp" line="2665"/>
         <source>TMS</source>
         <translation>TMS</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2662"/>
+        <location filename="../proc.cpp" line="2665"/>
         <source>Time slice in milliseconds</source>
         <translation>时间切片（毫秒）</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2664"/>
+        <location filename="../proc.cpp" line="2667"/>
         <source>%SAVG</source>
         <translation>%SAVG</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2664"/>
+        <location filename="../proc.cpp" line="2667"/>
         <source>Percentage average sleep time (-1 -&gt; N/A)</source>
         <translation>平均睡眠时间百分比 (-1 -&gt; N/A)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2666"/>
+        <location filename="../proc.cpp" line="2669"/>
         <source>CPUSET</source>
         <translation>CPUSET</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2666"/>
+        <location filename="../proc.cpp" line="2669"/>
         <source>Affinity CPU mask (0 -&gt; API not supported)</source>
         <translation>亲和性 CPU 屏蔽（0 -&gt; 不支持 API）</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2668"/>
+        <location filename="../proc.cpp" line="2671"/>
         <source>MAJFLT</source>
         <translation>MAJFLT</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2668"/>
+        <location filename="../proc.cpp" line="2671"/>
         <source>Number of major faults (disk access)</source>
         <translation>重大故障次数（磁盘访问）</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2670"/>
+        <location filename="../proc.cpp" line="2673"/>
         <source>MINFLT</source>
         <translation>MINFLT</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2670"/>
+        <location filename="../proc.cpp" line="2673"/>
         <source>Number of minor faults (no disk access)</source>
         <translation>不重要故障数（无磁盘访问）</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2673"/>
+        <location filename="../proc.cpp" line="2676"/>
         <source>VSIZE</source>
         <translation>VSIZE</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2673"/>
+        <location filename="../proc.cpp" line="2676"/>
         <source>Virtual image size of process</source>
         <translation>进程虚拟镜像大小</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2675"/>
+        <location filename="../proc.cpp" line="2678"/>
         <source>RSS</source>
         <translation>RSS</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2675"/>
+        <location filename="../proc.cpp" line="2678"/>
         <source>Resident set size</source>
         <translation>常驻内存大小</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2677"/>
+        <location filename="../proc.cpp" line="2680"/>
         <source>MEM</source>
         <translation>MEM</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2677"/>
+        <location filename="../proc.cpp" line="2680"/>
         <source>memory usage (RSS-SHARE)</source>
         <translation>内存用量（RSS-SHARE）</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2679"/>
+        <location filename="../proc.cpp" line="2682"/>
         <source>TRS</source>
         <translation>TRS</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2679"/>
+        <location filename="../proc.cpp" line="2682"/>
         <source>Text(code) resident set size</source>
         <translation>文本（代码）驻留集大小</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2681"/>
+        <location filename="../proc.cpp" line="2684"/>
         <source>DRS</source>
         <translation>DRS</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2681"/>
+        <location filename="../proc.cpp" line="2684"/>
         <source>Data resident set size(malloc+global variable)</source>
         <translation>数据驻留集大小（malloc+全局变量）</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2683"/>
+        <location filename="../proc.cpp" line="2686"/>
         <source>STACK</source>
         <translation>STACK</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2683"/>
+        <location filename="../proc.cpp" line="2686"/>
         <source>Stack size</source>
         <translation>堆栈大小</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2685"/>
+        <location filename="../proc.cpp" line="2688"/>
         <source>SHARE</source>
         <translation>SHARE</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2685"/>
+        <location filename="../proc.cpp" line="2688"/>
         <source>Shared memory with other libs</source>
         <translation>与其它库的共享内存</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2687"/>
+        <location filename="../proc.cpp" line="2690"/>
         <source>SWAP</source>
         <translation>SWAP</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2687"/>
+        <location filename="../proc.cpp" line="2690"/>
         <source>Kbytes on swap device</source>
         <translation>交换设备上的字节数</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2689"/>
+        <location filename="../proc.cpp" line="2692"/>
         <source>IO_R</source>
         <translation>IO_R</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2689"/>
+        <location filename="../proc.cpp" line="2692"/>
         <source>io read (file)</source>
         <translation>io读取（文件）</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2691"/>
+        <location filename="../proc.cpp" line="2694"/>
         <source>IO_W</source>
         <translation>IO_W</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2691"/>
+        <location filename="../proc.cpp" line="2694"/>
         <source>io write (file)</source>
         <translation>io写（文件）</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2693"/>
+        <location filename="../proc.cpp" line="2696"/>
         <source>DT</source>
         <translation>DT</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2693"/>
+        <location filename="../proc.cpp" line="2696"/>
         <source>Number of dirty (non-written) pages</source>
         <translation>脏页数（未写）</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2695"/>
+        <location filename="../proc.cpp" line="2698"/>
         <source>STAT</source>
         <translation>STAT</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2695"/>
+        <location filename="../proc.cpp" line="2698"/>
         <source>State of the process </source>
         <translation>进程状态 </translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2697"/>
+        <location filename="../proc.cpp" line="2700"/>
         <source>FLAGS</source>
         <translation>FLAGS</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2697"/>
+        <location filename="../proc.cpp" line="2700"/>
         <source>Process flags (hex)</source>
         <translation>进程标志（16进制）</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2699"/>
+        <location filename="../proc.cpp" line="2702"/>
         <source>WCHAN</source>
         <translation>WCHAN</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2699"/>
+        <location filename="../proc.cpp" line="2702"/>
         <source>Kernel function where process is sleeping</source>
         <translation>休眠进程的内核函数</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2701"/>
+        <location filename="../proc.cpp" line="2704"/>
         <source>%WCPU</source>
         <translation>%WCPU</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2701"/>
+        <location filename="../proc.cpp" line="2704"/>
         <source>Weighted percentage of CPU (30 s average)</source>
         <translation>CPU 加权百分比（30 秒平均值）</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2703"/>
+        <location filename="../proc.cpp" line="2706"/>
         <source>%CPU</source>
         <translation>%CPU</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2703"/>
+        <location filename="../proc.cpp" line="2706"/>
         <source>Percentage of CPU used since last update</source>
         <translation>最后的 CPU占用百分比</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2705"/>
+        <location filename="../proc.cpp" line="2708"/>
         <source>%MEM</source>
         <translation>%MEM</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2705"/>
+        <location filename="../proc.cpp" line="2708"/>
         <source>Percentage of memory used (RSS/total mem)</source>
         <translation>内存占用百分比（RSS/总内存）</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2707"/>
+        <location filename="../proc.cpp" line="2710"/>
         <source>START</source>
         <translation>START</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2707"/>
+        <location filename="../proc.cpp" line="2710"/>
         <source>Time process started</source>
         <translation>进程开始时间</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2709"/>
+        <location filename="../proc.cpp" line="2712"/>
         <source>TIME</source>
         <translation>TIME</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2709"/>
+        <location filename="../proc.cpp" line="2712"/>
         <source>Total CPU time used since start</source>
         <translation>总CPU占用时间</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2711"/>
+        <location filename="../proc.cpp" line="2714"/>
         <source>CPU</source>
         <translation>CPU</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2711"/>
+        <location filename="../proc.cpp" line="2714"/>
         <source>CPU the process is executing on (SMP system)</source>
         <translation>进程所用 CPU（SMP 系统）</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2713"/>
+        <location filename="../proc.cpp" line="2716"/>
         <source>the process name</source>
         <translation>进程名</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2713"/>
+        <location filename="../proc.cpp" line="2716"/>
         <source>Process Name</source>
         <translation>Process Name</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2717"/>
+        <location filename="../proc.cpp" line="2720"/>
         <source>CWD</source>
         <translation>CWD</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2717"/>
+        <location filename="../proc.cpp" line="2720"/>
         <source>Current working directory</source>
         <translation>当前工作目录</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2718"/>
+        <location filename="../proc.cpp" line="2721"/>
         <source>ROOT</source>
         <translation>ROOT</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2718"/>
+        <location filename="../proc.cpp" line="2721"/>
         <source>Root directory of process</source>
         <translation>进程根目录</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2721"/>
+        <location filename="../proc.cpp" line="2724"/>
         <source>COMMAND_LINE</source>
         <translation>COMMAND_LINE</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2721"/>
+        <location filename="../proc.cpp" line="2724"/>
         <source>Command line that started the process</source>
         <translation>从命令行启动这个程序的命令名</translation>
     </message>
@@ -941,17 +941,17 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../qps.cpp" line="1638"/>
+        <location filename="../qps.cpp" line="1633"/>
         <source>Show</source>
         <translation>显示</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1641"/>
+        <location filename="../qps.cpp" line="1636"/>
         <source>Hide</source>
         <translation>隐藏</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1646"/>
+        <location filename="../qps.cpp" line="1641"/>
         <source>Quit</source>
         <translation>退出</translation>
     </message>
@@ -984,44 +984,44 @@
         <translation>%</translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="471"/>
-        <location filename="../infobar.cpp" line="506"/>
+        <location filename="../infobar.cpp" line="474"/>
+        <location filename="../infobar.cpp" line="509"/>
         <source>Total: </source>
         <translation>合计： </translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="474"/>
-        <location filename="../infobar.cpp" line="512"/>
+        <location filename="../infobar.cpp" line="477"/>
+        <location filename="../infobar.cpp" line="515"/>
         <source>Used: </source>
         <translation>已用： </translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="478"/>
+        <location filename="../infobar.cpp" line="481"/>
         <source>Cached: </source>
         <translation>已缓存： </translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="481"/>
+        <location filename="../infobar.cpp" line="484"/>
         <source>Buffer: </source>
         <translation>缓冲区： </translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="509"/>
+        <location filename="../infobar.cpp" line="512"/>
         <source>Free: </source>
         <translation>空闲： </translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="551"/>
+        <location filename="../infobar.cpp" line="554"/>
         <source>Time passed after system boot</source>
         <translation>糸统运行时间</translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="579"/>
+        <location filename="../infobar.cpp" line="582"/>
         <source>Average CPU load each 1, 5 ,15 minutes</source>
         <translation>每 1、5 和 15 分钟 CPU 的平均负载</translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="724"/>
+        <location filename="../infobar.cpp" line="727"/>
         <source>CPU Usage Summary:</source>
         <translation>CPU 使用汇总：</translation>
     </message>
@@ -1029,343 +1029,343 @@
 <context>
     <name>Qps</name>
     <message>
-        <location filename="../qps.cpp" line="174"/>
+        <location filename="../qps.cpp" line="171"/>
         <source>header_popup</source>
         <translation>弹出式页首</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="175"/>
+        <location filename="../qps.cpp" line="172"/>
         <source>Remove Field</source>
         <translation>删除域</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="176"/>
+        <location filename="../qps.cpp" line="173"/>
         <source>Add Field</source>
         <translation>增加域</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="179"/>
+        <location filename="../qps.cpp" line="176"/>
         <source>Session</source>
         <translation>会话</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="183"/>
+        <location filename="../qps.cpp" line="180"/>
         <source>View</source>
         <translation>视图</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="184"/>
+        <location filename="../qps.cpp" line="181"/>
         <source>Process</source>
         <translation>进程</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="185"/>
+        <location filename="../qps.cpp" line="182"/>
         <source>Log</source>
         <translation>日志</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="190"/>
+        <location filename="../qps.cpp" line="187"/>
         <source>Fields</source>
         <translation>域</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="191"/>
+        <location filename="../qps.cpp" line="188"/>
         <source>Custom Fields</source>
         <translation>定制域</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="193"/>
+        <location filename="../qps.cpp" line="190"/>
         <source>Basic Fields </source>
         <translation>基本域 </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="195"/>
+        <location filename="../qps.cpp" line="192"/>
         <source>Jobs Fields </source>
         <translation>工作域 </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="197"/>
+        <location filename="../qps.cpp" line="194"/>
         <source>Memory Fields </source>
         <translation>内存域 </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="200"/>
+        <location filename="../qps.cpp" line="197"/>
         <source>Scheduling Fields </source>
         <translation>调度域 </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="217"/>
+        <location filename="../qps.cpp" line="214"/>
         <source>Select Custom Fields...</source>
         <translation>选择定制域...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="226"/>
+        <location filename="../qps.cpp" line="223"/>
         <source>Options</source>
         <translation>可选</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="227"/>
+        <location filename="../qps.cpp" line="224"/>
         <source>Update Period...</source>
         <translation>更新周期...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="236"/>
+        <location filename="../qps.cpp" line="233"/>
         <source>Show Status bar</source>
         <translation>显示状态栏</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="245"/>
+        <location filename="../qps.cpp" line="242"/>
         <source>Preferences...</source>
         <translation>首选项...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="251"/>
+        <location filename="../qps.cpp" line="248"/>
         <source>Help</source>
         <translation>帮助</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="252"/>
-        <location filename="../qps.cpp" line="1686"/>
+        <location filename="../qps.cpp" line="249"/>
+        <location filename="../qps.cpp" line="1681"/>
         <source>About</source>
         <translation>关于</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="338"/>
+        <location filename="../qps.cpp" line="335"/>
         <source>test</source>
         <translation>测试</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="339"/>
+        <location filename="../qps.cpp" line="336"/>
         <source>Copied to Clipboard</source>
         <translation>复制到剪贴板</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="391"/>
+        <location filename="../qps.cpp" line="388"/>
         <source>context popup</source>
         <translation>弹出上下文</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="392"/>
+        <location filename="../qps.cpp" line="389"/>
         <source>Renice...</source>
         <translation>更改进程优先级...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="393"/>
+        <location filename="../qps.cpp" line="390"/>
         <source>Scheduling...</source>
         <translation>调度...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="395"/>
+        <location filename="../qps.cpp" line="392"/>
         <source>Terminate</source>
         <translation>终止</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="397"/>
+        <location filename="../qps.cpp" line="393"/>
         <source>Hangup</source>
         <translation>挂起</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="398"/>
+        <location filename="../qps.cpp" line="394"/>
         <source>Kill</source>
         <translation>杀死进程</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="399"/>
+        <location filename="../qps.cpp" line="395"/>
         <source>Stop</source>
         <translation>停止</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="401"/>
+        <location filename="../qps.cpp" line="397"/>
         <source>Continue</source>
         <translation>继续</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="404"/>
+        <location filename="../qps.cpp" line="400"/>
         <source>Other Signals</source>
         <translation>其它信号</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="405"/>
+        <location filename="../qps.cpp" line="401"/>
         <source>SIGINT (interrupt)</source>
         <translation>SIGINT (中断)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="407"/>
+        <location filename="../qps.cpp" line="403"/>
         <source>SIGCONT (continue)</source>
         <translation>SIGCONT (继续)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="409"/>
+        <location filename="../qps.cpp" line="405"/>
         <source>SIGSTOP (stop)</source>
         <translation>SIGSTOP (停止)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="411"/>
+        <location filename="../qps.cpp" line="407"/>
         <source>SIGQUIT (quit)</source>
         <translation>SIGQUIT (退出)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="413"/>
+        <location filename="../qps.cpp" line="409"/>
         <source>SIGILL (illegal instruction)</source>
         <translation>SIGILL（非法指令）</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="415"/>
+        <location filename="../qps.cpp" line="411"/>
         <source>SIGABRT (abort)</source>
         <translation>SIGABRT（终止）</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="417"/>
+        <location filename="../qps.cpp" line="413"/>
         <source>SIGFPE (floating point exception)</source>
         <translation>SIGFPE（浮点异常）</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="419"/>
+        <location filename="../qps.cpp" line="415"/>
         <source>SIGSEGV (segmentation violation)</source>
         <translation>SIGSEGV (段错误)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="421"/>
+        <location filename="../qps.cpp" line="417"/>
         <source>SIGPIPE (broken pipe)</source>
         <translation>SIGPIPE（断裂的管道）</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="423"/>
+        <location filename="../qps.cpp" line="419"/>
         <source>SIGALRM (timer signal)</source>
         <translation>SIGALRM（计时器信号）</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="425"/>
+        <location filename="../qps.cpp" line="421"/>
         <source>SIGUSR1 (user-defined 1)</source>
         <translation>SIGUSR1（用户自定义 1）</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="427"/>
+        <location filename="../qps.cpp" line="423"/>
         <source>SIGUSR2 (user-defined 2)</source>
         <translation>SIGUSR2（用户自定义 2）</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="429"/>
+        <location filename="../qps.cpp" line="425"/>
         <source>SIGCHLD (child death)</source>
         <translation>SIGCHLD (子进程中止)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="431"/>
+        <location filename="../qps.cpp" line="427"/>
         <source>SIGTSTP (stop from tty)</source>
         <translation>SIGTSTP（从 tty 停止）</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="433"/>
+        <location filename="../qps.cpp" line="429"/>
         <source>SIGTTIN (tty input)</source>
         <translation>SIGTTIN（tty 输入）</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="435"/>
+        <location filename="../qps.cpp" line="431"/>
         <source>SIGTTOU (tty output)</source>
         <translation>SIGTTOU（tty 输出）</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="442"/>
+        <location filename="../qps.cpp" line="438"/>
         <source>View Details</source>
         <translation>查看详情</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="695"/>
+        <location filename="../qps.cpp" line="691"/>
         <source>Show File Path</source>
         <translation>显示文件位置</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="701"/>
+        <location filename="../qps.cpp" line="697"/>
         <source>Show Graph</source>
         <translation>显示图表</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="707"/>
+        <location filename="../qps.cpp" line="703"/>
         <source>Show Control Bar</source>
         <translation>显示控制栏</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="718"/>
+        <location filename="../qps.cpp" line="714"/>
         <source>Include Child Times</source>
         <translation>包括子进程时间</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="290"/>
+        <location filename="../qps.cpp" line="287"/>
         <source>Quit</source>
         <translation>退出</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1163"/>
-        <location filename="../qps.cpp" line="1194"/>
-        <location filename="../qps.cpp" line="1201"/>
-        <location filename="../qps.cpp" line="1222"/>
-        <location filename="../qps.cpp" line="1256"/>
-        <location filename="../qps.cpp" line="1351"/>
+        <location filename="../qps.cpp" line="1159"/>
+        <location filename="../qps.cpp" line="1190"/>
+        <location filename="../qps.cpp" line="1197"/>
+        <location filename="../qps.cpp" line="1218"/>
+        <location filename="../qps.cpp" line="1252"/>
+        <location filename="../qps.cpp" line="1347"/>
         <source>Permission denied</source>
         <translation>权限不足</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1164"/>
+        <location filename="../qps.cpp" line="1160"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
         <translation>您没有权限重新选择所选进程。只有进程所有者和超级用户才有权限这样做。</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1195"/>
+        <location filename="../qps.cpp" line="1191"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
         <translation>您没有权限重置进程 %1 (%2)。只有进程所有者和超级用户才有权限这样做。</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1202"/>
+        <location filename="../qps.cpp" line="1198"/>
         <source>Only the super-user may lower the nice value of a process.</source>
         <translation>只有超级用户才能降低进程的优先级值。</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1223"/>
+        <location filename="../qps.cpp" line="1219"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
         <translation>只有超级用户才能更改调度策略和静态优先级。</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1257"/>
+        <location filename="../qps.cpp" line="1253"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
         <translation>您没有权限更改进程 %1 (%2) 的调度和/或优先级。只有超级用户才有权这样做。</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1318"/>
+        <location filename="../qps.cpp" line="1314"/>
         <source>Do you really want to terminate the selected process(es)?</source>
         <translation>您真的想终止所选进程吗？</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1320"/>
+        <location filename="../qps.cpp" line="1316"/>
         <source>Do you really want to hang up the selected process(es)?</source>
         <translation>您真的想挂起所选进程吗？</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1322"/>
+        <location filename="../qps.cpp" line="1318"/>
         <source>Do you really want to kill the selected process(es)?</source>
         <translation>您真的想杀死所选进程吗？</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1331"/>
+        <location filename="../qps.cpp" line="1327"/>
         <source>Question</source>
         <translation>问题</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1352"/>
+        <location filename="../qps.cpp" line="1348"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
         <translation>您没有权限向进程 %1 (%2) 发送信号。只有进程的超级用户和所有者才能向其发送信号。</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1702"/>
+        <location filename="../qps.cpp" line="1697"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
         <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1704"/>
+        <location filename="../qps.cpp" line="1699"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
         <translation>&lt;h2&gt; Qps %1 - 一个可视化的进程管理器 &lt;/h2&gt; %2 基于QT %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1724"/>
+        <location filename="../qps.cpp" line="1719"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
         <translation>&lt;b&gt;初版 Qps 出自&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;贡献者&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
     </message>

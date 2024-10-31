@@ -4,32 +4,32 @@
 <context>
     <name>AllFields</name>
     <message>
-        <location filename="../details.cpp" line="653"/>
+        <location filename="../details.cpp" line="627"/>
         <source>Field</source>
         <translation>Pole</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="653"/>
+        <location filename="../details.cpp" line="627"/>
         <source>Field name</source>
         <translation>Názov poľa</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="654"/>
+        <location filename="../details.cpp" line="628"/>
         <source>Description</source>
         <translation>Popis</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="654"/>
+        <location filename="../details.cpp" line="628"/>
         <source>Field description</source>
         <translation>Popis poľa</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="655"/>
+        <location filename="../details.cpp" line="629"/>
         <source>Value</source>
         <translation>Hodnota</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="655"/>
+        <location filename="../details.cpp" line="629"/>
         <source>Field value</source>
         <translation>Hodnota v poli</translation>
     </message>
@@ -174,22 +174,22 @@
 <context>
     <name>Environ</name>
     <message>
-        <location filename="../details.cpp" line="605"/>
+        <location filename="../details.cpp" line="579"/>
         <source>Variable</source>
         <translation>Premenlivé</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="605"/>
+        <location filename="../details.cpp" line="579"/>
         <source>Variable name</source>
         <translation>Názov premennej</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="606"/>
+        <location filename="../details.cpp" line="580"/>
         <source>Value</source>
         <translation>Hodnota</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="606"/>
+        <location filename="../details.cpp" line="580"/>
         <source>Variable value</source>
         <translation>Hodnota premennej</translation>
     </message>
@@ -210,32 +210,32 @@
 <context>
     <name>Files</name>
     <message>
-        <location filename="../details.cpp" line="521"/>
+        <location filename="../details.cpp" line="495"/>
         <source>Fd</source>
         <translation>Fd</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="521"/>
+        <location filename="../details.cpp" line="495"/>
         <source>File descriptor</source>
         <translation>Popisovať súboru</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="523"/>
+        <location filename="../details.cpp" line="497"/>
         <source>Mode</source>
         <translation>Režim</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="523"/>
+        <location filename="../details.cpp" line="497"/>
         <source>Open mode</source>
         <translation>Režim otvárania</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="525"/>
+        <location filename="../details.cpp" line="499"/>
         <source>Name</source>
         <translation>Názov</translation>
     </message>
     <message>
-        <location filename="../details.cpp" line="525"/>
+        <location filename="../details.cpp" line="499"/>
         <source>File name (if available)</source>
         <translation>Názov súboru (pokiaľ je k dispozícii)</translation>
     </message>
@@ -243,12 +243,12 @@
 <context>
     <name>IO_Graph</name>
     <message>
-        <location filename="../infobar.cpp" line="782"/>
+        <location filename="../infobar.cpp" line="785"/>
         <source>I/O Summary:</source>
         <translation>I/O Sumár:</translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="816"/>
+        <location filename="../infobar.cpp" line="819"/>
         <source>No input or output</source>
         <translation>Žiaden vstup ani výstup</translation>
     </message>
@@ -428,512 +428,512 @@
 <context>
     <name>Proc</name>
     <message>
-        <location filename="../proc.cpp" line="2618"/>
+        <location filename="../proc.cpp" line="2621"/>
         <source>PID</source>
         <translation>PID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2618"/>
+        <location filename="../proc.cpp" line="2621"/>
         <source>Process ID</source>
         <translation>Identif. procesu</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2620"/>
+        <location filename="../proc.cpp" line="2623"/>
         <source>TGID</source>
         <translation>TGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2620"/>
+        <location filename="../proc.cpp" line="2623"/>
         <source>Task group ID ( parent of threads )</source>
         <translation>Identifikátor skupiny úlohy (nadriadené vláknam)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2622"/>
+        <location filename="../proc.cpp" line="2625"/>
         <source>PPID</source>
         <translation>PPID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2622"/>
+        <location filename="../proc.cpp" line="2625"/>
         <source>Parent process ID</source>
         <translation>Identifikátor nadriadeného procesu</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2624"/>
+        <location filename="../proc.cpp" line="2627"/>
         <source>PGID</source>
         <translation>PGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2624"/>
+        <location filename="../proc.cpp" line="2627"/>
         <source>Process group ID</source>
         <translation>Identifikátor skupiny procesov</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2626"/>
+        <location filename="../proc.cpp" line="2629"/>
         <source>SID</source>
         <translation>SID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2626"/>
+        <location filename="../proc.cpp" line="2629"/>
         <source>Session ID</source>
         <translation>ID-relácie</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2628"/>
+        <location filename="../proc.cpp" line="2631"/>
         <source>TTY</source>
         <translation>TTY</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2628"/>
+        <location filename="../proc.cpp" line="2631"/>
         <source>Terminal</source>
         <translation>Terminál</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2630"/>
+        <location filename="../proc.cpp" line="2633"/>
         <source>TPGID</source>
         <translation>TPGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2630"/>
+        <location filename="../proc.cpp" line="2633"/>
         <source>Process group ID of tty owner</source>
         <translation>ID vlastníka konzoly</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2632"/>
+        <location filename="../proc.cpp" line="2635"/>
         <source>USER</source>
         <translation>UŽÍVATEĽ</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2632"/>
+        <location filename="../proc.cpp" line="2635"/>
         <source>Owner (*=suid root, +=suid a user)</source>
         <translation>Vlastník (*=suid správca, +=suid užívateľ)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2634"/>
+        <location filename="../proc.cpp" line="2637"/>
         <source>GROUP</source>
         <translation>SKUPINA</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2634"/>
+        <location filename="../proc.cpp" line="2637"/>
         <source>Group name (*=sgid other)</source>
         <translation>Názov skupiny (*=sgid ostatné)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2636"/>
+        <location filename="../proc.cpp" line="2639"/>
         <source>UID</source>
         <translation>UID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2636"/>
+        <location filename="../proc.cpp" line="2639"/>
         <source>Real user ID</source>
         <translation>Skutočné ID užívateľa</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2638"/>
+        <location filename="../proc.cpp" line="2641"/>
         <source>EUID</source>
         <translation>EUID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2638"/>
+        <location filename="../proc.cpp" line="2641"/>
         <source>Effective user ID</source>
         <translation>Efektívny ID užívateľ</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2640"/>
+        <location filename="../proc.cpp" line="2643"/>
         <source>SUID</source>
         <translation>SUID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2640"/>
+        <location filename="../proc.cpp" line="2643"/>
         <source>Saved user ID (Posix)</source>
         <translation>Uložené ID užívateľa (Posix)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2642"/>
+        <location filename="../proc.cpp" line="2645"/>
         <source>FSUID</source>
         <translation>FSUID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2642"/>
+        <location filename="../proc.cpp" line="2645"/>
         <source>File system user ID</source>
         <translation>Užívateľské ID súborového systému</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2644"/>
+        <location filename="../proc.cpp" line="2647"/>
         <source>GID</source>
         <translation>GID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2644"/>
+        <location filename="../proc.cpp" line="2647"/>
         <source>Real group ID</source>
         <translation>ID skutočnej skupiny</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2646"/>
+        <location filename="../proc.cpp" line="2649"/>
         <source>EGID</source>
         <translation>EGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2646"/>
+        <location filename="../proc.cpp" line="2649"/>
         <source>Effective group ID</source>
         <translation>ID efektívnej skupiny</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2648"/>
+        <location filename="../proc.cpp" line="2651"/>
         <source>SGID</source>
         <translation>SGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2648"/>
+        <location filename="../proc.cpp" line="2651"/>
         <source>Saved group ID (Posix)</source>
         <translation>ID uloženej skupiny (Posix)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2650"/>
+        <location filename="../proc.cpp" line="2653"/>
         <source>FSGID</source>
         <translation>FSGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2650"/>
+        <location filename="../proc.cpp" line="2653"/>
         <source>File system group ID</source>
         <translation>ID skupiny dátových systémov</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2652"/>
+        <location filename="../proc.cpp" line="2655"/>
         <source>PRI</source>
         <translation>PRI</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2652"/>
+        <location filename="../proc.cpp" line="2655"/>
         <source>Dynamic priority</source>
         <translation>Dynamická priorita</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2654"/>
+        <location filename="../proc.cpp" line="2657"/>
         <source>NICE</source>
         <translation>NICE</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2654"/>
+        <location filename="../proc.cpp" line="2657"/>
         <source>Scheduling favour (higher -&gt; less cpu time)</source>
         <translation>Prednosť pri plánovaní (vyššie -&gt; menej času procesoru)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2656"/>
+        <location filename="../proc.cpp" line="2659"/>
         <source>NLWP</source>
         <translation>NLWP</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2656"/>
+        <location filename="../proc.cpp" line="2659"/>
         <source>Number of tasks(threads) in task group</source>
         <translation>Počet úloh (vlákien) v skupine úlohy</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2658"/>
+        <location filename="../proc.cpp" line="2661"/>
         <source>PLCY</source>
         <translation>PLCY</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2658"/>
+        <location filename="../proc.cpp" line="2661"/>
         <source>Scheduling policy</source>
         <translation>Zásada plánovania</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2660"/>
+        <location filename="../proc.cpp" line="2663"/>
         <source>RPRI</source>
         <translation>RPRI</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2660"/>
+        <location filename="../proc.cpp" line="2663"/>
         <source>Realtime priority (0-99, more is better)</source>
         <translation>Priorita pre reálny čas (0-99, vyššia je lepšia)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2662"/>
+        <location filename="../proc.cpp" line="2665"/>
         <source>TMS</source>
         <translation>TMS</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2662"/>
+        <location filename="../proc.cpp" line="2665"/>
         <source>Time slice in milliseconds</source>
         <translation>Časové okno (v milisekundách)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2664"/>
+        <location filename="../proc.cpp" line="2667"/>
         <source>%SAVG</source>
         <translation>%SAVG</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2664"/>
+        <location filename="../proc.cpp" line="2667"/>
         <source>Percentage average sleep time (-1 -&gt; N/A)</source>
         <translation>Priemerné percento doby spánku (-1 -&gt; N/A)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2666"/>
+        <location filename="../proc.cpp" line="2669"/>
         <source>CPUSET</source>
         <translation>CPUSET</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2666"/>
+        <location filename="../proc.cpp" line="2669"/>
         <source>Affinity CPU mask (0 -&gt; API not supported)</source>
         <translation>Maska priradenia procesoru CPU (0 -&gt; API nepodporované)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2668"/>
+        <location filename="../proc.cpp" line="2671"/>
         <source>MAJFLT</source>
         <translation>MAJFLT</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2668"/>
+        <location filename="../proc.cpp" line="2671"/>
         <source>Number of major faults (disk access)</source>
         <translation>Počet väčších zlyhaní (prístup k disku)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2670"/>
+        <location filename="../proc.cpp" line="2673"/>
         <source>MINFLT</source>
         <translation>MINFLT</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2670"/>
+        <location filename="../proc.cpp" line="2673"/>
         <source>Number of minor faults (no disk access)</source>
         <translation>Počet menších zlyhaní (žiadny prístup k disku)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2673"/>
+        <location filename="../proc.cpp" line="2676"/>
         <source>VSIZE</source>
         <translation>VSIZE</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2673"/>
+        <location filename="../proc.cpp" line="2676"/>
         <source>Virtual image size of process</source>
         <translation>Veľkosť virtuálneho obrazu procesu</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2675"/>
+        <location filename="../proc.cpp" line="2678"/>
         <source>RSS</source>
         <translation>RSS</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2675"/>
+        <location filename="../proc.cpp" line="2678"/>
         <source>Resident set size</source>
         <translation>Veľkosť rezidentnej sady</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2677"/>
+        <location filename="../proc.cpp" line="2680"/>
         <source>MEM</source>
         <translation>MEM</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2677"/>
+        <location filename="../proc.cpp" line="2680"/>
         <source>memory usage (RSS-SHARE)</source>
         <translation>využitie pamäte (RSS-SHARE)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2679"/>
+        <location filename="../proc.cpp" line="2682"/>
         <source>TRS</source>
         <translation>TRS</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2679"/>
+        <location filename="../proc.cpp" line="2682"/>
         <source>Text(code) resident set size</source>
         <translation>Veľkosť rezidentnej sady textu (kódu)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2681"/>
+        <location filename="../proc.cpp" line="2684"/>
         <source>DRS</source>
         <translation>DRS</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2681"/>
+        <location filename="../proc.cpp" line="2684"/>
         <source>Data resident set size(malloc+global variable)</source>
         <translation>Veľkosť rezidentnej sady dát (priradenie pamäte + globálna premenná)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2683"/>
+        <location filename="../proc.cpp" line="2686"/>
         <source>STACK</source>
         <translation>STACK</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2683"/>
+        <location filename="../proc.cpp" line="2686"/>
         <source>Stack size</source>
         <translation>Veľkosť stacku</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2685"/>
+        <location filename="../proc.cpp" line="2688"/>
         <source>SHARE</source>
         <translation>SHARE</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2685"/>
+        <location filename="../proc.cpp" line="2688"/>
         <source>Shared memory with other libs</source>
         <translation>Pamäť zdieľaná s ostatnými knižnicami</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2687"/>
+        <location filename="../proc.cpp" line="2690"/>
         <source>SWAP</source>
         <translation>SWAP</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2687"/>
+        <location filename="../proc.cpp" line="2690"/>
         <source>Kbytes on swap device</source>
         <translation>Kilobajtov na zariadení SWAP</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2689"/>
+        <location filename="../proc.cpp" line="2692"/>
         <source>IO_R</source>
         <translation>IO_R</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2689"/>
+        <location filename="../proc.cpp" line="2692"/>
         <source>io read (file)</source>
         <translation>čítanie vstupné/výstupné (súbor)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2691"/>
+        <location filename="../proc.cpp" line="2694"/>
         <source>IO_W</source>
         <translation>IO_W</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2691"/>
+        <location filename="../proc.cpp" line="2694"/>
         <source>io write (file)</source>
         <translation>zápis vstupný/výstupný (súbor)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2693"/>
+        <location filename="../proc.cpp" line="2696"/>
         <source>DT</source>
         <translation>DT</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2693"/>
+        <location filename="../proc.cpp" line="2696"/>
         <source>Number of dirty (non-written) pages</source>
         <translation>Počet nezapísaných (&quot;nečistých&quot;) stránok</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2695"/>
+        <location filename="../proc.cpp" line="2698"/>
         <source>STAT</source>
         <translation>STAT</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2695"/>
+        <location filename="../proc.cpp" line="2698"/>
         <source>State of the process </source>
         <translation>Stav procesu </translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2697"/>
+        <location filename="../proc.cpp" line="2700"/>
         <source>FLAGS</source>
         <translation>FLAGS</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2697"/>
+        <location filename="../proc.cpp" line="2700"/>
         <source>Process flags (hex)</source>
         <translation>Príznaky procesu (hex)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2699"/>
+        <location filename="../proc.cpp" line="2702"/>
         <source>WCHAN</source>
         <translation>WCHAN</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2699"/>
+        <location filename="../proc.cpp" line="2702"/>
         <source>Kernel function where process is sleeping</source>
         <translation>Funkcia jadra pri spiacích procesoch</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2701"/>
+        <location filename="../proc.cpp" line="2704"/>
         <source>%WCPU</source>
         <translation>%WCPU</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2701"/>
+        <location filename="../proc.cpp" line="2704"/>
         <source>Weighted percentage of CPU (30 s average)</source>
         <translation>Priemerné využitie procesora za 30 sekúnd</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2703"/>
+        <location filename="../proc.cpp" line="2706"/>
         <source>%CPU</source>
         <translation>%CPU</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2703"/>
+        <location filename="../proc.cpp" line="2706"/>
         <source>Percentage of CPU used since last update</source>
         <translation>Percento využitia procesoru od poslednej aktualizácie</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2705"/>
+        <location filename="../proc.cpp" line="2708"/>
         <source>%MEM</source>
         <translation>%MEM</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2705"/>
+        <location filename="../proc.cpp" line="2708"/>
         <source>Percentage of memory used (RSS/total mem)</source>
         <translation>Percento využitia pamäte (RSS / celkovej pamäte)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2707"/>
+        <location filename="../proc.cpp" line="2710"/>
         <source>START</source>
         <translation>ŠTART</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2707"/>
+        <location filename="../proc.cpp" line="2710"/>
         <source>Time process started</source>
         <translation>Moment spustenia procesu</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2709"/>
+        <location filename="../proc.cpp" line="2712"/>
         <source>TIME</source>
         <translation>ČAS</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2709"/>
+        <location filename="../proc.cpp" line="2712"/>
         <source>Total CPU time used since start</source>
         <translation>Celkový čas procesoru použitého od spustenia</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2711"/>
+        <location filename="../proc.cpp" line="2714"/>
         <source>CPU</source>
         <translation>Procesor</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2711"/>
+        <location filename="../proc.cpp" line="2714"/>
         <source>CPU the process is executing on (SMP system)</source>
         <translation>Jadro procesoru, na ktorom je proces vykonávaný</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2713"/>
+        <location filename="../proc.cpp" line="2716"/>
         <source>the process name</source>
         <translation>Názov procesu</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2713"/>
+        <location filename="../proc.cpp" line="2716"/>
         <source>Process Name</source>
         <translation>Názov procesu</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2717"/>
+        <location filename="../proc.cpp" line="2720"/>
         <source>CWD</source>
         <translation>CWD</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2717"/>
+        <location filename="../proc.cpp" line="2720"/>
         <source>Current working directory</source>
         <translation>Aktuálny pracovný adresár</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2718"/>
+        <location filename="../proc.cpp" line="2721"/>
         <source>ROOT</source>
         <translation>ROOT</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2718"/>
+        <location filename="../proc.cpp" line="2721"/>
         <source>Root directory of process</source>
         <translation>Koreňový adresár procesu</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2721"/>
+        <location filename="../proc.cpp" line="2724"/>
         <source>COMMAND_LINE</source>
         <translation>PRÍKAZOVÝ_RIADOK</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2721"/>
+        <location filename="../proc.cpp" line="2724"/>
         <source>Command line that started the process</source>
         <translation>Príkaz, ktorým bol proces spustený</translation>
     </message>
@@ -941,17 +941,17 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../qps.cpp" line="1638"/>
+        <location filename="../qps.cpp" line="1633"/>
         <source>Show</source>
         <translation>Zobraziť</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1641"/>
+        <location filename="../qps.cpp" line="1636"/>
         <source>Hide</source>
         <translation>Skryť</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1646"/>
+        <location filename="../qps.cpp" line="1641"/>
         <source>Quit</source>
         <translation>Ukončiť</translation>
     </message>
@@ -984,44 +984,44 @@
         <translation>%</translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="471"/>
-        <location filename="../infobar.cpp" line="506"/>
+        <location filename="../infobar.cpp" line="474"/>
+        <location filename="../infobar.cpp" line="509"/>
         <source>Total: </source>
         <translation>Celkovo: </translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="474"/>
-        <location filename="../infobar.cpp" line="512"/>
+        <location filename="../infobar.cpp" line="477"/>
+        <location filename="../infobar.cpp" line="515"/>
         <source>Used: </source>
         <translation>Použitých: </translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="478"/>
+        <location filename="../infobar.cpp" line="481"/>
         <source>Cached: </source>
         <translation>Vo vyrovnávacej pamäti: </translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="481"/>
+        <location filename="../infobar.cpp" line="484"/>
         <source>Buffer: </source>
         <translation>Vyrovnávacia pamäť: </translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="509"/>
+        <location filename="../infobar.cpp" line="512"/>
         <source>Free: </source>
         <translation>Voľné: </translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="551"/>
+        <location filename="../infobar.cpp" line="554"/>
         <source>Time passed after system boot</source>
         <translation>Uplynutý čas od spustenia systému</translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="579"/>
+        <location filename="../infobar.cpp" line="582"/>
         <source>Average CPU load each 1, 5 ,15 minutes</source>
         <translation>Priemerné zaťaženie procesora každých 1, 5, 15 minút</translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="724"/>
+        <location filename="../infobar.cpp" line="727"/>
         <source>CPU Usage Summary:</source>
         <translation>Sumár využitia procesora:</translation>
     </message>
@@ -1029,343 +1029,343 @@
 <context>
     <name>Qps</name>
     <message>
-        <location filename="../qps.cpp" line="174"/>
+        <location filename="../qps.cpp" line="171"/>
         <source>header_popup</source>
         <translation>vyskakovacia hlavička</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="175"/>
+        <location filename="../qps.cpp" line="172"/>
         <source>Remove Field</source>
         <translation>Odobrať pole</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="176"/>
+        <location filename="../qps.cpp" line="173"/>
         <source>Add Field</source>
         <translation>Pridať pole</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="179"/>
+        <location filename="../qps.cpp" line="176"/>
         <source>Session</source>
         <translation>Relácia</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="183"/>
+        <location filename="../qps.cpp" line="180"/>
         <source>View</source>
         <translation>Zobraziť</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="184"/>
+        <location filename="../qps.cpp" line="181"/>
         <source>Process</source>
         <translation>Proces</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="185"/>
+        <location filename="../qps.cpp" line="182"/>
         <source>Log</source>
         <translation>Záznam udalostí (log)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="190"/>
+        <location filename="../qps.cpp" line="187"/>
         <source>Fields</source>
         <translation>Polia</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="191"/>
+        <location filename="../qps.cpp" line="188"/>
         <source>Custom Fields</source>
         <translation>Užívateľom určené polia</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="193"/>
+        <location filename="../qps.cpp" line="190"/>
         <source>Basic Fields </source>
         <translation>Základné polia </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="195"/>
+        <location filename="../qps.cpp" line="192"/>
         <source>Jobs Fields </source>
         <translation>Polia úloh </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="197"/>
+        <location filename="../qps.cpp" line="194"/>
         <source>Memory Fields </source>
         <translation>Polia pamäte </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="200"/>
+        <location filename="../qps.cpp" line="197"/>
         <source>Scheduling Fields </source>
         <translation>Polia plánovania </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="217"/>
+        <location filename="../qps.cpp" line="214"/>
         <source>Select Custom Fields...</source>
         <translation>Vybrať užívateľom určené polia...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="226"/>
+        <location filename="../qps.cpp" line="223"/>
         <source>Options</source>
         <translation>Možnosti</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="227"/>
+        <location filename="../qps.cpp" line="224"/>
         <source>Update Period...</source>
         <translation>Perióda aktualizácie…</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="236"/>
+        <location filename="../qps.cpp" line="233"/>
         <source>Show Status bar</source>
         <translation>Zobraziť stavový riadok</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="245"/>
+        <location filename="../qps.cpp" line="242"/>
         <source>Preferences...</source>
         <translation>Predvolby…</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="251"/>
+        <location filename="../qps.cpp" line="248"/>
         <source>Help</source>
         <translation>Pomoc</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="252"/>
-        <location filename="../qps.cpp" line="1686"/>
+        <location filename="../qps.cpp" line="249"/>
+        <location filename="../qps.cpp" line="1681"/>
         <source>About</source>
         <translation>O aplikácii</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="338"/>
+        <location filename="../qps.cpp" line="335"/>
         <source>test</source>
         <translation>test</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="339"/>
+        <location filename="../qps.cpp" line="336"/>
         <source>Copied to Clipboard</source>
         <translation>Skopírované do schránky</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="391"/>
+        <location filename="../qps.cpp" line="388"/>
         <source>context popup</source>
         <translation>kontextová vyskakovacia ponuka</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="392"/>
+        <location filename="../qps.cpp" line="389"/>
         <source>Renice...</source>
         <translation>Zmeniť prioritu (nice)…</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="393"/>
+        <location filename="../qps.cpp" line="390"/>
         <source>Scheduling...</source>
         <translation>Plánovanie...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="395"/>
+        <location filename="../qps.cpp" line="392"/>
         <source>Terminate</source>
         <translation>Ukončiť</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="397"/>
+        <location filename="../qps.cpp" line="393"/>
         <source>Hangup</source>
         <translation>Zložiť</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="398"/>
+        <location filename="../qps.cpp" line="394"/>
         <source>Kill</source>
         <translation>Vynútiť ukončenie (kill)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="399"/>
+        <location filename="../qps.cpp" line="395"/>
         <source>Stop</source>
         <translation>Zastaviť</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="401"/>
+        <location filename="../qps.cpp" line="397"/>
         <source>Continue</source>
         <translation>Pokračovať</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="404"/>
+        <location filename="../qps.cpp" line="400"/>
         <source>Other Signals</source>
         <translation>Iné signály</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="405"/>
+        <location filename="../qps.cpp" line="401"/>
         <source>SIGINT (interrupt)</source>
         <translation>SIGINT (prerušenie)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="407"/>
+        <location filename="../qps.cpp" line="403"/>
         <source>SIGCONT (continue)</source>
         <translation>SIGCONT (pokračovať)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="409"/>
+        <location filename="../qps.cpp" line="405"/>
         <source>SIGSTOP (stop)</source>
         <translation>SIGSTOP (zastaviť)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="411"/>
+        <location filename="../qps.cpp" line="407"/>
         <source>SIGQUIT (quit)</source>
         <translation>SIGQUIT (ukončiť)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="413"/>
+        <location filename="../qps.cpp" line="409"/>
         <source>SIGILL (illegal instruction)</source>
         <translation>SIGILL (neplatná inštrukcia)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="415"/>
+        <location filename="../qps.cpp" line="411"/>
         <source>SIGABRT (abort)</source>
         <translation>SIGABRT (prerušiť)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="417"/>
+        <location filename="../qps.cpp" line="413"/>
         <source>SIGFPE (floating point exception)</source>
         <translation>SIGFPE (výnimka v plávajúcej desatinnej čiarke)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="419"/>
+        <location filename="../qps.cpp" line="415"/>
         <source>SIGSEGV (segmentation violation)</source>
         <translation>SIGSEGV (porušenie ochrany pamäte)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="421"/>
+        <location filename="../qps.cpp" line="417"/>
         <source>SIGPIPE (broken pipe)</source>
         <translation>SIGPIPE (neočakávané uzatvorenie rúry)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="423"/>
+        <location filename="../qps.cpp" line="419"/>
         <source>SIGALRM (timer signal)</source>
         <translation>SIGALRM (signál časovača)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="425"/>
+        <location filename="../qps.cpp" line="421"/>
         <source>SIGUSR1 (user-defined 1)</source>
         <translation>SIGUSR1 (užívateľom určený 1)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="427"/>
+        <location filename="../qps.cpp" line="423"/>
         <source>SIGUSR2 (user-defined 2)</source>
         <translation>SIGUSR2 (užívateľom určený 2)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="429"/>
+        <location filename="../qps.cpp" line="425"/>
         <source>SIGCHLD (child death)</source>
         <translation>SIGCHLD (podriadený proces ukončený)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="431"/>
+        <location filename="../qps.cpp" line="427"/>
         <source>SIGTSTP (stop from tty)</source>
         <translation>SIGTSTP (zastavenie z konzoly)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="433"/>
+        <location filename="../qps.cpp" line="429"/>
         <source>SIGTTIN (tty input)</source>
         <translation>SIGTTIN (vstup z konzoly)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="435"/>
+        <location filename="../qps.cpp" line="431"/>
         <source>SIGTTOU (tty output)</source>
         <translation>SIGTTOU (výstup z konzoly)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="442"/>
+        <location filename="../qps.cpp" line="438"/>
         <source>View Details</source>
         <translation>Zobraziť podrobnosti</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="695"/>
+        <location filename="../qps.cpp" line="691"/>
         <source>Show File Path</source>
         <translation>Zobraziť cestu k súboru</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="701"/>
+        <location filename="../qps.cpp" line="697"/>
         <source>Show Graph</source>
         <translation>Zobraziť graf</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="707"/>
+        <location filename="../qps.cpp" line="703"/>
         <source>Show Control Bar</source>
         <translation>Zobraziť lištu na ovládanie</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="718"/>
+        <location filename="../qps.cpp" line="714"/>
         <source>Include Child Times</source>
         <translation>Zahrnúť časy podriadených procesov</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="290"/>
+        <location filename="../qps.cpp" line="287"/>
         <source>Quit</source>
         <translation>Ukončiť</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1163"/>
-        <location filename="../qps.cpp" line="1194"/>
-        <location filename="../qps.cpp" line="1201"/>
-        <location filename="../qps.cpp" line="1222"/>
-        <location filename="../qps.cpp" line="1256"/>
-        <location filename="../qps.cpp" line="1351"/>
+        <location filename="../qps.cpp" line="1159"/>
+        <location filename="../qps.cpp" line="1190"/>
+        <location filename="../qps.cpp" line="1197"/>
+        <location filename="../qps.cpp" line="1218"/>
+        <location filename="../qps.cpp" line="1252"/>
+        <location filename="../qps.cpp" line="1347"/>
         <source>Permission denied</source>
         <translation>Prístup zamietnutý</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1164"/>
+        <location filename="../qps.cpp" line="1160"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
         <translation>Nemáte oprávnenie pre úpravu priority procesov (nice). To môže udeľovať iba vlastník procesu alebo správca systému.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1195"/>
+        <location filename="../qps.cpp" line="1191"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
         <translation>Nemáte oprávnenie pre úpravu priority procesov %1 (%2). To môže udeľovať iba vlastník procesu alebo správca systému.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1202"/>
+        <location filename="../qps.cpp" line="1198"/>
         <source>Only the super-user may lower the nice value of a process.</source>
         <translation>Zvýšiť alebo znížiť prioritu procesu (nice) môže iba správca systému.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1223"/>
+        <location filename="../qps.cpp" line="1219"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
         <translation>Iba správca systému môže meniť zásadu plánovania a pevne danú prioritu.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1257"/>
+        <location filename="../qps.cpp" line="1253"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
         <translation>Nemáte oprávnenie meniť plánovanie alebo prioritu procesu %1 (%2). To môže urobiť iba vlastník procesu alebo správca systému.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1318"/>
+        <location filename="../qps.cpp" line="1314"/>
         <source>Do you really want to terminate the selected process(es)?</source>
         <translation>Skutočne si prajete ukončiť vybraný/é proces/y?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1320"/>
+        <location filename="../qps.cpp" line="1316"/>
         <source>Do you really want to hang up the selected process(es)?</source>
         <translation>Skutočne si prajete prerušiť vybraný/é proces/y?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1322"/>
+        <location filename="../qps.cpp" line="1318"/>
         <source>Do you really want to kill the selected process(es)?</source>
         <translation>Skutočne si prajete ukončiť vybraný/é proces/y?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1331"/>
+        <location filename="../qps.cpp" line="1327"/>
         <source>Question</source>
         <translation>Otázka</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1352"/>
+        <location filename="../qps.cpp" line="1348"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
         <translation>Nemáte oprávnenie poslať signál procesu %1 (%2). To môže urobiť iba vlastník procesu alebo správca systému.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1702"/>
+        <location filename="../qps.cpp" line="1697"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
         <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1704"/>
+        <location filename="../qps.cpp" line="1699"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
         <translation>&lt;h2&gt; Qps %1 - Vizuálny manažér procesov &lt;/h2&gt; %2 použitím knižnice Qt %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Zdroj: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1724"/>
+        <location filename="../qps.cpp" line="1719"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
         <translation>&lt;b&gt;Pôvodný Qps vytvoril &lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Na vývoji sa podieľal&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
     </message>
