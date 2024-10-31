@@ -1,3 +1,9 @@
+2.10.0 / 2024-11-05
+===================
+ * Used `MemAvailable`.
+ * Made "%MEM" be RSS/total mem.
+ * Made the tooltip of the memory graph more human-readable.
+
 2.9.0 / 2024-04-17
 ==================
  * Ported to Qt6.
