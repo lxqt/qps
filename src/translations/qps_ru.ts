@@ -1162,7 +1162,7 @@
     <message>
         <location filename="../qps.cpp" line="393"/>
         <source>Hangup</source>
-        <translation>Разорвать</translation>
+        <translation>Отправить SIGHUP</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="394"/>
