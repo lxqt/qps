@@ -971,7 +971,7 @@
         <location filename="../infobar.cpp" line="432"/>
         <location filename="../infobar.cpp" line="439"/>
         <source>Nice: </source>
-        <translation type="unfinished">Bra: </translation>
+        <translation>Prioritet: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="430"/>
