@@ -548,21 +548,6 @@ void Qps::showWindow()
     flag_start_mini = false; // the window has been shown for the first time
 }
 
-void Qps::resizeEvent(QResizeEvent *e)
-{
-    int w;
-    return;
-
-    w = ctrlbar->sizeHint().width();
-    if (!search_box->isVisible())
-        w += search_box->sizeHint().width();
-
-    if (e->size().width() < w)
-    {
-        search_box->hide();
-    }
-}
-
 /*
  Description :
         1. called when visible() or hide() state.

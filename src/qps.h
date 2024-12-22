@@ -221,7 +221,6 @@ class Qps : public QWidget
     // reimplementation of QWidget methods
     void timerEvent(QTimerEvent *) override;
     void closeEvent(QCloseEvent *) override;
-    void resizeEvent(QResizeEvent *event) override;
     void keyPressEvent(QKeyEvent *event) override;
     // bool event(QEvent *e);
     void transfer_selection();
