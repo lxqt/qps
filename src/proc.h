@@ -475,7 +475,7 @@ class Procinfo // Process Infomation
     int readproc();
 
     bool isThread();
-    void read_fd(int fdnum, char *path);
+    void read_fd(int fdnum, const char *path);
     bool read_fds();
     bool read_maps();
     bool read_environ();
