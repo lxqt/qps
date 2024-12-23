@@ -204,10 +204,11 @@ void Lookup::do_child(int fd)
         }
         // if parent died, we'll get SIGPIPE here and terminate
         // automatically
-        write(fd, &addr, sizeof(addr));
+        ssize_t w = write(fd, &addr, sizeof(addr));
         int len = strlen(buf);
-        write(fd, &len, sizeof(len));
-        write(fd, buf, len);
+        w = write(fd, &len, sizeof(len));
+        w = write(fd, buf, len);
+        Q_UNUSED(w)
     }
 }
 

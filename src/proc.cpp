@@ -2174,7 +2174,7 @@ bool Proc::read_socket_list(Sockinfo::proto_t proto, const char *filename)
     Sockinfo si;
 
     printf("read_socket_list()\n");
-    fgets(buf, sizeof(buf), f); // skip header
+    char *c = fgets(buf, sizeof(buf), f); Q_UNUSED(c) // skip header
     while (fgets(buf, sizeof(buf), f) != nullptr)
     {
         //	Sockinfo *si = new Sockinfo;
@@ -2217,7 +2217,7 @@ bool Proc::read_usocket_list()
         return false;
 
     char buf[256];
-    fgets(buf, sizeof(buf), f); // skip header
+    char *c = fgets(buf, sizeof(buf), f); Q_UNUSED(c) // skip header
     while (fgets(buf, sizeof(buf), f))
     {
         if (buf[0])
