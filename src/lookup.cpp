@@ -200,7 +200,8 @@ void Lookup::do_child(int fd)
         }
         else
         {
-            strncpy(buf, h->h_name, sizeof(buf));
+            strncpy(buf, h->h_name, 256);
+            buf[255] = '\0';
         }
         // if parent died, we'll get SIGPIPE here and terminate
         // automatically

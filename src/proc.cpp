@@ -2022,7 +2022,7 @@ unsigned long Procinfo::get_affcpu()
 
 // Description : read  /proc/PID/fd/* (SYMBOLIC LINK NAME)
 /* We need to implement support for IPV6 and sctp ? */
-void Procinfo::read_fd(int fdnum, char *path)
+void Procinfo::read_fd(int fdnum, const char *path)
 {
     int len;
     char buf[128];
@@ -2132,26 +2132,20 @@ bool Procinfo::read_fds()
     if (!d)
         return false;
 
-    /*
-    if(!sock_inodes) 	sock_inodes = new Svec<SockInode*>(4);
-    else 	sock_inodes->purge(); */
-
     strcat(path, "/");
 
-    fd_files.clear(); //
+    fd_files.clear();
     struct dirent *e;
     while ((e = readdir(d)) != nullptr)
     {
-        char str[128];
         if (e->d_name[0] == '.')
-            continue; // skip . and ..
+            continue;
         int fdnum = atoi(e->d_name);
-        strcpy(str, path);
-        strncat(str, e->d_name, 128 - 1 - strlen(str));
-        //	printf("str=%s\n",str);
-        read_fd(fdnum, str);
+        std::string str(path);
+        str.append(e->d_name);
+        read_fd(fdnum, str.c_str());
     }
-    //	printf("end str=\n");
+
     closedir(d);
     return true;
 }
