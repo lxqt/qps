@@ -1337,18 +1337,6 @@ void Qps::sendsig(Procinfo *p, int sig)
     }
 }
 
-// If the file format is changed in any way (including adding new
-// viewable fields), QPS_FILE_VERSION must be incremented to prevent
-// version mismatches and core dumps
-
-#ifdef LINUX
-#define QPS_FILE_VERSION 40 // version of .qps-linux file format
-#endif
-
-#ifdef SOLARIS
-#define QPS_FILE_VERSION 24 // version of .qps-solaris file format
-#endif
-
 struct Sflagvar
 {
     const char *name;
@@ -1386,10 +1374,6 @@ extern QList<watchCond *> watchlist;
 bool Qps::read_settings()
 {
     QSettings set("qps", "qps");
-
-    int v = set.value("version", 0).toInt();
-    if (v == 0)
-        return false;
 
     // flags (should be read before fields because "tree" decides how fields are added;
     // should be read before geometry too because of "Qps::save_pos")
@@ -1469,36 +1453,48 @@ void Qps::write_settings() // save setting
 {
     QSettings set("qps", "qps");
 
-    set.setValue("version", QPS_FILE_VERSION);
-
     set.beginGroup("geometry");
-    set.setValue("width", geometry().width());
-    set.setValue("height", geometry().height());
+    if (QSize(set.value("width").toInt(), set.value("height").toInt()) != geometry().size())
+    {
+        set.setValue("width", geometry().width());
+        set.setValue("height", geometry().height());
+    }
     if (!under_wayland)
     {
+        QPoint topLeft(set.value("x").toInt(), set.value("y").toInt());
         if (isVisible())
         {
-            set.setValue("x", geometry().x());
-            set.setValue("y", geometry().y());
+            if (topLeft != geometry().topLeft())
+            {
+                set.setValue("x", geometry().x());
+                set.setValue("y", geometry().y());
+            }
         }
         else
         {
-            set.setValue("x", winPos.x());
-            set.setValue("y", winPos.y());
+            if (topLeft != winPos)
+            {
+                set.setValue("x", winPos.x());
+                set.setValue("y", winPos.y());
+            }
         }
     }
     set.endGroup();
 
-    set.setValue("viewproc", procview->viewproc);
+    if (set.value("viewproc").toInt() != procview->viewproc)
+        set.setValue("viewproc", procview->viewproc);
 
     procview->update_customfield();
-    set.setValue("field", procview->customFieldIDs);
+    if (set.value("field").toList() != procview->customFieldIDs)
+        set.setValue("field", procview->customFieldIDs);
 
     if (procview->sortcat) // nullptr by default
     {
         set.beginGroup("sort");
-        set.setValue("field", procview->sortcat->id);
-        set.setValue("reversed", procview->reversed);
+        if (set.value("field").toInt() != procview->sortcat->id)
+            set.setValue("field", procview->sortcat->id);
+        if (set.value("reversed").toBool() != procview->reversed)
+            set.setValue("reversed", procview->reversed);
         set.endGroup();
     }
     else
@@ -1510,11 +1506,15 @@ void Qps::write_settings() // save setting
         if (*(fs->var))
             sl.append(fs->name);
     }
-    set.setValue("flags", sl);
+    if (set.value("flags").toStringList() != sl)
+        set.setValue("flags", sl);
 
-    set.setValue("font", QApplication::font().toString());
+    const QString appFont = QApplication::font().toString();
+    if (set.value("font").toString() != appFont)
+        set.setValue("font", appFont);
 
-    set.setValue("interval", update_period);
+    if (set.value("interval").toInt() != update_period)
+        set.setValue("interval", update_period);
 }
 
 // return host name with domain stripped
