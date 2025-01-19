@@ -1504,7 +1504,7 @@
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>Local Addr</source>
-        <translation type="unfinished"></translation>
+        <translation>ლოკალური მისამართი</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
@@ -1525,7 +1525,7 @@
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Remote Addr</source>
-        <translation type="unfinished"></translation>
+        <translation>დაშორებული მისამართი</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
