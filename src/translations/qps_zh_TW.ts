@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ka">
+<TS version="2.1" language="zh_TW">
 <context>
     <name>AllFields</name>
     <message>
         <location filename="../details.cpp" line="627"/>
         <source>Field</source>
-        <translation>ველი</translation>
+        <translation>欄位</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="627"/>
         <source>Field name</source>
-        <translation>ველის სახელი</translation>
+        <translation>欄位名稱</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="628"/>
         <source>Description</source>
-        <translation>აღწერა</translation>
+        <translation>描述</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="628"/>
         <source>Field description</source>
-        <translation>ველის აღწერა</translation>
+        <translation>欄位描述</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="629"/>
         <source>Value</source>
-        <translation>მნიშვნელობა</translation>
+        <translation>值</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="629"/>
         <source>Field value</source>
-        <translation>ველის მნიშვნელობა</translation>
+        <translation>欄位值</translation>
     </message>
 </context>
 <context>
@@ -39,52 +39,52 @@
     <message>
         <location filename="../prefs.cpp" line="59"/>
         <source>Exit on closing</source>
-        <translation>გასვლა დახურვისას</translation>
+        <translation>關閉並退出</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="60"/>
         <source>Remember Position</source>
-        <translation>მდებარეობის დამახსოვრება</translation>
+        <translation>記住位置</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="68"/>
         <source>Host Name Lookup</source>
-        <translation>ჰოსტის სახელის ძებნა</translation>
+        <translation>伺服主機名稱查詢</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="69"/>
         <source>Service Name Lookup</source>
-        <translation>სერვისის სახელის ძებნა</translation>
+        <translation>伺服器名稱查詢</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="75"/>
         <source>Disclosure Triangles</source>
-        <translation>სამკუთხედების გამოჩენა</translation>
+        <translation>揭露三角</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="76"/>
         <source>Branch Lines</source>
-        <translation>ტოტის ხაზები</translation>
+        <translation>分支線條</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="82"/>
         <source>Auto Save Settings on Exit</source>
-        <translation>პარამეტრების ავტოშენახვა გასვლისას</translation>
+        <translation>退出時自動儲存設定</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="83"/>
         <source>Selection: Copy PIDs to Clipboard</source>
-        <translation>მონიშვნა: PID-ების კოპირება ბუფერში</translation>
+        <translation>選擇：複製 PIDs 至剪貼簿</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="85"/>
         <source>Normalize NICE</source>
-        <translation>NICE-ის ნორმალიზება</translation>
+        <translation>正常化 NICE</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="86"/>
         <source>Use pmap for Map Names</source>
-        <translation>Pmap-ის გამოყენება რუკის სახელებისთვის</translation>
+        <translation>使用 pmap 用於映射名稱</translation>
     </message>
 </context>
 <context>
@@ -92,7 +92,7 @@
     <message>
         <location filename="../prefs.cpp" line="106"/>
         <source>General</source>
-        <translation>ზოგადი</translation>
+        <translation>通則</translation>
     </message>
 </context>
 <context>
@@ -100,42 +100,42 @@
     <message>
         <location filename="../misc.cpp" line="634"/>
         <source>Linear</source>
-        <translation>წრფივი</translation>
+        <translation>線性</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="637"/>
         <source>Tree</source>
-        <translation>ხე</translation>
+        <translation>樹狀</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="646"/>
         <source>Thread</source>
-        <translation>ნაკადი</translation>
+        <translation>線緒</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="653"/>
         <source>All Processes</source>
-        <translation>ყველა პროცესი</translation>
+        <translation>全部程序</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="654"/>
         <source>Your Processes</source>
-        <translation>თქვენი პროცესები</translation>
+        <translation>自己的程序</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="655"/>
         <source>Non-Root Processes</source>
-        <translation>არა-root-ის პროცესები</translation>
+        <translation>非根程序</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="656"/>
         <source>Running Processes</source>
-        <translation>გაშვებული პროცესები</translation>
+        <translation>運行中的程序</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="672"/>
         <source>Pause (Ctrl+Space)</source>
-        <translation>პაუზა(Ctrl+Space)</translation>
+        <translation>暫停 (Ctrl+Space)</translation>
     </message>
 </context>
 <context>
@@ -143,32 +143,32 @@
     <message>
         <location filename="../details.cpp" line="36"/>
         <source>Process %1 ( %2 ) - details</source>
-        <translation>პროცესი %1 ( %2 ) - დეტალები</translation>
+        <translation>程序 %1 ( %2 ) - 詳情</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="45"/>
         <source>Files</source>
-        <translation>ფაილი</translation>
+        <translation>檔案</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="54"/>
         <source>Sockets</source>
-        <translation>სოკეტები</translation>
+        <translation>Sockets</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="59"/>
         <source>Memory Maps</source>
-        <translation>მეხსიერების რუკები</translation>
+        <translation>記憶體映圖</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="61"/>
         <source>Environment</source>
-        <translation>გარემო</translation>
+        <translation>環境</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="62"/>
         <source>All Fields</source>
-        <translation>ყველა ველი</translation>
+        <translation>全部欄位</translation>
     </message>
 </context>
 <context>
@@ -176,22 +176,22 @@
     <message>
         <location filename="../details.cpp" line="579"/>
         <source>Variable</source>
-        <translation>ცვლადი</translation>
+        <translation>變型</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="579"/>
         <source>Variable name</source>
-        <translation>ცვლადის სახელი</translation>
+        <translation>變型名稱</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="580"/>
         <source>Value</source>
-        <translation>მნიშვნელობა</translation>
+        <translation>值</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="580"/>
         <source>Variable value</source>
-        <translation>ცვლადის მნიშვნელობა</translation>
+        <translation>變型值</translation>
     </message>
 </context>
 <context>
@@ -199,12 +199,12 @@
     <message>
         <location filename="../fieldsel.cpp" line="34"/>
         <source>Select Custom Fields </source>
-        <translation>აირჩიეთ მორგებული ველები </translation>
+        <translation>選擇自訂欄位 </translation>
     </message>
     <message>
         <location filename="../fieldsel.cpp" line="75"/>
         <source>Close</source>
-        <translation>დახურვა</translation>
+        <translation>關閉</translation>
     </message>
 </context>
 <context>
@@ -217,27 +217,27 @@
     <message>
         <location filename="../details.cpp" line="495"/>
         <source>File descriptor</source>
-        <translation>ფაილის დესკრიპტორი</translation>
+        <translation>檔案描述子</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="497"/>
         <source>Mode</source>
-        <translation>რეჟიმი</translation>
+        <translation>模式</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="497"/>
         <source>Open mode</source>
-        <translation>გახსნის რეჟიმი</translation>
+        <translation>開啟模式</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="499"/>
         <source>Name</source>
-        <translation>სახელი</translation>
+        <translation>名稱</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="499"/>
         <source>File name (if available)</source>
-        <translation>ფაილის სახელი (თუ ხელმისაწვდომია)</translation>
+        <translation>檔案名稱 (若有可用)</translation>
     </message>
 </context>
 <context>
@@ -245,12 +245,12 @@
     <message>
         <location filename="../infobar.cpp" line="785"/>
         <source>I/O Summary:</source>
-        <translation>შეტ/გამოტ შეჯამება:</translation>
+        <translation>I/O 概要：</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="819"/>
         <source>No input or output</source>
-        <translation>შეყვანის ან გამოტანის გარეშე</translation>
+        <translation>沒有輸入或輸出</translation>
     </message>
 </context>
 <context>
@@ -258,32 +258,32 @@
     <message>
         <location filename="../dialogs.cpp" line="43"/>
         <source>Change Update Period</source>
-        <translation>განახლების პერიოდის შეცვლა</translation>
+        <translation>變更更新週期</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="49"/>
         <source>New Update Period</source>
-        <translation>ახალი განახლების პერიოდი</translation>
+        <translation>新建更新週期</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="85"/>
         <source>Cancel</source>
-        <translation>გაუქმება</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="87"/>
         <source>OK</source>
-        <translation>დიახ</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="121"/>
         <source>No UPDATE</source>
-        <translation>განახლების გარეშე</translation>
+        <translation>無更新</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="139"/>
         <source>Invalid value</source>
-        <translation>არასწორი მნიშვნელობა</translation>
+        <translation>無效的值</translation>
     </message>
 </context>
 <context>
@@ -291,72 +291,72 @@
     <message>
         <location filename="../details.cpp" line="392"/>
         <source>Address Range</source>
-        <translation>მისამართის დიაპაზონი</translation>
+        <translation>位址範圍</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="392"/>
         <source>Mapped addresses (hex) )</source>
-        <translation>ასახული მისამართები (თექვსმ) )</translation>
+        <translation>映射位址 (hex) )</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="393"/>
         <source>Size</source>
-        <translation>ზომა</translation>
+        <translation>大小</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="393"/>
         <source>Kbytes mapped (dec)</source>
-        <translation>ასახული კბაიტი (ათობ)</translation>
+        <translation>Kbytes 映射 (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="394"/>
         <source>Perm</source>
-        <translation>პერმი</translation>
+        <translation>Perm 算法</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="394"/>
         <source>Permission flags</source>
-        <translation>წვდომის ალმები</translation>
+        <translation>權限旗幟</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="395"/>
         <source>Offset</source>
-        <translation>წანაცვლება</translation>
+        <translation>偏移量</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="395"/>
         <source>File offset at start of mapping (hex)</source>
-        <translation>ფაილის წანაცვლება ასახვის დასაწყისთან (თექვსმ)</translation>
+        <translation>檔案偏移量於映射啟動 (hex)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Device</source>
-        <translation>მოწყობილობა</translation>
+        <translation>裝置</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Major,Minor device numbers (dec)</source>
-        <translation>ძირითადი, დამხმარე მოწყობილობის ნომრები (ათობითში)</translation>
+        <translation>主要、次要裝置號碼 (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Inode</source>
-        <translation>Inode</translation>
+        <translation>索引節點</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Inode number (dec)</source>
-        <translation>Inode-ის ნომერი (ათობითში)</translation>
+        <translation>索引節點號碼 (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>File</source>
-        <translation>ფაილი</translation>
+        <translation>檔案</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>File name (if available)</source>
-        <translation>ფაილის სახელი (თუ ხელმისაწვდომია)</translation>
+        <translation>檔案名稱 (若有可用)</translation>
     </message>
 </context>
 <context>
@@ -364,22 +364,22 @@
     <message>
         <location filename="../dialogs.cpp" line="264"/>
         <source>Permission</source>
-        <translation>წვდომა</translation>
+        <translation>權限</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="273"/>
         <source>Root password</source>
-        <translation>Root-ის პაროლი</translation>
+        <translation>Root 密碼</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="280"/>
         <source>Cancel</source>
-        <translation>გაუქმება</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="283"/>
         <source>OK</source>
-        <translation>დიახ</translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -387,42 +387,42 @@
     <message>
         <location filename="../prefs.cpp" line="150"/>
         <source>Preferences</source>
-        <translation>მორგება</translation>
+        <translation>偏好設定</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="157"/>
         <source>Setting</source>
-        <translation>პარამეტრი</translation>
+        <translation>設定</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="191"/>
         <source>%CPU divided by</source>
-        <translation>%CPU გაყოფილი</translation>
+        <translation>%CPU 除以</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="198"/>
         <source>Total cpu: %1</source>
-        <translation>სულ CPU: %1</translation>
+        <translation>總計 CPU： %1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="199"/>
         <source>Single cpu: 1</source>
-        <translation>1 CPU: 1</translation>
+        <translation>單一 CPU： 1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="205"/>
         <source>default</source>
-        <translation>ნაგულისხმევი</translation>
+        <translation>預設</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="206"/>
         <source>for developer</source>
-        <translation>პროგრამისტისთვის</translation>
+        <translation>用於開發人員</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="240"/>
         <source>Appearance</source>
-        <translation>გარეგნობა</translation>
+        <translation>外觀</translation>
     </message>
 </context>
 <context>
@@ -435,7 +435,7 @@
     <message>
         <location filename="../proc.cpp" line="2621"/>
         <source>Process ID</source>
-        <translation>პროცესის ID</translation>
+        <translation>程序 ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2623"/>
@@ -445,7 +445,7 @@
     <message>
         <location filename="../proc.cpp" line="2623"/>
         <source>Task group ID ( parent of threads )</source>
-        <translation>ამოცანების ჯგუფის ID (ნაკადების მშობელი)</translation>
+        <translation>任務群組 ID ( 線緒上層 )</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2625"/>
@@ -455,7 +455,7 @@
     <message>
         <location filename="../proc.cpp" line="2625"/>
         <source>Parent process ID</source>
-        <translation>მშობელი პროცესის ID</translation>
+        <translation>上層程序 ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2627"/>
@@ -465,7 +465,7 @@
     <message>
         <location filename="../proc.cpp" line="2627"/>
         <source>Process group ID</source>
-        <translation>პროცესების ჯგუფის ID</translation>
+        <translation>程序群組 ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2629"/>
@@ -475,7 +475,7 @@
     <message>
         <location filename="../proc.cpp" line="2629"/>
         <source>Session ID</source>
-        <translation>სესიის ID</translation>
+        <translation>會話 ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2631"/>
@@ -485,7 +485,7 @@
     <message>
         <location filename="../proc.cpp" line="2631"/>
         <source>Terminal</source>
-        <translation>ტერმინალი</translation>
+        <translation>終端機</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2633"/>
@@ -495,27 +495,27 @@
     <message>
         <location filename="../proc.cpp" line="2633"/>
         <source>Process group ID of tty owner</source>
-        <translation>tty-ის მფლობელის პროცესის ჯგუფის ID</translation>
+        <translation>tty 擁有者的程序群組 ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2635"/>
         <source>USER</source>
-        <translation>მომხმარებელი</translation>
+        <translation>使用者</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2635"/>
         <source>Owner (*=suid root, +=suid a user)</source>
-        <translation>მომხმარებელი (*=suid root, +=suid მომხმარებელს)</translation>
+        <translation>擁有者 (*=suid root, +=suid a user)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2637"/>
         <source>GROUP</source>
-        <translation>ჯგუფი</translation>
+        <translation>群組</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2637"/>
         <source>Group name (*=sgid other)</source>
-        <translation>ჯგუფის სახელი (*=sgid სხვა)</translation>
+        <translation>群組名稱 (*=sgid other)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2639"/>
@@ -525,7 +525,7 @@
     <message>
         <location filename="../proc.cpp" line="2639"/>
         <source>Real user ID</source>
-        <translation>რეალური მომხმარებლის ID</translation>
+        <translation>真實使用者 ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2641"/>
@@ -535,7 +535,7 @@
     <message>
         <location filename="../proc.cpp" line="2641"/>
         <source>Effective user ID</source>
-        <translation>ეფექტური მომხმარებლის ID</translation>
+        <translation>有效使用者 ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2643"/>
@@ -545,7 +545,7 @@
     <message>
         <location filename="../proc.cpp" line="2643"/>
         <source>Saved user ID (Posix)</source>
-        <translation>შენახული მომხმარებლის ID (Posix)</translation>
+        <translation>已經儲存使用者 ID (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2645"/>
@@ -555,7 +555,7 @@
     <message>
         <location filename="../proc.cpp" line="2645"/>
         <source>File system user ID</source>
-        <translation>ფაილური სისტემის მომხმარებლის ID</translation>
+        <translation>檔案系統使用者 ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2647"/>
@@ -565,7 +565,7 @@
     <message>
         <location filename="../proc.cpp" line="2647"/>
         <source>Real group ID</source>
-        <translation>რეალური ჯგუფის ID</translation>
+        <translation>真實群組 ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2649"/>
@@ -575,7 +575,7 @@
     <message>
         <location filename="../proc.cpp" line="2649"/>
         <source>Effective group ID</source>
-        <translation>ეფექტური ჯგუფის ID</translation>
+        <translation>有效群組 ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2651"/>
@@ -585,7 +585,7 @@
     <message>
         <location filename="../proc.cpp" line="2651"/>
         <source>Saved group ID (Posix)</source>
-        <translation>შენახული ჯგუფის ID (Posix)</translation>
+        <translation>已經儲存群組 ID (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2653"/>
@@ -595,7 +595,7 @@
     <message>
         <location filename="../proc.cpp" line="2653"/>
         <source>File system group ID</source>
-        <translation>ფაილური სისტემის ჯგუფის ID</translation>
+        <translation>檔案系統群組 ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2655"/>
@@ -605,7 +605,7 @@
     <message>
         <location filename="../proc.cpp" line="2655"/>
         <source>Dynamic priority</source>
-        <translation>დინამიკური პრიორიტეტი</translation>
+        <translation>動態優先等級</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2657"/>
@@ -615,7 +615,7 @@
     <message>
         <location filename="../proc.cpp" line="2657"/>
         <source>Scheduling favour (higher -&gt; less cpu time)</source>
-        <translation>დაგეგმვის პრიორიტეტი (რაც მაღალია -&gt; პროცესორის ნაკლები დრო)</translation>
+        <translation>排程喜愛 (愈高 → 愈少 CPU 時間）</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2659"/>
@@ -625,7 +625,7 @@
     <message>
         <location filename="../proc.cpp" line="2659"/>
         <source>Number of tasks(threads) in task group</source>
-        <translation>ამოცანების(ნაკადების) რაოდენობა ამოცანების ჯგუფში</translation>
+        <translation>任務群組中任務(線緒)數量</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2661"/>
@@ -635,7 +635,7 @@
     <message>
         <location filename="../proc.cpp" line="2661"/>
         <source>Scheduling policy</source>
-        <translation>დაგეგმვის პოლიტიკა</translation>
+        <translation>排程原則</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2663"/>
@@ -645,7 +645,7 @@
     <message>
         <location filename="../proc.cpp" line="2663"/>
         <source>Realtime priority (0-99, more is better)</source>
-        <translation>რეალური დროის პრიორიტეტი (0-99. რაც მეტი, უკეთესი)</translation>
+        <translation>即時優先等級 (0-99, 愈多愈好)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2665"/>
@@ -655,7 +655,7 @@
     <message>
         <location filename="../proc.cpp" line="2665"/>
         <source>Time slice in milliseconds</source>
-        <translation>დროის ნაწილი მილიწამებში</translation>
+        <translation>時間切分(毫秒）</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2667"/>
@@ -665,7 +665,7 @@
     <message>
         <location filename="../proc.cpp" line="2667"/>
         <source>Percentage average sleep time (-1 -&gt; N/A)</source>
-        <translation>პროცენტულად საშუალო ძილიდ რო (-1 -&gt; N/A)</translation>
+        <translation>平均睡眠時百分比 (-1 -&gt; N/A)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2669"/>
@@ -675,7 +675,7 @@
     <message>
         <location filename="../proc.cpp" line="2669"/>
         <source>Affinity CPU mask (0 -&gt; API not supported)</source>
-        <translation>მინიჭების CPU-ის ნიღაბი (0 -&gt; API მხარდაჭერილი არაა)</translation>
+        <translation>親和力 CPU 遮罩 (0 -&gt; API 不支援)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2671"/>
@@ -685,7 +685,7 @@
     <message>
         <location filename="../proc.cpp" line="2671"/>
         <source>Number of major faults (disk access)</source>
-        <translation>ძირითადი ჩავარდნების (დისკთან წვდომის) რაოდენობა</translation>
+        <translation>重大故障次數 (磁碟存取)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2673"/>
@@ -695,7 +695,7 @@
     <message>
         <location filename="../proc.cpp" line="2673"/>
         <source>Number of minor faults (no disk access)</source>
-        <translation>მეორადი ჩავარდნების (დისკთან წვდომის აკრძალვა) რაოდენობა</translation>
+        <translation>次要故障次數 (無磁碟存取)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2676"/>
@@ -705,7 +705,7 @@
     <message>
         <location filename="../proc.cpp" line="2676"/>
         <source>Virtual image size of process</source>
-        <translation>პროცესის ვირტუალური ასლის ზომა</translation>
+        <translation>程序虛擬映像大小</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2678"/>
@@ -715,17 +715,17 @@
     <message>
         <location filename="../proc.cpp" line="2678"/>
         <source>Resident set size</source>
-        <translation>რეზიდენტული ნაკრების ზომა</translation>
+        <translation>常駐設置大小</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2680"/>
         <source>MEM</source>
-        <translation>მეხს</translation>
+        <translation>MEM</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2680"/>
         <source>memory usage (RSS-SHARE)</source>
-        <translation>მეხსიერების გამოყენება (RSS-SHARE)</translation>
+        <translation>記憶體用量 (RSS-SHARE)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2682"/>
@@ -735,7 +735,7 @@
     <message>
         <location filename="../proc.cpp" line="2682"/>
         <source>Text(code) resident set size</source>
-        <translation>ტექსტის (კოდის) რეზიდენტული ნაწილის ზომა</translation>
+        <translation>文字(代碼)常駐設置大小</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2684"/>
@@ -745,7 +745,7 @@
     <message>
         <location filename="../proc.cpp" line="2684"/>
         <source>Data resident set size(malloc+global variable)</source>
-        <translation>მონაცემების რეზიდენტული ნაწილის ზომა (malloc+გლობალური ცვლადი)</translation>
+        <translation>數據常駐設置大小(malloc+global variable)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2686"/>
@@ -755,17 +755,17 @@
     <message>
         <location filename="../proc.cpp" line="2686"/>
         <source>Stack size</source>
-        <translation>სტეკის ზომა</translation>
+        <translation>堆疊大小</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2688"/>
         <source>SHARE</source>
-        <translation>გაზიარება</translation>
+        <translation>SHARE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2688"/>
         <source>Shared memory with other libs</source>
-        <translation>სხვა ბიბლიოთეკებთან გაზიარებული მეხსიერება</translation>
+        <translation>與其它庫分享的記憶體</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2690"/>
@@ -775,7 +775,7 @@
     <message>
         <location filename="../proc.cpp" line="2690"/>
         <source>Kbytes on swap device</source>
-        <translation>კბაიტი სვოპის მოწყობილობაზე</translation>
+        <translation>Kbytes 於交換裝置</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2692"/>
@@ -785,7 +785,7 @@
     <message>
         <location filename="../proc.cpp" line="2692"/>
         <source>io read (file)</source>
-        <translation>წაკითხულია შეყვანა (ფაილი)</translation>
+        <translation>io 讀取 (檔案)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2694"/>
@@ -795,7 +795,7 @@
     <message>
         <location filename="../proc.cpp" line="2694"/>
         <source>io write (file)</source>
-        <translation>ჩაწერილია შეყვანა (ფაილი)</translation>
+        <translation>io 寫入 (檔案)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2696"/>
@@ -805,7 +805,7 @@
     <message>
         <location filename="../proc.cpp" line="2696"/>
         <source>Number of dirty (non-written) pages</source>
-        <translation>ბინძური (ჩაუწერელი) გვერდების რაოდენობა</translation>
+        <translation>髒頁數量 (未寫入)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2698"/>
@@ -815,17 +815,17 @@
     <message>
         <location filename="../proc.cpp" line="2698"/>
         <source>State of the process </source>
-        <translation>პროცესის მდგომარეობა </translation>
+        <translation>程序狀態 </translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2700"/>
         <source>FLAGS</source>
-        <translation>ალმები</translation>
+        <translation>FLAGS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2700"/>
         <source>Process flags (hex)</source>
-        <translation>პროცესის ალმები (თექვსმ)</translation>
+        <translation>程序旗幟 (hex)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2702"/>
@@ -835,7 +835,7 @@
     <message>
         <location filename="../proc.cpp" line="2702"/>
         <source>Kernel function where process is sleeping</source>
-        <translation>ბირთვის ფუნქცია, სადაც პროცესს სძინავს</translation>
+        <translation>程序處於休眠狀態的核心函數</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2704"/>
@@ -845,7 +845,7 @@
     <message>
         <location filename="../proc.cpp" line="2704"/>
         <source>Weighted percentage of CPU (30 s average)</source>
-        <translation>CPU-ის აწონილი პროცენტულობა (30წმ საშუალო)</translation>
+        <translation>CPU 加權百分比 (30 秒平均值)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2706"/>
@@ -855,7 +855,7 @@
     <message>
         <location filename="../proc.cpp" line="2706"/>
         <source>Percentage of CPU used since last update</source>
-        <translation>CPU-ის გამოყენებული პროცენტულობა ბოლო განახლების შემდეგ</translation>
+        <translation>自上次更新以來 CPU 使用百分比</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2708"/>
@@ -865,47 +865,47 @@
     <message>
         <location filename="../proc.cpp" line="2708"/>
         <source>Percentage of memory used (RSS/total mem)</source>
-        <translation>გამოყენებული მეხსიერების პროცენტულობა (RSS/სულ მეხსიერება)</translation>
+        <translation>記憶體使用百分比 (RSS/總記憶體)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2710"/>
         <source>START</source>
-        <translation>დასაწყისი</translation>
+        <translation>START</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2710"/>
         <source>Time process started</source>
-        <translation>დროის პროცესი გაეშვა</translation>
+        <translation>程序已經啟動時間</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2712"/>
         <source>TIME</source>
-        <translation>დრო</translation>
+        <translation>TIME</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2712"/>
         <source>Total CPU time used since start</source>
-        <translation>სულ გამოყენებული პროცესორის დრო გაშვების შემდეგ</translation>
+        <translation>自啟動以來使用 CPU 時間總計</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2714"/>
         <source>CPU</source>
-        <translation>პროცესორი</translation>
+        <translation>CPU</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2714"/>
         <source>CPU the process is executing on (SMP system)</source>
-        <translation>CPU, რომელზედაც პროცესია გაშვებული (SMP სისტემაზე)</translation>
+        <translation>程序正在執行 CPU (SMP 系統)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2716"/>
         <source>the process name</source>
-        <translation>პროცესის სახელი</translation>
+        <translation>程序名稱</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2716"/>
         <source>Process Name</source>
-        <translation>პროცესის სახელი</translation>
+        <translation>程序名稱</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2720"/>
@@ -915,17 +915,17 @@
     <message>
         <location filename="../proc.cpp" line="2720"/>
         <source>Current working directory</source>
-        <translation>მიმდინარე სამუშაო საქაღალდე</translation>
+        <translation>目前工作目錄</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2721"/>
         <source>ROOT</source>
-        <translation>Root</translation>
+        <translation>ROOT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2721"/>
         <source>Root directory of process</source>
-        <translation>პროცესის საწყისი საქაღალდე</translation>
+        <translation>程序的根目錄</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2724"/>
@@ -935,7 +935,7 @@
     <message>
         <location filename="../proc.cpp" line="2724"/>
         <source>Command line that started the process</source>
-        <translation>ბრძანების სტრიქონი, რომელმაც ეს პროცესი გაუშვა</translation>
+        <translation>啟動程序的指令列</translation>
     </message>
 </context>
 <context>
@@ -943,35 +943,35 @@
     <message>
         <location filename="../qps.cpp" line="1633"/>
         <source>Show</source>
-        <translation>ჩვენება</translation>
+        <translation>顯示</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1636"/>
         <source>Hide</source>
-        <translation>დამალვა</translation>
+        <translation>隱藏</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1641"/>
         <source>Quit</source>
-        <translation>გასვლა</translation>
+        <translation>退出</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="430"/>
         <location filename="../infobar.cpp" line="437"/>
         <source>User: </source>
-        <translation>მომხმარებელი: </translation>
+        <translation>使用者： </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="431"/>
         <location filename="../infobar.cpp" line="438"/>
         <source>System: </source>
-        <translation>სისტემა: </translation>
+        <translation>系統： </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="432"/>
         <location filename="../infobar.cpp" line="439"/>
         <source>Nice: </source>
-        <translation>Nice: </translation>
+        <translation>優等： </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="430"/>
@@ -987,43 +987,43 @@
         <location filename="../infobar.cpp" line="474"/>
         <location filename="../infobar.cpp" line="509"/>
         <source>Total: </source>
-        <translation>სულ: </translation>
+        <translation>總計： </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="477"/>
         <location filename="../infobar.cpp" line="515"/>
         <source>Used: </source>
-        <translation>გამოყენებულია: </translation>
+        <translation>用量： </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="481"/>
         <source>Cached: </source>
-        <translation>დაკეშილი: </translation>
+        <translation>緩存： </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="484"/>
         <source>Buffer: </source>
-        <translation>ბუფერი: </translation>
+        <translation>緩衝： </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="512"/>
         <source>Free: </source>
-        <translation>თავისუფალი: </translation>
+        <translation>空閒： </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="554"/>
         <source>Time passed after system boot</source>
-        <translation>სისტემის გადატვირთვის შემდეგ გასული დრო</translation>
+        <translation>系統運行時間</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="582"/>
         <source>Average CPU load each 1, 5 ,15 minutes</source>
-        <translation>საშუალო CPU-ის დატვირთვა ყოველ 1, 5, 15 წუთში</translation>
+        <translation>每 1、5、15 分鐘的平均 CPU 負載</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="727"/>
         <source>CPU Usage Summary:</source>
-        <translation>CPU-ის გამოყენების შეჯამება:</translation>
+        <translation>CPU 用量概要：</translation>
     </message>
 </context>
 <context>
@@ -1036,263 +1036,263 @@
     <message>
         <location filename="../qps.cpp" line="172"/>
         <source>Remove Field</source>
-        <translation>ველის წაშლა</translation>
+        <translation>移除欄位</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="173"/>
         <source>Add Field</source>
-        <translation>ველის დამატება</translation>
+        <translation>增加欄位</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="176"/>
         <source>Session</source>
-        <translation>სესია</translation>
+        <translation>會話</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="180"/>
         <source>View</source>
-        <translation>ხედი</translation>
+        <translation>檢視</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="181"/>
         <source>Process</source>
-        <translation>პროცესი</translation>
+        <translation>程序</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="182"/>
         <source>Log</source>
-        <translation>ჟურნალი</translation>
+        <translation>記錄</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="187"/>
         <source>Fields</source>
-        <translation>ველები</translation>
+        <translation>欄位</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="188"/>
         <source>Custom Fields</source>
-        <translation>დამატებითი ველები</translation>
+        <translation>自訂欄位</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="190"/>
         <source>Basic Fields </source>
-        <translation>ძირითადი ველები </translation>
+        <translation>基本欄位 </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="192"/>
         <source>Jobs Fields </source>
-        <translation>დავალების ველები </translation>
+        <translation>工作欄位 </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="194"/>
         <source>Memory Fields </source>
-        <translation>მეხსიერების ველები </translation>
+        <translation>記憶體欄位 </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="197"/>
         <source>Scheduling Fields </source>
-        <translation>დაგეგმვის ველები </translation>
+        <translation>排程欄位 </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="214"/>
         <source>Select Custom Fields...</source>
-        <translation>აირჩიეთ მორგებული ველები...</translation>
+        <translation>選擇自訂欄位…</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="223"/>
         <source>Options</source>
-        <translation>მორგება</translation>
+        <translation>選項</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="224"/>
         <source>Update Period...</source>
-        <translation>პერიოდის განახლება...</translation>
+        <translation>更新週期…</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="233"/>
         <source>Show Status bar</source>
-        <translation>სტატუსის ზოლის ჩვენება</translation>
+        <translation>顯示狀態列</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="242"/>
         <source>Preferences...</source>
-        <translation>მორგება...</translation>
+        <translation>偏好設定…</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="248"/>
         <source>Help</source>
-        <translation>დახმარება</translation>
+        <translation>說明</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="249"/>
         <location filename="../qps.cpp" line="1681"/>
         <source>About</source>
-        <translation>შესახებ</translation>
+        <translation>關於</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="335"/>
         <source>test</source>
-        <translation>ტესტი</translation>
+        <translation>測試</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="336"/>
         <source>Copied to Clipboard</source>
-        <translation>დაკოპირდა ბუფერში</translation>
+        <translation>複製到剪貼簿</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="388"/>
         <source>context popup</source>
-        <translation>context popup</translation>
+        <translation>上下文彈出視窗</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="389"/>
         <source>Renice...</source>
-        <translation>პრიორიტეტის შეცვლა...</translation>
+        <translation>重新 NICE…</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="390"/>
         <source>Scheduling...</source>
-        <translation>დაგეგმვა...</translation>
+        <translation>排程…</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="392"/>
         <source>Terminate</source>
-        <translation>შეწყვეტა</translation>
+        <translation>終止</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="393"/>
         <source>Hangup</source>
-        <translation>დაკიდება</translation>
+        <translation>掛斷</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="394"/>
         <source>Kill</source>
-        <translation>მოკვლა</translation>
+        <translation>殺停</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="395"/>
         <source>Stop</source>
-        <translation>შეჩერება</translation>
+        <translation>停止</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="397"/>
         <source>Continue</source>
-        <translation>გაგრძელება</translation>
+        <translation>繼續</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="400"/>
         <source>Other Signals</source>
-        <translation>სხვა სიგნალები</translation>
+        <translation>其它訊號</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="401"/>
         <source>SIGINT (interrupt)</source>
-        <translation>SIGINT (წყვეტა)</translation>
+        <translation>SIGINT (中斷)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="403"/>
         <source>SIGCONT (continue)</source>
-        <translation>SIGCONT (გაგრძელება)</translation>
+        <translation>SIGCONT (繼續)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="405"/>
         <source>SIGSTOP (stop)</source>
-        <translation>SIGSTOP (გაჩერება)</translation>
+        <translation>SIGSTOP (停止)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="407"/>
         <source>SIGQUIT (quit)</source>
-        <translation>SIGQUIT (გასვლა)</translation>
+        <translation>SIGQUIT (退出)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="409"/>
         <source>SIGILL (illegal instruction)</source>
-        <translation>SIGILL (დაუშვებელი ინსტრუქცია)</translation>
+        <translation>SIGILL (非法指示)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="411"/>
         <source>SIGABRT (abort)</source>
-        <translation>SIGABRT (შეწყვეტა)</translation>
+        <translation>SIGABRT (終止)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="413"/>
         <source>SIGFPE (floating point exception)</source>
-        <translation>SIGFPE (მცურავმძიმიანი ოპერაციის გამონაკლისი)</translation>
+        <translation>SIGFPE (浮點異常)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="415"/>
         <source>SIGSEGV (segmentation violation)</source>
-        <translation>SIGSEGV (სეგმენტაციის დარღვევა)</translation>
+        <translation>SIGSEGV (區段錯誤)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="417"/>
         <source>SIGPIPE (broken pipe)</source>
-        <translation>SIGPIPE (გაფუჭებული არხი)</translation>
+        <translation>SIGPIPE (斷裂管道)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="419"/>
         <source>SIGALRM (timer signal)</source>
-        <translation>SIGALRM (ტაიმერის სიგნალი)</translation>
+        <translation>SIGALRM (計時器訊號)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="421"/>
         <source>SIGUSR1 (user-defined 1)</source>
-        <translation>SIGUSR1 (მომხმარებლის-მორგებული 1)</translation>
+        <translation>SIGUSR1 (使用者-定義 1)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="423"/>
         <source>SIGUSR2 (user-defined 2)</source>
-        <translation>SIGUSR2 (მომხმარებლის-მორგებული 2)</translation>
+        <translation>SIGUSR2 (使用者-定義 2)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="425"/>
         <source>SIGCHLD (child death)</source>
-        <translation>SIGCHLD (შვილი მოკვდა)</translation>
+        <translation>SIGCHLD (子程序死停)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="427"/>
         <source>SIGTSTP (stop from tty)</source>
-        <translation>SIGTSTP (გაჩერება tty-დან)</translation>
+        <translation>SIGTSTP (自 tty 停止)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="429"/>
         <source>SIGTTIN (tty input)</source>
-        <translation>SIGTTIN (tty შეყვანა)</translation>
+        <translation>SIGTTIN (tty 輸入)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="431"/>
         <source>SIGTTOU (tty output)</source>
-        <translation>SIGTTOU (tty გამოტანა)</translation>
+        <translation>SIGTTOU (tty 輸出)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="438"/>
         <source>View Details</source>
-        <translation>ხედის დეტალები</translation>
+        <translation>檢視詳情</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="691"/>
         <source>Show File Path</source>
-        <translation>ფაილის ბილიკის ჩვენება</translation>
+        <translation>顯示檔案路徑</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="697"/>
         <source>Show Graph</source>
-        <translation>გრაფიკის ჩვენება</translation>
+        <translation>顯示圖表</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="703"/>
         <source>Show Control Bar</source>
-        <translation>მართვის ზოლის ჩვენება</translation>
+        <translation>顯示控制列</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="714"/>
         <source>Include Child Times</source>
-        <translation>შვილის დროების ჩასმა</translation>
+        <translation>包含子程序次數</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="287"/>
         <source>Quit</source>
-        <translation>გასვლა</translation>
+        <translation>退出</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1159"/>
@@ -1302,57 +1302,57 @@
         <location filename="../qps.cpp" line="1252"/>
         <location filename="../qps.cpp" line="1347"/>
         <source>Permission denied</source>
-        <translation>წვდომა აკრძალულია</translation>
+        <translation>取用權限遭拒</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1160"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
-        <translation>თქვენ არ გაქვთ წვდომა, მონიშნული პროცესის nice-ის მნიშვნელობა შეცვალოთ. ამის გაკეთება, მხოლოდ, ზემომხმარებელს და პროცესის მფლობელს შეუძლიათ.</translation>
+        <translation>您沒有取用權限對所選的程序進行重新排序。只有程序擁有者和超級使用者才被允許如此操作。</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1191"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
-        <translation>თქვენ არ გაქვთ წვდომა, შეცვალოთ nice-ის მნისვნელობა პროცესისთვის %1 (%2). ამის გაკეთება, მხოლოდ, პროცესის მფლობელს და ზემომხმარებელს შეუძლიათ.</translation>
+        <translation>您沒取用權限去重新調整程序 %1 (%2) 的優等性。只有程序擁有者和超級使用者才被允許如此操作。</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1198"/>
         <source>Only the super-user may lower the nice value of a process.</source>
-        <translation>პროცესის nice-ის მნიშვნელობის დაწევა, მხოლოდ, ზემომხმარებელს შეუძლია.</translation>
+        <translation>只有超級使用者可以降低程序的 nice 值。</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1219"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
-        <translation>დაგეგმვისა პოლიტიკისა და სტატიკური პრიორიტეტის შეცვლა, მხოლოდ, ზემომხმარებელს შეუძლია.</translation>
+        <translation>只有超級使用者可以改變排程原則及靜態優先等級。</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1253"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
-        <translation>თქვენ არ გაქვთ წვდომა, შეცვალოთ დაგეგმვის პოლიტიკა ან/და პრიორიტეტი პროცესისთვის %1 (%2). ამის გაკეთება, მხოლოდ, ზემომხმარებელს შეუძლია.</translation>
+        <translation>您無權更改程序 %1 (%2) 的排程及優先等級。只有超級使用者可以如此操作。</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1314"/>
         <source>Do you really want to terminate the selected process(es)?</source>
-        <translation>მართლა გნებავთ დაასრულოთ მონიშნული პროცესები?</translation>
+        <translation>確定要終止所選的程序嗎？</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1316"/>
         <source>Do you really want to hang up the selected process(es)?</source>
-        <translation>მართლა გნებავთ გაუგზავნოთ SIGHUP მონიშნულ პროცესებს?</translation>
+        <translation>確定要掛斷所選的程序嗎？</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1318"/>
         <source>Do you really want to kill the selected process(es)?</source>
-        <translation>მართლა გნებავთ, მოკლათ მონიშნული პროცესები?</translation>
+        <translation>確定要殺停終止所選的程序嗎？</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1327"/>
         <source>Question</source>
-        <translation>კითხვა</translation>
+        <translation>疑問</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1348"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
-        <translation>თქვენ არ გაქვთ წვდომა, პროცესს %1 (%2) სიგნალი გაუგზავნოთ. ამის გაკეთება, მხოლოდ, ზემომხმარებელს და პროცესის მფლობელს შეუძლია.</translation>
+        <translation>您沒有權限向程序 %1 (%2) 發送訊號。只有超級使用者和程序擁有者可以向其發送訊號。</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1697"/>
@@ -1362,12 +1362,12 @@
     <message>
         <location filename="../qps.cpp" line="1699"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
-        <translation>&lt;h2&gt; Qps %1 - ვიზუალური პროცესების მმართველი &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;წყარო: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
+        <translation>&lt;h2&gt; Qps %1 - 一套視覺化程序管理器 &lt;/h2&gt; %2 運用 Qt 庫源 %3&lt;br&gt;&lt;br&gt;&lt;b&gt;來源： &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;問題追蹤： &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1719"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
-        <translation>&lt;b&gt;საწყისი Qps-ის ავტორი &lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;მოხალისეები&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
+        <translation>&lt;b&gt;原始 Qps 創自&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
     </message>
 </context>
 <context>
@@ -1375,52 +1375,52 @@
     <message>
         <location filename="../dialogs.cpp" line="292"/>
         <source>Change scheduling</source>
-        <translation>დაგეგმვის შეცვლა</translation>
+        <translation>變更排程</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="296"/>
         <source>Scheduling Policy</source>
-        <translation>დაგეგმვის პოლიტიკა</translation>
+        <translation>排程原則</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="298"/>
         <source>SCHED_OTHER (time-sharing)</source>
-        <translation>SCHED_OTHER (დროის გაზიარება)</translation>
+        <translation>SCHED_OTHER (時間-分享)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="299"/>
         <source>SCHED_FIFO (real-time)</source>
-        <translation>SCHED_FIFO (რეალურ დროში)</translation>
+        <translation>SCHED_FIFO (即時)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="300"/>
         <source>SCHED_RR (real-time)</source>
-        <translation>SCHED_RR (რეალურ დროში)</translation>
+        <translation>SCHED_RR (即時)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="314"/>
         <source>OK</source>
-        <translation>დიახ</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="316"/>
         <source>Cancel</source>
-        <translation>გაუქმება</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="346"/>
         <source>Priority (1-99):</source>
-        <translation>პრიორიტეტი (1-99):</translation>
+        <translation>優先等級 (1-99)：</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="379"/>
         <source>Invalid Input</source>
-        <translation>არასწორი შეყვანა</translation>
+        <translation>無效輸入</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="380"/>
         <source>The priority must be in the range 1..99</source>
-        <translation>პრიოტეტი უნდა იყოს შუალედიდან 1..99</translation>
+        <translation>優先等級必須在此範圍 1..99</translation>
     </message>
 </context>
 <context>
@@ -1433,7 +1433,7 @@
     <message>
         <location filename="../misc.cpp" line="589"/>
         <source>Filter</source>
-        <translation>ფილტრი</translation>
+        <translation>篩選</translation>
     </message>
 </context>
 <context>
@@ -1441,22 +1441,22 @@
     <message>
         <location filename="../dialogs.cpp" line="179"/>
         <source>Renice Process</source>
-        <translation>პრიორიტეტ-შეცვლილი პროცესი</translation>
+        <translation>重新優等程序</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="185"/>
         <source>New nice value:</source>
-        <translation>ახალი პრიორიტეტი:</translation>
+        <translation>新建優等值：</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="225"/>
         <source>Cancel</source>
-        <translation>გაუქმება</translation>
+        <translation>取消</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="229"/>
         <source>OK</source>
-        <translation>დიახ</translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -1469,17 +1469,17 @@
     <message>
         <location filename="../details.cpp" line="147"/>
         <source>File descriptor</source>
-        <translation>ფაილის დესკრიპტორი</translation>
+        <translation>檔案描述子</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="148"/>
         <source>Proto</source>
-        <translation>პროტო</translation>
+        <translation>Proto</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="148"/>
         <source>Protocol (TCP or UDP)</source>
-        <translation>პროტოკოლი (TCP ან UDP)</translation>
+        <translation>協議 (TCP 或 UDP)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="149"/>
@@ -1489,7 +1489,7 @@
     <message>
         <location filename="../details.cpp" line="149"/>
         <source>Bytes in receive queue</source>
-        <translation>ბაიტი მიღების რიგში</translation>
+        <translation>接收佇列中的位元組數(Bytes)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="150"/>
@@ -1499,53 +1499,53 @@
     <message>
         <location filename="../details.cpp" line="150"/>
         <source>Bytes in send queue</source>
-        <translation>ბაიტი გაგზავნის რიგში</translation>
+        <translation>發送佇列中的位元組數(Bytes)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>Local Addr</source>
-        <translation>ლოკალური მისამართი</translation>
+        <translation>本地位址</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>Local IP address</source>
-        <translation>ლოკალური IP მისამართი</translation>
+        <translation>本地 IP 位址</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
         <location filename="../details.cpp" line="154"/>
         <source>Port</source>
-        <translation>პორტი</translation>
+        <translation>連接埠</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
         <source>Local port</source>
-        <translation>ლოკალური პორტი</translation>
+        <translation>本地連接埠</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Remote Addr</source>
-        <translation>დაშორებული მისამართი</translation>
+        <translation>遠端位址</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Remote IP address</source>
-        <translation>დაშორებული IP მისამართი</translation>
+        <translation>遠端 IP 位址</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="154"/>
         <source>Remote port</source>
-        <translation>დაშორებული პორტი</translation>
+        <translation>遠端連接埠</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>State</source>
-        <translation>შტატი</translation>
+        <translation>狀態</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>Connection state</source>
-        <translation>მიერთების მდგომარეობა</translation>
+        <translation>連接狀態</translation>
     </message>
 </context>
 <context>
@@ -1553,7 +1553,7 @@
     <message>
         <location filename="../misc.cpp" line="624"/>
         <source>Process count: %1</source>
-        <translation>პროცესების რაოდენობა: %1</translation>
+        <translation>程序計數： %1</translation>
     </message>
 </context>
 <context>
@@ -1562,8 +1562,8 @@
         <location filename="../misc.cpp" line="343"/>
         <source> This is unstable Alpha feature
  You maybe see a SEGFAULT...</source>
-        <translation> ეს არასტაბილური ალფა ფუნქციაა
-შეიძლება, SEGFAULT-ები ნახოტ...</translation>
+        <translation> 這是不穩定版 Alpha 功能
+ 您可能會看到 SEGFAULT...</translation>
     </message>
 </context>
 <context>
@@ -1571,7 +1571,7 @@
     <message>
         <location filename="../misc.cpp" line="485"/>
         <source>title</source>
-        <translation>სათაური</translation>
+        <translation>標題</translation>
     </message>
 </context>
 </TS>
