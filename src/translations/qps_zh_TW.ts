@@ -1167,7 +1167,7 @@
     <message>
         <location filename="../qps.cpp" line="394"/>
         <source>Kill</source>
-        <translation>殺停</translation>
+        <translation>殺止</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="395"/>
@@ -1322,12 +1322,12 @@
     <message>
         <location filename="../qps.cpp" line="1219"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
-        <translation>只有超級使用者可以改變排程原則及靜態優先等級。</translation>
+        <translation>只有超級使用者可以變更排程原則及靜態優先等級。</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1253"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
-        <translation>您無權更改程序 %1 (%2) 的排程及優先等級。只有超級使用者可以如此操作。</translation>
+        <translation>您無權變更程序 %1 (%2) 的排程及優先等級。只有超級使用者可以如此操作。</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1314"/>
@@ -1342,7 +1342,7 @@
     <message>
         <location filename="../qps.cpp" line="1318"/>
         <source>Do you really want to kill the selected process(es)?</source>
-        <translation>確定要殺停終止所選的程序嗎？</translation>
+        <translation>確定要殺斷停止所選的程序運行嗎？</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1327"/>
