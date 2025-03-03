@@ -1167,7 +1167,7 @@
     <message>
         <location filename="../qps.cpp" line="394"/>
         <source>Kill</source>
-        <translation>殺停</translation>
+        <translation>殺止</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="395"/>
@@ -1342,7 +1342,7 @@
     <message>
         <location filename="../qps.cpp" line="1318"/>
         <source>Do you really want to kill the selected process(es)?</source>
-        <translation>確定要殺停終止所選的程序嗎？</translation>
+        <translation>確定要殺斷停止所選的程序運行嗎？</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1327"/>
