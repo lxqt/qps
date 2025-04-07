@@ -158,7 +158,7 @@
     <message>
         <location filename="../details.cpp" line="59"/>
         <source>Memory Maps</source>
-        <translation>メモリ マップ</translation>
+        <translation>メモリマップ</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="61"/>
@@ -306,7 +306,7 @@
     <message>
         <location filename="../details.cpp" line="393"/>
         <source>Kbytes mapped (dec)</source>
-        <translation type="unfinished"></translation>
+        <translation>マップされたキロバイト数 (10 進数)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="394"/>
@@ -336,7 +336,7 @@
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Major,Minor device numbers (dec)</source>
-        <translation type="unfinished"></translation>
+        <translation>メジャー、マイナーデバイス番号 (10 進数)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>

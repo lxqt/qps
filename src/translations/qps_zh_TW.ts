@@ -475,7 +475,7 @@
     <message>
         <location filename="../proc.cpp" line="2629"/>
         <source>Session ID</source>
-        <translation>會話 ID</translation>
+        <translation>工作階段 ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2631"/>
@@ -705,7 +705,7 @@
     <message>
         <location filename="../proc.cpp" line="2676"/>
         <source>Virtual image size of process</source>
-        <translation>程序虛擬映像大小</translation>
+        <translation>程序虛擬映像檔案大小</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2678"/>
@@ -715,7 +715,7 @@
     <message>
         <location filename="../proc.cpp" line="2678"/>
         <source>Resident set size</source>
-        <translation>常駐設置大小</translation>
+        <translation>常駐設定大小</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2680"/>
@@ -735,7 +735,7 @@
     <message>
         <location filename="../proc.cpp" line="2682"/>
         <source>Text(code) resident set size</source>
-        <translation>文字(代碼)常駐設置大小</translation>
+        <translation>文字(代碼)常駐設定大小</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2684"/>
@@ -745,7 +745,7 @@
     <message>
         <location filename="../proc.cpp" line="2684"/>
         <source>Data resident set size(malloc+global variable)</source>
-        <translation>數據常駐設置大小(malloc+global variable)</translation>
+        <translation>資料常駐設定大小(malloc+global variable)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2686"/>
@@ -1046,7 +1046,7 @@
     <message>
         <location filename="../qps.cpp" line="176"/>
         <source>Session</source>
-        <translation>會話</translation>
+        <translation>工作階段</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="180"/>
@@ -1167,7 +1167,7 @@
     <message>
         <location filename="../qps.cpp" line="394"/>
         <source>Kill</source>
-        <translation>殺停</translation>
+        <translation>殺止</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="395"/>
@@ -1322,12 +1322,12 @@
     <message>
         <location filename="../qps.cpp" line="1219"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
-        <translation>只有超級使用者可以改變排程原則及靜態優先等級。</translation>
+        <translation>只有超級使用者可以變更排程原則及靜態優先等級。</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1253"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
-        <translation>您無權更改程序 %1 (%2) 的排程及優先等級。只有超級使用者可以如此操作。</translation>
+        <translation>您無權變更程序 %1 (%2) 的排程及優先等級。只有超級使用者可以如此操作。</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1314"/>
@@ -1342,7 +1342,7 @@
     <message>
         <location filename="../qps.cpp" line="1318"/>
         <source>Do you really want to kill the selected process(es)?</source>
-        <translation>確定要殺停終止所選的程序嗎？</translation>
+        <translation>確定要殺斷停止所選的程序運行嗎？</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1327"/>
@@ -1362,7 +1362,7 @@
     <message>
         <location filename="../qps.cpp" line="1699"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
-        <translation>&lt;h2&gt; Qps %1 - 一套視覺化程序管理器 &lt;/h2&gt; %2 運用 Qt 庫源 %3&lt;br&gt;&lt;br&gt;&lt;b&gt;來源： &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;問題追蹤： &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
+        <translation>&lt;h2&gt; Qps %1 - 一套視覺化程序管理器 &lt;/h2&gt; %2 運用 Qt 程式庫 %3&lt;br&gt;&lt;br&gt;&lt;b&gt;來源： &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;問題追蹤： &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1719"/>
