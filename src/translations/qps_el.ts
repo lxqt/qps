@@ -428,512 +428,512 @@
 <context>
     <name>Proc</name>
     <message>
-        <location filename="../proc.cpp" line="2621"/>
+        <location filename="../proc.cpp" line="2615"/>
         <source>PID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2621"/>
+        <location filename="../proc.cpp" line="2615"/>
         <source>Process ID</source>
         <translation>Αναγνωριστικό διεργασίας</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2623"/>
+        <location filename="../proc.cpp" line="2617"/>
         <source>TGID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2623"/>
+        <location filename="../proc.cpp" line="2617"/>
         <source>Task group ID ( parent of threads )</source>
         <translation>Αναγνωριστικό ομάδος διεργασιών (γονέας των νημάτων)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2625"/>
+        <location filename="../proc.cpp" line="2619"/>
         <source>PPID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2625"/>
+        <location filename="../proc.cpp" line="2619"/>
         <source>Parent process ID</source>
         <translation>Αναγνωριστικό γονικής διεργασίας</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2627"/>
+        <location filename="../proc.cpp" line="2621"/>
         <source>PGID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2627"/>
+        <location filename="../proc.cpp" line="2621"/>
         <source>Process group ID</source>
         <translation>Αναγνωριστικό ομάδος διεργασίας</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2629"/>
+        <location filename="../proc.cpp" line="2623"/>
         <source>SID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2629"/>
+        <location filename="../proc.cpp" line="2623"/>
         <source>Session ID</source>
         <translation>Αναγνωριστικό συνεδρίας</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2631"/>
+        <location filename="../proc.cpp" line="2625"/>
         <source>TTY</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2631"/>
+        <location filename="../proc.cpp" line="2625"/>
         <source>Terminal</source>
         <translation>Τερματικό</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2633"/>
+        <location filename="../proc.cpp" line="2627"/>
         <source>TPGID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2633"/>
+        <location filename="../proc.cpp" line="2627"/>
         <source>Process group ID of tty owner</source>
         <translation>Αναγνωριστικό ομάδος της διεργασίας του ιδιοκτήτη tty</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2635"/>
+        <location filename="../proc.cpp" line="2629"/>
         <source>USER</source>
         <translation>ΧΡΗΣΤΗΣ</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2635"/>
+        <location filename="../proc.cpp" line="2629"/>
         <source>Owner (*=suid root, +=suid a user)</source>
         <translation>Ιδιοκτήτης (*=suid root, +=suid χρήστη)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2637"/>
+        <location filename="../proc.cpp" line="2631"/>
         <source>GROUP</source>
         <translation>ΟΜΑΔΑ</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2637"/>
+        <location filename="../proc.cpp" line="2631"/>
         <source>Group name (*=sgid other)</source>
         <translation>Όνομα ομάδος (*=sgid άλλο)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2639"/>
+        <location filename="../proc.cpp" line="2633"/>
         <source>UID</source>
         <translation>UID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2639"/>
+        <location filename="../proc.cpp" line="2633"/>
         <source>Real user ID</source>
         <translation>Αναγνωριστικό πραγματικού χρήστη</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2641"/>
+        <location filename="../proc.cpp" line="2635"/>
         <source>EUID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2641"/>
+        <location filename="../proc.cpp" line="2635"/>
         <source>Effective user ID</source>
         <translation>Αναγνωριστικό ενεργού χρήστη</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2643"/>
+        <location filename="../proc.cpp" line="2637"/>
         <source>SUID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2643"/>
+        <location filename="../proc.cpp" line="2637"/>
         <source>Saved user ID (Posix)</source>
         <translation>Αναγνωριστικό αποθηκευμένου χρήστη (Posix)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2645"/>
+        <location filename="../proc.cpp" line="2639"/>
         <source>FSUID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2645"/>
+        <location filename="../proc.cpp" line="2639"/>
         <source>File system user ID</source>
         <translation>Αναγνωριστικό χρήστη αρχείου συστήματος</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2647"/>
+        <location filename="../proc.cpp" line="2641"/>
         <source>GID</source>
         <translation>GID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2647"/>
+        <location filename="../proc.cpp" line="2641"/>
         <source>Real group ID</source>
         <translation>Αναγνωριστικό πραγματικής ομάδος</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2649"/>
+        <location filename="../proc.cpp" line="2643"/>
         <source>EGID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2649"/>
+        <location filename="../proc.cpp" line="2643"/>
         <source>Effective group ID</source>
         <translation>Αναγνωριστικό ενεργής ομάδος</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2651"/>
+        <location filename="../proc.cpp" line="2645"/>
         <source>SGID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2651"/>
+        <location filename="../proc.cpp" line="2645"/>
         <source>Saved group ID (Posix)</source>
         <translation>Αναγνωριστικό αποθηκευμένης ομάδος (Posix)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2653"/>
+        <location filename="../proc.cpp" line="2647"/>
         <source>FSGID</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2653"/>
+        <location filename="../proc.cpp" line="2647"/>
         <source>File system group ID</source>
         <translation>Αναγνωριστικό ομάδος αρχείου συστήματος</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2655"/>
+        <location filename="../proc.cpp" line="2649"/>
         <source>PRI</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2655"/>
+        <location filename="../proc.cpp" line="2649"/>
         <source>Dynamic priority</source>
         <translation>Δυναμική προτεραιότητα</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2657"/>
+        <location filename="../proc.cpp" line="2651"/>
         <source>NICE</source>
         <translation>NICE</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2657"/>
+        <location filename="../proc.cpp" line="2651"/>
         <source>Scheduling favour (higher -&gt; less cpu time)</source>
         <translation>Εύνοια χρονοπρογραμματισμού (υψηλότερη -&gt; λιγότερος χρόνος επεξεργασίας)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2659"/>
+        <location filename="../proc.cpp" line="2653"/>
         <source>NLWP</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2659"/>
+        <location filename="../proc.cpp" line="2653"/>
         <source>Number of tasks(threads) in task group</source>
         <translation>Αριθμός διεργασιών (νήματα) στην ομάδα εργασίας</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2661"/>
+        <location filename="../proc.cpp" line="2655"/>
         <source>PLCY</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2661"/>
+        <location filename="../proc.cpp" line="2655"/>
         <source>Scheduling policy</source>
         <translation>Πολιτική χρονοπρογραμματισμού</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2663"/>
+        <location filename="../proc.cpp" line="2657"/>
         <source>RPRI</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2663"/>
+        <location filename="../proc.cpp" line="2657"/>
         <source>Realtime priority (0-99, more is better)</source>
         <translation>Προτεραιότητα πραγματικού χρόνου (0-99, το περισσότερο είναι καλύτερο)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2665"/>
+        <location filename="../proc.cpp" line="2659"/>
         <source>TMS</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2665"/>
+        <location filename="../proc.cpp" line="2659"/>
         <source>Time slice in milliseconds</source>
         <translation>Τεμαχισμός χρόνου σε χιλιοστά δευτερολέπτου</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2667"/>
+        <location filename="../proc.cpp" line="2661"/>
         <source>%SAVG</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2667"/>
+        <location filename="../proc.cpp" line="2661"/>
         <source>Percentage average sleep time (-1 -&gt; N/A)</source>
         <translation>Μέσο ποσοστό χρόνου κοιμήσεως (-1 -&gt; Μ/Δ)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2669"/>
+        <location filename="../proc.cpp" line="2663"/>
         <source>CPUSET</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2669"/>
+        <location filename="../proc.cpp" line="2663"/>
         <source>Affinity CPU mask (0 -&gt; API not supported)</source>
         <translation>Μάσκα συνάφειας CPU (0 -&gt; μη υποστηριζόμενο API)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2671"/>
+        <location filename="../proc.cpp" line="2665"/>
         <source>MAJFLT</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2671"/>
+        <location filename="../proc.cpp" line="2665"/>
         <source>Number of major faults (disk access)</source>
         <translation>Αριθμός μειζόνων σφαλμάτων (προσπέλαση δίσκου)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2673"/>
+        <location filename="../proc.cpp" line="2667"/>
         <source>MINFLT</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2673"/>
+        <location filename="../proc.cpp" line="2667"/>
         <source>Number of minor faults (no disk access)</source>
         <translation>Αριθμός ελασσόνων σφαλμάτων (προσπέλαση δίσκου)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2676"/>
+        <location filename="../proc.cpp" line="2670"/>
         <source>VSIZE</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2676"/>
+        <location filename="../proc.cpp" line="2670"/>
         <source>Virtual image size of process</source>
         <translation>Μέγεθος της εικονικής εικόνας της διεργασίας</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2678"/>
+        <location filename="../proc.cpp" line="2672"/>
         <source>RSS</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2678"/>
+        <location filename="../proc.cpp" line="2672"/>
         <source>Resident set size</source>
         <translation>Παραμένον συνολικό μέγεθος</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2680"/>
+        <location filename="../proc.cpp" line="2674"/>
         <source>MEM</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2680"/>
+        <location filename="../proc.cpp" line="2674"/>
         <source>memory usage (RSS-SHARE)</source>
         <translation>χρήση μνήμης (RSS-SHARE)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2682"/>
+        <location filename="../proc.cpp" line="2676"/>
         <source>TRS</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2682"/>
+        <location filename="../proc.cpp" line="2676"/>
         <source>Text(code) resident set size</source>
         <translation>Κείμενο (κώδικας) παραμένοντος συνολικού μεγέθους</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2684"/>
+        <location filename="../proc.cpp" line="2678"/>
         <source>DRS</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2684"/>
+        <location filename="../proc.cpp" line="2678"/>
         <source>Data resident set size(malloc+global variable)</source>
         <translation>Συνολικό παραμένον μέγεθος δεδομένων (malloc+καθολική μεταβλητή)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2686"/>
+        <location filename="../proc.cpp" line="2680"/>
         <source>STACK</source>
         <translation>Στοίβα</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2686"/>
+        <location filename="../proc.cpp" line="2680"/>
         <source>Stack size</source>
         <translation>Μέγεθος στοίβας</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2688"/>
+        <location filename="../proc.cpp" line="2682"/>
         <source>SHARE</source>
         <translation>SHARE</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2688"/>
+        <location filename="../proc.cpp" line="2682"/>
         <source>Shared memory with other libs</source>
         <translation>Κοινόχρηστη μνήμη με άλλες βιβλιοθήκες</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2690"/>
+        <location filename="../proc.cpp" line="2684"/>
         <source>SWAP</source>
         <translation>Swap</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2690"/>
+        <location filename="../proc.cpp" line="2684"/>
         <source>Kbytes on swap device</source>
         <translation>Kbyte στην συσκευή swap</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2692"/>
+        <location filename="../proc.cpp" line="2686"/>
         <source>IO_R</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2692"/>
+        <location filename="../proc.cpp" line="2686"/>
         <source>io read (file)</source>
         <translation>io ανάγνωσης (αρχείο)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2694"/>
+        <location filename="../proc.cpp" line="2688"/>
         <source>IO_W</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2694"/>
+        <location filename="../proc.cpp" line="2688"/>
         <source>io write (file)</source>
         <translation>io εγγραφής (αρχείο)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2696"/>
+        <location filename="../proc.cpp" line="2690"/>
         <source>DT</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2696"/>
+        <location filename="../proc.cpp" line="2690"/>
         <source>Number of dirty (non-written) pages</source>
         <translation>Αριθμός «ακάθαρτων» (μη εγγεγραμμένων) σελίδων</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2698"/>
+        <location filename="../proc.cpp" line="2692"/>
         <source>STAT</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2698"/>
+        <location filename="../proc.cpp" line="2692"/>
         <source>State of the process </source>
         <translation>Κατάσταση των διεργασιών </translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2700"/>
+        <location filename="../proc.cpp" line="2694"/>
         <source>FLAGS</source>
         <translation>Σημαίες</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2700"/>
+        <location filename="../proc.cpp" line="2694"/>
         <source>Process flags (hex)</source>
         <translation>Σημαίες διεργασίας (δεκαεξαδικό)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2702"/>
+        <location filename="../proc.cpp" line="2696"/>
         <source>WCHAN</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2702"/>
+        <location filename="../proc.cpp" line="2696"/>
         <source>Kernel function where process is sleeping</source>
         <translation>Λειτουργία πυρήνα με διεργασία σε αναστολή</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2704"/>
+        <location filename="../proc.cpp" line="2698"/>
         <source>%WCPU</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2704"/>
+        <location filename="../proc.cpp" line="2698"/>
         <source>Weighted percentage of CPU (30 s average)</source>
         <translation>Σταθμισμένο ποσοστό CPU (30 δευτ μέσο όρο)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2706"/>
+        <location filename="../proc.cpp" line="2700"/>
         <source>%CPU</source>
         <translation>%CPU</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2706"/>
+        <location filename="../proc.cpp" line="2700"/>
         <source>Percentage of CPU used since last update</source>
         <translation>Ποσοστό της CPU που χρησιμοποιήθηκε από την προηγούμενη ενημέρωση</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2708"/>
+        <location filename="../proc.cpp" line="2702"/>
         <source>%MEM</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2708"/>
+        <location filename="../proc.cpp" line="2702"/>
         <source>Percentage of memory used (RSS/total mem)</source>
         <translation>Ποσοστό μνήμης σε χρήση (RSS/συνολική μνήμη)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2710"/>
+        <location filename="../proc.cpp" line="2704"/>
         <source>START</source>
         <translation>ΕΝΑΡΞΗ</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2710"/>
+        <location filename="../proc.cpp" line="2704"/>
         <source>Time process started</source>
         <translation>Χρόνος έναρξης της διεργασίας</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2712"/>
+        <location filename="../proc.cpp" line="2706"/>
         <source>TIME</source>
         <translation>ΧΡΟΝΟΣ</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2712"/>
+        <location filename="../proc.cpp" line="2706"/>
         <source>Total CPU time used since start</source>
         <translation>Συνολικός χρόνος χρήσης CPU από την έναρξη</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2714"/>
+        <location filename="../proc.cpp" line="2708"/>
         <source>CPU</source>
         <translation>CPU</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2714"/>
+        <location filename="../proc.cpp" line="2708"/>
         <source>CPU the process is executing on (SMP system)</source>
         <translation>Η CPU στην οποία εκτελείται η διεργασία (σύστημα SMP)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2716"/>
+        <location filename="../proc.cpp" line="2710"/>
         <source>the process name</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2716"/>
+        <location filename="../proc.cpp" line="2710"/>
         <source>Process Name</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2720"/>
+        <location filename="../proc.cpp" line="2714"/>
         <source>CWD</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2720"/>
+        <location filename="../proc.cpp" line="2714"/>
         <source>Current working directory</source>
         <translation>Τρέχων κατάλογος εργασίας</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2721"/>
+        <location filename="../proc.cpp" line="2715"/>
         <source>ROOT</source>
         <translation>ROOT</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2721"/>
+        <location filename="../proc.cpp" line="2715"/>
         <source>Root directory of process</source>
         <translation>Αρχικός κατάλογος διεργασίας</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2724"/>
+        <location filename="../proc.cpp" line="2718"/>
         <source>COMMAND_LINE</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2724"/>
+        <location filename="../proc.cpp" line="2718"/>
         <source>Command line that started the process</source>
         <translation>Γραμμή εντολής έναρξης της διεργασίας</translation>
     </message>
@@ -941,17 +941,17 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../qps.cpp" line="1633"/>
+        <location filename="../qps.cpp" line="1618"/>
         <source>Show</source>
         <translation>Εμφάνιση</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1636"/>
+        <location filename="../qps.cpp" line="1621"/>
         <source>Hide</source>
         <translation>Απόκρυψη</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1641"/>
+        <location filename="../qps.cpp" line="1626"/>
         <source>Quit</source>
         <translation>Έξοδος</translation>
     </message>
@@ -1125,7 +1125,7 @@
     </message>
     <message>
         <location filename="../qps.cpp" line="249"/>
-        <location filename="../qps.cpp" line="1681"/>
+        <location filename="../qps.cpp" line="1666"/>
         <source>About</source>
         <translation>Σχετικά</translation>
     </message>
@@ -1270,22 +1270,22 @@
         <translation>Προβολή λεπτομερειών</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="691"/>
+        <location filename="../qps.cpp" line="676"/>
         <source>Show File Path</source>
         <translation>Εμφάνιση της διαδρομής αρχείου</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="697"/>
+        <location filename="../qps.cpp" line="682"/>
         <source>Show Graph</source>
         <translation>Εμφάνιση γραφήματος</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="703"/>
+        <location filename="../qps.cpp" line="688"/>
         <source>Show Control Bar</source>
         <translation>Προβολή της γραμμής ελέγχου</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="714"/>
+        <location filename="../qps.cpp" line="699"/>
         <source>Include Child Times</source>
         <translation>Συμπερίληψη των χρόνων των τέκνων</translation>
     </message>
@@ -1295,78 +1295,78 @@
         <translation>Έξοδος</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1159"/>
-        <location filename="../qps.cpp" line="1190"/>
-        <location filename="../qps.cpp" line="1197"/>
-        <location filename="../qps.cpp" line="1218"/>
-        <location filename="../qps.cpp" line="1252"/>
-        <location filename="../qps.cpp" line="1347"/>
+        <location filename="../qps.cpp" line="1144"/>
+        <location filename="../qps.cpp" line="1175"/>
+        <location filename="../qps.cpp" line="1182"/>
+        <location filename="../qps.cpp" line="1203"/>
+        <location filename="../qps.cpp" line="1237"/>
+        <location filename="../qps.cpp" line="1332"/>
         <source>Permission denied</source>
         <translation>Άρνηση αδείας</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1160"/>
+        <location filename="../qps.cpp" line="1145"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
         <translation>Δεν έχετε άδεια για την αλλαγή προτεραιότητας της επιλεγμένης διεργασίας. Μόνο ο κάτοχος κι ο διαχειριστής έχουν.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1191"/>
+        <location filename="../qps.cpp" line="1176"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
         <translation>Δεν έχετε άδεια για αλλαγή προτεραιότητας της διεργασίας %1 (%2).
 Μόνο ο κάτοχος κι ο διαχειριστής έχουν.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1198"/>
+        <location filename="../qps.cpp" line="1183"/>
         <source>Only the super-user may lower the nice value of a process.</source>
         <translation>Μόνο ο διαχειριστής μπορεί να μειώσει την τιμή προτεραιότητας μιας διεργασίας.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1219"/>
+        <location filename="../qps.cpp" line="1204"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
         <translation>Μόνο ο διαχειριστής μπορεί να αλλάξει την πολιτική προγραμματισμού και τη στατική προτεραιότητα.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1253"/>
+        <location filename="../qps.cpp" line="1238"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
         <translation>Μόνον ο διαχειριστής μπορεί να αλλάξει τον προγραμματισμό και/ή την προτεραιότητα της διεργασίας %1 (%2).</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1314"/>
+        <location filename="../qps.cpp" line="1299"/>
         <source>Do you really want to terminate the selected process(es)?</source>
         <translation>Επιθυμείτε πραγματικά τον τερματισμό των επιλεγμένων διεργασιών;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1316"/>
+        <location filename="../qps.cpp" line="1301"/>
         <source>Do you really want to hang up the selected process(es)?</source>
         <translation>Επιθυμείτε πραγματικά την αναστολή των επιλεγμένων διεργασιών;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1318"/>
+        <location filename="../qps.cpp" line="1303"/>
         <source>Do you really want to kill the selected process(es)?</source>
         <translation>Επιθυμείτε πραγματικά να σκοτώσετε τις επιλεγμένες διεργασίες;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1327"/>
+        <location filename="../qps.cpp" line="1312"/>
         <source>Question</source>
         <translation>Ερώτηση</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1348"/>
+        <location filename="../qps.cpp" line="1333"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
         <translation>Δεν έχετε δικαίωμα αποστολής ενός σήματος στην διεργασία %1 (%2). Μόνον ο ο υπερχρήστης και ο ιδιοκτήτης της διεργασίας μπορούν αν στέλνουν σήματα σε αυτήν.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1697"/>
+        <location filename="../qps.cpp" line="1682"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
         <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1699"/>
+        <location filename="../qps.cpp" line="1684"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
         <translation>&lt;h2&gt; Qps %1 - Ένας οπτικός διαχειριστής διεργασιών &lt;/h2&gt; %2 κάνοντας χρήση της βιβλιοθήκης Qt %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Πηγή: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Ιχνηλάτης σφαλμάτων: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1719"/>
+        <location filename="../qps.cpp" line="1704"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
         <translation>&lt;b&gt;Αρχική δημιουργία του Qps από&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Συνεισφέροντες&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
     </message>

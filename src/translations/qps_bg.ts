@@ -428,512 +428,512 @@
 <context>
     <name>Proc</name>
     <message>
-        <location filename="../proc.cpp" line="2621"/>
+        <location filename="../proc.cpp" line="2615"/>
         <source>PID</source>
         <translation>PID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2621"/>
+        <location filename="../proc.cpp" line="2615"/>
         <source>Process ID</source>
         <translation>ID процеса</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2623"/>
+        <location filename="../proc.cpp" line="2617"/>
         <source>TGID</source>
         <translation>TGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2623"/>
+        <location filename="../proc.cpp" line="2617"/>
         <source>Task group ID ( parent of threads )</source>
         <translation>Идентификатор на групата от задачи (родителски нишки)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2625"/>
+        <location filename="../proc.cpp" line="2619"/>
         <source>PPID</source>
         <translation>PPID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2625"/>
+        <location filename="../proc.cpp" line="2619"/>
         <source>Parent process ID</source>
         <translation>Идентификационен номер на родителския процес</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2627"/>
+        <location filename="../proc.cpp" line="2621"/>
         <source>PGID</source>
         <translation>PGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2627"/>
+        <location filename="../proc.cpp" line="2621"/>
         <source>Process group ID</source>
         <translation>Идентификатор на група процеси</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2629"/>
+        <location filename="../proc.cpp" line="2623"/>
         <source>SID</source>
         <translation>SID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2629"/>
+        <location filename="../proc.cpp" line="2623"/>
         <source>Session ID</source>
         <translation>ID Сесия</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2631"/>
+        <location filename="../proc.cpp" line="2625"/>
         <source>TTY</source>
         <translation>TTY</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2631"/>
+        <location filename="../proc.cpp" line="2625"/>
         <source>Terminal</source>
         <translation>Терминал</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2633"/>
+        <location filename="../proc.cpp" line="2627"/>
         <source>TPGID</source>
         <translation>TPGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2633"/>
+        <location filename="../proc.cpp" line="2627"/>
         <source>Process group ID of tty owner</source>
         <translation>ID група процеси на tty собственик</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2635"/>
+        <location filename="../proc.cpp" line="2629"/>
         <source>USER</source>
         <translation>USER</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2635"/>
+        <location filename="../proc.cpp" line="2629"/>
         <source>Owner (*=suid root, +=suid a user)</source>
         <translation>Собственик (* = suid root, + = suid потребител)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2637"/>
+        <location filename="../proc.cpp" line="2631"/>
         <source>GROUP</source>
         <translation>GROUP</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2637"/>
+        <location filename="../proc.cpp" line="2631"/>
         <source>Group name (*=sgid other)</source>
         <translation>Име на групата (*=sgid друг)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2639"/>
+        <location filename="../proc.cpp" line="2633"/>
         <source>UID</source>
         <translation>UID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2639"/>
+        <location filename="../proc.cpp" line="2633"/>
         <source>Real user ID</source>
         <translation>Реален потребителски ID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2641"/>
+        <location filename="../proc.cpp" line="2635"/>
         <source>EUID</source>
         <translation>EUID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2641"/>
+        <location filename="../proc.cpp" line="2635"/>
         <source>Effective user ID</source>
         <translation>Ефективно потребителско име</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2643"/>
+        <location filename="../proc.cpp" line="2637"/>
         <source>SUID</source>
         <translation>SUID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2643"/>
+        <location filename="../proc.cpp" line="2637"/>
         <source>Saved user ID (Posix)</source>
         <translation>Запазен потребителски ID (Posix)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2645"/>
+        <location filename="../proc.cpp" line="2639"/>
         <source>FSUID</source>
         <translation>FSUID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2645"/>
+        <location filename="../proc.cpp" line="2639"/>
         <source>File system user ID</source>
         <translation>ID на файловата система на потребител</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2647"/>
+        <location filename="../proc.cpp" line="2641"/>
         <source>GID</source>
         <translation>GID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2647"/>
+        <location filename="../proc.cpp" line="2641"/>
         <source>Real group ID</source>
         <translation>Реален ID на група</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2649"/>
+        <location filename="../proc.cpp" line="2643"/>
         <source>EGID</source>
         <translation>EGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2649"/>
+        <location filename="../proc.cpp" line="2643"/>
         <source>Effective group ID</source>
         <translation>Ефективен ID група</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2651"/>
+        <location filename="../proc.cpp" line="2645"/>
         <source>SGID</source>
         <translation>SGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2651"/>
+        <location filename="../proc.cpp" line="2645"/>
         <source>Saved group ID (Posix)</source>
         <translation>Записан ID на група (Posix)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2653"/>
+        <location filename="../proc.cpp" line="2647"/>
         <source>FSGID</source>
         <translation>FSGID</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2653"/>
+        <location filename="../proc.cpp" line="2647"/>
         <source>File system group ID</source>
         <translation>ID на файловата система на група</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2655"/>
+        <location filename="../proc.cpp" line="2649"/>
         <source>PRI</source>
         <translation>PRI</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2655"/>
+        <location filename="../proc.cpp" line="2649"/>
         <source>Dynamic priority</source>
         <translation>Динамичен приоритет</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2657"/>
+        <location filename="../proc.cpp" line="2651"/>
         <source>NICE</source>
         <translation>NICE</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2657"/>
+        <location filename="../proc.cpp" line="2651"/>
         <source>Scheduling favour (higher -&gt; less cpu time)</source>
         <translation>Полза за планирането (по-висока -&gt; по-малко от времето на CPU)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2659"/>
+        <location filename="../proc.cpp" line="2653"/>
         <source>NLWP</source>
         <translation>NLWP</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2659"/>
+        <location filename="../proc.cpp" line="2653"/>
         <source>Number of tasks(threads) in task group</source>
         <translation>Брой задачи (нишки) в работната група</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2661"/>
+        <location filename="../proc.cpp" line="2655"/>
         <source>PLCY</source>
         <translation>PLCY</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2661"/>
+        <location filename="../proc.cpp" line="2655"/>
         <source>Scheduling policy</source>
         <translation>Правила за разписанието</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2663"/>
+        <location filename="../proc.cpp" line="2657"/>
         <source>RPRI</source>
         <translation>RPRI</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2663"/>
+        <location filename="../proc.cpp" line="2657"/>
         <source>Realtime priority (0-99, more is better)</source>
         <translation>Приоритет в реално време (0-99, повече е по-добре)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2665"/>
+        <location filename="../proc.cpp" line="2659"/>
         <source>TMS</source>
         <translation>TMS</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2665"/>
+        <location filename="../proc.cpp" line="2659"/>
         <source>Time slice in milliseconds</source>
         <translation>Времеви отрязък в милисекунди</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2667"/>
+        <location filename="../proc.cpp" line="2661"/>
         <source>%SAVG</source>
         <translation>%SAVG</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2667"/>
+        <location filename="../proc.cpp" line="2661"/>
         <source>Percentage average sleep time (-1 -&gt; N/A)</source>
         <translation>Процентно средно време на sleep (-1 -&gt; N/A)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2669"/>
+        <location filename="../proc.cpp" line="2663"/>
         <source>CPUSET</source>
         <translation>CPUSET</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2669"/>
+        <location filename="../proc.cpp" line="2663"/>
         <source>Affinity CPU mask (0 -&gt; API not supported)</source>
         <translation>Маска на процесора за афинитет (0 -&gt; API не се поддържа)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2671"/>
+        <location filename="../proc.cpp" line="2665"/>
         <source>MAJFLT</source>
         <translation>MAJFLT</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2671"/>
+        <location filename="../proc.cpp" line="2665"/>
         <source>Number of major faults (disk access)</source>
         <translation>Брой основни грешки (достъп до диска)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2673"/>
+        <location filename="../proc.cpp" line="2667"/>
         <source>MINFLT</source>
         <translation>MINFLT</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2673"/>
+        <location filename="../proc.cpp" line="2667"/>
         <source>Number of minor faults (no disk access)</source>
         <translation>Брой незначителни грешки (без достъп до диска)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2676"/>
+        <location filename="../proc.cpp" line="2670"/>
         <source>VSIZE</source>
         <translation>VSIZE</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2676"/>
+        <location filename="../proc.cpp" line="2670"/>
         <source>Virtual image size of process</source>
         <translation>Размер на виртуалния образ на процеса</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2678"/>
+        <location filename="../proc.cpp" line="2672"/>
         <source>RSS</source>
         <translation>RSS</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2678"/>
+        <location filename="../proc.cpp" line="2672"/>
         <source>Resident set size</source>
         <translation>Размер на резидентен набор</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2680"/>
+        <location filename="../proc.cpp" line="2674"/>
         <source>MEM</source>
         <translation>MEM</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2680"/>
+        <location filename="../proc.cpp" line="2674"/>
         <source>memory usage (RSS-SHARE)</source>
         <translation>използване на паметта (RSS-SHARE)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2682"/>
+        <location filename="../proc.cpp" line="2676"/>
         <source>TRS</source>
         <translation>TRS</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2682"/>
+        <location filename="../proc.cpp" line="2676"/>
         <source>Text(code) resident set size</source>
         <translation>Размер на резидентен набор от текст (код)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2684"/>
+        <location filename="../proc.cpp" line="2678"/>
         <source>DRS</source>
         <translation>DRS</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2684"/>
+        <location filename="../proc.cpp" line="2678"/>
         <source>Data resident set size(malloc+global variable)</source>
         <translation>Размер на резидентния набор данни (malloc + глобална променлива)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2686"/>
+        <location filename="../proc.cpp" line="2680"/>
         <source>STACK</source>
         <translation>STACK</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2686"/>
+        <location filename="../proc.cpp" line="2680"/>
         <source>Stack size</source>
         <translation>Размер на стака</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2688"/>
+        <location filename="../proc.cpp" line="2682"/>
         <source>SHARE</source>
         <translation>SHARE</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2688"/>
+        <location filename="../proc.cpp" line="2682"/>
         <source>Shared memory with other libs</source>
         <translation>Споделена памет с други библиотеки</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2690"/>
+        <location filename="../proc.cpp" line="2684"/>
         <source>SWAP</source>
         <translation>SWAP</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2690"/>
+        <location filename="../proc.cpp" line="2684"/>
         <source>Kbytes on swap device</source>
         <translation>Килобайти на swap устройство</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2692"/>
+        <location filename="../proc.cpp" line="2686"/>
         <source>IO_R</source>
         <translation>IO_R</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2692"/>
+        <location filename="../proc.cpp" line="2686"/>
         <source>io read (file)</source>
         <translation>io четене (файл)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2694"/>
+        <location filename="../proc.cpp" line="2688"/>
         <source>IO_W</source>
         <translation>IO_W</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2694"/>
+        <location filename="../proc.cpp" line="2688"/>
         <source>io write (file)</source>
         <translation>io запис (файл)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2696"/>
+        <location filename="../proc.cpp" line="2690"/>
         <source>DT</source>
         <translation>DT</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2696"/>
+        <location filename="../proc.cpp" line="2690"/>
         <source>Number of dirty (non-written) pages</source>
         <translation>Брой замърсени (ненаписани) страници</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2698"/>
+        <location filename="../proc.cpp" line="2692"/>
         <source>STAT</source>
         <translation>STAT</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2698"/>
+        <location filename="../proc.cpp" line="2692"/>
         <source>State of the process </source>
         <translation>Състояние на процеса </translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2700"/>
+        <location filename="../proc.cpp" line="2694"/>
         <source>FLAGS</source>
         <translation>FLAGS</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2700"/>
+        <location filename="../proc.cpp" line="2694"/>
         <source>Process flags (hex)</source>
         <translation>Обработка на флагове (hex)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2702"/>
+        <location filename="../proc.cpp" line="2696"/>
         <source>WCHAN</source>
         <translation>WCHAN</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2702"/>
+        <location filename="../proc.cpp" line="2696"/>
         <source>Kernel function where process is sleeping</source>
         <translation>Функция на ядрото, в която процесът спи</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2704"/>
+        <location filename="../proc.cpp" line="2698"/>
         <source>%WCPU</source>
         <translation>%WCPU</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2704"/>
+        <location filename="../proc.cpp" line="2698"/>
         <source>Weighted percentage of CPU (30 s average)</source>
         <translation>Усреднен процент на процесора (средно 30 s)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2706"/>
+        <location filename="../proc.cpp" line="2700"/>
         <source>%CPU</source>
         <translation>%CPU</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2706"/>
+        <location filename="../proc.cpp" line="2700"/>
         <source>Percentage of CPU used since last update</source>
         <translation>Процент на CPU, използван след последната актуализация</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2708"/>
+        <location filename="../proc.cpp" line="2702"/>
         <source>%MEM</source>
         <translation>%MEM</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2708"/>
+        <location filename="../proc.cpp" line="2702"/>
         <source>Percentage of memory used (RSS/total mem)</source>
         <translation>Процент използвана памет (RSS / обща памет)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2710"/>
+        <location filename="../proc.cpp" line="2704"/>
         <source>START</source>
         <translation>START</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2710"/>
+        <location filename="../proc.cpp" line="2704"/>
         <source>Time process started</source>
         <translation>Време от стартиране на процеса</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2712"/>
+        <location filename="../proc.cpp" line="2706"/>
         <source>TIME</source>
         <translation>TIME</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2712"/>
+        <location filename="../proc.cpp" line="2706"/>
         <source>Total CPU time used since start</source>
         <translation>Общото CPU време, използвано от стартирането</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2714"/>
+        <location filename="../proc.cpp" line="2708"/>
         <source>CPU</source>
         <translation>CPU</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2714"/>
+        <location filename="../proc.cpp" line="2708"/>
         <source>CPU the process is executing on (SMP system)</source>
         <translation>CPU процесът се извършва на (SMP система)</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2716"/>
+        <location filename="../proc.cpp" line="2710"/>
         <source>the process name</source>
         <translation>име на процес</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2716"/>
+        <location filename="../proc.cpp" line="2710"/>
         <source>Process Name</source>
         <translation>Име на процес</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2720"/>
+        <location filename="../proc.cpp" line="2714"/>
         <source>CWD</source>
         <translation>CWD</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2720"/>
+        <location filename="../proc.cpp" line="2714"/>
         <source>Current working directory</source>
         <translation>Текуща работна директория</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2721"/>
+        <location filename="../proc.cpp" line="2715"/>
         <source>ROOT</source>
         <translation>ROOT</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2721"/>
+        <location filename="../proc.cpp" line="2715"/>
         <source>Root directory of process</source>
         <translation>Главна директория на процеса</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2724"/>
+        <location filename="../proc.cpp" line="2718"/>
         <source>COMMAND_LINE</source>
         <translation>COMAND_LINE</translation>
     </message>
     <message>
-        <location filename="../proc.cpp" line="2724"/>
+        <location filename="../proc.cpp" line="2718"/>
         <source>Command line that started the process</source>
         <translation>Команден ред, стартирал процеса</translation>
     </message>
@@ -941,17 +941,17 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../qps.cpp" line="1633"/>
+        <location filename="../qps.cpp" line="1618"/>
         <source>Show</source>
         <translation>Показване</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1636"/>
+        <location filename="../qps.cpp" line="1621"/>
         <source>Hide</source>
         <translation>Скриване</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1641"/>
+        <location filename="../qps.cpp" line="1626"/>
         <source>Quit</source>
         <translation>Изход</translation>
     </message>
@@ -1125,7 +1125,7 @@
     </message>
     <message>
         <location filename="../qps.cpp" line="249"/>
-        <location filename="../qps.cpp" line="1681"/>
+        <location filename="../qps.cpp" line="1666"/>
         <source>About</source>
         <translation>Относно</translation>
     </message>
@@ -1270,22 +1270,22 @@
         <translation>Показване на детайли</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="691"/>
+        <location filename="../qps.cpp" line="676"/>
         <source>Show File Path</source>
         <translation>Покажи местоположението на файла</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="697"/>
+        <location filename="../qps.cpp" line="682"/>
         <source>Show Graph</source>
         <translation>Покажи Графа(Графика)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="703"/>
+        <location filename="../qps.cpp" line="688"/>
         <source>Show Control Bar</source>
         <translation>Показване на контролната лента</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="714"/>
+        <location filename="../qps.cpp" line="699"/>
         <source>Include Child Times</source>
         <translation>Включи времето на подпроцеси</translation>
     </message>
@@ -1295,77 +1295,77 @@
         <translation>Изход</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1159"/>
-        <location filename="../qps.cpp" line="1190"/>
-        <location filename="../qps.cpp" line="1197"/>
-        <location filename="../qps.cpp" line="1218"/>
-        <location filename="../qps.cpp" line="1252"/>
-        <location filename="../qps.cpp" line="1347"/>
+        <location filename="../qps.cpp" line="1144"/>
+        <location filename="../qps.cpp" line="1175"/>
+        <location filename="../qps.cpp" line="1182"/>
+        <location filename="../qps.cpp" line="1203"/>
+        <location filename="../qps.cpp" line="1237"/>
+        <location filename="../qps.cpp" line="1332"/>
         <source>Permission denied</source>
         <translation>Отказан достъп</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1160"/>
+        <location filename="../qps.cpp" line="1145"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
         <translation>Нямате разрешение да промените приоритетите на избраните процеси. Само собственикът на процеса и суперпотребителят имат право да правят това.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1191"/>
+        <location filename="../qps.cpp" line="1176"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
         <translation>Нямате разрешение да промените приоритета на процеса % 1 (% 2). Само собственикът на процеса и суперпотребителят имат право да правят това.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1198"/>
+        <location filename="../qps.cpp" line="1183"/>
         <source>Only the super-user may lower the nice value of a process.</source>
         <translation>Само суперпотребителят може да намали приоритета на даден процес.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1219"/>
+        <location filename="../qps.cpp" line="1204"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
         <translation>Само суперпотребителят може да промени политиката на разпределение и статичния приоритет.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1253"/>
+        <location filename="../qps.cpp" line="1238"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
         <translation>Нямате разрешение да промените разпределението и / или приоритета на процеса% 1 (% 2). Това може да направи само суперпотребителят.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1314"/>
+        <location filename="../qps.cpp" line="1299"/>
         <source>Do you really want to terminate the selected process(es)?</source>
         <translation>Настина ли желаете да спрете избрания(те) процес(и)?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1316"/>
+        <location filename="../qps.cpp" line="1301"/>
         <source>Do you really want to hang up the selected process(es)?</source>
         <translation>Наистина ли искате да затворите избрания(ите) процес(и)?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1318"/>
+        <location filename="../qps.cpp" line="1303"/>
         <source>Do you really want to kill the selected process(es)?</source>
         <translation>Настина ли желаете да прекратите избрания(те) процес(и)?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1327"/>
+        <location filename="../qps.cpp" line="1312"/>
         <source>Question</source>
         <translation>Въпрос</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1348"/>
+        <location filename="../qps.cpp" line="1333"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
         <translation>Нямате разрешение да изпратите сигнал към процес % 1 (% 2). Само суперпотребителят и собственикът на процеса могат да му изпращат сигнали.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1697"/>
+        <location filename="../qps.cpp" line="1682"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
         <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1699"/>
+        <location filename="../qps.cpp" line="1684"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
         <translation>&lt;h2&gt; Qps %1 - Визуален мениджър на процеси &lt;/h2&gt; %2, използващ Qt библиотека %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Изходен код: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Следене на грешки: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1719"/>
+        <location filename="../qps.cpp" line="1704"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
         <translation>&lt;b&gt;Оригинален Qps от&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Сътрудници&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
     </message>
