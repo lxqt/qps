@@ -199,7 +199,7 @@
     <message>
         <location filename="../fieldsel.cpp" line="34"/>
         <source>Select Custom Fields </source>
-        <translation>カスタム・フィールドの選択 </translation>
+        <translation>カスタムフィールドを選択 </translation>
     </message>
     <message>
         <location filename="../fieldsel.cpp" line="75"/>
@@ -341,12 +341,12 @@
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Inode</source>
-        <translation type="unfinished"></translation>
+        <translation>Inode</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Inode number (dec)</source>
-        <translation type="unfinished">Iode番号（dec）</translation>
+        <translation>Inode 番号 (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
@@ -397,7 +397,7 @@
     <message>
         <location filename="../prefs.cpp" line="191"/>
         <source>%CPU divided by</source>
-        <translation type="unfinished"></translation>
+        <translation>%CPU を次の値で割る</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="198"/>
@@ -407,7 +407,7 @@
     <message>
         <location filename="../prefs.cpp" line="199"/>
         <source>Single cpu: 1</source>
-        <translation type="unfinished"></translation>
+        <translation>シングル CPU: 1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="205"/>
@@ -445,7 +445,7 @@
     <message>
         <location filename="../proc.cpp" line="2617"/>
         <source>Task group ID ( parent of threads )</source>
-        <translation type="unfinished"></translation>
+        <translation>タスクグループ ID (スレッドの親)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2619"/>
@@ -575,7 +575,7 @@
     <message>
         <location filename="../proc.cpp" line="2643"/>
         <source>Effective group ID</source>
-        <translation type="unfinished"></translation>
+        <translation>有効なグループ ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2645"/>
@@ -665,7 +665,7 @@
     <message>
         <location filename="../proc.cpp" line="2661"/>
         <source>Percentage average sleep time (-1 -&gt; N/A)</source>
-        <translation type="unfinished"></translation>
+        <translation>平均スリープ時間の割合 (-1 -&gt; N/A)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2663"/>
@@ -675,7 +675,7 @@
     <message>
         <location filename="../proc.cpp" line="2663"/>
         <source>Affinity CPU mask (0 -&gt; API not supported)</source>
-        <translation type="unfinished"></translation>
+        <translation>アフィニティ CPU マスク (0 -&gt; API で非サポート)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2665"/>
@@ -745,7 +745,7 @@
     <message>
         <location filename="../proc.cpp" line="2678"/>
         <source>Data resident set size(malloc+global variable)</source>
-        <translation type="unfinished"></translation>
+        <translation>データ常駐セットサイズ (malloc+グローバル変数)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2680"/>
@@ -845,7 +845,7 @@
     <message>
         <location filename="../proc.cpp" line="2698"/>
         <source>Weighted percentage of CPU (30 s average)</source>
-        <translation type="unfinished"></translation>
+        <translation>加重CPU使用率 (30 秒平均)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2700"/>
@@ -865,7 +865,7 @@
     <message>
         <location filename="../proc.cpp" line="2702"/>
         <source>Percentage of memory used (RSS/total mem)</source>
-        <translation type="unfinished"></translation>
+        <translation>メモリー使用率 (RSS/メモリ全体)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2704"/>
@@ -895,7 +895,7 @@
     <message>
         <location filename="../proc.cpp" line="2708"/>
         <source>CPU the process is executing on (SMP system)</source>
-        <translation type="unfinished"></translation>
+        <translation>プロセスが実行されている CPU (SMP システム)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2710"/>
@@ -959,19 +959,19 @@
         <location filename="../infobar.cpp" line="430"/>
         <location filename="../infobar.cpp" line="437"/>
         <source>User: </source>
-        <translation type="unfinished"></translation>
+        <translation>ユーザー: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="431"/>
         <location filename="../infobar.cpp" line="438"/>
         <source>System: </source>
-        <translation type="unfinished"></translation>
+        <translation>システム: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="432"/>
         <location filename="../infobar.cpp" line="439"/>
         <source>Nice: </source>
-        <translation type="unfinished"></translation>
+        <translation>Nice: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="430"/>
@@ -981,49 +981,49 @@
         <location filename="../infobar.cpp" line="438"/>
         <location filename="../infobar.cpp" line="439"/>
         <source>%</source>
-        <translation type="unfinished">%</translation>
+        <translation>%</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="474"/>
         <location filename="../infobar.cpp" line="509"/>
         <source>Total: </source>
-        <translation type="unfinished"></translation>
+        <translation>全体: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="477"/>
         <location filename="../infobar.cpp" line="515"/>
         <source>Used: </source>
-        <translation type="unfinished"></translation>
+        <translation>使用: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="481"/>
         <source>Cached: </source>
-        <translation type="unfinished"></translation>
+        <translation>キャッシュ: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="484"/>
         <source>Buffer: </source>
-        <translation type="unfinished"></translation>
+        <translation>バッファー: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="512"/>
         <source>Free: </source>
-        <translation type="unfinished"></translation>
+        <translation>空き: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="554"/>
         <source>Time passed after system boot</source>
-        <translation type="unfinished"></translation>
+        <translation>システム起動後の経過時間</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="582"/>
         <source>Average CPU load each 1, 5 ,15 minutes</source>
-        <translation type="unfinished"></translation>
+        <translation>1, 5, 15 分ごとの平均 CPU 負荷</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="727"/>
         <source>CPU Usage Summary:</source>
-        <translation type="unfinished"></translation>
+        <translation>CPU 使用率の概要:</translation>
     </message>
 </context>
 <context>
@@ -1046,12 +1046,12 @@
     <message>
         <location filename="../qps.cpp" line="176"/>
         <source>Session</source>
-        <translation type="unfinished"></translation>
+        <translation>セッション</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="180"/>
         <source>View</source>
-        <translation type="unfinished"></translation>
+        <translation>表示</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="181"/>
@@ -1071,32 +1071,32 @@
     <message>
         <location filename="../qps.cpp" line="188"/>
         <source>Custom Fields</source>
-        <translation>カスタム・フィールド</translation>
+        <translation>カスタムフィールド</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="190"/>
         <source>Basic Fields </source>
-        <translation>ベーシック・フィールド </translation>
+        <translation>ベーシックフィールド </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="192"/>
         <source>Jobs Fields </source>
-        <translation>ジョブ・フィールド </translation>
+        <translation>ジョブフィールド </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="194"/>
         <source>Memory Fields </source>
-        <translation>メモリ・フィールド </translation>
+        <translation>メモリーフィールド </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="197"/>
         <source>Scheduling Fields </source>
-        <translation>スケジュール・フィールド </translation>
+        <translation>スケジュールフィールド </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="214"/>
         <source>Select Custom Fields...</source>
-        <translation>カスタム・フィールドの選択...</translation>
+        <translation>カスタムフィールドを選択...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="223"/>
@@ -1111,7 +1111,7 @@
     <message>
         <location filename="../qps.cpp" line="233"/>
         <source>Show Status bar</source>
-        <translation>ステータスバーの表示</translation>
+        <translation>ステータスバーを表示</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="242"/>
@@ -1267,7 +1267,7 @@
     <message>
         <location filename="../qps.cpp" line="438"/>
         <source>View Details</source>
-        <translation type="unfinished"></translation>
+        <translation>詳細を表示</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="676"/>
@@ -1277,17 +1277,17 @@
     <message>
         <location filename="../qps.cpp" line="682"/>
         <source>Show Graph</source>
-        <translation>グラフの表示</translation>
+        <translation>グラフを表示</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="688"/>
         <source>Show Control Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>コントロールバーを表示</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="699"/>
         <source>Include Child Times</source>
-        <translation type="unfinished"></translation>
+        <translation>子プロセス時間を含める</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="287"/>
@@ -1332,17 +1332,17 @@
     <message>
         <location filename="../qps.cpp" line="1299"/>
         <source>Do you really want to terminate the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation>選択したプロセスを本当に終了しますか？</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1301"/>
         <source>Do you really want to hang up the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation>選択したプロセスを本当にハングアップしますか？</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1303"/>
         <source>Do you really want to kill the selected process(es)?</source>
-        <translation type="unfinished"></translation>
+        <translation>選択したプロセスを本当に強制終了しますか？</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1312"/>
@@ -1362,12 +1362,12 @@
     <message>
         <location filename="../qps.cpp" line="1684"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;h2&gt; Qps %1 - ビジュアルプロセスマネージャー &lt;/h2&gt; %2 は Qt ライブラリ %3 を使用しています&lt;br&gt;&lt;br&gt;&lt;b&gt;ソース: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;バグトラッカー: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1704"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;オリジナルの Qps 作者&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;貢献者&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
     </message>
 </context>
 <context>
@@ -1380,7 +1380,7 @@
     <message>
         <location filename="../dialogs.cpp" line="296"/>
         <source>Scheduling Policy</source>
-        <translation>スケジューリングの方針</translation>
+        <translation>スケジュールポリシー</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="298"/>
@@ -1410,12 +1410,12 @@
     <message>
         <location filename="../dialogs.cpp" line="346"/>
         <source>Priority (1-99):</source>
-        <translation type="unfinished"></translation>
+        <translation>優先度 (1-99):</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="379"/>
         <source>Invalid Input</source>
-        <translation type="unfinished"></translation>
+        <translation>無効な入力</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="380"/>
@@ -1464,12 +1464,12 @@
     <message>
         <location filename="../details.cpp" line="147"/>
         <source>Fd</source>
-        <translation type="unfinished">FD</translation>
+        <translation>Fd</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="147"/>
         <source>File descriptor</source>
-        <translation type="unfinished">ファイル 記述子</translation>
+        <translation>ファイル記述子</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="148"/>
@@ -1494,7 +1494,7 @@
     <message>
         <location filename="../details.cpp" line="150"/>
         <source>Send-Q</source>
-        <translation type="unfinished">Send-Q</translation>
+        <translation>Send-Q</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="150"/>
