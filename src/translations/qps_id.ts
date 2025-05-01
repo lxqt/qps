@@ -650,7 +650,7 @@
     <message>
         <location filename="../proc.cpp" line="2659"/>
         <source>TMS</source>
-        <translation type="unfinished"></translation>
+        <translation>TMS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2659"/>
@@ -660,7 +660,7 @@
     <message>
         <location filename="../proc.cpp" line="2661"/>
         <source>%SAVG</source>
-        <translation type="unfinished"></translation>
+        <translation>%SAVG</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2661"/>
@@ -670,7 +670,7 @@
     <message>
         <location filename="../proc.cpp" line="2663"/>
         <source>CPUSET</source>
-        <translation type="unfinished"></translation>
+        <translation>CPUSET</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2663"/>
@@ -680,7 +680,7 @@
     <message>
         <location filename="../proc.cpp" line="2665"/>
         <source>MAJFLT</source>
-        <translation type="unfinished"></translation>
+        <translation>MAJFLT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2665"/>
@@ -690,7 +690,7 @@
     <message>
         <location filename="../proc.cpp" line="2667"/>
         <source>MINFLT</source>
-        <translation type="unfinished"></translation>
+        <translation>MINFLT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2667"/>
@@ -700,7 +700,7 @@
     <message>
         <location filename="../proc.cpp" line="2670"/>
         <source>VSIZE</source>
-        <translation type="unfinished"></translation>
+        <translation>VSIZE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2670"/>
@@ -710,7 +710,7 @@
     <message>
         <location filename="../proc.cpp" line="2672"/>
         <source>RSS</source>
-        <translation type="unfinished"></translation>
+        <translation>RSS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2672"/>
@@ -720,7 +720,7 @@
     <message>
         <location filename="../proc.cpp" line="2674"/>
         <source>MEM</source>
-        <translation type="unfinished"></translation>
+        <translation>MEM</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2674"/>
@@ -730,7 +730,7 @@
     <message>
         <location filename="../proc.cpp" line="2676"/>
         <source>TRS</source>
-        <translation type="unfinished"></translation>
+        <translation>TRS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2676"/>
@@ -740,7 +740,7 @@
     <message>
         <location filename="../proc.cpp" line="2678"/>
         <source>DRS</source>
-        <translation type="unfinished"></translation>
+        <translation>DRS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2678"/>
@@ -780,7 +780,7 @@
     <message>
         <location filename="../proc.cpp" line="2686"/>
         <source>IO_R</source>
-        <translation type="unfinished"></translation>
+        <translation>IO_R</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2686"/>
@@ -790,7 +790,7 @@
     <message>
         <location filename="../proc.cpp" line="2688"/>
         <source>IO_W</source>
-        <translation type="unfinished"></translation>
+        <translation>IO_W</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2688"/>
@@ -810,7 +810,7 @@
     <message>
         <location filename="../proc.cpp" line="2692"/>
         <source>STAT</source>
-        <translation type="unfinished"></translation>
+        <translation>STAT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2692"/>
@@ -820,7 +820,7 @@
     <message>
         <location filename="../proc.cpp" line="2694"/>
         <source>FLAGS</source>
-        <translation type="unfinished"></translation>
+        <translation>FLAGS</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2694"/>
@@ -830,37 +830,37 @@
     <message>
         <location filename="../proc.cpp" line="2696"/>
         <source>WCHAN</source>
-        <translation type="unfinished"></translation>
+        <translation>WCHAN</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2696"/>
         <source>Kernel function where process is sleeping</source>
-        <translation type="unfinished"></translation>
+        <translation>Fungsi kernel yang prosesnya tidak aktif</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2698"/>
         <source>%WCPU</source>
-        <translation type="unfinished"></translation>
+        <translation>%WCPU</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2698"/>
         <source>Weighted percentage of CPU (30 s average)</source>
-        <translation type="unfinished"></translation>
+        <translation>Persentase kinerja CPU (rata-rata 30 detik)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2700"/>
         <source>%CPU</source>
-        <translation type="unfinished"></translation>
+        <translation>%CPU</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2700"/>
         <source>Percentage of CPU used since last update</source>
-        <translation type="unfinished"></translation>
+        <translation>Persentase CPU yang digunakan sejak terakhir diperbarui</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2702"/>
         <source>%MEM</source>
-        <translation type="unfinished"></translation>
+        <translation>%MEM</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2702"/>

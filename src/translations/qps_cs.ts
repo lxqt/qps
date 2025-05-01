@@ -44,7 +44,7 @@
     <message>
         <location filename="../prefs.cpp" line="60"/>
         <source>Remember Position</source>
-        <translation>Zapamatovat si pozici</translation>
+        <translation>Zapamatovat si polohu</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="68"/>
