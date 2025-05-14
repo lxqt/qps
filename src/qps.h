@@ -235,7 +235,7 @@ class Qps : public QWidget
 #endif
     void send_to_selected(int sig);
     void sendsig(Procinfo *p, int sig);
-    bool read_settings();
+    void read_settings();
 
     bool load_settings();
 
