@@ -2829,7 +2829,7 @@ int Procview::custom_fields[] = {F_PID,   F_TTY,  F_USER,    F_NICE,
                                  F_START, F_TIME, F_CMDLINE, F_END};
 
 // COMMON: basic field
-int Procview::basic_fields[] = {F_PID,  F_TTY,     F_USER, F_CPUNUM,
+int Procview::basic_fields[] = {F_PID,  F_TTY,     F_USER,
                                 F_STAT, F_MEM,     F_CPU,  F_START,
                                 F_TIME, F_CMDLINE, F_END};
 

@@ -271,12 +271,7 @@ Qps::Qps()
     infobar = display->addSystem(procview);
     statusBar = new StatusBar(this);
 
-    if (!read_settings())
-    {
-        procview->setSortColumn(qMax(procview->findCol(F_CPU), 0)); // default sorted column
-        set_update_period(1300); // default update interval
-        resize(700, 400); // default initial size
-    }
+    read_settings();
 
     // apply the kind of sorting that is read by "read_settings()"
     pstable->setReveseSort(procview->reversed);
@@ -501,7 +496,7 @@ void Qps::update_timer()
 // change the update period, recomputing the averaging factor
 void Qps::set_update_period(int milliseconds)
 {
-    if (milliseconds == 0)
+    if (milliseconds < 500)
     {
         qDebug("DEBUG: set_update_period(): update= %dms \n", milliseconds);
         milliseconds = 1000;
@@ -1368,33 +1363,48 @@ static Sflagvar flagvars[] = {{"ExitOnClose", &Qps::flag_exit},
                               ,
                               {nullptr, nullptr}};
 
-extern QList<watchCond *> watchlist;
-// 1.Procview should be contstructed !
-// 2.
-bool Qps::read_settings()
+//extern QList<watchCond *> watchlist;
+// Procview should be contstructed !
+void Qps::read_settings()
 {
     QSettings set("qps", "qps");
-    if (!QFile::exists(set.fileName()))
-        return false;
 
     // flags (should be read before fields because "tree" decides how fields are added;
     // should be read before geometry too because of "Qps::save_pos")
     QStringList sl = set.value("flags").toStringList();
-    for (Sflagvar *fs = flagvars; fs->name; fs++)
+    // first check if there is any flag in the config file, and set flags only if there is
+    bool hasFlag = false;
+    if (!sl.isEmpty())
     {
-        if (sl.contains(fs->name))
-            *(fs->var) = true;
-        else
-            *(fs->var) = false;
+        for (Sflagvar *fs = flagvars; fs->name; fs++)
+        {
+            if (sl.contains(QString::fromUtf8(fs->name)))
+            {
+                hasFlag = true;
+                break;
+            }
+        }
+    }
+    if (hasFlag)
+    {
+        for (Sflagvar *fs = flagvars; fs->name; fs++)
+        {
+            *(fs->var) = sl.contains(fs->name);
+        }
     }
 
-    int x, y, w, h;
-    x = qMax(set.value("geometry/x").toInt(), 0);
-    y = qMax(set.value("geometry/y").toInt(), 0);
-    w = qMax(set.value("geometry/width").toInt(), 200);
-    h = qMax(set.value("geometry/height").toInt(), 100);
+    int x = -1, y = -1;
+    int w, h;
+    QVariant v = set.value("geometry/x");
+    if (v.isValid())
+        x = qMax(v.toInt(), 0);
+    v = set.value("geometry/y");
+    if (v.isValid())
+        y = qMax(v.toInt(), 0);
+    w = qMax(set.value("geometry/width").toInt(), 700);
+    h = qMax(set.value("geometry/height").toInt(), 400);
     Qps::flag_show = true;
-    if (Qps::save_pos)
+    if (!under_wayland && x >= 0 && y >= 0 && Qps::save_pos)
         setGeometry(x, y, w, h);
     else
         resize(w, h);
@@ -1440,13 +1450,11 @@ bool Qps::read_settings()
     // pstable -> procview
     procview->reversed = set.value("sort/reversed").toBool(); // tmp
 
-    int i = set.value("interval").toInt();
+    int i = set.value("interval", 1300).toInt();
     set_update_period(i);
     i = set.value("viewproc").toInt();
     procview->viewproc = i;
     ctrlbar->view->setCurrentIndex(i); // procview->viewproc=set.value("viewproc").toInt();
-
-    return true;
 }
 
 // USING :
