@@ -1374,6 +1374,8 @@ extern QList<watchCond *> watchlist;
 bool Qps::read_settings()
 {
     QSettings set("qps", "qps");
+    if (!QFile::exists(set.fileName()))
+        return false;
 
     // flags (should be read before fields because "tree" decides how fields are added;
     // should be read before geometry too because of "Qps::save_pos")
@@ -1387,10 +1389,10 @@ bool Qps::read_settings()
     }
 
     int x, y, w, h;
-    x = set.value("geometry/x").toInt();
-    y = set.value("geometry/y").toInt();
-    w = set.value("geometry/width").toInt();
-    h = set.value("geometry/height").toInt();
+    x = qMax(set.value("geometry/x").toInt(), 0);
+    y = qMax(set.value("geometry/y").toInt(), 0);
+    w = qMax(set.value("geometry/width").toInt(), 200);
+    h = qMax(set.value("geometry/height").toInt(), 100);
     Qps::flag_show = true;
     if (Qps::save_pos)
         setGeometry(x, y, w, h);
