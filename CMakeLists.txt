@@ -10,7 +10,7 @@ option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" O
 
 set(MAJOR_VERSION 2)
 set(MINOR_VERSION 11)
-set(PATCH_VERSION 0)
+set(PATCH_VERSION 1)
 set(QPS_VERSION_STRING ${MAJOR_VERSION}.${MINOR_VERSION}.${PATCH_VERSION})
 add_definitions(
     -DQPS_VERSION="${MAJOR_VERSION}.${MINOR_VERSION}.${PATCH_VERSION}"
