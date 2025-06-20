@@ -885,7 +885,7 @@
     <message>
         <location filename="../proc.cpp" line="2706"/>
         <source>Total CPU time used since start</source>
-        <translation>Συνολικός χρόνος χρήσης CPU από την έναρξη</translation>
+        <translation>Συνολικός χρόνος χρήσης ΚΜΕ από την έναρξη</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2708"/>
@@ -1091,12 +1091,12 @@
     <message>
         <location filename="../qps.cpp" line="197"/>
         <source>Scheduling Fields </source>
-        <translation>Πεδία προγραμματισμού </translation>
+        <translation>Πεδία χρονοπρογραμματισμού </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="214"/>
         <source>Select Custom Fields...</source>
-        <translation>Επιλογή προσαρμοσμένων πεδίων...</translation>
+        <translation>Επιλογή Προσαρμοσμένων Πεδίων…</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="223"/>
@@ -1147,12 +1147,12 @@
     <message>
         <location filename="../qps.cpp" line="389"/>
         <source>Renice...</source>
-        <translation>Αλλαγμένη προτεραιότητα...</translation>
+        <translation>Renice…</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="390"/>
         <source>Scheduling...</source>
-        <translation>Προγραμματισμός...</translation>
+        <translation>Προγραμματισμός…</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="392"/>
@@ -1307,13 +1307,12 @@
     <message>
         <location filename="../qps.cpp" line="1145"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
-        <translation>Δεν έχετε άδεια για την αλλαγή προτεραιότητας της επιλεγμένης διεργασίας. Μόνο ο κάτοχος κι ο διαχειριστής έχουν.</translation>
+        <translation>Δεν έχετε άδεια για να κάνετε renice της επιλεγμένης διεργασίας. Μόνο ο ιδιοκτήτης της διεργασίας και ο διαχειριστής έχουν.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1176"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
-        <translation>Δεν έχετε άδεια για αλλαγή προτεραιότητας της διεργασίας %1 (%2).
-Μόνο ο κάτοχος κι ο διαχειριστής έχουν.</translation>
+        <translation>Δεν έχετε άδεια για να κάνετε renice της διεργασίας %1 (%2). Μόνο ο ιδιοκτήτης και ο διαχειριστής έχουν.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1183"/>
@@ -1442,7 +1441,7 @@
     <message>
         <location filename="../dialogs.cpp" line="179"/>
         <source>Renice Process</source>
-        <translation>Διεργασία αλλαγμένης προτεραιότητας</translation>
+        <translation>Renice διεργασίας</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="185"/>
