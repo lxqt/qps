@@ -245,12 +245,12 @@
     <message>
         <location filename="../infobar.cpp" line="785"/>
         <source>I/O Summary:</source>
-        <translation>Sažetak ulaza/izlaza:</translation>
+        <translation>Sažetak unosa/rezultata:</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="819"/>
         <source>No input or output</source>
-        <translation>Nema ulaza niti izlaza</translation>
+        <translation>Nema unosa niti rezultata</translation>
     </message>
 </context>
 <context>
@@ -785,7 +785,7 @@
     <message>
         <location filename="../proc.cpp" line="2686"/>
         <source>io read (file)</source>
-        <translation>ulaz/izlaz čitanje (datoteka)</translation>
+        <translation>unos/rezultat čitanje (datoteka)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2688"/>
@@ -795,7 +795,7 @@
     <message>
         <location filename="../proc.cpp" line="2688"/>
         <source>io write (file)</source>
-        <translation>ulaz/izlaz pisanje (datoteka)</translation>
+        <translation>unos/rezultat pisanje (datoteka)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2690"/>
