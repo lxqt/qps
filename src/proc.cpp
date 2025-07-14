@@ -76,7 +76,7 @@ bool Procview::flag_show_file_path = false;
 bool Procview::flag_cumulative = false;  // times cumulative with children's
 bool Procview::flag_pcpu_single = false; // %CPU= pcpu/num_cpus
 int pagesize;
-int Proc::update_msec = 1024;
+unsigned short Proc::update_msec = 1024;
 
 // socket states, from <linux/net.h> and touched to avoid name collisions
 enum
@@ -326,7 +326,7 @@ int Cat_int::compare(Procinfo *a, Procinfo *b)
 // COMMON
 Cat_percent::Cat_percent(const QString &heading, const QString &explain, int w,
                          float Procinfo::*member)
-    : Category(heading, explain), float_member(member), field_width(w)
+    : Category(heading, explain), field_width(w), float_member(member)
 {
 }
 

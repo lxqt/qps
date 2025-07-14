@@ -696,31 +696,35 @@ Q_DECLARE_TR_FUNCTIONS(Proc)
 #ifdef SOLARIS
     static kstat_ctl_t *kc; // NULL if kstat not opened
 #endif
+
+    unsigned short maxSizeHistory;
+    unsigned int current_gen;
+
     QHash<int, Category *> categories;
 
     Proclist procs; // processes indexed by pid
 
     // TESTING
-    QString supasswd; // test
-    int syshistoryMAX;
-    Proclist *hprocs; // temp_hprocs list
-    Proclist *mprocs; //
-    QList<SysHistory *> history;
+    [[maybe_unused]] QString supasswd; // test
+    [[maybe_unused]] int syshistoryMAX;
+    [[maybe_unused]] Proclist *hprocs; // temp_hprocs list
+    [[maybe_unused]] Proclist *mprocs; //
+    [[maybe_unused]] QList<SysHistory *> history;
 
     void setHistory(int tick);
     Proclist getHistory(int pos);
 
-    int qps_pid;   // test
-    float loadQps; // TEST
-    static int update_msec;
+    [[maybe_unused]]  int qps_pid;   // test
+    [[maybe_unused]]  float loadQps; // TEST
+    static unsigned short update_msec;
 
     // class
-    int num_cpus;     // current number of CPUs
-    int old_num_cpus; // previous number of CPUs
+    unsigned short num_cpus;     // current number of CPUs
+    unsigned short old_num_cpus; // previous number of CPUs
 
+    unsigned int num_process;     //  number of process
     long num_network_process; //  number of network(socket) process
     long num_opened_files;    //  number of opened normal(not socket) files
-    int num_process;          //  number of process
 
     long dt_total; //
     long dt_used;  //  cpu used time in clktick
@@ -735,8 +739,8 @@ Q_DECLARE_TR_FUNCTIONS(Proc)
     unsigned int clk_tick;  // the  number  of  clock ticks per second.
     unsigned int boot_time; // boot time in seconds since the Epoch
 
-    int mem_total, mem_free;   // (Kb)
-    int swap_total, swap_free; // in kB
+    unsigned int mem_total, mem_free;   // (Kb)
+    unsigned int swap_total, swap_free; // in kB
 
     int mem_available, mem_shared, mem_buffers, mem_cached; // Linux
 
@@ -762,7 +766,7 @@ Q_DECLARE_TR_FUNCTIONS(Proc)
 #endif
 
     // Solaris <sys/sysinfo.h> #defines CPU_xxx so we must avoid them
-    enum
+    enum : unsigned char
     {
         CPUTIME_USER,
 #ifdef LINUX
@@ -777,9 +781,6 @@ Q_DECLARE_TR_FUNCTIONS(Proc)
     };
 
     //#define CPU_TIMES(cpu, kind) cpu_times_vec[cpu * CPUTIMES + kind]
-
-    unsigned int current_gen;
-    int maxSizeHistory;
 };
 
 class Procview : public Proc
