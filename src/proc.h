@@ -496,13 +496,19 @@ class Procinfo // Process Infomation
 
     QList<SockInode *> sock_inodes; // socket inodes or NULL if not read
 #endif
-    int pid;
-    bool clone;
-
-    bool first_run;        // for optimization
-    char hashstr[128 * 8]; // cache
     size_t hashlen;
     int hashcmp(char *str);
+    char hashstr[128 * 8]; // cache
+    bool first_run;        // for optimization
+
+    bool clone;
+    char state;
+
+    bool accepted;
+    int test_stop; // for test
+    int session;   //	???
+
+    int pid;
 
     QString command;   // COMMAND
     QString cmdline;   // COMMAND_LINE
@@ -511,14 +517,9 @@ class Procinfo // Process Infomation
     QString cwd;       // null if not read
     QString root;      // null if not read
 
-    bool accepted;
-    int test_stop; // for test
-    int session;   //	???
-
     int uid, euid;
     int gid, egid;
 
-    char state;
     int ppid; // Parent's PID
     int pgrp;
     dev_t tty; // tty major:minor device
@@ -528,17 +529,22 @@ class Procinfo // Process Infomation
     int tgid;     // thread leader's id
 
 #ifdef LINUX
-    double tms; // slice time
     int slpavg;
+    double tms; // slice time
     unsigned long affcpu;
 
     int suid, fsuid;
     int sgid, fsgid;
-    int tpgid;
 
     unsigned long cminflt;
     unsigned long cmajflt;
+
+    int tpgid;
 #endif
+
+    // Linux: the cpu used most of the time of the process
+    // Solaris: the cpu on which the process last ran
+    int which_cpu;
 
     unsigned long io_read;       // KB
     unsigned long io_write;      // KB
@@ -587,10 +593,6 @@ class Procinfo // Process Infomation
     int policy; // -1 = uninitialized
     int rtprio; // 0-99, higher can pre-empt lower (-1 = uninitialized)
 
-    // Linux: the cpu used most of the time of the process
-    // Solaris: the cpu on which the process last ran
-    int which_cpu;
-
     // computed %cpu and %mem since last update
     float wcpu, old_wcpu; // %WCPUwheight cpu
     float pcpu;           // %CPU: percent cpu after last update
@@ -613,11 +615,12 @@ class Procinfo // Process Infomation
     bool hidekids : 1;  // true if children are hidden in tree view
     bool lastchild : 1; // true if last (visible) child in tree view
 
+    char refcnt;
+
     short level;                  // distance from process root
     QList<Procinfo *> children; // real child processes
     static const int MAX_CMD_LEN = 512;
 
-    char refcnt;
 
     // virtual child for Table_Tree
     QList<Procinfo *> table_children;
