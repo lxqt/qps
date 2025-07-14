@@ -51,6 +51,48 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 
+include(CheckCXXCompilerFlag)
+
+set(AVX_SUPPORTED FALSE)
+set(AVX_COMPILER_FLAG "")
+
+# Prioritize AVX2 as it's more capable than AVX1.
+# Common flags for AVX2: -march=haswell (for Intel), -mavx2 (generic)
+CHECK_CXX_COMPILER_FLAG("-march=haswell" CXX_SUPPORTS_HASWELL)
+CHECK_CXX_COMPILER_FLAG("-mavx2" CXX_SUPPORTS_AVX2)
+
+if(CXX_SUPPORTS_HASWELL)
+    set(AVX_SUPPORTED TRUE)
+    set(AVX_COMPILER_FLAG "-march=haswell")
+    message(STATUS "AVX2 (Haswell) support detected. Adding compiler flag: ${AVX_COMPILER_FLAG}")
+elseif(CXX_SUPPORTS_AVX2)
+    set(AVX_SUPPORTED TRUE)
+    set(AVX_COMPILER_FLAG "-mavx2")
+    message(STATUS "Generic AVX2 support detected. Adding compiler flag: ${AVX_COMPILER_FLAG}")
+else()
+    # Common flags for AVX1: -march=sandybridge (for Intel), -mavx (generic)
+    CHECK_CXX_COMPILER_FLAG("-march=sandybridge" CXX_SUPPORTS_SANDYBRIDGE)
+    CHECK_CXX_COMPILER_FLAG("-mavx" CXX_SUPPORTS_AVX)
+
+    if(CXX_SUPPORTS_SANDYBRIDGE)
+        set(AVX_SUPPORTED TRUE)
+        set(AVX_COMPILER_FLAG "-march=sandybridge")
+        message(STATUS "AVX1 (Sandy Bridge) support detected. Adding compiler flag: ${AVX_COMPILER_FLAG}")
+    elseif(CXX_SUPPORTS_AVX)
+        set(AVX_SUPPORTED TRUE)
+        set(AVX_COMPILER_FLAG "-mavx")
+        message(STATUS "Generic AVX1 support detected. Adding compiler flag: ${AVX_COMPILER_FLAG}")
+    else()
+        message(STATUS "Neither AVX1 nor AVX2 support detected. No specific AVX compiler flags added.")
+    endif()
+endif()
+
+if(AVX_SUPPORTED)
+    add_compile_options(${AVX_COMPILER_FLAG})
+else()
+    message(STATUS "Building without specific AVX optimizations.")
+endif()
+
 add_subdirectory(src)
 
 # install the man page

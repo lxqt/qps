@@ -23,6 +23,7 @@
 #include "prefs.h"
 #include "proc.h"
 #include "qps.h"
+#include "misc.h"
 #include <QLabel>
 #include <QVBoxLayout>
 #include <QGroupBox>
@@ -126,8 +127,8 @@ QValidator::State Swapvalid::validate(QString &s, int &) const
         s[i] = 'K';
     if (s[i] == 'm')
         s[i] = 'M';
-    // int val = atoi((const char *)s);
-    int val = s.toInt();
+    int val = x_atoi(s.toUtf8().constData());
+    //int val = s.toInt();
     bool percent;
     if (s[i] == '%')
     {

@@ -56,6 +56,7 @@
 #include "uidstr.h"
 #include "ttystr.h"
 #include "wchan.h"
+#include "misc.h"
 
 #include <QString>
 #include <QRegularExpression>
@@ -1312,7 +1313,7 @@ int Proc::read_pid_tasks(int pid)
         if (e->d_name[0] == '.')
             continue; // skip "." , ".."
 
-        thread_pid = atoi(e->d_name);
+        thread_pid = x_atoi(e->d_name);
         if (pid == thread_pid)
             continue; // skip
 
@@ -2140,7 +2141,7 @@ bool Procinfo::read_fds()
     {
         if (e->d_name[0] == '.')
             continue;
-        int fdnum = atoi(e->d_name);
+        int fdnum = x_atoi(e->d_name);
         std::string str(path);
         str.append(e->d_name);
         read_fd(fdnum, str.c_str());
@@ -2759,7 +2760,7 @@ void Proc::read_proc_all()
             int pid;
             Procinfo *pi = nullptr;
 
-            pid = atoi(e->d_name);
+            pid = x_atoi(e->d_name);
 
             pi = procs.value(pid, NULL);
 

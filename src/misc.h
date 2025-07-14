@@ -51,6 +51,8 @@
 
 char *userName(int uid, int euid);
 char *groupName(int gid, int egid);
+int x_atoi(const char *sstr);
+
 
 void setQpsTheme();
 
