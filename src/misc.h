@@ -49,10 +49,10 @@
 #include <QTimeLine>
 #include <QTabWidget>
 
-char *userName(int uid, int euid);
-char *groupName(int gid, int egid);
 int x_atoi(const char *sstr);
 
+const QString userName(int uid, int euid);
+const QString groupName(int gid, int egid);
 
 void setQpsTheme();
 
