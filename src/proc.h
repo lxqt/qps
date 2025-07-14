@@ -225,8 +225,8 @@ class Category
 
     QString name;
     QString help;
-    int index;
-    int id;
+    unsigned short index;
+    unsigned short id;
     bool reversed;       // testing
     bool flag_int_value; // testing: for total sum , cat_memory , cat_int
 };
@@ -434,8 +434,8 @@ class Cat_percent : public Category
     int compare(Procinfo *a, Procinfo *b) override;
 
   protected:
+    unsigned short field_width;
     float Procinfo::*float_member;
-    int field_width;
 };
 
 class Cat_tty : public Cat_string
