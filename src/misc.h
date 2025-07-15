@@ -118,7 +118,7 @@ class TBloon : public QLabel
     //	virtual void moveEvent (QMoveEvent * event );
   private:
     QWidget *paren;
-    QString text;
+    const QChar *text;
     QTimeLine *timeLine;
 };
 
