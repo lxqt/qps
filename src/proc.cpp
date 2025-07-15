@@ -79,7 +79,7 @@ int pagesize;
 unsigned short Proc::update_msec = 1024;
 
 // socket states, from <linux/net.h> and touched to avoid name collisions
-enum
+enum : unsigned char
 {
     SSFREE = 0,     /* not allocated		*/
     SSUNCONNECTED,  /* unconnected to any socket	*/

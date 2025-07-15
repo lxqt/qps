@@ -45,7 +45,7 @@ void check_system_requirement();
 int get_kernel_version();
 
 //#define F_PID 0x00000000
-enum fields
+enum fields : char
 {
     F_PID = 0,
 #ifdef LINUX
@@ -133,7 +133,7 @@ class Details;
 class Sockinfo
 {
   public:
-    enum proto_t
+    enum proto_t : unsigned char
     {
         TCP,
         UDP
@@ -843,7 +843,7 @@ class Procview : public Proc
     static bool treeview;     // true if viewed in tree form
     bool enable;              // tmp
 
-    enum procstates
+    enum procstates : unsigned char
     {
         ALL,
         OWNED,
@@ -852,7 +852,7 @@ class Procview : public Proc
         HIDDEN,
         NETWORK
     };
-    enum fieldstates
+    enum fieldstates : unsigned char
     {
         USER = HIDDEN + 1,
         JOBS,

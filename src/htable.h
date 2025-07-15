@@ -212,7 +212,7 @@ class TableBody : public QtTableView
     int first_drag_row;  // row where drag started
     int prev_drag_row;   // row where drag was at last event
     bool autoscrolling;  // true if we are autoscrolling right now
-    enum
+    enum : unsigned char
     {
         UP,
         DOWN
@@ -237,7 +237,7 @@ class HeadedTable : public QWidget
     TableBody *body;
 
     CellAttribute *attr; // DEL temporarily buffer
-    enum NodeState
+    enum NodeState : unsigned char
     {
         Leaf,
         Open,
