@@ -183,7 +183,7 @@ class Mapsinfo
     unsigned long from, to;
     unsigned long offset;
     unsigned long inode;
-    QString filename; // null if name unknown
+    const QChar *filename; // null if name unknown
     char perm[4];     // "rwx[ps]"; last is private/shared flag
     unsigned minor, major;
 };

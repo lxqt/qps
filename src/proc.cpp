@@ -2313,10 +2313,10 @@ bool Procinfo::read_maps()
                 line[len - 1] = '\0';
             while (line[n] == ' ' && line[n])
                 n++;
-            mi->filename = line + n;
+            mi->filename = reinterpret_cast<const QChar *>(line + n);
         }
         else if ((mi->major | mi->minor | mi->inode) == 0)
-            mi->filename = "(anonymous)";
+            mi->filename = QString::fromLocal8Bit("(anonymous)").constData();
         maps.append(mi);
     }
     fclose(f);
