@@ -48,12 +48,12 @@ struct Boxvar
 {
 Q_DECLARE_TR_FUNCTIONS(Boxvar)
 public:
-    const QString text;
+    const QChar *text;
     bool *variable;
     QCheckBox *cb;
 
-    Boxvar() : text( QString() ), variable( static_cast<  bool * >( nullptr ) ), cb( static_cast< QCheckBox *>( nullptr ) ) {}
-    Boxvar( const QString t, bool *v, QCheckBox *c ) : text( t ), variable( v ), cb( c ) {}
+    Boxvar() : text( nullptr ), variable( static_cast<  bool * >( nullptr ) ), cb( static_cast< QCheckBox *>( nullptr ) ) {}
+    Boxvar( const QString &t, bool *v, QCheckBox *c ) : text( t.constData() ), variable( v ), cb( c ) {}
 
     static QList< Boxvar > *general_boxes()
     {
@@ -96,11 +96,11 @@ struct Cbgroup
 {
 Q_DECLARE_TR_FUNCTIONS(Cbgroup)
 public:
-    const QString caption;
+    const QChar *caption;
     QList< Boxvar > *boxvar;
 
-    Cbgroup() : caption( QString() ), boxvar( static_cast< QList< Boxvar > * >( nullptr ) ) {}
-    Cbgroup( const QString c, QList< Boxvar > *b ) : caption( c ), boxvar( b ) {}
+    Cbgroup() : caption( nullptr ), boxvar( static_cast< QList< Boxvar > * >( nullptr ) ) {}
+    Cbgroup( const QString &c, QList< Boxvar > *b ) : caption( c.constData() ), boxvar( b ) {}
 
     static QList< Cbgroup > &groups()
     {
@@ -167,14 +167,14 @@ Preferences::Preferences(QWidget *parent) : QDialog(parent)
     QList< Cbgroup >::iterator endItG = Cbgroup::groups().end();
     for( QList< Cbgroup >::iterator itG = Cbgroup::groups().begin(); itG != endItG; ++ itG )
     {
-        QGroupBox *grp = new QGroupBox( itG->caption, this );
+        QGroupBox *grp = new QGroupBox( *itG->caption, this );
         QVBoxLayout *vbox = new QVBoxLayout;
         if ( itG->boxvar )
         {
             QList< Boxvar >::iterator endItB = itG->boxvar->end();
             for( QList< Boxvar >::iterator itB = itG->boxvar->begin(); itB != endItB; ++ itB )
             {
-                itB->cb = new QCheckBox( itB->text, grp );
+                itB->cb = new QCheckBox( *itB->text, grp );
                 vbox->addWidget( itB->cb );
                 connect( itB->cb, &QAbstractButton::clicked, this, &Preferences::update_reality);
             }
