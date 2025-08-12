@@ -765,7 +765,7 @@
     <message>
         <location filename="../proc.cpp" line="2682"/>
         <source>Shared memory with other libs</source>
-        <translation>與其它庫分享的記憶體</translation>
+        <translation>與其他庫分享的記憶體</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2684"/>
@@ -1182,7 +1182,7 @@
     <message>
         <location filename="../qps.cpp" line="400"/>
         <source>Other Signals</source>
-        <translation>其它訊號</translation>
+        <translation>其他訊號</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="401"/>
