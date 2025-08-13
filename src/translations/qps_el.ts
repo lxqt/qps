@@ -59,7 +59,7 @@
     <message>
         <location filename="../prefs.cpp" line="75"/>
         <source>Disclosure Triangles</source>
-        <translation>Τρίγωνα αποκάλυψης</translation>
+        <translation>Τρίγωνα ανάπτυξης</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="76"/>
@@ -885,7 +885,7 @@
     <message>
         <location filename="../proc.cpp" line="2706"/>
         <source>Total CPU time used since start</source>
-        <translation>Συνολικός χρόνος χρήσης ΚΜΕ από την έναρξη</translation>
+        <translation>Συνολικός χρόνος χρήσης CPU από την έναρξη</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2708"/>
@@ -1096,7 +1096,7 @@
     <message>
         <location filename="../qps.cpp" line="214"/>
         <source>Select Custom Fields...</source>
-        <translation>Επιλογή Προσαρμοσμένων Πεδίων…</translation>
+        <translation>Επιλογή προσαρμοσμένων πεδίων...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="223"/>
@@ -1147,12 +1147,12 @@
     <message>
         <location filename="../qps.cpp" line="389"/>
         <source>Renice...</source>
-        <translation>Renice…</translation>
+        <translation>Renice...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="390"/>
         <source>Scheduling...</source>
-        <translation>Προγραμματισμός…</translation>
+        <translation>Χρονοπρογραμματισμός...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="392"/>
@@ -1562,8 +1562,8 @@
         <location filename="../misc.cpp" line="343"/>
         <source> This is unstable Alpha feature
  You maybe see a SEGFAULT...</source>
-        <translation> Αυτή είναι ασταθής λειτουργία Alpha 
- Μπορεί να εμφανιστεί σφάλμα κατάτμησης…</translation>
+        <translation> Μη σταθερό χαρακτηριστικό Alpha 
+ Μπορεί να εμφανιστεί SEGFAULT...</translation>
     </message>
 </context>
 <context>

@@ -1327,7 +1327,7 @@
     <message>
         <location filename="../qps.cpp" line="1238"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
-        <translation>Keine Berechtigung Ausführungsrichtlinien und/oder statische Priorität des Prozesses 1% (%2) zu ändern. Dies ist ausschließlich &quot;Super-Usern&quot; vorbehalten.</translation>
+        <translation>Keine Berechtigung Ausführungsrichtlinien und/oder statische Priorität des Prozesses %1 (%2) zu ändern. Dies ist ausschließlich &quot;Super-Usern&quot; vorbehalten.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1299"/>
@@ -1352,7 +1352,7 @@
     <message>
         <location filename="../qps.cpp" line="1333"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
-        <translation>Keine Berechtigung Signal an Prozess 1% (%2) zu senden. Dies ist ausschließlich &quot;Super-Usern&quot; vorbehalten.</translation>
+        <translation>Keine Berechtigung Signal an Prozess %1 (%2) zu senden. Dies ist ausschließlich &quot;Super-Usern&quot; vorbehalten.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1682"/>

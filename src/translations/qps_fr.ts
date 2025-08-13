@@ -21,7 +21,7 @@
     <message>
         <location filename="../details.cpp" line="628"/>
         <source>Field description</source>
-        <translation>Champ de la description</translation>
+        <translation>Description du champ</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="629"/>
@@ -31,7 +31,7 @@
     <message>
         <location filename="../details.cpp" line="629"/>
         <source>Field value</source>
-        <translation>Champ de la valeur</translation>
+        <translation>Valeur du champ</translation>
     </message>
 </context>
 <context>
@@ -64,12 +64,12 @@
     <message>
         <location filename="../prefs.cpp" line="76"/>
         <source>Branch Lines</source>
-        <translation>Lignes de branchement</translation>
+        <translation>Embranchements</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="82"/>
         <source>Auto Save Settings on Exit</source>
-        <translation>Enregistrement automatique des paramètres à la sortie</translation>
+        <translation>Enregistrement automatique des paramètres à la fermeture</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="83"/>
@@ -181,7 +181,7 @@
     <message>
         <location filename="../details.cpp" line="579"/>
         <source>Variable name</source>
-        <translation>Nom de variable</translation>
+        <translation>Nom de la variable</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="580"/>
@@ -191,7 +191,7 @@
     <message>
         <location filename="../details.cpp" line="580"/>
         <source>Variable value</source>
-        <translation>Valeur variable</translation>
+        <translation>Valeur de la variable</translation>
     </message>
 </context>
 <context>
@@ -245,7 +245,7 @@
     <message>
         <location filename="../infobar.cpp" line="785"/>
         <source>I/O Summary:</source>
-        <translation>Résumé des I/O&#xa0;:</translation>
+        <translation>Résumé des I/O :</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="819"/>
@@ -278,7 +278,7 @@
     <message>
         <location filename="../dialogs.cpp" line="121"/>
         <source>No UPDATE</source>
-        <translation>Pas de MISE A JOUR</translation>
+        <translation>Pas de MISE À JOUR</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="139"/>
@@ -306,7 +306,7 @@
     <message>
         <location filename="../details.cpp" line="393"/>
         <source>Kbytes mapped (dec)</source>
-        <translation>Koctets mappées (dec))</translation>
+        <translation>Koctets mappés (déc.))</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="394"/>
@@ -959,13 +959,13 @@
         <location filename="../infobar.cpp" line="430"/>
         <location filename="../infobar.cpp" line="437"/>
         <source>User: </source>
-        <translation>Utilisateur&#xa0;: </translation>
+        <translation>Utilisateur : </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="431"/>
         <location filename="../infobar.cpp" line="438"/>
         <source>System: </source>
-        <translation>Système&#xa0;: </translation>
+        <translation>Système : </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="432"/>
@@ -993,12 +993,12 @@
         <location filename="../infobar.cpp" line="477"/>
         <location filename="../infobar.cpp" line="515"/>
         <source>Used: </source>
-        <translation>Utilisé&#xa0;: </translation>
+        <translation>Utilisé : </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="481"/>
         <source>Cached: </source>
-        <translation>Caché&#xa0;: </translation>
+        <translation>Caché : </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="484"/>
@@ -1008,7 +1008,7 @@
     <message>
         <location filename="../infobar.cpp" line="512"/>
         <source>Free: </source>
-        <translation>Libre&#xa0;: </translation>
+        <translation>Libre : </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="554"/>
