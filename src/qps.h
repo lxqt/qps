@@ -100,7 +100,7 @@ class Qps : public QWidget
     static bool flag_qps_hide;
 
     // colors which may be set by the user
-    enum
+    enum : unsigned char
     {
         COLOR_CPU_USER,
 #ifdef LINUX
@@ -126,7 +126,7 @@ class Qps : public QWidget
         NUM_COLORS
     };
 
-    enum menuid
+    enum menuid : unsigned char
     {
         MENU_SIGQUIT,
         MENU_SIGILL,

@@ -35,7 +35,7 @@
 
 #include "qttableview.h"
 
-enum ScrollBarDirtyFlags
+enum ScrollBarDirtyFlags : unsigned char
 {
     verSteps = 0x02,
     verRange = 0x04,
