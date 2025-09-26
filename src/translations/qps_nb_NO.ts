@@ -1137,7 +1137,7 @@
     <message>
         <location filename="../qps.cpp" line="336"/>
         <source>Copied to Clipboard</source>
-        <translation>Kopiert til utklippsboken</translation>
+        <translation>Kopiert til utklippstavlen</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="388"/>
