@@ -38,7 +38,7 @@ static void center_window(QWidget *a)
 static void fix_size(QWidget *w) { w->setFixedSize(w->sizeHint()); }
 
 // Modal dialog
-IntervalDialog::IntervalDialog(const char *ed_txt, bool enabled) : QDialog()
+IntervalDialog::IntervalDialog(const char *ed_txt, bool enabled, QWidget *parent) : QDialog(parent)
 {
     setWindowTitle( tr( "Change Update Period" ) );
     QVBoxLayout *tl = new QVBoxLayout;
@@ -174,7 +174,7 @@ void IntervalDialog::done_dialog()
     accept();
 }
 
-SliderDialog::SliderDialog(int defaultval, int minval, int maxval) : QDialog()
+SliderDialog::SliderDialog(int defaultval, int minval, int maxval, QWidget *parent) : QDialog(parent)
 {
     setWindowTitle( tr( "Renice Process" ) );
     QVBoxLayout *tl = new QVBoxLayout;
@@ -259,7 +259,7 @@ void SliderDialog::slider_change(int val)
 }
 
 // DRAFT CODE,
-PermissionDialog::PermissionDialog(QString msg, QString /*passwd*/) : QDialog()
+PermissionDialog::PermissionDialog(QString msg, QString /*passwd*/, QWidget *parent) : QDialog(parent)
 {
     setWindowTitle( tr( "Permission" ) );
     QVBoxLayout *vbox = new QVBoxLayout;
@@ -287,7 +287,7 @@ PermissionDialog::PermissionDialog(QString msg, QString /*passwd*/) : QDialog()
     connect(cancel, &QAbstractButton::clicked, this, &QDialog::reject);
 }
 
-SchedDialog::SchedDialog(int policy, int prio) : QDialog()
+SchedDialog::SchedDialog(int policy, int prio, QWidget *parent) : QDialog(parent)
 {
     setWindowTitle( tr( "Change scheduling" ) );
     QVBoxLayout *vl = new QVBoxLayout;

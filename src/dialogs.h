@@ -46,7 +46,7 @@ class IntervalDialog : public QDialog
 {
     Q_OBJECT
   public:
-    IntervalDialog(const char *ed_txt, bool toggle_state);
+    IntervalDialog(const char *ed_txt, bool toggle_state, QWidget *parent = nullptr);
 
   protected slots:
     void done_dialog();
@@ -66,7 +66,7 @@ class SliderDialog : public QDialog
 {
     Q_OBJECT
   public:
-    SliderDialog(int defaultval, int minval, int maxval);
+    SliderDialog(int defaultval, int minval, int maxval, QWidget *parent = nullptr);
 
     QString ed_result;
 
@@ -85,7 +85,7 @@ class PermissionDialog : public QDialog
 {
     Q_OBJECT
   public:
-    PermissionDialog(QString msg, QString passwd);
+    PermissionDialog(QString msg, QString passwd, QWidget *parent = nullptr);
     QLineEdit *lined;
     QLabel *label;
 
@@ -103,7 +103,7 @@ class SchedDialog : public QDialog
 {
     Q_OBJECT
   public:
-    SchedDialog(int policy, int prio);
+    SchedDialog(int policy, int prio, QWidget *parent = nullptr);
 
     int out_prio;
     int out_policy;
