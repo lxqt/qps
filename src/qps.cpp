@@ -1052,7 +1052,7 @@ void Qps::menu_update()
         txt = QString::asprintf("%d s", update_period / 1000);
     else
         txt = QString::asprintf("%d ms", update_period);
-    IntervalDialog id(txt.toUtf8().data(), update_period != eternity);
+    IntervalDialog id(txt.toUtf8().data(), update_period != eternity, this);
     id.exec();
     return;
 }
@@ -1144,7 +1144,7 @@ void Qps::menu_renice()
     int new_nice;
     for (;;)
     {
-        SliderDialog sd(defnice, -20, 19); // Linux kernel : -20 ~ 19
+        SliderDialog sd(defnice, -20, 19, this); // Linux kernel : -20 ~ 19
         if (!sd.exec())
             return;
         bool ok;
@@ -1210,7 +1210,7 @@ void Qps::menu_sched()
     }
     int pol = p->get_policy();
     int pri = p->get_rtprio();
-    SchedDialog sd(pol, pri);
+    SchedDialog sd(pol, pri, this);
     if (!sd.exec())
         return;
 
