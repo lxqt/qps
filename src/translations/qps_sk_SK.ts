@@ -941,17 +941,17 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../qps.cpp" line="1618"/>
+        <location filename="../qps.cpp" line="1628"/>
         <source>Show</source>
         <translation>Zobraziť</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1621"/>
+        <location filename="../qps.cpp" line="1631"/>
         <source>Hide</source>
         <translation>Skryť</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1626"/>
+        <location filename="../qps.cpp" line="1636"/>
         <source>Quit</source>
         <translation>Ukončiť</translation>
     </message>
@@ -1125,247 +1125,247 @@
     </message>
     <message>
         <location filename="../qps.cpp" line="249"/>
-        <location filename="../qps.cpp" line="1666"/>
+        <location filename="../qps.cpp" line="1676"/>
         <source>About</source>
         <translation>O aplikácii</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="335"/>
+        <location filename="../qps.cpp" line="330"/>
         <source>test</source>
         <translation>test</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="336"/>
+        <location filename="../qps.cpp" line="331"/>
         <source>Copied to Clipboard</source>
         <translation>Skopírované do schránky</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="388"/>
+        <location filename="../qps.cpp" line="383"/>
         <source>context popup</source>
         <translation>kontextová vyskakovacia ponuka</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="389"/>
+        <location filename="../qps.cpp" line="384"/>
         <source>Renice...</source>
         <translation>Zmeniť prioritu (nice)…</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="390"/>
+        <location filename="../qps.cpp" line="385"/>
         <source>Scheduling...</source>
         <translation>Plánovanie...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="392"/>
+        <location filename="../qps.cpp" line="387"/>
         <source>Terminate</source>
         <translation>Ukončiť</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="393"/>
+        <location filename="../qps.cpp" line="388"/>
         <source>Hangup</source>
         <translation>Zložiť</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="394"/>
+        <location filename="../qps.cpp" line="389"/>
         <source>Kill</source>
         <translation>Vynútiť ukončenie (kill)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="395"/>
+        <location filename="../qps.cpp" line="390"/>
         <source>Stop</source>
         <translation>Zastaviť</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="397"/>
+        <location filename="../qps.cpp" line="392"/>
         <source>Continue</source>
         <translation>Pokračovať</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="400"/>
+        <location filename="../qps.cpp" line="395"/>
         <source>Other Signals</source>
         <translation>Iné signály</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="401"/>
+        <location filename="../qps.cpp" line="396"/>
         <source>SIGINT (interrupt)</source>
         <translation>SIGINT (prerušenie)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="403"/>
+        <location filename="../qps.cpp" line="398"/>
         <source>SIGCONT (continue)</source>
         <translation>SIGCONT (pokračovať)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="405"/>
+        <location filename="../qps.cpp" line="400"/>
         <source>SIGSTOP (stop)</source>
         <translation>SIGSTOP (zastaviť)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="407"/>
+        <location filename="../qps.cpp" line="402"/>
         <source>SIGQUIT (quit)</source>
         <translation>SIGQUIT (ukončiť)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="409"/>
+        <location filename="../qps.cpp" line="404"/>
         <source>SIGILL (illegal instruction)</source>
         <translation>SIGILL (neplatná inštrukcia)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="411"/>
+        <location filename="../qps.cpp" line="406"/>
         <source>SIGABRT (abort)</source>
         <translation>SIGABRT (prerušiť)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="413"/>
+        <location filename="../qps.cpp" line="408"/>
         <source>SIGFPE (floating point exception)</source>
         <translation>SIGFPE (výnimka v plávajúcej desatinnej čiarke)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="415"/>
+        <location filename="../qps.cpp" line="410"/>
         <source>SIGSEGV (segmentation violation)</source>
         <translation>SIGSEGV (porušenie ochrany pamäte)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="417"/>
+        <location filename="../qps.cpp" line="412"/>
         <source>SIGPIPE (broken pipe)</source>
         <translation>SIGPIPE (neočakávané uzatvorenie rúry)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="419"/>
+        <location filename="../qps.cpp" line="414"/>
         <source>SIGALRM (timer signal)</source>
         <translation>SIGALRM (signál časovača)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="421"/>
+        <location filename="../qps.cpp" line="416"/>
         <source>SIGUSR1 (user-defined 1)</source>
         <translation>SIGUSR1 (užívateľom určený 1)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="423"/>
+        <location filename="../qps.cpp" line="418"/>
         <source>SIGUSR2 (user-defined 2)</source>
         <translation>SIGUSR2 (užívateľom určený 2)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="425"/>
+        <location filename="../qps.cpp" line="420"/>
         <source>SIGCHLD (child death)</source>
         <translation>SIGCHLD (podriadený proces ukončený)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="427"/>
+        <location filename="../qps.cpp" line="422"/>
         <source>SIGTSTP (stop from tty)</source>
         <translation>SIGTSTP (zastavenie z konzoly)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="429"/>
+        <location filename="../qps.cpp" line="424"/>
         <source>SIGTTIN (tty input)</source>
         <translation>SIGTTIN (vstup z konzoly)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="431"/>
+        <location filename="../qps.cpp" line="426"/>
         <source>SIGTTOU (tty output)</source>
         <translation>SIGTTOU (výstup z konzoly)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="438"/>
+        <location filename="../qps.cpp" line="433"/>
         <source>View Details</source>
         <translation>Zobraziť podrobnosti</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="676"/>
+        <location filename="../qps.cpp" line="671"/>
         <source>Show File Path</source>
         <translation>Zobraziť cestu k súboru</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="682"/>
+        <location filename="../qps.cpp" line="677"/>
         <source>Show Graph</source>
         <translation>Zobraziť graf</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="688"/>
+        <location filename="../qps.cpp" line="683"/>
         <source>Show Control Bar</source>
         <translation>Zobraziť lištu na ovládanie</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="699"/>
+        <location filename="../qps.cpp" line="694"/>
         <source>Include Child Times</source>
         <translation>Zahrnúť časy podriadených procesov</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="287"/>
+        <location filename="../qps.cpp" line="282"/>
         <source>Quit</source>
         <translation>Ukončiť</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1144"/>
-        <location filename="../qps.cpp" line="1175"/>
-        <location filename="../qps.cpp" line="1182"/>
-        <location filename="../qps.cpp" line="1203"/>
-        <location filename="../qps.cpp" line="1237"/>
-        <location filename="../qps.cpp" line="1332"/>
+        <location filename="../qps.cpp" line="1139"/>
+        <location filename="../qps.cpp" line="1170"/>
+        <location filename="../qps.cpp" line="1177"/>
+        <location filename="../qps.cpp" line="1198"/>
+        <location filename="../qps.cpp" line="1232"/>
+        <location filename="../qps.cpp" line="1327"/>
         <source>Permission denied</source>
         <translation>Prístup zamietnutý</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1145"/>
+        <location filename="../qps.cpp" line="1140"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
         <translation>Nemáte oprávnenie pre úpravu priority procesov (nice). To môže udeľovať iba vlastník procesu alebo správca systému.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1176"/>
+        <location filename="../qps.cpp" line="1171"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
         <translation>Nemáte oprávnenie pre úpravu priority procesov %1 (%2). To môže udeľovať iba vlastník procesu alebo správca systému.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1183"/>
+        <location filename="../qps.cpp" line="1178"/>
         <source>Only the super-user may lower the nice value of a process.</source>
         <translation>Zvýšiť alebo znížiť prioritu procesu (nice) môže iba správca systému.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1204"/>
+        <location filename="../qps.cpp" line="1199"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
         <translation>Iba správca systému môže meniť zásadu plánovania a pevne danú prioritu.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1238"/>
+        <location filename="../qps.cpp" line="1233"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
         <translation>Nemáte oprávnenie meniť plánovanie alebo prioritu procesu %1 (%2). To môže urobiť iba vlastník procesu alebo správca systému.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1299"/>
+        <location filename="../qps.cpp" line="1294"/>
         <source>Do you really want to terminate the selected process(es)?</source>
         <translation>Skutočne si prajete ukončiť vybraný/é proces/y?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1301"/>
+        <location filename="../qps.cpp" line="1296"/>
         <source>Do you really want to hang up the selected process(es)?</source>
         <translation>Skutočne si prajete prerušiť vybraný/é proces/y?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1303"/>
+        <location filename="../qps.cpp" line="1298"/>
         <source>Do you really want to kill the selected process(es)?</source>
         <translation>Skutočne si prajete ukončiť vybraný/é proces/y?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1312"/>
+        <location filename="../qps.cpp" line="1307"/>
         <source>Question</source>
         <translation>Otázka</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1333"/>
+        <location filename="../qps.cpp" line="1328"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
         <translation>Nemáte oprávnenie poslať signál procesu %1 (%2). To môže urobiť iba vlastník procesu alebo správca systému.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1682"/>
+        <location filename="../qps.cpp" line="1692"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
         <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1684"/>
+        <location filename="../qps.cpp" line="1694"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
         <translation>&lt;h2&gt; Qps %1 - Vizuálny manažér procesov &lt;/h2&gt; %2 použitím knižnice Qt %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Zdroj: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1704"/>
+        <location filename="../qps.cpp" line="1714"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
         <translation>&lt;b&gt;Pôvodný Qps vytvoril &lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Na vývoji sa podieľal&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
     </message>

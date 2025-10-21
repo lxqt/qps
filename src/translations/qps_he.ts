@@ -941,17 +941,17 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../qps.cpp" line="1618"/>
+        <location filename="../qps.cpp" line="1628"/>
         <source>Show</source>
         <translation>הצגה</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1621"/>
+        <location filename="../qps.cpp" line="1631"/>
         <source>Hide</source>
         <translation>הסתרה</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1626"/>
+        <location filename="../qps.cpp" line="1636"/>
         <source>Quit</source>
         <translation>יציאה</translation>
     </message>
@@ -1125,247 +1125,247 @@
     </message>
     <message>
         <location filename="../qps.cpp" line="249"/>
-        <location filename="../qps.cpp" line="1666"/>
+        <location filename="../qps.cpp" line="1676"/>
         <source>About</source>
         <translation>על אודות</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="335"/>
+        <location filename="../qps.cpp" line="330"/>
         <source>test</source>
         <translation>בדיקה</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="336"/>
+        <location filename="../qps.cpp" line="331"/>
         <source>Copied to Clipboard</source>
         <translation>הועתק ללוח גזירים</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="388"/>
+        <location filename="../qps.cpp" line="383"/>
         <source>context popup</source>
         <translation>חלונית הקשר</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="389"/>
+        <location filename="../qps.cpp" line="384"/>
         <source>Renice...</source>
         <translation>Nice מחדש…</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="390"/>
+        <location filename="../qps.cpp" line="385"/>
         <source>Scheduling...</source>
         <translation>תזמון…</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="392"/>
+        <location filename="../qps.cpp" line="387"/>
         <source>Terminate</source>
         <translation>חיסול</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="393"/>
+        <location filename="../qps.cpp" line="388"/>
         <source>Hangup</source>
         <translation>ניתוק</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="394"/>
+        <location filename="../qps.cpp" line="389"/>
         <source>Kill</source>
         <translation>הריגה</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="395"/>
+        <location filename="../qps.cpp" line="390"/>
         <source>Stop</source>
         <translation>עצירה</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="397"/>
+        <location filename="../qps.cpp" line="392"/>
         <source>Continue</source>
         <translation>המשך</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="400"/>
+        <location filename="../qps.cpp" line="395"/>
         <source>Other Signals</source>
         <translation>אותות אחרים</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="401"/>
+        <location filename="../qps.cpp" line="396"/>
         <source>SIGINT (interrupt)</source>
         <translation>SIGINT (פסיקה)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="403"/>
+        <location filename="../qps.cpp" line="398"/>
         <source>SIGCONT (continue)</source>
         <translation>SIGCONT (המשך)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="405"/>
+        <location filename="../qps.cpp" line="400"/>
         <source>SIGSTOP (stop)</source>
         <translation>SIGSTOP (עצירה)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="407"/>
+        <location filename="../qps.cpp" line="402"/>
         <source>SIGQUIT (quit)</source>
         <translation>SIGQUIT (יציאה)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="409"/>
+        <location filename="../qps.cpp" line="404"/>
         <source>SIGILL (illegal instruction)</source>
         <translation>SIGILL (הנחייה בלתי חוקית)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="411"/>
+        <location filename="../qps.cpp" line="406"/>
         <source>SIGABRT (abort)</source>
         <translation>SIGABRT (ביטול)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="413"/>
+        <location filename="../qps.cpp" line="408"/>
         <source>SIGFPE (floating point exception)</source>
         <translation>SIGFPE (חריגת נקודה עשרונית)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="415"/>
+        <location filename="../qps.cpp" line="410"/>
         <source>SIGSEGV (segmentation violation)</source>
         <translation>SIGSEGV (הפרת סגמנטציה)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="417"/>
+        <location filename="../qps.cpp" line="412"/>
         <source>SIGPIPE (broken pipe)</source>
         <translation>SIGPIPE (תעלה סתומה)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="419"/>
+        <location filename="../qps.cpp" line="414"/>
         <source>SIGALRM (timer signal)</source>
         <translation>SIGALRM (אות תזמון)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="421"/>
+        <location filename="../qps.cpp" line="416"/>
         <source>SIGUSR1 (user-defined 1)</source>
         <translation>SIGUSR1 (הגדרת משתמש 1)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="423"/>
+        <location filename="../qps.cpp" line="418"/>
         <source>SIGUSR2 (user-defined 2)</source>
         <translation>SIGUSR2 (הגדרת משתמש 2)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="425"/>
+        <location filename="../qps.cpp" line="420"/>
         <source>SIGCHLD (child death)</source>
         <translation>SIGCHLD (מות צאצא)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="427"/>
+        <location filename="../qps.cpp" line="422"/>
         <source>SIGTSTP (stop from tty)</source>
         <translation>SIGTSTP (עצירה מ־tty)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="429"/>
+        <location filename="../qps.cpp" line="424"/>
         <source>SIGTTIN (tty input)</source>
         <translation>SIGTTIN (קלט tty)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="431"/>
+        <location filename="../qps.cpp" line="426"/>
         <source>SIGTTOU (tty output)</source>
         <translation>SIGTTOU (פלט tty)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="438"/>
+        <location filename="../qps.cpp" line="433"/>
         <source>View Details</source>
         <translation>הצגת פרטים</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="676"/>
+        <location filename="../qps.cpp" line="671"/>
         <source>Show File Path</source>
         <translation>הצגת נתיב הקובץ</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="682"/>
+        <location filename="../qps.cpp" line="677"/>
         <source>Show Graph</source>
         <translation>הצגת תרשים</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="688"/>
+        <location filename="../qps.cpp" line="683"/>
         <source>Show Control Bar</source>
         <translation>הצגת סרגל הבקרה</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="699"/>
+        <location filename="../qps.cpp" line="694"/>
         <source>Include Child Times</source>
         <translation>לכלול את זמני הצאצאים</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="287"/>
+        <location filename="../qps.cpp" line="282"/>
         <source>Quit</source>
         <translation>יציאה</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1144"/>
-        <location filename="../qps.cpp" line="1175"/>
-        <location filename="../qps.cpp" line="1182"/>
-        <location filename="../qps.cpp" line="1203"/>
-        <location filename="../qps.cpp" line="1237"/>
-        <location filename="../qps.cpp" line="1332"/>
+        <location filename="../qps.cpp" line="1139"/>
+        <location filename="../qps.cpp" line="1170"/>
+        <location filename="../qps.cpp" line="1177"/>
+        <location filename="../qps.cpp" line="1198"/>
+        <location filename="../qps.cpp" line="1232"/>
+        <location filename="../qps.cpp" line="1327"/>
         <source>Permission denied</source>
         <translation>ההרשאה נדחתה</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1145"/>
+        <location filename="../qps.cpp" line="1140"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
         <translation>אין לך אפשרות לשנות nice של התהליכים הנבחרים. רק הבעלים ומשתמש העל מורשים לעשות זאת.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1176"/>
+        <location filename="../qps.cpp" line="1171"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
         <translation>אין לך אפשרות לשנות nice לתהליך %1 (%2). רק הבעלים של התהליך ומשתמש העל מורשים לעשות זאת.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1183"/>
+        <location filename="../qps.cpp" line="1178"/>
         <source>Only the super-user may lower the nice value of a process.</source>
         <translation>רק משתמש העל יכול להוריד את ערך ה־nice של תהליך.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1204"/>
+        <location filename="../qps.cpp" line="1199"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
         <translation>רק משתמש העל יכול לשנות את מדיניות התזמון ואת העדיפות הסטטית.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1238"/>
+        <location filename="../qps.cpp" line="1233"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
         <translation>אין לך הרשאות לשנות את התזמון ו/או העדיפות של התהליך %1 (%2). רק משתמש העל יכול לעשות זאת.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1299"/>
+        <location filename="../qps.cpp" line="1294"/>
         <source>Do you really want to terminate the selected process(es)?</source>
         <translation>לחסל את התהליך או התהליכים הנוכחיים?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1301"/>
+        <location filename="../qps.cpp" line="1296"/>
         <source>Do you really want to hang up the selected process(es)?</source>
         <translation>לנתק את התהליך או התהליכים הנבחרים?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1303"/>
+        <location filename="../qps.cpp" line="1298"/>
         <source>Do you really want to kill the selected process(es)?</source>
         <translation>להשמיד את התהליך או התהליכים הנוכחיים?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1312"/>
+        <location filename="../qps.cpp" line="1307"/>
         <source>Question</source>
         <translation>שאלה</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1333"/>
+        <location filename="../qps.cpp" line="1328"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
         <translation>אין לך הרשאות לשלוח אות לתהליך %1 (%2). רק משתמש העל והבעלים של התהליך יכולים לשלוח אליו אותות.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1682"/>
+        <location filename="../qps.cpp" line="1692"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
         <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1684"/>
+        <location filename="../qps.cpp" line="1694"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
         <translation>&lt;h2&gt; Qps %1 - מנהל תהליכים חזותי &lt;/h2&gt; %2 משתמש בספריית Qt %3&lt;br&gt;&lt;br&gt;&lt;b&gt;מקור: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;מערכת התקלות: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1704"/>
+        <location filename="../qps.cpp" line="1714"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
         <translation>&lt;b&gt;ה־Qps המקורי נוצר על ידי&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;תורמים&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
     </message>

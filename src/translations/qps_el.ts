@@ -941,17 +941,17 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../qps.cpp" line="1618"/>
+        <location filename="../qps.cpp" line="1628"/>
         <source>Show</source>
         <translation>Εμφάνιση</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1621"/>
+        <location filename="../qps.cpp" line="1631"/>
         <source>Hide</source>
         <translation>Απόκρυψη</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1626"/>
+        <location filename="../qps.cpp" line="1636"/>
         <source>Quit</source>
         <translation>Έξοδος</translation>
     </message>
@@ -1125,247 +1125,247 @@
     </message>
     <message>
         <location filename="../qps.cpp" line="249"/>
-        <location filename="../qps.cpp" line="1666"/>
+        <location filename="../qps.cpp" line="1676"/>
         <source>About</source>
         <translation>Σχετικά</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="335"/>
+        <location filename="../qps.cpp" line="330"/>
         <source>test</source>
         <translation>Δοκιμή</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="336"/>
+        <location filename="../qps.cpp" line="331"/>
         <source>Copied to Clipboard</source>
         <translation>Αντιγράφηκε στο πρόχειρο</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="388"/>
+        <location filename="../qps.cpp" line="383"/>
         <source>context popup</source>
         <translation>ανάδυση πλαισίου</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="389"/>
+        <location filename="../qps.cpp" line="384"/>
         <source>Renice...</source>
         <translation>Renice...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="390"/>
+        <location filename="../qps.cpp" line="385"/>
         <source>Scheduling...</source>
         <translation>Χρονοπρογραμματισμός...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="392"/>
+        <location filename="../qps.cpp" line="387"/>
         <source>Terminate</source>
         <translation>Τερματισμός</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="393"/>
+        <location filename="../qps.cpp" line="388"/>
         <source>Hangup</source>
         <translation>Αποσύνδεση</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="394"/>
+        <location filename="../qps.cpp" line="389"/>
         <source>Kill</source>
         <translation>kill</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="395"/>
+        <location filename="../qps.cpp" line="390"/>
         <source>Stop</source>
         <translation>Διακοπή</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="397"/>
+        <location filename="../qps.cpp" line="392"/>
         <source>Continue</source>
         <translation>Συνέχεια</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="400"/>
+        <location filename="../qps.cpp" line="395"/>
         <source>Other Signals</source>
         <translation>Άλλα σήματα</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="401"/>
+        <location filename="../qps.cpp" line="396"/>
         <source>SIGINT (interrupt)</source>
         <translation>SIGINT (διακοπή)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="403"/>
+        <location filename="../qps.cpp" line="398"/>
         <source>SIGCONT (continue)</source>
         <translation>SIGCONT (συνέχιση)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="405"/>
+        <location filename="../qps.cpp" line="400"/>
         <source>SIGSTOP (stop)</source>
         <translation>SIGSTOP (τερματισμός)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="407"/>
+        <location filename="../qps.cpp" line="402"/>
         <source>SIGQUIT (quit)</source>
         <translation>SIGQUIT (έξοδος)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="409"/>
+        <location filename="../qps.cpp" line="404"/>
         <source>SIGILL (illegal instruction)</source>
         <translation>SIGILL (παράνομη εντολή)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="411"/>
+        <location filename="../qps.cpp" line="406"/>
         <source>SIGABRT (abort)</source>
         <translation>SIGABRT (εγκατάλειψη)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="413"/>
+        <location filename="../qps.cpp" line="408"/>
         <source>SIGFPE (floating point exception)</source>
         <translation>SIGFPE (σφάλμα αριθμού κινητής υποδιαστολής)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="415"/>
+        <location filename="../qps.cpp" line="410"/>
         <source>SIGSEGV (segmentation violation)</source>
         <translation>SIGSEGV (παραβίαση τμηματοποίησης)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="417"/>
+        <location filename="../qps.cpp" line="412"/>
         <source>SIGPIPE (broken pipe)</source>
         <translation>SIGPIPE (σφάλμα διασωλήνωσης)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="419"/>
+        <location filename="../qps.cpp" line="414"/>
         <source>SIGALRM (timer signal)</source>
         <translation>SIGALRM (σήμα χρονοδιακόπτη)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="421"/>
+        <location filename="../qps.cpp" line="416"/>
         <source>SIGUSR1 (user-defined 1)</source>
         <translation>SIGUSR1 (καθορισμένη από τον χρήστη 1)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="423"/>
+        <location filename="../qps.cpp" line="418"/>
         <source>SIGUSR2 (user-defined 2)</source>
         <translation>SIGUSR2 (καθορισμένη από τον χρήστη 2)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="425"/>
+        <location filename="../qps.cpp" line="420"/>
         <source>SIGCHLD (child death)</source>
         <translation>SIGCHLD (νεκρός απόγονος)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="427"/>
+        <location filename="../qps.cpp" line="422"/>
         <source>SIGTSTP (stop from tty)</source>
         <translation>SIGTSTP (διακοπή από tty)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="429"/>
+        <location filename="../qps.cpp" line="424"/>
         <source>SIGTTIN (tty input)</source>
         <translation>SIGTTIN (εισαγωγή tty)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="431"/>
+        <location filename="../qps.cpp" line="426"/>
         <source>SIGTTOU (tty output)</source>
         <translation>SIGTTOU (έξοδος tty)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="438"/>
+        <location filename="../qps.cpp" line="433"/>
         <source>View Details</source>
         <translation>Προβολή λεπτομερειών</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="676"/>
+        <location filename="../qps.cpp" line="671"/>
         <source>Show File Path</source>
         <translation>Εμφάνιση της διαδρομής αρχείου</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="682"/>
+        <location filename="../qps.cpp" line="677"/>
         <source>Show Graph</source>
         <translation>Εμφάνιση γραφήματος</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="688"/>
+        <location filename="../qps.cpp" line="683"/>
         <source>Show Control Bar</source>
         <translation>Προβολή της γραμμής ελέγχου</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="699"/>
+        <location filename="../qps.cpp" line="694"/>
         <source>Include Child Times</source>
         <translation>Συμπερίληψη των χρόνων των τέκνων</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="287"/>
+        <location filename="../qps.cpp" line="282"/>
         <source>Quit</source>
         <translation>Έξοδος</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1144"/>
-        <location filename="../qps.cpp" line="1175"/>
-        <location filename="../qps.cpp" line="1182"/>
-        <location filename="../qps.cpp" line="1203"/>
-        <location filename="../qps.cpp" line="1237"/>
-        <location filename="../qps.cpp" line="1332"/>
+        <location filename="../qps.cpp" line="1139"/>
+        <location filename="../qps.cpp" line="1170"/>
+        <location filename="../qps.cpp" line="1177"/>
+        <location filename="../qps.cpp" line="1198"/>
+        <location filename="../qps.cpp" line="1232"/>
+        <location filename="../qps.cpp" line="1327"/>
         <source>Permission denied</source>
         <translation>Άρνηση αδείας</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1145"/>
+        <location filename="../qps.cpp" line="1140"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
         <translation>Δεν έχετε άδεια για να κάνετε renice της επιλεγμένης διεργασίας. Μόνο ο ιδιοκτήτης της διεργασίας και ο διαχειριστής έχουν.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1176"/>
+        <location filename="../qps.cpp" line="1171"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
         <translation>Δεν έχετε άδεια για να κάνετε renice της διεργασίας %1 (%2). Μόνο ο ιδιοκτήτης και ο διαχειριστής έχουν.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1183"/>
+        <location filename="../qps.cpp" line="1178"/>
         <source>Only the super-user may lower the nice value of a process.</source>
         <translation>Μόνο ο διαχειριστής μπορεί να μειώσει την τιμή προτεραιότητας μιας διεργασίας.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1204"/>
+        <location filename="../qps.cpp" line="1199"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
         <translation>Μόνο ο διαχειριστής μπορεί να αλλάξει την πολιτική προγραμματισμού και τη στατική προτεραιότητα.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1238"/>
+        <location filename="../qps.cpp" line="1233"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
         <translation>Μόνον ο διαχειριστής μπορεί να αλλάξει τον προγραμματισμό και/ή την προτεραιότητα της διεργασίας %1 (%2).</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1299"/>
+        <location filename="../qps.cpp" line="1294"/>
         <source>Do you really want to terminate the selected process(es)?</source>
         <translation>Επιθυμείτε πραγματικά τον τερματισμό των επιλεγμένων διεργασιών;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1301"/>
+        <location filename="../qps.cpp" line="1296"/>
         <source>Do you really want to hang up the selected process(es)?</source>
         <translation>Επιθυμείτε πραγματικά την αναστολή των επιλεγμένων διεργασιών;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1303"/>
+        <location filename="../qps.cpp" line="1298"/>
         <source>Do you really want to kill the selected process(es)?</source>
         <translation>Επιθυμείτε πραγματικά να σκοτώσετε τις επιλεγμένες διεργασίες;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1312"/>
+        <location filename="../qps.cpp" line="1307"/>
         <source>Question</source>
         <translation>Ερώτηση</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1333"/>
+        <location filename="../qps.cpp" line="1328"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
         <translation>Δεν έχετε δικαίωμα αποστολής ενός σήματος στην διεργασία %1 (%2). Μόνον ο ο υπερχρήστης και ο ιδιοκτήτης της διεργασίας μπορούν αν στέλνουν σήματα σε αυτήν.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1682"/>
+        <location filename="../qps.cpp" line="1692"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
         <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1684"/>
+        <location filename="../qps.cpp" line="1694"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
         <translation>&lt;h2&gt; Qps %1 - Ένας οπτικός διαχειριστής διεργασιών &lt;/h2&gt; %2 κάνοντας χρήση της βιβλιοθήκης Qt %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Πηγή: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Ιχνηλάτης σφαλμάτων: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1704"/>
+        <location filename="../qps.cpp" line="1714"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
         <translation>&lt;b&gt;Αρχική δημιουργία του Qps από&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Συνεισφέροντες&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
     </message>
