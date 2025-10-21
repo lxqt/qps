@@ -941,17 +941,17 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../qps.cpp" line="1618"/>
+        <location filename="../qps.cpp" line="1628"/>
         <source>Show</source>
         <translation>Vis</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1621"/>
+        <location filename="../qps.cpp" line="1631"/>
         <source>Hide</source>
         <translation>Skjul</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1626"/>
+        <location filename="../qps.cpp" line="1636"/>
         <source>Quit</source>
         <translation>Afslut</translation>
     </message>
@@ -1125,247 +1125,247 @@
     </message>
     <message>
         <location filename="../qps.cpp" line="249"/>
-        <location filename="../qps.cpp" line="1666"/>
+        <location filename="../qps.cpp" line="1676"/>
         <source>About</source>
         <translation>Om</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="335"/>
+        <location filename="../qps.cpp" line="330"/>
         <source>test</source>
         <translation>test</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="336"/>
+        <location filename="../qps.cpp" line="331"/>
         <source>Copied to Clipboard</source>
         <translation>Kopieret til udklipsholder</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="388"/>
+        <location filename="../qps.cpp" line="383"/>
         <source>context popup</source>
         <translation>genvejsmenu</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="389"/>
+        <location filename="../qps.cpp" line="384"/>
         <source>Renice...</source>
         <translation>Renice...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="390"/>
+        <location filename="../qps.cpp" line="385"/>
         <source>Scheduling...</source>
         <translation>Planlægning...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="392"/>
+        <location filename="../qps.cpp" line="387"/>
         <source>Terminate</source>
         <translation>Terminér</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="393"/>
+        <location filename="../qps.cpp" line="388"/>
         <source>Hangup</source>
         <translation>Læg på</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="394"/>
+        <location filename="../qps.cpp" line="389"/>
         <source>Kill</source>
         <translation>Dræb</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="395"/>
+        <location filename="../qps.cpp" line="390"/>
         <source>Stop</source>
         <translation>Stop</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="397"/>
+        <location filename="../qps.cpp" line="392"/>
         <source>Continue</source>
         <translation>Fortsæt</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="400"/>
+        <location filename="../qps.cpp" line="395"/>
         <source>Other Signals</source>
         <translation>Andre signaler</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="401"/>
+        <location filename="../qps.cpp" line="396"/>
         <source>SIGINT (interrupt)</source>
         <translation>SIGINT (interrupt)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="403"/>
+        <location filename="../qps.cpp" line="398"/>
         <source>SIGCONT (continue)</source>
         <translation>SIGCONT (fortsæt)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="405"/>
+        <location filename="../qps.cpp" line="400"/>
         <source>SIGSTOP (stop)</source>
         <translation>SIGSTOP (stop)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="407"/>
+        <location filename="../qps.cpp" line="402"/>
         <source>SIGQUIT (quit)</source>
         <translation>SIGQUIT (afslut)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="409"/>
+        <location filename="../qps.cpp" line="404"/>
         <source>SIGILL (illegal instruction)</source>
         <translation>SIGILL (ulovlig instruktion)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="411"/>
+        <location filename="../qps.cpp" line="406"/>
         <source>SIGABRT (abort)</source>
         <translation>SIGABRT (afbryd)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="413"/>
+        <location filename="../qps.cpp" line="408"/>
         <source>SIGFPE (floating point exception)</source>
         <translation>SIGFPE (undtagelse med flydende kommatal)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="415"/>
+        <location filename="../qps.cpp" line="410"/>
         <source>SIGSEGV (segmentation violation)</source>
         <translation>SIGSEGV (overtrædelse af segmentering)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="417"/>
+        <location filename="../qps.cpp" line="412"/>
         <source>SIGPIPE (broken pipe)</source>
         <translation>SIGPIPE (ødelagt pipe)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="419"/>
+        <location filename="../qps.cpp" line="414"/>
         <source>SIGALRM (timer signal)</source>
         <translation>SIGALRM (timersignal)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="421"/>
+        <location filename="../qps.cpp" line="416"/>
         <source>SIGUSR1 (user-defined 1)</source>
         <translation>SIGUSR1 (brugerdefineret 1)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="423"/>
+        <location filename="../qps.cpp" line="418"/>
         <source>SIGUSR2 (user-defined 2)</source>
         <translation>SIGUSR2 (brugerdefineret 2)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="425"/>
+        <location filename="../qps.cpp" line="420"/>
         <source>SIGCHLD (child death)</source>
         <translation>SIGCHLD (barnedød)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="427"/>
+        <location filename="../qps.cpp" line="422"/>
         <source>SIGTSTP (stop from tty)</source>
         <translation>SIGTSTP (stop fra tty)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="429"/>
+        <location filename="../qps.cpp" line="424"/>
         <source>SIGTTIN (tty input)</source>
         <translation>SIGTTIN (tty-input)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="431"/>
+        <location filename="../qps.cpp" line="426"/>
         <source>SIGTTOU (tty output)</source>
         <translation>SIGTTOU (tty-output)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="438"/>
+        <location filename="../qps.cpp" line="433"/>
         <source>View Details</source>
         <translation>Vis detaljer</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="676"/>
+        <location filename="../qps.cpp" line="671"/>
         <source>Show File Path</source>
         <translation>Vis filsti</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="682"/>
+        <location filename="../qps.cpp" line="677"/>
         <source>Show Graph</source>
         <translation>Vis graf</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="688"/>
+        <location filename="../qps.cpp" line="683"/>
         <source>Show Control Bar</source>
         <translation>Vis kontrolpanel</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="699"/>
+        <location filename="../qps.cpp" line="694"/>
         <source>Include Child Times</source>
         <translation>Medtag barnetider</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="287"/>
+        <location filename="../qps.cpp" line="282"/>
         <source>Quit</source>
         <translation>Afslut</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1144"/>
-        <location filename="../qps.cpp" line="1175"/>
-        <location filename="../qps.cpp" line="1182"/>
-        <location filename="../qps.cpp" line="1203"/>
-        <location filename="../qps.cpp" line="1237"/>
-        <location filename="../qps.cpp" line="1332"/>
+        <location filename="../qps.cpp" line="1139"/>
+        <location filename="../qps.cpp" line="1170"/>
+        <location filename="../qps.cpp" line="1177"/>
+        <location filename="../qps.cpp" line="1198"/>
+        <location filename="../qps.cpp" line="1232"/>
+        <location filename="../qps.cpp" line="1327"/>
         <source>Permission denied</source>
         <translation>Tilladelse nægtet</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1145"/>
+        <location filename="../qps.cpp" line="1140"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
         <translation>Du har ikke tilladelse til at renice de valgte processer. Det er kun processens ejer og superbrugeren som har tilladelse til det.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1176"/>
+        <location filename="../qps.cpp" line="1171"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
         <translation>Du har ikke tilladelse til at renice processen %1 (%2). Det er kun processens ejer og superbrugeren som har tilladelse til det.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1183"/>
+        <location filename="../qps.cpp" line="1178"/>
         <source>Only the super-user may lower the nice value of a process.</source>
         <translation>Det er kun superbrugeren som må mindske nice-værdien af en process.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1204"/>
+        <location filename="../qps.cpp" line="1199"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
         <translation>Det er kun superbrugeren som må skifte planlægningspolitikken og statisk prioritet.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1238"/>
+        <location filename="../qps.cpp" line="1233"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
         <translation>Du har ikke tilladelse til at skifte planlægningen og/eller prioriteten af processen %1 (%2). Det er kun superbrugeren som må det.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1299"/>
+        <location filename="../qps.cpp" line="1294"/>
         <source>Do you really want to terminate the selected process(es)?</source>
         <translation>Vil du virkelig terminere de valgte processer?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1301"/>
+        <location filename="../qps.cpp" line="1296"/>
         <source>Do you really want to hang up the selected process(es)?</source>
         <translation>Vil du virkelig lægge de valgte processer på?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1303"/>
+        <location filename="../qps.cpp" line="1298"/>
         <source>Do you really want to kill the selected process(es)?</source>
         <translation>Vil du virkelig dræbe de valgte processer?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1312"/>
+        <location filename="../qps.cpp" line="1307"/>
         <source>Question</source>
         <translation>Spørgsmål</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1333"/>
+        <location filename="../qps.cpp" line="1328"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
         <translation>Du har ikke tilladelse til at sende et signal til processen %1 (%2). Det er kun superbrugeren og ejeren af processen som må sende signaler til den.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1682"/>
+        <location filename="../qps.cpp" line="1692"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
         <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1684"/>
+        <location filename="../qps.cpp" line="1694"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
         <translation>&lt;h2&gt; Qps %1 - En visuel proceshåntering &lt;/h2&gt; %2 bruger Qt-bibliotek %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Kilde: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1704"/>
+        <location filename="../qps.cpp" line="1714"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
         <translation>&lt;b&gt;Original Qps af&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Bidragydere&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
     </message>
