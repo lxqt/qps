@@ -59,12 +59,12 @@
     <message>
         <location filename="../prefs.cpp" line="75"/>
         <source>Disclosure Triangles</source>
-        <translation type="unfinished"></translation>
+        <translation>Laajennus kolmiot</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="76"/>
         <source>Branch Lines</source>
-        <translation type="unfinished"></translation>
+        <translation>Prosessipuun haarat</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="82"/>
@@ -336,7 +336,7 @@
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Major,Minor device numbers (dec)</source>
-        <translation type="unfinished"></translation>
+        <translation>Ylä ja ala -laitetunnisteet (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
@@ -675,7 +675,7 @@
     <message>
         <location filename="../proc.cpp" line="2663"/>
         <source>Affinity CPU mask (0 -&gt; API not supported)</source>
-        <translation type="unfinished"></translation>
+        <translation>Affinity CPU -maski (0 -&gt; ei API tuettu)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2665"/>
@@ -705,7 +705,7 @@
     <message>
         <location filename="../proc.cpp" line="2670"/>
         <source>Virtual image size of process</source>
-        <translation type="unfinished"></translation>
+        <translation>Prosessin kuvan virtuaalinen koko</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2672"/>
@@ -715,7 +715,7 @@
     <message>
         <location filename="../proc.cpp" line="2672"/>
         <source>Resident set size</source>
-        <translation type="unfinished"></translation>
+        <translation>Koko RAM:lla</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2674"/>
@@ -735,7 +735,7 @@
     <message>
         <location filename="../proc.cpp" line="2676"/>
         <source>Text(code) resident set size</source>
-        <translation type="unfinished"></translation>
+        <translation>Teksti(koodi) koko RAM:lla</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2678"/>
@@ -745,7 +745,7 @@
     <message>
         <location filename="../proc.cpp" line="2678"/>
         <source>Data resident set size(malloc+global variable)</source>
-        <translation type="unfinished"></translation>
+        <translation>Tietojen koko RAM:lla (malloc + globaali muuttuja)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2680"/>
