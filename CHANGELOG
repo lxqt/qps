@@ -1,7 +1,7 @@
 2.12.0 / 2025-11-05
 ===================
  * Gave parent windows to some dialogs.
- * Fixed the screenshot URL is `org.lxqt.Qps.appdata.xml`.
+ * Fixed the screenshot URL in `org.lxqt.Qps.appdata.xml`.
 
 2.11.1 / 2025-05-17
 ===================
