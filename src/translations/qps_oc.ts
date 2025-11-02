@@ -16,22 +16,22 @@
     <message>
         <location filename="../details.cpp" line="628"/>
         <source>Description</source>
-        <translation type="unfinished"></translation>
+        <translation>Descripcion</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="628"/>
         <source>Field description</source>
-        <translation type="unfinished"></translation>
+        <translation>Descripcion del camp</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="629"/>
         <source>Value</source>
-        <translation type="unfinished"></translation>
+        <translation>Valor</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="629"/>
         <source>Field value</source>
-        <translation type="unfinished"></translation>
+        <translation>Valor del camp</translation>
     </message>
 </context>
 <context>
@@ -39,12 +39,12 @@
     <message>
         <location filename="../prefs.cpp" line="59"/>
         <source>Exit on closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Quitar en tampant</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="60"/>
         <source>Remember Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Remembrar la posicion</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="68"/>
@@ -268,12 +268,12 @@
     <message>
         <location filename="../dialogs.cpp" line="85"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Anullar</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="87"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>D’acòrdi</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="121"/>
@@ -291,7 +291,7 @@
     <message>
         <location filename="../details.cpp" line="392"/>
         <source>Address Range</source>
-        <translation type="unfinished"></translation>
+        <translation>Plaja d’adreças</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="392"/>
@@ -301,7 +301,7 @@
     <message>
         <location filename="../details.cpp" line="393"/>
         <source>Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Talha</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="393"/>
@@ -331,7 +331,7 @@
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Device</source>
-        <translation type="unfinished"></translation>
+        <translation>Dispositiu</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
@@ -374,12 +374,12 @@
     <message>
         <location filename="../dialogs.cpp" line="280"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Anullar</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="283"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>D’acòrdi</translation>
     </message>
 </context>
 <context>
@@ -387,12 +387,12 @@
     <message>
         <location filename="../prefs.cpp" line="150"/>
         <source>Preferences</source>
-        <translation type="unfinished"></translation>
+        <translation>Preferéncias</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="157"/>
         <source>Setting</source>
-        <translation type="unfinished"></translation>
+        <translation>Parametratge</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="191"/>
@@ -412,7 +412,7 @@
     <message>
         <location filename="../prefs.cpp" line="205"/>
         <source>default</source>
-        <translation type="unfinished"></translation>
+        <translation>per defaut</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="206"/>
@@ -422,7 +422,7 @@
     <message>
         <location filename="../prefs.cpp" line="240"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>Aparéncia</translation>
     </message>
 </context>
 <context>
@@ -485,7 +485,7 @@
     <message>
         <location filename="../proc.cpp" line="2625"/>
         <source>Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminal</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2627"/>
@@ -500,7 +500,7 @@
     <message>
         <location filename="../proc.cpp" line="2629"/>
         <source>USER</source>
-        <translation type="unfinished"></translation>
+        <translation>UTILIZAIRE</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2629"/>
@@ -510,7 +510,7 @@
     <message>
         <location filename="../proc.cpp" line="2631"/>
         <source>GROUP</source>
-        <translation type="unfinished"></translation>
+        <translation>GROP</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2631"/>
@@ -953,7 +953,7 @@
     <message>
         <location filename="../qps.cpp" line="1636"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>Quitar</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="430"/>
@@ -1046,7 +1046,7 @@
     <message>
         <location filename="../qps.cpp" line="176"/>
         <source>Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Session</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="180"/>
@@ -1066,7 +1066,7 @@
     <message>
         <location filename="../qps.cpp" line="187"/>
         <source>Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Camps</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="188"/>
@@ -1116,23 +1116,23 @@
     <message>
         <location filename="../qps.cpp" line="242"/>
         <source>Preferences...</source>
-        <translation type="unfinished"></translation>
+        <translation>Preferéncias...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="248"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajuda</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="249"/>
         <location filename="../qps.cpp" line="1676"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>A prepaus</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="330"/>
         <source>test</source>
-        <translation type="unfinished"></translation>
+        <translation>ensag</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="331"/>

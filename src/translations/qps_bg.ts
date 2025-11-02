@@ -1312,7 +1312,7 @@
     <message>
         <location filename="../qps.cpp" line="1171"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
-        <translation>Нямате разрешение да промените приоритета на процеса % 1 (% 2). Само собственикът на процеса и суперпотребителят имат право да правят това.</translation>
+        <translation>Нямате разрешение да промените приоритета на процеса %1 (%2). Само собственикът на процеса и суперпотребителят имат право да правят това.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1178"/>
@@ -1327,7 +1327,7 @@
     <message>
         <location filename="../qps.cpp" line="1233"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
-        <translation>Нямате разрешение да промените разпределението и / или приоритета на процеса% 1 (% 2). Това може да направи само суперпотребителят.</translation>
+        <translation>Нямате разрешение да промените разпределението и / или приоритета на процеса %1 (%2). Това може да направи само суперпотребителят.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1294"/>
@@ -1352,7 +1352,7 @@
     <message>
         <location filename="../qps.cpp" line="1328"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
-        <translation>Нямате разрешение да изпратите сигнал към процес % 1 (% 2). Само суперпотребителят и собственикът на процеса могат да му изпращат сигнали.</translation>
+        <translation>Нямате разрешение да изпратите сигнал към процес %1 (%2). Само суперпотребителят и собственикът на процеса могат да му изпращат сигнали.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1692"/>
