@@ -186,7 +186,7 @@
     <message>
         <location filename="../details.cpp" line="580"/>
         <source>Value</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Valor</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="580"/>
@@ -1292,7 +1292,7 @@
     <message>
         <location filename="../qps.cpp" line="282"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Quitar</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1139"/>
@@ -1400,12 +1400,12 @@
     <message>
         <location filename="../dialogs.cpp" line="314"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">D’acòrdi</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="316"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Anullar</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="346"/>
@@ -1451,12 +1451,12 @@
     <message>
         <location filename="../dialogs.cpp" line="225"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Anullar</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="229"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">D’acòrdi</translation>
     </message>
 </context>
 <context>
