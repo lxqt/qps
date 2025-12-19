@@ -55,7 +55,7 @@ class subcpuRack : public QWidget
 class gwidget
 {
   public:
-    gwidget() { x = 0, y = 0, width = 0, height = 0; };
+    gwidget() { x = 0, y = 0, width = 0, height = 0; parent = nullptr; };
     virtual ~gwidget() = default;
     gwidget(QWidget *p) { parent = p; };
     virtual void draw(QPainter */*p*/) { printf("gwidget\n"); };
