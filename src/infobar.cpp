@@ -104,8 +104,19 @@ void Infobar::drawGraphOnPixmap()
     QPainter p(&pixmap);
     p.fillRect(rect(), QBrush(Qt::black));
 
+    // use antialiasing with fractional scale factors
+    qreal pixelRatio = devicePixelRatio();
+    if (static_cast<qreal>(qRound(pixelRatio)) != pixelRatio)
+    {
+        p.save();
+        p.setRenderHint(QPainter::Antialiasing, true);
+    }
+
     for (int i = 0; i < wlist.size(); i++)
         wlist[i]->draw(&p);
+
+    if (static_cast<qreal>(qRound(pixelRatio)) != pixelRatio)
+        p.restore();
 
     make_graph(width(), height(), &p);
 }
@@ -171,11 +182,14 @@ int drawSPECTRUM(QPainter *p, int x, int y, const char *name, int total,
     if (total == 0)
         return w; //**
 
+    // use a thicker pen with antialiasing to make the bar more visible
+    qreal penWidth = (p->renderHints() & QPainter::Antialiasing) ? 1.5 : 1.0;
+
     // draw total_dark_null line
     bar_h = h - 1;
     ty = y + 2;
     tx = 0;
-    p->setPen(total_color);
+    p->setPen(QPen(total_color, penWidth));
     for (i = 0; i < TOTAL_BAR; i++)
     {
         p->drawLine(bar_xoffset + tx, ty, bar_xoffset + tx, ty + bar_h);
@@ -188,7 +202,7 @@ int drawSPECTRUM(QPainter *p, int x, int y, const char *name, int total,
         total = 1;
     tx = 0;
     // draw part1
-    p->setPen(part1_color);
+    p->setPen(QPen(part1_color, penWidth));
     bar = part1 * TOTAL_BAR / total;
     if (bar == 0 and part1 != 0)
         bar = 1;
@@ -201,7 +215,7 @@ int drawSPECTRUM(QPainter *p, int x, int y, const char *name, int total,
 
     if (part2 >= 0)
     {
-        p->setPen(part2_color);
+        p->setPen(QPen(part2_color, penWidth));
         bar = part2 * TOTAL_BAR / total;
         if (bar == 0 and part2 != 0)
             bar = 1;
@@ -214,7 +228,7 @@ int drawSPECTRUM(QPainter *p, int x, int y, const char *name, int total,
     }
     if (part3 >= 0)
     {
-        p->setPen(part3_color);
+        p->setPen(QPen(part3_color, penWidth));
         bar = part3 * (TOTAL_BAR) / total;
         for (i = 0; i < bar; i++)
         {
@@ -257,13 +271,16 @@ int drawSPECTRUM2(QPainter *p, int x, int y, char *name, int total,
     if (total == 0)
         return w; //**
 
+    // use a thicker pen with antialiasing to make the bar more visible
+    qreal penWidth = (p->renderHints() & QPainter::Antialiasing) ? 2.0 : 1.0;
+
     // draw total_dark_null line
     bar_h = bar_h - 1;
 
     ty = y + 2;
     tx = 0;
     // draw Total_dark_bar
-    p->setPen(total_color);
+    p->setPen(QPen(total_color, penWidth));
     for (i = 0; i < bar_w; i++)
     {
         p->drawLine(bar_xoffset + tx, ty, bar_xoffset + tx, ty + bar_h);
@@ -276,7 +293,7 @@ int drawSPECTRUM2(QPainter *p, int x, int y, char *name, int total,
 
     tx = 0;
     // draw part1
-    p->setPen(part1_color);
+    p->setPen(QPen(part1_color, penWidth));
     bar = part1 * bar_w / total;
     if (bar == 0 and part1 != 0)
         bar = 1;
@@ -288,7 +305,7 @@ int drawSPECTRUM2(QPainter *p, int x, int y, char *name, int total,
 
     if (part2 >= 0)
     {
-        p->setPen(part2_color);
+        p->setPen(QPen(part2_color, penWidth));
         bar = part2 * bar_w / total;
         if (bar == 0 and part2 != 0)
             bar = 1;
@@ -300,7 +317,7 @@ int drawSPECTRUM2(QPainter *p, int x, int y, char *name, int total,
     }
     if (part3 >= 0)
     {
-        p->setPen(part3_color);
+        p->setPen(QPen(part3_color, penWidth));
         bar = part3 * (bar_w) / total;
         for (i = 0; i < bar; i++)
         {

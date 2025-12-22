@@ -507,14 +507,14 @@ void UFrame::setTitle(QString str)
 void UFrame::paintEvent(QPaintEvent * /*event*/) {}
 
 QPixmap *letters;
-int pf_height = 12;
-int pf_width = 8;
+int pf_height = 13;
+int pf_width = 9;
 
 void init_xpm()
 {
     letters = new QPixmap(":/icon/letters.png");
-    pf_height = 12;
-    pf_width = 8;
+    pf_height = 13;
+    pf_width = 9;
 }
 
 int pf_str_width(char *str)
