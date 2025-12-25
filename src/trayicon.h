@@ -26,7 +26,7 @@
 
 #include <QWidget>
 #include <QMenu>
-
+#include <QIcon>
 #include <QSystemTrayIcon>
 
 //----------------------------------------------------------------------------
@@ -37,7 +37,7 @@ class TrayIcon : public QSystemTrayIcon
 {
     Q_OBJECT
   public:
-    TrayIcon(const QPixmap &icon, const QString &tooltip, QMenu *popup = nullptr,
+    TrayIcon(const QIcon &icon, const QString &tooltip, QMenu *popup = nullptr,
              QWidget *parent = nullptr);
     ~TrayIcon() override;
 
@@ -47,11 +47,6 @@ class TrayIcon : public QSystemTrayIcon
 
     void sysInstall();
 
-  public slots:
-    void setIcon(const QPixmap &icon);
-
-  private:
-    QPixmap pm;
 };
 
 #endif // CS_TRAYICON_H

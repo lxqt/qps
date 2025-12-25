@@ -43,8 +43,6 @@
 // . COLOR : orange FF5d00
 // . P_MEM  -> P_%MEM or P_PMEM
 
-#include "../icon/icon.xpm"
-
 #include <cstdlib>
 #include <cstdio>
 #include <cmath>
@@ -88,6 +86,7 @@
 #include <QDialogButtonBox>
 #include <QClipboard>
 #include <QSettings>
+#include <QIcon>
 
 #include <iostream>
 
@@ -157,7 +156,6 @@ Qps::Qps()
     timer_id = 0;
     field_win = nullptr;
     prefs_win = nullptr;
-    default_icon = nullptr;
     default_icon_set = false;
     explicit_quit = false;
     under_wayland = QGuiApplication::platformName() == "wayland";
@@ -604,9 +602,7 @@ void Qps::set_default_icon()
 {
     if (!default_icon_set)
     {
-        if (!default_icon)
-            default_icon = new QPixmap((const char **)icon_xpm);
-        setWindowIcon(*default_icon);
+        setWindowIcon(QIcon::fromTheme(QStringLiteral("qps")));
         default_icon_set = true;
     }
 }
@@ -624,7 +620,6 @@ void Qps::set_load_icon()
         bm.fill(Qt::color1);
         pm->setMask(bm);
     }
-    // QApplication::setWindowIcon(*pm);
     if (trayicon->hasSysTray)
     {
         trayicon->setIcon(*pm);
@@ -1620,8 +1615,9 @@ int main(int argc, char **argv, char **envp)
     QString caption( QString( "%1@%2").arg( getenv( "USER" ) )
                                       .arg( short_hostname() ) ); // geteuid()
 
+    QIcon icn = QIcon::fromTheme(QStringLiteral("qps"));
     qps->setWindowTitle(UniString(caption));
-    qps->setWindowIcon(QPixmap((const char **)icon_xpm));
+    qps->setWindowIcon(icn);
 
     // MOVETO  Systray
     QMenu *menu = new QMenu(qps);
@@ -1637,8 +1633,7 @@ int main(int argc, char **argv, char **envp)
                    , qps
                    , &Qps::save_quit);
 
-    trayicon = new TrayIcon(QPixmap((const char **)icon_xpm /* init icon */),
-                            "qps", menu);
+    trayicon = new TrayIcon(icn, "qps", menu);
     QObject::connect(trayicon,
                      &QSystemTrayIcon::activated, qps,
                      &Qps::clicked_trayicon);
