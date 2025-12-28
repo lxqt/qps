@@ -58,8 +58,8 @@ install(FILES qps.1 DESTINATION "${CMAKE_INSTALL_FULL_DATADIR}/man/man1")
 
 # install the app icon
 install(FILES
-    icon/qps.png
-    DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/icons/hicolor/48x48/apps"
+    icon/qps.svg
+    DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/icons/hicolor/scalable/apps"
 )
 # install the
 install(FILES org.lxqt.Qps.appdata.xml

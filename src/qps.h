@@ -285,7 +285,6 @@ class Qps : public QWidget
     int icon_height;
     int timer_id;
 
-    QPixmap *default_icon;
     bool default_icon_set; // true if default icon is current icon
     int context_col;       // where heading context menu was clicked
 

@@ -24,23 +24,18 @@
 #include "global.h"     // Qps *qps;
 #include "trayicon.h"
 
-TrayIcon::TrayIcon(const QPixmap &icon, const QString &tooltip, QMenu *popup,
+TrayIcon::TrayIcon(const QIcon &icon, const QString &tooltip, QMenu *popup,
                    QWidget *parent)
-    : QSystemTrayIcon(parent),
-      pm(icon)
+    : QSystemTrayIcon(parent)
 {
     QSystemTrayIcon::setIcon(icon);
     QSystemTrayIcon::setContextMenu(popup);
     QSystemTrayIcon::setToolTip(tooltip);
 
-    if (!pm.width() || !pm.height())
-        pm = QPixmap(45, 45);
     hasSysTray = QSystemTrayIcon::isSystemTrayAvailable();
 }
 
 TrayIcon::~TrayIcon() {}
-
-QPixmap TrayIcon::icon() const { return pm; }
 
 void TrayIcon::sysInstall()
 {
@@ -48,16 +43,4 @@ void TrayIcon::sysInstall()
     {
         show();
     }
-}
-
-/*!
-  update systray icon
-  called by qps::refresh()
-*/
-void TrayIcon::setIcon(const QPixmap &pix)
-{
-    QSystemTrayIcon::setIcon(pix);
-    if (isVisible() == false)
-        return;
-    pm = pix;
 }
