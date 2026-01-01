@@ -49,12 +49,12 @@
     <message>
         <location filename="../prefs.cpp" line="68"/>
         <source>Host Name Lookup</source>
-        <translation type="unfinished"></translation>
+        <translation>Host Name Lookup</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="69"/>
         <source>Service Name Lookup</source>
-        <translation type="unfinished"></translation>
+        <translation>Service Name Lookup</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="75"/>
