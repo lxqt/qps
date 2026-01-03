@@ -785,7 +785,7 @@
     <message>
         <location filename="../proc.cpp" line="2686"/>
         <source>io read (file)</source>
-        <translation type="unfinished"></translation>
+        <translation>io membaca (berkas)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2688"/>
@@ -795,17 +795,17 @@
     <message>
         <location filename="../proc.cpp" line="2688"/>
         <source>io write (file)</source>
-        <translation type="unfinished"></translation>
+        <translation>io menulis (berkas)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2690"/>
         <source>DT</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">DT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2690"/>
         <source>Number of dirty (non-written) pages</source>
-        <translation type="unfinished"></translation>
+        <translation>Jumlah kotor (tak tertulisi) halaman</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2692"/>
@@ -815,7 +815,7 @@
     <message>
         <location filename="../proc.cpp" line="2692"/>
         <source>State of the process </source>
-        <translation type="unfinished"></translation>
+        <translation>Keadaan proses </translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2694"/>
@@ -865,32 +865,32 @@
     <message>
         <location filename="../proc.cpp" line="2702"/>
         <source>Percentage of memory used (RSS/total mem)</source>
-        <translation type="unfinished"></translation>
+        <translation>Persentase memori yang digunakan (RSS/total mem)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2704"/>
         <source>START</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">START</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2704"/>
         <source>Time process started</source>
-        <translation type="unfinished"></translation>
+        <translation>Waktu mulai pemrosesan</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2706"/>
         <source>TIME</source>
-        <translation type="unfinished"></translation>
+        <translation>WAKTU</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2706"/>
         <source>Total CPU time used since start</source>
-        <translation type="unfinished"></translation>
+        <translation>Total waktu CPU digunakan semenjak start</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2708"/>
         <source>CPU</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">CPU</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2708"/>
@@ -900,22 +900,22 @@
     <message>
         <location filename="../proc.cpp" line="2710"/>
         <source>the process name</source>
-        <translation type="unfinished"></translation>
+        <translation>nama proses</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2710"/>
         <source>Process Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Nama Proses</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2714"/>
         <source>CWD</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">CWD</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2714"/>
         <source>Current working directory</source>
-        <translation type="unfinished"></translation>
+        <translation>Direktori kerja saat ini</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2715"/>
@@ -943,29 +943,29 @@
     <message>
         <location filename="../qps.cpp" line="1628"/>
         <source>Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Tampilkan</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1631"/>
         <source>Hide</source>
-        <translation type="unfinished"></translation>
+        <translation>Sembunyikan</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1636"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>Berhenti</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="430"/>
         <location filename="../infobar.cpp" line="437"/>
         <source>User: </source>
-        <translation type="unfinished"></translation>
+        <translation>Pengguna: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="431"/>
         <location filename="../infobar.cpp" line="438"/>
         <source>System: </source>
-        <translation type="unfinished"></translation>
+        <translation>Sistem: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="432"/>
@@ -987,13 +987,13 @@
         <location filename="../infobar.cpp" line="474"/>
         <location filename="../infobar.cpp" line="509"/>
         <source>Total: </source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Total: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="477"/>
         <location filename="../infobar.cpp" line="515"/>
         <source>Used: </source>
-        <translation type="unfinished"></translation>
+        <translation>Digunakan: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="481"/>
@@ -1008,7 +1008,7 @@
     <message>
         <location filename="../infobar.cpp" line="512"/>
         <source>Free: </source>
-        <translation type="unfinished"></translation>
+        <translation>Bebas: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="554"/>
@@ -1023,7 +1023,7 @@
     <message>
         <location filename="../infobar.cpp" line="727"/>
         <source>CPU Usage Summary:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ringkasan Penggunaan CPU:</translation>
     </message>
 </context>
 <context>
@@ -1036,42 +1036,42 @@
     <message>
         <location filename="../qps.cpp" line="172"/>
         <source>Remove Field</source>
-        <translation type="unfinished"></translation>
+        <translation>Hapus Bidang</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="173"/>
         <source>Add Field</source>
-        <translation type="unfinished"></translation>
+        <translation>Tambah Bidang</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="176"/>
         <source>Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Sesi</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="180"/>
         <source>View</source>
-        <translation type="unfinished"></translation>
+        <translation>Tampilan</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="181"/>
         <source>Process</source>
-        <translation type="unfinished"></translation>
+        <translation>Proses</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="182"/>
         <source>Log</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Log</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="187"/>
         <source>Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Bidang</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="188"/>
         <source>Custom Fields</source>
-        <translation type="unfinished"></translation>
+        <translation>Bidang Tersesuaikan</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="190"/>
@@ -1081,37 +1081,37 @@
     <message>
         <location filename="../qps.cpp" line="192"/>
         <source>Jobs Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>Bidang Pekerjaan </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="194"/>
         <source>Memory Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>Bidang Memori </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="197"/>
         <source>Scheduling Fields </source>
-        <translation type="unfinished"></translation>
+        <translation>Menjadwalkan Bidang </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="214"/>
         <source>Select Custom Fields...</source>
-        <translation type="unfinished"></translation>
+        <translation>Pilih Bidang Tersesuaikan...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="223"/>
         <source>Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Opsi</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="224"/>
         <source>Update Period...</source>
-        <translation type="unfinished"></translation>
+        <translation>Periode Pembaruan...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="233"/>
         <source>Show Status bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Tampilkan kotak Status</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="242"/>
@@ -1121,18 +1121,18 @@
     <message>
         <location filename="../qps.cpp" line="248"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Bantuan</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="249"/>
         <location filename="../qps.cpp" line="1676"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Tentang</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="330"/>
         <source>test</source>
-        <translation type="unfinished"></translation>
+        <translation>tes</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="331"/>
@@ -1152,12 +1152,12 @@
     <message>
         <location filename="../qps.cpp" line="385"/>
         <source>Scheduling...</source>
-        <translation type="unfinished"></translation>
+        <translation>Penjadwalan...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="387"/>
         <source>Terminate</source>
-        <translation type="unfinished"></translation>
+        <translation>Hentikan</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="388"/>
@@ -1167,22 +1167,22 @@
     <message>
         <location filename="../qps.cpp" line="389"/>
         <source>Kill</source>
-        <translation type="unfinished"></translation>
+        <translation>Bunuh</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="390"/>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Stop</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="392"/>
         <source>Continue</source>
-        <translation type="unfinished"></translation>
+        <translation>Lanjut</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="395"/>
         <source>Other Signals</source>
-        <translation type="unfinished"></translation>
+        <translation>Sinyal lainnya</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="396"/>
