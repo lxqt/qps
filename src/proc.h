@@ -45,7 +45,7 @@ void check_system_requirement();
 int get_kernel_version();
 
 //#define F_PID 0x00000000
-enum fields
+enum fields : char
 {
     F_PID = 0,
 #ifdef LINUX
@@ -133,7 +133,7 @@ class Details;
 class Sockinfo
 {
   public:
-    enum proto_t
+    enum proto_t : unsigned char
     {
         TCP,
         UDP
@@ -183,7 +183,7 @@ class Mapsinfo
     unsigned long from, to;
     unsigned long offset;
     unsigned long inode;
-    QString filename; // null if name unknown
+    const QChar *filename; // null if name unknown
     char perm[4];     // "rwx[ps]"; last is private/shared flag
     unsigned minor, major;
 };
@@ -225,8 +225,8 @@ class Category
 
     QString name;
     QString help;
-    int index;
-    int id;
+    unsigned short index;
+    unsigned short id;
     bool reversed;       // testing
     bool flag_int_value; // testing: for total sum , cat_memory , cat_int
 };
@@ -434,8 +434,8 @@ class Cat_percent : public Category
     int compare(Procinfo *a, Procinfo *b) override;
 
   protected:
+    unsigned short field_width;
     float Procinfo::*float_member;
-    int field_width;
 };
 
 class Cat_tty : public Cat_string
@@ -496,13 +496,19 @@ class Procinfo // Process Infomation
 
     QList<SockInode *> sock_inodes; // socket inodes or NULL if not read
 #endif
-    int pid;
-    bool clone;
-
-    bool first_run;        // for optimization
-    char hashstr[128 * 8]; // cache
     size_t hashlen;
     int hashcmp(char *str);
+    char hashstr[128 * 8]; // cache
+    bool first_run;        // for optimization
+
+    bool clone;
+    char state;
+
+    bool accepted;
+    int test_stop; // for test
+    int session;   //	???
+
+    int pid;
 
     QString command;   // COMMAND
     QString cmdline;   // COMMAND_LINE
@@ -511,14 +517,9 @@ class Procinfo // Process Infomation
     QString cwd;       // null if not read
     QString root;      // null if not read
 
-    bool accepted;
-    int test_stop; // for test
-    int session;   //	???
-
     int uid, euid;
     int gid, egid;
 
-    char state;
     int ppid; // Parent's PID
     int pgrp;
     dev_t tty; // tty major:minor device
@@ -528,17 +529,22 @@ class Procinfo // Process Infomation
     int tgid;     // thread leader's id
 
 #ifdef LINUX
-    double tms; // slice time
     int slpavg;
+    double tms; // slice time
     unsigned long affcpu;
 
     int suid, fsuid;
     int sgid, fsgid;
-    int tpgid;
 
     unsigned long cminflt;
     unsigned long cmajflt;
+
+    int tpgid;
 #endif
+
+    // Linux: the cpu used most of the time of the process
+    // Solaris: the cpu on which the process last ran
+    int which_cpu;
 
     unsigned long io_read;       // KB
     unsigned long io_write;      // KB
@@ -587,10 +593,6 @@ class Procinfo // Process Infomation
     int policy; // -1 = uninitialized
     int rtprio; // 0-99, higher can pre-empt lower (-1 = uninitialized)
 
-    // Linux: the cpu used most of the time of the process
-    // Solaris: the cpu on which the process last ran
-    int which_cpu;
-
     // computed %cpu and %mem since last update
     float wcpu, old_wcpu; // %WCPUwheight cpu
     float pcpu;           // %CPU: percent cpu after last update
@@ -613,11 +615,12 @@ class Procinfo // Process Infomation
     bool hidekids : 1;  // true if children are hidden in tree view
     bool lastchild : 1; // true if last (visible) child in tree view
 
+    char refcnt;
+
     short level;                  // distance from process root
     QList<Procinfo *> children; // real child processes
     static const int MAX_CMD_LEN = 512;
 
-    char refcnt;
 
     // virtual child for Table_Tree
     QList<Procinfo *> table_children;
@@ -696,31 +699,35 @@ Q_DECLARE_TR_FUNCTIONS(Proc)
 #ifdef SOLARIS
     static kstat_ctl_t *kc; // NULL if kstat not opened
 #endif
+
+    unsigned short maxSizeHistory;
+    unsigned int current_gen;
+
     QHash<int, Category *> categories;
 
     Proclist procs; // processes indexed by pid
 
     // TESTING
-    QString supasswd; // test
-    int syshistoryMAX;
-    Proclist *hprocs; // temp_hprocs list
-    Proclist *mprocs; //
-    QList<SysHistory *> history;
+    [[maybe_unused]] QString supasswd; // test
+    [[maybe_unused]] int syshistoryMAX;
+    [[maybe_unused]] Proclist *hprocs; // temp_hprocs list
+    [[maybe_unused]] Proclist *mprocs; //
+    [[maybe_unused]] QList<SysHistory *> history;
 
     void setHistory(int tick);
     Proclist getHistory(int pos);
 
-    int qps_pid;   // test
-    float loadQps; // TEST
-    static int update_msec;
+    [[maybe_unused]]  int qps_pid;   // test
+    [[maybe_unused]]  float loadQps; // TEST
+    static unsigned short update_msec;
 
     // class
-    int num_cpus;     // current number of CPUs
-    int old_num_cpus; // previous number of CPUs
+    unsigned short num_cpus;     // current number of CPUs
+    unsigned short old_num_cpus; // previous number of CPUs
 
+    unsigned int num_process;     //  number of process
     long num_network_process; //  number of network(socket) process
     long num_opened_files;    //  number of opened normal(not socket) files
-    int num_process;          //  number of process
 
     long dt_total; //
     long dt_used;  //  cpu used time in clktick
@@ -735,8 +742,8 @@ Q_DECLARE_TR_FUNCTIONS(Proc)
     unsigned int clk_tick;  // the  number  of  clock ticks per second.
     unsigned int boot_time; // boot time in seconds since the Epoch
 
-    int mem_total, mem_free;   // (Kb)
-    int swap_total, swap_free; // in kB
+    unsigned int mem_total, mem_free;   // (Kb)
+    unsigned int swap_total, swap_free; // in kB
 
     int mem_available, mem_shared, mem_buffers, mem_cached; // Linux
 
@@ -762,7 +769,7 @@ Q_DECLARE_TR_FUNCTIONS(Proc)
 #endif
 
     // Solaris <sys/sysinfo.h> #defines CPU_xxx so we must avoid them
-    enum
+    enum : unsigned char
     {
         CPUTIME_USER,
 #ifdef LINUX
@@ -777,9 +784,6 @@ Q_DECLARE_TR_FUNCTIONS(Proc)
     };
 
     //#define CPU_TIMES(cpu, kind) cpu_times_vec[cpu * CPUTIMES + kind]
-
-    unsigned int current_gen;
-    int maxSizeHistory;
 };
 
 class Procview : public Proc
@@ -839,7 +843,7 @@ class Procview : public Proc
     static bool treeview;     // true if viewed in tree form
     bool enable;              // tmp
 
-    enum procstates
+    enum procstates : unsigned char
     {
         ALL,
         OWNED,
@@ -848,7 +852,7 @@ class Procview : public Proc
         HIDDEN,
         NETWORK
     };
-    enum fieldstates
+    enum fieldstates : unsigned char
     {
         USER = HIDDEN + 1,
         JOBS,
