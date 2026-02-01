@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="id">
+<TS version="2.1" language="kk">
 <context>
     <name>AllFields</name>
     <message>
         <location filename="../details.cpp" line="627"/>
         <source>Field</source>
-        <translation>Bidang</translation>
+        <translation>Өріс</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="627"/>
         <source>Field name</source>
-        <translation>Nama bidang</translation>
+        <translation>Өріс атауы</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="628"/>
         <source>Description</source>
-        <translation>Deskripsi</translation>
+        <translation>Сипаттама</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="628"/>
         <source>Field description</source>
-        <translation>Deskripsi bidang</translation>
+        <translation>Өріс сипаттамасы</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="629"/>
         <source>Value</source>
-        <translation>Nilai</translation>
+        <translation>Мән</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="629"/>
         <source>Field value</source>
-        <translation>Nilai bidang</translation>
+        <translation>Өріс мәні</translation>
     </message>
 </context>
 <context>
@@ -39,52 +39,52 @@
     <message>
         <location filename="../prefs.cpp" line="59"/>
         <source>Exit on closing</source>
-        <translation>Keluar saat menutup</translation>
+        <translation>Жабу кезінде шығу</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="60"/>
         <source>Remember Position</source>
-        <translation>Ingat Posisi</translation>
+        <translation>Орнын есте сақтау</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="68"/>
         <source>Host Name Lookup</source>
-        <translation>Pencarian Nama Host</translation>
+        <translation>Хост атын іздеу</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="69"/>
         <source>Service Name Lookup</source>
-        <translation>Pencarian Nama Layanan</translation>
+        <translation>Қызмет атын іздеу</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="75"/>
         <source>Disclosure Triangles</source>
-        <translation>Segitiga Pengungkapan</translation>
+        <translation>Ашу үшбұрыштары</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="76"/>
         <source>Branch Lines</source>
-        <translation>Garis Cabang</translation>
+        <translation>Бұтақ сызықтары</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="82"/>
         <source>Auto Save Settings on Exit</source>
-        <translation>Simpan Pengaturan Otomatis saat Keluar</translation>
+        <translation>Шығу кезінде баптауларды автоматты сақтау</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="83"/>
         <source>Selection: Copy PIDs to Clipboard</source>
-        <translation>Pilihan: Salin PID ke Papan Klip</translation>
+        <translation>Таңдау: PID-терді алмасу буферіне көшіру</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="85"/>
         <source>Normalize NICE</source>
-        <translation>Normalisasi NICE</translation>
+        <translation>NICE мәнін нормалау</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="86"/>
         <source>Use pmap for Map Names</source>
-        <translation>Gunakan pmap untuk Nama Pemetaan</translation>
+        <translation>Карта аттары үшін pmap қолдану</translation>
     </message>
 </context>
 <context>
@@ -92,7 +92,7 @@
     <message>
         <location filename="../prefs.cpp" line="106"/>
         <source>General</source>
-        <translation>Umum</translation>
+        <translation>Жалпы</translation>
     </message>
 </context>
 <context>
@@ -100,42 +100,42 @@
     <message>
         <location filename="../misc.cpp" line="634"/>
         <source>Linear</source>
-        <translation>Linear</translation>
+        <translation>Сызықтық</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="637"/>
         <source>Tree</source>
-        <translation>Pohon</translation>
+        <translation>Ағаш</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="646"/>
         <source>Thread</source>
-        <translation>Thread</translation>
+        <translation>Ағын</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="653"/>
         <source>All Processes</source>
-        <translation>Semua Proses</translation>
+        <translation>Барлық процестер</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="654"/>
         <source>Your Processes</source>
-        <translation>Proses Anda</translation>
+        <translation>Сіздің процестеріңіз</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="655"/>
         <source>Non-Root Processes</source>
-        <translation>Proses Non-Root</translation>
+        <translation>Root емес процестер</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="656"/>
         <source>Running Processes</source>
-        <translation>Proses Berjalan</translation>
+        <translation>Орындалып жатқан процестер</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="672"/>
         <source>Pause (Ctrl+Space)</source>
-        <translation>Jeda (Ctrl+Spasi)</translation>
+        <translation>Аялдату (Ctrl+Space)</translation>
     </message>
 </context>
 <context>
@@ -143,32 +143,32 @@
     <message>
         <location filename="../details.cpp" line="36"/>
         <source>Process %1 ( %2 ) - details</source>
-        <translation>Proses %1 ( %2 ) - detail</translation>
+        <translation>Процесс %1 ( %2 ) - егжей-тегжейі</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="45"/>
         <source>Files</source>
-        <translation>Berkas</translation>
+        <translation>Файлдар</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="54"/>
         <source>Sockets</source>
-        <translation>Soket</translation>
+        <translation>Сокеттер</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="59"/>
         <source>Memory Maps</source>
-        <translation>Peta Memori</translation>
+        <translation>Жад карталары</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="61"/>
         <source>Environment</source>
-        <translation>Lingkungan</translation>
+        <translation>Орта</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="62"/>
         <source>All Fields</source>
-        <translation>Semua Bidang</translation>
+        <translation>Барлық өрістер</translation>
     </message>
 </context>
 <context>
@@ -176,22 +176,22 @@
     <message>
         <location filename="../details.cpp" line="579"/>
         <source>Variable</source>
-        <translation>Variabel</translation>
+        <translation>Айнымалы</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="579"/>
         <source>Variable name</source>
-        <translation>Nama variabel</translation>
+        <translation>Айнымалы аты</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="580"/>
         <source>Value</source>
-        <translation>Nilai</translation>
+        <translation>Мән</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="580"/>
         <source>Variable value</source>
-        <translation>Nilai variabel</translation>
+        <translation>Айнымалы мәні</translation>
     </message>
 </context>
 <context>
@@ -199,12 +199,12 @@
     <message>
         <location filename="../fieldsel.cpp" line="34"/>
         <source>Select Custom Fields </source>
-        <translation>Pilih Bidang Kustom </translation>
+        <translation>Пайдаланушы өрістерін таңдау </translation>
     </message>
     <message>
         <location filename="../fieldsel.cpp" line="75"/>
         <source>Close</source>
-        <translation>Tutup</translation>
+        <translation>Жабу</translation>
     </message>
 </context>
 <context>
@@ -217,27 +217,27 @@
     <message>
         <location filename="../details.cpp" line="495"/>
         <source>File descriptor</source>
-        <translation>Deskriptor berkas</translation>
+        <translation>Файл дескрипторы</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="497"/>
         <source>Mode</source>
-        <translation>Mode</translation>
+        <translation>Режим</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="497"/>
         <source>Open mode</source>
-        <translation>Mode pembukaan</translation>
+        <translation>Ашу режимі</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="499"/>
         <source>Name</source>
-        <translation>Nama</translation>
+        <translation>Аты</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="499"/>
         <source>File name (if available)</source>
-        <translation>Nama berkas (jika tersedia)</translation>
+        <translation>Файл аты (қолжетімді болса)</translation>
     </message>
 </context>
 <context>
@@ -245,12 +245,12 @@
     <message>
         <location filename="../infobar.cpp" line="785"/>
         <source>I/O Summary:</source>
-        <translation>Ringkasan I/O:</translation>
+        <translation>Енгізу/шығару жиынтығы:</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="819"/>
         <source>No input or output</source>
-        <translation>Tidak ada input atau output</translation>
+        <translation>Енгізу немесе шығару жоқ</translation>
     </message>
 </context>
 <context>
@@ -258,32 +258,32 @@
     <message>
         <location filename="../dialogs.cpp" line="43"/>
         <source>Change Update Period</source>
-        <translation>Ubah Periode Pembaruan</translation>
+        <translation>Жаңарту кезеңін өзгерту</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="49"/>
         <source>New Update Period</source>
-        <translation>Periode Pembaruan Baru</translation>
+        <translation>Жаңа жаңарту кезеңі</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="85"/>
         <source>Cancel</source>
-        <translation>Batal</translation>
+        <translation>Бас тарту</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="87"/>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation>ОК</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="121"/>
         <source>No UPDATE</source>
-        <translation>Tanpa PEMBARUAN</translation>
+        <translation>ЖАҢАРТУ жоқ</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="139"/>
         <source>Invalid value</source>
-        <translation>Nilai tidak valid</translation>
+        <translation>Жарамсыз мән</translation>
     </message>
 </context>
 <context>
@@ -291,52 +291,52 @@
     <message>
         <location filename="../details.cpp" line="392"/>
         <source>Address Range</source>
-        <translation>Rentang Alamat</translation>
+        <translation>Адрес ауқымы</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="392"/>
         <source>Mapped addresses (hex) )</source>
-        <translation>Alamat yang dipetakan (heks) )</translation>
+        <translation>Сәйкестелген адрестер (hex)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="393"/>
         <source>Size</source>
-        <translation>Ukuran</translation>
+        <translation>Өлшемі</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="393"/>
         <source>Kbytes mapped (dec)</source>
-        <translation>Kbyte yang dipetakan (des)</translation>
+        <translation>Сәйкестелген Кбайттар (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="394"/>
         <source>Perm</source>
-        <translation>Perm</translation>
+        <translation>Рұқсат</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="394"/>
         <source>Permission flags</source>
-        <translation>Bendera izin</translation>
+        <translation>Рұқсат жалаушалары</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="395"/>
         <source>Offset</source>
-        <translation>Offset</translation>
+        <translation>Ығысу</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="395"/>
         <source>File offset at start of mapping (hex)</source>
-        <translation>Offset berkas pada awal pemetaan (heks)</translation>
+        <translation>Сәйкестеу басындағы файл ығысуы (hex)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Device</source>
-        <translation>Perangkat</translation>
+        <translation>Құрылғы</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="396"/>
         <source>Major,Minor device numbers (dec)</source>
-        <translation>Nomor perangkat mayor, minor (des)</translation>
+        <translation>Major,Minor құрылғы нөмірлері (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="397"/>
@@ -346,17 +346,17 @@
     <message>
         <location filename="../details.cpp" line="397"/>
         <source>Inode number (dec)</source>
-        <translation>Nomor inode (des)</translation>
+        <translation>Inode нөмірі (dec)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>File</source>
-        <translation>Berkas</translation>
+        <translation>Файл</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="398"/>
         <source>File name (if available)</source>
-        <translation>Nama berkas (jika tersedia)</translation>
+        <translation>Файл атауы (қолжетімді болса)</translation>
     </message>
 </context>
 <context>
@@ -364,17 +364,17 @@
     <message>
         <location filename="../dialogs.cpp" line="264"/>
         <source>Permission</source>
-        <translation>Izin</translation>
+        <translation>Рұқсат</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="273"/>
         <source>Root password</source>
-        <translation>Kata sandi root</translation>
+        <translation>Root паролі</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="280"/>
         <source>Cancel</source>
-        <translation>Batal</translation>
+        <translation>Бас тарту</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="283"/>
@@ -387,42 +387,42 @@
     <message>
         <location filename="../prefs.cpp" line="150"/>
         <source>Preferences</source>
-        <translation>Preferensi</translation>
+        <translation>Баптаулар</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="157"/>
         <source>Setting</source>
-        <translation>Pengaturan</translation>
+        <translation>Баптау</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="191"/>
         <source>%CPU divided by</source>
-        <translation>%CPU dibagi dengan</translation>
+        <translation>%CPU бөлінген</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="198"/>
         <source>Total cpu: %1</source>
-        <translation>Total cpu: %1</translation>
+        <translation>Жалпы cpu: %1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="199"/>
         <source>Single cpu: 1</source>
-        <translation>CPU tunggal: 1</translation>
+        <translation>Бір cpu: 1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="205"/>
         <source>default</source>
-        <translation>bawaan</translation>
+        <translation>әдепкі</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="206"/>
         <source>for developer</source>
-        <translation>untuk pengembang</translation>
+        <translation>әзірлеуші үшін</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="240"/>
         <source>Appearance</source>
-        <translation>Tampilan</translation>
+        <translation>Сыртқы түрі</translation>
     </message>
 </context>
 <context>
@@ -435,7 +435,7 @@
     <message>
         <location filename="../proc.cpp" line="2615"/>
         <source>Process ID</source>
-        <translation>ID proses</translation>
+        <translation>Процесс ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2617"/>
@@ -445,7 +445,7 @@
     <message>
         <location filename="../proc.cpp" line="2617"/>
         <source>Task group ID ( parent of threads )</source>
-        <translation>ID grup tugas ( induk dari thread )</translation>
+        <translation>Тапсырмалар тобының ID (ағындардың ата-анасы)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2619"/>
@@ -455,7 +455,7 @@
     <message>
         <location filename="../proc.cpp" line="2619"/>
         <source>Parent process ID</source>
-        <translation>ID proses induk</translation>
+        <translation>Ата-аналық процесс ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2621"/>
@@ -465,7 +465,7 @@
     <message>
         <location filename="../proc.cpp" line="2621"/>
         <source>Process group ID</source>
-        <translation>ID grup proses</translation>
+        <translation>Процесс тобының ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2623"/>
@@ -475,7 +475,7 @@
     <message>
         <location filename="../proc.cpp" line="2623"/>
         <source>Session ID</source>
-        <translation>ID sesi</translation>
+        <translation>Сессия ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2625"/>
@@ -485,7 +485,7 @@
     <message>
         <location filename="../proc.cpp" line="2625"/>
         <source>Terminal</source>
-        <translation>Terminal</translation>
+        <translation>Терминал</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2627"/>
@@ -495,27 +495,27 @@
     <message>
         <location filename="../proc.cpp" line="2627"/>
         <source>Process group ID of tty owner</source>
-        <translation>ID grup proses pemilik tty</translation>
+        <translation>tty иесінің процесс тобының ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2629"/>
         <source>USER</source>
-        <translation>USER</translation>
+        <translation>ПАЙДАЛАНУШЫ</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2629"/>
         <source>Owner (*=suid root, +=suid a user)</source>
-        <translation>Pemilik (*=suid root, +=suid seorang pengguna)</translation>
+        <translation>Иесі (*=suid root, +=suid пайдаланушы)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2631"/>
         <source>GROUP</source>
-        <translation>GROUP</translation>
+        <translation>ТОП</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2631"/>
         <source>Group name (*=sgid other)</source>
-        <translation>Nama grup (*=sgid other)</translation>
+        <translation>Топ аты (*=sgid басқа)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2633"/>
@@ -525,7 +525,7 @@
     <message>
         <location filename="../proc.cpp" line="2633"/>
         <source>Real user ID</source>
-        <translation>ID pengguna nyata</translation>
+        <translation>Нақты пайдаланушы ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2635"/>
@@ -535,7 +535,7 @@
     <message>
         <location filename="../proc.cpp" line="2635"/>
         <source>Effective user ID</source>
-        <translation>ID pengguna efektif</translation>
+        <translation>Тиімді пайдаланушы ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2637"/>
@@ -545,7 +545,7 @@
     <message>
         <location filename="../proc.cpp" line="2637"/>
         <source>Saved user ID (Posix)</source>
-        <translation>ID pengguna tersimpan (Posix)</translation>
+        <translation>Сақталған пайдаланушы ID-і (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2639"/>
@@ -555,7 +555,7 @@
     <message>
         <location filename="../proc.cpp" line="2639"/>
         <source>File system user ID</source>
-        <translation>ID pengguna sistem berkas</translation>
+        <translation>Файлдық жүйенің пайдаланушы ID-і</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2641"/>
@@ -565,7 +565,7 @@
     <message>
         <location filename="../proc.cpp" line="2641"/>
         <source>Real group ID</source>
-        <translation>ID grup nyata</translation>
+        <translation>Нақты топ ID-і</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2643"/>
@@ -575,7 +575,7 @@
     <message>
         <location filename="../proc.cpp" line="2643"/>
         <source>Effective group ID</source>
-        <translation>ID grup efektif</translation>
+        <translation>Тиімді топ ID-і</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2645"/>
@@ -585,7 +585,7 @@
     <message>
         <location filename="../proc.cpp" line="2645"/>
         <source>Saved group ID (Posix)</source>
-        <translation>ID grup tersimpan (Posix)</translation>
+        <translation>Сақталған топ ID-і (Posix)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2647"/>
@@ -595,7 +595,7 @@
     <message>
         <location filename="../proc.cpp" line="2647"/>
         <source>File system group ID</source>
-        <translation>ID grup sistem berkas</translation>
+        <translation>Файлдық жүйенің топ ID-і</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2649"/>
@@ -605,7 +605,7 @@
     <message>
         <location filename="../proc.cpp" line="2649"/>
         <source>Dynamic priority</source>
-        <translation>Prioritas dinamis</translation>
+        <translation>Динамикалық басымдық</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2651"/>
@@ -615,7 +615,7 @@
     <message>
         <location filename="../proc.cpp" line="2651"/>
         <source>Scheduling favour (higher -&gt; less cpu time)</source>
-        <translation>Preferensi penjadwalan (lebih tinggi -&gt; lebih sedikit waktu cpu)</translation>
+        <translation>Жоспарлау басымдығы (жоғары -&gt; аз CPU уақыты)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2653"/>
@@ -625,7 +625,7 @@
     <message>
         <location filename="../proc.cpp" line="2653"/>
         <source>Number of tasks(threads) in task group</source>
-        <translation>Jumlah tugas(thread) dalam grup tugas</translation>
+        <translation>Тапсырмалар тобындағы тапсырмалар (ағындар) саны</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2655"/>
@@ -635,7 +635,7 @@
     <message>
         <location filename="../proc.cpp" line="2655"/>
         <source>Scheduling policy</source>
-        <translation>Kebijakan penjadwalan</translation>
+        <translation>Жоспарлау саясаты</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2657"/>
@@ -645,7 +645,7 @@
     <message>
         <location filename="../proc.cpp" line="2657"/>
         <source>Realtime priority (0-99, more is better)</source>
-        <translation>Prioritas waktu nyata (0-99, semakin besar semakin baik)</translation>
+        <translation>Нақты уақыт басымдығы (0-99, неғұрлым көп болса, соғұрлым жақсы)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2659"/>
@@ -655,7 +655,7 @@
     <message>
         <location filename="../proc.cpp" line="2659"/>
         <source>Time slice in milliseconds</source>
-        <translation>Irisan waktu dalam milidetik</translation>
+        <translation>Миллисекундтағы уақыт үлесі</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2661"/>
@@ -665,7 +665,7 @@
     <message>
         <location filename="../proc.cpp" line="2661"/>
         <source>Percentage average sleep time (-1 -&gt; N/A)</source>
-        <translation>Persentase rata-rata waktu tidur (-1 -&gt; T/A)</translation>
+        <translation>Орташа ұйқы уақытының пайызы (-1 -&gt; қ/ж)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2663"/>
@@ -675,7 +675,7 @@
     <message>
         <location filename="../proc.cpp" line="2663"/>
         <source>Affinity CPU mask (0 -&gt; API not supported)</source>
-        <translation>Masker CPU afinitas (0 -&gt; API tidak didukung)</translation>
+        <translation>CPU-ға таңу маскасы (0 -&gt; API-ге қолдау көрсетілмейді)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2665"/>
@@ -685,7 +685,7 @@
     <message>
         <location filename="../proc.cpp" line="2665"/>
         <source>Number of major faults (disk access)</source>
-        <translation>Jumlah kesalahan utama (akses disk)</translation>
+        <translation>Негізгі қателер саны (дискіге қол жеткізу)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2667"/>
@@ -695,7 +695,7 @@
     <message>
         <location filename="../proc.cpp" line="2667"/>
         <source>Number of minor faults (no disk access)</source>
-        <translation>Jumlah kesalahan minor (tanpa akses disk)</translation>
+        <translation>Кішігірім қателер саны (дискіге қол жеткізу жоқ)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2670"/>
@@ -705,7 +705,7 @@
     <message>
         <location filename="../proc.cpp" line="2670"/>
         <source>Virtual image size of process</source>
-        <translation>Ukuran citra virtual proses</translation>
+        <translation>Процестің виртуалды кескін өлшемі</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2672"/>
@@ -715,7 +715,7 @@
     <message>
         <location filename="../proc.cpp" line="2672"/>
         <source>Resident set size</source>
-        <translation>Ukuran set residen</translation>
+        <translation>Резиденттік жиын өлшемі</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2674"/>
@@ -725,7 +725,7 @@
     <message>
         <location filename="../proc.cpp" line="2674"/>
         <source>memory usage (RSS-SHARE)</source>
-        <translation>penggunaan memori (RSS-SHARE)</translation>
+        <translation>жадты пайдалану (RSS-SHARE)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2676"/>
@@ -735,7 +735,7 @@
     <message>
         <location filename="../proc.cpp" line="2676"/>
         <source>Text(code) resident set size</source>
-        <translation>Ukuran set residen teks (kode)</translation>
+        <translation>Мәтіндік (кодтық) резиденттік жиын өлшемі</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2678"/>
@@ -745,7 +745,7 @@
     <message>
         <location filename="../proc.cpp" line="2678"/>
         <source>Data resident set size(malloc+global variable)</source>
-        <translation>Ukuran set residen data (malloc + variabel global)</translation>
+        <translation>Мәліметтердің резиденттік жиын өлшемі (malloc+глобалды айнымалы)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2680"/>
@@ -755,7 +755,7 @@
     <message>
         <location filename="../proc.cpp" line="2680"/>
         <source>Stack size</source>
-        <translation>Ukuran tumpukan</translation>
+        <translation>Стек өлшемі</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2682"/>
@@ -765,7 +765,7 @@
     <message>
         <location filename="../proc.cpp" line="2682"/>
         <source>Shared memory with other libs</source>
-        <translation>Memori yang digunakan bersama dengan pustaka lain</translation>
+        <translation>Басқа кітапханалармен ортақ жад</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2684"/>
@@ -775,7 +775,7 @@
     <message>
         <location filename="../proc.cpp" line="2684"/>
         <source>Kbytes on swap device</source>
-        <translation>Kbyte pada perangkat swap</translation>
+        <translation>Своп құрылғысындағы кбайттар</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2686"/>
@@ -785,7 +785,7 @@
     <message>
         <location filename="../proc.cpp" line="2686"/>
         <source>io read (file)</source>
-        <translation>baca io (berkas)</translation>
+        <translation>io оқу (файл)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2688"/>
@@ -795,7 +795,7 @@
     <message>
         <location filename="../proc.cpp" line="2688"/>
         <source>io write (file)</source>
-        <translation>tulis io (berkas)</translation>
+        <translation>io жазу (файл)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2690"/>
@@ -805,7 +805,7 @@
     <message>
         <location filename="../proc.cpp" line="2690"/>
         <source>Number of dirty (non-written) pages</source>
-        <translation>Jumlah halaman kotor (tidak tertulis)</translation>
+        <translation>&quot;Лас&quot; (жазылмаған) беттер саны</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2692"/>
@@ -815,7 +815,7 @@
     <message>
         <location filename="../proc.cpp" line="2692"/>
         <source>State of the process </source>
-        <translation>Keadaan proses </translation>
+        <translation>Процесс күйі </translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2694"/>
@@ -825,7 +825,7 @@
     <message>
         <location filename="../proc.cpp" line="2694"/>
         <source>Process flags (hex)</source>
-        <translation>Bendera proses (heks)</translation>
+        <translation>Процесс жалаушалары (hex)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2696"/>
@@ -835,7 +835,7 @@
     <message>
         <location filename="../proc.cpp" line="2696"/>
         <source>Kernel function where process is sleeping</source>
-        <translation>Fungsi kernel tempat proses sedang tidur</translation>
+        <translation>Процесс ұйықтап жатқан ядро функциясы</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2698"/>
@@ -845,7 +845,7 @@
     <message>
         <location filename="../proc.cpp" line="2698"/>
         <source>Weighted percentage of CPU (30 s average)</source>
-        <translation>Persentase tertimbang CPU (rata-rata 30 detik)</translation>
+        <translation>CPU-дың өлшенген пайызы (30 с орташа мәні)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2700"/>
@@ -855,7 +855,7 @@
     <message>
         <location filename="../proc.cpp" line="2700"/>
         <source>Percentage of CPU used since last update</source>
-        <translation>Persentase CPU yang digunakan sejak pembaruan terakhir</translation>
+        <translation>Соңғы жаңартудан кейінгі пайдаланылған CPU пайызы</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2702"/>
@@ -865,7 +865,7 @@
     <message>
         <location filename="../proc.cpp" line="2702"/>
         <source>Percentage of memory used (RSS/total mem)</source>
-        <translation>Persentase memori yang digunakan (RSS/total mem)</translation>
+        <translation>Пайдаланылған жад пайызы (RSS/жалпы жад)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2704"/>
@@ -875,7 +875,7 @@
     <message>
         <location filename="../proc.cpp" line="2704"/>
         <source>Time process started</source>
-        <translation>Waktu proses dimulai</translation>
+        <translation>Процесс іске қосылған уақыт</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2706"/>
@@ -885,7 +885,7 @@
     <message>
         <location filename="../proc.cpp" line="2706"/>
         <source>Total CPU time used since start</source>
-        <translation>Total waktu CPU yang digunakan sejak awal</translation>
+        <translation>Іске қосылғаннан бергі жалпы CPU уақыты</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2708"/>
@@ -895,17 +895,17 @@
     <message>
         <location filename="../proc.cpp" line="2708"/>
         <source>CPU the process is executing on (SMP system)</source>
-        <translation>CPU tempat proses sedang dijalankan (sistem SMP)</translation>
+        <translation>Процесс орындалып жатқан CPU (SMP жүйесі)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2710"/>
         <source>the process name</source>
-        <translation>nama proses</translation>
+        <translation>процесс атауы</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2710"/>
         <source>Process Name</source>
-        <translation>Nama Proses</translation>
+        <translation>Процесс атауы</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2714"/>
@@ -915,7 +915,7 @@
     <message>
         <location filename="../proc.cpp" line="2714"/>
         <source>Current working directory</source>
-        <translation>Direktori kerja saat ini</translation>
+        <translation>Ағымдағы жұмыс бумасы</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2715"/>
@@ -925,7 +925,7 @@
     <message>
         <location filename="../proc.cpp" line="2715"/>
         <source>Root directory of process</source>
-        <translation>Direktori root dari proses</translation>
+        <translation>Процестің түбірлік бумасы</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2718"/>
@@ -935,7 +935,7 @@
     <message>
         <location filename="../proc.cpp" line="2718"/>
         <source>Command line that started the process</source>
-        <translation>Baris perintah yang memulai proses</translation>
+        <translation>Процесті іске қосқан командалық жол</translation>
     </message>
 </context>
 <context>
@@ -943,35 +943,35 @@
     <message>
         <location filename="../qps.cpp" line="1628"/>
         <source>Show</source>
-        <translation>Tampilkan</translation>
+        <translation>Көрсету</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1631"/>
         <source>Hide</source>
-        <translation>Sembunyikan</translation>
+        <translation>Жасыру</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1636"/>
         <source>Quit</source>
-        <translation>Keluar</translation>
+        <translation>Шығу</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="430"/>
         <location filename="../infobar.cpp" line="437"/>
         <source>User: </source>
-        <translation>Pengguna: </translation>
+        <translation>Пайдаланушы: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="431"/>
         <location filename="../infobar.cpp" line="438"/>
         <source>System: </source>
-        <translation>Sistem: </translation>
+        <translation>Жүйе: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="432"/>
         <location filename="../infobar.cpp" line="439"/>
         <source>Nice: </source>
-        <translation>Nice: </translation>
+        <translation>Nice мәні: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="430"/>
@@ -987,43 +987,43 @@
         <location filename="../infobar.cpp" line="474"/>
         <location filename="../infobar.cpp" line="509"/>
         <source>Total: </source>
-        <translation>Total: </translation>
+        <translation>Жалпы: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="477"/>
         <location filename="../infobar.cpp" line="515"/>
         <source>Used: </source>
-        <translation>Digunakan: </translation>
+        <translation>Пайдаланылған: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="481"/>
         <source>Cached: </source>
-        <translation>Cache: </translation>
+        <translation>Кэштелген: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="484"/>
         <source>Buffer: </source>
-        <translation>Buffer: </translation>
+        <translation>Буфер: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="512"/>
         <source>Free: </source>
-        <translation>Bebas: </translation>
+        <translation>Бос: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="554"/>
         <source>Time passed after system boot</source>
-        <translation>Waktu yang berlalu setelah sistem boot</translation>
+        <translation>Жүйе жүктелгеннен кейін өткен уақыт</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="582"/>
         <source>Average CPU load each 1, 5 ,15 minutes</source>
-        <translation>Beban rata-rata CPU setiap 1, 5, 15 menit</translation>
+        <translation>Әр 1, 5, 15 минуттағы орташа CPU жүктемесі</translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="727"/>
         <source>CPU Usage Summary:</source>
-        <translation>Ringkasan Penggunaan CPU:</translation>
+        <translation>CPU пайдалану жиынтығы:</translation>
     </message>
 </context>
 <context>
@@ -1031,268 +1031,268 @@
     <message>
         <location filename="../qps.cpp" line="171"/>
         <source>header_popup</source>
-        <translation>header_popup</translation>
+        <translation>тақырыптама_қалқымалы_терезесі</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="172"/>
         <source>Remove Field</source>
-        <translation>Hapus Bidang</translation>
+        <translation>Өрісті өшіру</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="173"/>
         <source>Add Field</source>
-        <translation>Tambah Bidang</translation>
+        <translation>Өрісті қосу</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="176"/>
         <source>Session</source>
-        <translation>Sesi</translation>
+        <translation>Сессия</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="180"/>
         <source>View</source>
-        <translation>Tampilan</translation>
+        <translation>Көрініс</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="181"/>
         <source>Process</source>
-        <translation>Proses</translation>
+        <translation>Процесс</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="182"/>
         <source>Log</source>
-        <translation>Log</translation>
+        <translation>Журнал</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="187"/>
         <source>Fields</source>
-        <translation>Bidang</translation>
+        <translation>Өрістер</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="188"/>
         <source>Custom Fields</source>
-        <translation>Bidang Kustom</translation>
+        <translation>Таңдамалы өрістер</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="190"/>
         <source>Basic Fields </source>
-        <translation>Bidang Dasar </translation>
+        <translation>Негізгі өрістер </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="192"/>
         <source>Jobs Fields </source>
-        <translation>Bidang Pekerjaan </translation>
+        <translation>Тапсырмалар өрістері </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="194"/>
         <source>Memory Fields </source>
-        <translation>Bidang Memori </translation>
+        <translation>Жад өрістері </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="197"/>
         <source>Scheduling Fields </source>
-        <translation>Bidang Penjadwalan </translation>
+        <translation>Жоспарлау өрістері </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="214"/>
         <source>Select Custom Fields...</source>
-        <translation>Pilih Bidang Kustom...</translation>
+        <translation>Таңдамалы өрістерді таңдау...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="223"/>
         <source>Options</source>
-        <translation>Opsi</translation>
+        <translation>Опциялар</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="224"/>
         <source>Update Period...</source>
-        <translation>Periode Pembaruan...</translation>
+        <translation>Жаңарту кезеңі...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="233"/>
         <source>Show Status bar</source>
-        <translation>Tampilkan Bilah Status</translation>
+        <translation>Қалып-күй жолағын көрсету</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="242"/>
         <source>Preferences...</source>
-        <translation>Preferensi...</translation>
+        <translation>Қалаулар...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="248"/>
         <source>Help</source>
-        <translation>Bantuan</translation>
+        <translation>Көмек</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="249"/>
         <location filename="../qps.cpp" line="1676"/>
         <source>About</source>
-        <translation>Tentang</translation>
+        <translation>Туралы</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="330"/>
         <source>test</source>
-        <translation>uji</translation>
+        <translation>тест</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="331"/>
         <source>Copied to Clipboard</source>
-        <translation>Disalin ke Papan Klip</translation>
+        <translation>Алмасу буферіне көшірілді</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="383"/>
         <source>context popup</source>
-        <translation>menu konteks</translation>
+        <translation>контекстік қалқымалы терезе</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="384"/>
         <source>Renice...</source>
-        <translation>Renice...</translation>
+        <translation>Басымдылықты өзгерту...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="385"/>
         <source>Scheduling...</source>
-        <translation>Penjadwalan...</translation>
+        <translation>Жоспарлау...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="387"/>
         <source>Terminate</source>
-        <translation>Hentikan</translation>
+        <translation>Аяқтау</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="388"/>
         <source>Hangup</source>
-        <translation>Hangup</translation>
+        <translation>Үзу</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="389"/>
         <source>Kill</source>
-        <translation>Kill</translation>
+        <translation>Жою</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="390"/>
         <source>Stop</source>
-        <translation>Berhenti</translation>
+        <translation>Тоқтату</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="392"/>
         <source>Continue</source>
-        <translation>Lanjutkan</translation>
+        <translation>Жалғастыру</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="395"/>
         <source>Other Signals</source>
-        <translation>Sinyal Lainnya</translation>
+        <translation>Басқа сигналдар</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="396"/>
         <source>SIGINT (interrupt)</source>
-        <translation>SIGINT (interupsi)</translation>
+        <translation>SIGINT (үзу)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="398"/>
         <source>SIGCONT (continue)</source>
-        <translation>SIGCONT (lanjutkan)</translation>
+        <translation>SIGCONT (жалғастыру)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="400"/>
         <source>SIGSTOP (stop)</source>
-        <translation>SIGSTOP (berhenti)</translation>
+        <translation>SIGSTOP (тоқтату)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="402"/>
         <source>SIGQUIT (quit)</source>
-        <translation>SIGQUIT (keluar)</translation>
+        <translation>SIGQUIT (шығу)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="404"/>
         <source>SIGILL (illegal instruction)</source>
-        <translation>SIGILL (instruksi ilegal)</translation>
+        <translation>SIGILL (рұқсат етілмеген команда)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="406"/>
         <source>SIGABRT (abort)</source>
-        <translation>SIGABRT (gugurkan)</translation>
+        <translation>SIGABRT (тоқтату)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="408"/>
         <source>SIGFPE (floating point exception)</source>
-        <translation>SIGFPE (pengecualian floating point)</translation>
+        <translation>SIGFPE (жылжымалы нүкте ерекшелігі)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="410"/>
         <source>SIGSEGV (segmentation violation)</source>
-        <translation>SIGSEGV (pelanggaran segmentasi)</translation>
+        <translation>SIGSEGV (сегментацияны бұзу)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="412"/>
         <source>SIGPIPE (broken pipe)</source>
-        <translation>SIGPIPE (pipa rusak)</translation>
+        <translation>SIGPIPE (үзілген арна)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="414"/>
         <source>SIGALRM (timer signal)</source>
-        <translation>SIGALRM (sinyal pengatur waktu)</translation>
+        <translation>SIGALRM (таймер сигналы)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="416"/>
         <source>SIGUSR1 (user-defined 1)</source>
-        <translation>SIGUSR1 (pengguna-1)</translation>
+        <translation>SIGUSR1 (пайдаланушы анықтаған 1)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="418"/>
         <source>SIGUSR2 (user-defined 2)</source>
-        <translation>SIGUSR2 (pengguna-2)</translation>
+        <translation>SIGUSR2 (пайдаланушы анықтаған 2)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="420"/>
         <source>SIGCHLD (child death)</source>
-        <translation>SIGCHLD (kematian anak)</translation>
+        <translation>SIGCHLD (туынды процестің аяқталуы)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="422"/>
         <source>SIGTSTP (stop from tty)</source>
-        <translation>SIGTSTP (berhenti dari tty)</translation>
+        <translation>SIGTSTP (tty-ден тоқтату)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="424"/>
         <source>SIGTTIN (tty input)</source>
-        <translation>SIGTTIN (input tty)</translation>
+        <translation>SIGTTIN (tty енгізуі)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="426"/>
         <source>SIGTTOU (tty output)</source>
-        <translation>SIGTTOU (output tty)</translation>
+        <translation>SIGTTOU (tty шығаруы)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="433"/>
         <source>View Details</source>
-        <translation>Lihat Detail</translation>
+        <translation>Мәліметтерді көру</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="671"/>
         <source>Show File Path</source>
-        <translation>Tampilkan Jalur Berkas</translation>
+        <translation>Файл жолын көрсету</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="677"/>
         <source>Show Graph</source>
-        <translation>Tampilkan Grafik</translation>
+        <translation>Графикті көрсету</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="683"/>
         <source>Show Control Bar</source>
-        <translation>Tampilkan Bilah Kontrol</translation>
+        <translation>Басқару жолағын көрсету</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="694"/>
         <source>Include Child Times</source>
-        <translation>Sertakan Waktu Anak</translation>
+        <translation>Туынды уақыттарды қосу</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="282"/>
         <source>Quit</source>
-        <translation>Keluar</translation>
+        <translation>Шығу</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1139"/>
@@ -1302,57 +1302,57 @@
         <location filename="../qps.cpp" line="1232"/>
         <location filename="../qps.cpp" line="1327"/>
         <source>Permission denied</source>
-        <translation>Izin ditolak</translation>
+        <translation>Рұқсат жоқ</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1140"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
-        <translation>Anda tidak memiliki izin untuk mengubah nice value proses yang dipilih. Hanya pemilik proses dan super-user yang diizinkan melakukannya.</translation>
+        <translation>Таңдалған процестердің басымдылығын өзгертуге рұқсатыңыз жоқ. Оны тек процесс иесі мен супер-пайдаланушы ғана жасай алады.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1171"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
-        <translation>Anda tidak memiliki izin untuk mengubah nice value proses %1 (%2). Hanya pemilik proses dan super-user yang diizinkan melakukannya.</translation>
+        <translation>%1 (%2) процесінің басымдылығын өзгертуге рұқсатыңыз жоқ.Оны тек процесс иесі мен супер-пайдаланушы ғана жасай алады.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1178"/>
         <source>Only the super-user may lower the nice value of a process.</source>
-        <translation>Hanya super-user yang dapat menurunkan nilai nice dari sebuah proses.</translation>
+        <translation>Тек супер-пайдаланушы ғана процестің nice мәнін төмендете алады.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1199"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
-        <translation>Hanya super-user yang dapat mengubah kebijakan penjadwalan dan prioritas statis.</translation>
+        <translation>Тек супер-пайдаланушы ғана жоспарлау саясаты мен статикалық басымдылықты өзгерте алады.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1233"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
-        <translation>Anda tidak memiliki izin untuk mengubah penjadwalan dan/atau prioritas proses %1 (%2). Hanya super-user yang dapat melakukannya.</translation>
+        <translation>%1 (%2) процесінің жоспарлауын және/немесе басымдылығын өзгертуге рұқсатыңыз жоқ. Оны тек супер-пайдаланушы ғана жасай алады.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1294"/>
         <source>Do you really want to terminate the selected process(es)?</source>
-        <translation>Apakah Anda benar-benar ingin menghentikan proses yang dipilih?</translation>
+        <translation>Таңдалған процестерді аяқтауды шынымен қалайсыз ба?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1296"/>
         <source>Do you really want to hang up the selected process(es)?</source>
-        <translation>Apakah Anda benar-benar ingin hang up proses yang dipilih?</translation>
+        <translation>Таңдалған процестермен байланысты үзуді шынымен қалайсыз ба?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1298"/>
         <source>Do you really want to kill the selected process(es)?</source>
-        <translation>Apakah Anda benar-benar ingin mematikan proses yang dipilih?</translation>
+        <translation>Таңдалған процестерді жоюды шынымен қалайсыз ба?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1307"/>
         <source>Question</source>
-        <translation>Pertanyaan</translation>
+        <translation>Сұрақ</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1328"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
-        <translation>Anda tidak memiliki izin untuk mengirim sinyal ke proses %1 (%2). Hanya super-user dan pemilik proses yang dapat mengirim sinyal kepadanya.</translation>
+        <translation>%1 (%2) процесіне сигнал жіберуге рұқсатыңыз жоқ. Сигналдарды тек супер-пайдаланушы мен процесс иесі жібере алады.</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1692"/>
@@ -1362,12 +1362,12 @@
     <message>
         <location filename="../qps.cpp" line="1694"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
-        <translation>&lt;h2&gt; Qps %1 - Pengelola Proses Visual &lt;/h2&gt; %2 menggunakan pustaka Qt %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Sumber: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Pelacak bug: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
+        <translation>&lt;h2&gt; Qps %1 - көрнекі процесс менеджері &lt;/h2&gt; %2, Qt %3 кітапханасын қолданады&lt;br&gt;&lt;br&gt;&lt;b&gt;Бастапқы коды: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Қателер трекері: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1714"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
-        <translation>&lt;b&gt;Qps Asli oleh&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Kontributor&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
+        <translation>&lt;b&gt;Түпнұсқа Qps авторы:&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Үлес қосушылар&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
     </message>
 </context>
 <context>
@@ -1375,27 +1375,27 @@
     <message>
         <location filename="../dialogs.cpp" line="292"/>
         <source>Change scheduling</source>
-        <translation>Ubah penjadwalan</translation>
+        <translation>Жоспарлауды өзгерту</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="296"/>
         <source>Scheduling Policy</source>
-        <translation>Kebijakan Penjadwalan</translation>
+        <translation>Жоспарлау саясаты</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="298"/>
         <source>SCHED_OTHER (time-sharing)</source>
-        <translation>SCHED_OTHER (pembagian waktu)</translation>
+        <translation>SCHED_OTHER (уақытты бөлу)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="299"/>
         <source>SCHED_FIFO (real-time)</source>
-        <translation>SCHED_FIFO (waktu nyata)</translation>
+        <translation>SCHED_FIFO (нақты уақыт)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="300"/>
         <source>SCHED_RR (real-time)</source>
-        <translation>SCHED_RR (waktu nyata)</translation>
+        <translation>SCHED_RR (нақты уақыт)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="314"/>
@@ -1405,22 +1405,22 @@
     <message>
         <location filename="../dialogs.cpp" line="316"/>
         <source>Cancel</source>
-        <translation>Batal</translation>
+        <translation>Бас тарту</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="346"/>
         <source>Priority (1-99):</source>
-        <translation>Prioritas (1-99):</translation>
+        <translation>Басымдылық (1-99):</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="379"/>
         <source>Invalid Input</source>
-        <translation>Input Tidak Valid</translation>
+        <translation>Қате енгізу</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="380"/>
         <source>The priority must be in the range 1..99</source>
-        <translation>Prioritas harus dalam rentang 1..99</translation>
+        <translation>Басымдылық 1..99 ауқымында болуы керек</translation>
     </message>
 </context>
 <context>
@@ -1428,12 +1428,12 @@
     <message>
         <location filename="../misc.cpp" line="588"/>
         <source>PID, COMMAND, USER...</source>
-        <translation>PID, PERINTAH, PENGGUNA...</translation>
+        <translation>PID, КОМАНДА, ПАЙДАЛАНУШЫ...</translation>
     </message>
     <message>
         <location filename="../misc.cpp" line="589"/>
         <source>Filter</source>
-        <translation>Filter</translation>
+        <translation>Сүзгі</translation>
     </message>
 </context>
 <context>
@@ -1441,17 +1441,17 @@
     <message>
         <location filename="../dialogs.cpp" line="179"/>
         <source>Renice Process</source>
-        <translation>Renice Proses</translation>
+        <translation>Процесс басымдылығын өзгерту</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="185"/>
         <source>New nice value:</source>
-        <translation>Nilai nice baru:</translation>
+        <translation>Жаңа nice мәні:</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="225"/>
         <source>Cancel</source>
-        <translation>Batal</translation>
+        <translation>Бас тарту</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="229"/>
@@ -1469,17 +1469,17 @@
     <message>
         <location filename="../details.cpp" line="147"/>
         <source>File descriptor</source>
-        <translation>Deskriptor berkas</translation>
+        <translation>Файл дескрипторы</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="148"/>
         <source>Proto</source>
-        <translation>Proto</translation>
+        <translation>Протокол</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="148"/>
         <source>Protocol (TCP or UDP)</source>
-        <translation>Protokol (TCP atau UDP)</translation>
+        <translation>Протокол (TCP немесе UDP)</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="149"/>
@@ -1489,7 +1489,7 @@
     <message>
         <location filename="../details.cpp" line="149"/>
         <source>Bytes in receive queue</source>
-        <translation>Byte dalam antrean penerimaan</translation>
+        <translation>Қабылдау кезегіндегі байттар</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="150"/>
@@ -1499,53 +1499,53 @@
     <message>
         <location filename="../details.cpp" line="150"/>
         <source>Bytes in send queue</source>
-        <translation>Byte dalam antrean pengiriman</translation>
+        <translation>Жіберу кезегіндегі байттар</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>Local Addr</source>
-        <translation>Alamat Lokal</translation>
+        <translation>Жергілікті адрес</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="151"/>
         <source>Local IP address</source>
-        <translation>Alamat IP lokal</translation>
+        <translation>Жергілікті IP адресі</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
         <location filename="../details.cpp" line="154"/>
         <source>Port</source>
-        <translation>Port</translation>
+        <translation>Порт</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="152"/>
         <source>Local port</source>
-        <translation>Port lokal</translation>
+        <translation>Жергілікті порт</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Remote Addr</source>
-        <translation>Alamat Remote</translation>
+        <translation>Қашықтағы адрес</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Remote IP address</source>
-        <translation>Alamat IP remote</translation>
+        <translation>Қашықтағы IP адресі</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="154"/>
         <source>Remote port</source>
-        <translation>Port remote</translation>
+        <translation>Қашықтағы порт</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>State</source>
-        <translation>Keadaan</translation>
+        <translation>Күйі</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>Connection state</source>
-        <translation>Keadaan koneksi</translation>
+        <translation>Байланыс күйі</translation>
     </message>
 </context>
 <context>
@@ -1553,7 +1553,7 @@
     <message>
         <location filename="../misc.cpp" line="624"/>
         <source>Process count: %1</source>
-        <translation>Jumlah proses: %1</translation>
+        <translation>Процестер саны: %1</translation>
     </message>
 </context>
 <context>
@@ -1562,8 +1562,8 @@
         <location filename="../misc.cpp" line="343"/>
         <source> This is unstable Alpha feature
  You maybe see a SEGFAULT...</source>
-        <translation> Ini adalah fitur Alfa yang tidak stabil
- Anda mungkin melihat SEGFAULT...</translation>
+        <translation> Бұл тұрақсыз Альфа мүмкіндігі
+ SEGFAULT қатесін көруіңіз мүмкін...</translation>
     </message>
 </context>
 <context>
@@ -1571,7 +1571,7 @@
     <message>
         <location filename="../misc.cpp" line="485"/>
         <source>title</source>
-        <translation>judul</translation>
+        <translation>атауы</translation>
     </message>
 </context>
 </TS>
