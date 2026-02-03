@@ -59,7 +59,7 @@
     <message>
         <location filename="../prefs.cpp" line="75"/>
         <source>Disclosure Triangles</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikeṛdisen n ubeggen</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="76"/>
@@ -321,7 +321,7 @@
     <message>
         <location filename="../details.cpp" line="395"/>
         <source>Offset</source>
-        <translation type="unfinished"></translation>
+        <translation>Anakaz</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="395"/>
@@ -505,7 +505,7 @@
     <message>
         <location filename="../proc.cpp" line="2629"/>
         <source>Owner (*=suid root, +=suid a user)</source>
-        <translation type="unfinished"></translation>
+        <translation>Amli (*=suid n waẓaṛ, +=suid n useqdac)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2631"/>
@@ -615,7 +615,7 @@
     <message>
         <location filename="../proc.cpp" line="2651"/>
         <source>Scheduling favour (higher -&gt; less cpu time)</source>
-        <translation type="unfinished"></translation>
+        <translation>Asɣiwes usmenyaf (afellay -&gt; drus n wakud i uferdis alemmas n usefser)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2653"/>
@@ -645,7 +645,7 @@
     <message>
         <location filename="../proc.cpp" line="2657"/>
         <source>Realtime priority (0-99, more is better)</source>
-        <translation type="unfinished"></translation>
+        <translation>Tazwart n wakud ilaw (0-99, skud meqqer d ayen yelhan)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2659"/>
@@ -655,7 +655,7 @@
     <message>
         <location filename="../proc.cpp" line="2659"/>
         <source>Time slice in milliseconds</source>
-        <translation type="unfinished"></translation>
+        <translation>Tunt n wakud s mili-tisinin</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2661"/>
@@ -675,12 +675,12 @@
     <message>
         <location filename="../proc.cpp" line="2663"/>
         <source>Affinity CPU mask (0 -&gt; API not supported)</source>
-        <translation type="unfinished"></translation>
+        <translation>Tagelmust n uferdis alemmas n usefser (0 -&gt; API ur yettwasefrak ara)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2665"/>
         <source>MAJFLT</source>
-        <translation type="unfinished"></translation>
+        <translation>MAJFLT</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2665"/>
@@ -715,7 +715,7 @@
     <message>
         <location filename="../proc.cpp" line="2672"/>
         <source>Resident set size</source>
-        <translation type="unfinished"></translation>
+        <translation>Tiddi n ugraw amezdaɣ</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2674"/>
@@ -735,7 +735,7 @@
     <message>
         <location filename="../proc.cpp" line="2676"/>
         <source>Text(code) resident set size</source>
-        <translation type="unfinished"></translation>
+        <translation>Aḍris(tangalt) tiddi n ugraw amezdaɣ</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2678"/>
@@ -745,7 +745,7 @@
     <message>
         <location filename="../proc.cpp" line="2678"/>
         <source>Data resident set size(malloc+global variable)</source>
-        <translation type="unfinished"></translation>
+        <translation>Tiddi n ugraw n isefka amezdaɣ(malloc+amutti amatu)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2680"/>
@@ -800,7 +800,7 @@
     <message>
         <location filename="../proc.cpp" line="2690"/>
         <source>DT</source>
-        <translation type="unfinished"></translation>
+        <translation>AR</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2690"/>
@@ -840,27 +840,27 @@
     <message>
         <location filename="../proc.cpp" line="2698"/>
         <source>%WCPU</source>
-        <translation type="unfinished"></translation>
+        <translation>%WCPU</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2698"/>
         <source>Weighted percentage of CPU (30 s average)</source>
-        <translation type="unfinished"></translation>
+        <translation>Afmiḍi n tulmist n Uferdis alemmas n usefser (30 tsn deg tlemmast)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2700"/>
         <source>%CPU</source>
-        <translation type="unfinished"></translation>
+        <translation>%Aferdis Alemmas Usefser</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2700"/>
         <source>Percentage of CPU used since last update</source>
-        <translation type="unfinished"></translation>
+        <translation>Afmiḍi n uferdis alemmas usefser yettwasqedcen seg uleqqem aneggaru</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2702"/>
         <source>%MEM</source>
-        <translation type="unfinished"></translation>
+        <translation>%TAK</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2702"/>
@@ -890,7 +890,7 @@
     <message>
         <location filename="../proc.cpp" line="2708"/>
         <source>CPU</source>
-        <translation type="unfinished"></translation>
+        <translation>Aferdis Alemmas Usefser</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2708"/>
@@ -910,7 +910,7 @@
     <message>
         <location filename="../proc.cpp" line="2714"/>
         <source>CWD</source>
-        <translation type="unfinished"></translation>
+        <translation>Ak_Mir</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2714"/>
@@ -971,7 +971,7 @@
         <location filename="../infobar.cpp" line="432"/>
         <location filename="../infobar.cpp" line="439"/>
         <source>Nice: </source>
-        <translation type="unfinished"></translation>
+        <translation>Izwiren: </translation>
     </message>
     <message>
         <location filename="../infobar.cpp" line="430"/>
@@ -1031,7 +1031,7 @@
     <message>
         <location filename="../qps.cpp" line="171"/>
         <source>header_popup</source>
-        <translation type="unfinished"></translation>
+        <translation>Tasenṭit_ulɣu</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="172"/>
@@ -1061,7 +1061,7 @@
     <message>
         <location filename="../qps.cpp" line="182"/>
         <source>Log</source>
-        <translation type="unfinished"></translation>
+        <translation>Aɣmis</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="187"/>
@@ -1142,7 +1142,7 @@
     <message>
         <location filename="../qps.cpp" line="383"/>
         <source>context popup</source>
-        <translation type="unfinished"></translation>
+        <translation>asatal n usfaylu udhim</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="384"/>
@@ -1162,7 +1162,7 @@
     <message>
         <location filename="../qps.cpp" line="388"/>
         <source>Hangup</source>
-        <translation type="unfinished"></translation>
+        <translation>Sraǧu</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="389"/>
@@ -1182,27 +1182,27 @@
     <message>
         <location filename="../qps.cpp" line="395"/>
         <source>Other Signals</source>
-        <translation type="unfinished"></translation>
+        <translation>Tamuli nniḍen</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="396"/>
         <source>SIGINT (interrupt)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGINT (Agzem)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="398"/>
         <source>SIGCONT (continue)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGCONT (kemmel)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="400"/>
         <source>SIGSTOP (stop)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGSTOP (Ḥbes)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="402"/>
         <source>SIGQUIT (quit)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGQUIT (ffeɣ)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="404"/>
@@ -1232,37 +1232,37 @@
     <message>
         <location filename="../qps.cpp" line="414"/>
         <source>SIGALRM (timer signal)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGALRM (tamuli n tengedwit)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="416"/>
         <source>SIGUSR1 (user-defined 1)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGUSR1 (Isbadu-t useqdac 1)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="418"/>
         <source>SIGUSR2 (user-defined 2)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGUSR2 (Isbadu-t useqdac 2)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="420"/>
         <source>SIGCHLD (child death)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGCHLD (yeḥbes aqrur n ukala)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="422"/>
         <source>SIGTSTP (stop from tty)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGTSTP (ḥbes-it-id seg tty)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="424"/>
         <source>SIGTTIN (tty input)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGTTIN (asekcem tty)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="426"/>
         <source>SIGTTOU (tty output)</source>
-        <translation type="unfinished"></translation>
+        <translation>SIGTTOU (asuffeɣ tty)</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="433"/>
@@ -1385,17 +1385,17 @@
     <message>
         <location filename="../dialogs.cpp" line="298"/>
         <source>SCHED_OTHER (time-sharing)</source>
-        <translation type="unfinished"></translation>
+        <translation>SCHED_OTHER (akud n beṭṭu)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="299"/>
         <source>SCHED_FIFO (real-time)</source>
-        <translation type="unfinished"></translation>
+        <translation>SCHED_FIFO (akud ilaw)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="300"/>
         <source>SCHED_RR (real-time)</source>
-        <translation type="unfinished"></translation>
+        <translation>SCHED_RR (akud ilaw)</translation>
     </message>
     <message>
         <location filename="../dialogs.cpp" line="314"/>
@@ -1530,22 +1530,22 @@
     <message>
         <location filename="../details.cpp" line="153"/>
         <source>Remote IP address</source>
-        <translation type="unfinished"></translation>
+        <translation>Tansa IP tanmeggagt</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="154"/>
         <source>Remote port</source>
-        <translation type="unfinished"></translation>
+        <translation>Asagen anmeggag</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>State</source>
-        <translation type="unfinished"></translation>
+        <translation>Addad</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="155"/>
         <source>Connection state</source>
-        <translation type="unfinished"></translation>
+        <translation>Addad n tuqqna</translation>
     </message>
 </context>
 <context>
@@ -1553,7 +1553,7 @@
     <message>
         <location filename="../misc.cpp" line="624"/>
         <source>Process count: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Amḍan n ukala: %1</translation>
     </message>
 </context>
 <context>
@@ -1570,7 +1570,7 @@
     <message>
         <location filename="../misc.cpp" line="485"/>
         <source>title</source>
-        <translation type="unfinished"></translation>
+        <translation>Azwel</translation>
     </message>
 </context>
 </TS>
