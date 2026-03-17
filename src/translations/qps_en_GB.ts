@@ -59,12 +59,12 @@
     <message>
         <location filename="../prefs.cpp" line="75"/>
         <source>Disclosure Triangles</source>
-        <translation type="unfinished"></translation>
+        <translation>Disclosure Triangles</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="76"/>
         <source>Branch Lines</source>
-        <translation type="unfinished"></translation>
+        <translation>Branch Lines</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="82"/>
