@@ -38,17 +38,32 @@ extern bool flag_thread_ok;
 #include <cstdarg>
 #include <cstring>
 
+#ifdef __AVX2__
+#include <immintrin.h>
+#endif
+
 // 300% faster than glibc (by fasthyun@magicn.com)
 int x_atoi(const char *sstr)
 {
     const char *str = sstr;
     int val = 0;
+#ifdef __AVX2__
+    __m256i val_vec = _mm256_setzero_si256();
+    __m256i ten_vec = _mm256_set1_epi32(10);
+    while (*str && (str[0] >= '0' && str[0] <= '9')) {
+        val_vec = _mm256_mullo_epi32(val_vec, ten_vec);
+        val_vec = _mm256_add_epi32(val_vec, _mm256_set1_epi32(*str - '0'));
+        str++;
+    }
+    val = _mm256_extract_epi32(val_vec, 0); // Extract the first integer
+#else
     while (*str)
     {
         val *= 10;
         val += *str - 48;
         str++;
     }
+#endif
     return val;
 }
 

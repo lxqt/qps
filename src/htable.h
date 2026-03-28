@@ -46,21 +46,21 @@ class HeadedTable;
 class CellAttribute
 {
   public:
-    QString text;
-    bool selected;
-    bool sorted;
+    const QChar *text;
     QSize size;
     QColor backColor; // table share
     QColor foreColor; // rows share
-    int xpos;         // cols share
-    int ypos;         // rows share
-    int w;            // cols share
-    int depth;        // rows share
-    int folded;       //
-    int lastchild;    //
+    unsigned short xpos;         // cols share
+    unsigned short ypos;         // rows share
+    unsigned short w;            // cols share
+    unsigned short depth;        // rows share
+    unsigned short folded;       //
+    unsigned short lastchild;    //
+    bool selected;
+    bool sorted;
     CellAttribute()
     {
-        text = "";
+        text = nullptr;
         sorted = selected = false;
         xpos = -1, ypos = -1, w = 0, depth = -1, folded = -1;
         lastchild = 0;
@@ -212,7 +212,7 @@ class TableBody : public QtTableView
     int first_drag_row;  // row where drag started
     int prev_drag_row;   // row where drag was at last event
     bool autoscrolling;  // true if we are autoscrolling right now
-    enum
+    enum : unsigned char
     {
         UP,
         DOWN
@@ -237,7 +237,7 @@ class HeadedTable : public QWidget
     TableBody *body;
 
     CellAttribute *attr; // DEL temporarily buffer
-    enum NodeState
+    enum NodeState : unsigned char
     {
         Leaf,
         Open,
