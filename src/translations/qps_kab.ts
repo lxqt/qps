@@ -430,7 +430,7 @@
     <message>
         <location filename="../proc.cpp" line="2615"/>
         <source>PID</source>
-        <translation type="unfinished"></translation>
+        <translation>PID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2615"/>
