@@ -243,12 +243,12 @@
 <context>
     <name>IO_Graph</name>
     <message>
-        <location filename="../infobar.cpp" line="785"/>
+        <location filename="../infobar.cpp" line="802"/>
         <source>I/O Summary:</source>
         <translation>Inn/ut-sammendrag:</translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="819"/>
+        <location filename="../infobar.cpp" line="836"/>
         <source>No input or output</source>
         <translation>Ingen inn- eller utdata</translation>
     </message>
@@ -941,87 +941,87 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../qps.cpp" line="1628"/>
+        <location filename="../qps.cpp" line="1624"/>
         <source>Show</source>
         <translation>Vis</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1631"/>
+        <location filename="../qps.cpp" line="1627"/>
         <source>Hide</source>
         <translation>Skjul</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1636"/>
+        <location filename="../qps.cpp" line="1632"/>
         <source>Quit</source>
         <translation>Avslutt</translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="430"/>
-        <location filename="../infobar.cpp" line="437"/>
+        <location filename="../infobar.cpp" line="447"/>
+        <location filename="../infobar.cpp" line="454"/>
         <source>User: </source>
         <translation>Bruker: </translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="431"/>
-        <location filename="../infobar.cpp" line="438"/>
+        <location filename="../infobar.cpp" line="448"/>
+        <location filename="../infobar.cpp" line="455"/>
         <source>System: </source>
         <translation>System: </translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="432"/>
-        <location filename="../infobar.cpp" line="439"/>
+        <location filename="../infobar.cpp" line="449"/>
+        <location filename="../infobar.cpp" line="456"/>
         <source>Nice: </source>
         <translation>Prioritet: </translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="430"/>
-        <location filename="../infobar.cpp" line="431"/>
-        <location filename="../infobar.cpp" line="432"/>
-        <location filename="../infobar.cpp" line="437"/>
-        <location filename="../infobar.cpp" line="438"/>
-        <location filename="../infobar.cpp" line="439"/>
+        <location filename="../infobar.cpp" line="447"/>
+        <location filename="../infobar.cpp" line="448"/>
+        <location filename="../infobar.cpp" line="449"/>
+        <location filename="../infobar.cpp" line="454"/>
+        <location filename="../infobar.cpp" line="455"/>
+        <location filename="../infobar.cpp" line="456"/>
         <source>%</source>
         <translation>%</translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="474"/>
-        <location filename="../infobar.cpp" line="509"/>
+        <location filename="../infobar.cpp" line="491"/>
+        <location filename="../infobar.cpp" line="526"/>
         <source>Total: </source>
         <translation>Totalt: </translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="477"/>
-        <location filename="../infobar.cpp" line="515"/>
+        <location filename="../infobar.cpp" line="494"/>
+        <location filename="../infobar.cpp" line="532"/>
         <source>Used: </source>
         <translation>Brukt: </translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="481"/>
+        <location filename="../infobar.cpp" line="498"/>
         <source>Cached: </source>
         <translation>Hurtiglagret: </translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="484"/>
+        <location filename="../infobar.cpp" line="501"/>
         <source>Buffer: </source>
         <translation>Mellomlager: </translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="512"/>
+        <location filename="../infobar.cpp" line="529"/>
         <source>Free: </source>
         <translation>Ledig: </translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="554"/>
+        <location filename="../infobar.cpp" line="571"/>
         <source>Time passed after system boot</source>
         <translation>Tid forløpt etter systemoppstart</translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="582"/>
+        <location filename="../infobar.cpp" line="599"/>
         <source>Average CPU load each 1, 5 ,15 minutes</source>
         <translation>Gjen. prosessorlast hvert 1, 5, 15 minutt</translation>
     </message>
     <message>
-        <location filename="../infobar.cpp" line="727"/>
+        <location filename="../infobar.cpp" line="744"/>
         <source>CPU Usage Summary:</source>
         <translation>Sammendrag av prosessorbruk:</translation>
     </message>
@@ -1029,343 +1029,343 @@
 <context>
     <name>Qps</name>
     <message>
-        <location filename="../qps.cpp" line="171"/>
+        <location filename="../qps.cpp" line="169"/>
         <source>header_popup</source>
         <translation>header_sprettopp</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="172"/>
+        <location filename="../qps.cpp" line="170"/>
         <source>Remove Field</source>
         <translation>Fjern felt</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="173"/>
+        <location filename="../qps.cpp" line="171"/>
         <source>Add Field</source>
         <translation>Legg til felt</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="176"/>
+        <location filename="../qps.cpp" line="174"/>
         <source>Session</source>
         <translation>Økt</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="180"/>
+        <location filename="../qps.cpp" line="178"/>
         <source>View</source>
         <translation>Visning</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="181"/>
+        <location filename="../qps.cpp" line="179"/>
         <source>Process</source>
         <translation>Prosess</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="182"/>
+        <location filename="../qps.cpp" line="180"/>
         <source>Log</source>
         <translation>Logg</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="187"/>
+        <location filename="../qps.cpp" line="185"/>
         <source>Fields</source>
         <translation>Felter</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="188"/>
+        <location filename="../qps.cpp" line="186"/>
         <source>Custom Fields</source>
         <translation>Tilpassede felt</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="190"/>
+        <location filename="../qps.cpp" line="188"/>
         <source>Basic Fields </source>
         <translation>Grunnleggende felt </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="192"/>
+        <location filename="../qps.cpp" line="190"/>
         <source>Jobs Fields </source>
         <translation>Jobbfelt </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="194"/>
+        <location filename="../qps.cpp" line="192"/>
         <source>Memory Fields </source>
         <translation>Minnefelter </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="197"/>
+        <location filename="../qps.cpp" line="195"/>
         <source>Scheduling Fields </source>
         <translation>Planleggingsfelter </translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="214"/>
+        <location filename="../qps.cpp" line="212"/>
         <source>Select Custom Fields...</source>
         <translation>Velg tilpassede felt...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="223"/>
+        <location filename="../qps.cpp" line="221"/>
         <source>Options</source>
         <translation>Innstillinger</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="224"/>
+        <location filename="../qps.cpp" line="222"/>
         <source>Update Period...</source>
         <translation>Oppdateringsintervall...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="233"/>
+        <location filename="../qps.cpp" line="231"/>
         <source>Show Status bar</source>
         <translation>Vis statuslinje</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="242"/>
+        <location filename="../qps.cpp" line="240"/>
         <source>Preferences...</source>
         <translation>Innstillinger...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="248"/>
+        <location filename="../qps.cpp" line="246"/>
         <source>Help</source>
         <translation>Hjelp</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="249"/>
-        <location filename="../qps.cpp" line="1676"/>
+        <location filename="../qps.cpp" line="247"/>
+        <location filename="../qps.cpp" line="1671"/>
         <source>About</source>
         <translation>Om</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="330"/>
+        <location filename="../qps.cpp" line="328"/>
         <source>test</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="331"/>
+        <location filename="../qps.cpp" line="329"/>
         <source>Copied to Clipboard</source>
         <translation>Kopiert til utklippstavlen</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="383"/>
+        <location filename="../qps.cpp" line="381"/>
         <source>context popup</source>
         <translation>sprettoppmeny</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="384"/>
+        <location filename="../qps.cpp" line="382"/>
         <source>Renice...</source>
         <translation>Forandre prioritet...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="385"/>
+        <location filename="../qps.cpp" line="383"/>
         <source>Scheduling...</source>
         <translation>Planlegging...</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="387"/>
+        <location filename="../qps.cpp" line="385"/>
         <source>Terminate</source>
         <translation>Avslutt</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="388"/>
+        <location filename="../qps.cpp" line="386"/>
         <source>Hangup</source>
         <translation>Suspender</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="389"/>
+        <location filename="../qps.cpp" line="387"/>
         <source>Kill</source>
         <translation>Drep</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="390"/>
+        <location filename="../qps.cpp" line="388"/>
         <source>Stop</source>
         <translation>Stopp</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="392"/>
+        <location filename="../qps.cpp" line="390"/>
         <source>Continue</source>
         <translation>Fortsett</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="395"/>
+        <location filename="../qps.cpp" line="393"/>
         <source>Other Signals</source>
         <translation>Andre signaler</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="396"/>
+        <location filename="../qps.cpp" line="394"/>
         <source>SIGINT (interrupt)</source>
         <translation>SIGINT (avbryt)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="398"/>
+        <location filename="../qps.cpp" line="396"/>
         <source>SIGCONT (continue)</source>
         <translation>SIGCONT (fortsett)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="400"/>
+        <location filename="../qps.cpp" line="398"/>
         <source>SIGSTOP (stop)</source>
         <translation>SIGSTOP (stopp)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="402"/>
+        <location filename="../qps.cpp" line="400"/>
         <source>SIGQUIT (quit)</source>
         <translation>SIGQUIT (avslutt)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="404"/>
+        <location filename="../qps.cpp" line="402"/>
         <source>SIGILL (illegal instruction)</source>
         <translation>SIGILL (ulovlig instruksjon)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="406"/>
+        <location filename="../qps.cpp" line="404"/>
         <source>SIGABRT (abort)</source>
         <translation>SIGABRT (avbryt)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="408"/>
+        <location filename="../qps.cpp" line="406"/>
         <source>SIGFPE (floating point exception)</source>
         <translation>SIGFPE (Feil med flytende desimaltall)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="410"/>
+        <location filename="../qps.cpp" line="408"/>
         <source>SIGSEGV (segmentation violation)</source>
         <translation>SIGSEGV (feil med oppdeling)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="412"/>
+        <location filename="../qps.cpp" line="410"/>
         <source>SIGPIPE (broken pipe)</source>
         <translation>SIGPIPE (ødelagt rør [|])</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="414"/>
+        <location filename="../qps.cpp" line="412"/>
         <source>SIGALRM (timer signal)</source>
         <translation>SIGALRM (timersignal)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="416"/>
+        <location filename="../qps.cpp" line="414"/>
         <source>SIGUSR1 (user-defined 1)</source>
         <translation>SIGUSR1 (brukerdefinert 1)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="418"/>
+        <location filename="../qps.cpp" line="416"/>
         <source>SIGUSR2 (user-defined 2)</source>
         <translation>SIGUSR2 (brukerdefinert 2)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="420"/>
+        <location filename="../qps.cpp" line="418"/>
         <source>SIGCHLD (child death)</source>
         <translation>SIGCHLD (underordnet prosess avbrutt)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="422"/>
+        <location filename="../qps.cpp" line="420"/>
         <source>SIGTSTP (stop from tty)</source>
         <translation>SIGTSTP (stopp fra tty)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="424"/>
+        <location filename="../qps.cpp" line="422"/>
         <source>SIGTTIN (tty input)</source>
         <translation>SIGTTIN (tty-innsignal)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="426"/>
+        <location filename="../qps.cpp" line="424"/>
         <source>SIGTTOU (tty output)</source>
         <translation>SIGTTOU (tty-utsignal)</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="433"/>
+        <location filename="../qps.cpp" line="431"/>
         <source>View Details</source>
         <translation>Vis detaljer</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="671"/>
+        <location filename="../qps.cpp" line="666"/>
         <source>Show File Path</source>
         <translation>Vis filsti</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="677"/>
+        <location filename="../qps.cpp" line="672"/>
         <source>Show Graph</source>
         <translation>Vis graf</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="683"/>
+        <location filename="../qps.cpp" line="678"/>
         <source>Show Control Bar</source>
         <translation>Vis kontrollinje</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="694"/>
+        <location filename="../qps.cpp" line="689"/>
         <source>Include Child Times</source>
         <translation>Inkluder underordnede prosessers tider</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="282"/>
+        <location filename="../qps.cpp" line="280"/>
         <source>Quit</source>
         <translation>Avslutt</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1139"/>
-        <location filename="../qps.cpp" line="1170"/>
-        <location filename="../qps.cpp" line="1177"/>
-        <location filename="../qps.cpp" line="1198"/>
-        <location filename="../qps.cpp" line="1232"/>
-        <location filename="../qps.cpp" line="1327"/>
+        <location filename="../qps.cpp" line="1134"/>
+        <location filename="../qps.cpp" line="1165"/>
+        <location filename="../qps.cpp" line="1172"/>
+        <location filename="../qps.cpp" line="1193"/>
+        <location filename="../qps.cpp" line="1227"/>
+        <location filename="../qps.cpp" line="1322"/>
         <source>Permission denied</source>
         <translation>Nektet tillatelse</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1140"/>
+        <location filename="../qps.cpp" line="1135"/>
         <source>You do not have permission to renice the selected processes. Only the process owner and the super-user are allowed to do that.</source>
         <translation>Du har ikke tillatelse til å forandre prioritet for den valgte prosessen. Bare prosessens eier og superbrukeren har tillatelse til det.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1171"/>
+        <location filename="../qps.cpp" line="1166"/>
         <source>You do not have permission to renice process %1 (%2).Only the process owner and the super-user are allowed to do that.</source>
         <translation>Du har ikke tillatelse til å forandre prioritet på prosessen %1 (%2). Bare prosessens eier og superbrukeren har tillatelse til det.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1178"/>
+        <location filename="../qps.cpp" line="1173"/>
         <source>Only the super-user may lower the nice value of a process.</source>
         <translation>Bare superbrukeren kan minske nice-verdien til en prosess.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1199"/>
+        <location filename="../qps.cpp" line="1194"/>
         <source>Only the super-user may change the scheduling policy and static priority.</source>
         <translation>Bare superbrukeren kan forandre planleggingspraksisen og statisk prioritet.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1233"/>
+        <location filename="../qps.cpp" line="1228"/>
         <source>You do not have permission to change the scheduling and/or priority of process %1 (%2). Only the super-user may do that.</source>
         <translation>Du har ikke tillatelse til å forandre planleggingen og/eller proriteten til prosessen %1 (%2). Bare superbrukeren kan gjøre det.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1294"/>
+        <location filename="../qps.cpp" line="1289"/>
         <source>Do you really want to terminate the selected process(es)?</source>
         <translation>Terminer valgt(e) prosess(er)?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1296"/>
+        <location filename="../qps.cpp" line="1291"/>
         <source>Do you really want to hang up the selected process(es)?</source>
         <translation>Vil du suspendere de(n) valgte prosessen(e)?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1298"/>
+        <location filename="../qps.cpp" line="1293"/>
         <source>Do you really want to kill the selected process(es)?</source>
         <translation>Drep valgt(e) prosess(er)?</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1307"/>
+        <location filename="../qps.cpp" line="1302"/>
         <source>Question</source>
         <translation>Spørsmål</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1328"/>
+        <location filename="../qps.cpp" line="1323"/>
         <source>You do not have permission to send a signal to process %1 (%2). Only the super-user and the owner of the process may send signals to it.</source>
         <translation>Du har ikke tillatelse til å sende et signal til prosessen %1 (%2). Bare superbrukeren og eieren av prosessen kan gjøre det.</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1692"/>
+        <location filename="../qps.cpp" line="1687"/>
         <source>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</source>
         <translation>&lt;center&gt;&lt;h2&gt; Qps %1&lt;/center&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1694"/>
+        <location filename="../qps.cpp" line="1689"/>
         <source>&lt;h2&gt; Qps %1 - A Visual Process Manager &lt;/h2&gt; %2 using Qt library %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Source: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Bugtracker: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</source>
         <translation>&lt;h2&gt; Qps %1 - En visuell prosessbehandler &lt;/h2&gt; %2 bruker Qt-bibliotek %3&lt;br&gt;&lt;br&gt;&lt;b&gt;Kilde: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps&quot;&gt;https://github.com/lxqt/qps/&lt;/a&gt;&lt;br&gt;&lt;b&gt;Feilsporer: &lt;/b&gt;&lt;a href=&quot;https://github.com/lxqt/qps/issues&quot;&gt;https://github.com/lxqt/qps/issues&lt;/a&gt;&lt;br&gt;</translation>
     </message>
     <message>
-        <location filename="../qps.cpp" line="1714"/>
+        <location filename="../qps.cpp" line="1709"/>
         <source>&lt;b&gt;Original Qps by&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Contributors&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</source>
         <translation>&lt;b&gt;Orginal Qps av&lt;/b&gt;&lt;br&gt;Mattias Engdegård (f91-men@nada.kth.se)&lt;br&gt;&lt;br&gt;&lt;b&gt;Bidragsytere&lt;/b&gt;&lt;br&gt;Olivier.Daudel@u-paris10.fr&lt;br&gt;jsanchez@todounix.homeip.net &lt;br&gt;daehyun.yang@gmail.com &lt;br&gt;Luís Pereira (luis.artur.pereira@gmail.com)&lt;br&gt;Alf Gaida (agaida@siduction.org)&lt;br&gt;Paulo Lieuthier (paulolieuthier@gmail.com)&lt;br&gt;Jerome Leclanche (jerome@leclan.ch)&lt;br&gt;</translation>
     </message>
