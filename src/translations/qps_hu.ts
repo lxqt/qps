@@ -31,7 +31,7 @@
     <message>
         <location filename="../details.cpp" line="629"/>
         <source>Field value</source>
-        <translation type="unfinished"></translation>
+        <translation>Mező értéke</translation>
     </message>
 </context>
 <context>
@@ -39,22 +39,22 @@
     <message>
         <location filename="../prefs.cpp" line="59"/>
         <source>Exit on closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezárás kilépéskor</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="60"/>
         <source>Remember Position</source>
-        <translation type="unfinished"></translation>
+        <translation>Pozíció megjegyzése</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="68"/>
         <source>Host Name Lookup</source>
-        <translation type="unfinished"></translation>
+        <translation>Gépnév keresése</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="69"/>
         <source>Service Name Lookup</source>
-        <translation type="unfinished"></translation>
+        <translation>Szolgáltatásnév keresése</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="75"/>
@@ -186,7 +186,7 @@
     <message>
         <location filename="../details.cpp" line="580"/>
         <source>Value</source>
-        <translation type="unfinished">Érték</translation>
+        <translation>Érték</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="580"/>
@@ -379,7 +379,7 @@
     <message>
         <location filename="../dialogs.cpp" line="283"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
