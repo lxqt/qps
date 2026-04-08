@@ -1,3 +1,9 @@
+2.13.0 / 2026-04-20
+===================
+ * Improved drawing of info-bar.
+ * Used an SVG icon for the app.
+ * Updated translations.
+
 2.12.0 / 2025-11-05
 ===================
  * Gave parent windows to some dialogs.
