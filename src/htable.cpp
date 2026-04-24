@@ -265,7 +265,7 @@ bool TableBody::isCellChanged(int row, int col)
     else
     {
         bool result = false;
-        if (attr->text == str and attr->selected == selected and
+        if (attr->text == str.data() and attr->selected == selected and
             attr->sorted == sorted and attr->xpos == xpos and attr->w == width
             // and attr->size==tmp_size
             and
@@ -336,10 +336,10 @@ bool TableHead::isCellChanged(int row, int col)
     {
         result = true;
     }
-    else if (attr->text != str || attr->sorted != sorted
+    else if (attr->text != str.data() || attr->sorted != sorted
              || attr->size != tmp_size || attr->xpos != xpos)
     {
-        attr->text = str;
+        attr->text = str.data();
         attr->sorted = sorted;
         attr->xpos = xpos;
         attr->size = tmp_size;
@@ -482,7 +482,7 @@ void TableBody::paintCell(QPainter *p, int row, int col)
     p->drawText(gap, 0, w, h, align, htable->text(row, col));
 
     // cache write!
-    attr->text = htable->text(row, col);
+    attr->text = htable->text(row, col).data();
     attr->xpos = htable->colXPos(col);
     attr->size = tmp_size;
 }
@@ -923,7 +923,7 @@ void TableCache::setRow(int row)
         for (i = row; i < nrow; i++)
         {
             for (int j = 0; j < 48; j++)
-                rows[i]->cells[j].text = "";
+                rows[i]->cells[j].text = reinterpret_cast<const QChar *>("");
         }
     }
     nrow = row;
@@ -939,7 +939,7 @@ void TableCache::setCol(int col)
         int i, size = rows.size();
         for (i = 0; i < size; i++)
             for (int j = col; j < ncol; j++)
-                rows[i]->cells[j].text = "";
+                rows[i]->cells[j].text = reinterpret_cast<const QChar *>("");
     }
     ncol = col;
 }
