@@ -2614,7 +2614,7 @@ Proc::Proc()
     categories.insert( F_PID
                      , new Cat_int( tr( "PID" ), tr( "Process ID" ), 6, &Procinfo::pid) );
     categories.insert( F_TGID
-                     , new Cat_int( tr( "TGID" ), tr( "Task group ID ( parent of threads )" ),6, &Procinfo::tgid));
+                     , new Cat_int( tr( "TGID" ), tr( "Task group ID (parent of threads)" ),6, &Procinfo::tgid));
     categories.insert( F_PPID
                      , new Cat_int( tr( "PPID" ), tr( "Parent process ID" ), 6, &Procinfo::ppid));
     categories.insert( F_PGID
@@ -2626,15 +2626,15 @@ Proc::Proc()
     categories.insert( F_TPGID
                      , new Cat_int( tr( "TPGID" ), tr( "Process group ID of tty owner" ), 6, &Procinfo::tpgid));
     categories.insert( F_USER
-                     , new Cat_string( tr( "USER" ), tr( "Owner (*=suid root, +=suid a user)" ),&Procinfo::username));
+                     , new Cat_string( tr( "USER" ), tr( "Owner (* = suid root, + = suid a user)" ),&Procinfo::username));
     categories.insert( F_GROUP
-                     , new Cat_string( tr( "GROUP" ), tr( "Group name (*=sgid other)" ),&Procinfo::groupname));
+                     , new Cat_string( tr( "GROUP" ), tr( "Group name (* = sgid other)" ),&Procinfo::groupname));
     categories.insert( F_UID
                      , new Cat_int( tr( "UID" ), tr( "Real user ID" ), 6, &Procinfo::uid));
     categories.insert( F_EUID
                      , new Cat_int( tr( "EUID" ), tr( "Effective user ID" ), 6, &Procinfo::euid));
     categories.insert( F_SUID
-                      , new Cat_int( tr( "SUID" ), tr( "Saved user ID (Posix)" ), 6,&Procinfo::suid));
+                      , new Cat_int( tr( "SUID" ), tr( "Saved user ID (POSIX)" ), 6,&Procinfo::suid));
     categories.insert( F_FSUID
                      , new Cat_int( tr( "FSUID" ), tr( "File system user ID" ), 6,&Procinfo::fsuid));
     categories.insert( F_GID
@@ -2642,25 +2642,25 @@ Proc::Proc()
     categories.insert( F_EGID
                       , new Cat_int( tr( "EGID" ), tr( "Effective group ID" ), 6, &Procinfo::egid));
     categories.insert( F_SGID
-                     , new Cat_int( tr( "SGID" ), tr( "Saved group ID (Posix)" ), 6,&Procinfo::sgid));
+                     , new Cat_int( tr( "SGID" ), tr( "Saved group ID (POSIX)" ), 6,&Procinfo::sgid));
     categories.insert( F_FSGID
                      , new Cat_int( tr( "FSGID" ), tr( "File system group ID" ), 6,&Procinfo::fsgid));
     categories.insert( F_PRI
                      , new Cat_int( tr( "PRI" ), tr( "Dynamic priority" ), 4, &Procinfo::priority));
     categories.insert( F_NICE
-                     , new Cat_int( tr( "NICE" ), tr( "Scheduling favour (higher -> less cpu time)" ), 4, &Procinfo::nice));
+                     , new Cat_int( tr( "NICE" ), tr( "Scheduling favour (higher → less cpu time)" ), 4, &Procinfo::nice));
     categories.insert( F_NLWP
-                     , new Cat_int( tr( "NLWP" ), tr( "Number of tasks(threads) in task group" ), 5, &Procinfo::nthreads));
+                     , new Cat_int( tr( "NLWP" ), tr( "Number of tasks (threads) in task group" ), 5, &Procinfo::nthreads));
     categories.insert( F_PLCY
                      , new Cat_policy( tr( "PLCY" ), tr( "Scheduling policy" ) ) );
     categories.insert( F_RPRI
-                     , new Cat_rtprio( tr( "RPRI" ), tr( "Realtime priority (0-99, more is better)" ) ) );
+                     , new Cat_rtprio( tr( "RPRI" ), tr( "Real-time priority (0-99, more is better)" ) ) );
     categories.insert( F_TMS
                      , new Cat_tms( tr( "TMS" ), tr( "Time slice in milliseconds" ) ) );
     categories.insert( F_SLPAVG
-                     , new Cat_int( tr( "%SAVG" ), tr( "Percentage average sleep time (-1 -> N/A)" ), 4, &Procinfo::slpavg));
+                     , new Cat_int( tr( "%SAVG" ), tr( "Percentage average sleep time (-1 → N/A)" ), 4, &Procinfo::slpavg));
     categories.insert( F_AFFCPU
-                     , new Cat_affcpu( tr( "CPUSET" ), tr( "Affinity CPU mask (0 -> API not supported)" ) ) ); // ???
+                     , new Cat_affcpu( tr( "CPUSET" ), tr( "Affinity CPU mask (0 → API not supported)" ) ) ); // ???
     categories.insert( F_MAJFLT
                      , new Cat_uintl( tr( "MAJFLT" ), tr( "Number of major faults (disk access)" ), 8, &Procinfo::majflt));
     categories.insert( F_MINFLT
@@ -2671,31 +2671,31 @@ Proc::Proc()
     categories.insert( F_RSS
                      , new Cat_memory( tr( "RSS" ), tr( "Resident set size" ), 8, &Procinfo::resident));
     categories.insert( F_MEM
-                     , new Cat_memory( tr( "MEM" ), tr( "memory usage (RSS-SHARE)" ), 8, &Procinfo::mem));
+                     , new Cat_memory( tr( "MEM" ), tr( "Memory usage (RSS-SHARE)" ), 8, &Procinfo::mem));
     categories.insert( F_TRS
-                     , new Cat_memory( tr( "TRS" ), tr( "Text(code) resident set size" ), 8, &Procinfo::trs));
+                     , new Cat_memory( tr( "TRS" ), tr( "Text (code) resident set size" ), 8, &Procinfo::trs));
     categories.insert( F_DRS
-                     , new Cat_memory( tr( "DRS" ), tr( "Data resident set size(malloc+global variable)" ), 8, &Procinfo::drs));
+                     , new Cat_memory( tr( "DRS" ), tr( "Data resident set size (malloc + global variable)" ), 8, &Procinfo::drs));
     categories.insert( F_STACK
                      , new Cat_memory( tr( "STACK" ), tr( "Stack size" ), 8, &Procinfo::stack));
     categories.insert( F_SHARE
-                     , new Cat_memory( tr( "SHARE" ), tr( "Shared memory with other libs" ), 8, &Procinfo::share));
+                     , new Cat_memory( tr( "SHARE" ), tr( "Shared memory with other libraries" ), 8, &Procinfo::share));
     categories.insert( F_SWAP
                      , new Cat_swap( tr( "SWAP" ), tr( "Kbytes on swap device" ) ) );
     categories.insert( F_IOR
-                     , new Cat_memory( tr( "IO_R" ), tr( "io read (file)" ), 8, &Procinfo::io_read));
+                     , new Cat_memory( tr( "IO_R" ), tr( "I/O read (file)" ), 8, &Procinfo::io_read));
     categories.insert( F_IOW
-                     , new Cat_memory( tr( "IO_W" ), tr( "io write (file)" ), 8, &Procinfo::io_write));
+                     , new Cat_memory( tr( "IO_W" ), tr( "I/O write (file)" ), 8, &Procinfo::io_write));
     categories.insert( F_DT
                      , new Cat_uintl( tr( "DT" ), tr( "Number of dirty (non-written) pages" ), 7, &Procinfo::dt));
     categories.insert( F_STAT
-                     , new Cat_state( tr( "STAT" ), tr( "State of the process " ) ) );
+                     , new Cat_state( tr( "STAT" ), tr( "State of the process" ) ) );
     categories.insert( F_FLAGS
                      , new Cat_hex( tr( "FLAGS" ), tr( "Process flags (hex)" ), 9, &Procinfo::flags));
     categories.insert( F_WCHAN
                      , new Cat_wchan( tr( "WCHAN" ), tr( "Kernel function where process is sleeping" ) ) );
     categories.insert( F_WCPU
-                     , new Cat_percent( tr( "%WCPU" ), tr( "Weighted percentage of CPU (30 s average)" ), 6, &Procinfo::wcpu));
+                     , new Cat_percent( tr( "%WCPU" ), tr( "Weighted percentage of CPU (30s average)" ), 6, &Procinfo::wcpu));
     categories.insert( F_CPU
                      , new Cat_percent( tr( "%CPU" ), tr( "Percentage of CPU used since last update" ), 6, &Procinfo::pcpu));
     categories.insert( F_PMEM
@@ -2707,7 +2707,7 @@ Proc::Proc()
     categories.insert( F_CPUNUM
                      , new Cat_int( tr( "CPU" ), tr( "CPU the process is executing on (SMP system)" ), 3, &Procinfo::which_cpu));
     categories.insert( F_CMD
-                     , new Cat_string( tr( "Process Name" ), tr( "the process name" ), &Procinfo::command));
+                     , new Cat_string( tr( "Process Name" ), tr( "The process name" ), &Procinfo::command));
 //    categories.insert( F_PROCESSNAME
 //                     , new Cat_string( tr( "Process Name " ),tr( "the process name" ), &Procinfo::command));
     categories.insert( F_CWD
