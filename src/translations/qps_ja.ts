@@ -39,7 +39,7 @@
     <message>
         <location filename="../prefs.cpp" line="59"/>
         <source>Exit on closing</source>
-        <translation>[閉じる] で終了する</translation>
+        <translation>閉じると終了</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="60"/>
@@ -227,7 +227,7 @@
     <message>
         <location filename="../details.cpp" line="497"/>
         <source>Open mode</source>
-        <translation>オープン モード</translation>
+        <translation>オープンモード</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="499"/>
@@ -311,12 +311,12 @@
     <message>
         <location filename="../details.cpp" line="394"/>
         <source>Perm</source>
-        <translation type="unfinished"></translation>
+        <translation>Perm</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="394"/>
         <source>Permission flags</source>
-        <translation>パーミッションフラグ</translation>
+        <translation>権限フラグ</translation>
     </message>
     <message>
         <location filename="../details.cpp" line="395"/>
@@ -402,7 +402,7 @@
     <message>
         <location filename="../prefs.cpp" line="198"/>
         <source>Total cpu: %1</source>
-        <translation>合計CPU: %1</translation>
+        <translation>合計 CPU: %1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="199"/>
@@ -412,7 +412,7 @@
     <message>
         <location filename="../prefs.cpp" line="205"/>
         <source>default</source>
-        <translation>既定</translation>
+        <translation>デフォルト</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="206"/>
@@ -495,7 +495,7 @@
     <message>
         <location filename="../proc.cpp" line="2627"/>
         <source>Process group ID of tty owner</source>
-        <translation type="unfinished"></translation>
+        <translation>tty 所有者のプロセスグループ ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2629"/>
@@ -525,7 +525,7 @@
     <message>
         <location filename="../proc.cpp" line="2633"/>
         <source>Real user ID</source>
-        <translation type="unfinished"></translation>
+        <translation>実際のユーザー ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2635"/>
@@ -545,7 +545,7 @@
     <message>
         <location filename="../proc.cpp" line="2637"/>
         <source>Saved user ID (Posix)</source>
-        <translation type="unfinished"></translation>
+        <translation>保存されたユーザー ID (POSIX)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2639"/>
@@ -565,7 +565,7 @@
     <message>
         <location filename="../proc.cpp" line="2641"/>
         <source>Real group ID</source>
-        <translation type="unfinished"></translation>
+        <translation>実際のグループ ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2643"/>
@@ -585,7 +585,7 @@
     <message>
         <location filename="../proc.cpp" line="2645"/>
         <source>Saved group ID (Posix)</source>
-        <translation type="unfinished"></translation>
+        <translation>保存されたグループ ID (POSIX)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2647"/>
@@ -595,7 +595,7 @@
     <message>
         <location filename="../proc.cpp" line="2647"/>
         <source>File system group ID</source>
-        <translation type="unfinished"></translation>
+        <translation>ファイルシステムのグループ ID</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2649"/>
@@ -615,7 +615,7 @@
     <message>
         <location filename="../proc.cpp" line="2651"/>
         <source>Scheduling favour (higher -&gt; less cpu time)</source>
-        <translation type="unfinished"></translation>
+        <translation>スケジューリングの優先順位（高いとCPU使用時間が短くなる）</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2653"/>
@@ -635,7 +635,7 @@
     <message>
         <location filename="../proc.cpp" line="2655"/>
         <source>Scheduling policy</source>
-        <translation type="unfinished"></translation>
+        <translation>スケジューリングポリシー</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2657"/>
@@ -685,7 +685,7 @@
     <message>
         <location filename="../proc.cpp" line="2665"/>
         <source>Number of major faults (disk access)</source>
-        <translation type="unfinished"></translation>
+        <translation>主要な障害数（ディスクアクセス）</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2667"/>
@@ -695,7 +695,7 @@
     <message>
         <location filename="../proc.cpp" line="2667"/>
         <source>Number of minor faults (no disk access)</source>
-        <translation type="unfinished"></translation>
+        <translation>マイナー障害数（ディスクアクセスなし）</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2670"/>
@@ -715,7 +715,7 @@
     <message>
         <location filename="../proc.cpp" line="2672"/>
         <source>Resident set size</source>
-        <translation type="unfinished"></translation>
+        <translation>常駐セットサイズ</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2674"/>
@@ -735,7 +735,7 @@
     <message>
         <location filename="../proc.cpp" line="2676"/>
         <source>Text(code) resident set size</source>
-        <translation type="unfinished"></translation>
+        <translation>テキスト（コード）常駐セットサイズ</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2678"/>
@@ -785,7 +785,7 @@
     <message>
         <location filename="../proc.cpp" line="2686"/>
         <source>io read (file)</source>
-        <translation type="unfinished"></translation>
+        <translation>io 読み込み（ファイル）</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2688"/>
@@ -795,7 +795,7 @@
     <message>
         <location filename="../proc.cpp" line="2688"/>
         <source>io write (file)</source>
-        <translation type="unfinished"></translation>
+        <translation>io 書き込み（ファイル）</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2690"/>
@@ -805,7 +805,7 @@
     <message>
         <location filename="../proc.cpp" line="2690"/>
         <source>Number of dirty (non-written) pages</source>
-        <translation type="unfinished"></translation>
+        <translation>ダーティー（書き込みのない）ページの数</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2692"/>
@@ -825,7 +825,7 @@
     <message>
         <location filename="../proc.cpp" line="2694"/>
         <source>Process flags (hex)</source>
-        <translation type="unfinished"></translation>
+        <translation>プロセスフラグ（16進数）</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2696"/>

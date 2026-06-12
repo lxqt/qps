@@ -1332,17 +1332,17 @@
     <message>
         <location filename="../qps.cpp" line="1289"/>
         <source>Do you really want to terminate the selected process(es)?</source>
-        <translation>Вы действительно хотите завершить выбранные процесс(ы)?</translation>
+        <translation>Уверены, что хотите завершить выбранные процесс(ы)?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1291"/>
         <source>Do you really want to hang up the selected process(es)?</source>
-        <translation>Вы действительно хотите отправить сигнал SIGHUP выбранным процесс(ам)?</translation>
+        <translation>Уверены, что хотите отправить сигнал SIGHUP выбранным процесс(ам)?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1293"/>
         <source>Do you really want to kill the selected process(es)?</source>
-        <translation>Вы действительно хотите убить выбранные процесс(ы)?</translation>
+        <translation>Уверены, что хотите убить выбранные процесс(ы)?</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="1302"/>

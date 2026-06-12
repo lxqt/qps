@@ -1127,7 +1127,7 @@
         <location filename="../qps.cpp" line="247"/>
         <location filename="../qps.cpp" line="1671"/>
         <source>About</source>
-        <translation>O aplikacji</translation>
+        <translation>O programie</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="328"/>

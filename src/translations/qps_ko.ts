@@ -387,7 +387,7 @@
     <message>
         <location filename="../prefs.cpp" line="150"/>
         <source>Preferences</source>
-        <translation>기본 설정</translation>
+        <translation>환경설정</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="157"/>
@@ -1116,7 +1116,7 @@
     <message>
         <location filename="../qps.cpp" line="240"/>
         <source>Preferences...</source>
-        <translation>기본 설정...</translation>
+        <translation>환경설정...</translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="246"/>
