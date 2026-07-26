@@ -1091,7 +1091,7 @@
     <message>
         <location filename="../qps.cpp" line="195"/>
         <source>Scheduling Fields </source>
-        <translation>Πεδία χρονοπρογραμματισμού </translation>
+        <translation>Πεδία χρονοδρομολόγησης </translation>
     </message>
     <message>
         <location filename="../qps.cpp" line="212"/>

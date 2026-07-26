@@ -402,7 +402,7 @@
     <message>
         <location filename="../prefs.cpp" line="198"/>
         <source>Total cpu: %1</source>
-        <translation>Total cpu: %1</translation>
+        <translation>Jumlah cpu: %1</translation>
     </message>
     <message>
         <location filename="../prefs.cpp" line="199"/>
@@ -645,7 +645,7 @@
     <message>
         <location filename="../proc.cpp" line="2657"/>
         <source>Realtime priority (0-99, more is better)</source>
-        <translation>Prioritas waktu nyata (0-99, semakin besar semakin baik)</translation>
+        <translation>Prioritas waktu nyata (0-99, lebih banyak lebih baik)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2659"/>
@@ -665,7 +665,7 @@
     <message>
         <location filename="../proc.cpp" line="2661"/>
         <source>Percentage average sleep time (-1 -&gt; N/A)</source>
-        <translation>Persentase rata-rata waktu tidur (-1 -&gt; T/A)</translation>
+        <translation>Persentase rata-rata waktu tidur (-1 -&gt; N/A)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2663"/>
@@ -685,7 +685,7 @@
     <message>
         <location filename="../proc.cpp" line="2665"/>
         <source>Number of major faults (disk access)</source>
-        <translation>Jumlah kesalahan utama (akses disk)</translation>
+        <translation>Jumlah kesalahan besar (akses disk)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2667"/>
@@ -695,7 +695,7 @@
     <message>
         <location filename="../proc.cpp" line="2667"/>
         <source>Number of minor faults (no disk access)</source>
-        <translation>Jumlah kesalahan minor (tanpa akses disk)</translation>
+        <translation>Jumlah kesalahan kecil (tanpa akses disk)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2670"/>
@@ -705,7 +705,7 @@
     <message>
         <location filename="../proc.cpp" line="2670"/>
         <source>Virtual image size of process</source>
-        <translation>Ukuran citra virtual proses</translation>
+        <translation>Ukuran gambar virtual dari proses</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2672"/>
