@@ -56,6 +56,7 @@
 #include "uidstr.h"
 #include "ttystr.h"
 #include "wchan.h"
+#include "misc.h"
 
 #include <QString>
 #include <QRegularExpression>
@@ -75,10 +76,10 @@ bool Procview::flag_show_file_path = false;
 bool Procview::flag_cumulative = false;  // times cumulative with children's
 bool Procview::flag_pcpu_single = false; // %CPU= pcpu/num_cpus
 int pagesize;
-int Proc::update_msec = 1024;
+unsigned short Proc::update_msec = 1024;
 
 // socket states, from <linux/net.h> and touched to avoid name collisions
-enum
+enum : unsigned char
 {
     SSFREE = 0,     /* not allocated		*/
     SSUNCONNECTED,  /* unconnected to any socket	*/
@@ -325,7 +326,7 @@ int Cat_int::compare(Procinfo *a, Procinfo *b)
 // COMMON
 Cat_percent::Cat_percent(const QString &heading, const QString &explain, int w,
                          float Procinfo::*member)
-    : Category(heading, explain), float_member(member), field_width(w)
+    : Category(heading, explain), field_width(w), float_member(member)
 {
 }
 
@@ -1312,7 +1313,7 @@ int Proc::read_pid_tasks(int pid)
         if (e->d_name[0] == '.')
             continue; // skip "." , ".."
 
-        thread_pid = atoi(e->d_name);
+        thread_pid = x_atoi(e->d_name);
         if (pid == thread_pid)
             continue; // skip
 
@@ -2140,7 +2141,7 @@ bool Procinfo::read_fds()
     {
         if (e->d_name[0] == '.')
             continue;
-        int fdnum = atoi(e->d_name);
+        int fdnum = x_atoi(e->d_name);
         std::string str(path);
         str.append(e->d_name);
         read_fd(fdnum, str.c_str());
@@ -2312,10 +2313,10 @@ bool Procinfo::read_maps()
                 line[len - 1] = '\0';
             while (line[n] == ' ' && line[n])
                 n++;
-            mi->filename = line + n;
+            mi->filename = reinterpret_cast<const QChar *>(line + n);
         }
         else if ((mi->major | mi->minor | mi->inode) == 0)
-            mi->filename = "(anonymous)";
+            mi->filename = QString::fromLocal8Bit("(anonymous)").constData();
         maps.append(mi);
     }
     fclose(f);
@@ -2759,7 +2760,7 @@ void Proc::read_proc_all()
             int pid;
             Procinfo *pi = nullptr;
 
-            pid = atoi(e->d_name);
+            pid = x_atoi(e->d_name);
 
             pi = procs.value(pid, NULL);
 
