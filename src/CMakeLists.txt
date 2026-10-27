@@ -64,6 +64,8 @@ lxqt_translate_desktop(DESKTOP_FILES
 # End of translations
 #-----------------------------------------------------------------------------
 
+# Follow freedesktop specifications
+set(DNS_DESKTOP_FILENAME "org.lxqt_project.Qps.desktop")
 
 add_executable(${PROJECT_NAME}
     ${SOURCES}
@@ -82,5 +84,5 @@ target_link_libraries(${PROJECT_NAME}
 install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ${CMAKE_INSTALL_FULL_BINDIR})
 install(FILES
     ${DESKTOP_FILES}
-    DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/applications"
+    DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/applications RENAME ${DNS_DESKTOP_FILENAME}
 )
