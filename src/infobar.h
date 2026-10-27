@@ -173,22 +173,22 @@ class GraphBase : public QWidget
     virtual QString doHistoryTXT(SysHistory *sysh);
 
     Procview *procview;
-    int official_height;
-    int npoints; // nr of history points currently remembered
+    unsigned short official_height;
+    unsigned short npoints; // nr of history points currently remembered
   private:
     // history points are stored in fixed point, scaled by history_scale
     static const unsigned int history_scale = 256;
 
-    int hist_size;  // history buffer size DEL
-    float *history; // (circular) history buffer DEL
-    int h_index;    // next history index to use
     float peak;     // largest value in history
+    float *history; // (circular) history buffer DEL
+    unsigned short hist_size;  // history buffer size DEL
+    unsigned short h_index;    // next history index to use
+
+    unsigned short px, py; //	pointer position
 
     bool dirty; // history changed since pixmap was drawn
     QPixmap pixmap;
     QPixmap icon_pm;
-
-    int px, py; //	pointer position
 };
 
 class IO_Graph : public GraphBase

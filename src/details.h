@@ -107,7 +107,7 @@ class Sockets : public SimpleTable
     QString text(int row, int col) override;
 
   private:
-    enum
+    enum : unsigned char
     {
         FD,
         PROTO,
@@ -143,7 +143,7 @@ class Maps : public SimpleTable
     QString text(int row, int col) override;
 
   private:
-    enum
+    enum : unsigned char
     {
         ADDRESS,
         SIZE,
@@ -171,7 +171,7 @@ class Files : public SimpleTable
     QString text(int row, int col) override;
 
   private:
-    enum
+    enum : unsigned char
     {
         FILEDESC,
 #ifdef LINUX
@@ -197,7 +197,7 @@ class Environ : public SimpleTable
     QString text(int row, int col) override;
 
   private:
-    enum
+    enum : unsigned char
     {
         ENVNAME,
         ENVVALUE,
@@ -220,7 +220,7 @@ class AllFields : public SimpleTable
     QString text(int row, int col) override;
 
   private:
-    enum
+    enum : unsigned char
     {
         FIELDNAME,
         FIELDDESC,
