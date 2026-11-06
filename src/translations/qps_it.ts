@@ -735,7 +735,7 @@
     <message>
         <location filename="../proc.cpp" line="2676"/>
         <source>Text(code) resident set size</source>
-        <translation type="unfinished"></translation>
+        <translation>Text(code) quantità residente</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2678"/>
@@ -745,7 +745,7 @@
     <message>
         <location filename="../proc.cpp" line="2678"/>
         <source>Data resident set size(malloc+global variable)</source>
-        <translation type="unfinished"></translation>
+        <translation>Quantità residente in memoria dei dati (malloc+variabili globali)</translation>
     </message>
     <message>
         <location filename="../proc.cpp" line="2680"/>
