@@ -723,7 +723,6 @@ Q_DECLARE_TR_FUNCTIONS(Proc)
     int num_process;          //  number of process
 
     long dt_total; //
-    long dt_used;  //  cpu used time in clktick
 
     long read_byte;  //  test
     long write_byte; // test

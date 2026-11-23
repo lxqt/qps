@@ -53,6 +53,14 @@ set(CMAKE_AUTORCC ON)
 
 add_subdirectory(src)
 
+include(CTest)
+if(BUILD_TESTING)
+    add_executable(cpu-history-test tests/cpu-history.cpp)
+    target_include_directories(cpu-history-test PRIVATE src)
+    set_target_properties(cpu-history-test PROPERTIES AUTOMOC OFF AUTOUIC OFF AUTORCC OFF)
+    add_test(NAME cpu-history COMMAND cpu-history-test)
+endif()
+
 # install the man page
 install(FILES qps.1 DESTINATION "${CMAKE_INSTALL_FULL_DATADIR}/man/man1")
 
