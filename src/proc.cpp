@@ -53,6 +53,7 @@
 #include <sys/utsname.h> // uname()
 
 #include "proc.h"
+#include "cputimedelta.h"
 #include "uidstr.h"
 #include "ttystr.h"
 #include "wchan.h"
@@ -972,7 +973,6 @@ void Proc::commonPostInit()
     num_network_process = 0; // 64bit
 
     dt_total = 0; // diff system tick
-    dt_used = 0;  // for infobar
 
     loadavg[0] = loadavg[1] = loadavg[2] =
         0.0; // CPU load avg 1min,5min,15minute
@@ -1898,22 +1898,21 @@ int Proc::read_system() //
     cpu_times(Proc::num_cpus, CPUTIME_SYSTEM) = system;
     cpu_times(Proc::num_cpus, CPUTIME_IDLE) = idle;
 
-    Proc::dt_used =
-        user - old_cpu_times(Proc::num_cpus,
-                             CPUTIME_USER); // infobar uses this value
-    Proc::dt_used += system - old_cpu_times(Proc::num_cpus, CPUTIME_SYSTEM);
-    Proc::dt_total = dt_used + nice -
-                     old_cpu_times(Proc::num_cpus, CPUTIME_NICE) + idle -
-                     old_cpu_times(Proc::num_cpus, CPUTIME_IDLE);
+    const CpuTimeDelta cpuTime{
+        static_cast<long>(user - old_cpu_times(num_cpus, CPUTIME_USER)),
+        static_cast<long>(nice - old_cpu_times(num_cpus, CPUTIME_NICE)),
+        static_cast<long>(system - old_cpu_times(num_cpus, CPUTIME_SYSTEM)),
+        static_cast<long>(idle - old_cpu_times(num_cpus, CPUTIME_IDLE))};
 
-    load_cpu = (float)Proc::dt_used / Proc::dt_total; // COMMON
+    dt_total = cpuTime.total();
+    load_cpu = cpuTime.busyFraction();
 
     if (Proc::dt_total == 0)
     {
         //?????
         printf("Error: dt_total=0 , dt_used=%ld(%u)  report to "
                "fasthyun@magicn.com\n",
-               Proc::dt_used, old_cpu_times(Proc::num_cpus, CPUTIME_IDLE));
+               cpuTime.busy(), old_cpu_times(Proc::num_cpus, CPUTIME_IDLE));
         dt_total = 500; // more tolerable?
                         // abort(); // stdlib.h
     }
