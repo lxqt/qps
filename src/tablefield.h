@@ -27,11 +27,11 @@
 
 struct TableField
 {
-    QString name;
-    int width;
-    int gap;
-    int align;
-    QString tooltip;
+    const QString name;
+    const QString tooltip;
+    short width;
+    unsigned short gap;
+    unsigned short align;
 };
 
 #endif // TABLEFIELD_H
